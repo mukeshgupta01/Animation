@@ -124,6 +124,19 @@ def append_ledger(row: dict[str, Any]) -> None:
         handle.flush()
 
 
+def active_upload_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    missing_ids = {
+        str(row.get("missing_video_id"))
+        for row in rows
+        if row.get("event") == "remote-video-missing" and row.get("missing_video_id")
+    }
+    return [
+        row
+        for row in rows
+        if row.get("video_id") and str(row.get("video_id")) not in missing_ids
+    ]
+
+
 def source_directory(cfg: dict[str, Any]) -> Path | None:
     for raw in cfg.get("source_directories", []):
         candidate = Path(raw)
@@ -157,8 +170,9 @@ def metadata_index() -> dict[str, tuple[Path, dict[str, Any]]]:
 
 
 def available_videos(folder: Path, rows: list[dict[str, Any]]) -> list[Path]:
-    uploaded_hashes = {str(row.get("sha256", "")).upper() for row in rows if row.get("video_id")}
-    uploaded_names = {str(row.get("source_name", "")).casefold() for row in rows if row.get("video_id")}
+    active_rows = active_upload_rows(rows)
+    uploaded_hashes = {str(row.get("sha256", "")).upper() for row in active_rows}
+    uploaded_names = {str(row.get("source_name", "")).casefold() for row in active_rows}
     now = time.time()
     candidates: list[Path] = []
     for path in folder.glob("*.mp4"):
@@ -184,7 +198,7 @@ def parse_utc(value: str) -> datetime:
 
 
 def cadence(rows: list[dict[str, Any]], cfg: dict[str, Any]) -> tuple[int, datetime | None]:
-    successes = [row for row in rows if row.get("video_id") and row.get("uploaded_utc")]
+    successes = [row for row in active_upload_rows(rows) if row.get("uploaded_utc")]
     count = len(successes)
     if count == 0:
         return int(cfg["first_tier_interval_hours"]), None
@@ -306,6 +320,12 @@ def recent_video_with_title(service: Any, title: str) -> dict[str, str] | None:
     return None
 
 
+def youtube_video(service: Any, video_id: str) -> dict[str, Any] | None:
+    response = service.videos().list(part="snippet,status", id=video_id).execute()
+    items = response.get("items", [])
+    return items[0] if items else None
+
+
 def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]:
     body, metadata_path, metadata = upload_metadata(video, cfg)
     digest = sha256(video)
@@ -402,7 +422,7 @@ def run(dry_run: bool, confirm_upload: bool) -> int:
     value = report("dry-run" if dry_run else "scheduled-private-upload")
     folder = source_directory(cfg)
     value["source_directory"] = str(folder) if folder else None
-    value["uploaded_total"] = len([row for row in rows if row.get("video_id")])
+    value["uploaded_total"] = len(active_upload_rows(rows))
     hours, next_due = cadence(rows, cfg)
     value["current_interval_hours"] = hours
     value["next_due_utc"] = utc_text(next_due) if next_due else None
@@ -456,14 +476,81 @@ def run(dry_run: bool, confirm_upload: bool) -> int:
         return 1
 
 
+def reupload_missing(source_name: str, confirm_upload: bool) -> int:
+    cfg = config()
+    rows = ledger_rows()
+    value = report("verified-missing-reupload")
+    folder = source_directory(cfg)
+    value["source_directory"] = str(folder) if folder else None
+    if folder is None:
+        raise SafetyError("OneDrive source folder is unavailable.")
+    video = folder / source_name
+    if not video.is_file() or video.stat().st_size <= 0:
+        raise SafetyError(f"Requested source is unavailable: {source_name}")
+    digest = sha256(video)
+    prior_rows = [
+        row
+        for row in active_upload_rows(rows)
+        if row.get("source_name") == source_name or str(row.get("sha256", "")).upper() == digest
+    ]
+    if len(prior_rows) != 1:
+        raise SafetyError(
+            f"Recovery requires exactly one active ledger match; found {len(prior_rows)}."
+        )
+    prior = prior_rows[0]
+    prior_video_id = str(prior["video_id"])
+    value["prior_video_id"] = prior_video_id
+    if not confirm_upload:
+        raise SafetyError("Recovery upload blocked: --confirm-private-upload is required.")
+    if not ffprobe_ok(video):
+        raise SafetyError(f"FFprobe validation failed for {video}")
+    service, channel = authorized_service()
+    value["verified_channel"] = channel
+    if youtube_video(service, prior_video_id) is not None:
+        raise SafetyError(
+            f"Recorded video {prior_video_id} still exists on YouTube; refusing a duplicate upload."
+        )
+    value["attempted"] = 1
+    value["video_name"] = video.name
+    try:
+        result = upload_one(service, video, cfg)
+        append_ledger({
+            "event": "remote-video-missing",
+            "verified_utc": utc_text(),
+            "missing_video_id": prior_video_id,
+            "replacement_video_id": result["video_id"],
+            "source_name": video.name,
+            "sha256": digest,
+        })
+        value["successful"] = 1
+        value["result"] = result
+        value["status"] = "reuploaded-private-after-remote-missing"
+        value["uploaded_total"] = len(active_upload_rows(ledger_rows()))
+        _, following_due = cadence(ledger_rows(), cfg)
+        value["next_due_utc"] = utc_text(following_due) if following_due else None
+        finish(value)
+        return 0
+    except Exception as exc:
+        LOGGER.exception("Recovery upload failed for %s", video.name)
+        value["status"] = "failed"
+        value["failures"].append({"video_name": video.name, "error": str(exc)})
+        finish(value)
+        return 1
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("dry-run")
     run_parser = sub.add_parser("run")
     run_parser.add_argument("--confirm-private-upload", action="store_true")
+    recovery_parser = sub.add_parser("reupload-missing")
+    recovery_parser.add_argument("--source-name", required=True)
+    recovery_parser.add_argument("--confirm-private-upload", action="store_true")
     args = parser.parse_args()
     try:
+        if args.command == "reupload-missing":
+            return reupload_missing(args.source_name, args.confirm_private_upload)
         return run(args.command == "dry-run", getattr(args, "confirm_private_upload", False))
     except Exception as exc:
         LOGGER.exception("Uploader stopped safely")

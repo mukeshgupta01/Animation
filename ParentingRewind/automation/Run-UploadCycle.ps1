@@ -19,8 +19,12 @@ if (-not $mutex.WaitOne(0)) {
 
 try {
     Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) upload check started"
-    & $python -B $uploader run --confirm-private-upload *>> $log
-    $uploadExit = $LASTEXITCODE
+    $stdout = Join-Path $env:TEMP "parenting-rewind-upload-$PID.stdout.log"
+    $stderr = Join-Path $env:TEMP "parenting-rewind-upload-$PID.stderr.log"
+    $process = Start-Process -FilePath $python -ArgumentList '-B', $uploader, 'run', '--confirm-private-upload' -Wait -PassThru -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr
+    Get-Content -LiteralPath $stdout, $stderr -ErrorAction SilentlyContinue | Add-Content -LiteralPath $log
+    Remove-Item -LiteralPath $stdout, $stderr -Force -ErrorAction SilentlyContinue
+    $uploadExit = $process.ExitCode
     if (Test-Path -LiteralPath $report) {
         $result = Get-Content -LiteralPath $report -Raw | ConvertFrom-Json
         if ([int]$result.successful -gt 0) {
