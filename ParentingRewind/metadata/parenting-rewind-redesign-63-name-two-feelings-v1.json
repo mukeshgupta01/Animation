@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-63-name-two-feelings",
+  "version": "v1",
+  "title": "Name Two Feelings at the Same Time | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Cancelled football practice can leave a six-year-old kicking at a puddle while still watching the empty field. Calling him only angry may miss that he is also worried about the game, his team, or when practice will happen again. Pause and reflect more than one feeling when his face and actions seem mixed. Try: You look angry that practice stopped, and maybe worried about missing it too; is that close? Children can hold two feelings at once, and a tentative reflection gives them language while leaving room to explain it differently."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Active Listening",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/active-listening.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/rainy-pavilion-mother-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-60-to-64.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-63-name-two-feelings\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-63-name-two-feelings-v1.mp4",
+    "duration_seconds": 35.63333333333333,
+    "sha256": "16B237295EB79A16ECF59F881E872B99AC3CCC69DB1991017B4E23B72FE9D476"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-63-name-two-feelings-v1.mp4"
+  }
+}

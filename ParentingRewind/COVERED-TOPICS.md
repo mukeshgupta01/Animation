@@ -4,11 +4,12 @@ Updated: 2026-08-23
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 85 (61 active; 24 historical-only).
+Unique topics: 90 (66 active; 24 historical-only).
 
 ## Topic index
 
 - [active] Agree on a Homework Help Signal — metadata: parenting-rewind-redesign-58-homework-help-signal-v1.json
+- [active] Check What Your Child Heard — metadata: parenting-rewind-redesign-61-check-what-child-heard-v1.json
 - [active] Choose a Homework Time Together — metadata: parenting-rewind-redesign-12-homework-time-together-v1.json
 - [active] Describe Cooperation Like a Commentator — metadata: parenting-rewind-redesign-16-describe-cooperation-v1.json
 - [active] Give a Shopping Job Before You Enter — metadata: parenting-rewind-redesign-42-shopping-job-before-entry-v1.json
@@ -22,6 +23,7 @@ Unique topics: 85 (61 active; 24 historical-only).
 - [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
 - [active] Keep the Bedtime Sequence Familiar — metadata: parenting-rewind-redesign-15-same-bedtime-sequence-v1.json
 - [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
+- [active] Let Your Child Correct Your Feeling Guess — metadata: parenting-rewind-redesign-60-let-child-correct-feeling-guess-v1.json
 - [active] Listen Before Repeating the Screen Limit — metadata: parenting-rewind-redesign-10-listen-before-screen-limit-v1.json
 - [active] Listen to One Sibling at a Time — metadata: parenting-rewind-redesign-23-listen-to-each-sibling-v1.json
 - [active] Make Sibling Turns Visible — metadata: parenting-rewind-redesign-44-sibling-turns-visible-v1.json
@@ -33,6 +35,7 @@ Unique topics: 85 (61 active; 24 historical-only).
 - [active] Move Close Before Giving the Direction — metadata: parenting-rewind-redesign-13-move-close-first-v1.json
 - [active] Name the Feeling and Keep the Playground Limit — metadata: parenting-rewind-redesign-50-playground-feeling-and-limit-v1.json
 - [active] Name the Patient Waiting You Notice — metadata: parenting-rewind-redesign-14-praise-patient-waiting-v1.json
+- [active] Name Two Feelings at the Same Time — metadata: parenting-rewind-redesign-63-name-two-feelings-v1.json
 - [active] Notice the Bedtime Step That Worked — metadata: parenting-rewind-redesign-52-bedtime-notice-cooperation-v1.json
 - [active] Offer a Bedtime Choice Inside the Boundary — metadata: parenting-rewind-redesign-43-bedtime-choice-inside-boundary-v1.json
 - [active] Offer a Choice About How Soccer Ends — metadata: parenting-rewind-redesign-54-soccer-ending-choice-v1.json
@@ -60,8 +63,10 @@ Unique topics: 85 (61 active; 24 historical-only).
 - [active] Say What to Do With the Books — metadata: parenting-rewind-redesign-28-positive-library-direction-v1.json
 - [active] Screen Time Is Over: What to Say Without Shouting — metadata: pilot-02-screen-time-v1.json
 - [active] Shift to Quiet Before Bed — metadata: parenting-rewind-redesign-33-quiet-bedtime-routine-v1.json
+- [active] Stay Close When Words Are Too Much — metadata: parenting-rewind-redesign-64-stay-close-fewer-words-v1.json
 - [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
 - [active] The One-More-Story Loop — metadata: parenting-rewind-025-one-more-story-v1.json, parenting-rewind-redesign-04-one-more-story-v1.json
+- [active] Use an I-Statement Instead of Blame — metadata: parenting-rewind-redesign-62-i-statement-not-blame-v1.json
 - [active] Use One Playground Warning — metadata: parenting-rewind-redesign-25-one-playground-warning-v1.json
 - [active] Use One Real Choice at the Library — metadata: parenting-rewind-redesign-17-library-one-book-choice-v1.json
 - [active] Warn Before Homework Starts — metadata: parenting-rewind-redesign-19-homework-transition-warning-v1.json

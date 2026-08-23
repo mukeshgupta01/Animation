@@ -1,0 +1,58 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-60-let-child-correct-feeling-guess",
+  "version": "v1",
+  "title": "Let Your Child Correct Your Feeling Guess | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your seven-year-old leaves art class unusually quiet, and you guess that she is sad about the picture she made. A feeling guess can show attention, but insisting that your label is correct can make the child defend herself instead of explaining. Pause, stay curious, and leave room for her to correct what you noticed. Try: You seem disappointed; did I get that right, or is something else going on? When she says she is frustrated because the paper tore, reflect her correction and help with the problem she actually named."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Active Listening",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/active-listening.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/art-studio-father-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 2,
+    "generation_prompt_record": "production-assets/storyboard-prompts-60-to-64.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-60-let-child-correct-feeling-guess\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-60-let-child-correct-feeling-guess-v1.mp4",
+    "duration_seconds": 35.13333333333333,
+    "sha256": "104EDD253188B4391BEFBE2DB24D7A9DDDB6F8128F643372A604154C9C33A3EA"
+  }
+}

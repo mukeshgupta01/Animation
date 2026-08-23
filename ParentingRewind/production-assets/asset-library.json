@@ -368,6 +368,101 @@
         {"index": 4, "description": "Son takes the final shot and places the ball in the sports bag.", "useful_for": ["follow-through", "cooperation", "packing equipment"], "published_uses": 0},
         {"index": 5, "description": "Father and son walk off the field together and high-five.", "useful_for": ["resolution", "connection", "effort praise"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-art-studio-father-daughter-storyboard-01",
+      "file": "art-studio-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 2, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["father-early-30s-dark-skin", "daughter-age-7-dark-skin-natural-curls"],
+      "setting": "contemporary community art studio after class with colourful artwork and soft daylight",
+      "topic_tags": ["father caregiver", "daughter age seven", "feeling reflection", "child correction", "torn artwork", "active listening", "repair"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Father notices his quiet daughter after art class.", "useful_for": ["observation", "art class", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Father offers an initial feeling guess.", "useful_for": ["feeling reflection", "imperfect guess"], "published_uses": 0},
+        {"index": 2, "description": "Father pauses and becomes curious.", "useful_for": ["parent pause", "active listening"], "published_uses": 0},
+        {"index": 3, "description": "Father asks gently at child level.", "useful_for": ["open question", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Daughter identifies the torn artwork and corrects the feeling guess.", "useful_for": ["child correction", "frustration"], "published_uses": 0},
+        {"index": 5, "description": "Father and daughter repair the artwork together.", "useful_for": ["repair", "resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-apartment-morning-mother-son-storyboard-01",
+      "file": "apartment-morning-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["mother-early-40s-fair-skin-auburn-hair", "son-age-5-fair-skin-sandy-blond-hair"],
+      "setting": "mint and grey urban apartment mudroom before kindergarten",
+      "topic_tags": ["mother caregiver", "son age five", "school morning", "checking understanding", "one-step direction", "shoes"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Busy mother gives directions while her son stands among school items.", "useful_for": ["morning routine", "multitasking", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Mother stops and moves close with full attention.", "useful_for": ["parent pause", "connection"], "published_uses": 0},
+        {"index": 2, "description": "Boy looks confused by several possible tasks.", "useful_for": ["overload", "unclear directions"], "published_uses": 0},
+        {"index": 3, "description": "Mother asks him to show the first step he heard.", "useful_for": ["checking understanding", "calm direction"], "published_uses": 0},
+        {"index": 4, "description": "Boy successfully puts on one shoe.", "useful_for": ["small first step", "resolution"], "published_uses": 0},
+        {"index": 5, "description": "Boy points to the shoe and demonstrates his understanding.", "useful_for": ["child response", "one-step direction"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-craft-kitchen-father-twins-storyboard-01",
+      "file": "craft-kitchen-father-twins-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["father-late-30s-olive-skin", "twin-daughter-age-9-curly-bob", "twin-daughter-age-9-two-braids"],
+      "setting": "turquoise and terracotta family craft-and-baking kitchen",
+      "topic_tags": ["father caregiver", "twins age nine", "sibling conflict", "I-statement", "turn taking", "kitchen teamwork"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Twins pull toward the same bowl as father notices.", "useful_for": ["sibling conflict", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Father pauses and takes a breath.", "useful_for": ["parent pause", "self-regulation"], "published_uses": 0},
+        {"index": 2, "description": "Father reacts with an accusatory gesture.", "useful_for": ["blame", "imperfect reaction"], "published_uses": 0},
+        {"index": 3, "description": "Father introduces a timer for separate turns.", "useful_for": ["turn taking", "fair plan"], "published_uses": 0},
+        {"index": 4, "description": "Father uses an open-handed I-statement.", "useful_for": ["I-statement", "calm limit"], "published_uses": 0},
+        {"index": 5, "description": "Twins cooperate with the bowl while father supports them.", "useful_for": ["teamwork", "resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-rainy-pavilion-mother-son-storyboard-01",
+      "file": "rainy-pavilion-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["mother-late-30s-east-asian-appearance", "son-age-6-east-asian-appearance"],
+      "setting": "covered community sports pavilion beside a wet football field",
+      "topic_tags": ["mother caregiver", "son age six", "cancelled sport", "mixed feelings", "anger", "worry", "active listening"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Mother and son arrive at an empty rain-soaked field.", "useful_for": ["cancelled practice", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Mother offers an incomplete single-feeling reflection.", "useful_for": ["feeling label", "imperfect guess"], "published_uses": 0},
+        {"index": 2, "description": "Boy shows anger and worry beside the wet field.", "useful_for": ["mixed feelings", "child close-up"], "published_uses": 0},
+        {"index": 3, "description": "Mother reflects two feelings with open hands.", "useful_for": ["active listening", "two feelings"], "published_uses": 0},
+        {"index": 4, "description": "Boy explains while holding the football.", "useful_for": ["child explanation", "connection"], "published_uses": 0},
+        {"index": 5, "description": "Mother and son leave together under an umbrella.", "useful_for": ["resolution", "reconnection"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-evening-reading-father-son-storyboard-01",
+      "file": "evening-reading-father-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 2, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["father-early-40s-brown-skin", "son-age-4-brown-skin-close-curls"],
+      "setting": "warm oak and indigo home reading-and-calm corner at dusk",
+      "topic_tags": ["father caregiver", "son age four", "overwhelm", "fewer words", "quiet presence", "active listening", "shared reading"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Father notices his upset son in the reading corner.", "useful_for": ["overwhelm", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Father initially offers too many explanations.", "useful_for": ["too many words", "imperfect response"], "published_uses": 0},
+        {"index": 2, "description": "Father stops speaking and takes a calm breath.", "useful_for": ["parent pause", "self-regulation"], "published_uses": 0},
+        {"index": 3, "description": "Boy voluntarily moves closer and places his toy between them.", "useful_for": ["child-led connection", "quiet presence"], "published_uses": 0},
+        {"index": 4, "description": "Father waits quietly on a separate cushion.", "useful_for": ["comfortable space", "nonverbal listening"], "published_uses": 0},
+        {"index": 5, "description": "Father and son calmly share a picture book.", "useful_for": ["shared reading", "resolution"], "published_uses": 0}
+      ]
     }
   ]
 }

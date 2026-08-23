@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-62-i-statement-not-blame",
+  "version": "v1",
+  "title": "Use an I-Statement Instead of Blame | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "When two nine-year-olds pull for the same bowl, a frustrated parent may quickly say: You two always ruin helping time. That blame describes the children as the problem instead of naming the behaviour that needs to change. Pause, describe your own concern, and make the safe next action specific. Try: I feel worried when the bowl is pulled because it could fall; I need both hands off while I set the timer for turns. An I-statement can hold the limit without attacking character, then a fair plan gives both children a way back into teamwork."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Communication Skills Start at Home",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Components-of-Good-Communication.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/craft-kitchen-father-twins-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-60-to-64.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-62-i-statement-not-blame\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-62-i-statement-not-blame-v1.mp4",
+    "duration_seconds": 35.96666666666667,
+    "sha256": "07718463F256E292149958840EB5BE7CFDC13390D1ABA3B4A16B5243AB3E1FB4"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-62-i-statement-not-blame-v1.mp4"
+  }
+}
