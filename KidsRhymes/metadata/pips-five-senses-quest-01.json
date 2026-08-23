@@ -1,0 +1,23 @@
+{
+  "id": "pips-five-senses-quest-01",
+  "title": "Pip's Five Senses Quest | Interactive Story Adventure for Kids",
+  "description": "Float with Pip through five richly illustrated destinations to recover the Sight, Hearing, Smell, Taste, and Touch Sparks. Each stop includes a safe five-second activity, a magical collectible, and a simple explanation of how that sense helps us explore the world.\n\nAn original Tiny Tales story supporting observation, listening, body vocabulary, imagination, and active participation for children ages 3 to 7.",
+  "tags": [
+    "five senses for kids",
+    "interactive story",
+    "sight hearing smell taste touch",
+    "preschool science",
+    "kids adventure",
+    "learning through play",
+    "Pip the cloud",
+    "Tiny Tales"
+  ],
+  "category_id": "27",
+  "made_for_kids": true,
+  "privacy": "private",
+  "upload_authorized": false,
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\pips-five-senses-quest-01.mp4",
+  "duration_seconds": 306.85600000000005,
+  "new_image_generation_calls": 7,
+  "rejected_image_variants": 2
+}

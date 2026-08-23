@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 13:56 Australia/Sydney
+Last updated: 2026-08-23 17:14 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -28,6 +28,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - Current reusable families: land, ocean, farm, jungle, and colourful birds.
 - Preferred varied formats include animal superpowers/facts, hidden objects, disappearance memory, animal sounds/clues, footprints, habitats, cause-and-effect stories, kindness/rescue quests, lost-colour adventures, and help-it-grow stories.
 - Aim for a small mission, a real child choice, a 5-7 second thinking window, positive feedback, and one memorable discovery.
+- For storybook adventures inspired by `The Lost Rainbow Adventure`, retain an independently moving recurring character such as Pip. The number of locations must follow the topic naturally and is not fixed at six.
 - All real uploads remain private for human review before publication.
 
 ## Architecture and important files
@@ -40,6 +41,24 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_superpower_video.py`: interactive Ocean Superpower Detectives format.
 - `automation/production/produce_clue_detective_batch.py`: resumable local-only jungle, farm and colourful-bird clue adventures.
 - `automation/production/produce_lost_colour_batch.py`: resumable ocean, farm and colourful-bird Lost Colour Rescue adventures with six-second child choices.
+- `automation/production/produce_habitat_rescue_batch.py`: resumable ocean, wild-animal and bird Find My Home habitat-rescue adventures with illustrated map destinations.
+- `automation/production/produce_move_like_animal_batch.py`: resumable ocean, farm and friendly-animal movement adventures with large animated characters and participation timers.
+- `automation/production/produce_counting_parade_batch.py`: resumable ocean, farm and colourful-bird one-to-four counting adventures with delayed numeral reveals.
+- `automation/production/produce_animal_tools_lab_batch.py`: resumable ocean, farm and bird body-feature lab adventures with custom diagrams and adaptation explanations.
+- `automation/production/produce_hidden_object_story_batch.py`: resumable farm, ocean and bird hidden-object kindness quests with connected story clues and reveal circles.
+- `automation/production/produce_baby_animal_album_batch.py`: resumable farm, wild-animal and bird family-album vocabulary adventures with adult/baby pages and six-second choices.
+- `automation/production/produce_picture_size_adventures.py`: resumable early-maths batch with three distinct scene systems: ocean picture bubbles, a farm height ruler, and bird measuring strips.
+- `automation/production/produce_raindrop_journey_story.py`: resumable one-off water-cycle narrative with a recurring raindrop character, seven changing environments, and three movement moments.
+- `automation/production/produce_animal_sound_orchestra.py`: resumable one-off concert with eight farm, wild and bird performers, animated stage palettes, and child call-and-response windows.
+- `automation/production/produce_animal_opposites_playground.py`: resumable one-off split-screen spatial-vocabulary adventure with six opposite pairs and movement prompts.
+- `automation/production/produce_animal_shape_builders.py`: resumable one-off early-geometry construction story with six shapes, changing environments, and tracing prompts.
+- `automation/production/produce_tiny_seed_growth_story.py`: resumable one-off plant-life-cycle narrative with seven growth stages, an underground root cutaway, and farm helpers.
+- `automation/production/produce_five_senses_quest.py`: resumable long-form Pip adventure with five generated storybook locations, two voice deliveries, animated travel/reactions, sense-token collection, and audited response gaps.
+- `automation/production-assets/five-senses-*.png`: five accepted generated backgrounds for sight, hearing, smell, taste and touch. These assets are intentionally force-added to Git despite the project's broad PNG ignore rule so the producer works on another computer.
+- `automation/production/produce_four_seasons_journey.py`: resumable long-form Pip adventure through four season-specific destinations, with moving-character travel, four token types, contextual child activities, two voice deliveries, and audited response gaps.
+- `automation/production-assets/four-seasons-*.png`: four accepted generated backgrounds for spring, summer, autumn and winter. Force-add these ignored PNG assets with the producer so the video remains reproducible on another computer.
+- `automation/production/produce_bea_healthy_habits.py`: resumable six-minute story with a new moving bee mascot, five life-skills destinations, five habit badges, two voice deliveries, and audited response gaps.
+- `automation/production-assets/healthy-habits-*.png`: five accepted generated backgrounds for handwashing, toothbrushing, colourful food, movement and sleep. Force-add these ignored PNG assets with the producer for cross-computer reproducibility.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -148,6 +167,143 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
 - Their MP4s and metadata were copied into `automation/pending-uploads` behind the three existing clue-detective videos. The queue contains six MP4s total. A dry run selected `jungle-animal-clue-detectives-01.mp4` next and reported five remaining after that next item; no unrelated item was selected.
 - `COVERED-TOPICS.md` was rebuilt and now records 15 completed or queued concepts.
+
+## Find My Home habitat checkpoint
+
+- On 2026-08-23, three additional local Find My Home videos completed: ocean (141.4 seconds), wild animals (140.4 seconds), and birds (142.2 seconds).
+- The format uses a rescue-map introduction, an animal need, three illustrated habitat destinations, a six-second choice window, a highlighted suitable home, and a habitat fact. Existing artwork was reused with zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
+- Their MP4s and metadata were added to `automation/pending-uploads`. The queue contains nine MP4s total. The immediate dry run still selected `jungle-animal-clue-detectives-01.mp4`; it reported six age-eligible remaining items because the three habitat files had not yet passed the configured five-minute stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 18 completed or queued concepts.
+
+## Move Like an Animal checkpoint
+
+- On 2026-08-23, three additional local movement videos completed: ocean (131.8 seconds), farm (129.5 seconds), and friendly animals (134.2 seconds).
+- The format opens with safe-space guidance, presents four large animated animal movements, gives children six seconds to participate, and closes each movement with a related fact. Existing artwork was reused with zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
+- Their MP4s and metadata were added to `automation/pending-uploads`, bringing the queue to 12 MP4s for private uploads at four-hour intervals.
+- `COVERED-TOPICS.md` was rebuilt and now records 21 completed or queued concepts.
+
+## Animal Counting Parade checkpoint
+
+- On 2026-08-23, three additional local counting videos completed: ocean (113.7 seconds), farm (112.2 seconds), and colourful birds (115.9 seconds).
+- The format presents four groups containing one to four animals, gives a six-second counting window, reveals the numeral and one-to-one count markers, and adds a short animal fact. Existing artwork was reused with zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
+- Their MP4s and metadata were added to `automation/pending-uploads`, bringing the queue to 15 MP4s for private uploads at four-hour intervals.
+- `COVERED-TOPICS.md` was rebuilt and now records 24 completed or queued concepts.
+
+## Amazing Animal Tools Lab checkpoint
+
+- On 2026-08-23, three additional local body-feature videos completed: ocean (137.3 seconds), farm (136.5 seconds), and birds (137.5 seconds).
+- The format presents a large custom body-feature diagram, three possible animal owners, a six-second inspection window, the correct animal reveal, and an explanation of how the feature functions. Existing animal artwork was reused with zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
+- Their MP4s and metadata were added to `automation/pending-uploads`, bringing the queue to 18 MP4s for private uploads at four-hour intervals.
+- `COVERED-TOPICS.md` was rebuilt and now records 27 completed or queued concepts.
+
+## Hidden-object kindness-story checkpoint
+
+- On 2026-08-23, three connected hidden-object stories completed: Find Sheep's Lost Bell (117.6 seconds), Turtle's Friendship Badge (118.4 seconds), and The Cozy Nest Quest (119.7 seconds).
+- Each story follows four sequential visual clues with animal helpers, a six-second search window, a circled reveal, and a cooperative resolution. The scenes and hidden items were drawn locally in code; existing animal artwork was reused with zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
+- Their MP4s and metadata were added to `automation/pending-uploads`, bringing the queue to 21 MP4s for private uploads at four-hour intervals.
+- `COVERED-TOPICS.md` was rebuilt and now records 30 completed or queued concepts.
+
+## Scheduled generation reconciliation at 15:05
+
+- The existing `Tiny Tales - Continuous Generation` task started `what-ocean-animal-disappeared-01` at 15:05 on 2026-08-23. Manual rendering was held until the scheduled FFmpeg work completed, avoiding a resource collision.
+- The ocean memory game completed at 134.3 seconds, passed its automated report, full FFmpeg decode and visual contact-sheet review, and was automatically copied to the pending queue by the generation runner.
+- The queue now contains 22 MP4s. This is one allowed memory-game rotation item; no shadow or matching content was created.
+- Continuous state advanced to the next allowed item, `What Farm Animal Disappeared 1`. `COVERED-TOPICS.md` now records 31 concepts.
+
+## Baby Animal Family Album checkpoint
+
+- On 2026-08-23, three additional local Baby Animal Family Album videos completed: farm (118.1 seconds), wild animals (123.6 seconds), and birds (124.7 seconds).
+- The scrapbook format introduces four adult animals per episode, presents three possible baby names, gives a six-second child choice window, and reveals the correct family vocabulary with a short fact. The three episodes use separate farm, wild-animal and bird casts and backgrounds. Existing artwork was reused with zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
+- Their MP4s and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 25 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 22 age-eligible items because the three newest files were still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 34 completed or queued concepts.
+
+## Picture-size comparison checkpoint
+
+- On 2026-08-23, three additional early-maths videos completed: Ocean Bubble Size Station (117.2 seconds), Farm Barn Height Lineup (109.1 seconds), and Bird Feather Measuring Studio (115.6 seconds).
+- These are deliberately different visual systems rather than simple theme swaps: changing ocean bubble diameters teach big/small/middle, barn cards line up against height marks for tall/short/middle, and bird picture strips terminate at different ruler positions for long/short/middle. Wording explicitly asks children to compare the displayed pictures, avoiding unsupported claims about real species sizes.
+- Every episode provides four comparisons and a six-second thinking window. Existing approved animal artwork was reused with zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review with clear answer outlines and no observed clipping.
+- Their MP4s and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 28 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 25 age-eligible items because the three newest files were still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 37 completed or queued concepts.
+
+## Little Raindrop water-cycle story checkpoint
+
+- On 2026-08-23, the one-off connected story `The Little Raindrop's Big Journey` completed at 153.8 seconds.
+- This is not a repeated quiz template. Dot travels through seven changing scenes: sun-warmed ocean, rising water vapour, cloud formation, rain, a watered farm, a flowing river, and return to the ocean. The narration introduces evaporation, condensation, precipitation, collection/runoff, and water's importance to living things.
+- Three 4.5-second participation moments invite children to lift their hands like vapour, shape a cloud, and wiggle their fingers like rain. Ocean, farm, river and cycle-diagram visuals were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review covering every story and participation scene.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 29 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 28 age-eligible items because the newest story was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 38 completed or queued concepts.
+
+## Animal Sound Orchestra checkpoint
+
+- On 2026-08-23, the one-off `Animal Sound Orchestra` completed at 192.9 seconds.
+- Eight performers take three differently coloured concert stages: cow/moo, sheep/bleat or baa, pig/oink, chicken/cluck, lion/roar, elephant/trumpet, owl/hoot, and parrot/squawk. Narration also notes that animals may use several calls, avoiding presenting each species as having only one sound.
+- Every performer has a 4.8-second call-and-response window with a progress bar, animated musical notes and a pulsing character. The opening and finale show the whole ensemble. Existing approved animal artwork was reused with zero new image-generation calls.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the opening, all eight performer screens, all eight echo screens, and the finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 30 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 29 age-eligible items because the newest concert was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 39 completed or queued concepts.
+
+## Animal Opposites Playground checkpoint
+
+- On 2026-08-23, the one-off `Animal Opposites Playground` completed at 155.5 seconds.
+- Six split-screen scenes teach up/down with a parrot, in/out with a pig and barn, near/far with an elephant and depth cues, over/under with a dolphin and wave marker, open/closed with a goat and gates, and day/night with an owl, sun and moon.
+- Each narrated pair is followed by a five-second whole-body prompt. This is a paired spatial-composition format, not a choice-card quiz. Backgrounds, position markers, barns, gates, depth scenery, arrows, sun, moon and stars were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the title, all six teaching screens, all six movement screens, and the finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 31 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 30 age-eligible items because the newest video was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 40 completed or queued concepts.
+
+## Animal Shape Builders checkpoint
+
+- On 2026-08-23, the one-off `Animal Shape Builders` completed at 161.7 seconds.
+- Six helpers construct different parts of a playground: Dolphin uses circles for ocean bubbles, Goat uses triangles for mountains and a roof, Pig uses square barn windows, Elephant uses rectangle bridge planks, Owl finds oval nest eggs, and Parrot hangs five-point star decorations.
+- Every scene explains relevant curved edges, straight sides or corners and is followed by a 4.8-second air-tracing activity. This is a connected construction story rather than a guessing quiz. All shape geometry and environments were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the title, all six teaching screens, all six tracing screens, and the completed-playground finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 32 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 31 age-eligible items because the newest video was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 41 completed or queued concepts.
+
+## Tiny Seed farm growth story checkpoint
+
+- On 2026-08-23, the one-off `The Tiny Seed's Big Farm Adventure` completed at 162.2 seconds.
+- Seven connected stages follow a sunflower from seed, planting and watering through roots, sprout, leaves, flower and new seeds. Changing sun/rain palettes, an underground root cutaway, plant-stage drawings and six farm helpers make the growth sequence visually explicit.
+- Narration introduces germination, root functions, the ingredients leaves use to make sugars, pollination and the repeating plant life cycle. Three five-second movement moments invite children to grow fingers downward as roots, curl and rise as a sprout, and stretch as leaves.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the lifecycle title, all seven stages, all three movement states, and the finale. All environments and plant stages were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 33 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 32 age-eligible items because the newest story was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 42 completed or queued concepts.
+
+## Pip's Five Senses Quest checkpoint
+
+- The user identified `reference-generators/create_lost_rainbow_adventure.py` as the desired richer adventure style and clarified that the moving character matters while the location count can vary by topic. The reference producer's useful structure is a moving/blinking/speaking Pip mascot, location travel, two child-like voice deliveries, a real five-second activity gap, a collectible flying back to Pip, continuous music/SFX, and a final payoff.
+- On 2026-08-23, the new and topically distinct `Pip's Five Senses Quest` completed at 306.866667 seconds (5:07) and 92,005,932 bytes. Five locations fit the five-senses topic naturally: Looking Lantern Meadow/sight, Whispering Bell Woods/hearing, Fragrant Flower Conservatory/smell, Sunlit Taste Picnic Garden/taste, and Texture Treasure Shore/touch.
+- Pip independently floats, bobs, blinks, speaks, waves, travels into and out of each scene, reacts to success, collects a moving sense token, and celebrates with all five orbiting tokens. Narrator and Pip use separate rate/pitch deliveries. Every response gap passed at more than five seconds.
+- Seven built-in image-generation calls produced the project visuals. Five final backgrounds were accepted and saved under `automation/production-assets/`; two taste-scene variants with a suspicious mark were rejected and never copied into the project.
+- The final video passed its automated 1080p H.264/AAC technical gate, voice-overlap audit, response-gap audit, full FFmpeg decode, and visual review of all arrivals, activities, reward states and finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 34 MP4s. The immediate dry run reported 33 age-eligible items because this new file was inside the stability window. `COVERED-TOPICS.md` now records 43 completed or queued concepts.
+- The scheduled 16:20 uploader ran while production was held. YouTube returned HTTP 429 for `jungle-animal-clue-detectives-01.mp4`, specifically the daily video-upload quota; the queue item was preserved and a later scheduled cycle can retry. Do not bypass the quota or manually duplicate the upload.
+
+## Pip's Four Seasons Journey checkpoint
+
+- On 2026-08-23, the distinct `Pip's Four Seasons Journey` completed at 279.266667 seconds (4:39) and 86,880,144 bytes. Four locations follow this topic naturally rather than forcing the reference video's scene count: Bud-and-Bloom Garden/spring, Sunny Shade Cove/summer, Whirling Leaf Lane/autumn, and Snowflake Grove/winter.
+- Pip independently floats, bobs, blinks, speaks, waves, travels into and out of each setting, reacts to success, collects a moving season token, and celebrates with all four orbiting tokens. Narrator and Pip retain separate rate/pitch deliveries.
+- Activities ask children to find three buds, identify shade and water, count five falling leaves, and find three snowflakes plus warm clothes. All four audited response gaps exceed five seconds; summer safety language keeps decisions with a trusted grown-up.
+- Four built-in image-generation calls produced four accepted storybook backgrounds with no rejected variants. The accepted files are under `automation/production-assets/four-seasons-*.png` and must be force-added despite the broad PNG ignore rule.
+- The final MP4 passed the automated 1080p H.264/AAC gate, voice-overlap and activity-gap audits, full FFmpeg decode, and a visual review of the title, all destinations, prompts, rewards, moving Pip states, and finale.
+- Its MP4 and metadata were added collision-safely to `automation/pending-uploads`, bringing the live queue folder to 35 MP4s. The immediate dry run reported 34 age-eligible items because this newest file was inside the configured stability window; the next item remains `jungle-animal-clue-detectives-01.mp4`. `COVERED-TOPICS.md` now records 44 concepts.
+
+## Bea's Healthy Habits Treasure Trail checkpoint
+
+- On 2026-08-23, `Bea's Healthy Habits Treasure Trail` completed at 365.133333 seconds (6:05) and 97,164,751 bytes. It deliberately changes both the character and topic: Bea is a separately drawn flying bee mascot who visits five habit-specific environments rather than reusing Pip or animal choice cards.
+- The five destinations are Bubble Brook Wash Garden/handwashing, Sparkle Smile Cove/toothbrushing, Colourful Crunch Picnic/food variety, Wiggle-and-Move Playground/active play, and Cozy Moonlight Nest/sleep routine. Prompts use trusted-grown-up and safe-space guidance without treating one family routine as universal.
+- Bea independently flies, bobs, flaps, blinks, speaks, waves, enters and exits each scene, collects five moving pictogram badges, and celebrates with them orbiting. Narrator and Bea use separate rate/pitch deliveries. Every audited response gap is between 5.25 and 5.37 seconds.
+- Five built-in image-generation calls produced five accepted, visually distinct storybook environments with no rejected variants. Accepted files are under `automation/production-assets/healthy-habits-*.png` and must be force-added despite the broad PNG ignore rule.
+- The final MP4 passed its automated 1080p H.264/stereo AAC gate, voice-overlap and activity-gap audits, full FFmpeg decode, and a visual review of title, all destinations, prompt/reward states, moving Bea, and finale.
+- Read-only live verification immediately before queueing returned Tiny Tales channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The MP4 and metadata were copied collision-safely into `automation/pending-uploads`; the folder now contains 36 MP4s. The immediate dry run found 35 age-eligible items and retained `jungle-animal-clue-detectives-01.mp4` as next. `COVERED-TOPICS.md` now records 45 concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
