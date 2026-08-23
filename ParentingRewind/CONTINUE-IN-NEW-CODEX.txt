@@ -1,19 +1,31 @@
-Continue the Parenting Rewind project. Do not work on Tiny Tales unless I explicitly ask.
+Continue the Parenting Rewind project only. Do not work on Tiny Tales or Birthday Songs unless I explicitly ask.
 
-Open C:\Animation\Animation\ParentingRewind as the workspace. Before doing anything, read these files completely:
+Use C:\DocSphere\Animation as the repository and C:\DocSphere\Animation\ParentingRewind as the project. Before acting, read these files completely:
 
-1. C:\Animation\Animation\AGENTS.md
-2. C:\Animation\Animation\ParentingRewind\AGENTS.md
-3. C:\Animation\Animation\ParentingRewind\PROJECT-HANDOFF.md
-4. C:\Animation\Animation\ParentingRewind\README.md
-5. C:\Animation\Animation\ParentingRewind\production-assets\asset-library.json
+1. C:\DocSphere\Animation\AGENTS.md, if present
+2. C:\DocSphere\Animation\ParentingRewind\AGENTS.md
+3. C:\DocSphere\Animation\ParentingRewind\PROJECT-HANDOFF.md
+4. C:\DocSphere\Animation\ParentingRewind\README.md
+5. C:\DocSphere\Animation\ParentingRewind\COVERED-TOPICS.md
+6. C:\DocSphere\Animation\ParentingRewind\production-assets\asset-library.json
 
-Then inspect the live scripts, metadata and output files. First summarize for me:
+Then inspect live state rather than trusting the handoff blindly:
 
-- the approved V2 narration and V4 music baselines;
-- which Pilot 02 screen-time video is awaiting my review;
-- current channel, OAuth, upload and Scheduled Task status;
-- the current single-video quality gate and what still needs my approval;
-- the rules for reusing images and counting new image-generation calls.
+- Run Git status and inspect whether main is ahead/behind origin; never force-push or discard either side.
+- Inspect metadata, validated local outputs and the business OneDrive video folder.
+- Inspect automation/runtime/latest-upload-report.json without exposing token contents.
+- Verify the actual Windows Scheduled Task state and uploader source discovery.
+- Confirm the immutable Parenting Rewind channel lock before any upload action.
 
-Do not upload anything, reuse Tiny Tales credentials, create Scheduled Tasks, generate a mass batch, delete files or overwrite existing work until I explicitly approve the relevant action.
+Current durable direction:
+
+- Keep the channel adult-facing and use evidence-based general parenting education.
+- Continue in small, validated production intervals with genuinely varied casts, backgrounds and compositions.
+- Cover toddlers/preschoolers, school-age children and teenagers with age-appropriate situations; normally include at least two toddler/preschool and two teenage topics per rolling ten new episodes.
+- Keep mothers, fathers and other suitable caregivers varied.
+- Preserve V2 narration and V4 music as the current baselines.
+- Copy each validated redesigned MP4 to the configured business OneDrive folder using the verified non-destructive transfer helper.
+- Keep Git updated after every small checkpoint, staging only reviewed Parenting Rewind source, assets and metadata. Never commit MP4s, tokens, secrets, runtime ledgers, logs, virtual environments or production-work.
+- Uploads, when the automation is verified operational, must remain private, not made for kids, locked to channel UCGb-IUQX2KQa_KA24MwE_aQ, and follow the separately authorized cadence/email rules in PROJECT-HANDOFF.md. Never publish publicly.
+
+First report the live production count, latest completed episode, Git divergence, OneDrive count, latest upload report and Scheduled Task state. Resume only from the latest safe checkpoint recorded in PROJECT-HANDOFF.md.

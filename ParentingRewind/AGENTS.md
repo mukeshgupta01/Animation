@@ -21,15 +21,15 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Present general parenting education, not personalised therapy, diagnosis or medical advice.
 - Research lesson claims using authoritative sources and record the sources in metadata.
 - Never reuse Tiny Tales OAuth files, tokens, channel locks, upload ledgers, archives or Scheduled Tasks.
-- No upload is authorized unless this project later receives its own verified channel identity and the user explicitly approves it.
+- Never upload outside this project's verified, fail-closed Parenting Rewind automation. Upload authority exists only when the current `PROJECT-HANDOFF.md` records the verified channel identity, immutable channel lock and the user's explicit authorization; never infer it from local credentials alone.
 
 ## Batch authorization
 
 - On 2026-08-22 the user approved unrestricted local batch production after approving the existing videos. Produce as many complete, validated videos as practical, targeting 50 or more; do not impose an artificial episode limit.
 - This authorization covers normal in-scope research, creative decisions, local image generation, narration, rendering, validation and routine failure recovery without further confirmation.
-- It does not authorize uploads, publication, emails, external scheduling, OAuth changes or copying anything between projects.
+- This local-production authorization does not by itself authorize uploads, publication, emails, external scheduling or OAuth changes. Treat any separately granted automation authority exactly as recorded in the current handoff.
 - Checkpoint progress frequently because a Codex account may run out of credit: after every small production interval, keep durable rules current here and record exact changing status, completed episode ranges, failures and resume commands in `PROJECT-HANDOFF.md`.
-- Do not upload or create Scheduled Tasks until this project has a separate channel, a matching immutable channel-ID lock and explicit user approval.
+- Do not create or change upload Scheduled Tasks unless the handoff confirms a separate channel, matching immutable channel-ID lock and explicit user approval. Never make a Parenting Rewind video public automatically.
 - STOP OVERRIDE (2026-08-23): the user rejected the authorized batch renderer because its characters and visuals looked the same across videos. Do not resume `scripts/produce_authorized_batch.py` or generate more videos from its three-storyboard rotation. Before any further batch, create genuinely varied visual assets and obtain approval of one new representative video.
 - UPDATED REUSE APPROVAL (2026-08-23): after approving the redesigned direction, the user explicitly said visuals may be recycled. Reuse is allowed in small, non-consecutive doses; do not return to long runs dominated by the same three storyboard families. Vary panel order, crop, pacing, lesson and narration, and keep adding new casts/settings between reuse intervals.
 
@@ -48,6 +48,10 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Keep every portrayal natural, respectful and contemporary. Do not use caricatures, costumes, tokenism or visual stereotypes to signal nationality.
 - Describe visible appearance and family context in generation prompts rather than asserting an exact nationality that cannot be established from appearance alone.
 - Continuity takes priority within an episode: the same character must retain a consistent face, age and appearance across all of that episode's scenes.
+- Cover the full parenting age range rather than concentrating only on young school-age children. Deliberately include toddlers/preschoolers (roughly 2-4), school-age children (roughly 5-12), and teenagers (roughly 13-18) across future production intervals.
+- For a rolling group of about ten new episodes, normally include at least two toddler/preschool topics and at least two teenage topics, unless the topic audit shows a stronger reason to adjust the mix.
+- Make situations developmentally appropriate. Toddler topics may include transitions, biting/hitting, sleep, toilet-learning stress, separation and limited language. Teenage topics may include privacy, independence, phones/social media, school pressure, friendship conflict, curfews, driving, chores and respectful disagreement.
+- Keep the audience adult-facing at every age. Do not infantilize teenagers, portray normal adolescent independence as pathology, or present toddler behaviour as deliberate adult-like manipulation.
 
 ## Keep the account handoff current
 
@@ -55,6 +59,8 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Update its `Last updated` date and next actions, and make sure `CONTINUE-IN-NEW-CODEX.txt` still points to the correct files.
 - Keep instructions concise. Put durable rules in this file and changing status/details in `PROJECT-HANDOFF.md`.
 - Never place OAuth secrets, tokens, passwords or other credential values in either handoff file.
+- A fresh Codex account or session must be able to resume without this chat history. `CONTINUE-IN-NEW-CODEX.txt` must use the current absolute workspace paths and instruct the new session to read this file and `PROJECT-HANDOFF.md` completely before acting.
+- Before resuming, the new session must inspect live Git status/branch divergence, output and metadata counts, OneDrive availability, the latest upload report and the actual Windows Scheduled Task state. Never assume those external states from an older checkpoint.
 
 ## Finished-video transfer
 
@@ -67,3 +73,4 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - After each material automation change or small completed production checkpoint, review the diff, update `PROJECT-HANDOFF.md`, commit the relevant Parenting Rewind source/metadata files, and push the current branch when the remote is available.
 - Stage only intended `ParentingRewind` paths. Never commit OAuth client files, tokens, immutable runtime locks, upload ledgers, logs, generated MP4s, production work, virtual environments or unrelated user changes.
 - Do not create an unattended auto-commit task: every Git checkpoint must be reviewed so credentials and partial outputs cannot be captured accidentally.
+- USER RECONFIRMATION (2026-08-23): keep Git updated continuously as part of the work. After every small completed production interval, make a reviewed local commit and push it when safe. If the branch is ahead and behind, do not force-push or discard either side; record the divergence and reconcile explicitly before pushing.
