@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 16:02 Australia/Sydney
+Last updated: 2026-08-23 16:30 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -28,6 +28,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - Current reusable families: land, ocean, farm, jungle, and colourful birds.
 - Preferred varied formats include animal superpowers/facts, hidden objects, disappearance memory, animal sounds/clues, footprints, habitats, cause-and-effect stories, kindness/rescue quests, lost-colour adventures, and help-it-grow stories.
 - Aim for a small mission, a real child choice, a 5-7 second thinking window, positive feedback, and one memorable discovery.
+- For storybook adventures inspired by `The Lost Rainbow Adventure`, retain an independently moving recurring character such as Pip. The number of locations must follow the topic naturally and is not fixed at six.
 - All real uploads remain private for human review before publication.
 
 ## Architecture and important files
@@ -52,6 +53,8 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_animal_opposites_playground.py`: resumable one-off split-screen spatial-vocabulary adventure with six opposite pairs and movement prompts.
 - `automation/production/produce_animal_shape_builders.py`: resumable one-off early-geometry construction story with six shapes, changing environments, and tracing prompts.
 - `automation/production/produce_tiny_seed_growth_story.py`: resumable one-off plant-life-cycle narrative with seven growth stages, an underground root cutaway, and farm helpers.
+- `automation/production/produce_five_senses_quest.py`: resumable long-form Pip adventure with five generated storybook locations, two voice deliveries, animated travel/reactions, sense-token collection, and audited response gaps.
+- `automation/production-assets/five-senses-*.png`: five accepted generated backgrounds for sight, hearing, smell, taste and touch. These assets are intentionally force-added to Git despite the project's broad PNG ignore rule so the producer works on another computer.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -269,6 +272,16 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The video passed its automated technical gate, full FFmpeg decode, and a visual review of the lifecycle title, all seven stages, all three movement states, and the finale. All environments and plant stages were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
 - Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 33 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 32 age-eligible items because the newest story was still inside the configured stability window.
 - `COVERED-TOPICS.md` was rebuilt and now records 42 completed or queued concepts.
+
+## Pip's Five Senses Quest checkpoint
+
+- The user identified `reference-generators/create_lost_rainbow_adventure.py` as the desired richer adventure style and clarified that the moving character matters while the location count can vary by topic. The reference producer's useful structure is a moving/blinking/speaking Pip mascot, location travel, two child-like voice deliveries, a real five-second activity gap, a collectible flying back to Pip, continuous music/SFX, and a final payoff.
+- On 2026-08-23, the new and topically distinct `Pip's Five Senses Quest` completed at 306.866667 seconds (5:07) and 92,005,932 bytes. Five locations fit the five-senses topic naturally: Looking Lantern Meadow/sight, Whispering Bell Woods/hearing, Fragrant Flower Conservatory/smell, Sunlit Taste Picnic Garden/taste, and Texture Treasure Shore/touch.
+- Pip independently floats, bobs, blinks, speaks, waves, travels into and out of each scene, reacts to success, collects a moving sense token, and celebrates with all five orbiting tokens. Narrator and Pip use separate rate/pitch deliveries. Every response gap passed at more than five seconds.
+- Seven built-in image-generation calls produced the project visuals. Five final backgrounds were accepted and saved under `automation/production-assets/`; two taste-scene variants with a suspicious mark were rejected and never copied into the project.
+- The final video passed its automated 1080p H.264/AAC technical gate, voice-overlap audit, response-gap audit, full FFmpeg decode, and visual review of all arrivals, activities, reward states and finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 34 MP4s. The immediate dry run reported 33 age-eligible items because this new file was inside the stability window. `COVERED-TOPICS.md` now records 43 completed or queued concepts.
+- The scheduled 16:20 uploader ran while production was held. YouTube returned HTTP 429 for `jungle-animal-clue-detectives-01.mp4`, specifically the daily video-upload quota; the queue item was preserved and a later scheduled cycle can retry. Do not bypass the quota or manually duplicate the upload.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
