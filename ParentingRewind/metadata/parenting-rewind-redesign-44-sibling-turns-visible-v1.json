@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-44-sibling-turns-visible",
+  "version": "v1",
+  "title": "Make Sibling Turns Visible | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "When two children both want the same kitchen job, repeated promises that everyone will get a turn can still feel uncertain. Arguing over who asked first keeps attention on fairness claims instead of showing when each turn will happen. Pause and make the sequence visible with names, pictures, or a short timer. Try: Your sister stirs until the timer rings, then you pour the measured cup while she carries the napkins. A visible sequence acknowledges both children and lets the parent follow through without reopening the decision each minute."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/kitchen-siblings-storyboard-01.png",
+    "panel_order": [
+      2,
+      0,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-44-sibling-turns-visible\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-44-sibling-turns-visible-v1.mp4",
+    "duration_seconds": 35.733333333333334,
+    "sha256": "AF35A0DB5EB63D680440EDE174D142B821D76C90ABDE044D8CF9D84921433488"
+  }
+}

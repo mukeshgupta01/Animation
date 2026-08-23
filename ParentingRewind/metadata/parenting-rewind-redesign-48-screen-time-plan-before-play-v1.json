@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-48-screen-time-plan-before-play",
+  "version": "v1",
+  "title": "Make the Screen-Time Ending Plan First | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Ending a game feels more abrupt when a child hears the plan only at the exact moment the screen turns off. Adding several last-minute warnings can still leave the final action unclear and invite a new negotiation each time. Pause before play begins and state one concrete ending sequence. Try: When this episode ends, press stop, place the tablet on the shelf, and meet me at the table for snack. A plan given before the exciting activity makes follow-through more predictable while the same calm boundary remains in place."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/screen-time-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-48-screen-time-plan-before-play\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-48-screen-time-plan-before-play-v1.mp4",
+    "duration_seconds": 36.06666666666667,
+    "sha256": "461E64D12EF4F8B03A6FD6031F556D57C48DC4FAFF05613A98F7D9D80FF24A57"
+  }
+}

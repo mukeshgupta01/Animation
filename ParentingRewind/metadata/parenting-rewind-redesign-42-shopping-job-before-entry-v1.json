@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-42-shopping-job-before-entry",
+  "version": "v1",
+  "title": "Give a Shopping Job Before You Enter | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A busy supermarket asks a five-year-old to wait, follow, ignore bright displays, and remember rules all at once. Giving directions only after grabbing begins can leave the child without a clear role during the hardest moments. Pause before entering and offer one concrete, age-appropriate job. Try: Stay beside the trolley and find three red apples for our bag; when that is done, I will give you the next job. A specific job gives attention somewhere useful while one-step directions remain easier to understand and praise."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/supermarket-storyboard-01.png",
+    "panel_order": [
+      1,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-42-shopping-job-before-entry\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-42-shopping-job-before-entry-v1.mp4",
+    "duration_seconds": 36.9,
+    "sha256": "A9D33251FAEA1A9CE6C828D65E7E5046222B6CF5097986BD6BD968D19F8E076A"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-47-library-reflect-excitement",
+  "version": "v1",
+  "title": "Reflect the Library Excitement | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A four-year-old who finds several favorite books may talk loudly and move quickly through a quiet library. Starting with shushing can miss the excitement driving the behavior and make the limit harder to hear. Pause, reflect the feeling briefly, then give the next clear direction. Try: You found so many stories you love; use your quiet voice and carry these two books with me to the desk. Acknowledging excitement does not remove the library limit; it creates connection before the child practices it."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/library-grandmother-granddaughter-storyboard-01.png",
+    "panel_order": [
+      2,
+      1,
+      0,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-47-library-reflect-excitement\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-47-library-reflect-excitement-v1.mp4",
+    "duration_seconds": 34.266666666666666,
+    "sha256": "D979A1F5893708872B6B60909868D82E89C3C142C6D398C884C738DDC0B60E55"
+  }
+}

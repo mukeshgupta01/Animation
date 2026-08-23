@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-45-soccer-effort-praise",
+  "version": "v1",
+  "title": "Praise the Soccer Effort You Saw | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A missed goal can make a seven-year-old feel that the whole practice was a failure. Saying you were amazing may be kind, but it can miss the specific effort the child can recognize and repeat. Pause and describe one action you genuinely noticed. Try: You kept your eyes on the ball, tried the pass again, and stayed with your team after the miss. Specific praise separates effort and teamwork from the final score without asking the child to ignore disappointment."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Child-led Play",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/soccer-father-son-storyboard-01.png",
+    "panel_order": [
+      1,
+      2,
+      0,
+      4,
+      5,
+      3
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-45-soccer-effort-praise\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-45-soccer-effort-praise-v1.mp4",
+    "duration_seconds": 31.066666666666666,
+    "sha256": "B5206832B98FE069C8C925B5C73419DE79DB5120BBCD3664EB843A8100E0DBA2"
+  }
+}
