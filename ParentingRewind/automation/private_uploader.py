@@ -538,6 +538,77 @@ def reupload_missing(source_name: str, confirm_upload: bool) -> int:
         return 1
 
 
+def manual_batch(max_uploads: int, confirm_upload: bool) -> int:
+    if max_uploads < 1 or max_uploads > 12:
+        raise SafetyError("Manual batch size must be between 1 and 12.")
+    cfg = config()
+    rows = ledger_rows()
+    value = report("explicit-manual-private-batch")
+    folder = source_directory(cfg)
+    value["source_directory"] = str(folder) if folder else None
+    value["uploaded_total_before"] = len(active_upload_rows(rows))
+    if folder is None:
+        raise SafetyError("OneDrive source folder is unavailable.")
+    videos = available_videos(folder, rows)[:max_uploads]
+    if len(videos) != max_uploads:
+        raise SafetyError(
+            f"Requested {max_uploads} uploads but only {len(videos)} validated candidates are available."
+        )
+    value["planned_videos"] = [video.name for video in videos]
+    value["results"] = []
+    value["email_report_paths"] = []
+    for video in videos:
+        upload_metadata(video, cfg)
+        if not ffprobe_ok(video):
+            raise SafetyError(f"FFprobe validation failed for {video}")
+    if not confirm_upload:
+        raise SafetyError("Manual batch blocked: --confirm-private-upload is required.")
+    service, channel = authorized_service()
+    value["verified_channel"] = channel
+    for video in videos:
+        value["attempted"] += 1
+        value["video_name"] = video.name
+        try:
+            result = upload_one(service, video, cfg)
+            value["successful"] += 1
+            value["results"].append(result)
+            email_report = RUNTIME_DIR / f"manual-upload-{result['video_id']}-email-report.json"
+            email_value = {
+                "action": "explicit-manual-private-batch",
+                "started_utc": value["started_utc"],
+                "finished_utc": utc_text(),
+                "attempted": 1,
+                "successful": 1,
+                "remaining_upload_count": len(available_videos(folder, ledger_rows())),
+                "next_due_utc": None,
+                "result": result,
+            }
+            atomic_json(email_report, email_value)
+            value["email_report_paths"].append(str(email_report))
+            value["status"] = "manual-private-batch-in-progress"
+            atomic_json(LATEST_REPORT, {**value, "finished_utc": utc_text()})
+        except Exception as exc:
+            LOGGER.exception("Manual batch stopped after failure for %s", video.name)
+            value["status"] = "failed"
+            value["failures"].append({"video_name": video.name, "error": str(exc)})
+            finish(value)
+            return 1
+    remaining = available_videos(folder, ledger_rows())
+    value["remaining_upload_count"] = len(remaining)
+    value["uploaded_total"] = len(active_upload_rows(ledger_rows()))
+    _, following_due = cadence(ledger_rows(), cfg)
+    value["next_due_utc"] = utc_text(following_due) if following_due else None
+    for email_path_text in value["email_report_paths"]:
+        email_path = Path(email_path_text)
+        email_value = load_object(email_path)
+        email_value["remaining_upload_count"] = len(remaining)
+        email_value["next_due_utc"] = value["next_due_utc"]
+        atomic_json(email_path, email_value)
+    value["status"] = "uploaded-private-batch"
+    finish(value)
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest="command", required=True)
@@ -547,10 +618,15 @@ def main() -> int:
     recovery_parser = sub.add_parser("reupload-missing")
     recovery_parser.add_argument("--source-name", required=True)
     recovery_parser.add_argument("--confirm-private-upload", action="store_true")
+    batch_parser = sub.add_parser("manual-batch")
+    batch_parser.add_argument("--max-uploads", type=int, required=True)
+    batch_parser.add_argument("--confirm-private-upload", action="store_true")
     args = parser.parse_args()
     try:
         if args.command == "reupload-missing":
             return reupload_missing(args.source_name, args.confirm_private_upload)
+        if args.command == "manual-batch":
+            return manual_batch(args.max_uploads, args.confirm_private_upload)
         return run(args.command == "dry-run", getattr(args, "confirm_private_upload", False))
     except Exception as exc:
         LOGGER.exception("Uploader stopped safely")
