@@ -21,8 +21,15 @@ if (-not $mutex.WaitOne(0)) {
 
 try {
     Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) generation cycle started"
-    & $python -B $runner --max-seconds $MaxSeconds --max-items $MaxItems --report-json $report *>> $log
-    $exitCode = $LASTEXITCODE
+    $previousPreference = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        & $python -B $runner --max-seconds $MaxSeconds --max-items $MaxItems --report-json $report *>> $log
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousPreference
+    }
     Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) generation cycle finished with exit code $exitCode"
     exit $exitCode
 }

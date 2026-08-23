@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 17:47 Australia/Sydney
+Last updated: 2026-08-23 21:32 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -21,7 +21,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - Do not create the retired basic matching-picture format. Its existing private upload may remain unpublished or be deleted manually in YouTube Studio.
 - Do not create the animal-shadow guessing format. The user rejected its visual quality on 2026-08-23. Historical completed/private shadow videos may remain, but the producer now blocks new shadow renders and the continuing rotation contains no shadow slots.
 - Do not say or display numbered `Round 1`, `Round 2`, etc. Use natural transitions such as `Let's check the next one`.
-- Use a friendly child-like narrator, currently `en-US-AnaNeural`, at a natural pace and bright but non-squeaky pitch.
+- Rotate friendly, child-appropriate narrator profiles across new videos. Verified profiles are `ana-us` (`en-US-AnaNeural`), `maisie-uk` (`en-GB-MaisieNeural`), `natasha-au` (`en-AU-NatashaNeural`), and `ryan-uk` (`en-GB-RyanNeural`). Keep delivery natural and non-squeaky; do not repeat a profile within three consecutive new videos.
 - Do not write `Made for kids and uploaded privately for review before publication` or similar internal workflow language in descriptions.
 - Always supply a useful title, viewer-facing description, and tags. Keep made-for-kids/private settings in YouTube status fields.
 - Avoid repeating the same animals in consecutive or very similar themes.
@@ -59,6 +59,8 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production-assets/four-seasons-*.png`: four accepted generated backgrounds for spring, summer, autumn and winter. Force-add these ignored PNG assets with the producer so the video remains reproducible on another computer.
 - `automation/production/produce_bea_healthy_habits.py`: resumable six-minute story with a new moving bee mascot, five life-skills destinations, five habit badges, two voice deliveries, and audited response gaps.
 - `automation/production-assets/healthy-habits-*.png`: five accepted generated backgrounds for handwashing, toothbrushing, colourful food, movement and sleep. Force-add these ignored PNG assets with the producer for cross-computer reproducibility.
+- `automation/production/produce_maya_joey_rescue.py`: resumable child-led Australian wildlife-helping story with independently moving Maya, joey and adult-kangaroo characters, two weather states, two voice profiles and three audited participation gaps.
+- `automation/production-assets/maya-character.png`, `joey-character.png`, `adult-kangaroo-character.png`, `maya-joey-rainy-park.png`, and `maya-joey-sunset-park.png`: accepted generated cutouts and matched park backgrounds for the Maya story. Force-add these ignored PNG assets with the producer for cross-computer reproducibility.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -337,6 +339,39 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - Existing historical and queued disappearance videos are preserved. Do not delete or regenerate them.
 - Scheduled generation remains enabled, but an exhausted curated manifest now completes without producing a video. Add intentionally varied, reviewed manifest items before expecting further output; do not restore a repetitive fallback.
 - Future mixed catalogs may use the memory format occasionally, but it must not run consecutively or dominate the rotation. Prefer stories, science, movement, sounds, habitats, kindness, cause-and-effect, and other visually distinct formats.
+
+## Creative-format and narration rotation
+
+- On 2026-08-23, the user clarified that children should not feel that new Tiny Tales videos are the same kind of video with the same voice.
+- `automation/voice_profiles.py` defines four verified Edge TTS profiles: `ana-us`, `maisie-uk`, `natasha-au`, and `ryan-uk`. `produce_snack_video.py` now exposes the selected profile to the shared producer family, and `generation_runner.py` passes a stable item seed or explicit manifest profile into each new subprocess.
+- New non-legacy manifest items must declare `format_family`, `visual_system`, `interaction_style`, and `voice_profile`. Validation rejects a voice or format family repeated within the previous two new manifest entries. The selected fields are copied into queued metadata for auditability.
+- Before designing a new concept, review at least the latest five entries in `COVERED-TOPICS.md` plus live queued metadata. Change the format, interaction, art/layout system, presenter/character, and setting progression—not only the topic or animal family.
+- When a story includes a speaking character, use a separate actual voice from the narrator. Pitch/rate variation of one voice alone is not sufficient.
+- Existing completed and queued media must not be regenerated merely to retrofit this policy. Apply it prospectively to new productions.
+
+## User-requested varied story roadmap
+
+- `STORY-ROADMAP.md` records the user’s latest directions and distinct treatments: children helping an animal, children playing with star characters to a public-domain “Twinkle” adaptation, a nonviolent ninja-soccer kindness story, an original paintbrush song, a kinder Ant and Grasshopper musical retelling, Five Little Ducks, an original peek-a-boo spatial-language song, a traditional shark-family concept with fully original Tiny Tales arrangement/visuals, an inclusive birthday celebration, and a health-routine rhythm relay distinct from Bea.
+- It now also records colour-mixing, breakfast, Dad-coming-home, Mumma-shopping, playing-with-friends, sharing-toys, excavator construction, ice-cream science and fruit-picking concepts, plus an initial set of proactively invented future ideas. Keep expanding the slate without collapsing it into one song or quiz template.
+- The roadmap also defines six possible recurring characters unlike Pip: Rory the Rocket, Momo the Mole, Kiko the Kite, Fizz the Bubble, Tavi the Tiny Train and Cora the Coral Polyp. None may reuse Pip’s exact float/travel/token loop.
+- Production priority begins with `Maya and the Rainy-Day Joey Rescue`, a child-led animal-helping story with an Australian narrator and a different Maya dialogue voice. Follow it with a different format such as the star-character musical rather than another rescue story.
+- Song concepts must use public-domain source material where applicable and new Tiny Tales arrangements, connecting verses, sound design and visuals. Never imitate a modern branded recording or character design.
+
+## Newest-first upload priority
+
+- On 2026-08-23, the user explicitly requested that the uploader choose a recently created video when uploading.
+- `automation/config.json` now sets `upload_queue_order` to `newest_first`. `queue_files()` in `automation/uploader.py` sorts stable eligible MP4s by descending modification time and then filename for deterministic ties.
+- This priority change preserves the five-minute stability window, technical validation, exact channel verification, private visibility, made-for-kids status, explicit confirmation flag, ledger duplicate checks and unresolved-attempt refusal.
+- Dry-run the queue after any ordering change and report the selected filename before relying on the next Scheduled Task.
+
+## Maya and the Rainy-Day Joey Rescue checkpoint
+
+- At 21:29 on 2026-08-23, `Maya and the Rainy-Day Joey Rescue` completed as `maya-rainy-day-joey-rescue-01` at 225.6 seconds. It is a connected child-led wildlife-helping story rather than another disappearance game or theme-swapped quiz.
+- The story uses `natasha-au` narration and `maisie-uk` Maya dialogue, independently moving Maya/joey/adult-kangaroo characters, rainy and post-rain sunset park states, and three child activities: give space, slow breathing and gentle finger hops.
+- Five built-in image-generation calls produced the accepted project assets listed above. The automated quality gate passed every check, all three response gaps exceeded five seconds, the complete MP4 passed an FFmpeg decode, and the contact sheet was visually reviewed across discovery, helper call, calm waiting, reunion and safety lesson.
+- The generation task finished successfully and returned to Ready with exit code `0`. The pending private-upload queue contains 38 MP4s, and `COVERED-TOPICS.md` records 47 concepts. No upload was triggered by generation.
+- The upload task remains independent and needs no active Codex session. It is installed for 00:20, 04:20, 08:20, 12:20, 16:20 and 20:20 checks; the computer must remain signed in, network-connected and available to wake. All uploads remain private and made for kids.
+- Immediately after generation, the five-minute stability guard correctly excluded Maya and the dry run selected `what-farm-animal-disappeared-01.mp4`. At 21:34, after the guard elapsed, a second dry run selected `maya-rainy-day-joey-rescue-01.mp4` from all 38 eligible items, confirming newest-first behavior without uploading it.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 

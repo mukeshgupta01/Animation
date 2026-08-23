@@ -13,6 +13,8 @@ import subprocess
 import time
 from typing import Any
 
+from voice_profiles import profile_names
+
 
 HERE = Path(__file__).resolve().parent
 PROJECT = HERE.parent
@@ -20,6 +22,14 @@ CONFIG = HERE / "config.json"
 MANIFEST = HERE / "generation-manifest.json"
 STATE = HERE / "runtime" / "generation-state.json"
 LOG = HERE / "logs" / "generation.log"
+LEGACY_MANIFEST_IDS = {
+    "who-ate-the-snack-episode-01",
+    "guess-the-animal-shadow-01",
+    "what-animal-disappeared-01",
+    "find-the-matching-animal-01",
+    "ocean-animal-superpowers-01",
+    "animal-alphabet-a-to-f-01",
+}
 
 
 def load(path: Path, default: Any) -> Any:
@@ -61,6 +71,32 @@ def validate_manifest() -> list[dict[str, Any]]:
         if item["id"] in seen:
             raise RuntimeError(f"Duplicate generation ID: {item['id']}")
         seen.add(item["id"])
+    creative_items = [item for item in items if item["id"] not in LEGACY_MANIFEST_IDS]
+    creative_fields = {"format_family", "visual_system", "interaction_style", "voice_profile"}
+    recent_voices: list[str] = []
+    recent_formats: list[str] = []
+    for item in creative_items:
+        missing = creative_fields - item.keys()
+        if missing:
+            raise RuntimeError(
+                f"New generation item {item['id']} must declare creative rotation fields: "
+                f"{', '.join(sorted(missing))}"
+            )
+        if item["voice_profile"] not in profile_names():
+            raise RuntimeError(
+                f"New generation item {item['id']} has unknown voice_profile "
+                f"{item['voice_profile']!r}"
+            )
+        if item["voice_profile"] in recent_voices[-2:]:
+            raise RuntimeError(
+                f"Voice profile {item['voice_profile']!r} repeats within three new videos"
+            )
+        if item["format_family"] in recent_formats[-2:]:
+            raise RuntimeError(
+                f"Format family {item['format_family']!r} repeats within three new videos"
+            )
+        recent_voices.append(item["voice_profile"])
+        recent_formats.append(item["format_family"])
     return items
 
 
@@ -90,6 +126,10 @@ def publish(item: dict[str, Any], output: Path) -> None:
     shutil.copy2(output, destination)
     metadata = item.get("youtube")
     if metadata:
+        metadata = dict(metadata)
+        for field in ("voice_profile", "format_family", "visual_system", "interaction_style"):
+            if field in item:
+                metadata[field] = item[field]
         save(destination.with_suffix(".json"), metadata)
 
 
@@ -148,7 +188,16 @@ def main() -> int:
         states[item["id"]] = {"status": "running", "started_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
         save(STATE, state_doc)
         LOGGER.info("Starting generation: %s", item["name"])
-        process = subprocess.Popen(item["command"], cwd=working, creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+        process_environment = os.environ.copy()
+        process_environment["TINY_TALES_VOICE_SEED"] = item["id"]
+        if item.get("voice_profile"):
+            process_environment["TINY_TALES_VOICE_PROFILE"] = item["voice_profile"]
+        process = subprocess.Popen(
+            item["command"],
+            cwd=working,
+            env=process_environment,
+            creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,
+        )
         try:
             return_code = process.wait(timeout=remaining)
         except subprocess.TimeoutExpired:

@@ -1,0 +1,26 @@
+{
+  "id": "maya-rainy-day-joey-rescue-01",
+  "title": "Maya and the Rainy-Day Joey Rescue | Kindness Story for Kids",
+  "description": "Join Maya in a gentle Australian park story about helping a young kangaroo safely. Maya notices carefully, gives the wild animal space, calls a trusted wildlife helper, waits calmly, and celebrates a family reunion from far away.\n\nA connected Tiny Tales kindness adventure supporting empathy, safe wildlife choices, listening, emotional regulation, and thoughtful action for children ages 3 to 7.",
+  "tags": [
+    "kindness story for kids",
+    "helping animals",
+    "kangaroo for kids",
+    "Australian animals",
+    "empathy for kids",
+    "Tiny Tales",
+    "preschool story"
+  ],
+  "category_id": "27",
+  "made_for_kids": true,
+  "privacy": "private",
+  "upload_authorized": false,
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\maya-rainy-day-joey-rescue-01.mp4",
+  "duration_seconds": 225.54800000000003,
+  "voice_profile": "natasha-au",
+  "character_voice_profile": "maisie-uk",
+  "format_family": "child-led-animal-rescue-story",
+  "visual_system": "moving-cutout-rainy-park-storybook",
+  "interaction_style": "gesture-breathing-and-movement-participation",
+  "new_image_generation_calls": 5
+}

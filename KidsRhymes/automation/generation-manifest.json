@@ -129,6 +129,28 @@
         "tags": ["animal alphabet", "learn ABC", "letters for kids", "preschool alphabet", "animal names", "Tiny Tales", "early learning"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "maya-rainy-day-joey-rescue-01",
+      "name": "Maya and the Rainy-Day Joey Rescue",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_maya_joey_rescue.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/maya-rainy-day-joey-rescue-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "child-led-animal-rescue-story",
+      "visual_system": "moving-cutout-rainy-park-storybook",
+      "interaction_style": "gesture-breathing-and-movement-participation",
+      "voice_profile": "natasha-au",
+      "youtube": {
+        "title": "Maya and the Rainy-Day Joey Rescue | Kindness Story for Kids",
+        "description": "Join Maya in a gentle Australian park story about helping a young kangaroo safely. Maya notices carefully, gives the wild animal space, calls a trusted wildlife helper, waits calmly, and celebrates a family reunion from far away.\n\nA connected Tiny Tales kindness adventure supporting empathy, safe wildlife choices, listening, emotional regulation, and thoughtful action for children ages 3 to 7.",
+        "tags": ["kindness story for kids", "helping animals", "kangaroo for kids", "Australian animals", "empathy for kids", "Tiny Tales", "preschool story"],
+        "category_id": "27"
+      }
     }
   ]
 }

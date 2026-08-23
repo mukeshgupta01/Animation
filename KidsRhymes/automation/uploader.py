@@ -138,7 +138,12 @@ def queue_files(cfg: dict[str, Any]) -> list[Path]:
             LOGGER.warning("Duplicate content excluded: %s", path.name)
             continue
         eligible.append(path)
-    return sorted(eligible, key=lambda item: (item.stat().st_mtime, item.name.casefold()))
+    order = cfg.get("upload_queue_order", "oldest_first")
+    if order == "newest_first":
+        return sorted(eligible, key=lambda item: (-item.stat().st_mtime, item.name.casefold()))
+    if order == "oldest_first":
+        return sorted(eligible, key=lambda item: (item.stat().st_mtime, item.name.casefold()))
+    raise SafetyError(f"Unsupported upload_queue_order: {order!r}")
 
 
 def import_google() -> tuple[Any, Any, Any, Any, Any]:
@@ -358,7 +363,7 @@ def main() -> int:
     sub.add_parser("verify", help="Verify token, lock, and channels.list(mine=true)")
     dry = sub.add_parser("dry-run", help="Inspect the dedicated new-video queue without uploading")
     dry.add_argument("--report-json")
-    run = sub.add_parser("run", help="Upload the oldest eligible new video")
+    run = sub.add_parser("run", help="Upload the next eligible new video using configured queue order")
     run.add_argument("--confirm-upload", action="store_true", help="Required acknowledgement for a real private upload")
     run.add_argument("--report-json")
     args = parser.parse_args()

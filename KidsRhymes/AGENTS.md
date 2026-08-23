@@ -57,3 +57,28 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The user asked not to create disappearance-memory videos so frequently.
 - `automation/generation_runner.py` no longer synthesizes a five-theme disappearance episode whenever the curated manifest is exhausted. Existing completed and queued memory videos remain preserved.
 - An exhausted manifest now produces no new video until a deliberately varied item is added. Do not restore an all-disappearance fallback. Disappearance may appear occasionally in a genuinely mixed catalog, but never consecutively or as the dominant continuing format.
+
+## Creative and voice rotation (2026-08-23 Australia/Sydney)
+
+- The user does not want children to feel that new videos are the same template or the same voice. Variation must be structural, not merely a theme or animal swap.
+- Consecutive new videos must vary the format family, visual system, interaction mechanic, character or presenter, setting structure, and narration profile. Review at least the latest five covered/queued concepts before proposing the next one.
+- Available verified voice profiles are `ana-us`, `maisie-uk`, `natasha-au`, and `ryan-uk`. Do not use the same profile within three consecutive new videos. Keep delivery natural, friendly, and non-squeaky.
+- Long-form character stories should use genuinely different narrator and character voices when dialogue is present, rather than using only pitch changes on one voice.
+- Every new non-legacy manifest item must declare `format_family`, `visual_system`, `interaction_style`, and `voice_profile`. The runner rejects missing fields and recent voice/format repetition before rendering.
+- Record the actual voice profile and creative-family fields in queued metadata and quality reports so future sessions can audit the rotation. Preserve all completed media; this policy applies prospectively.
+- The user’s requested story/song directions are recorded in `STORY-ROADMAP.md`: health routines, peek-a-boo, a traditional shark-family song with an original arrangement, star-character play using the public-domain “Twinkle” melody, an Ant and Grasshopper musical retelling, a paintbrush song, birthday celebration, Five Little Ducks, a ninja soccer child, and children helping an animal. Preserve the roadmap’s distinct treatment of each idea.
+- The roadmap also records the user’s colour, breakfast, dad-coming-home, Mumma-shopping, playing-with-friends, sharing-toys, excavator, ice-cream and fruit-picking directions plus additional original concepts. Continue extending this roadmap proactively with genuinely different ideas, then produce them under the novelty and voice rules.
+- Prioritize the animal-helping story first, then rotate through song, sports, art, fable, counting and celebration formats. Do not produce several songs or several rescue stories consecutively.
+
+## Newest-first private uploads (2026-08-23 Australia/Sydney)
+
+- The user asked that private uploads choose the most recently created stable video rather than the oldest queued video.
+- `automation/config.json` sets `upload_queue_order` to `newest_first`; `automation/uploader.py` applies descending modification time with a deterministic filename tie-breaker after all existing stability, duplicate, archive and technical checks.
+- This changes queue priority only. It does not authorize public visibility, bypass unresolved-attempt protection, change made-for-kids status, or weaken the immutable channel lock.
+
+## Latest completed story checkpoint (2026-08-23 21:32 Australia/Sydney)
+
+- `Maya and the Rainy-Day Joey Rescue` completed as `maya-rainy-day-joey-rescue-01` at 225.6 seconds and is queued for private review. It uses `natasha-au` narration, `maisie-uk` dialogue, moving Maya/joey/adult-kangaroo characters, two matched weather states and three audited participation gaps.
+- The producer is `automation/production/produce_maya_joey_rescue.py`. Its five accepted generated assets are `automation/production-assets/maya-character.png`, `joey-character.png`, `adult-kangaroo-character.png`, `maya-joey-rainy-park.png`, and `maya-joey-sunset-park.png`; keep them with the producer for reproducibility.
+- Automated checks, a full FFmpeg decode and visual contact-sheet review passed. The queue contains 38 MP4s and `COVERED-TOPICS.md` records 47 concepts. After the five-minute stability window, the uploader dry run selected Maya as the newest eligible item; no upload was triggered.
+- The upload Scheduled Task is already installed and operates without an active Codex session. Keep its existing private/made-for-kids, channel-lock, duplicate, stability and unresolved-attempt safeguards intact.

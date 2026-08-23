@@ -4,7 +4,7 @@ Updated: 2026-08-23
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 46.
+Known completed or queued video concepts: 47.
 
 ## Topic index
 
@@ -36,6 +36,7 @@ Known completed or queued video concepts: 46.
 - Guess The Farm Animal Shadow 01 — `guess-the-farm-animal-shadow-01` — archived/uploaded
 - Jungle Animal Clue Detectives | Guessing Adventure for Kids — `jungle-animal-clue-detectives-01` — completed local, queued private upload
 - The Little Raindrop's Big Journey | Water Cycle Story for Kids — `little-raindrop-water-cycle-01` — completed local, queued private upload
+- Maya and the Rainy-Day Joey Rescue | Kindness Story for Kids — `maya-rainy-day-joey-rescue-01` — completed local, queued private upload
 - Ocean Amazing Animal Tools | Body Features for Kids — `ocean-amazing-animal-tools-01` — completed local, queued private upload
 - Ocean Animal Counting Parade | Count 1 to 4 for Kids — `ocean-animal-counting-parade-01` — completed local, queued private upload
 - Ocean Animal Superpower Detectives | Amazing Facts for Kids — `ocean-animal-superpowers-01` — archived/uploaded

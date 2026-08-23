@@ -9,10 +9,16 @@ import math
 from pathlib import Path
 import struct
 import subprocess
+import sys
 import wave
 
 import edge_tts
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+
+AUTOMATION_MODULE_DIR = Path(__file__).resolve().parent.parent
+if str(AUTOMATION_MODULE_DIR) not in sys.path:
+    sys.path.insert(0, str(AUTOMATION_MODULE_DIR))
+from voice_profiles import select_voice_profile
 
 
 HERE = Path(__file__).resolve().parent
@@ -23,9 +29,11 @@ OUTPUT_DIR = AUTOMATION / "production-output"
 WORK_ROOT = AUTOMATION / "production-work"
 W, H = 1920, 1080
 ART_FPS, VIDEO_FPS = 10, 30
-VOICE = "en-US-AnaNeural"
-VOICE_RATE = "-4%"
-VOICE_PITCH = "+10Hz"
+VOICE_PROFILE = select_voice_profile()
+VOICE_PROFILE_NAME = VOICE_PROFILE["name"]
+VOICE = VOICE_PROFILE["voice"]
+VOICE_RATE = VOICE_PROFILE["rate"]
+VOICE_PITCH = VOICE_PROFILE["pitch"]
 
 ANIMALS = [["rabbit", "panda", "monkey"], ["mouse", "giraffe", "squirrel"]]
 ROUNDS = [
