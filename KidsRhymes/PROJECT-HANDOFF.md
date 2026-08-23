@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 15:56 Australia/Sydney
+Last updated: 2026-08-23 16:02 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -51,6 +51,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_animal_sound_orchestra.py`: resumable one-off concert with eight farm, wild and bird performers, animated stage palettes, and child call-and-response windows.
 - `automation/production/produce_animal_opposites_playground.py`: resumable one-off split-screen spatial-vocabulary adventure with six opposite pairs and movement prompts.
 - `automation/production/produce_animal_shape_builders.py`: resumable one-off early-geometry construction story with six shapes, changing environments, and tracing prompts.
+- `automation/production/produce_tiny_seed_growth_story.py`: resumable one-off plant-life-cycle narrative with seven growth stages, an underground root cutaway, and farm helpers.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -259,6 +260,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The video passed its automated technical gate, full FFmpeg decode, and a visual review of the title, all six teaching screens, all six tracing screens, and the completed-playground finale.
 - Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 32 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 31 age-eligible items because the newest video was still inside the configured stability window.
 - `COVERED-TOPICS.md` was rebuilt and now records 41 completed or queued concepts.
+
+## Tiny Seed farm growth story checkpoint
+
+- On 2026-08-23, the one-off `The Tiny Seed's Big Farm Adventure` completed at 162.2 seconds.
+- Seven connected stages follow a sunflower from seed, planting and watering through roots, sprout, leaves, flower and new seeds. Changing sun/rain palettes, an underground root cutaway, plant-stage drawings and six farm helpers make the growth sequence visually explicit.
+- Narration introduces germination, root functions, the ingredients leaves use to make sugars, pollination and the repeating plant life cycle. Three five-second movement moments invite children to grow fingers downward as roots, curl and rise as a sprout, and stretch as leaves.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the lifecycle title, all seven stages, all three movement states, and the finale. All environments and plant stages were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 33 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 32 age-eligible items because the newest story was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 42 completed or queued concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
