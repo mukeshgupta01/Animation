@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 21:32 Australia/Sydney
+Last updated: 2026-08-23 22:05 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -61,6 +61,8 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production-assets/healthy-habits-*.png`: five accepted generated backgrounds for handwashing, toothbrushing, colourful food, movement and sleep. Force-add these ignored PNG assets with the producer for cross-computer reproducibility.
 - `automation/production/produce_maya_joey_rescue.py`: resumable child-led Australian wildlife-helping story with independently moving Maya, joey and adult-kangaroo characters, two weather states, two voice profiles and three audited participation gaps.
 - `automation/production-assets/maya-character.png`, `joey-character.png`, `adult-kangaroo-character.png`, `maya-joey-rainy-park.png`, and `maya-joey-sunset-park.png`: accepted generated cutouts and matched park backgrounds for the Maya story. Force-add these ignored PNG assets with the producer for cross-computer reproducibility.
+- `automation/production/produce_nia_rainbow_breakfast.py`: original 3D-look breakfast/colour/movement prototype using pose switching, parallax, camera travel, two voices, original rhythmic audio and six audited participation gaps.
+- `automation/production-assets/nia-3d-pose-sheet.png`, `breakfast-friends-3d-pose-sheet.png`, `rainbow-breakfast-kitchen-3d.png`, `rainbow-breakfast-table-3d.png`, and `rainbow-breakfast-finale-3d.png`: accepted generated 3D-rendered character and kitchen assets. Force-add them with the producer. This method is not true rigged Blender animation.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -372,6 +374,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The generation task finished successfully and returned to Ready with exit code `0`. The pending private-upload queue contains 38 MP4s, and `COVERED-TOPICS.md` records 47 concepts. No upload was triggered by generation.
 - The upload task remains independent and needs no active Codex session. It is installed for 00:20, 04:20, 08:20, 12:20, 16:20 and 20:20 checks; the computer must remain signed in, network-connected and available to wake. All uploads remain private and made for kids.
 - Immediately after generation, the five-minute stability guard correctly excluded Maya and the dry run selected `what-farm-animal-disappeared-01.mp4`. At 21:34, after the guard elapsed, a second dry run selected `maya-rainy-day-joey-rescue-01.mp4` from all 38 eligible items, confirming newest-first behavior without uploading it.
+
+## Nia 3D-look prototype and explicit generation stop
+
+- On 2026-08-23, the user requested an original lively 3D preschool video inspired only by the broad engagement qualities of leading nursery-animation channels, not a copy of any channel's videos, characters, songs, branding, sets, faces or trade dress.
+- `Nia's Rainbow Breakfast Dance` completed as `nia-rainbow-breakfast-dance-01` at 150.7 seconds. It teaches red/yellow/blue through an original breakfast chant, six movement pauses and inclusive guidance that breakfast can look different in every family.
+- Five built-in image-generation calls produced six consistent Nia poses, two poses each for strawberry/banana/blueberry friends, and three lively kitchen environments. The final method is 3D-rendered pose animation with bounce/tilt, pose switching, parallax and camera motion; Blender was not installed, so this must not be represented as true rigged 3D animation.
+- Nia uses `ana-us` and the host uses `ryan-uk`. The technical gate passed, all six quiet response gaps exceed five seconds, the complete MP4 decoded without error, and the corrected contact sheet was visually reviewed after moving the title panel away from Nia's face and speeding up her opening entrance.
+- The corrected MP4 and private/made-for-kids metadata are in the pending queue. The queue contains 39 MP4s, and `COVERED-TOPICS.md` records 48 concepts. The immediate dry run excluded Nia during the stability window and selected Maya; after five minutes, a second dry run selected Nia from all 39 eligible videos. Neither dry run uploaded anything.
+- After the one deliberate prototype completed, `Tiny Tales - Continuous Generation` was disabled and verified Disabled with last result `0`; no Python or FFmpeg process remained. Do not re-enable automatic generation unless the user explicitly asks. `Tiny Tales - Daily Private Upload` remains enabled and Ready for 00:20, with its prior result `1` preserved from the recorded quota failure.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 

@@ -87,6 +87,7 @@ This roadmap records user-requested concepts for future production. Before rende
     - Children assemble several culturally varied breakfast plates with help from grown-ups, practising sequence, food variety and listening to hunger/fullness cues without labelling foods “good” or “bad.”
     - Visual system: kitchen conveyor rhythm, ingredient motion and plate mosaics; original song.
     - Voice: `natasha-au`.
+    - Prototype completed as the deliberately different `Nia's Rainbow Breakfast Dance`: an original 3D-look colour-and-movement chant using Nia plus red strawberry, yellow banana and blue blueberry friends. Preserve the broader culturally varied plate-building version as a possible later breakfast concept rather than duplicating this prototype.
 
 13. **Dad’s Coming-Home Welcome Rhythm**
     - User direction: dad coming home song.

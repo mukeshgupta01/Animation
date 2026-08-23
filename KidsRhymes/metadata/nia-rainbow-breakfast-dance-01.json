@@ -1,0 +1,27 @@
+{
+  "id": "nia-rainbow-breakfast-dance-01",
+  "title": "Nia's Rainbow Breakfast Dance | Colours and Movement for Kids",
+  "description": "Dance through a colourful breakfast morning with Nia and three lively fruit friends. Children clap, tap, stretch, turn, identify red, yellow and blue, and hear gentle food-safety guidance for family breakfast time.\n\nAn original Tiny Tales 3D-look music-and-movement adventure for children ages 3 to 7.",
+  "tags": [
+    "breakfast song for kids",
+    "colour song",
+    "dance for kids",
+    "3D animation for kids",
+    "preschool movement",
+    "fruit for kids",
+    "Tiny Tales"
+  ],
+  "category_id": "27",
+  "made_for_kids": true,
+  "privacy": "private",
+  "upload_authorized": false,
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\nia-rainbow-breakfast-dance-01.mp4",
+  "duration_seconds": 150.58799999999997,
+  "voice_profile": "ana-us",
+  "character_voice_profile": "ryan-uk",
+  "format_family": "original-3d-preschool-breakfast-dance",
+  "visual_system": "3d-rendered-pose-animation-with-parallax-kitchen",
+  "interaction_style": "beat-synced-colour-call-and-movement",
+  "new_image_generation_calls": 5,
+  "true_rigged_3d_animation": false
+}
