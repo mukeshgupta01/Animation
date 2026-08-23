@@ -28,8 +28,32 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Both Scheduled Tasks were Ready when checked at 16:54. Next runs were generation at 20:05 and private upload at 20:20. The 16:20 upload had failed with YouTube daily upload-quota HTTP 429 and preserved the queue item; do not bypass or duplicate that upload.
 - This checkpoint is committed and pushed in the same production interval. A new account must still verify a clean worktree and zero divergence from `origin/main` before starting the next concept. Choose a different topic and visual system; do not turn Pip or Bea into a repetitive fixed-location template.
 
-## Active next interval (started 2026-08-23 17:18 Australia/Sydney)
+## User-requested pause (2026-08-23 17:27 Australia/Sydney)
 
-- The next concept is `Rory's Eight-Planet Postcard Adventure`, a long-form Solar System journey with a new independently moving rocket mascot. Eight destinations follow the subject naturally: Mercury through Neptune. This is not a fixed-location template or repeated animal quiz.
-- Before continuing this interval, inspect live Python/FFmpeg processes and the worktree. Do not start a duplicate producer if another account is already rendering or generating its assets.
-- Planned safeguards: use NASA primary-source facts; distinguish planets from not-to-scale illustrations; never imply landing on gas/ice giants; use real five-second participation gaps; generate visually distinct planet environments; validate, queue private/made-for-kids, rebuild topics, update this file and the handoff, then commit/push.
+- The user asked to stop creating videos so they can change Codex accounts first. Do not resume generation or start a renderer until the user explicitly asks the new account to continue.
+- The briefly proposed `Rory's Eight-Planet Postcard Adventure` was stopped before a producer, metadata file, rendered video, or queue entry was created. It is not a completed or covered topic.
+- Three preview-only built-in image generations for Mercury, Venus, and Earth were made under Codex's default generated-images directory but were not copied into this workspace or consumed by project code. A future account should begin from live project state and may redesign or discard that proposal.
+- No Python or FFmpeg process was active when this pause was recorded. The latest completed video remains `Bea's Healthy Habits Treasure Trail`; the completed checkpoint immediately above is authoritative.
+- `Tiny Tales - Continuous Generation` was disabled after the stop request so its 20:05 trigger cannot create another video. The separate `Tiny Tales - Daily Private Upload` task remains Ready for the already-approved four-hour private queue cadence. Re-enable generation only after a new explicit user instruction.
+
+## Generation resumed (2026-08-23 17:36 Australia/Sydney)
+
+- The user explicitly asked the new Codex account to continue from the project handoff, satisfying the pause checkpoint's resume condition.
+- Live verification found a clean `main` worktree at `5fda52b`, zero divergence from `origin/main`, 36 pending MP4s, 9 archived/ledgered uploads, and no active Python or FFmpeg process.
+- Read-only YouTube verification matched Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The upload dry run selected `jungle-animal-clue-detectives-01.mp4` from 36 queued items and performed no upload.
+- `Tiny Tales - Continuous Generation` was re-enabled and verified Ready for 20:05. `Tiny Tales - Daily Private Upload` remained enabled and Ready for 20:20; its previous result remains `1` from the recorded quota failure.
+- Generation is authorized again under the existing one-video-per-cycle safeguards. The animal-shadow format remains retired, and uploads remain private, made for kids, channel-locked, and independently scheduled.
+
+## First resumed generation cycle (2026-08-23 17:42 Australia/Sydney)
+
+- After the user reaffirmed that video generation should continue, the existing guarded Scheduled Task was started once manually while remaining enabled for its normal triggers.
+- `What Farm Animal Disappeared? | Memory Game 1 for Kids` completed successfully as `what-farm-animal-disappeared-01` at 130 seconds. It passed the automated quality gate, a full FFmpeg decode, and visual contact-sheet review.
+- The completed MP4 and viewer-facing metadata are in `automation/pending-uploads`; the private queue contains 37 MP4s. No upload was triggered by this generation cycle.
+- `COVERED-TOPICS.md` was rebuilt and records 46 concepts. The next count-only candidate is `What Colourful Bird Disappeared 1`.
+- The generation task returned to Ready with exit code `0` and remains scheduled for 20:05. Continue respecting the one-video-per-cycle cap and add varied non-quiz formats so disappearance episodes do not dominate the catalog.
+
+## Disappearance-frequency correction (2026-08-23 Australia/Sydney)
+
+- The user asked not to create disappearance-memory videos so frequently.
+- `automation/generation_runner.py` no longer synthesizes a five-theme disappearance episode whenever the curated manifest is exhausted. Existing completed and queued memory videos remain preserved.
+- An exhausted manifest now produces no new video until a deliberately varied item is added. Do not restore an all-disappearance fallback. Disappearance may appear occasionally in a genuinely mixed catalog, but never consecutively or as the dominant continuing format.

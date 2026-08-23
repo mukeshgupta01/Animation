@@ -93,40 +93,6 @@ def publish(item: dict[str, Any], output: Path) -> None:
         save(destination.with_suffix(".json"), metadata)
 
 
-def continuous_item(index: int) -> dict[str, Any]:
-    # Shadow guessing was retired by the user on 2026-08-23. Keep the
-    # historical files, but never schedule a new shadow-format episode.
-    slots = [("jungle", "disappeared"), ("ocean", "disappeared"), ("farm", "disappeared"), ("birds", "disappeared"), ("land", "disappeared")]
-    theme, game = slots[index % len(slots)]
-    episode = 1 + index // len(slots) + (1 if theme == "land" else 0)
-    ocean = theme == "ocean"
-    labels = {"land": "Animal", "farm": "Farm Animal", "ocean": "Ocean Animal", "jungle": "Jungle Animal", "birds": "Colourful Bird"}
-    subjects = {"land": "animals", "farm": "farm animals", "ocean": "ocean animals", "jungle": "jungle animals", "birds": "colourful birds"}
-    theme_label, subject = labels[theme], subjects[theme]
-    if game == "shadow":
-        filename = f"guess-the-{theme + '-' if theme != 'land' else ''}animal-shadow-{episode:02d}.mp4"
-        title = f"Guess the {theme_label} Shadow | Observation Game {episode} for Kids"
-        description = f"Look carefully at each mystery silhouette and use the picture clues to identify six friendly {subject}. Every answer includes a fascinating animal fact.\n\nA playful preschool challenge supporting observation, listening, vocabulary, and early reasoning."
-        tags = ["guess the animal", "animal shadows", "observation game", "preschool learning", "kids puzzles", "Tiny Tales", subject]
-        name = f"{theme_label} Shadow Observation Game {episode}"
-    else:
-        filename = f"what-{theme + '-' if theme != 'land' else ''}animal-disappeared-{episode:02d}.mp4"
-        title = f"What {theme_label} Disappeared? | Memory Game {episode} for Kids"
-        description = f"Watch the friendly {subject} carefully, remember every picture, and discover which friend disappears. The puzzles gradually become more challenging.\n\nA gentle preschool memory game supporting concentration, visual recall, listening, and animal recognition."
-        tags = ["what disappeared", "memory game for kids", "animal memory", "preschool game", "kids challenge", "Tiny Tales", subject]
-        name = f"What {theme_label} Disappeared {episode}"
-    return {
-        "id": f"continuous-{index:05d}-{theme}-{game}-{episode:02d}",
-        "name": name,
-        "command": [str(PROJECT.parent / ".venv" / "Scripts" / "python.exe"), "-B", "automation\\production\\produce_animal_games.py", "--game", game, "--theme", theme, "--episode", str(episode)],
-        "working_directory": ".",
-        "output": f"automation/production-output/{filename}",
-        "publish_to_upload_queue": True,
-        "youtube": {"title": title[:100], "description": description, "tags": tags, "category_id": "27"},
-        "_continuous_index": index,
-    }
-
-
 def summary(items: list[dict[str, Any]], states: dict[str, Any]) -> dict[str, Any]:
     completed = [item["name"] for item in items if states.get(item["id"], {}).get("status") == "completed"]
     remaining = [item["name"] for item in items if states.get(item["id"], {}).get("status") != "completed"]
@@ -143,8 +109,10 @@ def main() -> int:
     args = parser.parse_args()
     state_doc = load(STATE, {"version": 1, "items": {}})
     items = validate_manifest()
-    if all(state_doc.get("items", {}).get(item["id"], {}).get("status") == "completed" for item in items):
-        items.append(continuous_item(int(state_doc.get("continuous_index", 0))))
+    # The former fallback generated only disappearance-memory episodes. The
+    # user asked on 2026-08-23 not to create that format frequently, so an
+    # exhausted manifest now stays exhausted. Add deliberately varied,
+    # reviewed items to the manifest instead of synthesizing repetitive work.
     states = state_doc.setdefault("items", {})
     before = summary(items, states)
     if args.count_only:

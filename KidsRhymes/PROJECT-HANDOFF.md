@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 17:14 Australia/Sydney
+Last updated: 2026-08-23 17:47 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -304,6 +304,39 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - Five built-in image-generation calls produced five accepted, visually distinct storybook environments with no rejected variants. Accepted files are under `automation/production-assets/healthy-habits-*.png` and must be force-added despite the broad PNG ignore rule.
 - The final MP4 passed its automated 1080p H.264/stereo AAC gate, voice-overlap and activity-gap audits, full FFmpeg decode, and a visual review of title, all destinations, prompt/reward states, moving Bea, and finale.
 - Read-only live verification immediately before queueing returned Tiny Tales channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The MP4 and metadata were copied collision-safely into `automation/pending-uploads`; the folder now contains 36 MP4s. The immediate dry run found 35 age-eligible items and retained `jungle-animal-clue-detectives-01.mp4` as next. `COVERED-TOPICS.md` now records 45 concepts.
+
+## User-requested generation pause
+
+- At 17:27 on 2026-08-23, the user asked Codex not to create more videos until they change Codex accounts first. Do not resume generation without a new explicit instruction from the user.
+- A proposed `Rory's Eight-Planet Postcard Adventure` was stopped before any producer, metadata, rendered output, or pending-queue entry existed. Three preview-only Mercury, Venus, and Earth images remained in Codex's default generated-images area and were never copied into the project. The topic is not listed in `COVERED-TOPICS.md`.
+- No Python or FFmpeg process was active at the pause. The latest completed production and queue checkpoint is Bea's Healthy Habits entry above.
+- The exact Windows task `Tiny Tales - Continuous Generation` was disabled to enforce the pause before its 20:05 trigger. The independent `Tiny Tales - Daily Private Upload` task remains Ready and unchanged so already-queued private made-for-kids videos can continue at the approved cadence. Re-enable generation only after the user explicitly asks to resume.
+
+## Generation resumed by the new account
+
+- At 17:36 on 2026-08-23, the user explicitly asked the new Codex account to continue from this handoff. This ended the generation pause; it did not alter the retired-format rules or upload safeguards.
+- The live `main` worktree was clean at commit `5fda52b` with zero divergence from `origin/main`. There were 36 pending MP4s, 9 archive MP4s, 9 upload-ledger entries, and no active Python or FFmpeg processes.
+- The required count-only check reported six completed curated items and one remaining item, `What Farm Animal Disappeared 1`; it generated nothing.
+- Read-only YouTube verification matched Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. A dry run performed no upload, found 36 queued items, and selected `jungle-animal-clue-detectives-01.mp4` next.
+- `Tiny Tales - Continuous Generation` was re-enabled and verified Ready with its next run at 20:05. `Tiny Tales - Daily Private Upload` remained enabled and Ready with its next run at 20:20. Its last result remained `1`, consistent with the recorded YouTube daily upload-quota failure.
+- Generation may continue under the existing one-video-per-cycle limit. Do not create animal-shadow videos, and preserve the independent private/made-for-kids upload workflow.
+
+## First resumed generation cycle
+
+- At 17:39 on 2026-08-23, after the user reaffirmed the instruction to keep generating videos, the enabled `Tiny Tales - Continuous Generation` task was started once manually. Its existing mutex and one-video-per-cycle limit remained in force.
+- The cycle completed successfully in 102.5 seconds and generated `What Farm Animal Disappeared? | Memory Game 1 for Kids` (`what-farm-animal-disappeared-01`), a 130-second farm-animal memory video.
+- `automation/production-work/farm-disappeared-episode-01/quality-report.json` passed all size, duration, video, and audio checks. A full FFmpeg decode returned no errors, and the complete contact sheet was visually reviewed with readable prompts, answer states, and no observed clipping.
+- The MP4 and viewer-facing metadata were added to `automation/pending-uploads`, increasing the queue from 36 to 37 MP4s. Generation did not invoke the uploader.
+- `COVERED-TOPICS.md` was rebuilt and now records 46 completed or queued concepts. A post-run count-only check reported `What Colourful Bird Disappeared 1` as the next candidate.
+- The generation task returned to Ready with exit code `0` and remains enabled for 20:05. Preserve the five-cycle daily schedule and one-video cap, but continue introducing varied non-quiz concepts so disappearance episodes do not become the dominant output.
+
+## Disappearance-memory frequency correction
+
+- After reviewing the first resumed cycle, the user asked that disappearance videos not be created so frequently.
+- The old `continuous_item()` fallback in `automation/generation_runner.py` contained five disappearance-only theme slots. It was removed, so completing the curated manifest no longer automatically selects another disappearance episode.
+- Existing historical and queued disappearance videos are preserved. Do not delete or regenerate them.
+- Scheduled generation remains enabled, but an exhausted curated manifest now completes without producing a video. Add intentionally varied, reviewed manifest items before expecting further output; do not restore a repetitive fallback.
+- Future mixed catalogs may use the memory format occasionally, but it must not run consecutively or dominate the rotation. Prefer stories, science, movement, sounds, habitats, kindness, cause-and-effect, and other visually distinct formats.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
