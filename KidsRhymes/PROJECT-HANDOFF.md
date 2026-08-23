@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 13:30 Australia/Sydney
+Last updated: 2026-08-23 13:56 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -39,6 +39,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_animal_games.py`: themed disappearance/alphabet rendering. Matching and shadow generation are explicitly retired and blocked.
 - `automation/production/produce_superpower_video.py`: interactive Ocean Superpower Detectives format.
 - `automation/production/produce_clue_detective_batch.py`: resumable local-only jungle, farm and colourful-bird clue adventures.
+- `automation/production/produce_lost_colour_batch.py`: resumable ocean, farm and colourful-bird Lost Colour Rescue adventures with six-second child choices.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -139,6 +140,14 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The upload Scheduled Task was changed and verified Ready with triggers at 00:20, 04:20, 08:20, 12:20, 16:20 and 20:20. At verification, its next run was 2026-08-23 16:20 Australia/Sydney.
 - The stale `continuous-00001-jungle-disappeared-01` runtime entry was reset from `running` to `pending` after confirming no Python/FFmpeg process and no completed output. Partial work files were preserved.
 - `COVERED-TOPICS.md` records 12 completed or queued Tiny Tales concepts, including retired formats. Rebuild it with `automation/update_covered_topics.py` after future metadata or media changes.
+
+## Lost Colour Rescue checkpoint
+
+- On 2026-08-23, three additional local videos completed in a new Lost Colour Rescue format: ocean (128.3 seconds), farm (127.1 seconds), and colourful birds (132.0 seconds).
+- Each uses grayscale-to-colour animal restoration, three visible colour choices, a six-second child decision window, a colour reveal, and an animal fact. The batch reused existing approved artwork and used zero new image-generation calls.
+- All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
+- Their MP4s and metadata were copied into `automation/pending-uploads` behind the three existing clue-detective videos. The queue contains six MP4s total. A dry run selected `jungle-animal-clue-detectives-01.mp4` next and reported five remaining after that next item; no unrelated item was selected.
+- `COVERED-TOPICS.md` was rebuilt and now records 15 completed or queued concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
