@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-33-quiet-bedtime-routine",
+  "version": "v1",
+  "title": "Shift to Quiet Before Bed | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A fast game right before lights out can leave a child's body excited while the clock says it is time to sleep. Demanding instant calm after active play asks the transition to do too much work at once. Pause and move the energetic activity earlier in the evening. Build a quiet final sequence such as washing, pajamas, one book, and a brief cuddle in the same order. A calm predictable routine gives the child repeated cues that the day is slowing down and sleep comes next."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Toddler Bedtime Trouble: 7 Tips for Parents",
+      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/bedtime-father-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-33-quiet-bedtime-routine\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-33-quiet-bedtime-routine-v1.mp4",
+    "duration_seconds": 32.9,
+    "sha256": "2F4E617B16D28C6DDC903699DB5C70EBEE4BEC90B25C8E3E89E904E8561EA0DD"
+  }
+}

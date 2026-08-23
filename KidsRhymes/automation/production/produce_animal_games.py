@@ -21,6 +21,10 @@ OUTPUT_DIR = AUTOMATION / "production-output"
 WORK_ROOT = AUTOMATION / "production-work"
 SNACK_SHEET = AUTOMATION / "production-assets" / "snack-suspects-sheet.png"
 ALPHABET_SHEET = AUTOMATION / "production-assets" / "alphabet-animals-a-to-f-sheet.png"
+ALPHABET_G_L_SHEET = AUTOMATION / "production-assets" / "alphabet-animals-g-to-l-sheet.png"
+ALPHABET_M_R_SHEET = AUTOMATION / "production-assets" / "alphabet-animals-m-to-r-sheet.png"
+ALPHABET_S_X_SHEET = AUTOMATION / "production-assets" / "alphabet-animals-s-to-x-sheet.png"
+ALPHABET_Y_Z_SHEET = AUTOMATION / "production-assets" / "alphabet-animals-y-to-z-sheet.png"
 OCEAN_SHEET = AUTOMATION / "production-assets" / "ocean-animals-sheet.png"
 FARM_SHEET = AUTOMATION / "production-assets" / "farm-animals-sheet.png"
 JUNGLE_SHEET = AUTOMATION / "production-assets" / "jungle-animals-sheet.png"
@@ -91,7 +95,7 @@ THEMES = {
 }
 NAMES = THEMES["land"]["names"]
 FACTS = THEMES["land"]["facts"]
-ALPHABET = [
+ALPHABET_AF = [
     ("A", "alligator", "Alligators are strong swimmers with powerful tails."),
     ("B", "bear", "Bears have an excellent sense of smell."),
     ("C", "cat", "Cats use their whiskers to feel spaces around them."),
@@ -99,6 +103,29 @@ ALPHABET = [
     ("E", "elephant", "Elephants use their trunks to breathe, smell, drink, and pick things up."),
     ("F", "fox", "Foxes use their large ears to listen for tiny sounds."),
 ]
+ALPHABET_AZ = ALPHABET_AF + [
+    ("G", "giraffe", "A giraffe's strong heart pumps blood all the way up its long neck."),
+    ("H", "hippopotamus", "Hippopotamuses spend much of the day keeping cool in water."),
+    ("I", "iguana", "Iguanas use their long tails for balance and protection."),
+    ("J", "jaguar", "A jaguar's spots are shaped like little roses called rosettes."),
+    ("K", "kangaroo", "A mother kangaroo carries her baby joey in a pouch."),
+    ("L", "lion", "A lion's roar can be heard from several kilometres away."),
+    ("M", "monkey", "Monkeys communicate with calls, faces, and body movements."),
+    ("N", "narwhal", "A narwhal's long tusk is actually a special tooth."),
+    ("O", "octopus", "An octopus has eight arms and three hearts."),
+    ("P", "penguin", "Penguins use their wings like flippers to fly through water."),
+    ("Q", "quokka", "A quokka is a small marsupial that carries its baby in a pouch."),
+    ("R", "rabbit", "A rabbit can turn its ears to listen in different directions."),
+    ("S", "seal", "Seals use sensitive whiskers to detect movement in the water."),
+    ("T", "tiger", "Every tiger has its own unique pattern of stripes."),
+    ("U", "urchin", "Sea urchins move slowly using hundreds of tiny tube feet."),
+    ("V", "vulture", "Vultures help keep nature clean by eating dead animals."),
+    ("W", "whale", "Whales breathe air through blowholes on top of their heads."),
+    ("X", "x-ray tetra", "An x-ray tetra has a see-through body that reveals tiny bones inside."),
+    ("Y", "yak", "Yaks have thick shaggy coats that keep them warm in cold mountains."),
+    ("Z", "zebra", "Every zebra has its own unique stripe pattern."),
+]
+ALPHABET = ALPHABET_AF
 
 
 def choice_sets() -> list[list[str]]:
@@ -119,13 +146,13 @@ def disappeared_rounds() -> list[tuple[list[str], str]]:
     ]
 
 
-def extract_grid(path: Path, names: list[str]) -> dict[str, Image.Image]:
+def extract_cells(path: Path, names: list[str], rows: int, columns: int) -> dict[str, Image.Image]:
     source = Image.open(path).convert("RGB")
     result = {}
     for index, name in enumerate(names):
-        row, col = divmod(index, 3)
-        x1, x2 = round(col * source.width / 3), round((col + 1) * source.width / 3)
-        y1, y2 = round(row * source.height / 2), round((row + 1) * source.height / 2)
+        row, col = divmod(index, columns)
+        x1, x2 = round(col * source.width / columns), round((col + 1) * source.width / columns)
+        y1, y2 = round(row * source.height / rows), round((row + 1) * source.height / rows)
         crop = source.crop((x1, y1, x2, y2))
         mask = Image.new("L", crop.size)
         pixels, alpha = crop.load(), mask.load()
@@ -138,6 +165,27 @@ def extract_grid(path: Path, names: list[str]) -> dict[str, Image.Image]:
         if not bbox: raise RuntimeError(f"Could not isolate {name}")
         result[name] = rgba.crop(bbox)
     return result
+
+
+def extract_grid(path: Path, names: list[str]) -> dict[str, Image.Image]:
+    return extract_cells(path, names, 2, 3)
+
+
+def extract_alphabet_assets(long_version: bool) -> dict[str, Image.Image]:
+    animals = extract_grid(ALPHABET_SHEET, [item[1] for item in ALPHABET_AF])
+    if not long_version:
+        return animals
+    blocks = [
+        (ALPHABET_G_L_SHEET, [item[1] for item in ALPHABET_AZ[6:12]], 2, 3),
+        (ALPHABET_M_R_SHEET, [item[1] for item in ALPHABET_AZ[12:18]], 2, 3),
+        (ALPHABET_S_X_SHEET, [item[1] for item in ALPHABET_AZ[18:24]], 2, 3),
+        (ALPHABET_Y_Z_SHEET, [item[1] for item in ALPHABET_AZ[24:26]], 1, 2),
+    ]
+    for path, names, rows, columns in blocks:
+        if not path.exists():
+            raise FileNotFoundError(path)
+        animals.update(extract_cells(path, names, rows, columns))
+    return animals
 
 
 def speech_file(work: Path, key: str) -> Path:
@@ -161,7 +209,8 @@ async def voices(work: Path, game: str) -> list[tuple[str, str]]:
         for i, (group, answer) in enumerate(rounds, 1):
             lines += [(f"m{i}", f"Let's check the next one. Look carefully and remember these {len(group)} animals."), (f"q{i}", "One animal disappeared. Which animal is missing?"), (f"a{i}", f"The {answer} disappeared! Wonderful remembering! {FACTS[answer]}")]
     else:
-        lines = [("intro", "Welcome to our Animal Alphabet Adventure! Today we will learn the letters A through F.")]
+        last_letter = ALPHABET[-1][0]
+        lines = [("intro", f"Welcome to our Animal Alphabet Adventure! Today we will learn the letters A through {last_letter}.")]
         for i, (letter, animal, fact) in enumerate(ALPHABET, 1):
             lines.append((f"l{i}", f"{letter} is for {animal}. {letter}, {animal}. {fact}"))
     lines.append(("outro", "Fantastic learning! Please like and subscribe for more Tiny Tales. See you next time!"))
@@ -200,13 +249,17 @@ def make_timeline(work: Path, game: str, lines: list[tuple[str,str]]) -> tuple[l
 
 def intro(game: str, t: float) -> Image.Image:
     titles={"shadow":("GUESS THE ANIMAL SHADOW","6 SILHOUETTE PUZZLES"),"matching":("FIND THE MATCHING ANIMAL","LOOK • MATCH • LEARN"),"disappeared":("WHAT ANIMAL DISAPPEARED?","A MEMORY CHALLENGE"),"alphabet":("ANIMAL ALPHABET ADVENTURE","LETTERS A TO F")}
+    if game == "alphabet" and len(ALPHABET) == 26:
+        titles["alphabet"] = ("ANIMAL ALPHABET ADVENTURE", "LETTERS A TO Z")
     frame=base.gradient_background(0,t);d=ImageDraw.Draw(frame,"RGBA");base.panel(d,(225,190,1695,895),radius=55,width=9)
     title,sub=titles[game];base.centered(d,(960,360),title,base.F62,(224,74,67,255),2);base.centered(d,(960,480),sub,base.F48,(29,76,106,255));base.centered(d,(960,690),"LOOK  •  THINK  •  DISCOVER",base.F38,(44,151,103,255));return frame.convert("RGB")
 
 
 def ending(t: float, animals: dict[str,Image.Image]) -> Image.Image:
     frame=base.gradient_background(2,t);d=ImageDraw.Draw(frame,"RGBA");base.panel(d,(225,170,1695,910),radius=55,width=9);base.centered(d,(960,285),"FANTASTIC LEARNING!",base.F62,(224,74,67,255),2);base.centered(d,(960,385),"YOU DID A WONDERFUL JOB",base.F48,(28,72,102,255))
-    for i,name in enumerate(list(animals)[:6]):base.contain(frame,animals[name],(270+i*235,470,470+i*235,750))
+    names = list(animals)
+    chosen = [names[round(i * (len(names) - 1) / 5)] for i in range(6)]
+    for i,name in enumerate(chosen):base.contain(frame,animals[name],(270+i*235,470,470+i*235,750))
     base.centered(d,(960,830),"LIKE & SUBSCRIBE FOR MORE TINY TALES",base.F38,(45,151,102,255));return frame.convert("RGB")
 
 
@@ -282,8 +335,8 @@ def quality(work:Path,output:Path,total:float,game:str,events:list[dict],animals
 
 
 def main()->None:
-    global NAMES, FACTS
-    parser=argparse.ArgumentParser();parser.add_argument("--game",choices=["shadow","disappeared","matching","alphabet"],required=True);parser.add_argument("--theme",choices=sorted(THEMES),default="land");parser.add_argument("--episode",type=int,default=1);args=parser.parse_args();game=args.game
+    global NAMES, FACTS, ALPHABET
+    parser=argparse.ArgumentParser();parser.add_argument("--game",choices=["shadow","disappeared","matching","alphabet"],required=True);parser.add_argument("--theme",choices=sorted(THEMES),default="land");parser.add_argument("--episode",type=int,default=1);parser.add_argument("--alphabet-range",choices=["af","az"],default="af");args=parser.parse_args();game=args.game
     if game == "matching":
         raise RuntimeError("The matching-picture format is retired and must not be generated")
     if game == "shadow":
@@ -296,14 +349,17 @@ def main()->None:
     base_names = list(theme["names"])
     random.Random(f"tiny-tales-{args.theme}-{args.episode}").shuffle(base_names)
     NAMES, FACTS = base_names, theme["facts"]
+    ALPHABET = ALPHABET_AZ if game == "alphabet" and args.alphabet_range == "az" else ALPHABET_AF
     sheet=ALPHABET_SHEET if game=="alphabet" else theme["sheet"];names=[x[1] for x in ALPHABET] if game=="alphabet" else NAMES
     if not sheet.exists():raise FileNotFoundError(sheet)
     prefix = "" if args.theme == "land" else f"{args.theme}-"
-    filenames={"shadow":f"guess-the-{prefix}animal-shadow-{args.episode:02d}.mp4","disappeared":f"what-{prefix}animal-disappeared-{args.episode:02d}.mp4","alphabet":"animal-alphabet-a-to-f-01.mp4"}
-    work_name = f"{args.theme}-{game}-episode-{args.episode:02d}"
+    alphabet_filename = "animal-alphabet-a-to-z-01.mp4" if args.alphabet_range == "az" else "animal-alphabet-a-to-f-01.mp4"
+    filenames={"shadow":f"guess-the-{prefix}animal-shadow-{args.episode:02d}.mp4","disappeared":f"what-{prefix}animal-disappeared-{args.episode:02d}.mp4","alphabet":alphabet_filename}
+    work_name = "land-alphabet-a-to-z-01" if game == "alphabet" and args.alphabet_range == "az" else f"{args.theme}-{game}-episode-{args.episode:02d}"
     output=OUTPUT_DIR/filenames[game];work=WORK_ROOT/work_name;OUTPUT_DIR.mkdir(parents=True,exist_ok=True);work.mkdir(parents=True,exist_ok=True)
     if output.exists():print(f"Completed output already exists; preserving without regeneration: {output}");return
-    animals=extract_grid(sheet,names);lines=asyncio.run(voices(work,game));events,tracks,total=make_timeline(work,game,lines);render(game,work,output,total,events,tracks,animals);quality(work,output,total,game,events,animals);print(output)
+    animals=extract_alphabet_assets(args.alphabet_range == "az") if game == "alphabet" else extract_grid(sheet,names)
+    lines=asyncio.run(voices(work,game));events,tracks,total=make_timeline(work,game,lines);render(game,work,output,total,events,tracks,animals);quality(work,output,total,game,events,animals);print(output)
 
 
 if __name__=="__main__":main()

@@ -23,8 +23,8 @@ META_DIR = PROJECT / "metadata"
 
 CDC_DIRECTIONS = {
     "organization": "Centers for Disease Control and Prevention",
-    "title": "Steps for Giving Good Directions",
-    "url": "https://www.cdc.gov/parenting-toddlers/directions/good-directions.html",
+    "title": "Tips for Giving Directions",
+    "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html",
 }
 AAP_SLEEP = {
     "organization": "American Academy of Pediatrics / HealthyChildren.org",
@@ -33,8 +33,8 @@ AAP_SLEEP = {
 }
 CDC_PRAISE = {
     "organization": "Centers for Disease Control and Prevention",
-    "title": "Tips for Praise, Imitation, and Description",
-    "url": "https://www.cdc.gov/parenting-toddlers/communication/praise.html",
+    "title": "Tips for Child-led Play",
+    "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html",
 }
 
 EPISODES = [

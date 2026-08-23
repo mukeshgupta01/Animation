@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-18-reflect-before-solving",
+  "version": "v1",
+  "title": "Reflect the Feeling Before Solving | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your child loses a game when screen time ends and says the whole evening is ruined. Jumping straight to solutions can miss the feeling the child is trying to communicate. Pause, give your full attention, and reflect what you heard in a few calm words. Try: You worked hard on that game and losing at the end felt really disappointing; I am listening. Reflection does not require agreement or a changed limit; it shows the child that their experience reached you."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/screen-time-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-18-reflect-before-solving\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-18-reflect-before-solving-v1.mp4",
+    "duration_seconds": 31.566666666666666,
+    "sha256": "4365D1A854DD0C3C3F5CDDCFBFF30A64818A625A4D6EC501317B13545ECF6DD2"
+  }
+}

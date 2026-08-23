@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-09-separate-kitchen-jobs",
+  "version": "v1",
+  "title": "Give Each Child One Clear Job | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Two children hear help with dinner, then both reach for the same bowl and the teamwork disappears. Telling everyone to just help is vague when each child is waiting to learn what their own job is. Pause and turn the shared request into one clear, age-appropriate direction for each child. Try: You stir five times; you place one napkin at each chair; then tell each child exactly what they completed well. Separate observable jobs reduce competition and make cooperation easier to notice and praise."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/kitchen-siblings-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-09-separate-kitchen-jobs\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-09-separate-kitchen-jobs-v1.mp4",
+    "duration_seconds": 34.5,
+    "sha256": "BB689236CED01E3E56A3710195085EE4982F15510C0BDB3D702D5B6A24D68B9C"
+  }
+}

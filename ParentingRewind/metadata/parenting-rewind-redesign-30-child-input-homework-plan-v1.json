@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-30-child-input-homework-plan",
+  "version": "v1",
+  "title": "Give Your Child Input on Homework Timing | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Some children work best soon after school, while others need time to move, eat, and reset first. Choosing the schedule during an argument can make the plan feel like another punishment. Pause and discuss timing outside the homework conflict. Offer two family-compatible options: start after snack, or start after a short outdoor break; then keep the chosen routine consistent. Child input can improve ownership, while the regular time and place protect homework from becoming a new daily negotiation."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Developing Good Homework Habits",
+      "url": "https://www.healthychildren.org/English/ages-stages/gradeschool/school/Pages/Developing-Good-Homework-Habits.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/homework-mother-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-30-child-input-homework-plan\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-30-child-input-homework-plan-v1.mp4",
+    "duration_seconds": 34.9,
+    "sha256": "29EA807A42F993E70AFE9E3AF43183749786918435C88F74565320D4D3CD7713"
+  }
+}

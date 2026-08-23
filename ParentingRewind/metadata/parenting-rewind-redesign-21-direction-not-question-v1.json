@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-21-direction-not-question",
+  "version": "v1",
+  "title": "Make the Direction a Statement | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Can you put your shoes on sounds polite, but a yes-or-no question also makes no sound like an available answer. Asking again with more urgency can create a debate that the parent never intended to open. Pause and separate respectful wording from optional wording. Try a clear statement: Please put on your shoes now; you may choose the red pair or the blue pair. The direction stays firm while the limited choice gives the child a real piece of control inside the boundary."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/pilot-01-shoe-storyboard.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-21-direction-not-question\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-21-direction-not-question-v1.mp4",
+    "duration_seconds": 32.36666666666667,
+    "sha256": "F1B750B5AB1A09F76D79EEC238F70599D52B8B3FB3A9334F4BCDC8ED9E036B4B"
+  }
+}

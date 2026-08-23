@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-15-same-bedtime-sequence",
+  "version": "v1",
+  "title": "Keep the Bedtime Sequence Familiar | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "When bedtime changes every night, a child has to keep asking what happens next and when the routine is really finished. Extra explanations in the tired moment can make the ending longer without making it more predictable. Pause and choose a short sequence your family can repeat on ordinary evenings. For example: pajamas, teeth, one book, cuddle, lights out; show the steps, then follow the same order calmly. Consistency helps a child know what to expect, and a simple routine can still adapt when illness or safety requires it."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Toddler Bedtime Trouble: 7 Tips for Parents",
+      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/bedtime-father-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-15-same-bedtime-sequence\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-15-same-bedtime-sequence-v1.mp4",
+    "duration_seconds": 38.2,
+    "sha256": "8A61C42D313FB1E79B88718A488B8ADF7E0F7BD6E624276B140446B0B0533932"
+  }
+}

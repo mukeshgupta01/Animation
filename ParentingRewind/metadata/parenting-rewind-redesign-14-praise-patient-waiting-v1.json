@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-14-praise-patient-waiting",
+  "version": "v1",
+  "title": "Name the Patient Waiting You Notice | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A child may wait beside the trolley through three aisles, while the one loud request receives most of the attention. Saying good job at the end is warm, but it does not identify the waiting behavior you hope to see again. Pause during the ordinary successful moment and describe exactly what you see. Try: You stayed beside the trolley while I chose the groceries; that was patient and helpful waiting. Specific praise makes the successful behavior visible to the child and easier for the parent to notice again."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Child-led Play",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/supermarket-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-14-praise-patient-waiting\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-14-praise-patient-waiting-v1.mp4",
+    "duration_seconds": 34.333333333333336,
+    "sha256": "92BC03DC60CF0315539A588CCAF685341306955FA951FBD47359949BCED11C31"
+  }
+}

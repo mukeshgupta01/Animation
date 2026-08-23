@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-41-praise-leaving-playground",
+  "version": "v1",
+  "title": "Praise the Leaving Step You Saw | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A three-year-old can feel upset about leaving and still walk from the slide to the gate holding a parent's hand. Calling the whole transition bad because of the protest hides the successful safety behavior at the end. Pause and name the action that helped everyone leave safely. Try: You held my hand all the way from the slide to the path even while you felt sad about leaving. Specific praise recognizes the skill the child used without pretending the transition or the feeling was easy."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Child-led Play",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/playground-leaving-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-41-praise-leaving-playground\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-41-praise-leaving-playground-v1.mp4",
+    "duration_seconds": 32.46666666666667,
+    "sha256": "4D1446D3A6F968F725F9555B6BB7F901F8EA709A92C6C9CB927DE0D65FFDF1EE"
+  }
+}

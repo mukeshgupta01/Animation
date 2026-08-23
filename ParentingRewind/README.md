@@ -12,7 +12,8 @@ This is a separate adult-facing parenting education video project. It is not par
 - No YouTube channel, uploader, OAuth credentials, token, channel lock, ledger or Scheduled Task is configured
 - No upload is authorized
 - The repetitive three-storyboard batch was rejected and removed from active output. Its MP4s are preserved under `rejected-repetitive-batch-archive/output` only for recovery.
-- The current review candidate is `output/parenting-rewind-redesign-01-kitchen-siblings-v1.mp4`, built from a new mother-plus-two-children kitchen storyboard. Do not resume batching until the user approves this redesigned visual direction.
+- The user explicitly approved `output/parenting-rewind-redesign-01-kitchen-siblings-v1.mp4` on 2026-08-23 and authorized continued local production until asked to stop.
+- Redesigned episodes 02-06 are complete in `output`, with rotated bedroom, playground and kitchen casts/settings. Continue only the redesigned workflow; keep the rejected repetitive renderer retired.
 
 ## Build the pilot
 

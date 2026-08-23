@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-20-say-what-to-do-shopping",
+  "version": "v1",
+  "title": "Say What to Do in the Shop | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Do not run, do not touch, and stop wandering tell a child what is wrong without showing the useful replacement. Several negative instructions at once are hard to hold onto in a busy supermarket. Pause and name the one behavior you need right now. Say: Please keep one hand on the trolley while we walk to the next aisle; point to the handle as a visual cue. A specific positive direction gives the child an action they can understand, complete, and receive praise for."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/supermarket-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-20-say-what-to-do-shopping\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-20-say-what-to-do-shopping-v1.mp4",
+    "duration_seconds": 31.766666666666666,
+    "sha256": "9C5DBAF99B7270DF7FF736967C975357EC56AE516012DA5516523C5D973EE0CD"
+  }
+}

@@ -292,6 +292,82 @@
         {"index": 4, "description": "Son takes the final slide while mother waits.", "useful_for": ["predictable ending", "follow-through"], "published_uses": 0},
         {"index": 5, "description": "Mother and son walk away holding hands.", "useful_for": ["resolution", "leaving", "safety"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-homework-mother-daughter-storyboard-01",
+      "file": "homework-mother-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["mother-late-30s-fair-skin-auburn-hair", "daughter-age-9-fair-skin-dark-blonde-ponytail"],
+      "setting": "sage-green and terracotta home dining and study area in afternoon light",
+      "topic_tags": ["homework initiation", "after-school routine", "older child", "parent pause", "active listening", "visual plan", "small first step", "effort praise"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Tired daughter sits beside a worksheet as her mother approaches with a snack.", "useful_for": ["after-school fatigue", "homework setup", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Mother points toward the worksheet while daughter looks overwhelmed.", "useful_for": ["homework conflict", "lecture", "overwhelm"], "published_uses": 0},
+        {"index": 2, "description": "Mother pauses and takes a deliberate breath by the window.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother listens at eye level while daughter explains.", "useful_for": ["active listening", "connection", "problem clarification"], "published_uses": 0},
+        {"index": 4, "description": "Mother and daughter review a picture plan for snack, movement and one worksheet question.", "useful_for": ["visual routine", "small first step", "predictability"], "published_uses": 0},
+        {"index": 5, "description": "Daughter begins the first question while mother encourages her nearby.", "useful_for": ["homework start", "independence", "effort praise", "resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-library-grandmother-granddaughter-storyboard-01",
+      "file": "library-grandmother-granddaughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["grandmother-early-60s-east-asian-appearance", "granddaughter-age-4-east-asian-appearance"],
+      "setting": "bright contemporary community library children's area with timber shelves and blue seating",
+      "topic_tags": ["grandparent caregiver", "library transition", "leaving public places", "book choice", "parent pause", "returning items", "specific praise"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Granddaughter enjoys a picture book while grandmother checks the time.", "useful_for": ["library hook", "transition setup", "shared reading"], "published_uses": 0},
+        {"index": 1, "description": "Child clutches several books and protests while grandmother briefly gestures in frustration.", "useful_for": ["public transition", "book conflict", "caregiver frustration"], "published_uses": 0},
+        {"index": 2, "description": "Grandmother takes one deliberate breath beside a bookshelf.", "useful_for": ["caregiver pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Grandmother speaks at eye level and offers one final book choice.", "useful_for": ["bounded choice", "connection", "calm direction"], "published_uses": 0},
+        {"index": 4, "description": "Child returns the other books while grandmother gives warm encouragement.", "useful_for": ["cooperation", "returning items", "specific praise"], "published_uses": 0},
+        {"index": 5, "description": "Grandmother and child leave holding hands with one selected book.", "useful_for": ["resolution", "safe leaving", "connection"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-laundry-father-two-children-storyboard-01",
+      "file": "laundry-father-two-children-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["father-early-40s-latino-appearance", "daughter-age-10-latino-appearance", "son-age-6-latino-appearance"],
+      "setting": "bright white and muted-lavender laundry and mudroom with timber bench and woven baskets",
+      "topic_tags": ["father caregiver", "older daughter", "younger son", "laundry chores", "age-appropriate jobs", "visual chore plan", "specific praise", "family teamwork"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Children reach for the same easy laundry task as father notices the mixed basket.", "useful_for": ["chore competition", "family task", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Father lectures with the basket while both children look resistant or overwhelmed.", "useful_for": ["unclear expectations", "lecture", "overwhelm"], "published_uses": 0},
+        {"index": 2, "description": "Father pauses and takes a deliberate breath beside the laundry bench.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father shows a picture plan assigning folded towels and paired socks.", "useful_for": ["visual chore plan", "separate jobs", "age-appropriate direction"], "published_uses": 0},
+        {"index": 4, "description": "Daughter folds towels and son pairs socks while father encourages both.", "useful_for": ["different jobs", "specific praise", "cooperation"], "published_uses": 0},
+        {"index": 5, "description": "Family celebrates completed laundry stacks with warm high-fives.", "useful_for": ["resolution", "teamwork", "family contribution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-soccer-father-son-storyboard-01",
+      "file": "soccer-father-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["father-late-30s-dark-skin", "son-age-7-dark-skin"],
+      "setting": "suburban community soccer field with eucalyptus trees in warm late-afternoon light",
+      "topic_tags": ["father caregiver", "son age seven", "ending sports practice", "final turn", "outdoor transition", "clear direction", "follow-through", "effort praise"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Son dribbles a soccer ball while father checks the time at the sideline.", "useful_for": ["sports hook", "transition setup", "active play"], "published_uses": 0},
+        {"index": 1, "description": "Son clutches the ball and resists leaving while father points toward the exit.", "useful_for": ["leaving conflict", "caregiver frustration", "sports transition"], "published_uses": 0},
+        {"index": 2, "description": "Father takes one deliberate breath beside the sports bag.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father speaks at eye level and signals one final shot before packing the ball.", "useful_for": ["final turn", "calm direction", "predictable ending"], "published_uses": 0},
+        {"index": 4, "description": "Son takes the final shot and places the ball in the sports bag.", "useful_for": ["follow-through", "cooperation", "packing equipment"], "published_uses": 0},
+        {"index": 5, "description": "Father and son walk off the field together and high-five.", "useful_for": ["resolution", "connection", "effort praise"], "published_uses": 0}
+      ]
     }
   ]
 }

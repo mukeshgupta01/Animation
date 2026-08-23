@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-35-direction-then-wait",
+  "version": "v1",
+  "title": "Give the Direction, Then Wait | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Please put on your shoes can be followed by three more reminders before the child has processed the first sentence. Rapid repeated language can make a simple direction harder to identify. Pause, get the child's attention, give one age-appropriate statement, and allow a brief moment to respond. Try: Please put on the red shoes; stay nearby without filling the pause with a new instruction. One clear direction at a time helps the parent see whether the child understood, needs help, or is choosing not to follow it."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/pilot-01-shoe-storyboard.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-35-direction-then-wait\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-35-direction-then-wait-v1.mp4",
+    "duration_seconds": 35.03333333333333,
+    "sha256": "558446359E48CFC4F4CA2EA43E65F9CFF3348DAE2C5D12E4515187E2A7BD7204"
+  }
+}

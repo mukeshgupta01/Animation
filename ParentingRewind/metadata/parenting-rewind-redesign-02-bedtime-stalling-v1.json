@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-02-bedtime-stalling",
+  "version": "v1",
+  "title": "When Bedtime Keeps Moving | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The bedtime book ends, and your six-year-old suddenly needs water, another hug, and one more important question. Answering every new request can quietly teach that the routine ends only after enough stalling. Pause before sounding frustrated, because the boundary will be easier to hear when your voice stays steady. Try this: Our bedtime steps are pajamas, one book, and lights out; the book is finished, so now it is cuddle and goodnight. A predictable routine can be warm and firm at the same time; repeat the sequence instead of inventing a new argument each night."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Toddler Bedtime Trouble: 7 Tips for Parents",
+      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/bedtime-father-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-02-bedtime-stalling\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-02-bedtime-stalling-v1.mp4",
+    "duration_seconds": 38.733333333333334,
+    "sha256": "36697383CE76271636F8AA8D30350046A61F93D0611563E9A7C1C3A8EC336576"
+  }
+}

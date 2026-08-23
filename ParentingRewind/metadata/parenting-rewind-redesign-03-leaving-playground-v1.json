@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-03-leaving-playground",
+  "version": "v1",
+  "title": "Leaving the Playground Without a Chase | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The playground is wonderful until it is time to leave and your three-year-old sits down in protest. Calling from the gate and adding warning after warning can teach that the first direction does not matter. Pause, move close, and decide on one ending you are ready to follow through with. Say: One final slide, then hold my hand to the gate; after the slide, repeat the direction without reopening the decision. A concrete last turn makes the transition predictable, while calm follow-through shows that the limit is real."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/playground-leaving-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-03-leaving-playground\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-03-leaving-playground-v1.mp4",
+    "duration_seconds": 35.43333333333333,
+    "sha256": "0F318D42A8D485F294216BAF60E37A9F1FEF4AE91BF77F8C3DB94A1A615621BF"
+  }
+}

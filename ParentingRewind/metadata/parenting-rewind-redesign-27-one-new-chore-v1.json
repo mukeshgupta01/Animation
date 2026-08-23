@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-27-one-new-chore",
+  "version": "v1",
+  "title": "Introduce One New Chore at a Time | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Sort, fold, match, carry, and put away can turn one laundry request into a long list of new skills. Expecting a child to learn every step at once can make an ordinary family chore feel overwhelming. Pause and choose one new responsibility that fits the child's age and current ability. Try: Your job today is pairing the socks; demonstrate the first pair, keep the rest visible, and praise honest effort. One clear new task gives the child a realistic chance to build competence before the routine expands."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Age-Appropriate Chores for Children",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Chores-and-Responsibility.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/laundry-father-two-children-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-27-one-new-chore\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-27-one-new-chore-v1.mp4",
+    "duration_seconds": 37.333333333333336,
+    "sha256": "BFBEDAB896867E97F27AD91F59CA080EAE1D3E30B9429FD97048641B01D6430F"
+  }
+}

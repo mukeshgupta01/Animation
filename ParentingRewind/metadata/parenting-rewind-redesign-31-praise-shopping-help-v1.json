@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-31-praise-shopping-help",
+  "version": "v1",
+  "title": "Praise the Shopping Help Specifically | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A child may place fruit in the trolley, stay close, and help at checkout before making one difficult request. If the request receives all the attention, the helpful shopping behavior becomes easy to overlook. Pause and name one useful action while it is happening. Try: You carried the list and put the apples in gently; that helped us finish the shopping together. Specific praise tells the child exactly which contribution the parent appreciated and hopes to see again."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Child-led Play",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/supermarket-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-31-praise-shopping-help\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-31-praise-shopping-help-v1.mp4",
+    "duration_seconds": 32.03333333333333,
+    "sha256": "A97FD949A0301669BDDD17C85C756396DD09C2D1C18524530B57FD0C39806698"
+  }
+}

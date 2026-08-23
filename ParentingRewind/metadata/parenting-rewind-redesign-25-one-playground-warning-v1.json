@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-25-one-playground-warning",
+  "version": "v1",
+  "title": "Use One Playground Warning | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Five minutes becomes two minutes, then one more turn, then another final warning at the playground. Many repeated warnings can teach a child that the early directions are optional. Pause before the first warning and choose the consequence you can calmly carry out. Say: Two final turns, then hold my hand to the path; count the turns and follow through after the second. One clear warning works best when the ending is observable and the adult is ready to complete the transition."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/playground-leaving-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-25-one-playground-warning\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-25-one-playground-warning-v1.mp4",
+    "duration_seconds": 32.9,
+    "sha256": "D7E3658D922AB3ADEC111ADB36BF87299DF9470915BB7AF5C163DF17C4D0A2AE"
+  }
+}

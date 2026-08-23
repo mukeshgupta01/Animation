@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-10-listen-before-screen-limit",
+  "version": "v1",
+  "title": "Listen Before Repeating the Screen Limit | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The tablet turns off and your child says it is unfair, even though the timer and limit were clear. Repeating the rule immediately can sound like you did not hear the disappointment underneath the protest. Pause and listen for the feeling without turning the limit into a debate. Say: You wanted more time and stopping feels disappointing; the screen is still finished, and I am here while you switch activities. Reflecting the feeling communicates understanding; keeping the boundary steady shows that listening is not the same as giving in."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/screen-time-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-10-listen-before-screen-limit\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-10-listen-before-screen-limit-v1.mp4",
+    "duration_seconds": 35.3,
+    "sha256": "B547C44BB8B5963B120C12E51E8ED3006503C83DAC8169CD1D240BF652D8553A"
+  }
+}

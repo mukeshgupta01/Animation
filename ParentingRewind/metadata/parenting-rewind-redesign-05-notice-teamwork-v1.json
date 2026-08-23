@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-05-notice-teamwork",
+  "version": "v1",
+  "title": "Praise the Teamwork You Want Repeated | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Two children can help with dinner for ten minutes, yet the one argument may receive all of your attention. A quick good job is kind, but it does not tell either child which action helped the family. Pause long enough to look for one specific piece of cooperation, even if the whole task is not perfect. Try: You waited for your turn with the bowl, and you carried the napkins carefully; that helped dinner get ready. Specific praise makes teamwork visible, and noticing small successful steps gives children a clearer behavior to repeat."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Child-led Play",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/kitchen-siblings-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-05-notice-teamwork\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-05-notice-teamwork-v1.mp4",
+    "duration_seconds": 35.06666666666667,
+    "sha256": "D0C2F6E38EC539029AFCDD5E5F47A8EADC93AF1BAB9F09D95FC3300F619494A8"
+  }
+}

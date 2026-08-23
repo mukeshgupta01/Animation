@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-37-soccer-final-shot",
+  "version": "v1",
+  "title": "Make the Final Soccer Turn Concrete | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Five more minutes at soccer practice is hard for a seven-year-old to measure while running with the ball. A vague time warning can end with parent and child holding different ideas about when play should stop. Pause and choose an ending the child can see and complete. Say: One final shot, then place the ball in the bag and walk with me; stay close and follow through after the shot. A concrete final action turns an abstract time limit into a clear sequence without reopening the decision."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/soccer-father-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-37-soccer-final-shot\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-37-soccer-final-shot-v1.mp4",
+    "duration_seconds": 33.46666666666667,
+    "sha256": "3CFF90B10EDE000BB0FD4546F18AC683E6FDEC2295618C2948315EEC57811EBE"
+  }
+}

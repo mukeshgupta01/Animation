@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-19-homework-transition-warning",
+  "version": "v1",
+  "title": "Warn Before Homework Starts | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A child can agree to a homework time and still struggle when play stops and the worksheet suddenly appears. An abrupt start cue may turn the transition itself into the conflict before any schoolwork begins. Pause and make the agreed homework time easier to anticipate. Try one ten-minute warning, prepare the quiet workspace, then begin with the first clearly identified task. A regular place, a predictable start time, and a brief warning can help the child shift into a homework frame of mind."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Developing Good Homework Habits",
+      "url": "https://www.healthychildren.org/English/ages-stages/gradeschool/school/Pages/Developing-Good-Homework-Habits.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/homework-mother-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-19-homework-transition-warning\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-19-homework-transition-warning-v1.mp4",
+    "duration_seconds": 34.766666666666666,
+    "sha256": "AD691EFD7EF8AF4DBC212A562124ABE17F82116AEAF09C5E13710AB877A6D029"
+  }
+}

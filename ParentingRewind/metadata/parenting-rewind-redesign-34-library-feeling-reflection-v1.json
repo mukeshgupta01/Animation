@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-34-library-feeling-reflection",
+  "version": "v1",
+  "title": "Reflect the Library Disappointment | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A child can understand that the library is closing and still feel deeply disappointed that reading time is over. Explaining the closing time again may answer the facts while missing the emotion. Pause, come to the child's level, and reflect the experience you see. Say: You found books you love and you wish we could stay longer; we are leaving now, and we can plan another visit. Naming the feeling communicates understanding while the clear leaving statement keeps the transition moving."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/library-grandmother-granddaughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-34-library-feeling-reflection\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-34-library-feeling-reflection-v1.mp4",
+    "duration_seconds": 32.833333333333336,
+    "sha256": "12DC6D6AB2F34856032FA17882D26B69D9388202C5B4005EEBFC5C467485B8DA"
+  }
+}

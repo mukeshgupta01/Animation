@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-39-one-library-direction",
+  "version": "v1",
+  "title": "Give One Library Direction at a Time | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Choose a book, return the others, put on your bag, and come to the door is a lot for a four-year-old at once. When only the first piece happens, repeating the entire list can make the next step less clear. Pause and give one short age-appropriate direction at a time. Start with: Place these books on the return shelf; after that is complete, give the direction to hold hands for leaving. Short sequential directions make it easier to notice understanding, help when needed, and praise each successful step."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/library-grandmother-granddaughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-39-one-library-direction\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-39-one-library-direction-v1.mp4",
+    "duration_seconds": 34.9,
+    "sha256": "859663C432AB6EA32D9837F7E78DA27DE64CDB72618ABDA59D5E2DABDC4E32BF"
+  }
+}

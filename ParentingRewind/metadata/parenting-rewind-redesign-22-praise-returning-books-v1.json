@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-22-praise-returning-books",
+  "version": "v1",
+  "title": "Praise the Book-Returning Step | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A child may feel disappointed about leaving the library and still return three books carefully. If attention stays only on the protest, the cooperative step can disappear from the story of what happened. Pause and notice the helpful action as soon as it occurs. Try: You put each book gently into the return shelf even though leaving was hard; that was careful helping. Specific praise does not erase the difficult feeling; it identifies the behavior the child managed inside that feeling."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Child-led Play",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/library-grandmother-granddaughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-22-praise-returning-books\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-22-praise-returning-books-v1.mp4",
+    "duration_seconds": 33.233333333333334,
+    "sha256": "1C2DDC687169D9E53732FD88C91064952F9F931F209B8C94372069E4DFB677F3"
+  }
+}
