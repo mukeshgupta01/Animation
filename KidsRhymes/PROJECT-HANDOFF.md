@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 17:14 Australia/Sydney
+Last updated: 2026-08-23 17:27 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -304,6 +304,12 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - Five built-in image-generation calls produced five accepted, visually distinct storybook environments with no rejected variants. Accepted files are under `automation/production-assets/healthy-habits-*.png` and must be force-added despite the broad PNG ignore rule.
 - The final MP4 passed its automated 1080p H.264/stereo AAC gate, voice-overlap and activity-gap audits, full FFmpeg decode, and a visual review of title, all destinations, prompt/reward states, moving Bea, and finale.
 - Read-only live verification immediately before queueing returned Tiny Tales channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The MP4 and metadata were copied collision-safely into `automation/pending-uploads`; the folder now contains 36 MP4s. The immediate dry run found 35 age-eligible items and retained `jungle-animal-clue-detectives-01.mp4` as next. `COVERED-TOPICS.md` now records 45 concepts.
+
+## User-requested generation pause
+
+- At 17:27 on 2026-08-23, the user asked Codex not to create more videos until they change Codex accounts first. Do not resume generation without a new explicit instruction from the user.
+- A proposed `Rory's Eight-Planet Postcard Adventure` was stopped before any producer, metadata, rendered output, or pending-queue entry existed. Three preview-only Mercury, Venus, and Earth images remained in Codex's default generated-images area and were never copied into the project. The topic is not listed in `COVERED-TOPICS.md`.
+- No Python or FFmpeg process was active at the pause. The latest completed production and queue checkpoint is Bea's Healthy Habits entry above.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 

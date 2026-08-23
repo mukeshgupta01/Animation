@@ -28,8 +28,9 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Both Scheduled Tasks were Ready when checked at 16:54. Next runs were generation at 20:05 and private upload at 20:20. The 16:20 upload had failed with YouTube daily upload-quota HTTP 429 and preserved the queue item; do not bypass or duplicate that upload.
 - This checkpoint is committed and pushed in the same production interval. A new account must still verify a clean worktree and zero divergence from `origin/main` before starting the next concept. Choose a different topic and visual system; do not turn Pip or Bea into a repetitive fixed-location template.
 
-## Active next interval (started 2026-08-23 17:18 Australia/Sydney)
+## User-requested pause (2026-08-23 17:27 Australia/Sydney)
 
-- The next concept is `Rory's Eight-Planet Postcard Adventure`, a long-form Solar System journey with a new independently moving rocket mascot. Eight destinations follow the subject naturally: Mercury through Neptune. This is not a fixed-location template or repeated animal quiz.
-- Before continuing this interval, inspect live Python/FFmpeg processes and the worktree. Do not start a duplicate producer if another account is already rendering or generating its assets.
-- Planned safeguards: use NASA primary-source facts; distinguish planets from not-to-scale illustrations; never imply landing on gas/ice giants; use real five-second participation gaps; generate visually distinct planet environments; validate, queue private/made-for-kids, rebuild topics, update this file and the handoff, then commit/push.
+- The user asked to stop creating videos so they can change Codex accounts first. Do not resume generation or start a renderer until the user explicitly asks the new account to continue.
+- The briefly proposed `Rory's Eight-Planet Postcard Adventure` was stopped before a producer, metadata file, rendered video, or queue entry was created. It is not a completed or covered topic.
+- Three preview-only built-in image generations for Mercury, Venus, and Earth were made under Codex's default generated-images directory but were not copied into this workspace or consumed by project code. A future account should begin from live project state and may redesign or discard that proposal.
+- No Python or FFmpeg process was active when this pause was recorded. The latest completed video remains `Bea's Healthy Habits Treasure Trail`; the completed checkpoint immediately above is authoritative.
