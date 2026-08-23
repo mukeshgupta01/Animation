@@ -558,6 +558,25 @@
         {"index": 4, "description": "Grandfather offers a listening-or-ideas choice.", "useful_for": ["support choice", "collaboration", "respect"], "published_uses": 0},
         {"index": 5, "description": "Grandfather and granddaughter walk together through the garden.", "useful_for": ["connection", "resolution", "not magically solved"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-teen-grade-mother-daughter-storyboard-01",
+      "file": "teen-grade-mother-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["mother-early-40s-medium-brown-skin-dark-braids", "daughter-age-15-medium-brown-skin-shoulder-length-dark-hair"],
+      "setting": "contemporary family kitchen and dining area after school in teal, amber and cream",
+      "topic_tags": ["teenager", "disappointing grade", "school pressure", "mother caregiver", "process praise", "curiosity", "learning plan", "connection"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Teen places a returned test on the table while mother notices.", "useful_for": ["grade hook", "school pressure", "parent concern"], "published_uses": 0},
+        {"index": 1, "description": "Mother reacts with worried sternness while teen withdraws.", "useful_for": ["quick judgment", "unhelpful reaction", "teen withdrawal"], "published_uses": 0},
+        {"index": 2, "description": "Mother steps back and takes one calming breath.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother sits beside teen and listens while she explains.", "useful_for": ["active listening", "curiosity", "teen communication"], "published_uses": 0},
+        {"index": 4, "description": "Mother and teen review a notebook and choose one next step.", "useful_for": ["learning process", "study plan", "realistic support"], "published_uses": 0},
+        {"index": 5, "description": "Their expressions soften beside the closed notebook.", "useful_for": ["connection", "resolution", "worth beyond grades"], "published_uses": 0}
+      ]
     }
   ]
 }

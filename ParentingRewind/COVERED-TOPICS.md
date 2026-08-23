@@ -4,7 +4,7 @@ Updated: 2026-08-23
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 95 (71 active; 24 historical-only).
+Unique topics: 96 (72 active; 24 historical-only).
 
 ## Topic index
 
@@ -68,6 +68,7 @@ Unique topics: 95 (71 active; 24 historical-only).
 - [active] Screen Time Is Over: What to Say Without Shouting — metadata: pilot-02-screen-time-v1.json
 - [active] Shift to Quiet Before Bed — metadata: parenting-rewind-redesign-33-quiet-bedtime-routine-v1.json
 - [active] Stay Close When Words Are Too Much — metadata: parenting-rewind-redesign-64-stay-close-fewer-words-v1.json
+- [active] Talk About the Process, Not Their Worth — metadata: parenting-rewind-redesign-70-grade-process-not-worth-v1.json
 - [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
 - [active] The One-More-Story Loop — metadata: parenting-rewind-025-one-more-story-v1.json, parenting-rewind-redesign-04-one-more-story-v1.json
 - [active] Use an I-Statement Instead of Blame — metadata: parenting-rewind-redesign-62-i-statement-not-blame-v1.json

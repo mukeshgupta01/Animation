@@ -4,6 +4,8 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 
 ## Asset reuse comes first
 
+- CURRENT IMAGE METHOD (2026-08-23 21:44): the user rejected the free local ComfyUI/SDXL visual trial as poor quality and explicitly asked to continue with Codex image generation instead. Do not preserve a preference for free local image agents. Use the built-in image-generation workflow when a genuinely new storyboard is needed, while still applying the asset audit and credit-conservation rules below.
+
 - Do not call an image-generation tool until the local asset library has been checked.
 - Reuse existing characters, locations and suitable scene panels whenever they accurately support the new lesson.
 - Reframe existing panels with different crops, slow pans, zooms, color treatments, overlays and captions in local code; these operations do not require a new generated image.
