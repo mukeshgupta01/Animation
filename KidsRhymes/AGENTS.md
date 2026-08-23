@@ -100,3 +100,21 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The interrupted attempt briefly created YouTube ID `63l7E_6iivs`, but live API checks found it unprocessed and then confirmed that both the ID and exact title disappeared. Only after those checks was Nia's unresolved-attempt guard marked `failed_confirmed_absent`.
 - A fresh explicit upload succeeded as public video `ygc-y4_XBwk` (`https://youtu.be/ygc-y4_XBwk`). API read-back matched the exact Tiny Tales channel, title, 2:31 duration, description, seven tags, public status, made-for-kids and self-declared-made-for-kids flags. The canonical MP4/metadata were archived only after YouTube returned the new ID; the queue contains 38 MP4s.
 - `Tiny Tales - Continuous Generation` remains disabled. The historical task name `Tiny Tales - Daily Private Upload` remains installed and enabled, but its current behavior is public according to configuration.
+
+## Hourly upload retry policy (2026-08-24 08:13 Australia/Sydney)
+
+- The regular upload task keeps its existing six daily triggers at 00:20, 04:20, 08:20, 12:20, 16:20 and 20:20 Australia/Sydney.
+- `Tiny Tales - Hourly Upload Retry` is a separate enabled task with the 18 intervening hourly triggers. It runs `Run-UploadCycle.ps1 -RetryOnly` and exits without uploading unless `runtime/upload-retry-state.json` records a duplicate-safe failed upload.
+- A retry targets the same failed queue filename, not whichever video later becomes newest. The shared global mutex prevents overlap with the regular task.
+- Only failures known not to have created a YouTube video, currently quota/upload-limit rejection, are automatically armed for retry. Ambiguous interrupted attempts remain blocked for manual YouTube reconciliation to prevent duplicates.
+- Outlook reporting is now separated from upload success. An email problem is logged but cannot arm an upload retry or turn a successful upload into a task failure.
+- The user explicitly resumed Tiny Tales video creation immediately after approving this retry behavior. The Animal Action Alphabet is the active build; automatic generation should be re-enabled only after its curated manifest item and producer are safely ready.
+
+## Two new 3D-look productions and resumed schedule (2026-08-24 09:04 Australia/Sydney)
+
+- `Animal Action Alphabet A-Z` completed as `animal-action-alphabet-a-to-z-01` at 330.4 seconds using `maisie-uk`. It contains 26 original 3D-rendered animals, five original world-stage environments and 26 audited 4.8-second movement windows. Its quality gate, full FFmpeg decode and complete A-Z contact-sheet review passed.
+- `Brio's Paintbrush Colour Workshop` completed as `brio-paintbrush-colour-workshop-01` at 154.1 seconds using `ryan-uk`. It is a canvas-restoration music story with six Brio poses, five clean colour-drop friends, four art worlds, primary-colour painting, orange/green mixing and ten audited participation gaps. Its quality gate, full decode and contact-sheet review passed.
+- Both producers and reproducibility assets are retained under `automation/production` and `automation/production-assets`. Built-in image generation made 11 calls for Animal Action (one rejected/replaced chroma-conflicting sheet) and 6 calls for Brio (the damaged purple drop is excluded); no external stock or copied preschool-brand imagery was used.
+- Both outputs and public/made-for-kids metadata are queued. `COVERED-TOPICS.md` records 50 concepts; the queue has 39 MP4s and the archive has 11. At 09:04 the dry run selected Brio newest-first, with Animal Action behind it.
+- The regular 08:20 task successfully uploaded Maya publicly as `HtNGbHueDKQ` on the locked Tiny Tales channel and confirmed its email report. Retry state is clear.
+- The user explicitly resumed generation, so `Tiny Tales - Continuous Generation` is enabled and Ready for 10:05 with last result `0`. The curated manifest is currently exhausted; scheduled runs must safely no-op until another deliberately varied producer is added. Never restore the retired repetitive disappearance fallback.

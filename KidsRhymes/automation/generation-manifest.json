@@ -173,6 +173,50 @@
         "tags": ["breakfast song for kids", "colour song", "dance for kids", "3D animation for kids", "preschool movement", "fruit for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "animal-action-alphabet-a-to-z-01",
+      "name": "Animal Action Alphabet A-Z",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_animal_action_alphabet.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/animal-action-alphabet-a-to-z-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "3d-animal-action-alphabet-parade",
+      "visual_system": "3d-animal-world-stage-portals",
+      "interaction_style": "letter-callout-and-whole-body-movement",
+      "voice_profile": "maisie-uk",
+      "youtube": {
+        "title": "Animal Action Alphabet A-Z | Move and Learn with 26 Animals",
+        "description": "Move through the whole alphabet with 26 lively animal friends. Children amble, bounce, creep, dance, stomp, jump, stretch, gallop, waddle, flap, zigzag and try many more safe actions from A to Z.\n\nAn original Tiny Tales 3D-look alphabet-and-movement parade supporting letter recognition, animal vocabulary, listening and active play for children ages 3 to 7.",
+        "tags": ["animal alphabet", "ABC for kids", "movement for kids", "animals A to Z", "preschool learning", "brain break for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "brio-paintbrush-colour-workshop-01",
+      "name": "Brio's Paintbrush Colour Workshop",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_brio_paintbrush_workshop.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/brio-paintbrush-colour-workshop-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "3d-canvas-restoration-music-story",
+      "visual_system": "3d-magical-art-studio-with-code-painted-canvas",
+      "interaction_style": "air-painting-and-primary-colour-mixing",
+      "voice_profile": "ryan-uk",
+      "youtube": {
+        "title": "Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids",
+        "description": "Help Brio restore a giant blank canvas in an original colour-and-movement music story. Children air-paint red circles, yellow rays and blue waves, mix orange and green, then bring a whole canvas meadow to life.\n\nA Tiny Tales 3D-look art adventure supporting primary colours, early colour mixing, creative movement, listening and imagination for children ages 3 to 7.",
+        "tags": ["paintbrush song", "colours for kids", "colour mixing for kids", "art for kids", "movement song", "preschool learning", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

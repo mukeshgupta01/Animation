@@ -1,0 +1,27 @@
+{
+  "id": "brio-paintbrush-colour-workshop-01",
+  "title": "Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids",
+  "description": "Help Brio restore a giant blank canvas in an original colour-and-movement music story. Children air-paint red circles, yellow rays and blue waves, mix orange and green, then bring a whole canvas meadow to life.\n\nA Tiny Tales 3D-look art adventure supporting primary colours, early colour mixing, creative movement, listening and imagination for children ages 3 to 7.",
+  "tags": [
+    "paintbrush song",
+    "colours for kids",
+    "colour mixing for kids",
+    "art for kids",
+    "movement song",
+    "preschool learning",
+    "Tiny Tales"
+  ],
+  "category_id": "27",
+  "made_for_kids": true,
+  "privacy": "public",
+  "upload_authorized": false,
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\brio-paintbrush-colour-workshop-01.mp4",
+  "duration_seconds": 154.024,
+  "voice_profile": "ryan-uk",
+  "format_family": "3d-canvas-restoration-music-story",
+  "visual_system": "3d-magical-art-studio-with-code-painted-canvas",
+  "interaction_style": "air-painting-and-primary-colour-mixing",
+  "new_image_generation_calls": 6,
+  "rejected_image_variants": 1,
+  "true_rigged_3d_animation": false
+}

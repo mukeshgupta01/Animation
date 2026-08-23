@@ -1,0 +1,27 @@
+{
+  "id": "animal-action-alphabet-a-to-z-01",
+  "title": "Animal Action Alphabet A-Z | Move and Learn with 26 Animals",
+  "description": "Move through the whole alphabet with 26 lively animal friends. Children amble, bounce, creep, dance, stomp, jump, stretch, gallop, waddle, flap, zigzag and try many more safe actions from A to Z.\n\nAn original Tiny Tales 3D-look alphabet-and-movement parade supporting letter recognition, animal vocabulary, listening and active play for children ages 3 to 7.",
+  "tags": [
+    "animal alphabet",
+    "ABC for kids",
+    "movement for kids",
+    "animals A to Z",
+    "preschool learning",
+    "brain break for kids",
+    "Tiny Tales"
+  ],
+  "category_id": "27",
+  "made_for_kids": true,
+  "privacy": "public",
+  "upload_authorized": false,
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\animal-action-alphabet-a-to-z-01.mp4",
+  "duration_seconds": 330.318,
+  "voice_profile": "maisie-uk",
+  "format_family": "3d-animal-action-alphabet-parade",
+  "visual_system": "3d-animal-world-stage-portals",
+  "interaction_style": "letter-callout-and-whole-body-movement",
+  "new_image_generation_calls": 11,
+  "rejected_image_variants": 1,
+  "true_rigged_3d_animation": false
+}

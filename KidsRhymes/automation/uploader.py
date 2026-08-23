@@ -264,6 +264,23 @@ def classify_http_error(exc: Exception) -> str:
     return text
 
 
+def is_safely_retryable_upload_error(exc: Exception) -> bool:
+    """Return true only when YouTube definitely rejected the insert request.
+
+    A lost response after a completed insert could otherwise create a duplicate.
+    Quota/upload-limit responses do not create a video and are safe to retry.
+    """
+    lowered = str(exc).casefold()
+    quota_markers = (
+        "uploadlimitexceeded",
+        "dailylimitexceeded",
+        "quotaexceeded",
+        "quota exceeded",
+        "video uploads per day",
+    )
+    return any(marker in lowered for marker in quota_markers)
+
+
 def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]:
     _, _, _, _, MediaFileUpload = import_google()
     digest = sha256(video)
@@ -290,6 +307,16 @@ def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]
             status, response = request.next_chunk()
             if status:
                 LOGGER.info("Upload progress %s: %.1f%%", video.name, status.progress() * 100)
+    except Exception as exc:
+        if is_safely_retryable_upload_error(exc):
+            attempts[digest] = {
+                **attempts[digest],
+                "status": "failed_retryable",
+                "failed_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                "error": classify_http_error(exc),
+            }
+            atomic_json(ATTEMPTS_FILE, attempts)
+        raise
     finally:
         # MediaFileUpload keeps its source stream open. Windows will not allow the
         # completed source to be archived until that handle is explicitly closed.
@@ -366,6 +393,7 @@ def main() -> int:
     run = sub.add_parser("run", help="Upload the next eligible new video using configured queue order")
     run.add_argument("--confirm-upload", action="store_true", help="Required acknowledgement for a real upload")
     run.add_argument("--report-json")
+    run.add_argument("--video-name", help="Retry this exact eligible queue filename")
     args = parser.parse_args()
     cfg = config()
     try:
@@ -390,7 +418,15 @@ def main() -> int:
             report["remaining_upload_count"] = 0
             write_report(args.report_json, report)
             return 0
-        video = candidates[0]
+        if args.video_name:
+            if Path(args.video_name).name != args.video_name:
+                raise SafetyError("Retry video must be a filename, not a path")
+            matches = [candidate for candidate in candidates if candidate.name == args.video_name]
+            if not matches:
+                raise SafetyError(f"Requested retry video is not an eligible queue item: {args.video_name}")
+            video = matches[0]
+        else:
+            video = candidates[0]
         if not ffprobe_ok(video):
             raise SafetyError(f"Video validation failed: {video}")
         service, channel = authorized_service(cfg)
@@ -405,6 +441,7 @@ def main() -> int:
             message = classify_http_error(exc)
             LOGGER.exception("Upload failed for %s: %s", video.name, message)
             report["failures"].append({"video_name": video.name, "error": message})
+            report["automatic_retry_safe"] = is_safely_retryable_upload_error(exc)
         report["remaining_upload_count"] = len(queue_files(cfg))
         write_report(args.report_json, report)
         return 0 if report["successful"] else 1

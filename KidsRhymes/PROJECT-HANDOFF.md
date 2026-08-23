@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-24 07:46 Australia/Sydney
+Last updated: 2026-08-24 09:04 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -395,11 +395,28 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 
 The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for kids on the exact Tiny Tales channel. Email reporting is separate from upload success and must not cause a duplicate retry.
 
+## Hourly retry task and resumed creation
+
+- At 08:13 on 2026-08-24, the user asked for failed uploads to retry hourly without changing the regular four-hour schedule. The original task still has exactly its six triggers at 00:20, 04:20, 08:20, 12:20, 16:20 and 20:20.
+- The new enabled `Tiny Tales - Hourly Upload Retry` task has the 18 intervening hourly triggers and next runs at 09:20. It uses `Run-UploadCycle.ps1 -RetryOnly`, the same global mutex, and `runtime/upload-retry-state.json`.
+- A retry is armed only for a failure that is safe to repeat without duplicate risk, and it targets the exact failed filename. Quota/upload-limit rejection is automatically retryable; an ambiguous interrupted insert remains protected by the attempt journal and requires live reconciliation.
+- Reporting email failure is logged separately and no longer changes upload success or triggers another video upload. Static Python compilation, PowerShell parsing and an empty-state `-RetryOnly` skip test passed before task installation.
+- The user then explicitly asked to continue video creation. `Animal Action Alphabet A-Z` is recorded in `STORY-ROADMAP.md` and is the active original 3D-look build using `maisie-uk`; automatic generation was still Disabled at this checkpoint while the curated producer/assets were being prepared.
+
+## Animal Action Alphabet and Brio workshop completion
+
+- `Animal Action Alphabet A-Z` completed as `animal-action-alphabet-a-to-z-01` at 330.4 seconds. It uses `maisie-uk`, 26 individual animal sprites, five generated 3D world stages, code-driven movement/camera/action trails and 26 audited 4.8-second response gaps. The producer is `automation/production/produce_animal_action_alphabet.py`; its ten accepted `animal-action-*` assets are in `automation/production-assets`.
+- The animal video passed 1080p H.264/stereo AAC checks, a full FFmpeg decode and visual inspection of a complete A-Z contact sheet. It is queued public/made-for-kids behind the current newest item.
+- `Brio's Paintbrush Colour Workshop` then completed as `brio-paintbrush-colour-workshop-01` at 154.1 seconds. It uses `ryan-uk`, six consistent Brio poses, five accepted colour-drop friends, four generated art environments, code-painted canvas marks, colour mixing and ten participation gaps of at least five seconds. Its producer is `automation/production/produce_brio_paintbrush_workshop.py`; accepted `brio-*`, `paint-drop-*` and `paintbrush-*` assets remain in `automation/production-assets`.
+- Brio also passed its quality gate, full decode and contact-sheet review. At 09:04, the dry run found 39 eligible public queue items and selected `brio-paintbrush-colour-workshop-01.mp4` newest-first. Animal Action is immediately behind it. `COVERED-TOPICS.md` now records 50 concepts.
+- The 08:20 scheduled cycle independently uploaded `maya-rainy-day-joey-rescue-01.mp4` successfully as public/made-for-kids video `HtNGbHueDKQ`; the Outlook report was confirmed and the retry state was cleared. The archive has 11 MP4s.
+- `Tiny Tales - Continuous Generation` was re-enabled by the user's explicit resume request and is Ready for 10:05 with last result `0`. All ten curated manifest entries are complete, so scheduled generation now safely exits without producing anything until a new varied, reviewed manifest item is added. Do not restore automatic disappearance generation.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.
 2. Inspect `git status`, manifest, generation state, pending queue, archive, ledger, and recent logs without exposing secret contents.
-3. Query both exact Scheduled Tasks and their next/last run information.
+3. Query all three exact Scheduled Tasks and their next/last run information.
 4. Run the generation count-only command before generating anything.
 5. Verify the OAuth channel with the uploader's read-only verify command before any upload work.
 6. Report live state and discrepancies to the user.
@@ -413,7 +430,7 @@ Useful read-only commands from the project folder:
 C:\Animation\Animation\.venv\Scripts\python.exe -B automation\generation_runner.py --count-only
 C:\Animation\Animation\.venv\Scripts\python.exe -B automation\uploader.py verify
 C:\Animation\Animation\.venv\Scripts\python.exe -B automation\uploader.py dry-run --report-json automation\runtime\handoff-dry-run.json
-Get-ScheduledTask -TaskName 'Tiny Tales - Continuous Generation','Tiny Tales - Daily Private Upload'
+Get-ScheduledTask -TaskName 'Tiny Tales - Continuous Generation','Tiny Tales - Daily Private Upload','Tiny Tales - Hourly Upload Retry'
 ```
 
 ## Separate new-channel request

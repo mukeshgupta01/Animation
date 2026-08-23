@@ -1,6 +1,6 @@
 # Tiny Tales varied-story roadmap
 
-Updated: 2026-08-23
+Updated: 2026-08-24
 
 This roadmap records user-requested concepts for future production. Before rendering one, compare it with `COVERED-TOPICS.md`, live queued metadata, and the latest five completed concepts. Each production must retain the distinct format, movement system, visual language, interaction, and voice noted below; do not reduce these ideas to one reusable quiz template.
 
@@ -34,6 +34,7 @@ This roadmap records user-requested concepts for future production. Before rende
    - Structure: original call-and-response song with painting actions rather than a location quest.
    - Movement/visual system: brush sweeps, paint splashes, colour mixing, stamping and spirals on an expanding canvas.
    - Voice: `maisie-uk`; original music and lyrics only.
+   - First distinct treatment completed as `Brio's Paintbrush Colour Workshop`: Brio restores a blank canvas through red/yellow/blue air-painting, orange/green mixing, a canvas-meadow transformation and a gallery finale. It uses `ryan-uk`, ten participation gaps and original rhythmic music. Preserve Pippa's town-waking version as a possible later story only if it is redesigned rather than duplicated.
 
 5. **The Ant and the Grasshopper’s Shared Harvest**
    - User direction: ant and grasshopper song.
@@ -130,6 +131,14 @@ This roadmap records user-requested concepts for future production. Before rende
     - Children visit an orchard with permission and a grown-up, identify ripe fruit gently, wash it, count it and pack a colourful picnic without wasting produce.
     - Visual system: orchard rows, basket weight, washing-water motion and picnic pattern finale; original action song.
     - Voice: `natasha-au`.
+
+20. **Animal Action Alphabet A-Z**
+    - User direction: an educational idea like Animal Alphabet, with the user approving an action-based version and asking generation to resume.
+    - Children meet one original 3D-look animal per letter and copy a memorable movement: Alligator amble, Bear bounce, Cat creep, Dog dance, Elephant stomp, Frog jump, Giraffe grow tall, Horse gallop, Iguana inch, Jaguar jog, Kangaroo jump, Lion leap, Monkey march, Narwhal nod, Owl open its wings, Penguin waddle, Quokka take quick steps, Rabbit reach, Seal sway, Tiger tiptoe, Urchin unfurl fingers, Vulture flap, Whale wave, X-ray tetra make an X, Yak yawn and Zebra zigzag.
+    - Structure: a connected world-stage parade with short letter introductions and real movement windows, not a repeat of the existing static A-F or A-Z alphabet videos.
+    - Visual system: original polished 3D-rendered animal cutouts, habitat-stage portals, tracking camera motion, action trails and large code-rendered letters. Do not copy any existing preschool brand, character style, song or set.
+    - Voice: `maisie-uk`, following Nia's `ana-us` lead; use original rhythmic music and narration.
+    - Completed on 2026-08-24 as `animal-action-alphabet-a-to-z-01` at 5:30 with 26 audited action windows, five original world stages and all 26 approved animal sprites.
 
 ## Additional recurring-character ideas
 
