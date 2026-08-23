@@ -4,12 +4,13 @@ Updated: 2026-08-23
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 15.
+Known completed or queued video concepts: 18.
 
 ## Topic index
 
 - Animal Alphabet Adventure A-F | Learn Letters and Animals — `animal-alphabet-a-to-f-01` — archived/uploaded
 - Animal Alphabet Adventure A-Z | Learn Every Letter with Animals — `animal-alphabet-a-to-z-01` — archived/uploaded
+- Bird Find My Home | Habitat Rescue Adventure for Kids — `bird-find-my-home-01` — completed local, queued private upload
 - Colourful Bird Lost Colour Rescue | Interactive Animal Adventure — `bird-lost-colour-rescue-01` — completed local, queued private upload
 - Colourful Bird Animal Clue Detectives | Guessing Adventure for Kids — `colourful-bird-clue-detectives-01` — completed local, queued private upload
 - Farm Animal Clue Detectives | Guessing Adventure for Kids — `farm-animal-clue-detectives-01` — completed local, queued private upload
@@ -19,7 +20,9 @@ Known completed or queued video concepts: 15.
 - Guess The Farm Animal Shadow 01 — `guess-the-farm-animal-shadow-01` — archived/uploaded
 - Jungle Animal Clue Detectives | Guessing Adventure for Kids — `jungle-animal-clue-detectives-01` — completed local, queued private upload
 - Ocean Animal Superpower Detectives | Amazing Facts for Kids — `ocean-animal-superpowers-01` — archived/uploaded
+- Ocean Find My Home | Habitat Rescue Adventure for Kids — `ocean-find-my-home-01` — completed local, queued private upload
 - Ocean Lost Colour Rescue | Interactive Animal Adventure — `ocean-lost-colour-rescue-01` — completed local, queued private upload
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - What Animal Disappeared? | Memory Game for Kids — `what-animal-disappeared-01` — archived/uploaded
 - Who Ate the Snack? | 6 Fun Animal Food Clues for Kids — `who-ate-the-snack-episode-01` — archived/uploaded
+- Wild Animal Find My Home | Habitat Rescue Adventure for Kids — `wild-animal-find-my-home-01` — completed local, queued private upload
