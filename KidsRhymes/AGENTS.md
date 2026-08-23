@@ -51,3 +51,9 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The completed MP4 and viewer-facing metadata are in `automation/pending-uploads`; the private queue contains 37 MP4s. No upload was triggered by this generation cycle.
 - `COVERED-TOPICS.md` was rebuilt and records 46 concepts. The next count-only candidate is `What Colourful Bird Disappeared 1`.
 - The generation task returned to Ready with exit code `0` and remains scheduled for 20:05. Continue respecting the one-video-per-cycle cap and add varied non-quiz formats so disappearance episodes do not dominate the catalog.
+
+## Disappearance-frequency correction (2026-08-23 Australia/Sydney)
+
+- The user asked not to create disappearance-memory videos so frequently.
+- `automation/generation_runner.py` no longer synthesizes a five-theme disappearance episode whenever the curated manifest is exhausted. Existing completed and queued memory videos remain preserved.
+- An exhausted manifest now produces no new video until a deliberately varied item is added. Do not restore an all-disappearance fallback. Disappearance may appear occasionally in a genuinely mixed catalog, but never consecutively or as the dominant continuing format.

@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 17:42 Australia/Sydney
+Last updated: 2026-08-23 17:47 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -329,6 +329,14 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The MP4 and viewer-facing metadata were added to `automation/pending-uploads`, increasing the queue from 36 to 37 MP4s. Generation did not invoke the uploader.
 - `COVERED-TOPICS.md` was rebuilt and now records 46 completed or queued concepts. A post-run count-only check reported `What Colourful Bird Disappeared 1` as the next candidate.
 - The generation task returned to Ready with exit code `0` and remains enabled for 20:05. Preserve the five-cycle daily schedule and one-video cap, but continue introducing varied non-quiz concepts so disappearance episodes do not become the dominant output.
+
+## Disappearance-memory frequency correction
+
+- After reviewing the first resumed cycle, the user asked that disappearance videos not be created so frequently.
+- The old `continuous_item()` fallback in `automation/generation_runner.py` contained five disappearance-only theme slots. It was removed, so completing the curated manifest no longer automatically selects another disappearance episode.
+- Existing historical and queued disappearance videos are preserved. Do not delete or regenerate them.
+- Scheduled generation remains enabled, but an exhausted curated manifest now completes without producing a video. Add intentionally varied, reviewed manifest items before expecting further output; do not restore a repetitive fallback.
+- Future mixed catalogs may use the memory format occasionally, but it must not run consecutively or dominate the rotation. Prefer stories, science, movement, sounds, habitats, kindness, cause-and-effect, and other visually distinct formats.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
