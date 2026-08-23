@@ -1,6 +1,6 @@
 # Parenting Rewind project instructions
 
-Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect the live project state. The handoff is a guide; live files take precedence. Before creating a video, also read `README.md` and `production-assets/asset-library.json`.
+Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect the live project state. The handoff is a guide; live files take precedence. Before creating a video, also read `README.md`, `COVERED-TOPICS.md`, and `production-assets/asset-library.json`; search `metadata/` to avoid repeating an active or historical topic. Rebuild the topic index with `scripts/update_covered_topics.py` after adding metadata.
 
 ## Asset reuse comes first
 

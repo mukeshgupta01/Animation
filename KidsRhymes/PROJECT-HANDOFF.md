@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 12:15 Australia/Sydney
+Last updated: 2026-08-23 13:30 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -38,6 +38,9 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_snack_video.py`: shared 1080p rendering/audio helpers and snack format.
 - `automation/production/produce_animal_games.py`: themed disappearance/alphabet rendering. Matching and shadow generation are explicitly retired and blocked.
 - `automation/production/produce_superpower_video.py`: interactive Ocean Superpower Detectives format.
+- `automation/production/produce_clue_detective_batch.py`: resumable local-only jungle, farm and colourful-bird clue adventures.
+- `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
+- `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
 - `automation/Run-GenerationCycle.ps1`: time-boxed generation task wrapper with global mutex.
 - `automation/Run-UploadCycle.ps1`: independent upload/email wrapper with separate global mutex.
@@ -70,7 +73,7 @@ Exact task names:
 - `Tiny Tales - Continuous Generation`
 - `Tiny Tales - Daily Private Upload` (the historical name says Daily, but it now has five daily triggers)
 
-Generation starts daily at 00:05, 05:05, 10:05, 15:05, and 20:05. Each process is limited to about 4 hours 45 minutes and generates at most one new video. Upload checks run independently at 00:20, 05:20, 10:20, 15:20, and 20:20. Both tasks use wake, network-required, start-when-available, interactive-current-user, and ignore-new-instance settings. Named mutexes provide a second overlap guard.
+Generation starts daily at 00:05, 05:05, 10:05, 15:05, and 20:05. Each process is limited to about 4 hours 45 minutes and generates at most one new video. At the user's request on 2026-08-23, private upload checks now run every four hours at 00:20, 04:20, 08:20, 12:20, 16:20, and 20:20. Both tasks use wake, network-required, start-when-available, interactive-current-user, and ignore-new-instance settings. Named mutexes provide a second overlap guard.
 
 Verified at handoff:
 
@@ -126,6 +129,16 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - `3z6kDg0DXmo` - Ocean Animal Superpower Detectives
 - `fvtpuEGx5Vw` - Animal Alphabet Adventure A-F
 - `-ayS0UTmcfA` - Animal Alphabet Adventure A-Z
+
+## New clue-detective batch and four-hour upload checkpoint
+
+- Three local Animal Clue Detective videos completed on 2026-08-23: jungle (131.5 seconds), farm (126.8 seconds), and colourful birds (130.8 seconds). Each passed its automated quality gate, full FFmpeg decode, and visual contact-sheet review.
+- The three MP4s total 19.47 MiB. They remain in `automation/production-output`, with matching metadata under `metadata/`.
+- Live OAuth verification returned the exact locked Tiny Tales channel ID `UCEn9N-ITQHshjgt6fy7fxnw` before queueing.
+- All three were copied into `automation/pending-uploads` with metadata for private, made-for-kids upload. They are not counted as uploaded until YouTube returns an ID; the upload ledger remains authoritative.
+- The upload Scheduled Task was changed and verified Ready with triggers at 00:20, 04:20, 08:20, 12:20, 16:20 and 20:20. At verification, its next run was 2026-08-23 16:20 Australia/Sydney.
+- The stale `continuous-00001-jungle-disappeared-01` runtime entry was reset from `running` to `pending` after confirming no Python/FFmpeg process and no completed output. Partial work files were preserved.
+- `COVERED-TOPICS.md` records 12 completed or queued Tiny Tales concepts, including retired formats. Rebuild it with `automation/update_covered_topics.py` after future metadata or media changes.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 

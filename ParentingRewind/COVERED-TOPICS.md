@@ -1,0 +1,94 @@
+# Covered topics
+
+Updated: 2026-08-23
+
+Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
+
+Unique topics: 84 (60 active; 24 historical-only).
+
+## Topic index
+
+- [active] Agree on a Homework Help Signal — metadata: parenting-rewind-redesign-58-homework-help-signal-v1.json
+- [active] Choose a Homework Time Together — metadata: parenting-rewind-redesign-12-homework-time-together-v1.json
+- [active] Describe Cooperation Like a Commentator — metadata: parenting-rewind-redesign-16-describe-cooperation-v1.json
+- [active] Give a Shopping Job Before You Enter — metadata: parenting-rewind-redesign-42-shopping-job-before-entry-v1.json
+- [active] Give a Warning That Means Something — metadata: parenting-rewind-redesign-06-playground-warning-v1.json
+- [active] Give Each Child One Clear Job — metadata: parenting-rewind-redesign-09-separate-kitchen-jobs-v1.json
+- [active] Give One Library Direction at a Time — metadata: parenting-rewind-redesign-39-one-library-direction-v1.json
+- [active] Give the Direction, Then Wait — metadata: parenting-rewind-redesign-35-direction-then-wait-v1.json
+- [active] Give Thirty Seconds of Full Attention — metadata: parenting-rewind-redesign-29-full-attention-listening-v1.json
+- [active] Give Your Child Input on Homework Timing — metadata: parenting-rewind-redesign-30-child-input-homework-plan-v1.json
+- [active] Hear Each Sibling Separately First — metadata: parenting-rewind-redesign-53-sibling-listen-separately-v1.json
+- [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
+- [active] Keep the Bedtime Sequence Familiar — metadata: parenting-rewind-redesign-15-same-bedtime-sequence-v1.json
+- [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
+- [active] Listen Before Repeating the Screen Limit — metadata: parenting-rewind-redesign-10-listen-before-screen-limit-v1.json
+- [active] Listen to One Sibling at a Time — metadata: parenting-rewind-redesign-23-listen-to-each-sibling-v1.json
+- [active] Make Sibling Turns Visible — metadata: parenting-rewind-redesign-44-sibling-turns-visible-v1.json
+- [active] Make the Chore Plan Visible — metadata: parenting-rewind-redesign-38-visual-chore-plan-v1.json
+- [active] Make the Direction a Statement — metadata: parenting-rewind-redesign-21-direction-not-question-v1.json
+- [active] Make the Final Soccer Turn Concrete — metadata: parenting-rewind-redesign-37-soccer-final-shot-v1.json
+- [active] Make the Homework Space Ready — metadata: parenting-rewind-redesign-24-homework-ready-space-v1.json
+- [active] Make the Screen-Time Ending Plan First — metadata: parenting-rewind-redesign-48-screen-time-plan-before-play-v1.json
+- [active] Move Close Before Giving the Direction — metadata: parenting-rewind-redesign-13-move-close-first-v1.json
+- [active] Name the Feeling and Keep the Playground Limit — metadata: parenting-rewind-redesign-50-playground-feeling-and-limit-v1.json
+- [active] Name the Patient Waiting You Notice — metadata: parenting-rewind-redesign-14-praise-patient-waiting-v1.json
+- [active] Notice the Bedtime Step That Worked — metadata: parenting-rewind-redesign-52-bedtime-notice-cooperation-v1.json
+- [active] Offer a Bedtime Choice Inside the Boundary — metadata: parenting-rewind-redesign-43-bedtime-choice-inside-boundary-v1.json
+- [active] Offer a Choice About How Soccer Ends — metadata: parenting-rewind-redesign-54-soccer-ending-choice-v1.json
+- [active] Offer One Safe Bedtime Comfort Choice — metadata: parenting-rewind-redesign-26-bedtime-comfort-choice-v1.json
+- [active] One Morning Direction at a Time — metadata: parenting-rewind-redesign-08-one-step-morning-v1.json
+- [active] Plan the Homework Break Before Frustration — metadata: parenting-rewind-redesign-49-homework-break-plan-v1.json
+- [active] Praise Chore Effort, Not Perfect Folding — metadata: parenting-rewind-redesign-32-praise-chore-effort-v1.json
+- [active] Praise Each Child's Laundry Contribution — metadata: parenting-rewind-redesign-55-laundry-teamwork-praise-v1.json
+- [active] Praise Each Child's Separate Contribution — metadata: parenting-rewind-redesign-36-praise-separate-contributions-v1.json
+- [active] Praise the Book-Returning Step — metadata: parenting-rewind-redesign-22-praise-returning-books-v1.json
+- [active] Praise the Homework Start — metadata: parenting-rewind-redesign-40-praise-homework-start-v1.json
+- [active] Praise the Leaving Step You Saw — metadata: parenting-rewind-redesign-41-praise-leaving-playground-v1.json
+- [active] Praise the Shopping Help Specifically — metadata: parenting-rewind-redesign-31-praise-shopping-help-v1.json
+- [active] Praise the Soccer Effort You Saw — metadata: parenting-rewind-redesign-45-soccer-effort-praise-v1.json
+- [active] Praise the Teamwork You Want Repeated — metadata: parenting-rewind-redesign-05-notice-teamwork-v1.json
+- [active] Prepare Bedtime Needs Before Lights Out — metadata: parenting-rewind-redesign-11-prepare-bedtime-needs-v1.json
+- [active] Preview the Library Leaving Steps — metadata: parenting-rewind-redesign-56-library-leaving-preview-v1.json
+- [active] Reconnect After the Screen-Time Limit — metadata: parenting-rewind-redesign-57-screen-time-reconnect-v1.json
+- [active] Reflect the Feeling Before Solving — metadata: parenting-rewind-redesign-18-reflect-before-solving-v1.json
+- [active] Reflect the Library Disappointment — metadata: parenting-rewind-redesign-34-library-feeling-reflection-v1.json
+- [active] Reflect the Library Excitement — metadata: parenting-rewind-redesign-47-library-reflect-excitement-v1.json
+- [active] Repeat the Checkout Answer Calmly — metadata: parenting-rewind-redesign-51-checkout-calm-repeat-v1.json
+- [active] Say What to Do in the Shop — metadata: parenting-rewind-redesign-20-say-what-to-do-shopping-v1.json
+- [active] Say What to Do With the Books — metadata: parenting-rewind-redesign-28-positive-library-direction-v1.json
+- [active] Screen Time Is Over: What to Say Without Shouting — metadata: pilot-02-screen-time-v1.json
+- [active] Shift to Quiet Before Bed — metadata: parenting-rewind-redesign-33-quiet-bedtime-routine-v1.json
+- [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
+- [active] The One-More-Story Loop — metadata: parenting-rewind-025-one-more-story-v1.json, parenting-rewind-redesign-04-one-more-story-v1.json
+- [active] Use One Playground Warning — metadata: parenting-rewind-redesign-25-one-playground-warning-v1.json
+- [active] Use One Real Choice at the Library — metadata: parenting-rewind-redesign-17-library-one-book-choice-v1.json
+- [active] Warn Before Homework Starts — metadata: parenting-rewind-redesign-19-homework-transition-warning-v1.json
+- [active] When Bedtime Keeps Moving — metadata: parenting-rewind-redesign-02-bedtime-stalling-v1.json
+- [active] When Both Kids Want the Same Job — metadata: parenting-rewind-redesign-01-kitchen-siblings-v1.json
+- [active] When the Checkout Request Becomes a Battle — metadata: parenting-rewind-redesign-07-checkout-choices-v1.json
+- [active] When Your Child Refuses Their Shoes — metadata: pilot-01-shoes-v2-conversational.json, pilot-01-shoes-v3-dynamic-music.json, pilot-01-shoes-v4-audible-dynamic-music.json, pilot-01-shoes.json
+- [historical] A Slow Morning Without Shouting — metadata: parenting-rewind-010-slow-morning-v1.json
+- [historical] Dinner Is Not a Bite Negotiation — metadata: parenting-rewind-027-picky-dinner-v1.json
+- [historical] Getting Out of the Bath — metadata: parenting-rewind-023-bath-exit-v1.json
+- [historical] Helping a New Food Feel Less Scary — metadata: parenting-rewind-028-new-food-v1.json
+- [historical] Responding to Whining Without Whining Back — metadata: parenting-rewind-015-whining-v1.json
+- [historical] Start Bedtime Before Everyone Is Exhausted — metadata: parenting-rewind-021-bedtime-start-v1.json
+- [historical] Stop Refereeing Every Sibling Fight — metadata: parenting-rewind-018-sibling-fight-v1.json
+- [historical] The Checkout Line Without Constant Warnings — metadata: parenting-rewind-004-checkout-waiting-v1.json
+- [historical] The Doorway Stall at the Worst Moment — metadata: parenting-rewind-012-doorway-stall-v1.json
+- [historical] The School Bag Is Still on the Floor — metadata: parenting-rewind-009-school-bag-v1.json
+- [historical] They Both Want the Same Toy — metadata: parenting-rewind-017-sharing-toy-v1.json
+- [historical] Toothbrushing Without a Wrestling Match — metadata: parenting-rewind-022-toothbrushing-v1.json
+- [historical] Toy Cleanup Without Saying It Ten Times — metadata: parenting-rewind-013-toy-cleanup-v1.json
+- [historical] Turn Grocery Shopping Into Cooperation — metadata: parenting-rewind-007-shopping-helper-v1.json
+- [historical] When a Public Meltdown Draws an Audience — metadata: parenting-rewind-006-public-meltdown-v1.json
+- [historical] When a Toy Becomes a Projectile — metadata: parenting-rewind-020-toy-throwing-v1.json
+- [historical] When Losing a Game Ends in Tears — metadata: parenting-rewind-019-losing-game-v1.json
+- [historical] When One Child Hits Another — metadata: parenting-rewind-016-hitting-v1.json
+- [historical] When Only the Wrong Shoes Will Do — metadata: parenting-rewind-011-wrong-shoes-v1.json
+- [historical] When Pajamas Become the Battle — metadata: parenting-rewind-024-pajamas-v1.json
+- [historical] When They Demand a Supermarket Snack — metadata: parenting-rewind-003-supermarket-snack-v1.json
+- [historical] When They Refuse a Coat — metadata: parenting-rewind-008-morning-coat-v1.json
+- [historical] When Worries Arrive at Lights-Out — metadata: parenting-rewind-026-night-worry-v1.json
+- [historical] When Your Child Interrupts Every Sentence — metadata: parenting-rewind-014-interrupting-v1.json

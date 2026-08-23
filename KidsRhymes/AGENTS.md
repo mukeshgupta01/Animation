@@ -1,6 +1,6 @@
 # Tiny Tales project instructions
 
-Before changing or running this project, read `PROJECT-HANDOFF.md` completely and then inspect the live runtime state. The handoff is a guide; local manifests, ledgers, task status, logs, and files are the source of truth when they are newer.
+Before changing or running this project, read `PROJECT-HANDOFF.md` completely and then inspect the live runtime state. The handoff is a guide; local manifests, ledgers, task status, logs, and files are the source of truth when they are newer. Before creating a new concept, read `COVERED-TOPICS.md` and rebuild it with `automation/update_covered_topics.py` after new metadata or completed media is added.
 
 Safety requirements:
 

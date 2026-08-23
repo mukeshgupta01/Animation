@@ -1,0 +1,22 @@
+# Covered topics
+
+Updated: 2026-08-23
+
+Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
+
+Known completed or queued video concepts: 12.
+
+## Topic index
+
+- Animal Alphabet Adventure A-F | Learn Letters and Animals — `animal-alphabet-a-to-f-01` — archived/uploaded
+- Animal Alphabet Adventure A-Z | Learn Every Letter with Animals — `animal-alphabet-a-to-z-01` — archived/uploaded
+- Colourful Bird Animal Clue Detectives | Guessing Adventure for Kids — `colourful-bird-clue-detectives-01` — completed local, queued private upload
+- Farm Animal Clue Detectives | Guessing Adventure for Kids — `farm-animal-clue-detectives-01` — completed local, queued private upload
+- Find the Matching Animal Picture | Preschool Visual Game — `find-the-matching-animal-01` — archived/uploaded
+- Guess the Animal Shadow | 6 Silhouette Puzzles for Kids — `guess-the-animal-shadow-01` — archived/uploaded
+- Guess The Farm Animal Shadow 01 — `guess-the-farm-animal-shadow-01` — archived/uploaded
+- Jungle Animal Clue Detectives | Guessing Adventure for Kids — `jungle-animal-clue-detectives-01` — completed local, queued private upload
+- Ocean Animal Superpower Detectives | Amazing Facts for Kids — `ocean-animal-superpowers-01` — archived/uploaded
+- Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
+- What Animal Disappeared? | Memory Game for Kids — `what-animal-disappeared-01` — archived/uploaded
+- Who Ate the Snack? | 6 Fun Animal Food Clues for Kids — `who-ate-the-snack-episode-01` — archived/uploaded
