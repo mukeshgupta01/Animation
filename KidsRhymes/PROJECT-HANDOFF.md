@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 15:37 Australia/Sydney
+Last updated: 2026-08-23 15:43 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -48,6 +48,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_baby_animal_album_batch.py`: resumable farm, wild-animal and bird family-album vocabulary adventures with adult/baby pages and six-second choices.
 - `automation/production/produce_picture_size_adventures.py`: resumable early-maths batch with three distinct scene systems: ocean picture bubbles, a farm height ruler, and bird measuring strips.
 - `automation/production/produce_raindrop_journey_story.py`: resumable one-off water-cycle narrative with a recurring raindrop character, seven changing environments, and three movement moments.
+- `automation/production/produce_animal_sound_orchestra.py`: resumable one-off concert with eight farm, wild and bird performers, animated stage palettes, and child call-and-response windows.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -229,6 +230,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The video passed its automated technical gate, full FFmpeg decode, and a visual review covering every story and participation scene.
 - Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 29 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 28 age-eligible items because the newest story was still inside the configured stability window.
 - `COVERED-TOPICS.md` was rebuilt and now records 38 completed or queued concepts.
+
+## Animal Sound Orchestra checkpoint
+
+- On 2026-08-23, the one-off `Animal Sound Orchestra` completed at 192.9 seconds.
+- Eight performers take three differently coloured concert stages: cow/moo, sheep/bleat or baa, pig/oink, chicken/cluck, lion/roar, elephant/trumpet, owl/hoot, and parrot/squawk. Narration also notes that animals may use several calls, avoiding presenting each species as having only one sound.
+- Every performer has a 4.8-second call-and-response window with a progress bar, animated musical notes and a pulsing character. The opening and finale show the whole ensemble. Existing approved animal artwork was reused with zero new image-generation calls.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the opening, all eight performer screens, all eight echo screens, and the finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 30 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 29 age-eligible items because the newest concert was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 39 completed or queued concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
