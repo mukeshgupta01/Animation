@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-53-sibling-listen-separately",
+  "version": "v1",
+  "title": "Hear Each Sibling Separately First | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "When two children explain a kitchen conflict at once, volume can replace information before either story is understood. Demanding an immediate shared solution may ask children to cooperate before they feel heard or calm enough to listen. Pause and give each child a short uninterrupted turn while the other waits nearby. Try: I will listen to your sister first, then you will have your turn; after both stories, we will choose the next safe job. Separate listening slows the conflict down and gives the family a clearer starting point for repair and cooperation."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/kitchen-siblings-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-53-sibling-listen-separately\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-53-sibling-listen-separately-v1.mp4",
+    "duration_seconds": 37.86666666666667,
+    "sha256": "B68FE0801C8FA9681A6C5BEB3649792CB9E22E57AD84A2C131C73D44696B4C66"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-52-bedtime-notice-cooperation",
+  "version": "v1",
+  "title": "Notice the Bedtime Step That Worked | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Bedtime can include complaints and cooperation in the same few minutes. Focusing only on the complaint may hide the moment a six-year-old actually put on pajamas or climbed into bed. Pause and name the useful action without pretending the whole evening was easy. Try: You felt upset about stopping play, and you still put on your pajamas when the timer ended. Specific praise helps the child recognize the exact bedtime skill they used and can practice again tomorrow."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Child-led Play",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/special-playtime.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/bedtime-father-daughter-storyboard-01.png",
+    "panel_order": [
+      2,
+      0,
+      1,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-52-bedtime-notice-cooperation\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-52-bedtime-notice-cooperation-v1.mp4",
+    "duration_seconds": 32.03333333333333,
+    "sha256": "40C9A84E8A89A744669E026907FFA087334668CF79D939870659D5EC1F06411C"
+  }
+}
