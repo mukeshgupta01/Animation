@@ -4,13 +4,14 @@ Updated: 2026-08-23
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 40.
+Known completed or queued video concepts: 41.
 
 ## Topic index
 
 - Animal Alphabet Adventure A-F | Learn Letters and Animals — `animal-alphabet-a-to-f-01` — archived/uploaded
 - Animal Alphabet Adventure A-Z | Learn Every Letter with Animals — `animal-alphabet-a-to-z-01` — archived/uploaded
 - Animal Opposites Playground | Up, Down, In, Out and More for Kids — `animal-opposites-playground-01` — completed local, queued private upload
+- Animal Shape Builders | Circle, Triangle, Square and More for Kids — `animal-shape-builders-01` — completed local, queued private upload
 - Animal Sound Orchestra | Moo, Roar, Hoot and More for Kids — `animal-sound-orchestra-01` — completed local, queued private upload
 - Bird Amazing Animal Tools | Body Features for Kids — `bird-amazing-animal-tools-01` — completed local, queued private upload
 - Bird Baby Animal Family Album | Learn Baby Names for Kids — `bird-baby-family-album-01` — completed local, queued private upload

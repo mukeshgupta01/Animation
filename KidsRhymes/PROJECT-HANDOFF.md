@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 15:50 Australia/Sydney
+Last updated: 2026-08-23 15:56 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -50,6 +50,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_raindrop_journey_story.py`: resumable one-off water-cycle narrative with a recurring raindrop character, seven changing environments, and three movement moments.
 - `automation/production/produce_animal_sound_orchestra.py`: resumable one-off concert with eight farm, wild and bird performers, animated stage palettes, and child call-and-response windows.
 - `automation/production/produce_animal_opposites_playground.py`: resumable one-off split-screen spatial-vocabulary adventure with six opposite pairs and movement prompts.
+- `automation/production/produce_animal_shape_builders.py`: resumable one-off early-geometry construction story with six shapes, changing environments, and tracing prompts.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -249,6 +250,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The video passed its automated technical gate, full FFmpeg decode, and a visual review of the title, all six teaching screens, all six movement screens, and the finale.
 - Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 31 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 30 age-eligible items because the newest video was still inside the configured stability window.
 - `COVERED-TOPICS.md` was rebuilt and now records 40 completed or queued concepts.
+
+## Animal Shape Builders checkpoint
+
+- On 2026-08-23, the one-off `Animal Shape Builders` completed at 161.7 seconds.
+- Six helpers construct different parts of a playground: Dolphin uses circles for ocean bubbles, Goat uses triangles for mountains and a roof, Pig uses square barn windows, Elephant uses rectangle bridge planks, Owl finds oval nest eggs, and Parrot hangs five-point star decorations.
+- Every scene explains relevant curved edges, straight sides or corners and is followed by a 4.8-second air-tracing activity. This is a connected construction story rather than a guessing quiz. All shape geometry and environments were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the title, all six teaching screens, all six tracing screens, and the completed-playground finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 32 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 31 age-eligible items because the newest video was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 41 completed or queued concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
