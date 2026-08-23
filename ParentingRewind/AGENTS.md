@@ -58,6 +58,8 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 
 ## Keep the account handoff current
 
+- At the end of every Parenting Rewind task, review the user's newest instructions. Add any durable workflow, creative, upload, notification, safety or continuity rule to this `AGENTS.md` in the same checkpoint instead of leaving it only in chat history.
+- Keep `AGENTS.md` synchronized with the latest explicit user direction. When a new instruction supersedes an older one, label or replace the obsolete rule clearly so a fresh session cannot follow both.
 - After any material change to outputs, preferred versions, assets, scripts, metadata, channel identity, OAuth status, upload state, email automation or Scheduled Tasks, update `PROJECT-HANDOFF.md` before finishing the task.
 - Update its `Last updated` date and next actions, and make sure `CONTINUE-IN-NEW-CODEX.txt` still points to the correct files.
 - Keep instructions concise. Put durable rules in this file and changing status/details in `PROJECT-HANDOFF.md`.
@@ -77,3 +79,5 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Stage only intended `ParentingRewind` paths. Never commit OAuth client files, tokens, immutable runtime locks, upload ledgers, logs, generated MP4s, production work, virtual environments or unrelated user changes.
 - Do not create an unattended auto-commit task: every Git checkpoint must be reviewed so credentials and partial outputs cannot be captured accidentally.
 - USER RECONFIRMATION (2026-08-23): keep Git updated continuously as part of the work. After every small completed production interval, make a reviewed local commit and push it when safe. If the branch is ahead and behind, do not force-push or discard either side; record the divergence and reconcile explicitly before pushing.
+- USER RECONFIRMATION (2026-08-23 20:42): keep this `AGENTS.md` current with the user's latest durable instructions and include those updates in the reviewed Git checkpoint and push.
+- AUTOMATIC SYNC AUTHORIZATION (2026-08-23): the user authorized the workspace-level `Animation Git Sync Every Three Hours` task. It may fetch, cleanly fast-forward and push reviewed commits for the whole repository, but it must follow the fail-closed rules in the root `AGENTS.md`: no auto-commit, force-push, dirty-tree pull, destructive reset or automatic divergence resolution.

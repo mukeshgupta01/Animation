@@ -19,3 +19,10 @@ This workspace contains two separate video projects. Keep their files, credentia
 - After a material project change, update that project's handoff in the same task so a fresh Codex session receives the current state. Record paths and status, never secret values.
 - If an instruction or handoff appears stale or conflicts with live state, stop the affected external action, reconcile the discrepancy safely and update the documentation.
 - If an upload process exits after sending data but before recording a video ID, perform a read-only channel query for the exact title before any retry. Reconcile a confirmed upload into the local ledger; never risk a duplicate upload.
+
+## Repository synchronization
+
+- The user authorized automatic Git synchronization for this `Animation` repository every three hours so Parenting Rewind work from this computer and other-project work from another computer remain shared.
+- The scheduled sync may fetch, fast-forward a clean `main`, and push reviewed commits. It must never auto-commit, force-push, reset, discard files, auto-resolve a divergence, or pull into a dirty worktree.
+- When the worktree is dirty, fetch only and leave the user's files untouched. When local and remote have diverged, log the state and leave reconciliation to an interactive reviewed session.
+- The task is `Animation Git Sync Every Three Hours`; its reviewed scripts are `automation/Run-GitSync.ps1` and `automation/Install-GitSyncTask.ps1`. Runtime logs belong under ignored `runtime/`.
