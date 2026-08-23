@@ -43,3 +43,11 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Read-only YouTube verification matched Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The upload dry run selected `jungle-animal-clue-detectives-01.mp4` from 36 queued items and performed no upload.
 - `Tiny Tales - Continuous Generation` was re-enabled and verified Ready for 20:05. `Tiny Tales - Daily Private Upload` remained enabled and Ready for 20:20; its previous result remains `1` from the recorded quota failure.
 - Generation is authorized again under the existing one-video-per-cycle safeguards. The animal-shadow format remains retired, and uploads remain private, made for kids, channel-locked, and independently scheduled.
+
+## First resumed generation cycle (2026-08-23 17:42 Australia/Sydney)
+
+- After the user reaffirmed that video generation should continue, the existing guarded Scheduled Task was started once manually while remaining enabled for its normal triggers.
+- `What Farm Animal Disappeared? | Memory Game 1 for Kids` completed successfully as `what-farm-animal-disappeared-01` at 130 seconds. It passed the automated quality gate, a full FFmpeg decode, and visual contact-sheet review.
+- The completed MP4 and viewer-facing metadata are in `automation/pending-uploads`; the private queue contains 37 MP4s. No upload was triggered by this generation cycle.
+- `COVERED-TOPICS.md` was rebuilt and records 46 concepts. The next count-only candidate is `What Colourful Bird Disappeared 1`.
+- The generation task returned to Ready with exit code `0` and remains scheduled for 20:05. Continue respecting the one-video-per-cycle cap and add varied non-quiz formats so disappearance episodes do not dominate the catalog.

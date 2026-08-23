@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 17:36 Australia/Sydney
+Last updated: 2026-08-23 17:42 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -320,6 +320,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - Read-only YouTube verification matched Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. A dry run performed no upload, found 36 queued items, and selected `jungle-animal-clue-detectives-01.mp4` next.
 - `Tiny Tales - Continuous Generation` was re-enabled and verified Ready with its next run at 20:05. `Tiny Tales - Daily Private Upload` remained enabled and Ready with its next run at 20:20. Its last result remained `1`, consistent with the recorded YouTube daily upload-quota failure.
 - Generation may continue under the existing one-video-per-cycle limit. Do not create animal-shadow videos, and preserve the independent private/made-for-kids upload workflow.
+
+## First resumed generation cycle
+
+- At 17:39 on 2026-08-23, after the user reaffirmed the instruction to keep generating videos, the enabled `Tiny Tales - Continuous Generation` task was started once manually. Its existing mutex and one-video-per-cycle limit remained in force.
+- The cycle completed successfully in 102.5 seconds and generated `What Farm Animal Disappeared? | Memory Game 1 for Kids` (`what-farm-animal-disappeared-01`), a 130-second farm-animal memory video.
+- `automation/production-work/farm-disappeared-episode-01/quality-report.json` passed all size, duration, video, and audio checks. A full FFmpeg decode returned no errors, and the complete contact sheet was visually reviewed with readable prompts, answer states, and no observed clipping.
+- The MP4 and viewer-facing metadata were added to `automation/pending-uploads`, increasing the queue from 36 to 37 MP4s. Generation did not invoke the uploader.
+- `COVERED-TOPICS.md` was rebuilt and now records 46 completed or queued concepts. A post-run count-only check reported `What Colourful Bird Disappeared 1` as the next candidate.
+- The generation task returned to Ready with exit code `0` and remains enabled for 20:05. Preserve the five-cycle daily schedule and one-video cap, but continue introducing varied non-quiz concepts so disappearance episodes do not become the dominant output.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
