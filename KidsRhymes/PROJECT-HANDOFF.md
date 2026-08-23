@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 16:30 Australia/Sydney
+Last updated: 2026-08-23 16:50 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -55,6 +55,8 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_tiny_seed_growth_story.py`: resumable one-off plant-life-cycle narrative with seven growth stages, an underground root cutaway, and farm helpers.
 - `automation/production/produce_five_senses_quest.py`: resumable long-form Pip adventure with five generated storybook locations, two voice deliveries, animated travel/reactions, sense-token collection, and audited response gaps.
 - `automation/production-assets/five-senses-*.png`: five accepted generated backgrounds for sight, hearing, smell, taste and touch. These assets are intentionally force-added to Git despite the project's broad PNG ignore rule so the producer works on another computer.
+- `automation/production/produce_four_seasons_journey.py`: resumable long-form Pip adventure through four season-specific destinations, with moving-character travel, four token types, contextual child activities, two voice deliveries, and audited response gaps.
+- `automation/production-assets/four-seasons-*.png`: four accepted generated backgrounds for spring, summer, autumn and winter. Force-add these ignored PNG assets with the producer so the video remains reproducible on another computer.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -282,6 +284,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The final video passed its automated 1080p H.264/AAC technical gate, voice-overlap audit, response-gap audit, full FFmpeg decode, and visual review of all arrivals, activities, reward states and finale.
 - Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 34 MP4s. The immediate dry run reported 33 age-eligible items because this new file was inside the stability window. `COVERED-TOPICS.md` now records 43 completed or queued concepts.
 - The scheduled 16:20 uploader ran while production was held. YouTube returned HTTP 429 for `jungle-animal-clue-detectives-01.mp4`, specifically the daily video-upload quota; the queue item was preserved and a later scheduled cycle can retry. Do not bypass the quota or manually duplicate the upload.
+
+## Pip's Four Seasons Journey checkpoint
+
+- On 2026-08-23, the distinct `Pip's Four Seasons Journey` completed at 279.266667 seconds (4:39) and 86,880,144 bytes. Four locations follow this topic naturally rather than forcing the reference video's scene count: Bud-and-Bloom Garden/spring, Sunny Shade Cove/summer, Whirling Leaf Lane/autumn, and Snowflake Grove/winter.
+- Pip independently floats, bobs, blinks, speaks, waves, travels into and out of each setting, reacts to success, collects a moving season token, and celebrates with all four orbiting tokens. Narrator and Pip retain separate rate/pitch deliveries.
+- Activities ask children to find three buds, identify shade and water, count five falling leaves, and find three snowflakes plus warm clothes. All four audited response gaps exceed five seconds; summer safety language keeps decisions with a trusted grown-up.
+- Four built-in image-generation calls produced four accepted storybook backgrounds with no rejected variants. The accepted files are under `automation/production-assets/four-seasons-*.png` and must be force-added despite the broad PNG ignore rule.
+- The final MP4 passed the automated 1080p H.264/AAC gate, voice-overlap and activity-gap audits, full FFmpeg decode, and a visual review of the title, all destinations, prompts, rewards, moving Pip states, and finale.
+- Its MP4 and metadata were added collision-safely to `automation/pending-uploads`, bringing the live queue folder to 35 MP4s. The immediate dry run reported 34 age-eligible items because this newest file was inside the configured stability window; the next item remains `jungle-animal-clue-detectives-01.mp4`. `COVERED-TOPICS.md` now records 44 concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
