@@ -28,6 +28,12 @@ def candidate_outputs(path: Path, doc: dict) -> set[str]:
     return names
 
 
+def is_durable_active_metadata(path: Path) -> bool:
+    """Keep approved/offloaded active episodes active when MP4s live in OneDrive."""
+    name = path.name.casefold()
+    return name.startswith("parenting-rewind-redesign-") or name.startswith("pilot-01-") or name.startswith("pilot-02-")
+
+
 def main() -> None:
     active = {path.stem for path in OUTPUT.glob("*.mp4")}
     topics: dict[str, dict] = defaultdict(lambda: {"files": [], "active": False})
@@ -40,7 +46,7 @@ def main() -> None:
         entry = topics[title.casefold()]
         entry["title"] = title
         entry["files"].append(path.name)
-        entry["active"] = entry["active"] or bool(candidate_outputs(path, doc) & active)
+        entry["active"] = entry["active"] or is_durable_active_metadata(path) or bool(candidate_outputs(path, doc) & active)
 
     active_count = sum(1 for item in topics.values() if item["active"])
     lines = [

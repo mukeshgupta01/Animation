@@ -1,0 +1,22 @@
+{
+  "channel_name": "Parenting Rewind",
+  "channel_id": "UCGb-IUQX2KQa_KA24MwE_aQ",
+  "report_recipient": "mukeshmelb01@gmail.com",
+  "privacy_status": "private",
+  "made_for_kids": false,
+  "private_upload_authorized": true,
+  "private_upload_authorized_on": "2026-08-23",
+  "category_id": "27",
+  "source_directories": [
+    "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23",
+    "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\ParentingRewind-60-Videos-2026-08-23",
+    "C:\\Users\\SQLBI-2\\OneDrive\\Videos\\ParentingRewind-60-Videos-2026-08-23",
+    "C:\\Users\\SQLBI-2\\OneDrive\\ParentingRewind-60-Videos-2026-08-23"
+  ],
+  "minimum_file_age_seconds": 300,
+  "first_tier_count": 6,
+  "first_tier_interval_hours": 4,
+  "second_tier_count": 6,
+  "second_tier_interval_hours": 6,
+  "remaining_interval_hours": 8
+}

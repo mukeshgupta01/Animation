@@ -208,7 +208,7 @@ async def produce(spec: dict) -> dict:
         "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
         "narration": {"type": "synthetic", "voice": VOICE, "rate": "-5%", "pitch": "-1Hz", "transcript": narration},
         "research": {"reviewed_on": "2026-08-23", "source": spec["source"], "claim_limits": ["Suggested wording is an example, not a guaranteed result.", "Adapt expectations to the individual child and safety context."]},
-        "artwork": {"primary_asset": f"production-assets/{spec['asset']}", "panel_order": spec["order"], "recycled_visuals_approved": spec["number"] in (4, 5, 6), "new_image_generation_calls": 0},
+        "artwork": {"primary_asset": f"production-assets/{spec['asset']}", "panel_order": spec["order"], "recycled_visuals_approved": spec.get("recycled_visuals_approved", spec["number"] in (4, 5, 6)), "new_image_generation_calls": 0},
         "music": {"type": "original locally synthesized emotional score", "narration_sidechain_ducking": True, "ambient_background_noise": False, "sound_effects": False},
         "captions": {"burned_in": True, "sidecar": str(srt.relative_to(PROJECT))},
         "published": False, "upload_authorized": False,

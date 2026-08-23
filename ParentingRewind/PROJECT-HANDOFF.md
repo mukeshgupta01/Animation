@@ -1,21 +1,27 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-08-23 12:37 (Australia/Sydney)
+Last updated: 2026-08-23 14:25 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains no OAuth client secret, token, password or immutable YouTube channel ID. Inspect the live workspace before acting because files may have changed after this handoff.
 
 ## Current objective
 
-Create a high-quality, adult-facing parenting education channel under the working name **Parenting Rewind**. The user plans to create the YouTube channel later. On 2026-08-22 the user approved the existing videos and authorized an open-ended overnight local production run targeting 50 or more complete videos. No upload is authorized.
+Create and operate a high-quality, adult-facing parenting education channel named **Parenting Rewind**. The channel is now created and OAuth-verified. On 2026-08-22 the user approved open-ended local production, and on 2026-08-23 the user separately authorized the private upload cadence recorded below.
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
 
 ## Current external state
 
-- The Parenting Rewind YouTube channel has not been created or verified.
-- This project has no OAuth client secret, OAuth token, immutable channel lock, upload ledger, uploader, upload archive, upload Scheduled Task or email automation.
-- Nothing from this project has been uploaded to YouTube.
-- Do not upload until a separate OAuth token returns the exact new channel ID from `channels.list(mine=true)` and the user explicitly approves one private test upload.
+- On 2026-08-23 the user reported that the Parenting Rewind YouTube channel was created and supplied immutable channel ID `UCGb-IUQX2KQa_KA24MwE_aQ`. OAuth subsequently returned exactly `Parenting Rewind` with that immutable ID.
+- A channel-specific fail-closed OAuth setup now exists under `automation/`. It is configured for Parenting Rewind and the supplied immutable ID, requests upload plus read-only verification scopes, and saves a local token/immutable lock only when `channels.list(mine=true)` returns the exact configured ID. It performs no upload.
+- The isolated Python environment at `automation/.venv` has been created and the Google API dependencies installed. A separate Parenting Rewind Desktop-app client JSON, OAuth token and immutable channel lock now exist locally in ignored `automation/secrets/` and `automation/runtime/` paths.
+- The live OAuth connection and immutable lock were verified successfully on 2026-08-23. No video has yet been uploaded.
+- EXPLICIT PRIVATE-UPLOAD AUTHORIZATION (2026-08-23): the user authorized unattended uploads from the synced Parenting Rewind OneDrive folder, always private and not made for kids, with videos 1-6 uploaded individually every four hours, videos 7-12 individually every six hours, and all remaining videos individually every eight hours. Each successful upload must send an Outlook email to `mukeshmelb01@gmail.com`. The user will review and manually publish videos.
+- The fail-closed uploader is `automation/private_uploader.py`; it checks the immutable OAuth channel ID before every real upload, requires a recorded confirmation flag, validates FFprobe and expected metadata hashes when available, derives titles/descriptions/tags from project metadata, leaves OneDrive sources untouched, and uses a local ignored ledger/attempt journal for duplicate protection.
+- Windows Scheduled Task `Parenting Rewind - Private Upload Cadence` was registered for interactive user `SQLBI-2\\SQLBI-2`. It checks hourly at minute 17, starts when available, wakes the computer, requires network, prevents overlapping runs and lets the uploader enforce the 4/6/8-hour cadence. Its first scheduled check is 2026-08-23 15:17 local time.
+- The expected OneDrive folder is not yet visible locally, so the dry run reports `waiting-for-onedrive-folder`. This is a safe waiting state and sends no email.
+- Nothing from this project has been uploaded to YouTube yet. The OAuth identity and private-upload authorization requirements are now satisfied; uploads remain limited to the fail-closed private automation and recorded cadence.
+- Channel launch materials are saved in `CHANNEL-LAUNCH-KIT.md` and `branding/`. The user reported completing the channel branding and description in YouTube Studio.
 
 ## Approved creative direction
 
@@ -129,10 +135,11 @@ Pilot 02 addresses **ending screen time without shouting**.
 - Redesigned checkpoint 9 (2026-08-23 13:01): episodes 42-48 completed with passing automated gates, full FFmpeg decodes and reviewed visual contact sheets. Active `output` now contains exactly 50 MP4s: two approved pilots plus redesigned episodes 01-48. The interval used supermarket, bedroom, kitchen, soccer, laundry, library and living-room families in sequence, with distinct lessons, scene orders and crop patterns. Resume code is `scripts/produce_redesigned_bundle_42_to_48.py`; it preserves passed existing outputs. The user's target of 50 active local videos has been reached, and open-ended local production remains authorized until the user asks to stop. No Parenting upload occurred.
 - Redesigned checkpoint 10 (2026-08-23 13:09): episodes 49-53 completed with passing automated gates, full FFmpeg decodes and reviewed visual contact sheets. Active `output` now contains 55 MP4s: two approved pilots plus redesigned episodes 01-53. The interval used homework, playground, supermarket, bedroom and kitchen families in sequence. Resume code is `scripts/produce_redesigned_bundle_49_to_53.py`; it preserves passed existing outputs. No Parenting upload occurred.
 - Redesigned checkpoint 11 (2026-08-23 13:17): episodes 54-58 completed with passing automated gates, full FFmpeg decodes and reviewed visual contact sheets. Active `output` now contains 60 MP4s: two approved pilots plus redesigned episodes 01-58. The interval used soccer, laundry, library, living-room and homework families in sequence. Resume code is `scripts/produce_redesigned_bundle_54_to_58.py`; it preserves passed existing outputs. No Parenting upload occurred.
+- New production checkpoint (2026-08-23 14:25): topic audit confirmed 84 pre-existing unique topics before production. New episode 59, `Repair After You Lose Your Temper`, was researched against AAP/HealthyChildren communication guidance, rendered with the existing entryway family asset, and completed at `output/parenting-rewind-redesign-59-repair-after-yelling-v1.mp4`. It is 41.53 seconds, 1080x1920 H.264 with 48 kHz stereo AAC, passed automated gates and a full FFmpeg decode, and its six-frame contact sheet was visually reviewed. `COVERED-TOPICS.md` now records 85 unique topics. The new local MP4 is not yet copied to OneDrive or queued for upload.
 - Transfer checkpoint (2026-08-23): all 60 active Parenting MP4s were copied non-destructively to `C:\Users\MukeshGupta\OneDrive\ParentingRewind-60-Videos-2026-08-23` and verified by file count and total byte size (206.34 MiB). Git continues to exclude MP4s; use OneDrive for finished-video transfer and Git for production code and metadata.
 - Business OneDrive checkpoint (2026-08-23): at the user's request, the same 60 active Parenting MP4s were also copied non-destructively to `C:\Users\MukeshGupta\OneDrive - SQL BI Consulting Pvt Ltd\Videos\ParentingRewind-60-Videos-2026-08-23`. The destination was verified at 60 files and 216,361,489 bytes (206.34 MiB). Treat this OneDrive for Business location as the preferred cross-computer transfer folder; the earlier personal OneDrive copy was left untouched.
 - Automatic transfer rule (2026-08-23): `transfer-config.json` stores the OneDrive for Business destination. The shared `produce()` helper in `scripts/produce_redesigned_bundle_02_to_06.py` now mirrors every newly completed redesigned MP4 only after its quality gate passes, preserves the local output, verifies SHA-256, accepts an identical existing destination, and refuses to overwrite a different file. Future redesigned bundle scripts should continue importing this shared helper.
-- Topic registry checkpoint (2026-08-23): `COVERED-TOPICS.md` records 84 unique active or historical topics so future sessions avoid accidental repetition. Rebuild it after metadata changes with `scripts/update_covered_topics.py`.
+- Topic registry checkpoint (2026-08-23): `COVERED-TOPICS.md` records 85 unique active or historical topics after episode 59. The updater keeps approved redesigned/pilot metadata active even when large MP4s are offloaded to OneDrive. Rebuild it after metadata changes with `scripts/update_covered_topics.py`.
 
 ## Superseded historical discussion (do not follow)
 
@@ -149,7 +156,8 @@ The user discussed having 30–40 videos ready overnight. That discussion is **n
 
 ## Required next steps
 
-1. Continue small local redesigned intervals until the user asks to stop, checkpointing exact completed episode IDs and resume commands after each interval.
-2. Keep the rejected three-storyboard batch stopped and archived. Rotate the broader asset library in non-consecutive doses; do not rebuild a repetitive feed.
-3. Continue varying mothers, fathers and suitable caregivers; child ages, genders and counts; ethnic appearances; indoor, outdoor and public locations; palettes, panel order and crops.
-4. Do not upload, publish, email or create external Scheduled Tasks.
+1. Let the upload task wait for the exact OneDrive folder. Once it syncs, inspect the dry run and first selected title before the first private upload; never bypass the immutable channel check or cadence ledger.
+2. Continue small local redesigned intervals until the user asks to stop, checkpointing exact completed episode IDs and resume commands after each interval.
+3. Keep the rejected three-storyboard batch stopped and archived. Rotate the broader asset library in non-consecutive doses; do not rebuild a repetitive feed.
+4. Continue varying mothers, fathers and suitable caregivers; child ages, genders and counts; ethnic appearances; indoor, outdoor and public locations; palettes, panel order and crops.
+5. Do not publish videos publicly. Upload and email only through the authorized private automation above.

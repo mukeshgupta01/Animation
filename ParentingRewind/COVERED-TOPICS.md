@@ -4,7 +4,7 @@ Updated: 2026-08-23
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 84 (60 active; 24 historical-only).
+Unique topics: 85 (61 active; 24 historical-only).
 
 ## Topic index
 
@@ -54,6 +54,7 @@ Unique topics: 84 (60 active; 24 historical-only).
 - [active] Reflect the Feeling Before Solving — metadata: parenting-rewind-redesign-18-reflect-before-solving-v1.json
 - [active] Reflect the Library Disappointment — metadata: parenting-rewind-redesign-34-library-feeling-reflection-v1.json
 - [active] Reflect the Library Excitement — metadata: parenting-rewind-redesign-47-library-reflect-excitement-v1.json
+- [active] Repair After You Lose Your Temper — metadata: parenting-rewind-redesign-59-repair-after-yelling-v1.json
 - [active] Repeat the Checkout Answer Calmly — metadata: parenting-rewind-redesign-51-checkout-calm-repeat-v1.json
 - [active] Say What to Do in the Shop — metadata: parenting-rewind-redesign-20-say-what-to-do-shopping-v1.json
 - [active] Say What to Do With the Books — metadata: parenting-rewind-redesign-28-positive-library-direction-v1.json

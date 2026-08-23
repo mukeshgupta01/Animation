@@ -61,3 +61,9 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - On this computer, every newly completed and validated redesigned episode must be copied to the OneDrive for Business destination configured in `transfer-config.json`.
 - Keep the local `output` copy; the OneDrive operation is a verified mirror, not a destructive move.
 - Never silently overwrite a different destination file. The shared producer verifies size and SHA-256 before accepting an existing or newly copied file.
+
+## Keep Git current
+
+- After each material automation change or small completed production checkpoint, review the diff, update `PROJECT-HANDOFF.md`, commit the relevant Parenting Rewind source/metadata files, and push the current branch when the remote is available.
+- Stage only intended `ParentingRewind` paths. Never commit OAuth client files, tokens, immutable runtime locks, upload ledgers, logs, generated MP4s, production work, virtual environments or unrelated user changes.
+- Do not create an unattended auto-commit task: every Git checkpoint must be reviewed so credentials and partial outputs cannot be captured accidentally.

@@ -7,6 +7,9 @@
 # Future automation runtime and secrets must remain local
 /runtime/
 /secrets/
+/automation/.venv/
+/automation/.venv-test/
+/automation/.tmp/
 *oauth*.json
 *token*.json
 *channel-lock*.json
@@ -14,5 +17,7 @@
 *.log
 
 # Python
+/.venv/
+/.cache/
 __pycache__/
 *.pyc

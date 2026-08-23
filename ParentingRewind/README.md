@@ -9,8 +9,10 @@ This is a separate adult-facing parenting education video project. It is not par
   - **Screen Time Is Over: What to Say Without Shouting**: Pilot 02 V1 awaiting user review
 - 1080 × 1920 vertical video
 - Original project storyboards, synthetic narration, burned-in captions and original locally synthesized music
-- No YouTube channel, uploader, OAuth credentials, token, channel lock, ledger or Scheduled Task is configured
-- No upload is authorized
+- The YouTube channel is live and verified through isolated OAuth as **Parenting Rewind** (`UCGb-IUQX2KQa_KA24MwE_aQ`).
+- A fail-closed private uploader is configured under `automation/`; it never reuses another project's credentials and verifies the immutable channel ID before every upload.
+- The user authorized unattended private uploads on 2026-08-23: videos 1-6 one every four hours, videos 7-12 one every six hours, and remaining videos one every eight hours. Successful uploads trigger an Outlook email to `mukeshmelb01@gmail.com`.
+- Windows task `Parenting Rewind - Private Upload Cadence` checks hourly and gates actual uploads by the recorded cadence. It currently waits for the OneDrive source folder to sync locally.
 - The repetitive three-storyboard batch was rejected and removed from active output. Its MP4s are preserved under `rejected-repetitive-batch-archive/output` only for recovery.
 - The user explicitly approved `output/parenting-rewind-redesign-01-kitchen-siblings-v1.mp4` on 2026-08-23 and authorized continued local production until asked to stop.
 - Redesigned episodes 02-06 are complete in `output`, with rotated bedroom, playground and kitchen casts/settings. Continue only the redesigned workflow; keep the rejected repetitive renderer retired.
