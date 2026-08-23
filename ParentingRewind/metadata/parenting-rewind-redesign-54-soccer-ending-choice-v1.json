@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-54-soccer-ending-choice",
+  "version": "v1",
+  "title": "Offer a Choice About How Soccer Ends | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A seven-year-old cannot choose whether practice ends, but may still want some control over the transition. Offering unlimited extra play makes the boundary uncertain, while a command with no next step can feel abrupt. Pause and offer two acceptable ways to complete the same ending. Try: Practice is finished; would you like to carry the ball or the water bottle while we walk to the car? A limited choice keeps the adult's boundary intact and gives the child a useful role in how the transition happens."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/soccer-father-son-storyboard-01.png",
+    "panel_order": [
+      2,
+      0,
+      1,
+      5,
+      3,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-54-soccer-ending-choice\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-54-soccer-ending-choice-v1.mp4",
+    "duration_seconds": 33.9,
+    "sha256": "A2568E4C450A0E6E1F2DEC2E2F8229C96C934D7C66DC999743443E5CDE284D54"
+  }
+}

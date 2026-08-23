@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-58-homework-help-signal",
+  "version": "v1",
+  "title": "Agree on a Homework Help Signal | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Homework support can become constant interruption when a child calls for help before trying each next step. Refusing all help or supplying every answer both move attention away from building independent work habits. Pause and agree on a simple signal that shows when support is genuinely needed. Try: Circle the question, try the next one, then place this card up when you want me to read the directions with you. A clear help routine keeps the parent available while leaving thinking, writing, and answers with the child."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Developing Good Homework Habits",
+      "url": "https://www.healthychildren.org/English/ages-stages/gradeschool/school/Pages/Developing-Good-Homework-Habits.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/homework-mother-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-58-homework-help-signal\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-58-homework-help-signal-v1.mp4",
+    "duration_seconds": 34.36666666666667,
+    "sha256": "89042E2B74FDAD5BFA2EED80F68629A5EC4D06365B5A4ACF48F2A1A7C52A194A"
+  }
+}

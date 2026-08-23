@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-57-screen-time-reconnect",
+  "version": "v1",
+  "title": "Reconnect After the Screen-Time Limit | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A child may follow the screen-time limit and still be angry about it for several minutes afterward. Demanding an immediate happy attitude can create a second conflict after the important boundary was already followed. Pause and reconnect without reopening the decision about the screen. Try: You wanted more time and stopping was hard; the tablet stays on the shelf, and I am here when you are ready for snack. Connection after a limit shows that difficult feelings do not threaten the relationship or erase the boundary."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/screen-time-storyboard-01.png",
+    "panel_order": [
+      1,
+      2,
+      0,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-57-screen-time-reconnect\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-57-screen-time-reconnect-v1.mp4",
+    "duration_seconds": 33.56666666666667,
+    "sha256": "3CF2E126A10576B29F36760D4EE74D77F6C3DE70F282A8C8044178379F8AD47C"
+  }
+}

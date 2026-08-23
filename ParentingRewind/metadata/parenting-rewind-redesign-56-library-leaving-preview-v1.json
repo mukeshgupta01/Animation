@@ -1,0 +1,57 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-56-library-leaving-preview",
+  "version": "v1",
+  "title": "Preview the Library Leaving Steps | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A four-year-old absorbed in books may experience leaving the library as a sudden interruption. Announcing every step only after resistance begins can turn a simple transition into repeated new demands. Pause before the final book and preview a short sequence the child can follow. Try: After this story, choose one book, place the others on the trolley, then hold my hand at the door. A brief preview makes the ending more predictable while each direction remains concrete enough for a young child."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Giving Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/giving-directions.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/library-grandmother-granddaughter-storyboard-01.png",
+    "panel_order": [
+      1,
+      0,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-56-library-leaving-preview\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-56-library-leaving-preview-v1.mp4",
+    "duration_seconds": 33.46666666666667,
+    "sha256": "BC5D0D18D27D95EB47DAF19734E52A5FEED23869FC97B303D9A4294FE9FC8ED4"
+  }
+}
