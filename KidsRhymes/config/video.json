@@ -1,0 +1,14 @@
+{
+  "title": "Baa Baa Black Sheep",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "duration_seconds": 70,
+  "transition_seconds": 1,
+  "tempo_bpm": 96,
+  "key": "C major",
+  "video_codec": "libx264",
+  "audio_codec": "aac",
+  "audio_bitrate": "192k"
+}
+

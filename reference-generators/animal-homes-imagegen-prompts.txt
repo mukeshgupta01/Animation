@@ -1,0 +1,22 @@
+Built-in image generation prompt 1 — animal homes
+
+Use case: scientific-educational
+Asset type: six-scene animal-home sprite sheet for a children's guessing video
+Primary request: Create exactly six separate, bright animal homes arranged in a perfectly regular 3-column by 2-row grid.
+Subjects and placement: top row left to right: a beaver lodge made of sticks in a calm pond, a golden beehive hanging from a leafy tree branch, a large sparkling spider web between green garden plants. Bottom row left to right: a cozy rabbit burrow entrance in a grassy bank, a neat bird nest with three plain unhatched eggs on a branch, a cheerful lily-pad frog pond.
+Style/medium: polished children's educational storybook illustration, soft rounded shapes, crisp clean details, consistent style.
+Composition/framing: exactly one home centered in each equal cell, full home visible, generous padding, strong empty gutters at one-third and two-thirds width and at half height. Each cell may have a very light pastel outdoor backdrop but must remain clearly separated by warm-white gutters.
+Lighting/mood: bright sunny daytime, calm, cheerful, inviting, never dark or scary.
+Constraints: no animals, no insects, no spiders, no birds, no frogs, no people; no text, labels, letters, numbers, logos, or watermark. Keep eggs unhatched and generic. Exactly six home scenes and no extras.
+
+Built-in image generation prompt 2 — characters
+
+Use case: illustration-story
+Asset type: animal character sprite sheet for a children's animal-home guessing video
+Primary request: Create exactly six separate, friendly full-body animals arranged in a perfectly regular 3-column by 2-row grid.
+Subjects and placement: top row left to right: beaver, honeybee, garden spider. Bottom row left to right: rabbit, small cheerful songbird, green frog. Exactly one animal centered in each equal cell.
+Style/medium: polished children's storybook illustration, soft rounded shapes, clean outlines, bright natural colors, consistent rendering style.
+Composition/framing: each animal or insect fully visible with generous padding and no overlap; strong empty gutters at one-third and two-thirds width and at half height; front or side-three-quarter pose.
+Scene/backdrop: perfectly uniform warm-white studio background across the whole sheet.
+Lighting/mood: bright, friendly, calm and cute, never scary. Give the spider a gentle rounded appearance and friendly expression.
+Constraints: exactly six subjects and no extras; no homes, nests, webs, hives, burrows, ponds, props, ground shadows, scenery, text, labels, letters, numbers, logos, or watermark.

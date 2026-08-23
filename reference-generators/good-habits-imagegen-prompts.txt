@@ -1,0 +1,16 @@
+Good Habits Every Day — built-in image-generation prompts
+
+Use case: illustration-story
+
+Background style shared by all four scenes:
+Full-screen 16:9 background for an animated preschool good-habits song. Bright, cheerful, polished soft children's storybook digital painting with professional animation-background quality, clear depth, warm happy colors, and an open center foreground for dancing characters. No people, animals, text, letters, watermark, dark areas, or border.
+
+1. Bedroom: warm morning sunlight, neatly made blue-and-yellow bed, sunny window, wardrobe, shelves, and open round rug.
+2. Bathroom: clean aqua-and-yellow bathroom with wide sink, mirror, toothbrush cup, soap dispenser, step stool, and spacious floor.
+3. Kitchen: sunny family kitchen and breakfast nook with table, place setting, fruit bowl, cabinets, refrigerator, and mint, peach, and golden palette.
+4. Playroom: welcoming blue, coral, and yellow playroom with shelves, toy basket, a few blocks and books, sunny windows, and a large clear rug.
+
+Character sprite sheet:
+Match the four home backgrounds exactly. Create two separate full-body preschool friends: a cheerful girl with warm brown skin, dark curly hair in two puff ponytails, yellow T-shirt, teal overalls, and red sneakers; and a cheerful boy with light tan skin, short dark hair, coral T-shirt, blue shorts, and yellow sneakers. Both face forward in a friendly follow-along dance pose. Complete silhouettes, no shadows. Perfectly flat solid #ff00ff removable chroma-key background, with no magenta in the characters. No props, labels, text, border, extras, or watermark.
+
+Note: connected-background extraction was used locally to preserve the characters' warm skin and clothing colors while removing only edge-connected magenta pixels.

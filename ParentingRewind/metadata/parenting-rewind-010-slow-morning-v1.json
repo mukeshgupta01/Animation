@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-010-slow-morning",
+  "version": "v1",
+  "title": "A Slow Morning Without Shouting | Parenting Rewind",
+  "description": "Some children move at dream speed exactly when the clock moves fastest. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Some children move at dream speed exactly when the clock moves fastest. Saying hurry up louder does not explain the next action. Before reacting, pause for one breath so the next words can be short, clear, and useful. Point to the routine and say: Socks first; when they are on, come show me. Replace urgency words with one observable step, then notice progress instead of waiting only for perfection.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Steps for Giving Good Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/directions/good-directions.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\pilot-01-shoe-storyboard.png",
+    "asset_key": "entryway",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-010-slow-morning\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-010-slow-morning-v1.mp4",
+    "duration_seconds": 29.766666666666666,
+    "sha256": "A374BCDFA3ED1ED55C09CD28B3E742017C643117D63F5016A13C0B45FBB059C8"
+  }
+}

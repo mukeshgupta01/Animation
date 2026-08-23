@@ -1,0 +1,32 @@
+# Machine-local tools and Python environments
+/.tools/
+/.venv/
+**/.venv/
+
+# Downloaded third-party applications and model checkpoints
+/KidsRhymes/tools/ACE-Step-1.5/
+**/checkpoints/
+**/models/
+
+# Generated media and temporary render products
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+*.aac
+
+# Common caches and local editor/runtime files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+*.log
+
+# Credentials and OAuth state (project-specific rules add more coverage)
+**/secrets/
+**/runtime/
+*oauth*token*.json
+*client*secret*.json
+*channel*lock*.json
+*.ledger.jsonl

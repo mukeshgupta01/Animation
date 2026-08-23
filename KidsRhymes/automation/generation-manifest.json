@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "who-ate-the-snack-episode-01",
+      "name": "Who Ate the Snack? - Six Animal Food Clues",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_snack_video.py",
+        "--episode",
+        "1"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/who-ate-the-snack-episode-01.mp4",
+      "publish_to_upload_queue": true,
+      "youtube": {
+        "title": "Who Ate the Snack? | 6 Fun Animal Food Clues for Kids",
+        "description": "Can you discover which animal ate each snack? Look closely, choose from three friendly animals, and learn a fun food fact after every answer. This gentle preschool guessing game includes rabbits, pandas, monkeys, mice, giraffes, and squirrels.\n\nPerfect for young children practising observation, animal recognition, listening, and early reasoning.",
+        "tags": [
+          "animal guessing game",
+          "preschool learning",
+          "kids quiz",
+          "animal food",
+          "educational video for kids",
+          "Tiny Tales",
+          "toddler learning",
+          "guess the animal"
+        ],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "guess-the-animal-shadow-01",
+      "name": "Guess the Animal Shadow - Six Friendly Silhouettes",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_animal_games.py",
+        "--game",
+        "shadow"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/guess-the-animal-shadow-01.mp4",
+      "publish_to_upload_queue": true,
+      "youtube": {
+        "title": "Guess the Animal Shadow | 6 Silhouette Puzzles for Kids",
+        "description": "Can you match each mystery shadow to the correct animal? Enjoy six gentle silhouette puzzles featuring a rabbit, panda, monkey, mouse, giraffe, and squirrel, with a fun fact after every reveal.\n\nThis preschool guessing game supports observation, listening, animal recognition, and early reasoning.",
+        "tags": ["guess the animal", "animal shadows", "kids puzzles", "preschool learning", "animal quiz", "Tiny Tales", "toddler learning"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "what-animal-disappeared-01",
+      "name": "What Animal Disappeared - Memory Challenge",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_animal_games.py",
+        "--game",
+        "disappeared"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/what-animal-disappeared-01.mp4",
+      "publish_to_upload_queue": true,
+      "youtube": {
+        "title": "What Animal Disappeared? | Memory Game for Kids",
+        "description": "Watch the friendly animals carefully, remember every picture, and discover which animal disappears. The puzzles become gradually more challenging and finish with encouraging answers.\n\nA gentle preschool memory game supporting concentration, visual recall, listening, and animal recognition.",
+        "tags": ["what disappeared", "memory game for kids", "animal memory", "preschool game", "kids challenge", "Tiny Tales", "educational video"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "find-the-matching-animal-01",
+      "name": "Find the Matching Animal Picture",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_animal_games.py",
+        "--game",
+        "matching"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/find-the-matching-animal-01.mp4",
+      "publish_to_upload_queue": true,
+      "youtube": {
+        "title": "Find the Matching Animal Picture | Preschool Visual Game",
+        "description": "Look at the animal picture, then find its exact match among three friendly choices. Six colourful puzzles help young children practise visual matching, attention, listening, and animal names.",
+        "tags": ["find the picture", "matching game for kids", "animal matching", "preschool visual game", "kids learning", "Tiny Tales", "toddler activity"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "ocean-animal-superpowers-01",
+      "name": "Ocean Animal Superpower Detectives",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_superpower_video.py",
+        "--episode",
+        "1"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/ocean-animal-superpowers-01.mp4",
+      "publish_to_upload_queue": true,
+      "youtube": {
+        "title": "Ocean Animal Superpower Detectives | Amazing Facts for Kids",
+        "description": "Become an Ocean Superpower Detective! Listen to each surprising clue, choose an ocean animal, and discover how octopuses, dolphins, seahorses, sea turtles, whales, and crabs do extraordinary things.\n\nAn interactive science adventure encouraging curiosity, observation, listening, and animal vocabulary for children ages 3 to 7.",
+        "tags": ["animal facts for kids", "ocean animals", "science for kids", "preschool learning", "animal quiz", "Tiny Tales", "educational kids video", "amazing animal facts"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "animal-alphabet-a-to-f-01",
+      "name": "Animal Alphabet Adventure A to F",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_animal_games.py",
+        "--game",
+        "alphabet"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/animal-alphabet-a-to-f-01.mp4",
+      "publish_to_upload_queue": true,
+      "youtube": {
+        "title": "Animal Alphabet Adventure A-F | Learn Letters and Animals",
+        "description": "Learn the letters A, B, C, D, E, and F with six cheerful animals: alligator, bear, cat, dog, elephant, and fox. Each letter includes clear pronunciation and a simple animal fact.\n\nA gentle early-learning video for preschool children practising letters, sounds, vocabulary, and animal recognition.",
+        "tags": ["animal alphabet", "learn ABC", "letters for kids", "preschool alphabet", "animal names", "Tiny Tales", "early learning"],
+        "category_id": "27"
+      }
+    }
+  ]
+}

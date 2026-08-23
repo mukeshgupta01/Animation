@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-012-doorway-stall",
+  "version": "v1",
+  "title": "The Doorway Stall at the Worst Moment | Parenting Rewind",
+  "description": "Just as you open the door, your child remembers one more toy, drink, and story. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Just as you open the door, your child remembers one more toy, drink, and story. Answering every new request can accidentally turn delay into a successful strategy. Before reacting, pause for one breath so the next words can be short, clear, and useful. Name the plan once: We are leaving now; choose one small toy before I count to ten, or we leave without one. Make the transition clear, keep the consequence related, and reconnect once everyone is moving.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Using Consequences",
+      "url": "https://www.cdc.gov/parenting-toddlers/discipline-consequences/consequences.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\pilot-01-shoe-storyboard.png",
+    "asset_key": "entryway",
+    "panel_order": [
+      0,
+      1,
+      3,
+      2,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-012-doorway-stall\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-012-doorway-stall-v1.mp4",
+    "duration_seconds": 33.666666666666664,
+    "sha256": "0832545C649902D1ECE47D6C1B1EBECC7E954C683AE9955F980E85724C06C914"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-015-whining",
+  "version": "v1",
+  "title": "Responding to Whining Without Whining Back | Parenting Rewind",
+  "description": "A simple request arrives in the voice that makes your shoulders tighten. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A simple request arrives in the voice that makes your shoulders tighten. Copying the tone or delivering a speech gives the whining a large emotional payoff. Before reacting, pause for one breath so the next words can be short, clear, and useful. Keep your face and voice neutral: I will listen when you use your regular voice; then respond warmly to the first calmer attempt. Give less attention to minor whining and more immediate attention to the behavior you want repeated.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Using Consequences",
+      "url": "https://www.cdc.gov/parenting-toddlers/discipline-consequences/consequences.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-015-whining\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-015-whining-v1.mp4",
+    "duration_seconds": 32.6,
+    "sha256": "2A27340CEE8A612511891F5BBA78CF90B4E45A2B87133B61CE0C1DFE52B0F4F7"
+  }
+}

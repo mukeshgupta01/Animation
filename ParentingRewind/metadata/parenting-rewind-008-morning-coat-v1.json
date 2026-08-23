@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-008-morning-coat",
+  "version": "v1",
+  "title": "When They Refuse a Coat | Parenting Rewind",
+  "description": "You are late, it is cold, and your child suddenly hates every coat they own. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "You are late, it is cold, and your child suddenly hates every coat they own. Debating whether they should feel cold pulls you into a power struggle about their body. Before reacting, pause for one breath so the next words can be short, clear, and useful. State the boundary and offer two workable options: The coat comes with us; wear it now or carry it to the car. Keep health and safety limits firm while leaving a small piece of control with the child.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Steps for Giving Good Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/directions/good-directions.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\pilot-01-shoe-storyboard.png",
+    "asset_key": "entryway",
+    "panel_order": [
+      0,
+      2,
+      3,
+      1,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-008-morning-coat\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-008-morning-coat-v1.mp4",
+    "duration_seconds": 31.2,
+    "sha256": "903BBED57C960465FBD4E5DC148AB13D25CC54F3D73D4D4D420C0F7FB33C7853"
+  }
+}

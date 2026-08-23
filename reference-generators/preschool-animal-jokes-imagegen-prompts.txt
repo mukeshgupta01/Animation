@@ -1,0 +1,21 @@
+Silly Animal Jokes Parts 1–3 — built-in image-generation prompts
+
+Shared direction for all nine illustrations:
+Use case: illustration-story. Full-screen 16:9 reveal artwork for a preschool animal-joke video. Bright, polished, cheerful children's storybook digital painting with a soft professional 3D-cartoon finish, large expressive friendly character, simple uncluttered composition, sunny colors, and a gentle non-scary joke. No text, letters, captions, watermark, or border.
+
+Part 1
+1. Happy monkey peeling a yellow banana while holding an oversized golden key in a tropical garden.
+2. Adorable green dinosaur sleeping on a pillow under a light blanket in a bright cozy bedroom, with sleep bubbles and visual snoring swirls but no letters.
+3. Cheerful chicken arriving beside a bright blue playground slide, with swings and a sandbox behind it.
+
+Part 2
+4. Smiling honeybee brushing the fuzzy hair on its head with a golden honeycomb in a flower meadow.
+5. Friendly frog beside a veggie burger, holding a paper cone of whimsical winged snacks shaped like French fries in a bright pond garden.
+6. Happy puppy in a colorful scarf and knitted hat pretending to shiver beside a warm bowl of red beans, using cozy sunny colors.
+
+Part 3
+7. Cheerful cow wearing red-and-blue 3D glasses in a miniature cinema, holding popcorn and facing a blank screen.
+8. Adorable smiling teddy-bear character beside colorful gummy-bear-shaped candies in a bright park.
+9. Happy rabbit wearing a blue bow tie and holding a toy microphone on a colorful comedy stage while friendly woodland animals laugh.
+
+One earlier nine-image parallel batch was interrupted by an output moderation rejection. Three completed safe images were retained, and the remaining six were regenerated in smaller, gentler batches. No rejected output was used.

@@ -1,0 +1,9 @@
+Open the local project folder C:\Animation\Animation\KidsRhymes and act as its dedicated continuation agent.
+
+First read AGENTS.md and PROJECT-HANDOFF.md completely. Then independently inspect the live project state: git status, generation manifest and state, pending queue, archive, upload ledger, recent logs, quality reports, and the two exact Windows Scheduled Tasks. Do not print or expose OAuth/client-secret contents.
+
+Confirm the verified Tiny Tales channel name and immutable ID, queue count, completed and remaining work, task states and next run times, last upload/email result, and any difference between the handoff and current local state. Treat newer live files as authoritative and clearly separate confirmed facts from assumptions.
+
+Preserve all safety and editorial rules in the handoff. Do not regenerate or re-upload completed videos. Do not reuse this channel's OAuth token, channel lock, ledger, archive, or tasks for another channel. Do not perform a real upload unless the existing uploader verifies the immutable channel ID and uses its explicit confirmation safeguard. Continue only unfinished Tiny Tales work unless I give you a new instruction.
+
+After the audit, give me a concise status report and recommend the safest next action. Do not make material changes until you have completed the audit.

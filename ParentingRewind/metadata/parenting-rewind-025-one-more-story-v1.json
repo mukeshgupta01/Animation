@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-025-one-more-story",
+  "version": "v1",
+  "title": "The One-More-Story Loop | Parenting Rewind",
+  "description": "You finish the bedtime book and immediately hear: one more. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "You finish the bedtime book and immediately hear: one more. Saying yes repeatedly teaches that the routine ends only after enough persistence. Before reacting, pause for one breath so the next words can be short, clear, and useful. Set the limit before reading: Tonight we choose two books; after the second, it is cuddle and lights out. Warmth and limits can coexist; make the ending known early and follow the same sequence.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Toddler Bedtime Trouble: 7 Tips for Parents",
+      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      1,
+      2,
+      0,
+      3,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-025-one-more-story\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-025-one-more-story-v1.mp4",
+    "duration_seconds": 32.13333333333333,
+    "sha256": "DF7FBAB3C8833321110336B800E8F71DE0140E7BDC3C50B59DC14A0DAA142F77"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-005-leaving-playground",
+  "version": "v1",
+  "title": "Leaving the Playground Without a Chase | Parenting Rewind",
+  "description": "The hardest part of playground time is sometimes the last two minutes. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The hardest part of playground time is sometimes the last two minutes. Calling from far away and adding five more warnings teaches that the first warning does not matter. Before reacting, pause for one breath so the next words can be short, clear, and useful. Move close, give one clear transition, and say: One last slide, then hold my hand to the gate. Make the ending predictable, keep the direction concrete, and follow through calmly when the final turn is done.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Steps for Giving Good Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/directions/good-directions.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\supermarket-storyboard-01.png",
+    "asset_key": "supermarket",
+    "panel_order": [
+      1,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-005-leaving-playground\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-005-leaving-playground-v1.mp4",
+    "duration_seconds": 32.63333333333333,
+    "sha256": "7DB7F14AEA0A9EEC36192C330C050249F4D267CE975124A8E0001AC02F6A5358"
+  }
+}

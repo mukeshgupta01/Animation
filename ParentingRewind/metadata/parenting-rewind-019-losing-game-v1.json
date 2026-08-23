@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-019-losing-game",
+  "version": "v1",
+  "title": "When Losing a Game Ends in Tears | Parenting Rewind",
+  "description": "The game was fun until somebody else won. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The game was fun until somebody else won. Calling the reaction silly adds shame to disappointment. Before reacting, pause for one breath so the next words can be short, clear, and useful. Name the feeling and hold the rule: You wanted to win; it is okay to be upset, and the pieces stay on the table. Children can learn to lose without liking it; model calm, protect the game, and praise recovery.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Creating Rules",
+      "url": "https://www.cdc.gov/parenting-toddlers/structure-rules/rules.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      1,
+      2,
+      0,
+      3,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-019-losing-game\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-019-losing-game-v1.mp4",
+    "duration_seconds": 29.366666666666667,
+    "sha256": "EAD40C35306093F515018A37B5B494E9526D664E2E58D62B5AC423CB2E1CAC85"
+  }
+}

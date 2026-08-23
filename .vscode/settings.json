@@ -1,0 +1,4 @@
+{
+  "sqlfluff.executablePath": "${workspaceFolder}/.venv/Scripts/sqlfluff.exe",
+  "git.ignoreLimitWarning": true
+}

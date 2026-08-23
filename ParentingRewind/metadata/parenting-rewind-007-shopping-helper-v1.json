@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-007-shopping-helper",
+  "version": "v1",
+  "title": "Turn Grocery Shopping Into Cooperation | Parenting Rewind",
+  "description": "A bored six-year-old can find trouble in every supermarket aisle. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A bored six-year-old can find trouble in every supermarket aisle. Correcting every touch keeps both of you focused on what is going wrong. Before reacting, pause for one breath so the next words can be short, clear, and useful. Give a real job before problems start: Please find the oats and place them gently in the trolley. One age-fitting responsibility and specific praise can create more cooperation than constant policing.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Praise, Imitation, and Description",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/praise.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\supermarket-storyboard-01.png",
+    "asset_key": "supermarket",
+    "panel_order": [
+      1,
+      2,
+      0,
+      3,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-007-shopping-helper\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-007-shopping-helper-v1.mp4",
+    "duration_seconds": 30.033333333333335,
+    "sha256": "948115503EF8DA01CD02A211EB73E0788930F9689C1CC25E006A2A25CEE4FD44"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "channel_name": "Tiny Tales",
+  "channel_id": "UCEn9N-ITQHshjgt6fy7fxnw",
+  "report_recipient": "mukeshmelb01@gmail.com",
+  "privacy_status": "private",
+  "made_for_kids": true,
+  "category_id": "27",
+  "pending_directory": "pending-uploads",
+  "archive_directory": "archive",
+  "runtime_directory": "runtime",
+  "log_directory": "logs",
+  "minimum_file_age_seconds": 300,
+  "generation_cycle_seconds": 17100,
+  "existing_outputs_are_excluded": true
+}

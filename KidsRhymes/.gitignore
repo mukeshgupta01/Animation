@@ -1,0 +1,27 @@
+.venv/
+output/
+tmp/
+*.mp4
+*.wav
+*.mp3
+*.aac
+*.png
+__pycache__/
+*.pyc
+.cache/
+models/
+
+# Local automation secrets and machine-specific state
+automation/secrets/
+automation/runtime/
+automation/logs/
+automation/pending-uploads/
+automation/archive/
+automation/production-output/
+automation/production-work/
+automation/*.local.json
+*.log
+*.ledger.jsonl
+*oauth*token*.json
+*client*secret*.json
+*channel*lock*.json

@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-011-wrong-shoes",
+  "version": "v1",
+  "title": "When Only the Wrong Shoes Will Do | Parenting Rewind",
+  "description": "Your preschooler wants sandals on a rainy morning and rejects the practical pair. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your preschooler wants sandals on a rainy morning and rejects the practical pair. Insisting that your choice is obviously better invites an argument about taste. Before reacting, pause for one breath so the next words can be short, clear, and useful. Hold the weather boundary and offer two acceptable pairs: Red boots or blue boots; you choose. A bounded choice is not giving in; it is sharing control inside a limit you have already set.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Creating Rules",
+      "url": "https://www.cdc.gov/parenting-toddlers/structure-rules/rules.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\pilot-01-shoe-storyboard.png",
+    "asset_key": "entryway",
+    "panel_order": [
+      1,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-011-wrong-shoes\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-011-wrong-shoes-v1.mp4",
+    "duration_seconds": 30.666666666666668,
+    "sha256": "D93AB152CD9C9FA623156BF8A63E7E5751453E5CBCA9D27FE9BBC725FED78F87"
+  }
+}

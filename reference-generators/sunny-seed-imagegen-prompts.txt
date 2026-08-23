@@ -1,0 +1,13 @@
+Help Sunny the Seed Grow — image-generation prompts
+
+Mode: built-in image generation
+Use case: illustration-story
+
+1. Garden background
+Create a bright, polished children's picture-book garden in warm morning sunshine, formatted as a full-screen 16:9 animation background. Place a wide patch of soft rich brown soil across the lower-center foreground, completely empty and unobstructed for an animated seed and plant. Surround it with green grass, small colorful flowers around the far edges, a pale blue sky, fluffy clouds, and distant rounded hills. Painterly but clean, charming, cohesive, and professional, with clear foreground, midground, and background depth. Bright and happy with no dark areas. No people, animals, seed, central plant, sunflower, rainbow, text, border, or watermark.
+
+2. Sunny growth-stage sprite sheet
+Using the garden as the exact painting-style, lighting, line-quality, and color reference, create six isolated stages of one friendly sunflower character named Sunny in a horizontal row: a brown seed, the cracked seed with a pale root, a two-leaf sprout, a young plant, a tall sunflower bud, and a fully opened golden sunflower. Preserve the same face and identity through all six stages. Professional soft children's storybook painting, complete silhouettes, generous spacing, no shadows. Use a perfectly flat solid #ff00ff removable chroma-key background with no variation. Do not use magenta in the characters. No labels, text, panels, extra objects, or watermark.
+
+3. Garden-friends sprite sheet
+Match the garden and Sunny's polished children's storybook style. Create two isolated sidekick characters with generous space between them: a smiling honeybee in side view and a smiling orange-and-blue butterfly in three-quarter view. Complete silhouettes and fully visible wings, no shadows. Use a perfectly flat solid #ff00ff removable chroma-key background with no variation. Do not use magenta in the characters. No flowers, plants, labels, text, borders, extra objects, or watermark.

@@ -1,0 +1,23 @@
+Built-in image generation prompt 1 — background
+
+Use case: illustration-story
+Asset type: full-screen 16:9 background for a children's animal footprint guessing video
+Primary request: Create a bright, cheerful, non-scary cartoon nature trail where animal footprints can later be overlaid clearly.
+Scene/backdrop: sunny park-and-safari trail with a broad pale sandy path occupying the central and lower-middle area, soft green grass, small colorful flowers, distant rounded trees, gentle blue hills and a clear blue sky.
+Style/medium: polished children's educational illustration, soft rounded shapes, crisp clean details, friendly storybook style.
+Composition/framing: landscape 16:9; keep the middle 70 percent and lower-middle path open and visually uncluttered for large footprint graphics and answer cards. Decorative vegetation stays near the far left/right edges and horizon.
+Lighting/mood: bright daytime, happy, calm, welcoming; high visibility and light colors, never dark or dramatic.
+Color palette: sky blue, sunny yellow, fresh green, warm cream, small coral and pink accents.
+Constraints: no animals, no people, no footprints, no signs, no text, no letters, no numbers, no logos, no watermark; no dark shadows; no scary elements.
+
+Built-in image generation prompt 2 — animal sheet
+
+Use case: illustration-story
+Asset type: animal character sprite sheet for a children's educational footprint guessing video
+Primary request: Create exactly six separate, full-body, friendly cartoon animals arranged in a perfectly regular 3-column by 2-row grid.
+Subjects and placement: top row left to right: duck, rabbit, brown bear. Bottom row left to right: horse, elephant, lion. Exactly one animal centered in each equal cell.
+Style/medium: polished children's storybook illustration, soft rounded shapes, clean outlines, cheerful natural colors, consistent scale and rendering style.
+Composition/framing: every animal shown completely from head to feet, standing in a simple side-three-quarter pose, generous empty padding around each subject, no overlap between cells. Maintain clear empty gutters at one-third and two-thirds of the width and at the middle of the height so crops remain separate.
+Scene/backdrop: one perfectly uniform warm-white studio background across the entire image; no panels or borders needed.
+Lighting/mood: bright, friendly, calm, welcoming, never scary.
+Constraints: exactly six animals and no extras; all feet fully visible; no footprints, props, ground shadows, scenery, text, labels, letters, numbers, logos, or watermark. The lion must look gentle and smiling; bear friendly, not threatening.

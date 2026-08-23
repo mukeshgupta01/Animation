@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-004-checkout-waiting",
+  "version": "v1",
+  "title": "The Checkout Line Without Constant Warnings | Parenting Rewind",
+  "description": "Waiting at checkout can feel endless to a young child and exhausting to you. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Waiting at checkout can feel endless to a young child and exhausting to you. Repeating stop it every few seconds gives no clear picture of what to do. Before reacting, pause for one breath so the next words can be short, clear, and useful. Before joining the line, say: Stay beside the trolley and help me find three blue things; then notice the first moment they do it. A short direction plus specific positive attention is more useful than a stream of vague corrections.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Praise, Imitation, and Description",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/praise.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\supermarket-storyboard-01.png",
+    "asset_key": "supermarket",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-004-checkout-waiting\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-004-checkout-waiting-v1.mp4",
+    "duration_seconds": 33.36666666666667,
+    "sha256": "F55C5BAACFCD7B89072A9099B91EFC1233031E28628C38DD89F3C8A4B65F3D8A"
+  }
+}

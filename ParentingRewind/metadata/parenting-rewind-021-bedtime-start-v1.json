@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-021-bedtime-start",
+  "version": "v1",
+  "title": "Start Bedtime Before Everyone Is Exhausted | Parenting Rewind",
+  "description": "Bedtime resistance often begins before anyone reaches the bedroom. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Bedtime resistance often begins before anyone reaches the bedroom. Waiting until a child is overtired and then rushing every step makes cooperation harder. Before reacting, pause for one breath so the next words can be short, clear, and useful. Use the same calm sequence each night: bathroom, pajamas, book, bed, with a brief warning before it begins. A predictable routine reduces surprises; consistency matters more than creating a perfect night.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Toddler Bedtime Trouble: 7 Tips for Parents",
+      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-021-bedtime-start\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-021-bedtime-start-v1.mp4",
+    "duration_seconds": 34.53333333333333,
+    "sha256": "742E816D6F9520CFB83AEB4800A0767BF3B9E5BE1614F7441F890309654F411B"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "local-review-only",
+  "version": "v2-conversational",
+  "title": "When Your Child Refuses Their Shoes | Parenting Rewind",
+  "description": "Your child refuses their shoes just when it is time to leave. This Parenting Rewind shares one calm sentence that keeps the boundary while offering two acceptable choices.\n\nGeneral parenting education. Every child and family is different.\n\nSource for the underlying positive-discipline principle: American Academy of Pediatrics — HealthyChildren.org, ‘What’s the Best Way to Discipline My Child?’\nhttps://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Disciplining-Your-Child.aspx",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "positive parenting",
+    "positive discipline",
+    "parenting toddlers",
+    "parenting preschoolers",
+    "morning routine",
+    "power struggles",
+    "parent child communication",
+    "say this instead"
+  ],
+  "audience_intent": "Adults and parents; not directed to children",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "direction": "warm, caring, conversational parent-to-parent delivery"
+  },
+  "artwork_reused_from": "production-assets/pilot-01-shoe-storyboard.png",
+  "new_image_generation_calls": 0,
+  "upload_authorized": false
+}

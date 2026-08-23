@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-026-night-worry",
+  "version": "v1",
+  "title": "When Worries Arrive at Lights-Out | Parenting Rewind",
+  "description": "The room gets quiet and every worry from the day suddenly gets loud. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The room gets quiet and every worry from the day suddenly gets loud. Promising that nothing bad can ever happen may end the conversation without helping the child feel understood. Before reacting, pause for one breath so the next words can be short, clear, and useful. Listen briefly, name the worry, and return to a familiar calming routine such as one slow breath and one safe thought. Offer connection without turning bedtime into an endless problem-solving session; persistent worries deserve professional support.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Toddler Bedtime Trouble: 7 Tips for Parents",
+      "url": "https://www.healthychildren.org/English/healthy-living/sleep/Pages/bedtime-trouble.aspx"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      0,
+      2,
+      3,
+      1,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-026-night-worry\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-026-night-worry-v1.mp4",
+    "duration_seconds": 36.7,
+    "sha256": "C6C6C440FAC4F308F583DBEB418DB5BE9F10ACB8CE1B51705ECBC5B3803221E7"
+  }
+}

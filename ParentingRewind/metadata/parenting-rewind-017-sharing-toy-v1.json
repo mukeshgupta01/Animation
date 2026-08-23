@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-017-sharing-toy",
+  "version": "v1",
+  "title": "They Both Want the Same Toy | Parenting Rewind",
+  "description": "Two children, one toy, and neither is interested in a lecture about sharing. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Two children, one toy, and neither is interested in a lecture about sharing. Forcing the child who had it first to surrender immediately can make sharing feel like losing. Before reacting, pause for one breath so the next words can be short, clear, and useful. Protect the current turn and make the next turn predictable: She is using it; you are next when the timer rings. Turn-taking is concrete; stay neutral, prevent grabbing, and help both children trust the sequence.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Sibling Relationships: How to Help Your Kids Build Healthy Bonds",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/Pages/Sibling-Synergy.aspx"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      1,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-017-sharing-toy\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-017-sharing-toy-v1.mp4",
+    "duration_seconds": 33.2,
+    "sha256": "C7B871FCFE81C0A6496319FEE625DA4BC4833EA6DF6837CB7CB5A459AE8F3B5C"
+  }
+}

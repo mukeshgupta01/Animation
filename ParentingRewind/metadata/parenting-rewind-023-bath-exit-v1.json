@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-023-bath-exit",
+  "version": "v1",
+  "title": "Getting Out of the Bath | Parenting Rewind",
+  "description": "The bath was impossible to start and is now impossible to end. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The bath was impossible to start and is now impossible to end. Draining the water without warning can make a difficult transition feel abrupt. Before reacting, pause for one breath so the next words can be short, clear, and useful. Give one clear ending cue: Two more pours, then towel; let the child complete the final pour. Predictable endings and limited choices can support transitions without changing the boundary.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Steps for Giving Good Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/directions/good-directions.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      1,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-023-bath-exit\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-023-bath-exit-v1.mp4",
+    "duration_seconds": 30.5,
+    "sha256": "37466989CF5735649A44452D9A0AA41AE2DE549F2CF3DDF4750567BF9544699C"
+  }
+}

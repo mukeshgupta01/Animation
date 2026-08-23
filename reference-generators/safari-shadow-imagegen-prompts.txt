@@ -1,0 +1,30 @@
+Built-in image generation prompt set
+
+1. Background
+Use case: illustration-story
+Asset type: full-screen background for a children's safari puzzle video
+Primary request: Create a bright, happy daytime African savanna landscape for young children, with golden grass, a few rounded acacia trees, distant soft blue hills, tiny colorful flowers, and a cheerful blue sky with fluffy clouds.
+Style/medium: polished children's picture-book illustration, clean rounded shapes, rich but gentle colors
+Composition/framing: widescreen 16:9; open uncluttered central area and lower foreground for overlaid puzzle cards; no animals anywhere in the scene
+Lighting/mood: sunny, warm, welcoming, playful, never dramatic or scary
+Constraints: no animals, no people, no text, no letters, no numbers, no signs, no logo, no watermark; bright exposure; avoid dark corners, storms, fire, sharp thorns, bones, danger, or ominous shadows
+
+2. Animal sheet one
+Use case: illustration-story
+Asset type: character sheet for a children's safari guessing video
+Primary request: Create exactly three separate full-body baby safari animal characters: one elephant, one giraffe, and one lion. All stand facing slightly toward the viewer with friendly gentle smiles and clearly recognizable body shapes.
+Scene/backdrop: plain clean warm-white studio background
+Style/medium: polished children's picture-book illustration, soft rounded shapes, consistent art style, colorful but natural markings
+Composition/framing: horizontal character sheet with exactly three equal columns; elephant on the left, giraffe in the center, lion on the right; generous empty space between every animal; each complete animal fully visible from ears to feet; no frames
+Lighting/mood: bright, soft, happy, calm, non-scary
+Constraints: no text, no labels, no letters, no numbers, no logo, no watermark; no extra animals; no props; lion mouth closed with no visible teeth or claws; all characters cute but not babyish blobs; distinctive silhouettes
+
+3. Animal sheet two
+Use case: illustration-story
+Asset type: second character sheet for a children's safari guessing video
+Primary request: Create exactly three separate full-body baby safari animal characters: one zebra, one hippopotamus, and one rhinoceros. All stand facing slightly toward the viewer with friendly gentle smiles and clearly recognizable body shapes.
+Scene/backdrop: plain clean warm-white studio background
+Style/medium: polished children's picture-book illustration matching a soft rounded high-quality character style; colorful but natural markings
+Composition/framing: horizontal character sheet with exactly three equal columns; zebra on the left, hippopotamus in the center, rhinoceros on the right; generous empty space between every animal; each complete animal fully visible from ears to feet; no frames
+Lighting/mood: bright, soft, happy, calm, non-scary
+Constraints: no text, no labels, no letters, no numbers, no logo, no watermark; no extra animals; no props; mouths closed with no visible teeth; no sharp or threatening horns; all characters cute, gentle, and distinctive; clear recognizable silhouettes

@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-013-toy-cleanup",
+  "version": "v1",
+  "title": "Toy Cleanup Without Saying It Ten Times | Parenting Rewind",
+  "description": "The floor is covered in toys and your child seems unable to hear the word cleanup. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The floor is covered in toys and your child seems unable to hear the word cleanup. Pick up everything now is broad enough to feel impossible. Before reacting, pause for one breath so the next words can be short, clear, and useful. Start beside them and give one concrete step: Put the blocks in this basket; then specifically praise that action. Small directions build momentum, and labeled praise tells the child exactly what cooperation looked like.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Steps for Giving Good Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/directions/good-directions.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\screen-time-storyboard-01.png",
+    "asset_key": "living-room",
+    "panel_order": [
+      1,
+      2,
+      0,
+      3,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-013-toy-cleanup\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-013-toy-cleanup-v1.mp4",
+    "duration_seconds": 32.36666666666667,
+    "sha256": "FB69B02985B8E934534FD97F13CB262EDFEC648C013EC613401D495E7CD0FD07"
+  }
+}

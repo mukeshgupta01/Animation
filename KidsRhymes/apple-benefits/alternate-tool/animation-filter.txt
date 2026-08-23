@@ -1,0 +1,15 @@
+[0:v]scale=1344:756,crop=1280:720:x='32+8*sin(2*PI*t/9)':y='18+4*sin(2*PI*t/7)',format=rgba[bg];
+[1:v]scale=500:500,format=rgba[neutral];
+[2:v]scale=500:500,format=rgba[speaking];
+[3:v]scale=500:500,format=rgba[blink];
+[4:v]scale=410:-1,format=rgba,fade=t=in:st=31:d=0.6:alpha=1[bunny];
+[5:v]scale=320:-1,format=rgba,fade=t=in:st=31.2:d=0.5:alpha=1[basket];
+[bg][neutral]overlay=x='80+18*sin(2*PI*t/12)':y='H-h-12-7*sin(2*PI*t/1.4)':eval=frame[base];
+[base][speaking]overlay=x='80+18*sin(2*PI*t/12)':y='H-h-12-7*sin(2*PI*t/1.4)':eval=frame:enable='(between(t,3,9.5)+between(t,10,16.5)+between(t,17,23.5)+between(t,24,30.5)+between(t,31,37.5)+between(t,41,44.5)+between(t,45,51.5))*lt(mod(t,0.38),0.20)'[talk];
+[talk][blink]overlay=x='80+18*sin(2*PI*t/12)':y='H-h-12-7*sin(2*PI*t/1.4)':eval=frame:enable='between(t,2.2,2.5)+between(t,9.55,9.85)+between(t,16.55,16.85)+between(t,23.55,23.85)+between(t,30.55,30.85)+between(t,44.55,44.85)'[pip];
+[pip][bunny]overlay=x='830+8*sin(2*PI*t/1.6)':y='H-h+15-6*sin(2*PI*t/1.2)':eval=frame:enable='gte(t,31)'[friends];
+[friends][basket]overlay=x=535:y='H-h-16-4*sin(2*PI*t/1.5)':eval=frame:enable='gte(t,31.2)'[scene];
+[scene]drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='PIP AND THE MISSING':fontsize=54:fontcolor=white:borderw=4:bordercolor=#65320f:x=(w-text_w)/2:y=65:enable='between(t,0.4,3.0)',drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='PICNIC BASKET':fontsize=70:fontcolor=#ffe76a:borderw=5:bordercolor=#65320f:x=(w-text_w)/2:y=125:enable='between(t,0.7,3.0)',drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='CLUE 1  TINY FOOTPRINTS!':fontsize=46:fontcolor=white:borderw=4:bordercolor=#68421e:box=1:boxcolor=#f0a340b8:boxborderw=16:x=(w-text_w)/2:y=68:enable='between(t,10,16.8)',drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='CLUE 2  THREE LITTLE CRUMBS!':fontsize=44:fontcolor=white:borderw=4:bordercolor=#68421e:box=1:boxcolor=#f0a340b8:boxborderw=16:x=(w-text_w)/2:y=68:enable='between(t,17,23.8)',drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='SURPRISE!':fontsize=72:fontcolor=#fff176:borderw=5:bordercolor=#764418:x=(w-text_w)/2:y=55:enable='between(t,31,37.8)',drawtext=fontfile='C\:/Windows/Fonts/arialbd.ttf':text='SHARING MAKES ADVENTURES SWEETER!':fontsize=42:fontcolor=white:borderw=4:bordercolor=#a33a20:box=1:boxcolor=#ef6c57c0:boxborderw=18:x=(w-text_w)/2:y=55:enable='between(t,45,51.8)',fade=t=in:st=0:d=0.5,fade=t=out:st=51.3:d=0.7,format=yuv420p[vout];
+[6:a]volume=0.20,atrim=duration=52[music];
+[7:a]volume=1.15,atrim=duration=52[voice];
+[music][voice]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[aout]

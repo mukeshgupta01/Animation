@@ -1,0 +1,140 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-screen-time-02",
+  "version": "v1",
+  "title": "Screen Time Is Over: What to Say Without Shouting | Parenting Rewind",
+  "description": "Screen time is over—but your child wants one more. This Parenting Rewind walks through a calm, specific way to end tablet time: give a clear warning, name what happens next, offer a bounded choice, acknowledge disappointment and follow through without turning the limit into a lecture.\n\nGeneral parenting education, not individual medical or mental-health advice. Every child and family is different.\n\nResearch basis:\n• American Academy of Pediatrics / HealthyChildren.org, ‘Screen Time & Temper Tantrums: Helpful Tips for Parents’\nhttps://www.healthychildren.org/English/family-life/Media/Pages/screen-time-and-temper-tantrums-helpful-tips-for-parents.aspx\n• American Academy of Pediatrics, ‘How to Help Your Young Child Transition Away From Screens’\nhttps://downloads.aap.org/AAP/PDF/COE_Help-your-young-child-transition-away-from-screens.pdf\n• American Academy of Pediatrics / HealthyChildren.org, ‘How to Make a Family Media Plan’\nhttps://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx",
+  "tags": [
+    "Parenting Rewind",
+    "screen time",
+    "ending screen time",
+    "screen time tantrum",
+    "tablet tantrum",
+    "parenting tips",
+    "positive parenting",
+    "calm parenting",
+    "positive discipline",
+    "parent child communication",
+    "family media plan",
+    "say this instead"
+  ],
+  "audience_intent": "Adults and parents; not directed to children",
+  "age_context": "General examples for parents of children approximately ages 2–8; adapt language and choices to the individual child.",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "research": {
+    "reviewed_on": "2026-08-22",
+    "sources": [
+      {
+        "organization": "American Academy of Pediatrics / HealthyChildren.org",
+        "title": "Screen Time & Temper Tantrums: Helpful Tips for Parents",
+        "url": "https://www.healthychildren.org/English/family-life/Media/Pages/screen-time-and-temper-tantrums-helpful-tips-for-parents.aspx",
+        "supports": [
+          "Pause and keep the parent's voice calm during a screen-time meltdown.",
+          "Use few words rather than lecturing while the child is highly upset.",
+          "Device timers or child-set warnings may help some children transition.",
+          "Acknowledge that stopping is difficult while holding the limit."
+        ]
+      },
+      {
+        "organization": "American Academy of Pediatrics Center of Excellence on Social Media and Youth Mental Health",
+        "title": "How to Help Your Young Child Transition Away From Screens",
+        "url": "https://downloads.aap.org/AAP/PDF/COE_Help-your-young-child-transition-away-from-screens.pdf",
+        "supports": [
+          "Prepare for the transition before screen use starts.",
+          "Use predictable stopping points and have an offline activity ready when practical.",
+          "Stay calm, validate feelings, and avoid returning the device because protest escalates."
+        ]
+      },
+      {
+        "organization": "American Academy of Pediatrics / HealthyChildren.org",
+        "title": "How to Make a Family Media Plan",
+        "url": "https://www.healthychildren.org/English/family-life/Media/Pages/How-to-Make-a-Family-Media-Use-Plan.aspx",
+        "supports": [
+          "Use family-specific media rules that fit routines and values.",
+          "Turn off autoplay and notifications and preserve room for offline activities.",
+          "Adults should model the family's digital habits."
+        ]
+      },
+      {
+        "organization": "American Academy of Pediatrics",
+        "title": "Digital Ecosystems, Children, and Adolescents: Policy Statement",
+        "url": "https://publications.aap.org/pediatrics/article/157/2/e2025075320/206129/Digital-Ecosystems-Children-and-Adolescents-Policy",
+        "supports": [
+          "Current guidance emphasizes the child, content, context, conversation, and what media crowds out rather than one universal limit."
+        ]
+      }
+    ],
+    "claim_limits": [
+      "Timers and advance warnings are presented as tools that may help, not guarantees.",
+      "Difficulty stopping is not described as addiction.",
+      "The episode does not claim that one daily screen-time cap fits every family."
+    ]
+  },
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "direction": "warm, natural, caring, conversational parent-to-parent delivery based on the approved V2 baseline",
+    "new_speech_generation_calls": 8
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "approach": "V4-style emotional arc with approximately +9.54 dB source-score gain and narration sidechain ducking",
+    "arc": [
+      "light urgency",
+      "restrained frustration",
+      "reflective pause",
+      "musical rewind transition",
+      "calm clarity",
+      "empathetic follow-through",
+      "warm resolution"
+    ],
+    "environmental_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "timing_source": "Speech-service sentence boundaries aligned to each narration segment",
+    "transcript_match_validated": true,
+    "sidecar": "production-work/pilot-02-screen-time-v1/captions.srt"
+  },
+  "artwork": {
+    "primary_asset": "production-assets/screen-time-storyboard-01.png",
+    "asset_id": "family-living-room-screen-time-storyboard-01",
+    "visual_style_reference": "production-assets/pilot-01-shoe-storyboard.png",
+    "image_generation_prompt": "production-work/pilot-02-screen-time-v1/image-generation-prompt.txt",
+    "reused_elements": [
+      "recurring father and daughter",
+      "warm realistic editorial visual style",
+      "Parenting Rewind badge, typography, gradients, accent palette, progress bar, and rewind device"
+    ],
+    "new_image_generation_calls": 1
+  },
+  "output": {
+    "file": "output/parenting-rewind-pilot-02-screen-time-v1.mp4",
+    "duration_seconds": 88.833333,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "frame_rate": 30,
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "audio_channels": 2,
+    "sha256": "A0E5283EE964D67755AA75880958A14A6E13E77D22015679FDD3F2BEDCDADA8A"
+  },
+  "technical_validation": {
+    "passed": true,
+    "full_video_and_audio_decode": true,
+    "integrated_lufs": -15.9,
+    "loudness_range_lu": 3.0,
+    "true_peak_dbfs": -2.2,
+    "caption_transcript_and_timing_checks": true,
+    "visual_contact_sheet_reviewed": true,
+    "quality_report": "production-work/pilot-02-screen-time-v1/quality-report.json"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "additional_episode_production_authorized": false
+}

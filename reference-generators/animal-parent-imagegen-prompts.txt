@@ -1,0 +1,13 @@
+Built-in image generation prompt set
+
+1. Six baby animals
+Use case: scientific-educational. Create exactly six separate baby animals in a regular 3-column by 2-row grid: yellow duckling, brown-and-white calf, chestnut foal; fluffy yellow chick, golden lion cub, grey kangaroo joey. Polished children's storybook illustration, full bodies, warm-white background, strong empty gutters, bright and non-scary. No adults, extras, props, scenery, shadows, text, labels, logos, or watermark.
+
+2. Six adult parents
+Use case: scientific-educational. Create exactly six separate adult animals in a regular 3-column by 2-row grid: adult duck, adult cow, adult horse; adult hen, calm adult lion, adult kangaroo. Match the soft rounded children's educational style, full bodies, warm-white background, strong empty gutters, bright and non-scary. No babies, extras, props, scenery, shadows, text, labels, logos, or watermark.
+
+3. Four baby animals
+Use case: scientific-educational. Create exactly four separate baby animals in a regular 2-column by 2-row grid: golden puppy, grey-and-white kitten; fluffy white lamb, pink piglet. Match the same polished children's storybook style, full bodies, warm-white background, strong empty gutters, bright and non-scary. No adults, extras, props, scenery, shadows, text, labels, logos, or watermark.
+
+4. Four adult parents
+Use case: scientific-educational. Create exactly four separate adult animals in a regular 2-column by 2-row grid: friendly golden dog, grey-and-white cat; fluffy white sheep, pink pig. Match the same polished children's storybook style, full bodies, warm-white background, strong empty gutters, bright and non-scary. No babies, extras, props, scenery, shadows, text, labels, logos, or watermark.

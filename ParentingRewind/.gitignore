@@ -1,0 +1,18 @@
+# Generated media and working files
+/output/
+/production-work/
+/logs/
+/archives/
+
+# Future automation runtime and secrets must remain local
+/runtime/
+/secrets/
+*oauth*.json
+*token*.json
+*channel-lock*.json
+*ledger*.jsonl
+*.log
+
+# Python
+__pycache__/
+*.pyc

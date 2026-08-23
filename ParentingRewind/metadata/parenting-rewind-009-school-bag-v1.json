@@ -1,0 +1,60 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-009-school-bag",
+  "version": "v1",
+  "title": "The School Bag Is Still on the Floor | Parenting Rewind",
+  "description": "You have asked about the school bag four times and nobody is moving. A practical pause-and-rewind response for parents.\n\nGeneral parenting education; every child and family is different.",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "You have asked about the school bag four times and nobody is moving. A long list about shoes, lunch, teeth, and the bag can overwhelm a child who has not started step one. Before reacting, pause for one breath so the next words can be short, clear, and useful. Get attention and give one direction: Put your lunchbox in the bag; then wait and praise completion before the next step. One direction at a time makes success easier to see and easier to reinforce.",
+    "new_speech_generation_calls": 1
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Steps for Giving Good Directions",
+      "url": "https://www.cdc.gov/parenting-toddlers/directions/good-directions.html"
+    },
+    "claim_limits": [
+      "The suggested wording is an example, not a guarantee.",
+      "Families should adapt expectations to age, development, safety and individual needs."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets\\pilot-01-shoe-storyboard.png",
+    "asset_key": "entryway",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "new_image_generation_calls": 0
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\authorized-batch-2026-08-23\\parenting-rewind-009-school-bag\\captions.srt",
+    "timing_source": "speech-service word boundaries"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-009-school-bag-v1.mp4",
+    "duration_seconds": 33.03333333333333,
+    "sha256": "DEC95796B89309ABEFE9700DD3328ECB8666B7BD77D4650C79E762EC67C631CA"
+  }
+}

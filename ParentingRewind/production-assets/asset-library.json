@@ -1,0 +1,297 @@
+{
+  "version": 2,
+  "reuse_policy": {
+    "check_before_generation": true,
+    "allow_recurring_characters_and_settings": true,
+    "allow_reframing_and_local_motion": true,
+    "forbid_identical_full_sequence_in_consecutive_episodes": true,
+    "new_generation_condition": "Generate only when existing panels cannot accurately communicate the required scene beats."
+  },
+  "assets": [
+    {
+      "asset_id": "family-entryway-storyboard-01",
+      "file": "pilot-01-shoe-storyboard.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "characters": [
+        "father-mid-30s-sage-overshirt",
+        "daughter-age-5-mustard-jumper-denim-overalls"
+      ],
+      "setting": "warm contemporary home entryway in morning light",
+      "topic_tags": [
+        "morning routine",
+        "getting ready",
+        "shoe refusal",
+        "clear boundaries",
+        "acceptable choices",
+        "power struggles",
+        "calm communication",
+        "parent pause",
+        "repair"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Parent checks the time while child folds her arms beside red and blue shoes.",
+          "useful_for": ["time pressure", "refusal", "morning stress", "hook"],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Tense parent points toward shoes while child turns away.",
+          "useful_for": ["unhelpful reaction", "criticism", "power struggle"],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Parent pauses to think while child remains turned away.",
+          "useful_for": ["pause", "self-regulation", "rewind", "reflection"],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Calm parent kneels at the child's eye level with open hands.",
+          "useful_for": ["connection", "calm instruction", "listening", "choice"],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Child makes a choice while parent listens calmly.",
+          "useful_for": ["acceptable choices", "cooperation", "child agency"],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Parent and child leave the home together feeling connected.",
+          "useful_for": ["resolution", "repair", "cooperation", "outro"],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "family-living-room-screen-time-storyboard-01",
+      "file": "screen-time-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-08-22",
+        "style_reference": "pilot-01-shoe-storyboard.png",
+        "prompt_file": "../production-work/pilot-02-screen-time-v1/image-generation-prompt.txt"
+      },
+      "characters": [
+        "father-mid-30s-sage-overshirt",
+        "daughter-age-5-mustard-top-denim-overalls"
+      ],
+      "setting": "warm contemporary family living room in late-afternoon or early-evening light",
+      "topic_tags": [
+        "screen time",
+        "tablet transition",
+        "advance warning",
+        "visual timer",
+        "screen time tantrum",
+        "parent pause",
+        "calm boundary",
+        "acknowledging feelings",
+        "follow-through",
+        "offline reconnection"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 5
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Child is absorbed in an unbranded tablet on the sofa while the parent approaches and notices the transition time.",
+          "useful_for": [
+            "screen-time hook",
+            "media immersion",
+            "parent noticing",
+            "transition setup"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Tense parent reaches abruptly toward the tablet while the upset child holds it protectively.",
+          "useful_for": [
+            "unhelpful reaction",
+            "abrupt device removal",
+            "shouting escalation",
+            "power struggle"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Parent stops and takes a deliberate breath while the child remains upset with the tablet.",
+          "useful_for": [
+            "parent pause",
+            "self-regulation",
+            "rewind",
+            "preventing escalation"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Calm parent kneels near the child and points to a simple visual timer beside the tablet.",
+          "useful_for": [
+            "advance warning",
+            "visual timer",
+            "predictable transition",
+            "calm instruction"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "The switched-off tablet rests on the table while the disappointed child and calm parent remain connected.",
+          "useful_for": [
+            "holding a screen-time limit",
+            "acknowledging disappointment",
+            "few words",
+            "calm follow-through"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Parent and child reconnect by building blocks together with the tablet put away in the background.",
+          "useful_for": [
+            "offline activity",
+            "reconnection",
+            "repair",
+            "warm resolution",
+            "outro"
+          ],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "family-supermarket-storyboard-01",
+      "file": "supermarket-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-08-22",
+        "style_reference": "pilot-01-shoe-storyboard.png"
+      },
+      "characters": [
+        "mother-mid-30s-east-asian-appearance",
+        "son-age-5-east-asian-appearance"
+      ],
+      "setting": "contemporary Australian supermarket",
+      "topic_tags": [
+        "grocery shopping",
+        "public transitions",
+        "supermarket snack request",
+        "waiting",
+        "parent pause",
+        "bounded choices",
+        "public behavior",
+        "cooperation"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {"index": 0, "description": "Mother and son shop together beside a grocery trolley.", "useful_for": ["shopping setup", "connection", "public routine"], "published_uses": 0},
+        {"index": 1, "description": "Disappointed child stands near mother in a grocery aisle.", "useful_for": ["snack refusal", "disappointment", "public conflict"], "published_uses": 0},
+        {"index": 2, "description": "Mother pauses and takes a deliberate breath behind the trolley.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother speaks at eye level while child holds two grocery options.", "useful_for": ["bounded choices", "calm direction", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Child places a chosen grocery item into the trolley.", "useful_for": ["cooperation", "helping", "positive attention"], "published_uses": 0},
+        {"index": 5, "description": "Mother and son walk calmly together toward checkout.", "useful_for": ["resolution", "reconnection", "checkout transition"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-kitchen-siblings-storyboard-01",
+      "file": "kitchen-siblings-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-08-23",
+        "style_reference": "pilot-01-shoe-storyboard.png",
+        "purpose": "representative redesign after repetitive three-storyboard batch was rejected"
+      },
+      "characters": [
+        "mother-early-40s-black-australian-appearance",
+        "daughter-age-8-black-australian-appearance",
+        "son-age-4-black-australian-appearance"
+      ],
+      "setting": "airy contemporary kitchen and dining area with pale blue cabinetry, warm timber and daylight",
+      "topic_tags": [
+        "sibling conflict",
+        "helping with dinner",
+        "turn taking",
+        "different jobs",
+        "parent pause",
+        "kitchen routine",
+        "teamwork",
+        "family meal"
+      ],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Two children both want the same mixing-bowl job while their mother supervises.", "useful_for": ["sibling competition", "family task", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Children argue over the bowl while their mother becomes briefly overwhelmed.", "useful_for": ["conflict", "unhelpful escalation", "overwhelm"], "published_uses": 0},
+        {"index": 2, "description": "Mother takes one deliberate breath while the children remain safely apart.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother listens at child level and shows a simple kitchen timer.", "useful_for": ["neutral listening", "turn taking", "predictability"], "published_uses": 0},
+        {"index": 4, "description": "Daughter mixes while son sets napkins and mother encourages both.", "useful_for": ["different jobs", "cooperation", "specific praise"], "published_uses": 0},
+        {"index": 5, "description": "Mother and children connect around the prepared dining table.", "useful_for": ["resolution", "teamwork", "family meal"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-bedtime-father-daughter-storyboard-01",
+      "file": "bedtime-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23"},
+      "characters": ["father-late-20s-south-asian-australian-appearance", "daughter-age-6-south-asian-australian-appearance"],
+      "setting": "teal and coral child's bedroom at night with moonlight and warm bedside lighting",
+      "topic_tags": ["bedtime stalling", "bedtime routine", "one more story", "parent pause", "visual routine", "nighttime transition"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Daughter asks for more while father holds a bedtime book.", "useful_for": ["bedtime request", "stalling", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Tired father gestures toward bed while daughter resists.", "useful_for": ["bedtime conflict", "parent fatigue"], "published_uses": 0},
+        {"index": 2, "description": "Father pauses and breathes in the hallway light.", "useful_for": ["parent pause", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father and daughter review a three-picture bedtime chart.", "useful_for": ["visual routine", "predictability", "calm instruction"], "published_uses": 0},
+        {"index": 4, "description": "Father reads one book as daughter settles under the blanket.", "useful_for": ["connection", "bedtime routine", "calming"], "published_uses": 0},
+        {"index": 5, "description": "Father says goodnight from the doorway while daughter rests.", "useful_for": ["resolution", "lights out", "warm limit"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-playground-leaving-storyboard-01",
+      "file": "playground-leaving-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["mother-early-30s-middle-eastern-australian-appearance", "son-age-3-middle-eastern-australian-appearance"],
+      "setting": "sunny Australian neighborhood playground with eucalyptus trees and yellow slide",
+      "topic_tags": ["leaving playground", "public transition", "last turn", "parent pause", "outdoor routine", "holding hands"],
+      "grid": {"columns": 2, "rows": 3, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Son enjoys the slide while mother checks the time.", "useful_for": ["playground hook", "transition setup"], "published_uses": 0},
+        {"index": 1, "description": "Upset son sits on the safety surface while mother crouches nearby.", "useful_for": ["transition protest", "disappointment"], "published_uses": 0},
+        {"index": 2, "description": "Mother takes one deliberate breath outdoors.", "useful_for": ["parent pause", "self-regulation"], "published_uses": 0},
+        {"index": 3, "description": "Mother speaks calmly at eye level near the gate.", "useful_for": ["calm instruction", "last turn", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Son takes the final slide while mother waits.", "useful_for": ["predictable ending", "follow-through"], "published_uses": 0},
+        {"index": 5, "description": "Mother and son walk away holding hands.", "useful_for": ["resolution", "leaving", "safety"], "published_uses": 0}
+      ]
+    }
+  ]
+}
