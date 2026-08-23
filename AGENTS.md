@@ -10,6 +10,7 @@ This workspace contains two separate video projects. Keep their files, credentia
 
 ## Workspace safety
 
+- Before starting new workspace changes, run `git pull --ff-only origin main` from the workspace root and reconcile any incoming instructions or live-state updates before continuing. If the worktree is not clean or the pull cannot fast-forward, stop and inspect rather than forcing or discarding changes.
 - Inspect live files and state before changing anything; handoff documents are guides and may become outdated.
 - Preserve existing videos, manifests, metadata, credentials, Scheduled Tasks and user changes unless the user explicitly authorizes a verified change.
 - Never copy or reuse OAuth client secrets, tokens, channel locks, upload ledgers or archives between projects, laptops or channels.
@@ -17,5 +18,6 @@ This workspace contains two separate video projects. Keep their files, credentia
 - Never print or place secrets or tokens in instructions, handoffs, logs or source control.
 - Do not upload, publish, email, schedule, or mass-generate content without the authorization recorded in the applicable project instructions and confirmed by live state.
 - After a material project change, update that project's handoff in the same task so a fresh Codex session receives the current state. Record paths and status, never secret values.
+- Keep the applicable `AGENTS.md` current when user preferences, safety rules, automation behavior, or continuation requirements materially change. Update only the project in scope unless the instruction applies workspace-wide.
 - If an instruction or handoff appears stale or conflicts with live state, stop the affected external action, reconcile the discrepancy safely and update the documentation.
 - If an upload process exits after sending data but before recording a video ID, perform a read-only channel query for the exact title before any retry. Reconcile a confirmed upload into the local ledger; never risk a duplicate upload.
