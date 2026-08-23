@@ -13,7 +13,9 @@ This workspace contains two separate video projects. Keep their files, credentia
 - Inspect live files and state before changing anything; handoff documents are guides and may become outdated.
 - Preserve existing videos, manifests, metadata, credentials, Scheduled Tasks and user changes unless the user explicitly authorizes a verified change.
 - Never copy or reuse OAuth client secrets, tokens, channel locks, upload ledgers or archives between projects, laptops or channels.
+- Each YouTube channel automation must use its documented dedicated Google Cloud/OAuth project. Never create or rotate projects merely to evade YouTube quota; project separation is for credential and operational isolation, and channel-level upload limits still apply.
 - Never print or place secrets or tokens in instructions, handoffs, logs or source control.
 - Do not upload, publish, email, schedule, or mass-generate content without the authorization recorded in the applicable project instructions and confirmed by live state.
 - After a material project change, update that project's handoff in the same task so a fresh Codex session receives the current state. Record paths and status, never secret values.
 - If an instruction or handoff appears stale or conflicts with live state, stop the affected external action, reconcile the discrepancy safely and update the documentation.
+- If an upload process exits after sending data but before recording a video ID, perform a read-only channel query for the exact title before any retry. Reconcile a confirmed upload into the local ledger; never risk a duplicate upload.

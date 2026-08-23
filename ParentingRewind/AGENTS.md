@@ -21,7 +21,9 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Present general parenting education, not personalised therapy, diagnosis or medical advice.
 - Research lesson claims using authoritative sources and record the sources in metadata.
 - Never reuse Tiny Tales OAuth files, tokens, channel locks, upload ledgers, archives or Scheduled Tasks.
+- Parenting Rewind uses its own dedicated Google Cloud/OAuth project. Confirm the non-secret project ID and current verification status in `PROJECT-HANDOFF.md`; never copy Birthday Songs credentials into this project.
 - Never upload outside this project's verified, fail-closed Parenting Rewind automation. Upload authority exists only when the current `PROJECT-HANDOFF.md` records the verified channel identity, immutable channel lock and the user's explicit authorization; never infer it from local credentials alone.
+- If a resumable upload is interrupted or its wrapper reports failure after transfer begins, query the verified channel read-only for the exact metadata title before retrying. If YouTube already created the video, reconcile its ID into the attempt journal and ledger. Do not upload a duplicate.
 
 ## Batch authorization
 
