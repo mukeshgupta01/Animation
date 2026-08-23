@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 22:05 Australia/Sydney
+Last updated: 2026-08-24 07:46 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -9,7 +9,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - Project folder: `C:\Animation\Animation\KidsRhymes`
 - Channel name: `Tiny Tales`
 - Immutable YouTube channel ID: `UCEn9N-ITQHshjgt6fy7fxnw`
-- Upload privacy: `private`
+- Upload privacy: `public` for new uploads by explicit user instruction on 2026-08-24
 - Audience setting: made for kids
 - Report email: `mukeshmelb01@gmail.com`
 - Python environment: `C:\Animation\Animation\.venv\Scripts\python.exe`
@@ -23,13 +23,13 @@ This document lets a new Codex account continue the local project safely. Do not
 - Do not say or display numbered `Round 1`, `Round 2`, etc. Use natural transitions such as `Let's check the next one`.
 - Rotate friendly, child-appropriate narrator profiles across new videos. Verified profiles are `ana-us` (`en-US-AnaNeural`), `maisie-uk` (`en-GB-MaisieNeural`), `natasha-au` (`en-AU-NatashaNeural`), and `ryan-uk` (`en-GB-RyanNeural`). Keep delivery natural and non-squeaky; do not repeat a profile within three consecutive new videos.
 - Do not write `Made for kids and uploaded privately for review before publication` or similar internal workflow language in descriptions.
-- Always supply a useful title, viewer-facing description, and tags. Keep made-for-kids/private settings in YouTube status fields.
+- Always supply a useful title, viewer-facing description, and tags. Keep made-for-kids/public settings in YouTube status fields.
 - Avoid repeating the same animals in consecutive or very similar themes.
 - Current reusable families: land, ocean, farm, jungle, and colourful birds.
 - Preferred varied formats include animal superpowers/facts, hidden objects, disappearance memory, animal sounds/clues, footprints, habitats, cause-and-effect stories, kindness/rescue quests, lost-colour adventures, and help-it-grow stories.
 - Aim for a small mission, a real child choice, a 5-7 second thinking window, positive feedback, and one memorable discovery.
 - For storybook adventures inspired by `The Lost Rainbow Adventure`, retain an independently moving recurring character such as Pip. The number of locations must follow the topic naturally and is not fixed at six.
-- All real uploads remain private for human review before publication.
+- New real uploads are public and made for kids. Existing historical private uploads remain private unless the user separately asks to publish the backlog.
 
 ## Architecture and important files
 
@@ -65,7 +65,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production-assets/nia-3d-pose-sheet.png`, `breakfast-friends-3d-pose-sheet.png`, `rainbow-breakfast-kitchen-3d.png`, `rainbow-breakfast-table-3d.png`, and `rainbow-breakfast-finale-3d.png`: accepted generated 3D-rendered character and kitchen assets. Force-add them with the producer. This method is not true rigged Blender animation.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
-- `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
+- `automation/uploader.py`: channel-locked resumable uploader using configured visibility, duplicate prevention, ledger, and post-success archive cleanup.
 - `automation/Run-GenerationCycle.ps1`: time-boxed generation task wrapper with global mutex.
 - `automation/Run-UploadCycle.ps1`: independent upload/email wrapper with separate global mutex.
 - `automation/Install-TinyTalesTasks.ps1`: installer for the two exact tasks; it refuses to overwrite existing tasks.
@@ -97,7 +97,7 @@ Exact task names:
 - `Tiny Tales - Continuous Generation`
 - `Tiny Tales - Daily Private Upload` (the historical name says Daily, but it now has five daily triggers)
 
-Generation starts daily at 00:05, 05:05, 10:05, 15:05, and 20:05. Each process is limited to about 4 hours 45 minutes and generates at most one new video. At the user's request on 2026-08-23, private upload checks now run every four hours at 00:20, 04:20, 08:20, 12:20, 16:20, and 20:20. Both tasks use wake, network-required, start-when-available, interactive-current-user, and ignore-new-instance settings. Named mutexes provide a second overlap guard.
+Generation triggers remain configured at 00:05, 05:05, 10:05, 15:05, and 20:05, but the generation task is currently disabled by user request. Upload checks run every four hours at 00:20, 04:20, 08:20, 12:20, 16:20, and 20:20 using current configured visibility (`public`). Tasks use wake, network-required, start-when-available, interactive-current-user, and ignore-new-instance settings. Named mutexes provide a second overlap guard.
 
 Verified at handoff:
 
@@ -384,7 +384,16 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The corrected MP4 and private/made-for-kids metadata are in the pending queue. The queue contains 39 MP4s, and `COVERED-TOPICS.md` records 48 concepts. The immediate dry run excluded Nia during the stability window and selected Maya; after five minutes, a second dry run selected Nia from all 39 eligible videos. Neither dry run uploaded anything.
 - After the one deliberate prototype completed, `Tiny Tales - Continuous Generation` was disabled and verified Disabled with last result `0`; no Python or FFmpeg process remained. Do not re-enable automatic generation unless the user explicitly asks. `Tiny Tales - Daily Private Upload` remains enabled and Ready for 00:20, with its prior result `1` preserved from the recorded quota failure.
 
-The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
+## Public visibility change and confirmed Nia upload
+
+- At 07:35 on 2026-08-24, the user explicitly requested public uploads instead of private uploads. This applies prospectively to queued/new uploads; it does not mass-publish the historical private backlog.
+- `automation/config.json` now uses `privacy_status: public`. `uploader.py` applies configured visibility to the YouTube request, ledger and report; the Outlook report and task installer wording are visibility-neutral/current. Made-for-kids, immutable channel verification, explicit confirmation, stability, technical, duplicate and unresolved-attempt guards remain mandatory.
+- The scheduled 00:20 Nia upload reached 11.2% and was interrupted because normal progress on stderr triggered PowerShell's `Stop` behavior. The 04:20 run correctly refused a duplicate. `Run-UploadCycle.ps1` now temporarily sets native invocation error handling to `Continue` and uses the uploader exit code, preventing progress logs from terminating future transfers.
+- API investigation found transient ID `63l7E_6iivs` with Nia's exact title/start timestamp but no processed duration; subsequent exact-ID and uploads-playlist checks confirmed YouTube discarded it. The attempt was marked `failed_confirmed_absent` only after those live checks.
+- The explicit retry succeeded as `ygc-y4_XBwk` (`https://youtu.be/ygc-y4_XBwk`). Read-back matched Tiny Tales channel `UCEn9N-ITQHshjgt6fy7fxnw`, the exact title/description/seven tags, 2:31 duration, public visibility, made-for-kids and self-declared-made-for-kids flags. The uploader ledger recorded success and archived the canonical MP4/metadata; the pending queue now contains 38 MP4s.
+- The upload Scheduled Task remains enabled under its historical name `Tiny Tales - Daily Private Upload`; despite that name, configured behavior is now public. Automatic generation remains disabled.
+
+The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for kids on the exact Tiny Tales channel. Email reporting is separate from upload success and must not cause a duplicate retry.
 
 ## Safe continuation checklist
 
@@ -395,7 +404,7 @@ The last upload was read back through YouTube Data API and confirmed private, ma
 5. Verify the OAuth channel with the uploader's read-only verify command before any upload work.
 6. Report live state and discrepancies to the user.
 7. Continue only unfinished work. Do not regenerate or re-upload completed ledger entries.
-8. Visually inspect each new quality contact sheet before manually approving an immediate upload; scheduled uploads still enforce technical checks, channel lock, stability age, duplicate ledger, private status, and made-for-kids.
+8. Visually inspect each new quality contact sheet before manually approving an immediate upload; scheduled uploads still enforce technical checks, channel lock, stability age, duplicate ledger, configured visibility, and made-for-kids.
 9. Update this handoff after material architecture, schedule, channel, recipient, safety, or editorial changes.
 
 Useful read-only commands from the project folder:

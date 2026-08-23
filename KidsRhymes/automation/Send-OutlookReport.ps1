@@ -31,19 +31,21 @@ else {
     $videoName = if ($report.video_name) { [string]$report.video_name } elseif ($report.result.source_name) { [string]$report.result.source_name } else { '(none)' }
     $url = if ($report.result.youtube_url) { [string]$report.result.youtube_url } else { '(no URL returned)' }
     $remaining = if ($null -ne $report.remaining_upload_count) { [string]$report.remaining_upload_count } else { 'unknown' }
+    $visibility = if ($report.privacy_status) { [string]$report.privacy_status } else { 'configured' }
     $failureLines = @($report.failures | ForEach-Object {
         if ($_.video_name) { "- $($_.video_name): $($_.error)" } else { "- $($_.error)" }
     })
     $status = if ($success -gt 0) { 'SUCCESS' } else { 'FAILED' }
-    $subject = "Tiny Tales private upload $status - $videoName"
+    $subject = "Tiny Tales $visibility upload $status - $videoName"
     $body = @"
-Tiny Tales private upload report
+Tiny Tales upload report
 
 Status: $status
 Attempted uploads: $attempted
 Successful uploads: $success
 Video: $videoName
 YouTube URL: $url
+Visibility: $visibility
 Remaining upload count: $remaining
 Started UTC: $($report.started_utc)
 Finished UTC: $($report.finished_utc)
@@ -51,7 +53,7 @@ Finished UTC: $($report.finished_utc)
 Failures:
 $($failureLines -join [Environment]::NewLine)
 
-The automation uploads videos as private and made for kids. Review the video in YouTube Studio before making it public.
+The automation uploads videos with the configured visibility and marks them made for kids.
 "@
 }
 

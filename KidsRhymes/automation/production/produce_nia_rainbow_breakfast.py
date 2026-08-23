@@ -370,7 +370,7 @@ def write_metadata(total: float) -> None:
         "tags": ["breakfast song for kids", "colour song", "dance for kids", "3D animation for kids", "preschool movement", "fruit for kids", "Tiny Tales"],
         "category_id": "27",
         "made_for_kids": True,
-        "privacy": "private",
+        "privacy": "public",
         "upload_authorized": False,
         "output": str(OUTPUT),
         "duration_seconds": total,

@@ -75,8 +75,8 @@ def config() -> dict[str, Any]:
     value = load_json(CONFIG_PATH)
     if not isinstance(value, dict):
         raise SafetyError(f"Invalid configuration: {CONFIG_PATH}")
-    if value.get("privacy_status") != "private":
-        raise SafetyError("Automation configuration must default to private visibility")
+    if value.get("privacy_status") not in {"private", "public"}:
+        raise SafetyError("Automation configuration must use private or public visibility")
     if value.get("made_for_kids") is not True:
         raise SafetyError("Automation configuration must mark videos made for kids")
     return value
@@ -248,7 +248,7 @@ def metadata_for(video: Path, cfg: dict[str, Any]) -> dict[str, Any]:
             "categoryId": str(supplied.get("category_id", cfg["category_id"])),
         },
         "status": {
-            "privacyStatus": "private",
+            "privacyStatus": cfg["privacy_status"],
             "selfDeclaredMadeForKids": True,
         },
     }
@@ -306,7 +306,7 @@ def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]
         "sha256": digest,
         "video_id": video_id,
         "youtube_url": f"https://youtu.be/{video_id}",
-        "privacy_status": "private",
+        "privacy_status": cfg["privacy_status"],
         "made_for_kids": True,
     }
     append_ledger(row)
@@ -364,7 +364,7 @@ def main() -> int:
     dry = sub.add_parser("dry-run", help="Inspect the dedicated new-video queue without uploading")
     dry.add_argument("--report-json")
     run = sub.add_parser("run", help="Upload the next eligible new video using configured queue order")
-    run.add_argument("--confirm-upload", action="store_true", help="Required acknowledgement for a real private upload")
+    run.add_argument("--confirm-upload", action="store_true", help="Required acknowledgement for a real upload")
     run.add_argument("--report-json")
     args = parser.parse_args()
     cfg = config()
@@ -379,12 +379,13 @@ def main() -> int:
         candidates = queue_files(cfg)
         if args.command == "dry-run":
             report = report_base("upload-dry-run")
-            report.update({"queue_scope": str(HERE / cfg["pending_directory"]), "existing_outputs_excluded": True, "remaining_upload_count": len(candidates), "next_video": candidates[0].name if candidates else None})
+            report.update({"queue_scope": str(HERE / cfg["pending_directory"]), "existing_outputs_excluded": True, "configured_privacy_status": cfg["privacy_status"], "remaining_upload_count": len(candidates), "next_video": candidates[0].name if candidates else None})
             write_report(args.report_json, report)
             return 0
         if not args.confirm_upload:
             raise SafetyError("Real upload blocked: --confirm-upload is required")
-        report = report_base("private-upload")
+        report = report_base(f"{cfg['privacy_status']}-upload")
+        report["privacy_status"] = cfg["privacy_status"]
         if not candidates:
             report["remaining_upload_count"] = 0
             write_report(args.report_json, report)

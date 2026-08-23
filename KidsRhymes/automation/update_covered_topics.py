@@ -13,11 +13,14 @@ INDEX = PROJECT / "COVERED-TOPICS.md"
 
 
 def main() -> None:
+    config_path = AUTOMATION / "config.json"
+    config = json.loads(config_path.read_text(encoding="utf-8")) if config_path.exists() else {}
+    queue_visibility = str(config.get("privacy_status", "private"))
     media: dict[str, set[str]] = {}
     for label, directory in (
         ("archived/uploaded", AUTOMATION / "archive"),
         ("completed local", AUTOMATION / "production-output"),
-        ("queued private upload", AUTOMATION / "pending-uploads"),
+        (f"queued {queue_visibility} upload", AUTOMATION / "pending-uploads"),
     ):
         for path in directory.glob("*.mp4"):
             media.setdefault(path.stem, set()).add(label)

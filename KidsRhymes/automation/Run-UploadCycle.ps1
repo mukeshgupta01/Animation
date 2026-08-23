@@ -19,8 +19,15 @@ if (-not $mutex.WaitOne(0)) {
 
 try {
     Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) upload cycle started"
-    & $python -B $uploader run --confirm-upload --report-json $report *>> $log
-    $uploadExit = $LASTEXITCODE
+    $previousPreference = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        & $python -B $uploader run --confirm-upload --report-json $report *>> $log
+        $uploadExit = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousPreference
+    }
     if (Test-Path -LiteralPath $report) {
         & powershell.exe -NoProfile -ExecutionPolicy Bypass -File $mailer -ReportPath $report *>> $log
     }

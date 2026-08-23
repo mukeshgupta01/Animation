@@ -24,7 +24,7 @@ $uploadSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -R
 
 Register-ScheduledTask -TaskName $generationTaskName -Action $generationAction -Trigger $generationTriggers -Principal $principal -Settings $generationSettings -Description 'Starts a fresh, non-overlapping Tiny Tales generation process roughly every five hours.' | Out-Null
 try {
-    Register-ScheduledTask -TaskName $uploadTaskName -Action $uploadAction -Trigger $uploadTriggers -Principal $principal -Settings $uploadSettings -Description 'Every four hours, uploads the oldest completed Tiny Tales video privately, archives it after success, and sends an Outlook report.' | Out-Null
+    Register-ScheduledTask -TaskName $uploadTaskName -Action $uploadAction -Trigger $uploadTriggers -Principal $principal -Settings $uploadSettings -Description 'Every four hours, uploads the newest eligible Tiny Tales video with configured visibility, archives it after success, and sends an Outlook report.' | Out-Null
 }
 catch {
     Unregister-ScheduledTask -TaskName $generationTaskName -Confirm:$false

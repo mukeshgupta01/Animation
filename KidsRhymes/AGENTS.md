@@ -7,7 +7,7 @@ Safety requirements:
 - Never expose, copy, replace, or commit OAuth credentials or tokens.
 - Never reuse this project's token or channel lock for another channel or laptop.
 - Verify the immutable channel ID before every real upload.
-- Upload only as private and made for kids.
+- Current upload visibility is `public` by the user's explicit instruction on 2026-08-24. Always mark uploads made for kids, preserve the immutable channel lock, and require the explicit confirmation flag for every real upload.
 - A real upload requires the existing explicit confirmation flag.
 - Never regenerate a completed item or upload an archived/existing video again.
 - Archive only after YouTube returns a video ID.
@@ -70,11 +70,11 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The roadmap also records the user’s colour, breakfast, dad-coming-home, Mumma-shopping, playing-with-friends, sharing-toys, excavator, ice-cream and fruit-picking directions plus additional original concepts. Continue extending this roadmap proactively with genuinely different ideas, then produce them under the novelty and voice rules.
 - Prioritize the animal-helping story first, then rotate through song, sports, art, fable, counting and celebration formats. Do not produce several songs or several rescue stories consecutively.
 
-## Newest-first private uploads (2026-08-23 Australia/Sydney)
+## Newest-first uploads (2026-08-23 Australia/Sydney)
 
-- The user asked that private uploads choose the most recently created stable video rather than the oldest queued video.
+- The user asked that uploads choose the most recently created stable video rather than the oldest queued video.
 - `automation/config.json` sets `upload_queue_order` to `newest_first`; `automation/uploader.py` applies descending modification time with a deterministic filename tie-breaker after all existing stability, duplicate, archive and technical checks.
-- This changes queue priority only. It does not authorize public visibility, bypass unresolved-attempt protection, change made-for-kids status, or weaken the immutable channel lock.
+- This changes queue priority only. It does not bypass unresolved-attempt protection, change made-for-kids status, or weaken the immutable channel lock. Visibility is controlled separately by `automation/config.json`.
 
 ## Latest completed story checkpoint (2026-08-23 21:32 Australia/Sydney)
 
@@ -91,3 +91,12 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Nia uses `ana-us`; the host uses `ryan-uk`. Six audited movement/colour response gaps exceed five seconds. Automated 1080p H.264/stereo AAC checks, a full FFmpeg decode and final contact-sheet review passed after correcting the title composition and opening entrance.
 - The producer is `automation/production/produce_nia_rainbow_breakfast.py`. Its accepted assets are `automation/production-assets/nia-3d-pose-sheet.png`, `breakfast-friends-3d-pose-sheet.png`, `rainbow-breakfast-kitchen-3d.png`, `rainbow-breakfast-table-3d.png`, and `rainbow-breakfast-finale-3d.png`; keep all five with the producer.
 - The corrected video and metadata are queued for private review, bringing the queue to 39 MP4s and `COVERED-TOPICS.md` to 48 concepts. The immediate dry run correctly excluded Nia during its five-minute stability window; after the window elapsed, a second dry run selected Nia from all 39 eligible videos. No upload was triggered.
+
+## Public upload policy and Nia upload checkpoint (2026-08-24 07:46 Australia/Sydney)
+
+- The user explicitly changed future Tiny Tales uploads from private to public. `automation/config.json` now sets `privacy_status` to `public`; `uploader.py` uses that configured value for YouTube status, reports and the ledger. Existing historical private uploads are not mass-published by this instruction.
+- All uploads must remain made for kids, channel-locked, duplicate-guarded, technically validated and explicitly confirmed. Public visibility does not weaken any other safety check.
+- The 00:20 scheduled Nia attempt reached 11.2% and stopped because `Run-UploadCycle.ps1` treated normal Python stderr progress as a terminating PowerShell error. The wrapper now temporarily allows native stderr and trusts the uploader's exit code, matching the generation wrapper fix.
+- The interrupted attempt briefly created YouTube ID `63l7E_6iivs`, but live API checks found it unprocessed and then confirmed that both the ID and exact title disappeared. Only after those checks was Nia's unresolved-attempt guard marked `failed_confirmed_absent`.
+- A fresh explicit upload succeeded as public video `ygc-y4_XBwk` (`https://youtu.be/ygc-y4_XBwk`). API read-back matched the exact Tiny Tales channel, title, 2:31 duration, description, seven tags, public status, made-for-kids and self-declared-made-for-kids flags. The canonical MP4/metadata were archived only after YouTube returned the new ID; the queue contains 38 MP4s.
+- `Tiny Tales - Continuous Generation` remains disabled. The historical task name `Tiny Tales - Daily Private Upload` remains installed and enabled, but its current behavior is public according to configuration.
