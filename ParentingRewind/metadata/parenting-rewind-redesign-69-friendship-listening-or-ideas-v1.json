@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-69-friendship-listening-or-ideas",
+  "version": "v1",
+  "title": "Ask: Listening or Ideas? | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your eleven-year-old shows you a painful friendship message, and your first instinct may be to tell her exactly what to send back. Fast advice can make a child stop explaining, especially when she is still working out what she feels and what she wants. Pause, listen for the full story, and ask what kind of support would be useful before offering solutions. Try: Do you want me to listen while you sort this out, or would you like a few ideas when you are ready? You do not have to solve the friendship immediately; staying curious helps your child think while knowing she is not alone. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Communication Skills Start at Home",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Components-of-Good-Communication.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/friendship-listening-grandfather-granddaughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-65-to-69.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-69-friendship-listening-or-ideas\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.mp4",
+    "duration_seconds": 42.166666666666664,
+    "sha256": "D9FBE604A26EB3A8AD951F15CD0BCF00E70792B2341B53EC651823E0C1FD2BB3"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.mp4"
+  }
+}

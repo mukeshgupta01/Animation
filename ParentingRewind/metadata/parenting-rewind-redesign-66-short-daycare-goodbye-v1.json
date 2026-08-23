@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-66-short-daycare-goodbye",
+  "version": "v1",
+  "title": "Use the Same Short Daycare Goodbye | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "At daycare drop-off, your two-year-old grips your leg, and stretching the goodbye can make both of you feel less certain. Sneaking away breaks trust, but returning for several extra hugs can accidentally restart the separation again and again. Pause, keep your face calm, and use the same brief goodbye routine your toddler can begin to recognize. Try: One hug, bunny stays with you, and I will come back after afternoon snack; then wave once and let the educator support the transition. Your toddler may still cry; predictability and a reliable return matter more than forcing an instant happy reaction. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Soothing Your Child's Separation Anxiety",
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/Soothing-Your-Childs-Separation-Anxiety.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/daycare-separation-mother-toddler-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-65-to-69.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-66-short-daycare-goodbye\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-66-short-daycare-goodbye-v1.mp4",
+    "duration_seconds": 46.53333333333333,
+    "sha256": "4F0147B6D10726AB4005791B2C36B7D61D1848A8E9BF6678B728BB523C2C652E"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-66-short-daycare-goodbye-v1.mp4"
+  }
+}

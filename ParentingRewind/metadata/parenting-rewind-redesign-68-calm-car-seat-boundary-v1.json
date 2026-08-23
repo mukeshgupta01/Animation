@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-68-calm-car-seat-boundary",
+  "version": "v1",
+  "title": "Hold the Car-Seat Boundary Calmly | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "When a three-year-old refuses the car seat, time pressure can make a parent repeat the demand louder and faster. The safety limit is not optional, but a toddler can still have one small choice about how the safe step happens. Pause beside the parked car, use few words, and offer only options you can calmly follow through with. Try: You can climb into the seat, or I can help your body into the seat; the car moves after the buckle is secure. A calm choice does not negotiate away safety; it reduces extra conflict while the adult keeps the boundary clear. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Car Safety Seats: Information for Families",
+      "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Car-Safety-Seats-Information-for-Families.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/car-seat-father-toddler-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-65-to-69.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-68-calm-car-seat-boundary\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-68-calm-car-seat-boundary-v1.mp4",
+    "duration_seconds": 42.0,
+    "sha256": "3C94C567EDF4EC6D6B800312161E790103060698ABB9BE2DA1BAB17FEAEF82A8"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-68-calm-car-seat-boundary-v1.mp4"
+  }
+}

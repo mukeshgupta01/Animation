@@ -4,9 +4,9 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- Two local review pilots:
-  - **When Your Child Refuses Their Shoes**: V2 narration and V4 music direction approved as the creative baseline
-  - **Screen Time Is Over: What to Say Without Shouting**: Pilot 02 V1 awaiting user review
+- The active catalog contains 71 validated videos in the configured Business OneDrive transfer/upload folder: two pilots plus redesigned episodes 01-69.
+- **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
+- **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video
 - Original project storyboards, synthetic narration, burned-in captions and original locally synthesized music
 - The YouTube channel is live and verified through isolated OAuth as **Parenting Rewind** (`UCGb-IUQX2KQa_KA24MwE_aQ`).
@@ -15,7 +15,8 @@ This is a separate adult-facing parenting education video project. It is not par
 - Windows task `Parenting Rewind - Private Upload Cadence` checks hourly and gates actual uploads by the recorded cadence. It currently waits for the OneDrive source folder to sync locally.
 - The repetitive three-storyboard batch was rejected and removed from active output. Its MP4s are preserved under `rejected-repetitive-batch-archive/output` only for recovery.
 - The user explicitly approved `output/parenting-rewind-redesign-01-kitchen-siblings-v1.mp4` on 2026-08-23 and authorized continued local production until asked to stop.
-- Redesigned episodes 02-06 are complete in `output`, with rotated bedroom, playground and kitchen casts/settings. Continue only the redesigned workflow; keep the rejected repetitive renderer retired.
+- Continue only the redesigned workflow; keep the rejected repetitive renderer retired. New work must vary developmental stages, casts and settings, and should maintain the required toddler, school-age and teenage mix.
+- Every episode newly produced after 2026-08-23 17:33 ends with the spoken and burned-in-caption call to action: **If this helped, like and subscribe for more practical Parenting Rewind ideas.**
 
 ## Build the pilot
 
@@ -63,6 +64,6 @@ The producer preserves an existing completed MP4 rather than overwriting it. Its
 
 ## Image-credit conservation
 
-Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library now contains six entryway panels and six living-room screen-time panels. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
+Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 20 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
 
 Recurring characters and settings create useful channel continuity, but the complete visual sequence must not be repeated with only superficial text changes. New artwork should be generated only when the existing panels cannot clearly illustrate the new parenting situation.

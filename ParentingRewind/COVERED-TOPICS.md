@@ -4,11 +4,13 @@ Updated: 2026-08-23
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 90 (66 active; 24 historical-only).
+Unique topics: 95 (71 active; 24 historical-only).
 
 ## Topic index
 
 - [active] Agree on a Homework Help Signal — metadata: parenting-rewind-redesign-58-homework-help-signal-v1.json
+- [active] Ask: Listening or Ideas? — metadata: parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.json
+- [active] Build the Phone Boundary Together — metadata: parenting-rewind-redesign-67-build-phone-boundary-together-v1.json
 - [active] Check What Your Child Heard — metadata: parenting-rewind-redesign-61-check-what-child-heard-v1.json
 - [active] Choose a Homework Time Together — metadata: parenting-rewind-redesign-12-homework-time-together-v1.json
 - [active] Describe Cooperation Like a Commentator — metadata: parenting-rewind-redesign-16-describe-cooperation-v1.json
@@ -20,6 +22,7 @@ Unique topics: 90 (66 active; 24 historical-only).
 - [active] Give Thirty Seconds of Full Attention — metadata: parenting-rewind-redesign-29-full-attention-listening-v1.json
 - [active] Give Your Child Input on Homework Timing — metadata: parenting-rewind-redesign-30-child-input-homework-plan-v1.json
 - [active] Hear Each Sibling Separately First — metadata: parenting-rewind-redesign-53-sibling-listen-separately-v1.json
+- [active] Hold the Car-Seat Boundary Calmly — metadata: parenting-rewind-redesign-68-calm-car-seat-boundary-v1.json
 - [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
 - [active] Keep the Bedtime Sequence Familiar — metadata: parenting-rewind-redesign-15-same-bedtime-sequence-v1.json
 - [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
@@ -57,6 +60,7 @@ Unique topics: 90 (66 active; 24 historical-only).
 - [active] Reflect the Feeling Before Solving — metadata: parenting-rewind-redesign-18-reflect-before-solving-v1.json
 - [active] Reflect the Library Disappointment — metadata: parenting-rewind-redesign-34-library-feeling-reflection-v1.json
 - [active] Reflect the Library Excitement — metadata: parenting-rewind-redesign-47-library-reflect-excitement-v1.json
+- [active] Repair a Curfew Miss Without a Lecture — metadata: parenting-rewind-redesign-65-repair-curfew-miss-v1.json
 - [active] Repair After You Lose Your Temper — metadata: parenting-rewind-redesign-59-repair-after-yelling-v1.json
 - [active] Repeat the Checkout Answer Calmly — metadata: parenting-rewind-redesign-51-checkout-calm-repeat-v1.json
 - [active] Say What to Do in the Shop — metadata: parenting-rewind-redesign-20-say-what-to-do-shopping-v1.json
@@ -69,6 +73,7 @@ Unique topics: 90 (66 active; 24 historical-only).
 - [active] Use an I-Statement Instead of Blame — metadata: parenting-rewind-redesign-62-i-statement-not-blame-v1.json
 - [active] Use One Playground Warning — metadata: parenting-rewind-redesign-25-one-playground-warning-v1.json
 - [active] Use One Real Choice at the Library — metadata: parenting-rewind-redesign-17-library-one-book-choice-v1.json
+- [active] Use the Same Short Daycare Goodbye — metadata: parenting-rewind-redesign-66-short-daycare-goodbye-v1.json
 - [active] Warn Before Homework Starts — metadata: parenting-rewind-redesign-19-homework-transition-warning-v1.json
 - [active] When Bedtime Keeps Moving — metadata: parenting-rewind-redesign-02-bedtime-stalling-v1.json
 - [active] When Both Kids Want the Same Job — metadata: parenting-rewind-redesign-01-kitchen-siblings-v1.json

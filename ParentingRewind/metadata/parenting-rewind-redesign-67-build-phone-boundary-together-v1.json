@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-67-build-phone-boundary-together",
+  "version": "v1",
+  "title": "Build the Phone Boundary Together | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your fourteen-year-old is scrolling beside unfinished schoolwork, and grabbing the phone can turn the whole evening into a power struggle. A boundary works better when it names the shared goal instead of treating normal teenage privacy as suspicious behaviour. Pause, ask what is pulling his attention, and choose a rule you are also willing to model consistently. Try: Let us charge phones here during focused work, then check them during the planned break; what timing feels realistic tonight? A collaborative media plan still has limits, but it gives a teenager a voice in how the family protects sleep, attention, and connection. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Family Media Plan",
+      "url": "https://www.healthychildren.org/English/fmp/Pages/MediaPlan.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-phone-boundary-mother-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-65-to-69.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-67-build-phone-boundary-together\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-67-build-phone-boundary-together-v1.mp4",
+    "duration_seconds": 46.166666666666664,
+    "sha256": "FD5EEB4322E82942BED9251F22A95167921B2CA92F5A11787A9495BEFDDE74E7"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-67-build-phone-boundary-together-v1.mp4"
+  }
+}

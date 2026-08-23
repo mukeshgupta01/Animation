@@ -1,0 +1,58 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-65-repair-curfew-miss",
+  "version": "v1",
+  "title": "Repair a Curfew Miss Without a Lecture | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your sixteen-year-old comes home after curfew, and worry can turn into a lecture before she has even put down her bag. The boundary matters, but attacking her character can bury the information you need about what happened and what needs to change. Pause, settle your voice, and separate tonight's safety check from tomorrow's problem-solving conversation. Try: I was worried when you were late; tell me what happened, then we will agree on how you will contact me next time. Listening does not erase the limit; it helps you make a clear, realistic plan that respects growing independence and family safety. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-23",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Communication Skills Start at Home",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/Components-of-Good-Communication.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-curfew-father-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-65-to-69.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-65-repair-curfew-miss\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-65-repair-curfew-miss-v1.mp4",
+    "duration_seconds": 44.3,
+    "sha256": "897248BF2D10BE3E977486BBA18B0983C69F4E63B54FA92FAE501B330CC12A4A"
+  }
+}

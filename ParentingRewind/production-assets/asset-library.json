@@ -463,6 +463,101 @@
         {"index": 4, "description": "Father waits quietly on a separate cushion.", "useful_for": ["comfortable space", "nonverbal listening"], "published_uses": 0},
         {"index": 5, "description": "Father and son calmly share a picture book.", "useful_for": ["shared reading", "resolution"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-teen-curfew-father-daughter-storyboard-01",
+      "file": "teen-curfew-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["father-late-40s-south-asian-appearance", "daughter-age-16-south-asian-appearance"],
+      "setting": "contemporary apartment entry and dining area at night in navy and warm amber",
+      "topic_tags": ["teenager", "curfew", "father caregiver", "growing independence", "safety planning", "parent pause", "active listening", "repair"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Teen daughter arrives late while father notices the wall clock.", "useful_for": ["curfew hook", "parent worry", "late arrival"], "published_uses": 0},
+        {"index": 1, "description": "Father points toward the clock while daughter becomes defensive.", "useful_for": ["lecture", "conflict", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Father pauses for one deliberate breath at the dining table.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father listens while daughter explains at the table.", "useful_for": ["teen communication", "active listening", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Father and daughter create a phone-charging and contact plan.", "useful_for": ["next-time plan", "collaboration", "safety"], "published_uses": 0},
+        {"index": 5, "description": "Daughter uses the charging spot while father responds warmly.", "useful_for": ["resolution", "repair", "independence"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-daycare-separation-mother-toddler-storyboard-01",
+      "file": "daycare-separation-mother-toddler-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["mother-mid-30s-dark-skin-short-natural-hair", "son-age-2.5-dark-skin-small-curls", "early-learning-educator"],
+      "setting": "contemporary early-learning centre entrance and cubby area in soft morning light",
+      "topic_tags": ["toddler", "daycare separation", "mother caregiver", "short goodbye", "comfort object", "predictability", "educator handoff"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Toddler holds mother's leg on arrival at daycare.", "useful_for": ["separation hook", "drop-off", "toddler distress"], "published_uses": 0},
+        {"index": 1, "description": "Mother begins an uncertain extended goodbye while toddler holds a comfort toy.", "useful_for": ["prolonged goodbye", "distress", "unhelpful pattern"], "published_uses": 0},
+        {"index": 2, "description": "Mother pauses for a calm breath.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother kneels for a short predictable goodbye.", "useful_for": ["brief routine", "connection", "comfort object"], "published_uses": 0},
+        {"index": 4, "description": "Mother waves once as the educator waits supportively.", "useful_for": ["educator handoff", "predictable departure"], "published_uses": 0},
+        {"index": 5, "description": "Toddler begins settling safely with educator as mother leaves.", "useful_for": ["gradual settling", "safe transition", "resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-teen-phone-boundary-mother-son-storyboard-01",
+      "file": "teen-phone-boundary-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["mother-early-40s-middle-eastern-appearance", "son-age-14-middle-eastern-appearance"],
+      "setting": "contemporary townhouse dining and study area in plum, eucalyptus green and timber",
+      "topic_tags": ["teenager", "phone boundary", "mother caregiver", "homework focus", "privacy", "family media plan", "collaboration"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Mother notices teen using a phone beside unfinished schoolwork.", "useful_for": ["phone hook", "homework", "distraction"], "published_uses": 0},
+        {"index": 1, "description": "Mother reaches toward phone while teen becomes defensive.", "useful_for": ["power struggle", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Mother pauses for one deliberate breath.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother listens while teen explains.", "useful_for": ["teen communication", "active listening"], "published_uses": 0},
+        {"index": 4, "description": "Mother and teen place phone at a neutral charging spot beside a clock.", "useful_for": ["media plan", "shared boundary", "focus"], "published_uses": 0},
+        {"index": 5, "description": "Teen returns to work while mother gives respectful space.", "useful_for": ["resolution", "privacy", "independence"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-car-seat-father-toddler-storyboard-01",
+      "file": "car-seat-father-toddler-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["father-late-30s-east-asian-appearance", "daughter-age-3-east-asian-appearance"],
+      "setting": "apartment parking area beside a stationary family hatchback in daylight",
+      "topic_tags": ["toddler", "car seat", "father caregiver", "safety boundary", "limited choice", "few words", "calm follow-through"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Daughter turns away from open rear door while holding a toy.", "useful_for": ["car-seat refusal", "transition hook"], "published_uses": 0},
+        {"index": 1, "description": "Rushed father points toward car seat while daughter refuses.", "useful_for": ["time pressure", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Father pauses safely beside the stationary car.", "useful_for": ["parent pause", "self-regulation"], "published_uses": 0},
+        {"index": 3, "description": "Father kneels and offers two safe ways to enter the seat.", "useful_for": ["limited choice", "few words", "calm boundary"], "published_uses": 0},
+        {"index": 4, "description": "Daughter climbs into the child seat with her toy.", "useful_for": ["cooperation", "child agency"], "published_uses": 0},
+        {"index": 5, "description": "Daughter is correctly buckled while father reassures her.", "useful_for": ["car-seat safety", "resolution", "connection"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-friendship-listening-grandfather-granddaughter-storyboard-01",
+      "file": "friendship-listening-grandfather-granddaughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-23", "reference_images": 0},
+      "characters": ["grandfather-early-60s-medium-brown-skin-silver-hair-glasses", "granddaughter-age-11-medium-brown-skin-long-dark-curls"],
+      "setting": "community botanical garden cafe terrace and garden path after school",
+      "topic_tags": ["school-age", "friendship conflict", "grandparent caregiver", "active listening", "advice", "child choice", "connection"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Granddaughter looks upset at an unbranded phone while grandfather notices.", "useful_for": ["friendship hook", "upset child", "phone message"], "published_uses": 0},
+        {"index": 1, "description": "Grandfather gives immediate advice while granddaughter withdraws.", "useful_for": ["too much advice", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Grandfather pauses and reflects toward the garden.", "useful_for": ["caregiver pause", "self-regulation"], "published_uses": 0},
+        {"index": 3, "description": "Grandfather listens with open posture while granddaughter explains.", "useful_for": ["active listening", "friendship conflict"], "published_uses": 0},
+        {"index": 4, "description": "Grandfather offers a listening-or-ideas choice.", "useful_for": ["support choice", "collaboration", "respect"], "published_uses": 0},
+        {"index": 5, "description": "Grandfather and granddaughter walk together through the garden.", "useful_for": ["connection", "resolution", "not magically solved"], "published_uses": 0}
+      ]
     }
   ]
 }

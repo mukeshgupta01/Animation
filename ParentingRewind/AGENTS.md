@@ -41,6 +41,7 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Before batching a format, obtain user approval of one representative finished video.
 - Validate each finished video proportionately: playable file, expected duration, vertical resolution, audio stream, narration intelligibility, captions and metadata.
 - Do not count a draft, failed render or technically invalid MP4 as completed.
+- For every newly produced episode after 2026-08-23 17:33, end the spoken narration with a brief adult-facing request to like and subscribe for more practical Parenting Rewind videos. Include it in burned-in captions and place it after the educational takeaway; do not interrupt or weaken the lesson.
 
 ## Inclusive visual casting
 
