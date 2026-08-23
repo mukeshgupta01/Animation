@@ -4,7 +4,7 @@ Updated: 2026-08-23
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 44.
+Known completed or queued video concepts: 45.
 
 ## Topic index
 
@@ -13,6 +13,7 @@ Known completed or queued video concepts: 44.
 - Animal Opposites Playground | Up, Down, In, Out and More for Kids — `animal-opposites-playground-01` — completed local, queued private upload
 - Animal Shape Builders | Circle, Triangle, Square and More for Kids — `animal-shape-builders-01` — completed local, queued private upload
 - Animal Sound Orchestra | Moo, Roar, Hoot and More for Kids — `animal-sound-orchestra-01` — completed local, queued private upload
+- Bea's Healthy Habits Treasure Trail | Interactive Story for Kids — `beas-healthy-habits-trail-01` — completed local, queued private upload
 - Bird Amazing Animal Tools | Body Features for Kids — `bird-amazing-animal-tools-01` — completed local, queued private upload
 - Bird Baby Animal Family Album | Learn Baby Names for Kids — `bird-baby-family-album-01` — completed local, queued private upload
 - Colourful Bird Animal Counting Parade | Count 1 to 4 for Kids — `bird-counting-parade-01` — completed local, queued private upload

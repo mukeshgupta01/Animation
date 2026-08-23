@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 16:50 Australia/Sydney
+Last updated: 2026-08-23 17:14 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -57,6 +57,8 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production-assets/five-senses-*.png`: five accepted generated backgrounds for sight, hearing, smell, taste and touch. These assets are intentionally force-added to Git despite the project's broad PNG ignore rule so the producer works on another computer.
 - `automation/production/produce_four_seasons_journey.py`: resumable long-form Pip adventure through four season-specific destinations, with moving-character travel, four token types, contextual child activities, two voice deliveries, and audited response gaps.
 - `automation/production-assets/four-seasons-*.png`: four accepted generated backgrounds for spring, summer, autumn and winter. Force-add these ignored PNG assets with the producer so the video remains reproducible on another computer.
+- `automation/production/produce_bea_healthy_habits.py`: resumable six-minute story with a new moving bee mascot, five life-skills destinations, five habit badges, two voice deliveries, and audited response gaps.
+- `automation/production-assets/healthy-habits-*.png`: five accepted generated backgrounds for handwashing, toothbrushing, colourful food, movement and sleep. Force-add these ignored PNG assets with the producer for cross-computer reproducibility.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -293,6 +295,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - Four built-in image-generation calls produced four accepted storybook backgrounds with no rejected variants. The accepted files are under `automation/production-assets/four-seasons-*.png` and must be force-added despite the broad PNG ignore rule.
 - The final MP4 passed the automated 1080p H.264/AAC gate, voice-overlap and activity-gap audits, full FFmpeg decode, and a visual review of the title, all destinations, prompts, rewards, moving Pip states, and finale.
 - Its MP4 and metadata were added collision-safely to `automation/pending-uploads`, bringing the live queue folder to 35 MP4s. The immediate dry run reported 34 age-eligible items because this newest file was inside the configured stability window; the next item remains `jungle-animal-clue-detectives-01.mp4`. `COVERED-TOPICS.md` now records 44 concepts.
+
+## Bea's Healthy Habits Treasure Trail checkpoint
+
+- On 2026-08-23, `Bea's Healthy Habits Treasure Trail` completed at 365.133333 seconds (6:05) and 97,164,751 bytes. It deliberately changes both the character and topic: Bea is a separately drawn flying bee mascot who visits five habit-specific environments rather than reusing Pip or animal choice cards.
+- The five destinations are Bubble Brook Wash Garden/handwashing, Sparkle Smile Cove/toothbrushing, Colourful Crunch Picnic/food variety, Wiggle-and-Move Playground/active play, and Cozy Moonlight Nest/sleep routine. Prompts use trusted-grown-up and safe-space guidance without treating one family routine as universal.
+- Bea independently flies, bobs, flaps, blinks, speaks, waves, enters and exits each scene, collects five moving pictogram badges, and celebrates with them orbiting. Narrator and Bea use separate rate/pitch deliveries. Every audited response gap is between 5.25 and 5.37 seconds.
+- Five built-in image-generation calls produced five accepted, visually distinct storybook environments with no rejected variants. Accepted files are under `automation/production-assets/healthy-habits-*.png` and must be force-added despite the broad PNG ignore rule.
+- The final MP4 passed its automated 1080p H.264/stereo AAC gate, voice-overlap and activity-gap audits, full FFmpeg decode, and a visual review of title, all destinations, prompt/reward states, moving Bea, and finale.
+- Read-only live verification immediately before queueing returned Tiny Tales channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The MP4 and metadata were copied collision-safely into `automation/pending-uploads`; the folder now contains 36 MP4s. The immediate dry run found 35 age-eligible items and retained `jungle-animal-clue-detectives-01.mp4` as next. `COVERED-TOPICS.md` now records 45 concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
