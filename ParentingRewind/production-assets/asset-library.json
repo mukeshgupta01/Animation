@@ -577,6 +577,63 @@
         {"index": 4, "description": "Mother and teen review a notebook and choose one next step.", "useful_for": ["learning process", "study plan", "realistic support"], "published_uses": 0},
         {"index": 5, "description": "Their expressions soften beside the closed notebook.", "useful_for": ["connection", "resolution", "worth beyond grades"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-toilet-accident-aunt-niece-storyboard-01",
+      "file": "toilet-accident-aunt-niece-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-24", "reference_images": 0},
+      "characters": ["aunt-late-30s-warm-tan-skin-short-dark-curls", "niece-age-3.5-warm-tan-skin-two-puff-ponytails"],
+      "setting": "bright contemporary family bathroom and hallway in sea-glass green, pale timber and warm white",
+      "topic_tags": ["preschooler", "toilet-training accident", "aunt caregiver", "no shame", "calm cleanup", "routine", "specific progress"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Aunt notices a discreet accident while preschooler looks embarrassed.", "useful_for": ["toilet accident hook", "embarrassment", "caregiver surprise"], "published_uses": 0},
+        {"index": 1, "description": "Aunt catches her startled reaction while child looks down.", "useful_for": ["unhelpful reaction", "shame risk"], "published_uses": 0},
+        {"index": 2, "description": "Aunt pauses and lowers her hands and shoulders.", "useful_for": ["caregiver pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Aunt kneels calmly and reassures the child.", "useful_for": ["calm language", "dignity", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Aunt and child place a towel over the small wet patch.", "useful_for": ["manageable cleanup", "participation", "repair"], "published_uses": 0},
+        {"index": 5, "description": "Child washes hands while aunt prepares clean clothes.", "useful_for": ["bathroom routine", "hygiene", "resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-honesty-father-son-storyboard-01",
+      "file": "honesty-father-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-24", "reference_images": 0},
+      "characters": ["father-early-40s-light-olive-skin-salt-pepper-hair", "son-age-10-light-olive-skin-dark-wavy-hair"],
+      "setting": "compact apartment sunroom and balcony garden with terracotta and warm afternoon light",
+      "topic_tags": ["school-age", "lying", "truth telling", "father caregiver", "calm facts", "repair", "model honesty"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Father finds an intact tipped plant while son avoids eye contact.", "useful_for": ["mistake hook", "denial", "property repair"], "published_uses": 0},
+        {"index": 1, "description": "Father reacts sternly while son holds his backpack defensively.", "useful_for": ["accusation", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Father steps away and takes one deliberate breath.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father calmly states what he sees with open hands.", "useful_for": ["describe facts", "calm boundary"], "published_uses": 0},
+        {"index": 4, "description": "Son explains while father listens without interrupting.", "useful_for": ["truth telling", "active listening"], "published_uses": 0},
+        {"index": 5, "description": "Father and son re-pot the plant together.", "useful_for": ["repair", "responsibility", "connection"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-teen-talk-mother-son-storyboard-01",
+      "file": "teen-talk-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-24", "reference_images": 0},
+      "characters": ["mother-late-40s-east-asian-appearance-black-bob-silver-strands", "son-age-17-east-asian-appearance-textured-black-hair"],
+      "setting": "contemporary high-rise apartment and balcony at blue hour in plum, charcoal and honey timber",
+      "topic_tags": ["teenager", "not ready to talk", "mother caregiver", "privacy", "timing", "active listening", "no lecture"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Upset teen arrives home while mother notices from the kitchen.", "useful_for": ["teen distress hook", "parent concern"], "published_uses": 0},
+        {"index": 1, "description": "Mother asks too many questions while teen turns away.", "useful_for": ["pressure", "unhelpful reaction", "privacy"], "published_uses": 0},
+        {"index": 2, "description": "Mother pauses and decides not to chase the conversation.", "useful_for": ["parent pause", "self-regulation", "timing"], "published_uses": 0},
+        {"index": 3, "description": "Mother offers availability from a respectful distance.", "useful_for": ["open door", "teen autonomy", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Mother and teen sit side-by-side in quiet on the balcony.", "useful_for": ["comfortable silence", "sounding board", "reconnection"], "published_uses": 0},
+        {"index": 5, "description": "Teen begins speaking while mother listens calmly.", "useful_for": ["active listening", "teen communication", "resolution"], "published_uses": 0}
+      ]
     }
   ]
 }

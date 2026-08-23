@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-71-toilet-accident-without-shame",
+  "version": "v1",
+  "title": "Treat Toilet Accidents as Practice, Not Misbehavior | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your three-year-old has a toilet accident, looks embarrassed, and your surprise can sound like blame before you mean it to. Calling the mess dirty or naughty can turn a normal learning moment into shame and a bigger power struggle. Pause, soften your face, and keep your words simple: Accidents happen; we can take care of this together. Invite one manageable cleanup step, then help with clean clothes, handwashing, and the familiar bathroom routine. Stay positive and specific about progress, while asking a pediatrician about frequent or worrying accidents rather than assuming misbehavior. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-24",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Toilet Training: 12 Tips to Keep the Process Positive",
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Praise-and-Reward-Your-Childs-Success.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/toilet-accident-aunt-niece-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-71-to-73.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-71-toilet-accident-without-shame\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-71-toilet-accident-without-shame-v1.mp4",
+    "duration_seconds": 44.13333333333333,
+    "sha256": "942B397286A9B4143B69666A01C75CD95DF03744AC899268C79DEA04F0D8686E"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-71-toilet-accident-without-shame-v1.mp4"
+  }
+}

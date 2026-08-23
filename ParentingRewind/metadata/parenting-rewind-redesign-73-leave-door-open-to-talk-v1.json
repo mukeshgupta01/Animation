@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-73-leave-door-open-to-talk",
+  "version": "v1",
+  "title": "Leave the Door Open When Your Teen Won't Talk | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your seventeen-year-old comes home upset and says nothing, so worry can make you follow him with question after question. Pushing for an immediate explanation may turn concern into pressure and make a teenager protect even more space. Pause, turn off the parent alarm, and show that you are available without demanding a conversation on your timetable. Try: You do not have to talk right now; I am here tonight, and we can check in later unless this is about immediate safety. When he does begin, listen without catastrophizing or launching a lecture; being a steady sounding board helps keep the door open. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-24",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "How to Communicate With and Listen to Your Teen: 3 Key Tips",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/How-to-Communicate-with-a-Teenager.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-talk-mother-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-71-to-73.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-73-leave-door-open-to-talk\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-73-leave-door-open-to-talk-v1.mp4",
+    "duration_seconds": 45.53333333333333,
+    "sha256": "DD8780521FFDB389D0FA0E8738F188030F80D0552DDEB84AD3796B50E40375FD"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-73-leave-door-open-to-talk-v1.mp4"
+  }
+}

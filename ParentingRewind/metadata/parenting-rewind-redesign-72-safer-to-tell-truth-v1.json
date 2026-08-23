@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-72-safer-to-tell-truth",
+  "version": "v1",
+  "title": "Make It Safer to Tell the Truth | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "You find the plant on the floor, your ten-year-old denies touching it, and anger can turn the conversation into an interrogation. A harsh reaction may make avoiding your disappointment feel safer than telling you what actually happened. Pause, lower your voice, and describe the facts you can see without attacking his character. Try: The plant was upright before school, and now it is down; I want the truth so we can decide how to repair this. Keep a clear consequence for the behavior, but notice honesty when it arrives and model the same truthfulness you expect. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-24",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "When Children Lie: What Parents Can Do",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/When-Children-Lie.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/honesty-father-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-71-to-73.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-72-safer-to-tell-truth\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": false,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-72-safer-to-tell-truth-v1.mp4",
+    "duration_seconds": 42.13333333333333,
+    "sha256": "5F7C9E19958CBCF04416E89E25AE612D0D63FF5E267C6CB1526DCDA412FB9BFD"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-72-safer-to-tell-truth-v1.mp4"
+  }
+}

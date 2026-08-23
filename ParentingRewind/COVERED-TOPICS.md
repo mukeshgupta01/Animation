@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-08-23
+Updated: 2026-08-24
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 96 (72 active; 24 historical-only).
+Unique topics: 99 (75 active; 24 historical-only).
 
 ## Topic index
 
@@ -25,10 +25,12 @@ Unique topics: 96 (72 active; 24 historical-only).
 - [active] Hold the Car-Seat Boundary Calmly — metadata: parenting-rewind-redesign-68-calm-car-seat-boundary-v1.json
 - [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
 - [active] Keep the Bedtime Sequence Familiar — metadata: parenting-rewind-redesign-15-same-bedtime-sequence-v1.json
+- [active] Leave the Door Open When Your Teen Won't Talk — metadata: parenting-rewind-redesign-73-leave-door-open-to-talk-v1.json
 - [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
 - [active] Let Your Child Correct Your Feeling Guess — metadata: parenting-rewind-redesign-60-let-child-correct-feeling-guess-v1.json
 - [active] Listen Before Repeating the Screen Limit — metadata: parenting-rewind-redesign-10-listen-before-screen-limit-v1.json
 - [active] Listen to One Sibling at a Time — metadata: parenting-rewind-redesign-23-listen-to-each-sibling-v1.json
+- [active] Make It Safer to Tell the Truth — metadata: parenting-rewind-redesign-72-safer-to-tell-truth-v1.json
 - [active] Make Sibling Turns Visible — metadata: parenting-rewind-redesign-44-sibling-turns-visible-v1.json
 - [active] Make the Chore Plan Visible — metadata: parenting-rewind-redesign-38-visual-chore-plan-v1.json
 - [active] Make the Direction a Statement — metadata: parenting-rewind-redesign-21-direction-not-question-v1.json
@@ -71,6 +73,7 @@ Unique topics: 96 (72 active; 24 historical-only).
 - [active] Talk About the Process, Not Their Worth — metadata: parenting-rewind-redesign-70-grade-process-not-worth-v1.json
 - [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
 - [active] The One-More-Story Loop — metadata: parenting-rewind-025-one-more-story-v1.json, parenting-rewind-redesign-04-one-more-story-v1.json
+- [active] Treat Toilet Accidents as Practice, Not Misbehavior — metadata: parenting-rewind-redesign-71-toilet-accident-without-shame-v1.json
 - [active] Use an I-Statement Instead of Blame — metadata: parenting-rewind-redesign-62-i-statement-not-blame-v1.json
 - [active] Use One Playground Warning — metadata: parenting-rewind-redesign-25-one-playground-warning-v1.json
 - [active] Use One Real Choice at the Library — metadata: parenting-rewind-redesign-17-library-one-book-choice-v1.json

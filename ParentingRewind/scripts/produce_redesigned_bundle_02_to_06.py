@@ -208,7 +208,7 @@ async def produce(spec: dict) -> dict:
         "audience_intent": "Adults and parents; not directed to children",
         "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
         "narration": {"type": "synthetic", "voice": VOICE, "rate": "-5%", "pitch": "-1Hz", "transcript": narration},
-        "research": {"reviewed_on": "2026-08-23", "source": spec["source"], "claim_limits": ["Suggested wording is an example, not a guaranteed result.", "Adapt expectations to the individual child and safety context."]},
+        "research": {"reviewed_on": spec.get("reviewed_on", "2026-08-23"), "source": spec["source"], "claim_limits": ["Suggested wording is an example, not a guaranteed result.", "Adapt expectations to the individual child and safety context."]},
         "artwork": {
             "primary_asset": f"production-assets/{spec['asset']}",
             "panel_order": spec["order"],

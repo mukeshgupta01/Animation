@@ -30,6 +30,7 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 ## Batch authorization
 
 - On 2026-08-22 the user approved unrestricted local batch production after approving the existing videos. Produce as many complete, validated videos as practical, targeting 50 or more; do not impose an artificial episode limit.
+- USER RECONFIRMATION (2026-08-24): continue producing small, varied Parenting Rewind video intervals under this open-ended authorization, using the approved Codex image-generation workflow when audited assets cannot communicate the new lesson.
 - This authorization covers normal in-scope research, creative decisions, local image generation, narration, rendering, validation and routine failure recovery without further confirmation.
 - This local-production authorization does not by itself authorize uploads, publication, emails, external scheduling or OAuth changes. Treat any separately granted automation authority exactly as recorded in the current handoff.
 - Checkpoint progress frequently because a Codex account may run out of credit: after every small production interval, keep durable rules current here and record exact changing status, completed episode ranges, failures and resume commands in `PROJECT-HANDOFF.md`.

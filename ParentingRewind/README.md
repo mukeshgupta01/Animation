@@ -4,7 +4,7 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- The active catalog contains 72 validated videos in the configured Business OneDrive transfer/upload folder: two pilots plus redesigned episodes 01-70.
+- The active catalog contains 75 validated videos in the configured Business OneDrive transfer/upload folder: two pilots plus redesigned episodes 01-73.
 - **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
 - **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video
@@ -64,7 +64,7 @@ The producer preserves an existing completed MP4 rather than overwriting it. Its
 
 ## Image-credit conservation
 
-Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 21 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
+Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 24 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
 
 The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library.
 
