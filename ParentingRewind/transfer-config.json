@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "enabled": true,
+  "destination_directory": "C:\\Users\\MukeshGupta\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23",
+  "behavior": "copy_after_quality_gate_and_verify_sha256",
+  "overwrite_different_file": false
+}

@@ -55,3 +55,9 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Update its `Last updated` date and next actions, and make sure `CONTINUE-IN-NEW-CODEX.txt` still points to the correct files.
 - Keep instructions concise. Put durable rules in this file and changing status/details in `PROJECT-HANDOFF.md`.
 - Never place OAuth secrets, tokens, passwords or other credential values in either handoff file.
+
+## Finished-video transfer
+
+- On this computer, every newly completed and validated redesigned episode must be copied to the OneDrive for Business destination configured in `transfer-config.json`.
+- Keep the local `output` copy; the OneDrive operation is a verified mirror, not a destructive move.
+- Never silently overwrite a different destination file. The shared producer verifies size and SHA-256 before accepting an existing or newly copied file.

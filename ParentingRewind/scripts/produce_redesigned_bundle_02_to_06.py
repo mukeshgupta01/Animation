@@ -7,6 +7,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import shutil
 
 from PIL import Image
 
@@ -20,6 +21,7 @@ PROJECT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = PROJECT / "output"
 WORK_ROOT = PROJECT / "production-work" / "redesigned-bundle-2026-08-23"
 META_DIR = PROJECT / "metadata"
+TRANSFER_CONFIG = PROJECT / "transfer-config.json"
 
 CDC_DIRECTIONS = {
     "organization": "Centers for Disease Control and Prevention",
@@ -143,6 +145,38 @@ def split_panels(asset: Path, grid: list[int], target_dir: Path) -> list[Path]:
     return targets
 
 
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest().upper()
+
+
+def mirror_to_business_onedrive(output: Path) -> Path | None:
+    if not TRANSFER_CONFIG.exists():
+        return None
+    config = json.loads(TRANSFER_CONFIG.read_text(encoding="utf-8"))
+    if not config.get("enabled", False):
+        return None
+    destination_dir = Path(config["destination_directory"])
+    if not destination_dir.is_dir():
+        raise RuntimeError(f"Configured OneDrive destination is unavailable: {destination_dir}")
+    destination = destination_dir / output.name
+    source_hash = file_sha256(output)
+    if destination.exists():
+        if destination.stat().st_size != output.stat().st_size or file_sha256(destination) != source_hash:
+            raise RuntimeError(f"Refusing to overwrite different OneDrive file: {destination}")
+        return destination
+    temporary = destination.with_suffix(destination.suffix + ".copying")
+    shutil.copy2(output, temporary)
+    if temporary.stat().st_size != output.stat().st_size or file_sha256(temporary) != source_hash:
+        temporary.unlink(missing_ok=True)
+        raise RuntimeError(f"OneDrive copy verification failed: {destination}")
+    temporary.replace(destination)
+    return destination
+
+
 async def produce(spec: dict) -> dict:
     episode_id = f"parenting-rewind-redesign-{spec['number']:02d}-{spec['slug']}"
     output = OUTPUT_DIR / f"{episode_id}-v1.mp4"
@@ -150,7 +184,8 @@ async def produce(spec: dict) -> dict:
     meta_path = META_DIR / f"{episode_id}-v1.json"
     quality = work / "quality-report.json"
     if output.exists() and quality.exists() and json.loads(quality.read_text(encoding="utf-8")).get("passed"):
-        return {"episode": episode_id, "status": "preserved-existing"}
+        mirrored = mirror_to_business_onedrive(output)
+        return {"episode": episode_id, "status": "preserved-existing", "business_onedrive_copy": str(mirrored) if mirrored else None}
     work.mkdir(parents=True, exist_ok=True)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     META_DIR.mkdir(parents=True, exist_ok=True)
@@ -180,10 +215,13 @@ async def produce(spec: dict) -> dict:
     }
     meta_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     render_video(panels, spec["order"], total, audio, ass, output, work)
-    metadata["output"] = {"file": str(output.relative_to(PROJECT)), "duration_seconds": total, "sha256": hashlib.sha256(output.read_bytes()).hexdigest().upper()}
+    metadata["output"] = {"file": str(output.relative_to(PROJECT)), "duration_seconds": total, "sha256": file_sha256(output)}
     meta_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     report = validate(output, total, srt, meta_path, work)
-    return {"episode": episode_id, "status": "completed", "duration_seconds": report["duration_seconds"]}
+    mirrored = mirror_to_business_onedrive(output)
+    metadata["transfer"] = {"business_onedrive_copy": str(mirrored) if mirrored else None}
+    meta_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return {"episode": episode_id, "status": "completed", "duration_seconds": report["duration_seconds"], "business_onedrive_copy": str(mirrored) if mirrored else None}
 
 
 async def main() -> None:
