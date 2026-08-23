@@ -4,7 +4,7 @@ Updated: 2026-08-23
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 30.
+Known completed or queued video concepts: 31.
 
 ## Topic index
 
@@ -36,5 +36,6 @@ Known completed or queued video concepts: 30.
 - Turtle'S Friendship Badge | Hidden-Object Kindness Quest for Kids — `ocean-turtle-friendship-badge-01` — completed local, queued private upload
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - What Animal Disappeared? | Memory Game for Kids — `what-animal-disappeared-01` — archived/uploaded
+- What Ocean Animal Disappeared 01 — `what-ocean-animal-disappeared-01` — completed local, queued private upload
 - Who Ate the Snack? | 6 Fun Animal Food Clues for Kids — `who-ate-the-snack-episode-01` — archived/uploaded
 - Wild Animal Find My Home | Habitat Rescue Adventure for Kids — `wild-animal-find-my-home-01` — completed local, queued private upload

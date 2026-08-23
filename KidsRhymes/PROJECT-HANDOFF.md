@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 15:03 Australia/Sydney
+Last updated: 2026-08-23 15:09 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -193,6 +193,13 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - All three passed automated technical gates, full FFmpeg decodes and visual contact-sheet review.
 - Their MP4s and metadata were added to `automation/pending-uploads`, bringing the queue to 21 MP4s for private uploads at four-hour intervals.
 - `COVERED-TOPICS.md` was rebuilt and now records 30 completed or queued concepts.
+
+## Scheduled generation reconciliation at 15:05
+
+- The existing `Tiny Tales - Continuous Generation` task started `what-ocean-animal-disappeared-01` at 15:05 on 2026-08-23. Manual rendering was held until the scheduled FFmpeg work completed, avoiding a resource collision.
+- The ocean memory game completed at 134.3 seconds, passed its automated report, full FFmpeg decode and visual contact-sheet review, and was automatically copied to the pending queue by the generation runner.
+- The queue now contains 22 MP4s. This is one allowed memory-game rotation item; no shadow or matching content was created.
+- Continuous state advanced to the next allowed item, `What Farm Animal Disappeared 1`. `COVERED-TOPICS.md` now records 31 concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
