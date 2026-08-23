@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 17:27 Australia/Sydney
+Last updated: 2026-08-23 17:36 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -311,6 +311,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - A proposed `Rory's Eight-Planet Postcard Adventure` was stopped before any producer, metadata, rendered output, or pending-queue entry existed. Three preview-only Mercury, Venus, and Earth images remained in Codex's default generated-images area and were never copied into the project. The topic is not listed in `COVERED-TOPICS.md`.
 - No Python or FFmpeg process was active at the pause. The latest completed production and queue checkpoint is Bea's Healthy Habits entry above.
 - The exact Windows task `Tiny Tales - Continuous Generation` was disabled to enforce the pause before its 20:05 trigger. The independent `Tiny Tales - Daily Private Upload` task remains Ready and unchanged so already-queued private made-for-kids videos can continue at the approved cadence. Re-enable generation only after the user explicitly asks to resume.
+
+## Generation resumed by the new account
+
+- At 17:36 on 2026-08-23, the user explicitly asked the new Codex account to continue from this handoff. This ended the generation pause; it did not alter the retired-format rules or upload safeguards.
+- The live `main` worktree was clean at commit `5fda52b` with zero divergence from `origin/main`. There were 36 pending MP4s, 9 archive MP4s, 9 upload-ledger entries, and no active Python or FFmpeg processes.
+- The required count-only check reported six completed curated items and one remaining item, `What Farm Animal Disappeared 1`; it generated nothing.
+- Read-only YouTube verification matched Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. A dry run performed no upload, found 36 queued items, and selected `jungle-animal-clue-detectives-01.mp4` next.
+- `Tiny Tales - Continuous Generation` was re-enabled and verified Ready with its next run at 20:05. `Tiny Tales - Daily Private Upload` remained enabled and Ready with its next run at 20:20. Its last result remained `1`, consistent with the recorded YouTube daily upload-quota failure.
+- Generation may continue under the existing one-video-per-cycle limit. Do not create animal-shadow videos, and preserve the independent private/made-for-kids upload workflow.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 

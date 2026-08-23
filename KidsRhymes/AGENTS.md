@@ -35,3 +35,11 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Three preview-only built-in image generations for Mercury, Venus, and Earth were made under Codex's default generated-images directory but were not copied into this workspace or consumed by project code. A future account should begin from live project state and may redesign or discard that proposal.
 - No Python or FFmpeg process was active when this pause was recorded. The latest completed video remains `Bea's Healthy Habits Treasure Trail`; the completed checkpoint immediately above is authoritative.
 - `Tiny Tales - Continuous Generation` was disabled after the stop request so its 20:05 trigger cannot create another video. The separate `Tiny Tales - Daily Private Upload` task remains Ready for the already-approved four-hour private queue cadence. Re-enable generation only after a new explicit user instruction.
+
+## Generation resumed (2026-08-23 17:36 Australia/Sydney)
+
+- The user explicitly asked the new Codex account to continue from the project handoff, satisfying the pause checkpoint's resume condition.
+- Live verification found a clean `main` worktree at `5fda52b`, zero divergence from `origin/main`, 36 pending MP4s, 9 archived/ledgered uploads, and no active Python or FFmpeg process.
+- Read-only YouTube verification matched Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The upload dry run selected `jungle-animal-clue-detectives-01.mp4` from 36 queued items and performed no upload.
+- `Tiny Tales - Continuous Generation` was re-enabled and verified Ready for 20:05. `Tiny Tales - Daily Private Upload` remained enabled and Ready for 20:20; its previous result remains `1` from the recorded quota failure.
+- Generation is authorized again under the existing one-video-per-cycle safeguards. The animal-shadow format remains retired, and uploads remain private, made for kids, channel-locked, and independently scheduled.
