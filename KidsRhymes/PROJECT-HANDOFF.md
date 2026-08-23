@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-23 15:43 Australia/Sydney
+Last updated: 2026-08-23 15:50 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -49,6 +49,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/production/produce_picture_size_adventures.py`: resumable early-maths batch with three distinct scene systems: ocean picture bubbles, a farm height ruler, and bird measuring strips.
 - `automation/production/produce_raindrop_journey_story.py`: resumable one-off water-cycle narrative with a recurring raindrop character, seven changing environments, and three movement moments.
 - `automation/production/produce_animal_sound_orchestra.py`: resumable one-off concert with eight farm, wild and bird performers, animated stage palettes, and child call-and-response windows.
+- `automation/production/produce_animal_opposites_playground.py`: resumable one-off split-screen spatial-vocabulary adventure with six opposite pairs and movement prompts.
 - `COVERED-TOPICS.md`: generated registry of completed or queued concepts; check it before creating a new topic.
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable private uploader, duplicate prevention, ledger, and post-success archive cleanup.
@@ -239,6 +240,15 @@ At handoff, the pending upload queue has no MP4s. Six MP4s are present in the ar
 - The video passed its automated technical gate, full FFmpeg decode, and a visual review of the opening, all eight performer screens, all eight echo screens, and the finale.
 - Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 30 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 29 age-eligible items because the newest concert was still inside the configured stability window.
 - `COVERED-TOPICS.md` was rebuilt and now records 39 completed or queued concepts.
+
+## Animal Opposites Playground checkpoint
+
+- On 2026-08-23, the one-off `Animal Opposites Playground` completed at 155.5 seconds.
+- Six split-screen scenes teach up/down with a parrot, in/out with a pig and barn, near/far with an elephant and depth cues, over/under with a dolphin and wave marker, open/closed with a goat and gates, and day/night with an owl, sun and moon.
+- Each narrated pair is followed by a five-second whole-body prompt. This is a paired spatial-composition format, not a choice-card quiz. Backgrounds, position markers, barns, gates, depth scenery, arrows, sun, moon and stars were drawn locally around existing approved animal artwork; zero new image-generation calls were used.
+- The video passed its automated technical gate, full FFmpeg decode, and a visual review of the title, all six teaching screens, all six movement screens, and the finale.
+- Its MP4 and metadata were added to `automation/pending-uploads`, bringing the live queue folder to 31 MP4s for private, made-for-kids uploads at four-hour intervals. The immediate dry run reported 30 age-eligible items because the newest video was still inside the configured stability window.
+- `COVERED-TOPICS.md` was rebuilt and now records 40 completed or queued concepts.
 
 The last upload was read back through YouTube Data API and confirmed private, made for kids, and carrying all eight requested tags. Its Outlook report was confirmed in Sent Items to `mukeshmelb01@gmail.com`.
 
