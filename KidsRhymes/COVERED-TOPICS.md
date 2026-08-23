@@ -4,7 +4,7 @@ Updated: 2026-08-23
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 34.
+Known completed or queued video concepts: 37.
 
 ## Topic index
 
@@ -14,6 +14,7 @@ Known completed or queued video concepts: 34.
 - Bird Baby Animal Family Album | Learn Baby Names for Kids — `bird-baby-family-album-01` — completed local, queued private upload
 - Colourful Bird Animal Counting Parade | Count 1 to 4 for Kids — `bird-counting-parade-01` — completed local, queued private upload
 - The Cozy Nest Quest | Hidden-Object Kindness Quest for Kids — `bird-cozy-nest-quest-01` — completed local, queued private upload
+- Bird Feather Measuring Studio | Long and Short for Kids — `bird-feather-measuring-studio-01` — completed local, queued private upload
 - Bird Find My Home | Habitat Rescue Adventure for Kids — `bird-find-my-home-01` — completed local, queued private upload
 - Colourful Bird Lost Colour Rescue | Interactive Animal Adventure — `bird-lost-colour-rescue-01` — completed local, queued private upload
 - Colourful Bird Animal Clue Detectives | Guessing Adventure for Kids — `colourful-bird-clue-detectives-01` — completed local, queued private upload
@@ -21,6 +22,7 @@ Known completed or queued video concepts: 34.
 - Farm Animal Clue Detectives | Guessing Adventure for Kids — `farm-animal-clue-detectives-01` — completed local, queued private upload
 - Farm Animal Counting Parade | Count 1 to 4 for Kids — `farm-animal-counting-parade-01` — completed local, queued private upload
 - Farm Baby Animal Family Album | Learn Baby Names for Kids — `farm-baby-animal-family-album-01` — completed local, queued private upload
+- Farm Barn Height Lineup | Tall and Short for Kids — `farm-barn-height-lineup-01` — completed local, queued private upload
 - Find Sheep'S Lost Bell | Hidden-Object Kindness Quest for Kids — `farm-find-sheeps-bell-01` — completed local, queued private upload
 - Farm Lost Colour Rescue | Interactive Animal Adventure — `farm-lost-colour-rescue-01` — completed local, queued private upload
 - Farm Move Like an Animal | Movement Adventure for Kids — `farm-move-like-an-animal-01` — completed local, queued private upload
@@ -32,6 +34,7 @@ Known completed or queued video concepts: 34.
 - Ocean Amazing Animal Tools | Body Features for Kids — `ocean-amazing-animal-tools-01` — completed local, queued private upload
 - Ocean Animal Counting Parade | Count 1 to 4 for Kids — `ocean-animal-counting-parade-01` — completed local, queued private upload
 - Ocean Animal Superpower Detectives | Amazing Facts for Kids — `ocean-animal-superpowers-01` — archived/uploaded
+- Ocean Bubble Size Station | Big and Small for Kids — `ocean-bubble-size-station-01` — completed local, queued private upload
 - Ocean Find My Home | Habitat Rescue Adventure for Kids — `ocean-find-my-home-01` — completed local, queued private upload
 - Ocean Lost Colour Rescue | Interactive Animal Adventure — `ocean-lost-colour-rescue-01` — completed local, queued private upload
 - Ocean Move Like an Animal | Movement Adventure for Kids — `ocean-move-like-an-animal-01` — completed local, queued private upload
