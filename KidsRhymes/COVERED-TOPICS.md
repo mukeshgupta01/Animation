@@ -4,7 +4,7 @@ Updated: 2026-08-23
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 18.
+Known completed or queued video concepts: 21.
 
 ## Topic index
 
@@ -15,13 +15,16 @@ Known completed or queued video concepts: 18.
 - Colourful Bird Animal Clue Detectives | Guessing Adventure for Kids — `colourful-bird-clue-detectives-01` — completed local, queued private upload
 - Farm Animal Clue Detectives | Guessing Adventure for Kids — `farm-animal-clue-detectives-01` — completed local, queued private upload
 - Farm Lost Colour Rescue | Interactive Animal Adventure — `farm-lost-colour-rescue-01` — completed local, queued private upload
+- Farm Move Like an Animal | Movement Adventure for Kids — `farm-move-like-an-animal-01` — completed local, queued private upload
 - Find the Matching Animal Picture | Preschool Visual Game — `find-the-matching-animal-01` — archived/uploaded
+- Friendly Animal Move Like an Animal | Movement Adventure for Kids — `friendly-animal-movement-01` — completed local, queued private upload
 - Guess the Animal Shadow | 6 Silhouette Puzzles for Kids — `guess-the-animal-shadow-01` — archived/uploaded
 - Guess The Farm Animal Shadow 01 — `guess-the-farm-animal-shadow-01` — archived/uploaded
 - Jungle Animal Clue Detectives | Guessing Adventure for Kids — `jungle-animal-clue-detectives-01` — completed local, queued private upload
 - Ocean Animal Superpower Detectives | Amazing Facts for Kids — `ocean-animal-superpowers-01` — archived/uploaded
 - Ocean Find My Home | Habitat Rescue Adventure for Kids — `ocean-find-my-home-01` — completed local, queued private upload
 - Ocean Lost Colour Rescue | Interactive Animal Adventure — `ocean-lost-colour-rescue-01` — completed local, queued private upload
+- Ocean Move Like an Animal | Movement Adventure for Kids — `ocean-move-like-an-animal-01` — completed local, queued private upload
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - What Animal Disappeared? | Memory Game for Kids — `what-animal-disappeared-01` — archived/uploaded
 - Who Ate the Snack? | 6 Fun Animal Food Clues for Kids — `who-ate-the-snack-episode-01` — archived/uploaded
