@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-24 09:04 Australia/Sydney
+Last updated: 2026-08-24 18:53 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -9,6 +9,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - Project folder: `C:\Animation\Animation\KidsRhymes`
 - Channel name: `Tiny Tales`
 - Immutable YouTube channel ID: `UCEn9N-ITQHshjgt6fy7fxnw`
+- Dedicated Google Cloud project ID: `tiny-tales-506508` (never share with the Birthday channel or any other channel)
 - Upload privacy: `public` for new uploads by explicit user instruction on 2026-08-24
 - Audience setting: made for kids
 - Report email: `mukeshmelb01@gmail.com`
@@ -411,6 +412,15 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Brio also passed its quality gate, full decode and contact-sheet review. At 09:04, the dry run found 39 eligible public queue items and selected `brio-paintbrush-colour-workshop-01.mp4` newest-first. Animal Action is immediately behind it. `COVERED-TOPICS.md` now records 50 concepts.
 - The 08:20 scheduled cycle independently uploaded `maya-rainy-day-joey-rescue-01.mp4` successfully as public/made-for-kids video `HtNGbHueDKQ`; the Outlook report was confirmed and the retry state was cleared. The archive has 11 MP4s.
 - `Tiny Tales - Continuous Generation` was re-enabled by the user's explicit resume request and is Ready for 10:05 with last result `0`. All ten curated manifest entries are complete, so scheduled generation now safely exits without producing anything until a new varied, reviewed manifest item is added. Do not restore automatic disappearance generation.
+
+## Dedicated Google Cloud/OAuth migration
+
+- At 18:44 on 2026-08-24, the user replaced the Tiny Tales Desktop OAuth client with one from new dedicated Google Cloud project `tiny-tales-506508`. Tiny Tales had previously shared project `cool-artwork-506302-q0` with the user's Birthday channel, causing the project's `Video Uploads per day` limit to be consumed across both automations.
+- This is a one-time channel/credential isolation change, not quota sharding. The new Cloud project, OAuth client, token, quota, immutable channel lock, ledger, archive and Scheduled Tasks belong only to Tiny Tales. Never use them for the Birthday channel, and never rotate projects to evade a quota or channel-level upload limit.
+- Both upload tasks were disabled before token replacement. The prior OAuth token was moved without deletion to ignored backup `automation/runtime/credential-backups/youtube-oauth-token.pre-dedicated-project-20260824.json`; never print or copy its contents.
+- The first authorization reached Google but correctly failed closed because YouTube Data API v3 was not enabled. After the user enabled the API, interactive authorization succeeded and returned Tiny Tales channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. A separate `uploader.py verify` call returned the same immutable identity.
+- The post-migration dry run performed no upload, found 38 queued MP4s, and selected `animal-action-alphabet-a-to-z-01.mp4` under public/made-for-kids configuration. Retry state was unarmed. `Tiny Tales - Daily Private Upload` and `Tiny Tales - Hourly Upload Retry` were then re-enabled and verified Ready for 20:20 and 19:20 respectively.
+- The live archive and upload ledger each contain 12 confirmed items. The newest confirmed upload is public/made-for-kids Brio video `xmY61TirVWE`, which completed at 18:25 before the credential migration.
 
 ## Safe continuation checklist
 

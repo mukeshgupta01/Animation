@@ -6,6 +6,7 @@ Safety requirements:
 
 - Never expose, copy, replace, or commit OAuth credentials or tokens.
 - Never reuse this project's token or channel lock for another channel or laptop.
+- Tiny Tales now uses dedicated Google Cloud project ID `tiny-tales-506508`. Never use that project's OAuth client or quota for the Birthday channel or any other channel, and never rotate Cloud projects to bypass quota.
 - Verify the immutable channel ID before every real upload.
 - Current upload visibility is `public` by the user's explicit instruction on 2026-08-24. Always mark uploads made for kids, preserve the immutable channel lock, and require the explicit confirmation flag for every real upload.
 - A real upload requires the existing explicit confirmation flag.
@@ -118,3 +119,9 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Both outputs and public/made-for-kids metadata are queued. `COVERED-TOPICS.md` records 50 concepts; the queue has 39 MP4s and the archive has 11. At 09:04 the dry run selected Brio newest-first, with Animal Action behind it.
 - The regular 08:20 task successfully uploaded Maya publicly as `HtNGbHueDKQ` on the locked Tiny Tales channel and confirmed its email report. Retry state is clear.
 - The user explicitly resumed generation, so `Tiny Tales - Continuous Generation` is enabled and Ready for 10:05 with last result `0`. The curated manifest is currently exhausted; scheduled runs must safely no-op until another deliberately varied producer is added. Never restore the retired repetitive disappearance fallback.
+
+## Dedicated Tiny Tales OAuth project (2026-08-24 18:53 Australia/Sydney)
+
+- Tiny Tales was previously sharing Google Cloud project `cool-artwork-506302-q0` with the user's Birthday channel. The user created dedicated project `tiny-tales-506508`, enabled YouTube Data API v3, and supplied a Desktop OAuth client requesting only `youtube.upload` and `youtube.readonly`.
+- Interactive authorization and an independent read-only verification both returned Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The prior token is preserved under ignored `automation/runtime/credential-backups/`; never copy it or the new credential to the Birthday channel.
+- The upload tasks were disabled during cutover and re-enabled only after verification. A dry run performed no upload, found 38 queued MP4s, and selected `animal-action-alphabet-a-to-z-01.mp4`; retry state was unarmed.
