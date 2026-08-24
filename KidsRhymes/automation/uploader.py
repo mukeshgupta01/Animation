@@ -122,6 +122,70 @@ def ffprobe_ok(path: Path) -> bool:
     return result.returncode == 0 and "video" in result.stdout
 
 
+def full_decode_ok(path: Path) -> bool:
+    result = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(path), "-f", "null", "-"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        LOGGER.error("Full FFmpeg decode failed for %s: %s", path.name, result.stderr.strip())
+    return result.returncode == 0
+
+
+def evidence_path(value: Any, field: str) -> Path:
+    if not isinstance(value, str) or not value.strip():
+        raise SafetyError(f"Future-video quality evidence is missing path field {field!r}")
+    path = (HERE.parent / value).resolve()
+    try:
+        path.relative_to(HERE.parent.resolve())
+    except ValueError as exc:
+        raise SafetyError(f"Quality evidence path escapes Tiny Tales: {value}") from exc
+    if not path.is_file() or path.stat().st_size == 0:
+        raise SafetyError(f"Quality evidence file is missing or empty: {path}")
+    return path
+
+
+def validate_future_quality_evidence(video: Path, cfg: dict[str, Any]) -> None:
+    cutoff = int(cfg.get("quality_evidence_required_after_unix", 0))
+    if video.stat().st_mtime <= cutoff:
+        return
+    sidecar = video.with_suffix(".json")
+    metadata = load_json(sidecar, {})
+    if not isinstance(metadata, dict):
+        raise SafetyError(f"Future-video metadata is invalid: {sidecar}")
+    required_flags = (
+        "quality_gate_passed",
+        "full_decode_passed",
+        "transition_audit_passed",
+        "transition_contact_sheet_reviewed",
+    )
+    missing_flags = [field for field in required_flags if metadata.get(field) is not True]
+    if missing_flags:
+        raise SafetyError(
+            "Future video is blocked until quality evidence is explicitly passed: "
+            + ", ".join(missing_flags)
+        )
+    report_path = evidence_path(metadata.get("quality_report"), "quality_report")
+    audit_path = evidence_path(metadata.get("transition_audit"), "transition_audit")
+    evidence_path(metadata.get("quality_contact_sheet"), "quality_contact_sheet")
+    evidence_path(metadata.get("transition_contact_sheet"), "transition_contact_sheet")
+    report = load_json(report_path, {})
+    if report.get("passed") is not True:
+        raise SafetyError(f"Producer quality report did not pass: {report_path}")
+    checks = report.get("checks", {})
+    if checks.get("continuous_visual_timeline") is not True:
+        raise SafetyError(f"Producer did not prove a continuous visual timeline: {report_path}")
+    if checks.get("end_card_is_final_event_only") is not True:
+        raise SafetyError(f"Producer did not prove final-card placement: {report_path}")
+    audit = load_json(audit_path, None)
+    if not isinstance(audit, list) or not audit:
+        raise SafetyError(f"Transition audit is invalid: {audit_path}")
+    if any(abs(float(item.get("gap_seconds", 1))) > 0.000001 for item in audit):
+        raise SafetyError(f"Transition audit contains an uncovered or overlapping interval: {audit_path}")
+
+
 def queue_files(cfg: dict[str, Any]) -> list[Path]:
     pending = HERE / cfg["pending_directory"]
     pending.mkdir(parents=True, exist_ok=True)
@@ -427,8 +491,11 @@ def main() -> int:
             video = matches[0]
         else:
             video = candidates[0]
+        validate_future_quality_evidence(video, cfg)
         if not ffprobe_ok(video):
             raise SafetyError(f"Video validation failed: {video}")
+        if not full_decode_ok(video):
+            raise SafetyError(f"Full video decode failed: {video}")
         service, channel = authorized_service(cfg)
         report["verified_channel"] = channel
         report["attempted"] = 1

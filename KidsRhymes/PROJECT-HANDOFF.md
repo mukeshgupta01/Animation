@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-24 18:53 Australia/Sydney
+Last updated: 2026-08-24 19:28 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -421,6 +421,19 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - The first authorization reached Google but correctly failed closed because YouTube Data API v3 was not enabled. After the user enabled the API, interactive authorization succeeded and returned Tiny Tales channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. A separate `uploader.py verify` call returned the same immutable identity.
 - The post-migration dry run performed no upload, found 38 queued MP4s, and selected `animal-action-alphabet-a-to-z-01.mp4` under public/made-for-kids configuration. Retry state was unarmed. `Tiny Tales - Daily Private Upload` and `Tiny Tales - Hourly Upload Retry` were then re-enabled and verified Ready for 20:20 and 19:20 respectively.
 - The live archive and upload ledger each contain 12 confirmed items. The newest confirmed upload is public/made-for-kids Brio video `xmY61TirVWE`, which completed at 18:25 before the credential migration.
+
+## Maya defect correction, replacement upload and mandatory future transition QA
+
+- The user reported that Maya's intended final card, `KINDNESS CAN MAKE A DIFFERENCE`, flashed every few seconds throughout the story. Frame extraction from the archived upload confirmed it at 45.95 seconds, matching an uncovered timeline interval from 45.858 to 46.108 seconds.
+- Root cause was deterministic: `build_timeline()` left 22 pauses of 0.25 or 0.35 seconds, while `render()` used `events[-1]` (the end card) whenever no event covered a timestamp. The original contact sheet sampled scene interiors and therefore missed every gap.
+- `automation/production/produce_maya_joey_rescue.py` now extends each visual event through its intended pause, making all 23 transitions exactly contiguous. Rendering fails closed if any timestamp lacks an event. Its quality report now requires `continuous_visual_timeline` and `end_card_is_final_event_only`, and `timeline-gap-audit.json` records every boundary.
+- A new 225.6-second, 43,751,353-byte corrected MP4 was rendered with SHA-256 `6f8b263144d22b0375e0a6caebade1eaafa49d3c082969bb8f595ae66e4721af`. It passed the expanded producer gate, 1080p H.264/48 kHz stereo AAC checks, full FFmpeg decode, normal contact sheet, and visual review of `transition-contact-sheet.png`, which sampled all 22 former flash timestamps and showed only the correct adjacent story scenes.
+- Exact read-back verified defective upload `HtNGbHueDKQ` as the Maya title on immutable Tiny Tales. It was public at initial diagnosis and read as private immediately before deletion. One `videos.delete` request was sent; the immediate read was briefly stale, so no retry was attempted. A delayed exact-ID query confirmed it absent, and a full uploads-playlist scan confirmed zero exact-title matches before replacement.
+- The corrected collision-safe queue item uploaded publicly as `WLzesx1OxNU` (`https://youtu.be/WLzesx1OxNU`). API read-back matched Tiny Tales channel `UCEn9N-ITQHshjgt6fy7fxnw`, exact title and description, seven tags, 3:46 duration, public visibility, made-for-kids and self-declared-made-for-kids flags. The corrected archive is `automation/archive/maya-rainy-day-joey-rescue-01-corrected.mp4`; the defective original archive remains preserved as `automation/archive/maya-rainy-day-joey-rescue-01.mp4` for audit/recovery and must never be re-uploaded.
+- The separate one-time `youtube.force-ssl` deletion token was revoked and its temporary token/helper files removed. Google also invalidated the normal grant for the same OAuth client, so the user completed a fresh authorization requesting only the original `youtube.upload` and `youtube.readonly` scopes. A final channel verification passed.
+- At the user's request, all future Tiny Tales videos created after Unix cutoff `1787563445` (`2026-08-24T09:24:05Z`) are subject to a new fail-closed uploader gate. `automation/config.json` records the cutoff. `uploader.py` requires queue metadata flags `quality_gate_passed`, `full_decode_passed`, `transition_audit_passed`, and `transition_contact_sheet_reviewed`, plus valid in-project paths `quality_report`, `transition_audit`, `quality_contact_sheet`, and `transition_contact_sheet`. The producer report must pass and explicitly prove a continuous timeline and final-only end card; every audit interval must be zero. Every real upload also runs a fresh full FFmpeg decode. Existing pre-cutoff backlog items are preserved and grandfathered.
+- A deliberate future-dated missing-evidence test was blocked with all four absent flags named. The next pre-existing dry-run item is `animal-action-alphabet-a-to-z-01.mp4`; 38 MP4s remain queued.
+- Sydney-time upload history on 2026-08-24: Nia succeeded at 07:45, Maya defective upload succeeded at 08:20 and was later deleted/replaced, Brio succeeded at 18:25, and corrected Maya succeeded at 19:23. The corrected Maya replacement is the newest confirmed upload.
 
 ## Safe continuation checklist
 

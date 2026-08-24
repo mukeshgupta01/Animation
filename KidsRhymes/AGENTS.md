@@ -12,6 +12,7 @@ Safety requirements:
 - A real upload requires the existing explicit confirmation flag.
 - Never regenerate a completed item or upload an archived/existing video again.
 - Archive only after YouTube returns a video ID.
+- Every video created after 2026-08-24 19:24 Australia/Sydney must prove a continuous visual timeline with no uncovered or overlapping transition intervals, prove that any finale/end card occurs only in its intended final event, pass a full FFmpeg decode, and have both its general and every-boundary transition contact sheets visually reviewed before upload. Queue metadata must carry the required quality flags and evidence paths enforced by `uploader.py`; never bypass the cutoff or falsify review evidence.
 - Do not delete user files, old output folders, credentials, manifests, ledgers, archives, or Scheduled Tasks without inspecting and verifying the exact target.
 - Keep generation independent from uploading: an upload or email failure must not stop future generation cycles.
 - Preserve the editorial rules and user preferences recorded in `PROJECT-HANDOFF.md`.
@@ -125,3 +126,10 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Tiny Tales was previously sharing Google Cloud project `cool-artwork-506302-q0` with the user's Birthday channel. The user created dedicated project `tiny-tales-506508`, enabled YouTube Data API v3, and supplied a Desktop OAuth client requesting only `youtube.upload` and `youtube.readonly`.
 - Interactive authorization and an independent read-only verification both returned Tiny Tales and immutable channel ID `UCEn9N-ITQHshjgt6fy7fxnw`. The prior token is preserved under ignored `automation/runtime/credential-backups/`; never copy it or the new credential to the Birthday channel.
 - The upload tasks were disabled during cutover and re-enabled only after verification. A dry run performed no upload, found 38 queued MP4s, and selected `animal-action-alphabet-a-to-z-01.mp4`; retry state was unarmed.
+
+## Corrected Maya replacement and future transition gate (2026-08-24 19:28 Australia/Sydney)
+
+- The uploaded Maya video flashed its true end card during 22 unintended 0.25-0.35 second timeline gaps. The producer now makes all 23 transitions exactly contiguous, aborts on any uncovered render timestamp, audits every transition, and proves the end card is the final event only.
+- The corrected 225.6-second render passed its expanded quality gate, full decode, normal contact sheet, and a separate visual review sheet sampling every former flash point. Defective YouTube ID `HtNGbHueDKQ` was verified, deleted once, and confirmed absent before replacement upload `WLzesx1OxNU` was created.
+- Read-back of `WLzesx1OxNU` matched Tiny Tales, exact title/description/seven tags, public visibility, made-for-kids flags, and 3:46 duration. The defective local archive remains preserved; the corrected archive uses the collision-safe `maya-rainy-day-joey-rescue-01-corrected.mp4` name.
+- `automation/config.json` and `uploader.py` now fail closed for every future video created after the recorded cutoff unless its metadata asserts passed quality/decode/transition review and points to a passing producer report, zero-gap transition audit, general contact sheet, and reviewed transition contact sheet. Every real upload also performs a fresh full FFmpeg decode.

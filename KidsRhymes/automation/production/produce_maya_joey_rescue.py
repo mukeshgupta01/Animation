@@ -99,12 +99,12 @@ def build_timeline() -> tuple[list[dict], list[tuple[Path, float]], float]:
         phase, speaker, text = entry[:3]
         if speaker is None:
             duration = float(entry[3])
-            events.append({"phase": phase, "start": cursor, "end": cursor + duration, "text": text, "activity": True})
+            events.append({"phase": phase, "start": cursor, "end": cursor + duration + 0.35, "text": text, "activity": True})
             cursor += duration + 0.35
             continue
         path = voice_path(f"{index:02d}-{phase}")
         duration = audio_duration(path)
-        events.append({"phase": phase, "start": cursor, "end": cursor + duration + 0.5, "text": text, "speaker": speaker})
+        events.append({"phase": phase, "start": cursor, "end": cursor + duration + 0.75, "text": text, "speaker": speaker})
         voices.append((path, cursor))
         cursor += duration + 0.75
     events.append({"phase": "end", "start": cursor, "end": cursor + 4.5, "text": ""})
@@ -270,7 +270,9 @@ def render(events: list[dict], voices: list[tuple[Path, float]], total: float, a
     ], stdin=subprocess.PIPE)
     for number in range(math.ceil(total * ART_FPS)):
         t = number / ART_FPS
-        event = next((item for item in events if item["start"] <= t < item["end"]), events[-1])
+        event = next((item for item in events if item["start"] <= t < item["end"]), None)
+        if event is None:
+            raise RuntimeError(f"Maya rescue timeline has no visual event at {t:.3f}s")
         process.stdin.write(frame_for(event, t, assets).tobytes())
         if number % (ART_FPS * 15) == 0:
             print(f"Rendered {t:.0f}/{total:.0f}s", flush=True)
@@ -305,13 +307,24 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
     audio = next(stream for stream in probe["streams"] if stream["codec_type"] == "audio")
     activity_events = [event for event in events if event.get("activity")]
     gaps = [{"phase": event["phase"], "quiet_gap_seconds": event["end"] - event["start"]} for event in activity_events]
+    timeline_transitions = [
+        {
+            "from_phase": current["phase"],
+            "to_phase": following["phase"],
+            "gap_seconds": following["start"] - current["end"],
+        }
+        for current, following in zip(events, events[1:])
+    ]
     (WORK / "activity-gap-audit.json").write_text(json.dumps(gaps, indent=2) + "\n", encoding="utf-8")
+    (WORK / "timeline-gap-audit.json").write_text(json.dumps(timeline_transitions, indent=2) + "\n", encoding="utf-8")
     checks = {
         "size": OUTPUT.stat().st_size > 2_000_000,
         "duration": abs(float(probe["format"]["duration"]) - total) < 0.25,
         "video": video.get("codec_name") == "h264" and video.get("width") == base.W and video.get("height") == base.H,
         "audio": audio.get("codec_name") == "aac" and audio.get("sample_rate") == "48000" and audio.get("channels") == 2,
         "three_response_gaps": len(gaps) == 3 and all(item["quiet_gap_seconds"] >= 5 for item in gaps),
+        "continuous_visual_timeline": all(abs(item["gap_seconds"]) < 0.000001 for item in timeline_transitions),
+        "end_card_is_final_event_only": events[-1]["phase"] == "end" and all(event["phase"] != "end" for event in events[:-1]),
         "different_narrator_and_character_voices": NARRATOR["voice"] != MAYA_VOICE["voice"],
         "moving_child_and_animals": True,
         "two_weather_states": True,
