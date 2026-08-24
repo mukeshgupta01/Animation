@@ -85,10 +85,10 @@ def build_timeline() -> tuple[list[dict], list[tuple[Path, float]], float]:
     for index, entry in enumerate(SCRIPT):
         phase, text = entry[:2]
         if text is None:
-            length = float(entry[3]); events.append({"phase": phase, "start": cursor, "end": cursor + length, "text": entry[2], "activity": True}); cursor += length + .3
+            length = float(entry[3]); events.append({"phase": phase, "start": cursor, "end": cursor + length + .3, "text": entry[2], "activity": True}); cursor += length + .3
         else:
             path = voice_path(index, phase); length = duration(path)
-            events.append({"phase": phase, "start": cursor, "end": cursor + length + .35, "text": text}); voices.append((path, cursor)); cursor += length + .65
+            events.append({"phase": phase, "start": cursor, "end": cursor + length + .65, "text": text}); voices.append((path, cursor)); cursor += length + .65
     events.append({"phase": "end", "start": cursor, "end": cursor + 4.5}); return events, voices, cursor + 4.5
 
 
@@ -134,6 +134,31 @@ def environment(phase: str) -> str:
     return "blank"
 
 
+POSE_BY_PHASE = {
+    "intro": 4,
+    "blank": 1,
+    "warmup": 2,
+    "red": 0,
+    "red_action": 0,
+    "yellow": 4,
+    "yellow_action": 4,
+    "blue": 5,
+    "blue_action": 5,
+    "orange_mix": 3,
+    "orange_action": 3,
+    "green_mix": 4,
+    "green_action": 4,
+    "meadow": 1,
+    "sky_action": 1,
+    "hill_action": 2,
+    "flower_action": 0,
+    "chorus": 3,
+    "chorus_action": 3,
+    "finale": 4,
+    "end": 5,
+}
+
+
 def activity_panel(draw: ImageDraw.ImageDraw, event: dict, t: float) -> None:
     progress = max(0, min(1, (t - event["start"]) / (event["end"] - event["start"])))
     base.panel(draw, (360, 820, 1560, 1022), radius=40, fill=(255, 250, 235, 240), outline=(255, 169, 42, 255), width=6)
@@ -169,7 +194,7 @@ def frame_for(event: dict, t: float, assets: dict) -> Image.Image:
         base.centered(draw,(1200,285),"BRIO'S PAINTBRUSH",base.F62,(44,103,153,255),2); base.centered(draw,(1200,415),"COLOUR WORKSHOP",base.F62,(225,70,78,255),2); base.centered(draw,(1200,540),"PAINT • MIX • MOVE",base.F48,(55,145,92,255),2)
         return frame.convert("RGB")
     if phase in {"red","red_action","yellow","yellow_action","blue","blue_action"}: paint_marks(draw,phase,p,t)
-    brio_pose = int(t*2.5)%6; brio_x = 400 if env in {"blank","meadow"} else 1480; sprite(frame,assets["brio"][brio_pose],(brio_x,1040),700,bob=-18*abs(math.sin(t*4)),tilt=3*math.sin(t*2))
+    brio_pose = POSE_BY_PHASE.get(phase, 0); brio_x = 400 if env in {"blank","meadow"} else 1480; sprite(frame,assets["brio"][brio_pose],(brio_x,1040),700,bob=-12*abs(math.sin(t*2.2)),tilt=2*math.sin(t*1.2))
     colour_map = {"red":0,"red_action":0,"yellow":1,"yellow_action":1,"blue":2,"blue_action":2,"orange_mix":3,"orange_action":3,"green_mix":4,"green_action":4}
     if phase in colour_map:
         idx=colour_map[phase]; sprite(frame,assets["drops"][idx],(960,940),570,bob=-35*abs(math.sin(t*4.5)),tilt=6*math.sin(t*2.2))
@@ -206,7 +231,9 @@ def make_music(total: float) -> Path:
 def render(events:list[dict],voices:list[tuple[Path,float]],total:float,assets:dict)->None:
     silent=WORK/"silent.mp4";p=subprocess.Popen(["ffmpeg","-y","-loglevel","error","-f","rawvideo","-pix_fmt","rgb24","-s",f"{base.W}x{base.H}","-r",str(ART_FPS),"-i","-","-an","-vf",f"fps={VIDEO_FPS}","-c:v","libx264","-preset","veryfast","-crf","19","-profile:v","high","-pix_fmt","yuv420p",str(silent)],stdin=subprocess.PIPE);assert p.stdin
     for number in range(math.ceil(total*ART_FPS)):
-        t=number/ART_FPS;e=next((x for x in events if x["start"]<=t<x["end"]),events[-1]);p.stdin.write(frame_for(e,t,assets).tobytes())
+        t=number/ART_FPS;e=next((x for x in events if x["start"]<=t<x["end"]),None)
+        if e is None: raise RuntimeError(f"Brio workshop timeline has no visual event at {t:.3f}s")
+        p.stdin.write(frame_for(e,t,assets).tobytes())
         if number%(ART_FPS*15)==0:print(f"Rendered {t:.0f}/{total:.0f}s",flush=True)
     p.stdin.close()
     if p.wait()!=0:raise RuntimeError("Brio workshop silent render failed")
@@ -217,17 +244,32 @@ def render(events:list[dict],voices:list[tuple[Path,float]],total:float,assets:d
 
 
 def quality(events:list[dict],total:float,assets:dict)->None:
-    probe=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration,size","-show_entries","stream=codec_name,codec_type,width,height,sample_rate,channels","-of","json",str(OUTPUT)],text=True));video=next(s for s in probe["streams"] if s["codec_type"]=="video");audio=next(s for s in probe["streams"] if s["codec_type"]=="audio");gaps=[{"phase":e["phase"],"quiet_gap_seconds":e["end"]-e["start"]} for e in events if e.get("activity")];(WORK/"activity-gap-audit.json").write_text(json.dumps(gaps,indent=2)+"\n",encoding="utf-8")
-    checks={"size":OUTPUT.stat().st_size>2_000_000,"duration":110<=float(probe["format"]["duration"])<=240 and abs(float(probe["format"]["duration"])-total)<.3,"video":video.get("codec_name")=="h264" and video.get("width")==base.W and video.get("height")==base.H,"audio":audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2,"ten_response_gaps":len(gaps)==10 and all(g["quiet_gap_seconds"]>=5 for g in gaps),"six_brio_poses":len(assets["brio"])==6,"five_clean_colour_friends":len(assets["drops"])==5,"four_art_worlds":len(assets["backgrounds"])==4,"voice_rotation":VOICE["name"]=="ryan-uk"}
-    report={"format":"3d-canvas-restoration-music-story","output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"voice_profile":VOICE["name"],"new_image_generation_calls":6,"rejected_image_variants":1,"true_rigged_3d_animation":False,"visual_method":"original 3D-rendered pose assets with code-painted canvas marks, colour mixing, camera travel and compositing","checks":checks,"passed":all(checks.values())};(WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
+    probe=json.loads(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration,size","-show_entries","stream=codec_name,codec_type,width,height,sample_rate,channels","-of","json",str(OUTPUT)],text=True))
+    video=next(s for s in probe["streams"] if s["codec_type"]=="video");audio=next(s for s in probe["streams"] if s["codec_type"]=="audio")
+    full_decode=subprocess.run(["ffmpeg","-v","error","-i",str(OUTPUT),"-f","null","-"],capture_output=True,text=True,check=False)
+    gaps=[{"phase":e["phase"],"quiet_gap_seconds":e["end"]-e["start"]} for e in events if e.get("activity")]
+    transitions=[{"from_phase":a["phase"],"to_phase":b["phase"],"gap_seconds":b["start"]-a["end"]} for a,b in zip(events,events[1:])]
+    (WORK/"activity-gap-audit.json").write_text(json.dumps(gaps,indent=2)+"\n",encoding="utf-8")
+    (WORK/"timeline-gap-audit.json").write_text(json.dumps(transitions,indent=2)+"\n",encoding="utf-8")
+    pose_sequence=[POSE_BY_PHASE[e["phase"]] for e in events if e["phase"] in POSE_BY_PHASE]
+    pose_changes=sum(a!=b for a,b in zip(pose_sequence,pose_sequence[1:]));pose_changes_per_minute=pose_changes/(total/60)
+    checks={"size":OUTPUT.stat().st_size>2_000_000,"duration":110<=float(probe["format"]["duration"])<=240 and abs(float(probe["format"]["duration"])-total)<.3,"video":video.get("codec_name")=="h264" and video.get("width")==base.W and video.get("height")==base.H,"audio":audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2,"full_decode":full_decode.returncode==0,"ten_response_gaps":len(gaps)==10 and all(g["quiet_gap_seconds"]>=5 for g in gaps),"continuous_visual_timeline":all(abs(item["gap_seconds"])<.000001 for item in transitions),"end_card_is_final_event_only":events[-1]["phase"]=="end" and all(e["phase"]!="end" for e in events[:-1]),"stable_brio_pose_per_event":all(e["phase"] in POSE_BY_PHASE for e in events if e["phase"]!="title"),"controlled_pose_changes":pose_changes_per_minute<=10,"six_brio_poses":len(assets["brio"])==6,"five_clean_colour_friends":len(assets["drops"])==5,"four_art_worlds":len(assets["backgrounds"])==4,"voice_rotation":VOICE["name"]=="ryan-uk"}
+    report={"format":"3d-canvas-restoration-music-story","output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"voice_profile":VOICE["name"],"pose_changes":pose_changes,"pose_changes_per_minute":pose_changes_per_minute,"new_image_generation_calls":6,"rejected_image_variants":1,"true_rigged_3d_animation":False,"visual_method":"original 3D-rendered pose assets with code-painted canvas marks, colour mixing, camera travel and compositing","checks":checks,"passed":all(checks.values())};(WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     samples=[e for e in events if e["phase"] in {"title","intro","warmup","red_action","yellow_action","blue_action","orange_action","green_action","meadow","sky_action","hill_action","flower_action","chorus_action","finale","end"}];contact=Image.new("RGB",(960,math.ceil(len(samples)/4)*135),"white")
     for i,e in enumerate(samples):t=e["start"]+min(2,(e["end"]-e["start"])/2);im=frame_for(e,t,assets).resize((240,135),Image.Resampling.LANCZOS);contact.paste(im,((i%4)*240,(i//4)*135))
     contact.save(WORK/"quality-contact-sheet.png")
+    boundary_samples=[]
+    for current,following in zip(events,events[1:]):
+        boundary_samples.extend([(current,max(current["start"],current["end"]-.12)),(following,min(following["end"]-.01,following["start"]+.12))])
+    transition_sheet=Image.new("RGB",(1200,math.ceil(len(boundary_samples)/5)*135),"white")
+    for i,(event,t) in enumerate(boundary_samples):
+        im=frame_for(event,t,assets).resize((240,135),Image.Resampling.LANCZOS);d=ImageDraw.Draw(im);d.rectangle((0,0,110,19),fill="black");d.text((3,2),f"{t:.1f}s {event['phase']}",font=base.font(12,True),fill="white");transition_sheet.paste(im,((i%5)*240,(i//5)*135))
+    transition_sheet.save(WORK/"transition-contact-sheet.png")
     if not report["passed"]:raise RuntimeError(f"Brio workshop quality gate failed: {report}")
 
 
 def write_metadata(total:float)->None:
-    doc={"id":"brio-paintbrush-colour-workshop-01","title":"Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids","description":"Help Brio restore a giant blank canvas in an original colour-and-movement music story. Children air-paint red circles, yellow rays and blue waves, mix orange and green, then bring a whole canvas meadow to life.\n\nA Tiny Tales 3D-look art adventure supporting primary colours, early colour mixing, creative movement, listening and imagination for children ages 3 to 7.","tags":["paintbrush song","colours for kids","colour mixing for kids","art for kids","movement song","preschool learning","Tiny Tales"],"category_id":"27","made_for_kids":True,"privacy":"public","upload_authorized":False,"output":str(OUTPUT),"duration_seconds":total,"voice_profile":VOICE["name"],"format_family":"3d-canvas-restoration-music-story","visual_system":"3d-magical-art-studio-with-code-painted-canvas","interaction_style":"air-painting-and-primary-colour-mixing","new_image_generation_calls":6,"rejected_image_variants":1,"true_rigged_3d_animation":False};META.parent.mkdir(parents=True,exist_ok=True);META.write_text(json.dumps(doc,indent=2)+"\n",encoding="utf-8")
+    doc={"id":"brio-paintbrush-colour-workshop-01","title":"Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids","description":"Help Brio restore a giant blank canvas in an original colour-and-movement music story. Children air-paint red circles, yellow rays and blue waves, mix orange and green, then bring a whole canvas meadow to life.\n\nA Tiny Tales 3D-look art adventure supporting primary colours, early colour mixing, creative movement, listening and imagination for children ages 3 to 7.","tags":["paintbrush song","colours for kids","colour mixing for kids","art for kids","movement song","preschool learning","Tiny Tales"],"category_id":"27","made_for_kids":True,"privacy":"public","upload_authorized":False,"output":str(OUTPUT),"duration_seconds":total,"voice_profile":VOICE["name"],"format_family":"3d-canvas-restoration-music-story","visual_system":"3d-magical-art-studio-with-code-painted-canvas","interaction_style":"air-painting-and-primary-colour-mixing","quality_gate_passed":True,"full_decode_passed":True,"transition_audit_passed":True,"transition_contact_sheet_reviewed":False,"quality_report":"automation/production-work/brio-paintbrush-colour-workshop-01/quality-report.json","transition_audit":"automation/production-work/brio-paintbrush-colour-workshop-01/timeline-gap-audit.json","quality_contact_sheet":"automation/production-work/brio-paintbrush-colour-workshop-01/quality-contact-sheet.png","transition_contact_sheet":"automation/production-work/brio-paintbrush-colour-workshop-01/transition-contact-sheet.png","new_image_generation_calls":6,"rejected_image_variants":1,"true_rigged_3d_animation":False};META.parent.mkdir(parents=True,exist_ok=True);META.write_text(json.dumps(doc,indent=2)+"\n",encoding="utf-8")
 
 
 def main()->None:
