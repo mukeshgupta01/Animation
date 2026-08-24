@@ -446,6 +446,12 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - The temporary `youtube.force-ssl` credential was revoked and removed. The normal OAuth authorization was then recreated with only `youtube.upload` and `youtube.readonly`, and channel verification returned immutable Tiny Tales ID `UCEn9N-ITQHshjgt6fy7fxnw` before the replacement upload.
 - `Tiny Tales - Daily Private Upload` and `Tiny Tales - Hourly Upload Retry` were paused throughout diagnosis/replacement and restored to Ready afterward. `Tiny Tales - Continuous Generation` is also Ready; the curated manifest remains exhausted, so generation safely no-ops until a deliberately varied item is added.
 
+## Standing authorization for defective-video replacement
+
+- On 2026-08-24, the user said they do not want a separate authorization request every time a defective Tiny Tales upload must be deleted. A clear instruction to fix and replace or re-upload a defective Tiny Tales video now includes authorization to delete that exact verified live version; do not ask a redundant conversational confirmation.
+- This standing permission is narrow. Verify the immutable Tiny Tales channel, exact video ID and exact expected title immediately before one delete request, confirm absence before uploading the correction, and never use it for batch deletion, unrelated videos, or a request that only asks for diagnosis/local editing.
+- No Scheduled Task may delete videos. A persistent broad deletion credential was not created; provider, operating-system or sandbox security prompts may still be required when a future deletion occurs and must not be bypassed.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.
