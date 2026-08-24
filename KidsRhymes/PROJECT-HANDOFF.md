@@ -452,6 +452,19 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - This standing permission is narrow. Verify the immutable Tiny Tales channel, exact video ID and exact expected title immediately before one delete request, confirm absence before uploading the correction, and never use it for batch deletion, unrelated videos, or a request that only asks for diagnosis/local editing.
 - No Scheduled Task may delete videos. A persistent broad deletion credential was not created; provider, operating-system or sandbox security prompts may still be required when a future deletion occurs and must not be bypassed.
 
+## Custom thumbnails for live Tiny Tales automation uploads
+
+- At the user's request, video generation was paused while custom thumbnails were created for every automation-ledger upload that is still live on Tiny Tales. The channel contains 142 historical videos, including unrelated legacy material; scope was therefore restricted to the 12 live videos recorded by this project's upload ledger. No unrelated historical upload was changed.
+- `automation/thumbnail-manifest.json` locks each thumbnail to an exact video ID, exact expected title, archived source video, representative timestamp, wording and layout. `automation/generate_thumbnails.py` deterministically produces 1280x720 JPEGs under `automation/thumbnails` from truthful video frames. `automation/thumbnail_uploader.py` requires an explicit confirmation flag, verifies dimensions/file size, the immutable channel, every exact ID/title, and records successful sets in ignored `runtime/thumbnail-upload-ledger.jsonl`.
+- All 12 thumbnails were visually reviewed together, uploaded successfully, fetched back from YouTube at 1280x720, pixel-compared with the local reviewed files, and visually reviewed again as a served contact sheet. Every comparison passed with RMS difference between 2.197 and 3.368, consistent with YouTube JPEG recompression.
+- The covered live IDs are `zAR5CkV2MMo`, `HSU5icdAnSs`, `gGQHkHcswGg`, `_a50NuDSRPQ`, `3z6kDg0DXmo`, `fvtpuEGx5Vw`, `gqeS_ZdmQ6Q`, `-ayS0UTmcfA`, `ygc-y4_XBwk`, `WLzesx1OxNU`, `yUCTNP3pJxg`, and `DTLx7vnHwd8`. Future confirmed Tiny Tales uploads should receive the same content-specific, reviewed and served-back-verified thumbnail treatment.
+
+## Paused next-generation concept
+
+- Before the thumbnail priority change, work began on `Tavi the Tiny Train's Shape Delivery Day`, a distinct connected sequencing story teaching first/next/then/last and circle/square/triangle/rectangle through community deliveries. It uses a side-scrolling toy-railway visual system and stable deterministic Tavi/cargo motion rather than a quiz, rescue, alphabet parade or paint song.
+- Four original built-in image-generation backgrounds are preserved locally as `automation/production-assets/tavi-shape-depot-3d.png`, `tavi-music-garden-3d.png`, `tavi-reading-nook-3d.png`, and `tavi-playground-3d.png`. A fifth garden/finale scene, producer, manifest entry, narration and render do not yet exist. Do not regenerate or overwrite the four accepted backgrounds.
+- `Tiny Tales - Continuous Generation` is Disabled while this work is paused. The two upload tasks remain Ready. When video generation resumes, complete Tavi under the mandatory full-decode, continuous-timeline, final-card-only, transition-audit and both-contact-sheet review gates before queueing it.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

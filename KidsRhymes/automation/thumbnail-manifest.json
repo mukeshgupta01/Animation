@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "channel_id": "UCEn9N-ITQHshjgt6fy7fxnw",
+  "items": [
+    {"video_id": "zAR5CkV2MMo", "expected_title": "Who Ate the Snack? | 6 Fun Animal Food Clues for Kids", "source": "archive/who-ate-the-snack-episode-01.mp4", "timestamp": 67.5, "headline": "WHO ATE THE SNACK?", "subheadline": "6 FOOD CLUES", "accent": "#ff7a45", "text_side": "left"},
+    {"video_id": "HSU5icdAnSs", "expected_title": "Guess the Animal Shadow | 6 Silhouette Puzzles for Kids", "source": "archive/guess-the-animal-shadow-01.mp4", "timestamp": 85.6, "headline": "GUESS THE SHADOW!", "subheadline": "6 ANIMAL PUZZLES", "accent": "#7657d5", "text_side": "left"},
+    {"video_id": "gGQHkHcswGg", "expected_title": "What Animal Disappeared? | Memory Game for Kids", "source": "archive/what-animal-disappeared-01.mp4", "timestamp": 75.1, "headline": "WHAT DISAPPEARED?", "subheadline": "MEMORY CHALLENGE", "accent": "#ef5b7d", "text_side": "left"},
+    {"video_id": "_a50NuDSRPQ", "expected_title": "Find the Matching Animal Picture | Preschool Visual Game", "source": "archive/find-the-matching-animal-01.mp4", "timestamp": 68.7, "headline": "FIND THE MATCH!", "subheadline": "LOOK CLOSELY", "accent": "#2fa78f", "text_side": "left"},
+    {"video_id": "3z6kDg0DXmo", "expected_title": "Ocean Animal Superpower Detectives | Amazing Facts for Kids", "source": "archive/ocean-animal-superpowers-01.mp4", "timestamp": 49.2, "headline": "OCEAN SUPERPOWERS!", "subheadline": "AMAZING ANIMAL FACTS", "accent": "#178dcc", "text_side": "left"},
+    {"video_id": "fvtpuEGx5Vw", "expected_title": "Animal Alphabet Adventure A-F | Learn Letters and Animals", "source": "archive/animal-alphabet-a-to-f-01.mp4", "timestamp": 70.7, "headline": "LEARN A–F", "subheadline": "ANIMAL ALPHABET", "accent": "#f1a21a", "text_side": "left"},
+    {"video_id": "gqeS_ZdmQ6Q", "expected_title": "Guess the Farm Animal Shadow | Observation Game 1 for Kids", "source": "archive/guess-the-farm-animal-shadow-01.mp4", "timestamp": 64.5, "headline": "FARM SHADOWS!", "subheadline": "CAN YOU GUESS?", "accent": "#68a83b", "text_side": "left"},
+    {"video_id": "-ayS0UTmcfA", "expected_title": "Animal Alphabet Adventure A-Z | Learn Every Letter with Animals", "source": "archive/animal-alphabet-a-to-z-01.mp4", "timestamp": 174.2, "headline": "ANIMAL ABC A–Z", "subheadline": "LEARN EVERY LETTER", "accent": "#e65b48", "text_side": "left"},
+    {"video_id": "ygc-y4_XBwk", "expected_title": "Nia's Rainbow Breakfast Dance | Colours and Movement for Kids", "source": "archive/nia-rainbow-breakfast-dance-01.mp4", "timestamp": 135.6, "headline": "RAINBOW BREAKFAST", "subheadline": "DANCE WITH NIA", "accent": "#ff6b55", "text_side": "right"},
+    {"video_id": "WLzesx1OxNU", "expected_title": "Maya and the Rainy-Day Joey Rescue | Kindness Story for Kids", "source": "archive/maya-rainy-day-joey-rescue-01-corrected.mp4", "timestamp": 171.5, "headline": "HELP THE LITTLE JOEY", "subheadline": "A KINDNESS STORY", "accent": "#6e55cf", "text_side": "right"},
+    {"video_id": "yUCTNP3pJxg", "expected_title": "Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids", "source": "archive/brio-paintbrush-colour-workshop-01-corrected.mp4", "timestamp": 92.5, "headline": "PAINT • MIX • MOVE", "subheadline": "BRIO'S COLOUR WORKSHOP", "accent": "#ef5b3f", "text_side": "left"},
+    {"video_id": "DTLx7vnHwd8", "expected_title": "Animal Action Alphabet A-Z | Move and Learn with 26 Animals", "source": "archive/animal-action-alphabet-a-to-z-01.mp4", "timestamp": 145.4, "headline": "MOVE THROUGH A–Z!", "subheadline": "26 ANIMAL ACTIONS", "accent": "#16a6a1", "text_side": "left"}
+  ]
+}
