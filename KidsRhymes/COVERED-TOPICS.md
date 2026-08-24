@@ -4,11 +4,11 @@ Updated: 2026-08-24
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 50.
+Known completed or queued video concepts: 53.
 
 ## Topic index
 
-- Animal Action Alphabet A-Z | Move and Learn with 26 Animals — `animal-action-alphabet-a-to-z-01` — completed local, queued public upload
+- Animal Action Alphabet A-Z | Move and Learn with 26 Animals — `animal-action-alphabet-a-to-z-01` — archived/uploaded
 - Animal Alphabet Adventure A-F | Learn Letters and Animals — `animal-alphabet-a-to-f-01` — archived/uploaded
 - Animal Alphabet Adventure A-Z | Learn Every Letter with Animals — `animal-alphabet-a-to-z-01` — archived/uploaded
 - Animal Opposites Playground | Up, Down, In, Out and More for Kids — `animal-opposites-playground-01` — completed local, queued public upload
@@ -22,7 +22,8 @@ Known completed or queued video concepts: 50.
 - Bird Feather Measuring Studio | Long and Short for Kids — `bird-feather-measuring-studio-01` — completed local, queued public upload
 - Bird Find My Home | Habitat Rescue Adventure for Kids — `bird-find-my-home-01` — completed local, queued public upload
 - Colourful Bird Lost Colour Rescue | Interactive Animal Adventure — `bird-lost-colour-rescue-01` — completed local, queued public upload
-- Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids — `brio-paintbrush-colour-workshop-01` — completed local, queued public upload
+- Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids — `brio-paintbrush-colour-workshop-01` — archived/uploaded, completed local
+- Brio Paintbrush Colour Workshop 01 Corrected — `brio-paintbrush-colour-workshop-01-corrected` — archived/uploaded
 - Colourful Bird Animal Clue Detectives | Guessing Adventure for Kids — `colourful-bird-clue-detectives-01` — completed local, queued public upload
 - Farm Amazing Animal Tools | Body Features for Kids — `farm-amazing-animal-tools-01` — completed local, queued public upload
 - Farm Animal Clue Detectives | Guessing Adventure for Kids — `farm-animal-clue-detectives-01` — completed local, queued public upload
@@ -38,7 +39,8 @@ Known completed or queued video concepts: 50.
 - Guess The Farm Animal Shadow 01 — `guess-the-farm-animal-shadow-01` — archived/uploaded
 - Jungle Animal Clue Detectives | Guessing Adventure for Kids — `jungle-animal-clue-detectives-01` — completed local, queued public upload
 - The Little Raindrop's Big Journey | Water Cycle Story for Kids — `little-raindrop-water-cycle-01` — completed local, queued public upload
-- Maya and the Rainy-Day Joey Rescue | Kindness Story for Kids — `maya-rainy-day-joey-rescue-01` — archived/uploaded
+- Maya and the Rainy-Day Joey Rescue | Kindness Story for Kids — `maya-rainy-day-joey-rescue-01` — archived/uploaded, completed local
+- Maya Rainy Day Joey Rescue 01 Corrected — `maya-rainy-day-joey-rescue-01-corrected` — archived/uploaded
 - Nia's Rainbow Breakfast Dance | Colours and Movement for Kids — `nia-rainbow-breakfast-dance-01` — archived/uploaded
 - Ocean Amazing Animal Tools | Body Features for Kids — `ocean-amazing-animal-tools-01` — completed local, queued public upload
 - Ocean Animal Counting Parade | Count 1 to 4 for Kids — `ocean-animal-counting-parade-01` — completed local, queued public upload
@@ -51,6 +53,7 @@ Known completed or queued video concepts: 50.
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - Pip's Five Senses Quest | Interactive Story Adventure for Kids — `pips-five-senses-quest-01` — completed local, queued public upload
 - Pip's Four Seasons Journey | Interactive Story Adventure for Kids — `pips-four-seasons-journey-01` — completed local, queued public upload
+- Tavi the Tiny Train's Shape Delivery Day | Shapes and Sequencing for Kids — `tavi-shape-delivery-day-01` — completed local, queued public upload
 - The Tiny Seed's Big Farm Adventure | Plant Life Cycle for Kids — `tiny-seed-big-farm-adventure-01` — completed local, queued public upload
 - What Animal Disappeared? | Memory Game for Kids — `what-animal-disappeared-01` — archived/uploaded
 - What Farm Animal Disappeared 01 — `what-farm-animal-disappeared-01` — completed local, queued public upload

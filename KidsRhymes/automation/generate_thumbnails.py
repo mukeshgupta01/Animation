@@ -53,6 +53,8 @@ def wrapped(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, 
 
 
 def make_thumbnail(item: dict[str, object]) -> Path:
+    if item.get("artwork"):
+        return make_creative_thumbnail(item)
     source = HERE / str(item["source"])
     if not source.is_file():
         raise FileNotFoundError(source)
@@ -103,9 +105,57 @@ def make_thumbnail(item: dict[str, object]) -> Path:
     return target
 
 
+def make_creative_thumbnail(item: dict[str, object]) -> Path:
+    artwork = HERE / str(item["artwork"])
+    if not artwork.is_file():
+        raise FileNotFoundError(artwork)
+    OUTPUT.mkdir(parents=True, exist_ok=True)
+    canvas = fit(Image.open(artwork).convert("RGB"), (1280, 720)).convert("RGBA")
+    draw = ImageDraw.Draw(canvas, "RGBA")
+    accent = tuple(int(str(item["accent"])[i:i + 2], 16) for i in (1, 3, 5))
+    position = str(item["hook_position"])
+    max_width = 505 if position != "top" else 720
+    font_size = 82
+    while font_size >= 54:
+        font = ImageFont.truetype(FONT_BOLD, font_size)
+        lines = wrapped(draw, str(item["hook"]), font, max_width)
+        if len(lines) <= 2:
+            break
+        font_size -= 4
+    line_height = font_size + 8
+    block_width = max(draw.textbbox((0, 0), line, font=font, stroke_width=0)[2] for line in lines)
+    block_height = len(lines) * line_height
+    if position == "left":
+        x, y = 48, 145
+    elif position == "right":
+        x, y = 1280 - block_width - 50, 145
+    else:
+        x, y = (1280 - block_width) // 2, 42
+    pad_x, pad_y = 30, 22
+    banner = (x - pad_x, y - pad_y, x + block_width + pad_x, y + block_height + pad_y - 5)
+    shadow = (banner[0] + 10, banner[1] + 12, banner[2] + 10, banner[3] + 12)
+    draw.rounded_rectangle(shadow, 34, fill=(9, 16, 40, 165))
+    draw.rounded_rectangle(banner, 34, fill=(*accent, 218), outline=(255, 255, 255, 238), width=6)
+    for index, line in enumerate(lines):
+        tx = x if position != "top" else (1280 - draw.textbbox((0, 0), line, font=font)[2]) // 2
+        ty = y + index * line_height
+        draw.text((tx + 4, ty + 6), line, font=font, fill=(10, 18, 44), stroke_width=7, stroke_fill=(10, 18, 44))
+        draw.text((tx, ty), line, font=font, fill=(255, 249, 148), stroke_width=4, stroke_fill=(255, 255, 255))
+    badge_font = ImageFont.truetype(FONT_BOLD, 23)
+    badge_x = 50 if position != "left" else banner[0]
+    badge_y = 654
+    draw.rounded_rectangle((badge_x, badge_y, badge_x + 192, badge_y + 48), 22, fill=(12, 22, 48, 225), outline=(255, 255, 255, 225), width=3)
+    draw.text((badge_x + 22, badge_y + 10), "TINY TALES", font=badge_font, fill="white")
+    target = OUTPUT / f"{item['video_id']}.jpg"
+    canvas.convert("RGB").save(target, quality=91, optimize=True, progressive=True)
+    if target.stat().st_size > 2_000_000:
+        raise RuntimeError(f"Thumbnail exceeds YouTube 2 MB limit: {target}")
+    return target
+
+
 def main() -> None:
     doc = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    if doc.get("version") != 1 or doc.get("channel_id") != "UCEn9N-ITQHshjgt6fy7fxnw":
+    if doc.get("version") != 2 or doc.get("channel_id") != "UCEn9N-ITQHshjgt6fy7fxnw":
         raise RuntimeError("Invalid Tiny Tales thumbnail manifest")
     paths = [make_thumbnail(item) for item in doc["items"]]
     review = Image.new("RGB", (1920, 1440), (20, 25, 34))

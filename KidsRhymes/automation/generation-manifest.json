@@ -217,6 +217,28 @@
         "tags": ["paintbrush song", "colours for kids", "colour mixing for kids", "art for kids", "movement song", "preschool learning", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "tavi-shape-delivery-day-01",
+      "name": "Tavi the Tiny Train's Shape Delivery Day",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_tavi_shape_delivery.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/tavi-shape-delivery-day-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "community-shape-delivery-sequencing-story",
+      "visual_system": "3d-toy-railway-with-code-animated-train-and-cargo",
+      "interaction_style": "shape-tracing-and-first-next-then-last-recall",
+      "voice_profile": "natasha-au",
+      "youtube": {
+        "title": "Tavi the Tiny Train's Shape Delivery Day | Shapes and Sequencing for Kids",
+        "description": "Ride with Tavi through a cheerful community as four important deliveries arrive in order: first a round drum, next a square reading cushion, then triangle playground flags, and last rectangular seed trays. Children trace shapes, move their arms, and remember first, next, then and last.\n\nAn original Tiny Tales 3D-look railway story supporting shape recognition, sequencing, listening and movement for children ages 3 to 7.",
+        "tags": ["shapes for kids", "sequencing for kids", "train story for kids", "preschool learning", "circle square triangle rectangle", "first next then last", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

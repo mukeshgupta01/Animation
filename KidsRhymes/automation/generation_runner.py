@@ -130,6 +130,27 @@ def publish(item: dict[str, Any], output: Path) -> None:
         for field in ("voice_profile", "format_family", "visual_system", "interaction_style"):
             if field in item:
                 metadata[field] = item[field]
+        # Preserve the producer's independently generated quality evidence in
+        # the upload sidecar.  Uploads created after the quality-policy cutoff
+        # are intentionally blocked unless these checks are present and the
+        # transition contact sheet has been reviewed by a person/agent.
+        producer_metadata_path = PROJECT / "metadata" / f"{output.stem}.json"
+        producer_metadata = load(producer_metadata_path, {})
+        for field in (
+            "quality_gate_passed",
+            "full_decode_passed",
+            "transition_audit_passed",
+            "transition_contact_sheet_reviewed",
+            "quality_report",
+            "transition_audit",
+            "quality_contact_sheet",
+            "transition_contact_sheet",
+            "duration_seconds",
+            "new_image_generation_calls",
+            "true_rigged_3d_animation",
+        ):
+            if field in producer_metadata:
+                metadata[field] = producer_metadata[field]
         save(destination.with_suffix(".json"), metadata)
 
 

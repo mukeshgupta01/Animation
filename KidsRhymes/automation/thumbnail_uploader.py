@@ -28,7 +28,7 @@ def digest(path: Path) -> str:
 def load_manifest() -> dict:
     doc = json.loads(MANIFEST.read_text(encoding="utf-8"))
     cfg = uploader.config()
-    if doc.get("version") != 1 or doc.get("channel_id") != cfg["channel_id"]:
+    if doc.get("version") != 2 or doc.get("channel_id") != cfg["channel_id"]:
         raise uploader.SafetyError("Thumbnail manifest channel lock is invalid")
     items = doc.get("items")
     if not isinstance(items, list) or not items:
