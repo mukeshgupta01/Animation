@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "id": "star-friends-twinkle-playground-01",
+  "working_title": "Star Friends' Twinkle Playground",
+  "format_family": "celestial-playground-movement-song-story",
+  "voice_profile": "ana-us",
+  "visual_rule": "Every voiced beat owns one unique full-screen shot whose depicted action matches the narration; no story artwork may be reused.",
+  "maximum_shot_seconds": 14,
+  "text_panel_policy": "No instructional cards during the story; only a short title and final end card are allowed.",
+  "shots": [
+    {
+      "id": "01_arrival",
+      "line": "High above the sleepy rooftops, three little Star Friends followed a glowing path to the Twinkle Playground.",
+      "visual": "Three expressive star friends crossing a luminous bridge toward a cloud-and-moon playground at twilight.",
+      "motion": "Forward camera drift, blinking lights, waving star points."
+    },
+    {
+      "id": "02_playground_wakes",
+      "line": "When their feet touched the first cloud, the whole playground shimmered awake.",
+      "visual": "The three stars landing on a cloud as the playground lights switch on around them.",
+      "motion": "Cloud compresses, lights ripple outward."
+    },
+    {
+      "id": "03_cloud_bounce",
+      "line": "First came the cloud trampoline. Bend down low, then bounce up bright!",
+      "visual": "One star compressed low on a fluffy trampoline while two friends cheer beside it.",
+      "motion": "Vertical bounce arc and squash-and-stretch."
+    },
+    {
+      "id": "04_cloud_activity",
+      "line": "Can you make three gentle bounces? One, two, three!",
+      "visual": "All three stars bouncing at three different heights above the cloud trampoline.",
+      "motion": "Three-count bounce cycle with light trails."
+    },
+    {
+      "id": "05_moon_seesaw",
+      "line": "Next, the crescent moon became a silver seesaw. One friend floated up while another dipped down.",
+      "visual": "Two stars balancing on opposite tips of a crescent-moon seesaw with the third watching the centre.",
+      "motion": "Slow alternating tilt."
+    },
+    {
+      "id": "06_moon_activity",
+      "line": "Lean gently left. Now lean gently right. You are balancing with the stars!",
+      "visual": "The star trio leaning together beside the tilted crescent seesaw, clearly showing left and right body angles.",
+      "motion": "Left-right sway with soft sparkle trails."
+    },
+    {
+      "id": "07_comet_slide",
+      "line": "A friendly comet curled its glowing tail into the longest slide in the sky.",
+      "visual": "A smiling comet forming a curved rainbow-light slide while the stars wait excitedly at the top.",
+      "motion": "Camera follows the luminous curve downward."
+    },
+    {
+      "id": "08_comet_activity",
+      "line": "Reach up tall, then swoop your hands down as the Star Friends zoom along the comet trail!",
+      "visual": "All three stars swooping down the comet slide with long curved trails and joyful expressions.",
+      "motion": "Fast curved descent followed by a gentle loop."
+    },
+    {
+      "id": "09_constellation_path",
+      "line": "Across the dark-blue sky, tiny lights joined to make a stepping path.",
+      "visual": "A dotted constellation pathway appearing one connected light at a time ahead of the stars.",
+      "motion": "Path lights connect sequentially from foreground to distance."
+    },
+    {
+      "id": "10_constellation_activity",
+      "line": "Step, step, pause. Step, step, pause. Follow the sparkling pattern!",
+      "visual": "The three stars stepping across separate glowing constellation stones in a clear two-steps-and-pause rhythm.",
+      "motion": "Two travelling steps, one held pose, repeated twice."
+    },
+    {
+      "id": "11_playground_finale",
+      "line": "Bounce, balance, swoop and step! Every light in the playground twinkled with their new dance.",
+      "visual": "A wide finale showing the cloud trampoline, moon seesaw, comet slide and constellation path active together as the stars dance.",
+      "motion": "Continuous ensemble choreography and circling camera."
+    },
+    {
+      "id": "12_bedtime_landing",
+      "line": "Then the playground grew quiet. The Star Friends rested on a soft cloud and took one slow, sleepy breath.",
+      "visual": "The three tired happy stars curled together on a small cloud while the playground dims behind them.",
+      "motion": "Slow breathing scale, descending light and camera pullback."
+    },
+    {
+      "id": "13_goodnight",
+      "line": "The stars waved goodnight, leaving three warm twinkles above the sleeping town.",
+      "visual": "The star trio waving from high in the sky above peaceful rooftops, each leaving one warm twinkle.",
+      "motion": "Gentle wave, three final pulses, slow fade."
+    }
+  ],
+  "required_reviews": [
+    "full_ffmpeg_decode",
+    "continuous_zero_gap_timeline",
+    "final_card_only_at_end",
+    "every_boundary_contact_sheet",
+    "one_unique_artwork_per_voiced_beat",
+    "narration_line_matches_shot_subject",
+    "no_story_shot_longer_than_14_seconds"
+  ]
+}

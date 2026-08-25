@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-08-24
+Updated: 2026-08-25
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 53.
+Known completed or queued video concepts: 54.
 
 ## Topic index
 
@@ -14,7 +14,7 @@ Known completed or queued video concepts: 53.
 - Animal Opposites Playground | Up, Down, In, Out and More for Kids — `animal-opposites-playground-01` — completed local, queued public upload
 - Animal Shape Builders | Circle, Triangle, Square and More for Kids — `animal-shape-builders-01` — completed local, queued public upload
 - Animal Sound Orchestra | Moo, Roar, Hoot and More for Kids — `animal-sound-orchestra-01` — completed local, queued public upload
-- Bea's Healthy Habits Treasure Trail | Interactive Story for Kids — `beas-healthy-habits-trail-01` — completed local, queued public upload
+- Bea's Healthy Habits Treasure Trail | Interactive Story for Kids — `beas-healthy-habits-trail-01` — archived/uploaded
 - Bird Amazing Animal Tools | Body Features for Kids — `bird-amazing-animal-tools-01` — completed local, queued public upload
 - Bird Baby Animal Family Album | Learn Baby Names for Kids — `bird-baby-family-album-01` — completed local, queued public upload
 - Colourful Bird Animal Counting Parade | Count 1 to 4 for Kids — `bird-counting-parade-01` — completed local, queued public upload
@@ -53,10 +53,11 @@ Known completed or queued video concepts: 53.
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - Pip's Five Senses Quest | Interactive Story Adventure for Kids — `pips-five-senses-quest-01` — completed local, queued public upload
 - Pip's Four Seasons Journey | Interactive Story Adventure for Kids — `pips-four-seasons-journey-01` — completed local, queued public upload
-- Tavi the Tiny Train's Shape Delivery Day | Shapes and Sequencing for Kids — `tavi-shape-delivery-day-01` — completed local, queued public upload
+- Star Friends' Twinkle Playground | Movement and Bedtime Story for Kids — `star-friends-twinkle-playground-01` — completed local, queued public upload
+- Tavi the Tiny Train's Shape Delivery Day | Shapes and Sequencing for Kids — `tavi-shape-delivery-day-01` — archived/uploaded
 - The Tiny Seed's Big Farm Adventure | Plant Life Cycle for Kids — `tiny-seed-big-farm-adventure-01` — completed local, queued public upload
 - What Animal Disappeared? | Memory Game for Kids — `what-animal-disappeared-01` — archived/uploaded
-- What Farm Animal Disappeared 01 — `what-farm-animal-disappeared-01` — completed local, queued public upload
+- What Farm Animal Disappeared 01 — `what-farm-animal-disappeared-01` — archived/uploaded
 - What Ocean Animal Disappeared 01 — `what-ocean-animal-disappeared-01` — completed local, queued public upload
 - Who Ate the Snack? | 6 Fun Animal Food Clues for Kids — `who-ate-the-snack-episode-01` — archived/uploaded
 - Wild Animal Find My Home | Habitat Rescue Adventure for Kids — `wild-animal-find-my-home-01` — completed local, queued public upload

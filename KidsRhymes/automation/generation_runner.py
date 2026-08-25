@@ -143,6 +143,7 @@ def publish(item: dict[str, Any], output: Path) -> None:
             "transition_contact_sheet_reviewed",
             "quality_report",
             "transition_audit",
+            "narration_visual_sync_audit",
             "quality_contact_sheet",
             "transition_contact_sheet",
             "duration_seconds",
