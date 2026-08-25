@@ -16,6 +16,8 @@ import sys
 import time
 from typing import Any
 
+from PIL import Image
+
 
 HERE = Path(__file__).resolve().parent
 CONFIG_PATH = HERE / "config.json"
@@ -24,6 +26,8 @@ TOKEN_FILE = HERE / "runtime" / "youtube-oauth-token.json"
 CHANNEL_LOCK = HERE / "runtime" / "youtube-channel-lock.json"
 LEDGER_FILE = HERE / "runtime" / "upload-ledger.jsonl"
 ATTEMPTS_FILE = HERE / "runtime" / "upload-attempts.json"
+THUMBNAIL_LEDGER_FILE = HERE / "runtime" / "thumbnail-upload-ledger.jsonl"
+THUMBNAIL_RETRY_FILE = HERE / "runtime" / "thumbnail-retry-state.json"
 LOG_FILE = HERE / "logs" / "youtube-upload.log"
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
@@ -186,6 +190,26 @@ def validate_future_quality_evidence(video: Path, cfg: dict[str, Any]) -> None:
         raise SafetyError(f"Transition audit contains an uncovered or overlapping interval: {audit_path}")
 
 
+def prepared_thumbnail_for(video: Path, cfg: dict[str, Any]) -> Path | None:
+    metadata = load_json(video.with_suffix(".json"), {})
+    if not isinstance(metadata, dict):
+        raise SafetyError(f"Video metadata is invalid: {video.with_suffix('.json')}")
+    value = metadata.get("prepared_thumbnail")
+    if not value:
+        if cfg.get("custom_thumbnail_required") is True:
+            raise SafetyError(f"Upload blocked until a reviewed custom thumbnail is prepared: {video.name}")
+        return None
+    if metadata.get("thumbnail_reviewed") is not True or not metadata.get("thumbnail_hook"):
+        raise SafetyError(f"Prepared thumbnail lacks explicit visual review or hook metadata: {video.name}")
+    path = evidence_path(value, "prepared_thumbnail")
+    if path.stat().st_size > 2_000_000:
+        raise SafetyError(f"Prepared thumbnail exceeds YouTube's 2 MB limit: {path}")
+    with Image.open(path) as image:
+        if image.format != "JPEG" or image.size != (1280, 720):
+            raise SafetyError(f"Prepared thumbnail must be a 1280x720 JPEG: {path}")
+    return path
+
+
 def queue_files(cfg: dict[str, Any]) -> list[Path]:
     pending = HERE / cfg["pending_directory"]
     pending.mkdir(parents=True, exist_ok=True)
@@ -200,6 +224,11 @@ def queue_files(cfg: dict[str, Any]) -> list[Path]:
         digest = sha256(path)
         if digest in uploaded_hashes:
             LOGGER.warning("Duplicate content excluded: %s", path.name)
+            continue
+        try:
+            prepared_thumbnail_for(path, cfg)
+        except SafetyError as exc:
+            LOGGER.warning("Upload queue item excluded: %s", exc)
             continue
         eligible.append(path)
     order = cfg.get("upload_queue_order", "oldest_first")
@@ -345,7 +374,70 @@ def is_safely_retryable_upload_error(exc: Exception) -> bool:
     return any(marker in lowered for marker in quota_markers)
 
 
-def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]:
+def set_custom_thumbnail_record(
+    service: Any,
+    video_id: str,
+    thumbnail: Path,
+    title: str | None,
+    source_name: str,
+    cfg: dict[str, Any],
+) -> dict[str, Any]:
+    _, _, _, _, MediaFileUpload = import_google()
+    response = service.thumbnails().set(
+        videoId=video_id,
+        media_body=MediaFileUpload(str(thumbnail), mimetype="image/jpeg", resumable=False),
+    ).execute()
+    if not response.get("items"):
+        raise SafetyError(f"YouTube did not confirm the prepared thumbnail for {video_id}")
+    row = {
+        "video_id": video_id,
+        "title": title,
+        "sha256": sha256(thumbnail),
+        "uploaded_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "channel_id": cfg["channel_id"],
+        "source_name": source_name,
+        "prepared_thumbnail": str(thumbnail),
+    }
+    THUMBNAIL_LEDGER_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with THUMBNAIL_LEDGER_FILE.open("a", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(row, sort_keys=True) + "\n")
+        handle.flush()
+    return row
+
+
+def set_custom_thumbnail(service: Any, video_id: str, video: Path, thumbnail: Path, cfg: dict[str, Any]) -> dict[str, Any]:
+    metadata = load_json(video.with_suffix(".json"), {})
+    return set_custom_thumbnail_record(
+        service,
+        video_id,
+        thumbnail,
+        metadata.get("title"),
+        video.name,
+        cfg,
+    )
+
+
+def retry_pending_thumbnail(service: Any, cfg: dict[str, Any]) -> dict[str, Any] | None:
+    state = load_json(THUMBNAIL_RETRY_FILE, {}) or {}
+    if not state:
+        return None
+    thumbnail = evidence_path(state.get("prepared_thumbnail"), "prepared_thumbnail")
+    with Image.open(thumbnail) as image:
+        if image.format != "JPEG" or image.size != (1280, 720) or thumbnail.stat().st_size > 2_000_000:
+            raise SafetyError(f"Pending thumbnail retry file is invalid: {thumbnail}")
+    result = set_custom_thumbnail_record(
+        service,
+        state["video_id"],
+        thumbnail,
+        state.get("title"),
+        state["source_name"],
+        cfg,
+    )
+    atomic_json(THUMBNAIL_RETRY_FILE, {})
+    return result
+
+
+def upload_one(service: Any, video: Path, cfg: dict[str, Any], prepared_thumbnail: Path | None = None) -> dict[str, Any]:
     _, _, _, _, MediaFileUpload = import_google()
     digest = sha256(video)
     attempts = load_json(ATTEMPTS_FILE, {}) or {}
@@ -403,6 +495,21 @@ def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]
     append_ledger(row)
     attempts[digest] = {**attempts[digest], "status": "succeeded", "video_id": video_id}
     atomic_json(ATTEMPTS_FILE, attempts)
+    if prepared_thumbnail is not None:
+        try:
+            row["custom_thumbnail"] = set_custom_thumbnail(service, video_id, video, prepared_thumbnail, cfg)
+        except Exception as exc:
+            # The video ID has already been recorded. A thumbnail failure must
+            # never lead to a duplicate video upload.
+            row["custom_thumbnail_error"] = classify_http_error(exc)
+            metadata = load_json(video.with_suffix(".json"), {})
+            atomic_json(THUMBNAIL_RETRY_FILE, {
+                "video_id": video_id,
+                "title": metadata.get("title"),
+                "source_name": video.name,
+                "prepared_thumbnail": str(prepared_thumbnail.relative_to(HERE.parent).as_posix()),
+            })
+            LOGGER.exception("Video uploaded but prepared thumbnail failed for %s", video_id)
     archive = HERE / cfg["archive_directory"]
     archive.mkdir(parents=True, exist_ok=True)
     destination = archive / video.name
@@ -478,6 +585,20 @@ def main() -> int:
             raise SafetyError("Real upload blocked: --confirm-upload is required")
         report = report_base(f"{cfg['privacy_status']}-upload")
         report["privacy_status"] = cfg["privacy_status"]
+        service = None
+        pending_thumbnail_retry = load_json(THUMBNAIL_RETRY_FILE, {}) or {}
+        if pending_thumbnail_retry:
+            service, channel = authorized_service(cfg)
+            report["verified_channel"] = channel
+            try:
+                report["thumbnail_retry"] = retry_pending_thumbnail(service, cfg)
+            except Exception as exc:
+                message = classify_http_error(exc)
+                LOGGER.exception("Pending thumbnail retry failed: %s", message)
+                report["failures"].append({"thumbnail_retry": message})
+                report["remaining_upload_count"] = len(candidates)
+                write_report(args.report_json, report)
+                return 1
         if not candidates:
             report["remaining_upload_count"] = 0
             write_report(args.report_json, report)
@@ -496,12 +617,14 @@ def main() -> int:
             raise SafetyError(f"Video validation failed: {video}")
         if not full_decode_ok(video):
             raise SafetyError(f"Full video decode failed: {video}")
-        service, channel = authorized_service(cfg)
-        report["verified_channel"] = channel
+        if service is None:
+            service, channel = authorized_service(cfg)
+            report["verified_channel"] = channel
         report["attempted"] = 1
         report["video_name"] = video.name
         try:
-            result = upload_one(service, video, cfg)
+            prepared_thumbnail = prepared_thumbnail_for(video, cfg)
+            result = upload_one(service, video, cfg, prepared_thumbnail)
             report["successful"] = 1
             report["result"] = result
         except Exception as exc:

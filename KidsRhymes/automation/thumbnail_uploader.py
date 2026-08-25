@@ -57,26 +57,34 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("command", choices=("dry-run", "run"))
     parser.add_argument("--confirm-upload", action="store_true")
+    parser.add_argument("--video-id", action="append", dest="video_ids", help="Limit the operation to one or more exact manifest video IDs")
     args = parser.parse_args()
     doc = load_manifest()
+    items = doc["items"]
+    if args.video_ids:
+        requested = set(args.video_ids)
+        items = [item for item in items if item["video_id"] in requested]
+        found = {item["video_id"] for item in items}
+        if found != requested:
+            raise uploader.SafetyError(f"Requested video IDs are absent from the thumbnail manifest: {sorted(requested - found)}")
     if args.command == "dry-run":
-        print(json.dumps({"action": "thumbnail-dry-run", "count": len(doc["items"]), "video_ids": [item["video_id"] for item in doc["items"]]}, indent=2))
+        print(json.dumps({"action": "thumbnail-dry-run", "count": len(items), "video_ids": [item["video_id"] for item in items]}, indent=2))
         return 0
     if not args.confirm_upload:
         raise uploader.SafetyError("Real thumbnail upload requires --confirm-upload")
     service, channel = uploader.authorized_service(uploader.config())
-    video_ids = [item["video_id"] for item in doc["items"]]
+    video_ids = [item["video_id"] for item in items]
     response = service.videos().list(part="id,snippet", id=",".join(video_ids)).execute()
     actual = {item["id"]: item for item in response.get("items", [])}
     if set(actual) != set(video_ids):
         raise uploader.SafetyError("One or more exact thumbnail target videos are absent")
-    for item in doc["items"]:
+    for item in items:
         video = actual[item["video_id"]]
         if video["snippet"]["channelId"] != doc["channel_id"] or video["snippet"]["title"] != item["expected_title"]:
             raise uploader.SafetyError(f"Thumbnail target identity mismatch: {item['video_id']}")
     _, _, _, _, MediaFileUpload = uploader.import_google()
     results = []
-    for item in doc["items"]:
+    for item in items:
         path = THUMBNAILS / f"{item['video_id']}.jpg"
         result = service.thumbnails().set(
             videoId=item["video_id"],
