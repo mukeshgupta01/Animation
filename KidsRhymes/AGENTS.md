@@ -146,10 +146,10 @@ At the beginning of a continuation, report the verified live state and any diffe
 
 ## Narration-to-visual planning requirement (2026-08-25)
 
-- The user rejected `Tavi the Tiny Train's Shape Delivery Day` because its visuals remained substantially the same for too long and the narration did not feel synchronized with what was shown. The user then explicitly asked not to fix Tavi and to plan and create a different video. Tavi remains unchanged and public as `GUO4zUZDbVo`; do not delete or replace it unless the user later asks.
+- The user rejected `Tavi the Tiny Train's Shape Delivery Day` because its visuals remained substantially the same for too long and the narration did not feel synchronized with what was shown. The user asked not to repair it and later explicitly requested its deletion. Exact Tiny Tales upload `GUO4zUZDbVo` was deleted and confirmed absent on 2026-08-25; preserve the local archive and historical ledger, and never re-upload it.
 - Every newly planned Tiny Tales story must map each voiced beat to a matching visual shot before asset generation. The visual must begin with its narration, remain until that narration finishes, and depict the named subject/action. Prefer a materially new composition every 8 to 14 seconds; do not treat a continuous background with small overlay changes as sufficient variety.
 - `Star Friends' Twinkle Playground` completed as `star-friends-twinkle-playground-01` at 116.4 seconds using `ana-us`. Its 13 voiced beats use 13 unique built-in-generated 3D-style compositions with continuous camera motion; no story artwork is reused. The approved plan is `metadata/star-friends-twinkle-playground-01-plan.json`.
-- Star Friends passed its producer gate, independent full FFmpeg decode, 14-boundary zero-gap audit, explicit narration-to-visual sync audit, general contact-sheet review and every-boundary transition review. Its queue sidecar is released for the normal scheduled public made-for-kids upload.
+- Star Friends passed its producer gate, independent full FFmpeg decode, 14-boundary zero-gap audit, explicit narration-to-visual sync audit, general contact-sheet review and every-boundary transition review. It uploaded publicly as `I7ZMQh9BoHE` with its reviewed custom thumbnail on 2026-08-25.
 
 ## Mandatory prepared thumbnails (2026-08-25)
 
@@ -157,8 +157,8 @@ At the beginning of a continuation, report the verified live state and any diffe
 - For an eligible upload, the uploader verifies the prepared file before sending video data, records the returned video ID duplicate-safely, then immediately calls `thumbnails.set` and records the result separately. A thumbnail failure must never trigger a duplicate video upload.
 - If YouTube accepts a video but the prepared thumbnail call fails, `runtime/thumbnail-retry-state.json` records that exact video ID and thumbnail. Every later real upload cycle retries the thumbnail first and will not send another video until the repair succeeds.
 - Three missed recent uploads received reviewed built-in-image-generation thumbnail artwork and exact locally rendered hooks: Tavi `GUO4zUZDbVo` / `SHAPE DELIVERY!`, farm disappearance `dui6_QeKMFc` / `WHO DISAPPEARED?`, and Bea `3c5rj6In7pQ` / `HEALTHY HABIT QUEST!`. All three were fetched back from YouTube at 1280x720 and pixel-verified with RMS 2.730 to 4.242.
-- YouTube's live API reported Tavi `GUO4zUZDbVo` as processed, made for kids, and currently private at 15:00 Australia/Sydney even though the historical upload ledger says public. This session preserved the live private visibility; do not change it without explicit user direction.
-- Star Friends has a reviewed prepared JPEG at `automation/thumbnails/star-friends-twinkle-playground-01.jpg` with hook `PLAY WITH THE STARS!`. It is the only currently eligible upload; the older backlog is preserved but excluded until relevant thumbnails are prepared and reviewed.
+- YouTube's live API reported Tavi `GUO4zUZDbVo` as private immediately before the user's later explicit deletion request. One exact-ID deletion request was sent on 2026-08-25 and two API checks confirmed the ID absent. Its reviewed JPEG/artwork and archived MP4 remain local for audit, but the deleted ID is no longer a live-thumbnail target.
+- Star Friends used reviewed JPEG `automation/thumbnails/star-friends-twinkle-playground-01.jpg` with hook `PLAY WITH THE STARS!` when it uploaded as `I7ZMQh9BoHE`. The older backlog remains preserved and excluded until each item independently passes the current visual/sync/transition/decode gates and receives a relevant reviewed thumbnail.
 
 ## Permanent visual-quality baseline (2026-08-25)
 
@@ -168,3 +168,10 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Introduce a materially new, narration-relevant composition about every 6 to 10 seconds in energetic sequences, and never exceed 14 seconds without a justified internal visual progression. Continuous camera travel, parallax, character motion, and environmental animation should add life within shots without pose flicker or rapid unrelated switching.
 - Keep thumbnails truthful to the video's actual content while making them colourful, cinematic, emotionally expressive, and immediately readable at small size. Use one strong focal story moment and a short exact hook rendered deterministically; never rely on a plain frame grab or generated lettering.
 - Fail closed before queueing or uploading unless the narration-to-visual plan, asset review, sync audit, full decode, zero-gap transition audit, general contact sheet, transition contact sheet, and prepared-thumbnail review all pass at this quality level.
+
+## Three-hour upload schedule (2026-08-25)
+
+- The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.
+- The hourly retry task uses the 16 intervening `:20` slots and remains retry-only. It must never select a new unrelated queue video unless a duplicate-safe failure for that exact source is armed.
+- Frequency does not bypass the immutable channel lock, public/made-for-kids configuration, duplicate prevention, upload limits, custom-thumbnail requirement, stability window, or any post-cutoff quality evidence gate. An empty or fully held queue must safely no-op.
+- The continuous-generation task remains enabled, but the curated manifest currently has 12 completed items and zero remaining. Add only deliberately varied, fully planned concepts that meet the permanent visual-quality baseline; never restore repetitive fallback generation merely to fill three-hour upload slots.

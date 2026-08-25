@@ -20,14 +20,14 @@ $generationAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-NoP
 $uploadAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$uploadScript`""
 $uploadRetryAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$uploadScript`" -RetryOnly"
 $generationTriggers = @(0, 5, 10, 15, 20 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(5)) })
-$uploadTriggers = @(0, 4, 8, 12, 16, 20 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(20)) })
-$uploadRetryTriggers = @(1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22, 23 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(20)) })
+$uploadTriggers = @(0, 3, 6, 9, 12, 15, 18, 21 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(20)) })
+$uploadRetryTriggers = @(1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20, 22, 23 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(20)) })
 $generationSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -RunOnlyIfNetworkAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 4 -Minutes 50)
 $uploadSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -RunOnlyIfNetworkAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Minutes 45)
 
 Register-ScheduledTask -TaskName $generationTaskName -Action $generationAction -Trigger $generationTriggers -Principal $principal -Settings $generationSettings -Description 'Starts a fresh, non-overlapping Tiny Tales generation process roughly every five hours.' | Out-Null
 try {
-    Register-ScheduledTask -TaskName $uploadTaskName -Action $uploadAction -Trigger $uploadTriggers -Principal $principal -Settings $uploadSettings -Description 'Every four hours, uploads the newest eligible Tiny Tales video with configured visibility, archives it after success, and sends an Outlook report.' | Out-Null
+    Register-ScheduledTask -TaskName $uploadTaskName -Action $uploadAction -Trigger $uploadTriggers -Principal $principal -Settings $uploadSettings -Description 'Every three hours, uploads the newest eligible Tiny Tales video with configured visibility, archives it after success, and sends an Outlook report.' | Out-Null
     Register-ScheduledTask -TaskName $uploadRetryTaskName -Action $uploadRetryAction -Trigger $uploadRetryTriggers -Principal $principal -Settings $uploadSettings -Description 'At intervening hourly slots, retries only the same Tiny Tales upload after a duplicate-safe failure; otherwise exits without uploading.' | Out-Null
 }
 catch {

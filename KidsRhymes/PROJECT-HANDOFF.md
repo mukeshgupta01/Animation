@@ -98,7 +98,7 @@ Exact task names:
 - `Tiny Tales - Continuous Generation`
 - `Tiny Tales - Daily Private Upload` (the historical name says Daily, but it now has five daily triggers)
 
-Generation triggers remain configured at 00:05, 05:05, 10:05, 15:05, and 20:05, but the generation task is currently disabled by user request. Upload checks run every four hours at 00:20, 04:20, 08:20, 12:20, 16:20, and 20:20 using current configured visibility (`public`). Tasks use wake, network-required, start-when-available, interactive-current-user, and ignore-new-instance settings. Named mutexes provide a second overlap guard.
+Generation triggers remain configured at 00:05, 05:05, 10:05, 15:05, and 20:05. Normal upload checks run every three hours at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 using current configured visibility (`public`). The separate retry-only task covers the intervening hourly `:20` slots. Tasks use wake, network-required, start-when-available, interactive-current-user, and ignore-new-instance settings. Named mutexes provide a second overlap guard.
 
 Verified at handoff:
 
@@ -498,6 +498,21 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Future videos must be planned narration beat by narration beat, use premium original 3D-style compositions with expressive consistent characters, dimensional lighting, rich colour and depth, and change to a materially new matching composition about every 6 to 10 seconds in energetic passages. No story shot may exceed 14 seconds without meaningful internal visual progression.
 - Every generated asset must be reviewed and weak, inconsistent, cluttered, misleading, or generic variants rejected. Motion must feel continuous and purposeful; do not recreate Tavi's long static stretches or Brio's rapid pose flicker.
 - Every upload must include a truthful, colourful, cinematic custom thumbnail with a strong focal moment and short deterministic hook. The existing sync, zero-gap, full-decode, contact-sheet, and thumbnail gates must fail closed if the result does not meet this baseline.
+
+## Tavi deletion and Star Friends upload checkpoint (2026-08-25 21:43 Australia/Sydney)
+
+- While the deletion workflow waited for a safe window, the scheduled uploader completed `Star Friends' Twinkle Playground` publicly as `I7ZMQh9BoHE` and immediately applied its reviewed `PLAY WITH THE STARS!` custom thumbnail. The upload report, video ledger, and thumbnail ledger all record the confirmed result.
+- At the user's explicit request, exact Tiny Tales video `GUO4zUZDbVo`, `Tavi the Tiny Train's Shape Delivery Day | Shapes and Sequencing for Kids`, was verified immediately before deletion as private, made for kids, 3:47 long, and owned by immutable channel `UCEn9N-ITQHshjgt6fy7fxnw`. Exactly one `videos.delete` request was sent. The deletion helper confirmed the ID absent, and a second independent exact-ID query using the restored limited credential also confirmed it absent.
+- The temporary `youtube.force-ssl` grant was revoked and not retained. As expected, Google also revoked the normal grant for the same OAuth client; the user completed a new authorization requesting only `youtube.upload` and `youtube.readonly`, and the uploader verified it against Tiny Tales before automation resumed.
+- Preserve `automation/archive/tavi-shape-delivery-day-01.mp4`, its artwork, thumbnail, upload-ledger row, and `runtime/delete-tavi-report.json` for audit. Tavi was removed from `thumbnail-manifest.json` because its YouTube ID is no longer live. Never re-upload the deleted Tavi source.
+
+## Three-hour upload cadence and generation state (2026-08-25)
+
+- The user explicitly requested a normal Tiny Tales upload opportunity every three hours. The regular task now uses 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney. The retry-only task moved to the 16 intervening hourly slots and cannot select unrelated content.
+- All channel-lock, public/made-for-kids, duplicate, retry, stability, full-decode, visual-quality and mandatory custom-thumbnail safeguards remain fail-closed. A scheduled slot uploads nothing when no eligible reviewed video exists or when YouTube rejects the upload limit/quota.
+- Live count-only generation state returned 12 completed curated items, zero remaining and zero failed. The continuous-generation task is enabled but currently no-ops because the manifest is exhausted. New deliberately varied concepts must be planned and produced at the Star Friends quality baseline before the faster upload cadence can be supplied safely.
+- The live task update was verified with eight normal triggers at `00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, 21:20` and 16 retry-only intervening triggers. Both tasks were Ready; the next normal upload check was 2026-08-26 00:20 Australia/Sydney.
+- A post-change uploader dry run attempted no upload and returned `next_video: null`, `remaining_upload_count: 0`. Thirty-five preserved backlog MP4s were excluded because they lack reviewed prepared thumbnails; do not treat them as eligible merely to fill the faster schedule. Publish them only if every current visual, sync, transition, decode and thumbnail gate is genuinely completed.
 
 ## Safe continuation checklist
 
