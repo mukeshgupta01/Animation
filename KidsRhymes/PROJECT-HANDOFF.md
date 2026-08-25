@@ -492,6 +492,13 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - If a video insert succeeds but `thumbnails.set` fails, the uploader writes the exact ID/title/source/thumbnail to ignored `runtime/thumbnail-retry-state.json`. Subsequent real cycles service this repair before any new video and clear it only after YouTube confirms the thumbnail; they never retry the already-recorded video upload.
 - Star Friends is ready with reviewed `automation/thumbnails/star-friends-twinkle-playground-01.jpg` and hook `PLAY WITH THE STARS!`. Its sidecar carries the prepared-thumbnail fields. The current dry run reports Star Friends as the only eligible next upload; after YouTube returns its new ID, the uploader will set the prepared thumbnail immediately and record it separately.
 
+## Visual-quality baseline confirmed by user (2026-08-25)
+
+- The user explicitly asked that all future Tiny Tales visuals maintain the same quality as the recent Star Friends production and colourful custom-thumbnail artwork. This is now a permanent production requirement, not a one-off preference.
+- Future videos must be planned narration beat by narration beat, use premium original 3D-style compositions with expressive consistent characters, dimensional lighting, rich colour and depth, and change to a materially new matching composition about every 6 to 10 seconds in energetic passages. No story shot may exceed 14 seconds without meaningful internal visual progression.
+- Every generated asset must be reviewed and weak, inconsistent, cluttered, misleading, or generic variants rejected. Motion must feel continuous and purposeful; do not recreate Tavi's long static stretches or Brio's rapid pose flicker.
+- Every upload must include a truthful, colourful, cinematic custom thumbnail with a strong focal moment and short deterministic hook. The existing sync, zero-gap, full-decode, contact-sheet, and thumbnail gates must fail closed if the result does not meet this baseline.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.
