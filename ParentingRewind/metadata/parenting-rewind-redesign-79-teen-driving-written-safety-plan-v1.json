@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-79-teen-driving-written-safety-plan",
+  "version": "v1",
+  "title": "Before Your Teen Drives Alone, Put the Safety Plan in Writing | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your new driver reaches for the keys, and fear can come out as one vague instruction: Just be careful. A vague warning does not define what safe driving means, or what happens when a rule is broken. Pause and put the plan in writing together before the first solo trip. Cover seat belts, phones, passengers, night driving, weather, approved routes, who to call, and clear consequences, then match every rule to your local graduated-licensing laws. Keep practicing together, model the same safe habits yourself, and update privileges as experience and responsibility grow. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-26",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Parent-Teen Driving Agreement",
+      "url": "https://www.cdc.gov/teen-drivers/parents-are-the-key/driving-agreement.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-driving-agreement-mother-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-77-to-79.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-79-teen-driving-written-safety-plan\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-79-teen-driving-written-safety-plan-v1.mp4",
+    "duration_seconds": 44.6,
+    "sha256": "91462C29BAF14ED75254322A2CA3AF431B935C1569900DD4B6CFF8FE3100936F"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-79-teen-driving-written-safety-plan-v1.mp4"
+  }
+}

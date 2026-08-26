@@ -1,0 +1,61 @@
+{
+  "status": "ready-for-authorized-upload",
+  "episode_id": "parenting-rewind-redesign-76-look-at-week-teen-overloaded",
+  "version": "v1",
+  "title": "When Your Teen Is Overloaded, Look at the Week Together | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your teen says, I cannot keep up, and the parent alarm may answer with a lecture about effort before you know what is overloaded. Stress can come from school, sport, friendships, sleep, or too many commitments, so do not assume the first explanation is the whole story. Pause, listen without judgment, and try: I am glad you told me; let us look at the week and see what feels impossible right now. Choose one practical adjustment together, protect basic routines like sleep and meals, and agree on when you will check in again. If stress is persistent, disrupts daily life, or raises any safety concern, involve a pediatrician or qualified mental-health professional. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-26",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "The 5Rs: Ways to Support Your Teen's Resilience During Stressful Times",
+      "url": "https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/the-5rs-ways-to-support-your-teens-resilience-during-stressful-times.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-grade-mother-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/storyboard-prompts-74-to-76.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-76-look-at-week-teen-overloaded\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-76-look-at-week-teen-overloaded-v1.mp4",
+    "duration_seconds": 49.5,
+    "sha256": "BA328A4BD1CA16DD4B220FC1BFF5D754FFB2D992954998886399A905A3FF8A92"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-76-look-at-week-teen-overloaded-v1.mp4"
+  }
+}

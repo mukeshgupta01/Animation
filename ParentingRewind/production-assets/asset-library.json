@@ -634,6 +634,82 @@
         {"index": 4, "description": "Mother and teen sit side-by-side in quiet on the balcony.", "useful_for": ["comfortable silence", "sounding board", "reconnection"], "published_uses": 0},
         {"index": 5, "description": "Teen begins speaking while mother listens calmly.", "useful_for": ["active listening", "teen communication", "resolution"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-toddler-biting-father-daughter-storyboard-01",
+      "file": "toddler-biting-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-26", "reference_images": 0},
+      "characters": ["father-mid-30s-indigenous-australian-appearance", "daughter-age-2.5-warm-brown-skin-two-puff-ponytails", "second-toddler-and-caregiver"],
+      "setting": "warm contemporary community early-learning playroom in soft daylight",
+      "topic_tags": ["toddler", "biting", "father caregiver", "impulse control", "immediate safety limit", "gentle hands", "replacement words", "specific praise"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Toddlers struggle over a toy while father notices.", "useful_for": ["toy conflict", "biting setup", "playgroup hook"], "published_uses": 0},
+        {"index": 1, "description": "Safe non-graphic aftermath as another caregiver supports the second toddler.", "useful_for": ["caregiver surprise", "separation", "safety response"], "published_uses": 0},
+        {"index": 2, "description": "Father takes one deliberate breath.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father kneels with calm open hands and a clear limit.", "useful_for": ["calm boundary", "few words", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Father models simple words and gentle hands with a soft toy.", "useful_for": ["replacement behavior", "teaching words", "practice"], "published_uses": 0},
+        {"index": 5, "description": "Daughter offers the toy while father encourages her.", "useful_for": ["repair", "gentle hands", "specific praise"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-bullying-disclosure-mother-son-storyboard-01",
+      "file": "bullying-disclosure-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-26", "reference_images": 0},
+      "characters": ["mother-early-40s-fair-skin-short-auburn-hair", "son-age-10-fair-skin-freckles-sandy-hair"],
+      "setting": "suburban Australian home kitchen after school and school exterior the next morning",
+      "topic_tags": ["school-age", "bullying disclosure", "mother caregiver", "listen first", "document facts", "trusted adult", "school support", "safety"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Son arrives home withdrawn while mother notices.", "useful_for": ["bullying disclosure hook", "after-school withdrawal", "parent noticing"], "published_uses": 0},
+        {"index": 1, "description": "Mother reacts quickly with alarm and a phone while son closes off.", "useful_for": ["parent alarm", "fixing too fast", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Mother sets down the phone and takes a deliberate breath.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother listens with open posture while son explains.", "useful_for": ["listen first", "believing disclosure", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Mother and son privately write down facts together.", "useful_for": ["documenting events", "planning", "child input"], "published_uses": 0},
+        {"index": 5, "description": "Mother and son approach the school together the next morning.", "useful_for": ["school support", "trusted adult", "realistic next step"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-preschool-night-waking-mother-son-storyboard-01",
+      "file": "preschool-night-waking-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-26", "reference_images": 0},
+      "characters": ["mother-late-30s-dark-brown-skin-short-locs", "son-age-4-medium-brown-skin-close-curls"],
+      "setting": "modest contemporary apartment hallway and preschool bedroom at night in navy, mustard and warm timber",
+      "topic_tags": ["preschooler", "night waking", "mother caregiver", "sleep routine", "brief reassurance", "return to bed", "consistent response"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Mother wakes as her son appears quietly at the bedroom doorway with a comfort toy.", "useful_for": ["night-waking hook", "parent fatigue", "child reassurance"], "published_uses": 0},
+        {"index": 1, "description": "Tired mother initially gestures back toward the child's room.", "useful_for": ["uncertain response", "mild tension", "return to bed"], "published_uses": 0},
+        {"index": 2, "description": "Mother takes one deliberate calming breath in the hallway.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother kneels beside her son and points to a simple icon-based bedtime routine card.", "useful_for": ["brief reassurance", "predictable routine", "calm instruction"], "published_uses": 0},
+        {"index": 4, "description": "Child returns to his own bed with the comfort toy while mother straightens the blanket.", "useful_for": ["return to bed", "sleep cue", "connection"], "published_uses": 0},
+        {"index": 5, "description": "Mother leaves the door slightly open as the child settles safely.", "useful_for": ["realistic resolution", "consistent response", "outro"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-teen-driving-agreement-mother-daughter-storyboard-01",
+      "file": "teen-driving-agreement-mother-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-26", "reference_images": 0},
+      "characters": ["mother-early-40s-pacific-islander-appearance", "daughter-age-17-pacific-islander-appearance"],
+      "setting": "suburban home kitchen, garage and driveway with a stationary compact hatchback in late-afternoon light",
+      "topic_tags": ["teenager", "new driver", "mother caregiver", "driving agreement", "seat belts", "phone-free driving", "graduated licensing", "written safety plan"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Teen holds a learner logbook and key beside a stationary car while mother observes.", "useful_for": ["new-driver hook", "growing independence", "parent concern"], "published_uses": 0},
+        {"index": 1, "description": "Mother gives a tense verbal warning while teen becomes defensive.", "useful_for": ["vague warning", "unhelpful reaction", "family tension"], "published_uses": 0},
+        {"index": 2, "description": "Mother takes one deliberate calming breath at the kitchen counter.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother and teen complete a simple icon-based driving agreement together.", "useful_for": ["written agreement", "collaboration", "clear expectations"], "published_uses": 0},
+        {"index": 4, "description": "Mother and teen practice seat-belt and phone-storage setup in the parked car.", "useful_for": ["seat belts", "phone-free driving", "safety practice"], "published_uses": 0},
+        {"index": 5, "description": "Mother and teen review the agreement displayed on the refrigerator.", "useful_for": ["shared plan", "accountability", "realistic resolution"], "published_uses": 0}
+      ]
     }
   ]
 }

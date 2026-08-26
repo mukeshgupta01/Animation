@@ -186,6 +186,10 @@ async def produce(spec: dict) -> dict:
     quality = work / "quality-report.json"
     if output.exists() and quality.exists() and json.loads(quality.read_text(encoding="utf-8")).get("passed"):
         mirrored = mirror_to_business_onedrive(output)
+        if meta_path.exists():
+            metadata = json.loads(meta_path.read_text(encoding="utf-8"))
+            metadata["transfer"] = {"business_onedrive_copy": str(mirrored) if mirrored else None}
+            meta_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         return {"episode": episode_id, "status": "preserved-existing", "business_onedrive_copy": str(mirrored) if mirrored else None}
     work.mkdir(parents=True, exist_ok=True)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -218,7 +222,7 @@ async def produce(spec: dict) -> dict:
         },
         "music": {"type": "original locally synthesized emotional score", "narration_sidechain_ducking": True, "ambient_background_noise": False, "sound_effects": False},
         "captions": {"burned_in": True, "sidecar": str(srt.relative_to(PROJECT))},
-        "published": False, "upload_authorized": False,
+        "published": False, "upload_authorized": spec.get("upload_authorized", False),
     }
     meta_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     render_video(panels, spec["order"], total, audio, ass, output, work)

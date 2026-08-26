@@ -18,6 +18,12 @@ Then inspect live state rather than trusting the handoff blindly:
 - Confirm the immutable Parenting Rewind channel lock before any upload action.
 - Confirm the OAuth client/token still belong to dedicated Google Cloud project `parenting-506406`; never reuse Birthday Songs credentials.
 
+Latest safe production checkpoint (2026-08-26 20:51 Australia/Sydney):
+
+- 81 validated active videos exist through redesigned episode 79, all mirrored to the configured Business OneDrive folder.
+- `COVERED-TOPICS.md` records 105 unique topics (81 active and 24 historical-only); the asset library records 28 storyboard families.
+- Resume after `scripts/produce_redesigned_bundle_77_to_79.py`; do not recreate episodes 77-79 when their existing outputs still pass validation.
+
 Current durable direction:
 
 - Keep the channel adult-facing and use evidence-based general parenting education.

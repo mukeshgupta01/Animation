@@ -11,7 +11,7 @@ $log = Join-Path $automationRoot 'logs\upload-task.log'
 New-Item -ItemType Directory -Force -Path (Split-Path $report), (Split-Path $log) | Out-Null
 
 $createdNew = $false
-$mutex = New-Object System.Threading.Mutex($false, 'Global\ParentingRewindPrivateUploader', [ref]$createdNew)
+$mutex = New-Object System.Threading.Mutex($false, 'Global\ParentingRewindPublicUploader', [ref]$createdNew)
 if (-not $mutex.WaitOne(0)) {
     Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) skipped: another upload cycle is active"
     exit 0
@@ -21,7 +21,7 @@ try {
     Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) upload check started"
     $stdout = Join-Path $env:TEMP "parenting-rewind-upload-$PID.stdout.log"
     $stderr = Join-Path $env:TEMP "parenting-rewind-upload-$PID.stderr.log"
-    $process = Start-Process -FilePath $python -ArgumentList '-B', $uploader, 'run', '--confirm-private-upload' -Wait -PassThru -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr
+    $process = Start-Process -FilePath $python -ArgumentList '-B', $uploader, 'run', '--confirm-public-upload' -Wait -PassThru -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr
     Get-Content -LiteralPath $stdout, $stderr -ErrorAction SilentlyContinue | Add-Content -LiteralPath $log
     Remove-Item -LiteralPath $stdout, $stderr -Force -ErrorAction SilentlyContinue
     $uploadExit = $process.ExitCode

@@ -1,4 +1,4 @@
-"""Unattended, fail-closed private uploader for Parenting Rewind."""
+"""Unattended, fail-closed uploader for Parenting Rewind."""
 
 from __future__ import annotations
 
@@ -82,12 +82,14 @@ def config() -> dict[str, Any]:
     cfg = load_object(CONFIG_PATH)
     if cfg.get("channel_id") != "UCGb-IUQX2KQa_KA24MwE_aQ":
         raise SafetyError("Configured channel ID is not the immutable Parenting Rewind target.")
-    if cfg.get("privacy_status") != "private":
-        raise SafetyError("Uploader must remain private-only.")
+    if cfg.get("privacy_status") != "public":
+        raise SafetyError("Uploader is authorized for public Parenting Rewind uploads only.")
     if cfg.get("made_for_kids") is not False:
         raise SafetyError("Parenting Rewind must be marked not made for kids.")
-    if cfg.get("private_upload_authorized") is not True:
-        raise SafetyError("Private upload authorization is not recorded in config.")
+    if cfg.get("public_upload_authorized") is not True:
+        raise SafetyError("Public upload authorization is not recorded in config.")
+    if int(cfg.get("upload_interval_hours", 0)) != 5:
+        raise SafetyError("Parenting Rewind upload interval must remain five hours.")
     return cfg
 
 
@@ -200,14 +202,9 @@ def parse_utc(value: str) -> datetime:
 def cadence(rows: list[dict[str, Any]], cfg: dict[str, Any]) -> tuple[int, datetime | None]:
     successes = [row for row in active_upload_rows(rows) if row.get("uploaded_utc")]
     count = len(successes)
+    hours = int(cfg["upload_interval_hours"])
     if count == 0:
-        return int(cfg["first_tier_interval_hours"]), None
-    if count < int(cfg["first_tier_count"]):
-        hours = int(cfg["first_tier_interval_hours"])
-    elif count < int(cfg["first_tier_count"]) + int(cfg["second_tier_count"]):
-        hours = int(cfg["second_tier_interval_hours"])
-    else:
-        hours = int(cfg["remaining_interval_hours"])
+        return hours, None
     return hours, parse_utc(successes[-1]["uploaded_utc"]) + timedelta(hours=hours)
 
 
@@ -289,7 +286,7 @@ def upload_metadata(video: Path, cfg: dict[str, Any]) -> tuple[dict[str, Any], P
             "categoryId": str(cfg["category_id"]),
         },
         "status": {
-            "privacyStatus": "private",
+            "privacyStatus": "public",
             "selfDeclaredMadeForKids": False,
         },
     }
@@ -346,7 +343,7 @@ def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]
                 "video_id": existing["video_id"],
                 "youtube_url": f"https://youtu.be/{existing['video_id']}",
                 "title": existing["title"],
-                "privacy_status": "private",
+                "privacy_status": "public",
                 "made_for_kids": False,
                 "reconciled_after_interrupted_attempt": True,
             }
@@ -391,7 +388,7 @@ def upload_one(service: Any, video: Path, cfg: dict[str, Any]) -> dict[str, Any]
         "video_id": video_id,
         "youtube_url": f"https://youtu.be/{video_id}",
         "title": body["snippet"]["title"],
-        "privacy_status": "private",
+        "privacy_status": "public",
         "made_for_kids": False,
     }
     append_ledger(row)
@@ -419,7 +416,7 @@ def finish(value: dict[str, Any], path: Path = LATEST_REPORT) -> None:
 def run(dry_run: bool, confirm_upload: bool) -> int:
     cfg = config()
     rows = ledger_rows()
-    value = report("dry-run" if dry_run else "scheduled-private-upload")
+    value = report("dry-run" if dry_run else "scheduled-public-upload")
     folder = source_directory(cfg)
     value["source_directory"] = str(folder) if folder else None
     value["uploaded_total"] = len(active_upload_rows(rows))
@@ -449,7 +446,7 @@ def run(dry_run: bool, confirm_upload: bool) -> int:
         finish(value)
         return 0
     if not confirm_upload:
-        raise SafetyError("Real upload blocked: --confirm-private-upload is required.")
+        raise SafetyError("Real upload blocked: --confirm-public-upload is required.")
     video = candidates[0]
     if not ffprobe_ok(video):
         raise SafetyError(f"FFprobe validation failed for {video}")
@@ -461,7 +458,7 @@ def run(dry_run: bool, confirm_upload: bool) -> int:
         result = upload_one(service, video, cfg)
         value["successful"] = 1
         value["result"] = result
-        value["status"] = "uploaded-private"
+        value["status"] = "uploaded-public"
         remaining = available_videos(folder, ledger_rows())
         value["remaining_upload_count"] = len(remaining)
         _, following_due = cadence(ledger_rows(), cfg)
@@ -501,7 +498,7 @@ def reupload_missing(source_name: str, confirm_upload: bool) -> int:
     prior_video_id = str(prior["video_id"])
     value["prior_video_id"] = prior_video_id
     if not confirm_upload:
-        raise SafetyError("Recovery upload blocked: --confirm-private-upload is required.")
+        raise SafetyError("Recovery upload blocked: --confirm-public-upload is required.")
     if not ffprobe_ok(video):
         raise SafetyError(f"FFprobe validation failed for {video}")
     service, channel = authorized_service()
@@ -524,7 +521,7 @@ def reupload_missing(source_name: str, confirm_upload: bool) -> int:
         })
         value["successful"] = 1
         value["result"] = result
-        value["status"] = "reuploaded-private-after-remote-missing"
+        value["status"] = "reuploaded-public-after-remote-missing"
         value["uploaded_total"] = len(active_upload_rows(ledger_rows()))
         _, following_due = cadence(ledger_rows(), cfg)
         value["next_due_utc"] = utc_text(following_due) if following_due else None
@@ -543,7 +540,7 @@ def manual_batch(max_uploads: int, confirm_upload: bool) -> int:
         raise SafetyError("Manual batch size must be between 1 and 12.")
     cfg = config()
     rows = ledger_rows()
-    value = report("explicit-manual-private-batch")
+    value = report("explicit-manual-public-batch")
     folder = source_directory(cfg)
     value["source_directory"] = str(folder) if folder else None
     value["uploaded_total_before"] = len(active_upload_rows(rows))
@@ -562,7 +559,7 @@ def manual_batch(max_uploads: int, confirm_upload: bool) -> int:
         if not ffprobe_ok(video):
             raise SafetyError(f"FFprobe validation failed for {video}")
     if not confirm_upload:
-        raise SafetyError("Manual batch blocked: --confirm-private-upload is required.")
+        raise SafetyError("Manual batch blocked: --confirm-public-upload is required.")
     service, channel = authorized_service()
     value["verified_channel"] = channel
     for video in videos:
@@ -574,7 +571,7 @@ def manual_batch(max_uploads: int, confirm_upload: bool) -> int:
             value["results"].append(result)
             email_report = RUNTIME_DIR / f"manual-upload-{result['video_id']}-email-report.json"
             email_value = {
-                "action": "explicit-manual-private-batch",
+                "action": "explicit-manual-public-batch",
                 "started_utc": value["started_utc"],
                 "finished_utc": utc_text(),
                 "attempted": 1,
@@ -585,7 +582,7 @@ def manual_batch(max_uploads: int, confirm_upload: bool) -> int:
             }
             atomic_json(email_report, email_value)
             value["email_report_paths"].append(str(email_report))
-            value["status"] = "manual-private-batch-in-progress"
+            value["status"] = "manual-public-batch-in-progress"
             atomic_json(LATEST_REPORT, {**value, "finished_utc": utc_text()})
         except Exception as exc:
             LOGGER.exception("Manual batch stopped after failure for %s", video.name)
@@ -604,7 +601,7 @@ def manual_batch(max_uploads: int, confirm_upload: bool) -> int:
         email_value["remaining_upload_count"] = len(remaining)
         email_value["next_due_utc"] = value["next_due_utc"]
         atomic_json(email_path, email_value)
-    value["status"] = "uploaded-private-batch"
+    value["status"] = "uploaded-public-batch"
     finish(value)
     return 0
 
@@ -614,20 +611,20 @@ def main() -> int:
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("dry-run")
     run_parser = sub.add_parser("run")
-    run_parser.add_argument("--confirm-private-upload", action="store_true")
+    run_parser.add_argument("--confirm-public-upload", action="store_true")
     recovery_parser = sub.add_parser("reupload-missing")
     recovery_parser.add_argument("--source-name", required=True)
-    recovery_parser.add_argument("--confirm-private-upload", action="store_true")
+    recovery_parser.add_argument("--confirm-public-upload", action="store_true")
     batch_parser = sub.add_parser("manual-batch")
     batch_parser.add_argument("--max-uploads", type=int, required=True)
-    batch_parser.add_argument("--confirm-private-upload", action="store_true")
+    batch_parser.add_argument("--confirm-public-upload", action="store_true")
     args = parser.parse_args()
     try:
         if args.command == "reupload-missing":
-            return reupload_missing(args.source_name, args.confirm_private_upload)
+            return reupload_missing(args.source_name, args.confirm_public_upload)
         if args.command == "manual-batch":
-            return manual_batch(args.max_uploads, args.confirm_private_upload)
-        return run(args.command == "dry-run", getattr(args, "confirm_private_upload", False))
+            return manual_batch(args.max_uploads, args.confirm_public_upload)
+        return run(args.command == "dry-run", getattr(args, "confirm_public_upload", False))
     except Exception as exc:
         LOGGER.exception("Uploader stopped safely")
         value = report(args.command)

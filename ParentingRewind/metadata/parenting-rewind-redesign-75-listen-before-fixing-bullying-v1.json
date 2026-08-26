@@ -1,0 +1,61 @@
+{
+  "status": "ready-for-authorized-upload",
+  "episode_id": "parenting-rewind-redesign-75-listen-before-fixing-bullying",
+  "version": "v1",
+  "title": "When Your Child Reports Bullying, Listen Before You Fix | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your child quietly says the same kids keep targeting him, and your alarm may jump straight to calls, accusations, and a complete rescue plan. Moving too fast can make him feel unheard or afraid that telling you will make school even harder. Pause, thank him for telling you, say it is not his fault, and listen for what happened, where, how often, and who feels safe at school. Ask what would help him feel safer, write down the facts together, and contact the school through its bullying process without asking him to confront the other child. Treat threats, injury, or immediate danger urgently; otherwise keep checking in so support continues after the first report. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-26",
+    "source": {
+      "organization": "U.S. Department of Health and Human Services / StopBullying.gov",
+      "title": "How to Talk About Bullying",
+      "url": "https://www.stopbullying.gov/resources/how-to-talk-about-bullying"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/bullying-disclosure-mother-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-74-to-76.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-75-listen-before-fixing-bullying\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-75-listen-before-fixing-bullying-v1.mp4",
+    "duration_seconds": 47.766666666666666,
+    "sha256": "45C675A4814CC58EC865C9E7CBD34D72B60FFBA15493E2BD4D04A6CA2BB8A25B"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-75-listen-before-fixing-bullying-v1.mp4"
+  }
+}

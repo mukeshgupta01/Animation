@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-78-one-mistake-wants-to-quit",
+  "version": "v1",
+  "title": "When One Mistake Makes Your Child Want to Quit | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "One tear in the artwork, and your child says, I am terrible at this; I quit. Rushing to say it is perfect, or taking over the repair, can miss the chance to show that mistakes belong inside learning. Pause and name what you saw: You worked carefully, and this did not turn out the way you hoped. Then ask one process question: What did you try before it tore, and what might you try next? Offer support without owning the result: a hint, help with one step, or time to try again. Praise the effort and the adjustment, not a flawless product. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-26",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Building Blocks for Healthy Self Esteem in Kids",
+      "url": "https://www.healthychildren.org/English/ages-stages/gradeschool/Pages/Helping-Your-Child-Develop-A-Healthy-Sense-of-Self-Esteem.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/art-studio-father-daughter-storyboard-01.png",
+    "panel_order": [
+      0,
+      2,
+      1,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/storyboard-prompts-77-to-79.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-78-one-mistake-wants-to-quit\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-78-one-mistake-wants-to-quit-v1.mp4",
+    "duration_seconds": 43.266666666666666,
+    "sha256": "6D60DE06A26EE40021EBAB2376B6351110B5AF0EFD6902E6252FCFECA23ACD71"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-78-one-mistake-wants-to-quit-v1.mp4"
+  }
+}

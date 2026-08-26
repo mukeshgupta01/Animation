@@ -1,15 +1,16 @@
 # Covered topics
 
-Updated: 2026-08-24
+Updated: 2026-08-26
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 99 (75 active; 24 historical-only).
+Unique topics: 105 (81 active; 24 historical-only).
 
 ## Topic index
 
 - [active] Agree on a Homework Help Signal — metadata: parenting-rewind-redesign-58-homework-help-signal-v1.json
 - [active] Ask: Listening or Ideas? — metadata: parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.json
+- [active] Before Your Teen Drives Alone, Put the Safety Plan in Writing — metadata: parenting-rewind-redesign-79-teen-driving-written-safety-plan-v1.json
 - [active] Build the Phone Boundary Together — metadata: parenting-rewind-redesign-67-build-phone-boundary-together-v1.json
 - [active] Check What Your Child Heard — metadata: parenting-rewind-redesign-61-check-what-child-heard-v1.json
 - [active] Choose a Homework Time Together — metadata: parenting-rewind-redesign-12-homework-time-together-v1.json
@@ -70,6 +71,7 @@ Unique topics: 99 (75 active; 24 historical-only).
 - [active] Screen Time Is Over: What to Say Without Shouting — metadata: pilot-02-screen-time-v1.json
 - [active] Shift to Quiet Before Bed — metadata: parenting-rewind-redesign-33-quiet-bedtime-routine-v1.json
 - [active] Stay Close When Words Are Too Much — metadata: parenting-rewind-redesign-64-stay-close-fewer-words-v1.json
+- [active] Stop Biting Without Calling Your Toddler Bad — metadata: parenting-rewind-redesign-74-stop-biting-without-shame-v1.json
 - [active] Talk About the Process, Not Their Worth — metadata: parenting-rewind-redesign-70-grade-process-not-worth-v1.json
 - [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
 - [active] The One-More-Story Loop — metadata: parenting-rewind-025-one-more-story-v1.json, parenting-rewind-redesign-04-one-more-story-v1.json
@@ -81,8 +83,12 @@ Unique topics: 99 (75 active; 24 historical-only).
 - [active] Warn Before Homework Starts — metadata: parenting-rewind-redesign-19-homework-transition-warning-v1.json
 - [active] When Bedtime Keeps Moving — metadata: parenting-rewind-redesign-02-bedtime-stalling-v1.json
 - [active] When Both Kids Want the Same Job — metadata: parenting-rewind-redesign-01-kitchen-siblings-v1.json
+- [active] When One Mistake Makes Your Child Want to Quit — metadata: parenting-rewind-redesign-78-one-mistake-wants-to-quit-v1.json
 - [active] When the Checkout Request Becomes a Battle — metadata: parenting-rewind-redesign-07-checkout-choices-v1.json
 - [active] When Your Child Refuses Their Shoes — metadata: pilot-01-shoes-v2-conversational.json, pilot-01-shoes-v3-dynamic-music.json, pilot-01-shoes-v4-audible-dynamic-music.json, pilot-01-shoes.json
+- [active] When Your Child Reports Bullying, Listen Before You Fix — metadata: parenting-rewind-redesign-75-listen-before-fixing-bullying-v1.json
+- [active] When Your Preschooler Wakes at Night, Return to the Same Routine — metadata: parenting-rewind-redesign-77-preschool-night-waking-same-routine-v1.json
+- [active] When Your Teen Is Overloaded, Look at the Week Together — metadata: parenting-rewind-redesign-76-look-at-week-teen-overloaded-v1.json
 - [historical] A Slow Morning Without Shouting — metadata: parenting-rewind-010-slow-morning-v1.json
 - [historical] Dinner Is Not a Bite Negotiation — metadata: parenting-rewind-027-picky-dinner-v1.json
 - [historical] Getting Out of the Bath — metadata: parenting-rewind-023-bath-exit-v1.json

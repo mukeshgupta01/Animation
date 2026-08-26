@@ -4,15 +4,15 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- The active catalog contains 75 validated videos in the configured Business OneDrive transfer/upload folder: two pilots plus redesigned episodes 01-73.
+- The active catalog contains 81 validated videos in the configured Business OneDrive transfer/upload folder: two pilots plus redesigned episodes 01-79.
 - **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
 - **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video
 - Original project storyboards, synthetic narration, burned-in captions and original locally synthesized music
 - The YouTube channel is live and verified through isolated OAuth as **Parenting Rewind** (`UCGb-IUQX2KQa_KA24MwE_aQ`).
-- A fail-closed private uploader is configured under `automation/`; it never reuses another project's credentials and verifies the immutable channel ID before every upload.
-- The user authorized unattended private uploads on 2026-08-23: videos 1-6 one every four hours, videos 7-12 one every six hours, and remaining videos one every eight hours. Successful uploads trigger an Outlook email to `mukeshmelb01@gmail.com`.
-- Windows task `Parenting Rewind - Private Upload Cadence` checks hourly and gates actual uploads by the recorded cadence. It currently waits for the OneDrive source folder to sync locally.
+- A fail-closed public uploader is configured under `automation/`; it never reuses another project's credentials and verifies the immutable channel ID before every upload.
+- PUBLIC UPLOAD OVERRIDE (2026-08-26): the user superseded the earlier private 4/6/8-hour policy. Future videos upload individually as public every five hours, remain marked not made for kids, and successful uploads continue to trigger an Outlook email to `mukeshmelb01@gmail.com`.
+- Windows task `Parenting Rewind - Public Upload Every Five Hours` starts at 2026-08-26 14:20 Australia/Sydney and repeats every five hours. The old `Parenting Rewind - Private Upload Cadence` task is disabled.
 - The repetitive three-storyboard batch was rejected and removed from active output. Its MP4s are preserved under `rejected-repetitive-batch-archive/output` only for recovery.
 - The user explicitly approved `output/parenting-rewind-redesign-01-kitchen-siblings-v1.mp4` on 2026-08-23 and authorized continued local production until asked to stop.
 - Continue only the redesigned workflow; keep the rejected repetitive renderer retired. New work must vary developmental stages, casts and settings, and should maintain the required toddler, school-age and teenage mix.
@@ -64,8 +64,8 @@ The producer preserves an existing completed MP4 rather than overwriting it. Its
 
 ## Image-credit conservation
 
-Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 24 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
+Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 28 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
 
-The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library.
+The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library. The current library contains 28 storyboard families after the successful episode 77 and 79 additions; episode 78 deliberately reuses an existing art-studio family with a new sequence and lesson.
 
 Recurring characters and settings create useful channel continuity, but the complete visual sequence must not be repeated with only superficial text changes. New artwork should be generated only when the existing panels cannot clearly illustrate the new parenting situation.
