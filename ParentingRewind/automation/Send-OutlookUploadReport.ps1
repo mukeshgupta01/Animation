@@ -18,24 +18,27 @@ if ([int]$report.successful -lt 1 -or -not $report.result.video_id) {
 $title = [string]$report.result.title
 $url = [string]$report.result.youtube_url
 $videoName = [string]$report.result.source_name
+$privacy = [string]$report.result.privacy_status
+if ([string]::IsNullOrWhiteSpace($privacy)) { $privacy = 'public' }
+$privacyLabel = (Get-Culture).TextInfo.ToTitleCase($privacy.ToLowerInvariant())
 $remaining = [string]$report.remaining_upload_count
 $nextDue = [string]$report.next_due_utc
-$subject = "Parenting Rewind private upload SUCCESS - $title"
+$subject = "Parenting Rewind $privacy upload SUCCESS - $title"
 $body = @"
-Parenting Rewind private upload report
+Parenting Rewind $privacy upload report
 
 Status: SUCCESS
 Title: $title
 Source video: $videoName
 YouTube URL: $url
-Visibility: Private
+Visibility: $privacyLabel
 Audience: Not made for kids
 Remaining videos in the synced folder: $remaining
 Next upload due (UTC): $nextDue
 Started UTC: $($report.started_utc)
 Finished UTC: $($report.finished_utc)
 
-The OneDrive source was left unchanged. Review the private video in YouTube Studio before making it public.
+The OneDrive source was left unchanged. The uploader verified the immutable Parenting Rewind channel and audience setting before upload.
 "@
 
 $outlook = $null

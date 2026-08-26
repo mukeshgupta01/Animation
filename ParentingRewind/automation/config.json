@@ -14,5 +14,8 @@
     "C:\\Users\\SQLBI-2\\OneDrive\\ParentingRewind-60-Videos-2026-08-23"
   ],
   "minimum_file_age_seconds": 300,
-  "upload_interval_hours": 5
+  "queue_order": "oldest_episode_first",
+  "temporary_interval_hours": 2,
+  "temporary_interval_until_utc": "2026-08-28T10:55:10Z",
+  "steady_interval_hours": 4
 }

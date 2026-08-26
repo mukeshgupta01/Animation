@@ -11,8 +11,8 @@ This is a separate adult-facing parenting education video project. It is not par
 - Original project storyboards, synthetic narration, burned-in captions and original locally synthesized music
 - The YouTube channel is live and verified through isolated OAuth as **Parenting Rewind** (`UCGb-IUQX2KQa_KA24MwE_aQ`).
 - A fail-closed public uploader is configured under `automation/`; it never reuses another project's credentials and verifies the immutable channel ID before every upload.
-- PUBLIC UPLOAD OVERRIDE (2026-08-26): the user superseded the earlier private 4/6/8-hour policy. Future videos upload individually as public every five hours, remain marked not made for kids, and successful uploads continue to trigger an Outlook email to `mukeshmelb01@gmail.com`.
-- Windows task `Parenting Rewind - Public Upload Every Five Hours` starts at 2026-08-26 14:20 Australia/Sydney and repeats every five hours. The old `Parenting Rewind - Private Upload Cadence` task is disabled.
+- PUBLIC UPLOAD OVERRIDE (2026-08-26 20:55): upload the oldest remaining episode first as public every two hours through 2026-08-28 20:55 Australia/Sydney, then every four hours. Videos remain marked not made for kids, and successful uploads continue to trigger an Outlook email to `mukeshmelb01@gmail.com`.
+- Windows task `Parenting Rewind - Public Upload Cadence` checks every two hours; the uploader enforces the temporary two-hour gate and then skips alternating checks to enforce four hours. The old private and superseded five-hour tasks are disabled.
 - The repetitive three-storyboard batch was rejected and removed from active output. Its MP4s are preserved under `rejected-repetitive-batch-archive/output` only for recovery.
 - The user explicitly approved `output/parenting-rewind-redesign-01-kitchen-siblings-v1.mp4` on 2026-08-23 and authorized continued local production until asked to stop.
 - Continue only the redesigned workflow; keep the rejected repetitive renderer retired. New work must vary developmental stages, casts and settings, and should maintain the required toddler, school-age and teenage mix.

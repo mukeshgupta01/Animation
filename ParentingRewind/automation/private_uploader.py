@@ -88,8 +88,13 @@ def config() -> dict[str, Any]:
         raise SafetyError("Parenting Rewind must be marked not made for kids.")
     if cfg.get("public_upload_authorized") is not True:
         raise SafetyError("Public upload authorization is not recorded in config.")
-    if int(cfg.get("upload_interval_hours", 0)) != 5:
-        raise SafetyError("Parenting Rewind upload interval must remain five hours.")
+    if cfg.get("queue_order") != "oldest_episode_first":
+        raise SafetyError("Parenting Rewind must upload the oldest remaining episode first.")
+    if int(cfg.get("temporary_interval_hours", 0)) != 2:
+        raise SafetyError("Temporary Parenting Rewind upload interval must be two hours.")
+    if int(cfg.get("steady_interval_hours", 0)) != 4:
+        raise SafetyError("Steady Parenting Rewind upload interval must be four hours.")
+    parse_utc(str(cfg.get("temporary_interval_until_utc", "")))
     return cfg
 
 
@@ -202,7 +207,8 @@ def parse_utc(value: str) -> datetime:
 def cadence(rows: list[dict[str, Any]], cfg: dict[str, Any]) -> tuple[int, datetime | None]:
     successes = [row for row in active_upload_rows(rows) if row.get("uploaded_utc")]
     count = len(successes)
-    hours = int(cfg["upload_interval_hours"])
+    temporary_until = parse_utc(str(cfg["temporary_interval_until_utc"]))
+    hours = int(cfg["temporary_interval_hours"] if datetime.now(timezone.utc) < temporary_until else cfg["steady_interval_hours"])
     if count == 0:
         return hours, None
     return hours, parse_utc(successes[-1]["uploaded_utc"]) + timedelta(hours=hours)
