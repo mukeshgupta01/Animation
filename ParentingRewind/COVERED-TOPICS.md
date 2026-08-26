@@ -4,12 +4,14 @@ Updated: 2026-08-26
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 105 (81 active; 24 historical-only).
+Unique topics: 108 (84 active; 24 historical-only).
 
 ## Topic index
 
+- [active] After the Game, Listen Before You Start Coaching — metadata: parenting-rewind-redesign-81-after-game-listen-before-coaching-v1.json
 - [active] Agree on a Homework Help Signal — metadata: parenting-rewind-redesign-58-homework-help-signal-v1.json
 - [active] Ask: Listening or Ideas? — metadata: parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.json
+- [active] Before You Post Your Teen's Photo, Ask Them First — metadata: parenting-rewind-redesign-82-ask-teen-before-posting-photo-v1.json
 - [active] Before Your Teen Drives Alone, Put the Safety Plan in Writing — metadata: parenting-rewind-redesign-79-teen-driving-written-safety-plan-v1.json
 - [active] Build the Phone Boundary Together — metadata: parenting-rewind-redesign-67-build-phone-boundary-together-v1.json
 - [active] Check What Your Child Heard — metadata: parenting-rewind-redesign-61-check-what-child-heard-v1.json
@@ -29,6 +31,7 @@ Unique topics: 105 (81 active; 24 historical-only).
 - [active] Leave the Door Open When Your Teen Won't Talk — metadata: parenting-rewind-redesign-73-leave-door-open-to-talk-v1.json
 - [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
 - [active] Let Your Child Correct Your Feeling Guess — metadata: parenting-rewind-redesign-60-let-child-correct-feeling-guess-v1.json
+- [active] Let Your Preschooler Choose a Greeting Without Forcing a Hug — metadata: parenting-rewind-redesign-80-preschool-greeting-without-forced-hug-v1.json
 - [active] Listen Before Repeating the Screen Limit — metadata: parenting-rewind-redesign-10-listen-before-screen-limit-v1.json
 - [active] Listen to One Sibling at a Time — metadata: parenting-rewind-redesign-23-listen-to-each-sibling-v1.json
 - [active] Make It Safer to Tell the Truth — metadata: parenting-rewind-redesign-72-safer-to-tell-truth-v1.json

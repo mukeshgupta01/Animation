@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-80-preschool-greeting-without-forced-hug",
+  "version": "v1",
+  "title": "Let Your Preschooler Choose a Greeting Without Forcing a Hug | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Grandma arrives, your four-year-old stays close, and the familiar pressure appears: Go on, give her a hug. Guilting or pushing a child into affection teaches that politeness matters more than listening to their own body. Pause and take the pressure off: You do not have to hug. You can wave, give a thumbs-up, or choose a high-five. Let the adult accept that choice warmly, without teasing, bargaining, or acting hurt. Body autonomy does not remove manners. It teaches a child to greet people respectfully without making physical affection compulsory. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-26",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Sexual Behaviors in Young Children: What's Normal, What's Not?",
+      "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/Sexual-Behaviors-Young-Children.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/preschool-body-autonomy-greeting-father-daughter-grandmother-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-80-to-82.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-80-preschool-greeting-without-forced-hug\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-80-preschool-greeting-without-forced-hug-v1.mp4",
+    "duration_seconds": 44.13333333333333,
+    "sha256": "A4DD5D768E38CBCA49DEDAB61DDB3F603966D760D026FD52B8FB99E0EFC2E4CC"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-80-preschool-greeting-without-forced-hug-v1.mp4"
+  }
+}

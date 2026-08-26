@@ -4,7 +4,7 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- The active catalog contains 81 validated videos in the configured Business OneDrive transfer/upload folder: two pilots plus redesigned episodes 01-79.
+- The active catalog contains 84 validated videos in the configured Business OneDrive transfer/upload folder: two pilots plus redesigned episodes 01-82.
 - **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
 - **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video
@@ -64,8 +64,8 @@ The producer preserves an existing completed MP4 rather than overwriting it. Its
 
 ## Image-credit conservation
 
-Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 28 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
+Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 30 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
 
-The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library. The current library contains 28 storyboard families after the successful episode 77 and 79 additions; episode 78 deliberately reuses an existing art-studio family with a new sequence and lesson.
+The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library. The current library contains 30 storyboard families after the episode 80 and 82 additions; episode 81 deliberately reuses the soccer family with a new sequence and lesson.
 
 Recurring characters and settings create useful channel continuity, but the complete visual sequence must not be repeated with only superficial text changes. New artwork should be generated only when the existing panels cannot clearly illustrate the new parenting situation.

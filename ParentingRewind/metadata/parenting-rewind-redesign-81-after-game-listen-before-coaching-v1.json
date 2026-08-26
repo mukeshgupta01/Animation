@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-81-after-game-listen-before-coaching",
+  "version": "v1",
+  "title": "After the Game, Listen Before You Start Coaching | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "The game ends, and before your child reaches the car, you are already explaining every missed pass. Even useful advice can feel like pressure when a child is tired, disappointed, or still processing the game. Pause and reconnect first. Try: I liked watching you play. Do you want to talk about the game now, later, or not today? If they want to talk, ask what felt good, what felt hard, and whether they want listening or ideas. Keep their experience bigger than the score. Support, enjoyment, rest, and connection help sport remain something they choose to return to. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-26",
+    "source": {
+      "organization": "American Academy of Pediatrics",
+      "title": "Organized Sports for Children, Preadolescents, and Adolescents",
+      "url": "https://publications.aap.org/pediatrics/article-abstract/143/6/e20190997/37135"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/soccer-father-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      5,
+      3,
+      4
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/storyboard-prompts-80-to-82.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-81-after-game-listen-before-coaching\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-81-after-game-listen-before-coaching-v1.mp4",
+    "duration_seconds": 44.8,
+    "sha256": "BAEAE3FF378D35CC8E6AC25A0B689A0D5F92A5559F08370A331B20A211E80976"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-81-after-game-listen-before-coaching-v1.mp4"
+  }
+}

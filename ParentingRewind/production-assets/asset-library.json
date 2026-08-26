@@ -710,6 +710,42 @@
         {"index": 4, "description": "Mother and teen practice seat-belt and phone-storage setup in the parked car.", "useful_for": ["seat belts", "phone-free driving", "safety practice"], "published_uses": 0},
         {"index": 5, "description": "Mother and teen review the agreement displayed on the refrigerator.", "useful_for": ["shared plan", "accountability", "realistic resolution"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-preschool-body-autonomy-greeting-storyboard-01",
+      "file": "preschool-body-autonomy-greeting-father-daughter-grandmother-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-26", "reference_images": 0},
+      "characters": ["father-late-30s-southeast-asian-appearance", "daughter-age-4-southeast-asian-appearance", "grandmother-early-60s-southeast-asian-appearance"],
+      "setting": "contemporary apartment entryway and living room in warm daylight",
+      "topic_tags": ["preschooler", "body autonomy", "forced affection", "alternative greeting", "father caregiver", "grandmother"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Grandmother arrives while daughter stays close to father.", "useful_for": ["relative greeting", "hesitation"], "published_uses": 0},
+        {"index": 1, "description": "Father initially gestures toward a hug while daughter turns away.", "useful_for": ["social pressure", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Father takes a deliberate calming breath.", "useful_for": ["parent pause", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father offers respectful non-contact greeting choices.", "useful_for": ["body autonomy", "choice"], "published_uses": 0},
+        {"index": 4, "description": "Daughter and grandmother share a cheerful high-five.", "useful_for": ["alternative greeting", "respect"], "published_uses": 0},
+        {"index": 5, "description": "Family connects over a picture book.", "useful_for": ["connection", "resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-teen-sharenting-permission-storyboard-01",
+      "file": "teen-sharenting-permission-mother-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-26", "reference_images": 0},
+      "characters": ["mother-mid-40s-black-short-natural-curls", "daughter-age-16-black-long-braids"],
+      "setting": "school-event foyer and contemporary family dining room",
+      "topic_tags": ["teenager", "sharenting", "photo permission", "digital footprint", "mother caregiver", "privacy"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Mother photographs teen holding a blank achievement certificate.", "useful_for": ["achievement", "photo hook"], "published_uses": 0},
+        {"index": 1, "description": "Mother prepares to share while teen looks uncomfortable.", "useful_for": ["sharenting", "privacy tension"], "published_uses": 0},
+        {"index": 2, "description": "Mother lowers phone and pauses.", "useful_for": ["parent pause", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother asks teen for permission.", "useful_for": ["consent", "communication"], "published_uses": 0},
+        {"index": 4, "description": "Mother and teen review the photo and preference together.", "useful_for": ["collaboration", "privacy choice"], "published_uses": 0},
+        {"index": 5, "description": "Phone rests face-down while mother and teen reconnect.", "useful_for": ["no post", "trust", "resolution"], "published_uses": 0}
+      ]
     }
   ]
 }
