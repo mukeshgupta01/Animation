@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "project_id": "ant-grasshopper-shared-harvest-01",
+  "provider": "Pika browser editor",
+  "purpose": "Second free-plan locomotion test after pilot 01 preserved identity but failed to produce Ant's requested steps.",
+  "source_image": "automation/production-assets/shared-harvest-summer-opening-v1.png",
+  "duration_seconds": 5,
+  "aspect_ratio": "16:9",
+  "generation_prompt": "Locked camera. Preserve the exact scene and all five insects. Only the brown Ant with the yellow scarf moves: holding the seed firmly, she takes one slow clear step forward—front foot lifts, arcs and plants, her weight shifts, then the rear foot follows. End with both feet planted. Others only blink. No morphing, sliding, extra limbs, prop changes, zoom or pan.",
+  "negative_prompt": "If Pika provides a separate negative-prompt box, use: morphing, sliding feet, extra limbs, missing limbs, deformed seed, prop changes, camera movement, new characters, text.",
+  "prompt_length_chars": 365,
+  "acceptance_checks": [
+    "Ant's front foot visibly lifts, travels and plants rather than sliding.",
+    "Ant visibly transfers weight and finishes with both feet planted.",
+    "The seed remains one rigid object held by the same hands throughout.",
+    "All five characters preserve their identities and limb counts.",
+    "The other four characters remain supportively still without morphing.",
+    "The background and camera remain locked.",
+    "The final pose is stable and edit-ready."
+  ],
+  "status": "prepared-awaiting-pika-browser-generation"
+}

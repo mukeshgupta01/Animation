@@ -13,7 +13,8 @@
   "visual_rule": "Every voiced beat owns one unique full-screen composition that visibly performs its season-specific action; the side-scrolling meadow progresses continuously through summer, autumn, winter, and spring without reusing story artwork.",
   "maximum_shot_seconds": 14,
   "animation_pilot": "metadata/ant-grasshopper-pika-pilot-01.json",
-  "animation_pilot_policy": "Approve provider motion and character consistency on the five-second summer opening test before generating the remaining unique story artwork or final animated shots.",
+  "animation_pilot_followup": "metadata/ant-grasshopper-pika-pilot-02.json",
+  "animation_pilot_policy": "Pilot 01 preserved identity and background stability but failed Ant locomotion and carried a free-plan watermark. Approve provider motion only if the simplified single-hero pilot 02 produces a planted weighted step without warping; do not generate remaining story artwork or final animated shots before that review.",
   "text_panel_policy": "No lyric cards during the story; only a short opening title and final end card are allowed.",
   "character_continuity": {
     "ant": "A cheerful small chestnut-brown ant with a round face, three clear body sections, six limbs, large hazel eyes, a sunflower-yellow neckerchief, and a tiny woven seed satchel.",

@@ -27,5 +27,24 @@
     "Motion ends on a stable pose suitable for an edit cut.",
     "No generated text, branding or unexpected new objects appear."
   ],
-  "status": "prepared-awaiting-pika-browser-generation"
+  "result": {
+    "file": "automation/production-work/ant-grasshopper-shared-harvest-01/pika-pilot-01/pika-pilot-01.mp4",
+    "sha256": "ca31dc61b97fcbd361da75bd2d24d2433e54ab175ccb072ab7ef830f28bc7e53",
+    "duration_seconds": 5.033333,
+    "resolution": "784x470",
+    "codec": "H.264",
+    "audio": false,
+    "review_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/pika-pilot-01/review-contact-sheet-full.png",
+    "review": {
+      "character_identity_preserved": true,
+      "seed_preserved": true,
+      "grasshopper_bow_motion_visible": true,
+      "background_stable": true,
+      "ant_completed_requested_steps": false,
+      "stable_edit_ready_final_pose": true,
+      "watermark_present": true,
+      "commercial_final_footage_approved": false
+    }
+  },
+  "status": "reviewed-rejected-ant-locomotion-and-free-watermark"
 }
