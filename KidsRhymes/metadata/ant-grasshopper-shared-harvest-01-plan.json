@@ -31,6 +31,12 @@
         "shared-harvest-summer-opening-v1.png",
         "shared-harvest-summer-opening-midstep-v1.png"
       ],
+      "opening_lines": [
+        "Meet our orchestra! Stay for the final song.",
+        "Carry a little, tap-tap-tap!",
+        "Play a little!"
+      ],
+      "clap_effect": "Three real handclaps follow the opening Play a little line; the voice does not say clap-clap-clap.",
       "narrator_line": "In a bright summer meadow, Ant gathered seeds for the seasons ahead while Grasshopper filled the sunshine with a dancing fiddle tune.",
       "visual": "Ant actively carries a seed toward a woven basket while Grasshopper plays and dances on a clover stage; the three helpers move through the lively summer meadow.",
       "motion": "Side-scrolling meadow track, swaying flowers, marching ant steps, bow movement, and bouncing musical shapes."
@@ -47,7 +53,8 @@
       "id": "03_grasshopper_play_verse",
       "asset": "shared-harvest-grasshopper-play-v1.png",
       "narrator_line": "Grasshopper skipped between daisies, bowed a bright melody, and invited every meadow friend to clap along.",
-      "grasshopper_line": "Play a little, clap-clap-clap!",
+      "grasshopper_line": "Play a little!",
+      "clap_effect": "Three real handclaps follow Grasshopper's line; the voice does not say clap-clap-clap.",
       "visual": "Grasshopper visibly bows his original twig fiddle while hopping between daisies; Ant and helpers clap a repeating pattern without stopping their work.",
       "motion": "Curving camera hop, animated bow strokes, petal pulses, hand claps, and original coloured note shapes."
     },
@@ -99,7 +106,13 @@
       "id": "10_spring_finale",
       "asset": "shared-harvest-spring-finale-v1.png",
       "narrator_line": "Spring returned with shoots and songs. Ant planted, Grasshopper watered, and the whole meadow danced because planning, play, and kindness grew together.",
-      "chorus_line": "Carry a little, play a little, plan together every day!",
+      "chorus_lines": [
+        "Carry a little!",
+        "Play a little!",
+        "Plan together, share the way!",
+        "Work and music make the day!"
+      ],
+      "chorus_audio": "A distinct final musical section with alternating pitched character delivery, three wooden taps, three real handclaps, a brighter lead melody, harmony and four-beat pulse.",
       "visual": "In a transformed spring meadow, Ant plants seeds, Grasshopper waters sprouts, helpers carry tools, and everyone joins an active dance around the growing shared garden.",
       "motion": "Side-scrolling finale, sprouts rising, watering sparkle, circular ensemble dance, flower opening, and celebratory camera lift."
     }

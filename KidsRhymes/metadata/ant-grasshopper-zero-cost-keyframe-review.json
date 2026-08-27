@@ -34,7 +34,7 @@
   },
   "completed_production": {
     "output": "automation/production-output/ant-grasshopper-shared-harvest-01.mp4",
-    "duration_seconds": 114.44,
+    "duration_seconds": 114.748,
     "accepted_scene_assets": [
       "shared-harvest-summer-opening-v1.png",
       "shared-harvest-summer-opening-midstep-v1.png",
@@ -65,7 +65,15 @@
     "action_cut_contact_sheet_reviewed": true,
     "thumbnail_reviewed": true,
     "paid_generation_used": false,
-    "pika_footage_used": false
+    "pika_footage_used": false,
+    "audio_correction": {
+      "spoken_clap_words_removed": true,
+      "real_three-clap_sequences": 3,
+      "final_song_is_distinct": true,
+      "final_song_duration_seconds": 13.554,
+      "waveform_reviewed": true,
+      "spectrum_reviewed": true
+    }
   },
   "status": "final-master-reviewed-and-queued"
 }

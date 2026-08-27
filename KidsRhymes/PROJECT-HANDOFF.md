@@ -596,6 +596,14 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - The master passed 1080p H.264, 48 kHz stereo AAC, full decode, ten narration-contained story shots, no shot over 14 seconds, zero boundary gaps and final-card-only checks. `quality-contact-sheet.png`, `transition-contact-sheet.png`, `action-cut-contact-sheet.png`, the sync audit and the `WORK + MUSIC = MAGIC!` thumbnail were all visually reviewed.
 - Manifest state is 15 complete, zero remaining and zero failed. The safeguarded queue sidecar contains all mandatory true quality/thumbnail flags. The post-release dry run attempted no upload, reported two queued videos and selected Ant/Grasshopper next; normal ten-minute public/made-for-kids scheduling remains responsible for upload.
 
+## Ant/Grasshopper pre-upload audio correction (2026-08-27)
+
+- The user reviewed the first local master before upload and found two valid defects: `clap-clap-clap` was spoken instead of performed, and the promised final song was not musically distinct. The defective pending pair was moved intact to ignored `automation/production-work/ant-grasshopper-shared-harvest-01/correction-hold/`; ledger/live-state checks found no upload.
+- `produce_ant_grasshopper_shared_harvest.py` now synthesizes an original stereo handclap and wooden tap. Three separate `Play a little!` cues each trigger exactly three real claps; no voice says `clap-clap`. The final `Carry a little!` line triggers three wooden taps.
+- The final spring scene is a separate 13.55-second chorus: Ana and Ryan alternate the first two lines, Natasha completes the last two, and a stronger original lead melody, harmony and four-beat pulse distinguishes it from the underscore. The corrected master is 114.75 seconds.
+- Full decode, zero gaps, narration/effect containment, maximum 14-second shots, final-card-only, visual contact sheets, action-cut sheet, final-song waveform and final-song spectrum passed review. The quality report explicitly records three clap cues, no spoken clap words and a distinct finale.
+- Only the corrected reviewed output was returned to `pending-uploads`; the post-correction uploader dry run sent nothing, reported no failures and selected Ant/Grasshopper next under the normal public/made-for-kids safeguards.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

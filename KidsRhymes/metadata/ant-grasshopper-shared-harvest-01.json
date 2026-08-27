@@ -16,7 +16,7 @@
   "privacy": "public",
   "upload_authorized": false,
   "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\ant-grasshopper-shared-harvest-01.mp4",
-  "duration_seconds": 114.44,
+  "duration_seconds": 114.74799999999999,
   "voice_profile": "natasha-au",
   "character_voice_profiles": {
     "ant": "ana-us",
@@ -34,9 +34,15 @@
   "quality_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/quality-contact-sheet.png",
   "transition_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/transition-contact-sheet.png",
   "action_cut_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/action-cut-contact-sheet.png",
+  "final_song_spectrum": "automation/production-work/ant-grasshopper-shared-harvest-01/final-song-spectrum.png",
+  "final_song_waveform": "automation/production-work/ant-grasshopper-shared-harvest-01/final-song-waveform.png",
   "prepared_thumbnail": "automation/thumbnails/ant-grasshopper-shared-harvest-01.jpg",
   "thumbnail_hook": "WORK + MUSIC = MAGIC!",
   "true_rigged_3d_animation": false,
-  "visual_method": "zero-cost generated action keyframes and local code animation",
-  "paid_generation_used": false
+  "visual_method": "zero-cost generated action keyframes and local code animation with real clap cues and distinct final chorus",
+  "paid_generation_used": false,
+  "audio_correction_reviewed": true,
+  "spoken_clap_words_removed": true,
+  "real_clap_sequences": 3,
+  "distinct_final_song": true
 }

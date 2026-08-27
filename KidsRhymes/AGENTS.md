@@ -210,6 +210,13 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The 1920x1080 H.264/48 kHz stereo AAC master passed a full decode, zero-gap timeline audit, narration containment, final-card-only rule and the 14-second story-shot gate. The general, every-boundary and every-action-cut contact sheets plus the truthful `WORK + MUSIC = MAGIC!` thumbnail were visually reviewed and approved.
 - The curated manifest has 15 completed items, zero remaining and zero failed. The generation runner preserved the reviewed master and released it to the safeguarded public/made-for-kids queue. A dry run attempted no upload, reported two eligible queued videos and selected Ant/Grasshopper next; allow the normal ten-minute scheduler and all existing safeguards to handle it.
 
+## Ant/Grasshopper audio correction (2026-08-27)
+
+- Before upload, the user correctly reported that the promised final song was only a spoken refrain and that `clap-clap-clap` was narrated instead of heard as clapping. The exact pending MP4/sidecar were moved into ignored `production-work/.../correction-hold/` before the scheduler could upload them; no defective YouTube copy exists.
+- The corrected 114.75-second master removes every spoken `clap-clap` phrase. The opening, Grasshopper play verse and final chorus now each place three original dry handclap sounds immediately after `Play a little!`; the final chorus also performs three wooden taps after `Carry a little!`.
+- The finale is now a distinct 13.55-second musical section with alternating pitched Ant/Grasshopper/narrator delivery, four original lyric lines, a brighter lead melody, harmony and a stronger four-beat pulse. Its waveform and spectrum were visually reviewed and clearly show separated vocals, tap transients, broad-spectrum clap transients and continuous music.
+- The corrected master passed full decode and all prior visual/timing gates plus explicit checks for three real-clap cues, no spoken clap words and a distinct final song. Only the corrected MP4/sidecar were restored to the queue; a no-upload dry run selected it next with no failures.
+
 ## Three-hour upload schedule (2026-08-25)
 
 - The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.
