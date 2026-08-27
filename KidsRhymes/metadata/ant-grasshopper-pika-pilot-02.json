@@ -18,5 +18,25 @@
     "The background and camera remain locked.",
     "The final pose is stable and edit-ready."
   ],
-  "status": "prepared-awaiting-pika-browser-generation"
+  "result": {
+    "file": "automation/production-work/ant-grasshopper-shared-harvest-01/pika-pilot-02/pika-pilot-02.mp4",
+    "sha256": "5056f204c74ef7680aea45810cfc407dfdd81ad930497c18efca09eb94444a53",
+    "duration_seconds": 5.033333,
+    "resolution": "784x470",
+    "codec": "H.264",
+    "audio": false,
+    "review_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/pika-pilot-02/review-contact-sheet-full.png",
+    "review": {
+      "front_foot_lift_arc_and_plant_visible": true,
+      "weight_transfer_and_planted_finish_visible": true,
+      "seed_preserved": true,
+      "all_character_identities_preserved": true,
+      "supporting_characters_stable": true,
+      "background_and_camera_stable": true,
+      "stable_edit_ready_final_pose": true,
+      "watermark_present": true,
+      "commercial_final_footage_approved": false
+    }
+  },
+  "status": "reviewed-motion-pass-free-export-rejected-for-publication"
 }

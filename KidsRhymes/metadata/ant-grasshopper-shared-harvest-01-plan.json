@@ -14,7 +14,7 @@
   "maximum_shot_seconds": 14,
   "animation_pilot": "metadata/ant-grasshopper-pika-pilot-01.json",
   "animation_pilot_followup": "metadata/ant-grasshopper-pika-pilot-02.json",
-  "animation_pilot_policy": "Pilot 01 preserved identity and background stability but failed Ant locomotion and carried a free-plan watermark. Approve provider motion only if the simplified single-hero pilot 02 produces a planted weighted step without warping; do not generate remaining story artwork or final animated shots before that review.",
+  "animation_pilot_policy": "Pilot 02 proved Pika can produce a planted weighted character step when each shot has one prioritized action. Provider motion is approved for a single-hero-per-shot workflow, but both free exports are watermarked 784x470 tests and are rejected for publication. Do not render, queue or upload final Pika footage until commercial usage rights and unwatermarked suitable-resolution export access are confirmed.",
   "text_panel_policy": "No lyric cards during the story; only a short opening title and final end card are allowed.",
   "character_continuity": {
     "ant": "A cheerful small chestnut-brown ant with a round face, three clear body sections, six limbs, large hazel eyes, a sunflower-yellow neckerchief, and a tiny woven seed satchel.",
