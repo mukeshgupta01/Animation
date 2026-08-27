@@ -169,6 +169,14 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Keep thumbnails truthful to the video's actual content while making them colourful, cinematic, emotionally expressive, and immediately readable at small size. Use one strong focal story moment and a short exact hook rendered deterministically; never rely on a plain frame grab or generated lettering.
 - Fail closed before queueing or uploading unless the narration-to-visual plan, asset review, sync audit, full decode, zero-gap transition audit, general contact sheet, transition contact sheet, and prepared-thumbnail review all pass at this quality level.
 
+## Ten-minute upload cadence and new production set (2026-08-27)
+
+- The user explicitly authorized uploading the reviewed Tiny Tales backlog with a ten-minute gap. `Tiny Tales - Daily Private Upload` now has one repeating `PT10M` trigger and must upload at most one eligible item per run. All public/made-for-kids, immutable-channel, duplicate, unresolved-attempt, stability, full-decode, quality-evidence and custom-thumbnail gates remain mandatory.
+- The normal wrapper already prioritizes an armed duplicate-safe retry for the exact failed source, so `Tiny Tales - Hourly Upload Retry` is preserved but Disabled while the ten-minute cadence is active. Do not enable a competing retry schedule unless the normal cadence is changed again.
+- The reviewed installer uses the same ten-minute trigger for fresh installations. `automation/Set-TinyTalesTenMinuteUploads.ps1` is the fail-closed live migration script; it verifies both existing task actions before changing the trigger or disabling the retry task.
+- A new varied three-video set is recorded in `metadata/new-set-plan-2026-08-27.json`: Cardboard Box Invention Club (`maisie-uk`), Niko's Ninja Soccer Kindness Match (`ryan-uk`), and Ant and Grasshopper's Shared Harvest (`natasha-au`). Preserve this voice and format rotation.
+- Cardboard Box is the active first production. Six accepted built-in-generated scenes and their review record are present, but no renderer or completed MP4 exists yet. Do not add it to the automatic generation manifest or upload queue until all permanent quality gates pass.
+
 ## Three-hour upload schedule (2026-08-25)
 
 - The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.

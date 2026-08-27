@@ -152,6 +152,7 @@ This roadmap records user-requested concepts for future production. Before rende
 ## Additional original concepts to develop
 
 - **The Cardboard Box Invention Club** — children transform one box into a bus, cave, puppet theatre and calm reading nook; imagination story with scene morphs.
+  - Active first item in the 2026-08-27 varied set using `maisie-uk`. Six premium 3D-style scene assets are accepted and visually reviewed; renderer and all completion gates remain pending. Follow it with Niko's sports story (`ryan-uk`) and the Ant/Grasshopper musical fable (`natasha-au`) to preserve structural and voice rotation.
 - **Rubbish-Truck Rhythm Rescue** — sorting recycling, compost and rubbish with a moving neighbourhood route and clear local-rule caveat.
 - **The Lost Sock Laundry Dance** — pattern matching, washing sequence and a comic sock-puppet finale without using the retired matching-card format.
 - **Moonlight Library Delivery** — a wheeled book cart character delivers different story moods through a quiet transforming library.

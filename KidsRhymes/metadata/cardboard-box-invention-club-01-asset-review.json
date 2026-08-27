@@ -1,0 +1,24 @@
+{
+  "id": "cardboard-box-invention-club-01",
+  "reviewed_local": "2026-08-27",
+  "built_in_image_generation_calls": 6,
+  "accepted_assets": [
+    "automation/production-assets/cardboard-box-opening-v1.png",
+    "automation/production-assets/cardboard-box-bus-v1.png",
+    "automation/production-assets/cardboard-box-cave-v1.png",
+    "automation/production-assets/cardboard-box-theatre-v1.png",
+    "automation/production-assets/cardboard-box-reading-nook-v1.png",
+    "automation/production-assets/cardboard-box-finale-v1.png"
+  ],
+  "review_contact_sheet": "automation/production-work/cardboard-box-invention-club-01/asset-contact-sheet.png",
+  "visual_review_passed": true,
+  "review_notes": [
+    "The same three children retain consistent faces, hair, skin tones, clothing, proportions, and premium 3D-style rendering across all six scenes.",
+    "The decorated kraft-cardboard construction remains recognizable across opening, bus, cave, theatre, reading-nook, and finale transformations.",
+    "Every scene gives each child a distinct readable action; none is a static stage introduction.",
+    "The palette progresses from sunny daytime through magical cave and theatre lighting to a calm blue-hour reading scene and colourful finale.",
+    "No generated title text, logos, watermarks, copied franchise characters, sharp tools, real flames, or unsafe activity were observed."
+  ],
+  "queue_status": "not-queued",
+  "next_required_work": "Write the beat-mapped renderer, narration, deterministic music and motion; render and pass every mandatory quality gate before adding the item to the generation manifest or upload queue."
+}

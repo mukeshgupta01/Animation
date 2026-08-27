@@ -1,0 +1,48 @@
+{
+  "created_local": "2026-08-27",
+  "status": "approved-and-started",
+  "principles": [
+    "Each video uses a different format family, visual system, interaction style, and lead voice.",
+    "No animal-shadow or static introduction format.",
+    "Characters visibly act throughout their introductions and story beats.",
+    "Every production must pass the continuous-timeline, final-card, full-decode, transition-review, narration-sync, and custom-thumbnail gates before queueing."
+  ],
+  "items": [
+    {
+      "id": "cardboard-box-invention-club-01",
+      "title": "The Cardboard Box Invention Club | Imagination Story for Kids",
+      "status": "asset-production-complete-renderer-pending",
+      "format_family": "collaborative-imagination-transformation-story",
+      "visual_system": "continuous-craft-clubhouse-with-box-built-scene-morphs",
+      "interaction_style": "pretend-driving-crawling-puppetry-and-calm-page-turning",
+      "voice_profile": "maisie-uk",
+      "story_beats": [
+        "Three children find one large clean cardboard box and agree to build together.",
+        "They draw wheels and transform it into a bus, then steer and signal as the scenery travels.",
+        "They open flaps into a cave, crawl carefully, and discover friendly painted wall shapes.",
+        "They cut a grown-up-prepared window and create a puppet theatre with an original tiny show.",
+        "They add cushions and books, turning the same box into a calm reading nook.",
+        "The finale reveals all four ideas around the decorated box and celebrates shared imagination."
+      ],
+      "asset_review": "metadata/cardboard-box-invention-club-01-asset-review.json"
+    },
+    {
+      "id": "niko-ninja-soccer-kindness-match-01",
+      "title": "Niko's Ninja Soccer Kindness Match | Teamwork Story for Kids",
+      "status": "planned",
+      "format_family": "sports-teamwork-story",
+      "visual_system": "paper-cut-pitch-tracking-with-ball-arcs-and-footwork-trails",
+      "interaction_style": "balance-freezes-passing-cues-and-team-cheer",
+      "voice_profile": "ryan-uk"
+    },
+    {
+      "id": "ant-grasshopper-shared-harvest-01",
+      "title": "The Ant and the Grasshopper's Shared Harvest | Musical Fable for Kids",
+      "status": "planned",
+      "format_family": "season-changing-musical-fable",
+      "visual_system": "side-scrolling-meadow-with-seed-choreography-and-season-transitions",
+      "interaction_style": "work-play-rhythm-patterns-and-kindness-refrain",
+      "voice_profile": "natasha-au"
+    }
+  ]
+}
