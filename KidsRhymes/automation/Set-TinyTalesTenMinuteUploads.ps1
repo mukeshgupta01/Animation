@@ -19,7 +19,9 @@ if ($retryTask.Actions.Count -ne 1 -or $retryTask.Actions[0].Arguments -notlike 
     throw "Refusing to disable an unexpected retry task action: $($retryTask.Actions[0].Arguments)"
 }
 
-$trigger = New-ScheduledTaskTrigger -Once -At ([datetime]::Today) -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 1)
+$anchor = (Get-Date).AddMinutes(1)
+$start = $anchor.Date.AddHours($anchor.Hour).AddMinutes([math]::Ceiling($anchor.Minute / 10.0) * 10)
+$trigger = New-ScheduledTaskTrigger -Once -At $start -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 3650)
 Set-ScheduledTask -TaskName $uploadTaskName -Trigger $trigger | Out-Null
 Enable-ScheduledTask -TaskName $uploadTaskName | Out-Null
 Disable-ScheduledTask -TaskName $uploadRetryTaskName | Out-Null

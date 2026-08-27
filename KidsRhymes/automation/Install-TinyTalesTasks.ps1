@@ -20,8 +20,10 @@ $generationAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-NoP
 $uploadAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$uploadScript`""
 $uploadRetryAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$uploadScript`" -RetryOnly"
 $generationTriggers = @(0, 5, 10, 15, 20 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(5)) })
+$uploadAnchor = (Get-Date).AddMinutes(1)
+$uploadStart = $uploadAnchor.Date.AddHours($uploadAnchor.Hour).AddMinutes([math]::Ceiling($uploadAnchor.Minute / 10.0) * 10)
 $uploadTriggers = @(
-    New-ScheduledTaskTrigger -Once -At ([datetime]::Today) -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 1)
+    New-ScheduledTaskTrigger -Once -At $uploadStart -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 3650)
 )
 $uploadRetryTriggers = @(1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20, 22, 23 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(20)) })
 $generationSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -RunOnlyIfNetworkAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 4 -Minutes 50)
