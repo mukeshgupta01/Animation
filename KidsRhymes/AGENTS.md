@@ -189,7 +189,7 @@ At the beginning of a continuation, report the verified live state and any diffe
 
 - `Niko's Ninja Soccer Kindness Match` completed locally as `niko-ninja-soccer-kindness-match-01` at 104.8 seconds. Ryan (`ryan-uk`) narrates and Ana (`ana-us`) supplies Niko's short dialogue, preserving the required adjacent lead-voice rotation and distinct character voice.
 - Its locked plan is `metadata/niko-ninja-soccer-kindness-match-01-plan.json`; eight voiced beats use eight unique full-screen premium 3D-style pitch compositions showing the exact narrated actions. All dialogue ends inside its matching shot, no story shot exceeds 14 seconds, all nine boundaries are gap-free, and the end card is final only.
-- The producer, eight accepted `niko-soccer-*-v1.png` assets, asset review, full decode, quality report, narration-sync audit, general contact sheet, every-boundary contact sheet, and truthful `PASS, MOVE, SHARE!` thumbnail were visually reviewed and passed. The normal generation runner released the preserved output to the safeguarded public/made-for-kids queue; a dry run attempted no upload and selected Niko from 21 eligible items.
+- The producer, eight accepted `niko-soccer-*-v1.png` assets, asset review, full decode, quality report, narration-sync audit, general contact sheet, every-boundary contact sheet, and truthful `PASS, MOVE, SHARE!` thumbnail were visually reviewed and passed. The normal generation runner released the preserved output to the safeguarded queue, and the 15:30 Sydney scheduled cycle uploaded it publicly/made-for-kids as `nmj4W890T3I` with the reviewed thumbnail. The source was archived only after success.
 
 ## Three-hour upload schedule (2026-08-25)
 
