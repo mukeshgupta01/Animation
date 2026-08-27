@@ -86,6 +86,8 @@ def config() -> dict[str, Any]:
         raise SafetyError("Uploader is authorized for public Parenting Rewind uploads only.")
     if cfg.get("made_for_kids") is not False:
         raise SafetyError("Parenting Rewind must be marked not made for kids.")
+    if cfg.get("contains_synthetic_media") is not True:
+        raise SafetyError("Parenting Rewind must disclose altered or synthetic media.")
     if cfg.get("public_upload_authorized") is not True:
         raise SafetyError("Public upload authorization is not recorded in config.")
     if cfg.get("queue_order") != "oldest_episode_first":
@@ -294,6 +296,7 @@ def upload_metadata(video: Path, cfg: dict[str, Any]) -> tuple[dict[str, Any], P
         "status": {
             "privacyStatus": "public",
             "selfDeclaredMadeForKids": False,
+            "containsSyntheticMedia": True,
         },
     }
     return body, metadata_path, metadata

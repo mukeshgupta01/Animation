@@ -11,6 +11,7 @@ This is a separate adult-facing parenting education video project. It is not par
 - Original project storyboards, synthetic narration, burned-in captions and original locally synthesized music
 - The YouTube channel is live and verified through isolated OAuth as **Parenting Rewind** (`UCGb-IUQX2KQa_KA24MwE_aQ`).
 - A fail-closed public uploader is configured under `automation/`; it never reuses another project's credentials and verifies the immutable channel ID before every upload.
+- YouTube's altered/synthetic-content disclosure is set to **Yes** (`status.containsSyntheticMedia=true`) for every future Parenting Rewind upload. All 19 videos already on the channel were updated and API-confirmed on 2026-08-27.
 - PUBLIC UPLOAD OVERRIDE (2026-08-26 20:55): upload the oldest remaining episode first as public every two hours through 2026-08-28 20:55 Australia/Sydney, then every four hours. Videos remain marked not made for kids, and successful uploads continue to trigger an Outlook email to `mukeshmelb01@gmail.com`.
 - Windows task `Parenting Rewind - Public Upload Cadence` checks every two hours; the uploader enforces the temporary two-hour gate and then skips alternating checks to enforce four hours. The old private and superseded five-hour tasks are disabled.
 - The repetitive three-storyboard batch was rejected and removed from active output. Its MP4s are preserved under `rejected-repetitive-batch-archive/output` only for recovery.

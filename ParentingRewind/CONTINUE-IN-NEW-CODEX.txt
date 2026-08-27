@@ -34,6 +34,7 @@ Current durable direction:
 - Copy each validated redesigned MP4 to the configured business OneDrive folder using the verified non-destructive transfer helper.
 - Keep Git updated after every small checkpoint, staging only reviewed Parenting Rewind source, assets and metadata. Never commit MP4s, tokens, secrets, runtime ledgers, logs, virtual environments or production-work.
 - Uploads are explicitly authorized as public, not made for kids, locked to channel UCGb-IUQX2KQa_KA24MwE_aQ, and must follow the current oldest-first cadence/email rules in PROJECT-HANDOFF.md. Do not restore the superseded private-only rule.
+- Keep YouTube's altered/synthetic-content disclosure set to Yes (`status.containsSyntheticMedia=true`) for every Parenting Rewind upload. All 19 videos already on the channel were updated and API-confirmed on 2026-08-27. Do not apply this Parenting-specific operation to Birthday Songs or Tiny Tales.
 - One private test upload is already confirmed: video EHoQZuN1__Y. Do not upload it again.
 - Before the next eligible upload, fix the documented `Run-UploadCycle.ps1` stderr/progress handling defect and test safely. If transfer completion is uncertain, query the channel read-only and reconcile before retrying.
 

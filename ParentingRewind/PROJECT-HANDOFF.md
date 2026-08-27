@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-08-26 21:10 (Australia/Sydney)
+Last updated: 2026-08-27 14:18 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -13,9 +13,10 @@ This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that projec
 ## Current external state
 
 - On 2026-08-23 the user reported that the Parenting Rewind YouTube channel was created and supplied immutable channel ID `UCGb-IUQX2KQa_KA24MwE_aQ`. OAuth subsequently returned exactly `Parenting Rewind` with that immutable ID.
-- A channel-specific fail-closed OAuth setup now exists under `automation/`. It is configured for Parenting Rewind and the supplied immutable ID, requests upload plus read-only verification scopes, and saves a local token/immutable lock only when `channels.list(mine=true)` returns the exact configured ID. It performs no upload.
+- A channel-specific fail-closed OAuth setup now exists under `automation/`. It is configured for Parenting Rewind and the supplied immutable ID, requests the YouTube management scope needed for uploads and metadata updates, and saves a local token/immutable lock only when `channels.list(mine=true)` returns the exact configured ID. The consent helper itself performs no upload.
 - The isolated Python environment at `automation/.venv` has been created and the Google API dependencies installed. A separate Parenting Rewind Desktop-app client JSON, OAuth token and immutable channel lock exist locally in ignored `automation/secrets/` and `automation/runtime/` paths. The dedicated non-secret Google Cloud project ID is `parenting-506406`; its saved token was checked against that new Desktop client. The previous token and channel lock were backed up locally before reauthorization. Never print, commit or copy credential values.
-- The live OAuth connection was reauthorized and verified successfully on 2026-08-23 against exactly `Parenting Rewind` (`UCGb-IUQX2KQa_KA24MwE_aQ`). Birthday Songs remains on its separate credentials/project.
+- The live OAuth connection was reauthorized again on 2026-08-27 and verified against exactly `Parenting Rewind` (`UCGb-IUQX2KQa_KA24MwE_aQ`) so the channel can manage the altered/synthetic-content disclosure. Birthday Songs remains on its separate credentials/project.
+- AI DISCLOSURE CHECKPOINT (2026-08-27 14:18): the user explicitly required YouTube's altered/synthetic-content answer to be **Yes** for Parenting Rewind. The uploader now sets `status.containsSyntheticMedia=true` on every future upload. All 19 videos already present on the immutable Parenting Rewind channel were updated; each successful `videos.update` response directly confirmed `containsSyntheticMedia=true`, with zero failures. The updater is channel-locked and preserves existing title, description, tags, category, privacy, audience, license and embeddability values. Do not apply this Parenting-specific operation to Birthday Songs or Tiny Tales.
 - SUPERSEDED PRIVATE-UPLOAD AUTHORIZATION (2026-08-23): the earlier private 4/6/8-hour cadence is historical and must not be restored while the 2026-08-26 public override remains current.
 - EXPLICIT PUBLIC-UPLOAD OVERRIDE (2026-08-26 20:55): upload the oldest remaining episode first as `public` every two hours through `2026-08-28T10:55:10Z` (20:55 Australia/Sydney), then every four hours, always `madeForKids=false`, through the isolated fail-closed automation for channel `UCGb-IUQX2KQa_KA24MwE_aQ`. Successful-upload emails to `mukeshmelb01@gmail.com` remain enabled.
 - The fail-closed uploader remains at legacy filename `automation/private_uploader.py`; it now requires the explicit public confirmation flag, validates the immutable channel ID, privacy, audience, FFprobe, expected hashes and duplicate state, derives metadata, and leaves OneDrive sources untouched.

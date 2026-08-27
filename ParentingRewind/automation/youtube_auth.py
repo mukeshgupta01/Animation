@@ -18,8 +18,7 @@ CLIENT_SECRET = HERE / "secrets" / "youtube-client-secret.json"
 TOKEN_FILE = HERE / "runtime" / "youtube-oauth-token.json"
 CHANNEL_LOCK = HERE / "runtime" / "youtube-channel-lock.json"
 SCOPES = [
-    "https://www.googleapis.com/auth/youtube.upload",
-    "https://www.googleapis.com/auth/youtube.readonly",
+    "https://www.googleapis.com/auth/youtube",
 ]
 
 
