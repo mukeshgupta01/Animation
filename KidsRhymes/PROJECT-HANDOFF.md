@@ -640,6 +640,14 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - The normal runner preserved the reviewed output, marked the curated manifest 18 complete / zero remaining / zero failed, and released Rory to the safeguarded queue without a manual upload.
 - Continued production is planned in `metadata/new-video-batch-plan-2026-08-28-c.json`. The lead sequence is Eddie Excavator `ana-us`, Dad's Coming-Home Welcome Rhythm `natasha-au`, then Pick/Wash/Pack Fruit Picnic `maisie-uk`. Eddie is active; its accepted opening anchor is `automation/production-assets/eddie-excavator-rain-garden-opening-v1.png`, showing a working excavator, clear rain-garden goal and children safely behind a fence with a grown-up.
 
+## Recent low-view thumbnail refresh (2026-08-28)
+
+- The user asked to inspect the latest uploaded videos and replace thumbnails when current views were below 20. A live YouTube Data API query of the 12 most recent Tiny Tales uploads found five strictly below the threshold; seven with 28 to 113 views were intentionally unchanged.
+- Replacements uploaded successfully for `tDj0S6Q29GU` / 18 views / `CAN YOU GUESS?`, `TWjnF0jcfYk` / 10 / `FIX THEIR COLOURS!`, `CghTDo-6Sm4` / 9 / `BIRD COLOUR RESCUE!`, `d4TBF0P6DXs` / 9 / `OCEAN ACTION!`, and `Hgr9t3mGQsw` / 13 / `HOP, REACH, STRETCH!`.
+- New artwork was based on each archived video's real species, lesson and action. Notably, Friendly Animal Movement now truthfully shows rabbit hopping, monkey reaching, giraffe stretching and squirrel balancing instead of unrelated animals. Exact hooks were rendered locally rather than generated as text.
+- Immediately before upload, all five remained below 20 views and matched immutable Tiny Tales channel `UCEn9N-ITQHshjgt6fy7fxnw`, exact title, public status and made-for-kids status. YouTube confirmed all five thumbnail sets. Served max-resolution copies were fetched at 1280x720, visually reviewed and matched local JPEGs with RMS 2.925 to 4.618.
+- The complete audit is `metadata/low-view-thumbnail-refresh-2026-08-28.json`; the five final JPEGs and manifest entries are tracked. Do not treat this one-time instruction as authority for an unattended recurring thumbnail-change task.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

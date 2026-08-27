@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "channel_id": "UCEn9N-ITQHshjgt6fy7fxnw",
+  "channel_name": "Tiny Tales",
+  "selection_scope": "Twelve most recent live channel uploads checked through the YouTube Data API.",
+  "view_threshold": 20,
+  "comparison": "strictly less than 20 views",
+  "view_counts_checked_utc": "2026-08-27T23:27:00Z",
+  "untouched_at_or_above_threshold": 7,
+  "replacements": [
+    {
+      "video_id": "tDj0S6Q29GU",
+      "title": "Colourful Bird Animal Clue Detectives | Guessing Adventure for Kids",
+      "views_before_replacement": 18,
+      "hook": "CAN YOU GUESS?",
+      "thumbnail": "automation/thumbnails/tDj0S6Q29GU.jpg",
+      "sha256": "4fdd1fa833a5f3444f31b2d5c72b72a51ea07d46fc8791152d841e22139928fe",
+      "served_rms": 3.912
+    },
+    {
+      "video_id": "TWjnF0jcfYk",
+      "title": "Farm Lost Colour Rescue | Interactive Animal Adventure",
+      "views_before_replacement": 10,
+      "hook": "FIX THEIR COLOURS!",
+      "thumbnail": "automation/thumbnails/TWjnF0jcfYk.jpg",
+      "sha256": "7a931b89928a508e514680f61d37b07155a75d5149acd0a3e80fcbf82ef00b7a",
+      "served_rms": 2.925
+    },
+    {
+      "video_id": "CghTDo-6Sm4",
+      "title": "Colourful Bird Lost Colour Rescue | Interactive Animal Adventure",
+      "views_before_replacement": 9,
+      "hook": "BIRD COLOUR RESCUE!",
+      "thumbnail": "automation/thumbnails/CghTDo-6Sm4.jpg",
+      "sha256": "91a80882ee0b3546b585ee47c8766d259af8b8de65af5cf0f57ffa0f590f3ca8",
+      "served_rms": 4.618
+    },
+    {
+      "video_id": "d4TBF0P6DXs",
+      "title": "Ocean Move Like an Animal | Movement Adventure for Kids",
+      "views_before_replacement": 9,
+      "hook": "OCEAN ACTION!",
+      "thumbnail": "automation/thumbnails/d4TBF0P6DXs.jpg",
+      "sha256": "5a5e865bd00d9a8f8d596050f1b78c672acc8629b0891f67d92731db4b24265c",
+      "served_rms": 3.202
+    },
+    {
+      "video_id": "Hgr9t3mGQsw",
+      "title": "Friendly Animal Move Like an Animal | Movement Adventure for Kids",
+      "views_before_replacement": 13,
+      "hook": "HOP, REACH, STRETCH!",
+      "thumbnail": "automation/thumbnails/Hgr9t3mGQsw.jpg",
+      "sha256": "6da98355963183f5f5b3f2c7a7bd4dee4022c3c80ac135e7dd0203bc6971239c",
+      "served_rms": 3.142
+    }
+  ],
+  "checks": {
+    "exact_channel_verified": true,
+    "exact_video_ids_and_titles_verified": true,
+    "public_and_made_for_kids_verified": true,
+    "all_selected_views_strictly_below_20_immediately_before_upload": true,
+    "final_jpegs_1280x720_and_under_2mb": true,
+    "visual_review_passed": true,
+    "youtube_confirmed_all_thumbnail_sets": true,
+    "served_maxres_copies_fetched_and_compared": true
+  },
+  "served_verification_contact_sheet": "automation/runtime/served-thumbnail-verification-contact-sheet.jpg",
+  "status": "complete"
+}
