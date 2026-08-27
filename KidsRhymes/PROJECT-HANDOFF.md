@@ -611,6 +611,15 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Summer narration uses `natasha-bright`, autumn/rescue uses `natasha-excited`, and snow/welcome uses `natasha-cozy`. Rewritten lines explicitly match the berry roll, daisy hop, basket pass, autumn gust, seed rescue, snowy knock, soup welcome and seed-plan imagery, with sound words, questions and character reactions.
 - The revised master passed full decode, 1080p/stereo AAC, zero gaps, all speech/effects contained by matching visuals, maximum 14-second shots, no forbidden narration, two three-tap cues, three three-clap cues, three expressive delivery profiles, audience questions, action sound words and the distinct final chorus. Visual and audio evidence sheets were re-reviewed.
 
+## Ant/Grasshopper character-led musical story revision (2026-08-27)
+
+- A third pre-upload review found remaining spoken sound imitations and a flat host-style start. The prior audio-v2 pair remains intact in ignored correction hold; it was never uploaded and must not be restored.
+- The replacement is a 128.30-second first-person musical story. Ant opens directly over the image of her carrying a seed, Ant and Grasshopper alternate scene-matched storytelling, and the spoken narrative ends before the distinct spring chorus. There is no generic host introduction, final-song retention instruction or spoken onomatopoeia.
+- Original effects perform what the images show: three claps in the daisy scene, autumn wind during the gust, seed rattle during the final pour, three knocks at the winter door, and wooden beats/real claps in the finale. `narration-visual-sync-audit.json` contains the exact start/end window for every voice and effect.
+- The reviewed 1920x1080 H.264/48 kHz stereo AAC master has SHA-256 `4b5293d6e3500c37511353a3338928fa0456fb0f3476595297f14b2e409609da`. Full decode, zero gaps, ten narration/effect-contained scenes, the 14-second shot ceiling, forbidden-speech checks and distinct-finale checks all passed; general, transition, action-cut, waveform and spectrum evidence were visually reviewed.
+- Only this story-audio-v3 master may return to the public/made-for-kids safeguarded queue. Confirm the copied MP4 hash and the updated sidecar, then perform a dry run that sends no upload. Preserve all held predecessors for audit.
+- Queue release is complete: the pending copy matches the production SHA-256. The post-stability dry run attempted zero uploads, found no failures, and selected Ant/Grasshopper next; the normal scheduler remains responsible for any real upload.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

@@ -224,6 +224,15 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Narration was rewritten to name visible actions and props in each composition. Natasha now uses bright, excited and cozy delivery profiles across summer, autumn rescue and winter; the script includes short action phrases, sound words, direct questions and warmer Ant/Grasshopper dialogue.
 - The final reviewed master is 123.49 seconds. All story shots remain below 14 seconds and the full decode, zero-gap, narration/effect containment, three delivery-profile, audience-question, action-sound-word, musical-tap, real-clap and distinct-final-song gates passed.
 
+## Ant/Grasshopper character-led musical story revision (2026-08-27)
+
+- The user rejected the remaining spoken sound words and flat host-style opening before upload. The prior audio-v2 queue pair remains preserved in ignored correction hold, the pending queue contains no Ant/Grasshopper item during correction, and no version has uploaded.
+- The 128.30-second replacement begins immediately with Ant telling the visible summer story in first person. Ant (`ana-story`/`ana-warm`) and Grasshopper (`ryan-story`) carry the narrative; `Meet our orchestra`, retention prompts, `boing`, `whoosh`, `brrr`, `scoop/pass/pour`, spoken `tap-tap` and spoken `clap-clap` are absent.
+- Original synchronized audio now performs the visible action: three real claps in the daisy scene, an autumn wind gust with flying cloth/seeds, a seed-pour rattle with the harvest pour, three door knocks before `May I come in?`, and wooden beats plus real claps in the distinct final chorus. The story narration stops before that closing song.
+- SHA-256 is `4b5293d6e3500c37511353a3338928fa0456fb0f3476595297f14b2e409609da`. The master passed full decode, 1080p H.264/48 kHz stereo AAC, zero gaps, all speech/effects contained by matching visuals, ten story scenes under 14 seconds, no spoken sound-effect words, and distinct-finale checks. General, transition, action-cut, waveform and spectrum evidence were re-reviewed.
+- Treat this character-led story-audio-v3 master as the only publishable Ant/Grasshopper version. Do not restore either held predecessor. Release it to the safeguarded queue only after the sidecar and queue-copy hash match this master, then run a no-upload dry run.
+- The queue copy and production master match SHA-256 exactly. After the five-minute stability window, the no-upload dry run attempted zero uploads, reported no failures, and selected `ant-grasshopper-shared-harvest-01.mp4` next under public/made-for-kids safeguards.
+
 ## Three-hour upload schedule (2026-08-25)
 
 - The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.

@@ -68,20 +68,27 @@
     "pika_footage_used": false,
     "audio_correction": {
       "spoken_clap_words_removed": true,
-      "real_three-clap_sequences": 3,
+      "real_three-clap_sequences": 2,
       "spoken_tap_words_removed": true,
-      "musical_three-tap_sequences": 2,
+      "musical_three-tap_sequences": 1,
       "stay_for_final_song_narration_removed": true,
+      "host_introduction_removed": true,
+      "spoken_sound_effect_words_removed": true,
+      "story_effects": [
+        "autumn_wind",
+        "seed_pour",
+        "door_knock"
+      ],
       "final_song_is_distinct": true,
       "final_song_duration_seconds": 13.554,
       "waveform_reviewed": true,
       "spectrum_reviewed": true,
-      "expressive_scene_delivery_profiles": [
-        "natasha-bright",
-        "natasha-excited",
-        "natasha-cozy"
+      "character_story_delivery_profiles": [
+        "ana-story",
+        "ana-warm",
+        "ryan-story"
       ]
     }
   },
-  "status": "final-master-reviewed-and-queued"
+  "status": "story-audio-v3-master-reviewed-and-queued"
 }

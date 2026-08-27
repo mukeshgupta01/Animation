@@ -30,9 +30,9 @@ THUMBNAIL = AUTOMATION / "thumbnails" / f"{ITEM_ID}.jpg"
 ART_FPS = 10
 VOICES = {name: select_voice_profile(name) for name in ("natasha-au", "ana-us", "ryan-uk")}
 VOICES.update({
-    "natasha-bright": {**select_voice_profile("natasha-au"), "rate": "+3%", "pitch": "+8Hz"},
-    "natasha-excited": {**select_voice_profile("natasha-au"), "rate": "+7%", "pitch": "+12Hz"},
-    "natasha-cozy": {**select_voice_profile("natasha-au"), "rate": "-8%", "pitch": "-2Hz"},
+    "ana-story": {**select_voice_profile("ana-us"), "rate": "+1%", "pitch": "+8Hz"},
+    "ana-warm": {**select_voice_profile("ana-us"), "rate": "-4%", "pitch": "+4Hz"},
+    "ryan-story": {**select_voice_profile("ryan-uk"), "rate": "-1%", "pitch": "+4Hz"},
     "ana-song": {**select_voice_profile("ana-us"), "rate": "+7%", "pitch": "+18Hz"},
     "ryan-song": {**select_voice_profile("ryan-uk"), "rate": "+6%", "pitch": "+10Hz"},
     "natasha-song": {**select_voice_profile("natasha-au"), "rate": "+5%", "pitch": "+8Hz"},
@@ -43,30 +43,30 @@ VOICES.update({
 # generated action poses, not a simulated camera move over one static drawing.
 SHOTS = [
     ("01_summer_meadow", "shared-harvest-summer-opening-v1.png", "shared-harvest-summer-opening-midstep-v1.png", [
-        ("natasha-au", "Meet our orchestra!"),
-        ("ana-us", "Carry a little!"), ("ryan-uk", "Play a little!")]),
+        ("ana-story", "One summer morning, I carried a seed home while Grasshopper played his fiddle across the clover."),
+        ("ryan-story", "Hello, Ant! May I play beside you?")]),
     ("02_ant_work_verse", "shared-harvest-ant-work-v1.png", "shared-harvest-ant-work-pose-b-v1.png", [
-        ("natasha-bright", "Roll, Ant, roll! That shiny red berry wobbled down the path while every helper hurried food home."),
-        ("ana-us", "One more push!")]),
+        ("ana-story", "The next day, I found a berry almost as big as me. My friends leaned in, and together we rolled it home.")]),
     ("03_grasshopper_play_verse", "shared-harvest-grasshopper-play-v1.png", "shared-harvest-grasshopper-play-pose-b-v1.png", [
-        ("natasha-bright", "Boing! Grasshopper sprang onto a daisy and swept his bow across the fiddle. Can you bounce with the beat?"),
-        ("ryan-uk", "Play a little!")]),
+        ("ryan-story", "While Ant worked, I jumped from daisy to daisy, playing a tune for every helping hand."),
+        ("ana-us", "Your music makes our work feel lighter!")]),
     ("04_shared_rhythm", "shared-harvest-shared-rhythm-v1.png", "shared-harvest-shared-rhythm-pose-b-v1.png", [
-        ("natasha-bright", "Pass it left, pass it right! Each fiddle beat moved the heavy basket closer to Ant.")]),
+        ("ana-story", "The music gave me an idea. Each time Grasshopper played a beat, we passed the heavy basket one friend closer to home.")]),
     ("05_autumn_gust", "shared-harvest-autumn-gust-v1.png", "shared-harvest-autumn-gust-pose-b-v1.png", [
-        ("natasha-excited", "Whoosh! Autumn spun the meadow gold. Ant caught the flying cloth, and Grasshopper caught the tumbling seeds!")]),
+        ("ana-story", "Then an autumn wind swept through the meadow. Our cloth flew up, and seeds scattered everywhere."),
+        ("ryan-story", "I can help!")]),
     ("06_music_harvest_rescue", "shared-harvest-harvest-rescue-v1.png", "shared-harvest-harvest-rescue-pose-b-v1.png", [
-        ("natasha-excited", "Scoop! Pass! Pour! Faster and faster, the rescue rhythm carried every seed safely home."),
-        ("ryan-uk", "Together, we did it!")]),
+        ("ana-story", "Grasshopper set a steady rhythm while we gathered the harvest. Soon, every seed was safe inside the hill."),
+        ("ryan-story", "Together, we saved it!")]),
     ("07_first_snow", "shared-harvest-first-snow-v1.png", None, [
-        ("natasha-cozy", "Brrr! Snow tickled Grasshopper's antennae. He hugged his fiddle, took a brave breath, and knocked."),
+        ("ryan-story", "By the first snow, I had no food left. I held my fiddle close and walked to Ant's warm door."),
         ("ryan-uk", "May I come in?")]),
     ("08_warm_welcome", "shared-harvest-warm-welcome-v1.png", "shared-harvest-warm-welcome-pose-b-v1.png", [
-        ("natasha-cozy", "The door swung wide! Ant shared steaming soup, Beetle brought bread, and every friend squeezed closer to the fire."),
-        ("ana-us", "There is always room for a helper.")]),
+        ("ana-warm", "I remembered Grasshopper saving our harvest, so I opened the door and welcomed him beside the fire."),
+        ("ana-us", "There is always room for a friend who helps.")]),
     ("09_winter_plan_song", "shared-harvest-winter-plan-v1.png", "shared-harvest-winter-plan-pose-b-v1.png", [
-        ("natasha-bright", "Count, point, plan! Ant sorted bright seeds while Grasshopper marked the spring rhythm. Which row should they plant first?"),
-        ("ana-us", "This one!")]),
+        ("ana-warm", "All winter, we planned a garden. I sorted seeds while Grasshopper marked each row."),
+        ("ryan-story", "In spring, we will work and play together.")]),
     ("10_spring_finale", "shared-harvest-spring-finale-v1.png", "shared-harvest-spring-finale-pose-b-v1.png", [
         ("ana-song", "Carry a little!"),
         ("ryan-song", "Play a little!"),
@@ -76,11 +76,11 @@ SHOTS = [
 
 
 def voice_path(shot_index: int, line_index: int, profile: str) -> Path:
-    return WORK / f"voice-v7-{shot_index:02d}-{line_index:02d}-{profile}.mp3"
+    return WORK / f"voice-v10-{shot_index:02d}-{line_index:02d}-{profile}.mp3"
 
 
-def make_percussion() -> tuple[Path, Path]:
-    """Create original, dry hand-clap and wooden-tap one-shots."""
+def make_story_sfx() -> None:
+    """Create original effects so visible actions are heard, never spoken."""
     rate = 48000
     clap_path, tap_path = WORK / "real-hand-clap.wav", WORK / "wooden-tap.wav"
     rng = random.Random(20260828)
@@ -111,7 +111,43 @@ def make_percussion() -> tuple[Path, Path]:
             sample = int(max(-1.0, min(1.0, value)) * 24000)
             frames.extend(struct.pack("<hh", sample, sample))
         out.writeframes(frames)
-    return clap_path, tap_path
+    wind_path = WORK / "autumn-wind.wav"
+    previous = 0.0
+    with wave.open(str(wind_path), "wb") as out:
+        out.setnchannels(2); out.setsampwidth(2); out.setframerate(rate)
+        frames = bytearray()
+        for n in range(round(2.4 * rate)):
+            t = n / rate
+            noise = rng.uniform(-1, 1)
+            previous = 0.965 * previous + 0.035 * noise
+            envelope = math.sin(math.pi * t / 2.4) ** 1.5
+            gust = previous * envelope * (0.28 + 0.12 * math.sin(2 * math.pi * 1.7 * t))
+            left = int(max(-1, min(1, gust)) * 21000)
+            right = int(max(-1, min(1, gust * 0.92)) * 21000)
+            frames.extend(struct.pack("<hh", left, right))
+        out.writeframes(frames)
+    seed_path = WORK / "seed-pour.wav"
+    with wave.open(str(seed_path), "wb") as out:
+        out.setnchannels(2); out.setsampwidth(2); out.setframerate(rate)
+        clicks = [(rng.uniform(0.03, 1.25), rng.uniform(520, 1050), rng.uniform(0.15, 0.35)) for _ in range(34)]
+        frames = bytearray()
+        for n in range(round(1.4 * rate)):
+            t = n / rate
+            value = sum(math.sin(2 * math.pi * freq * (t-onset)) * math.exp(-85 * (t-onset)) * strength
+                        for onset, freq, strength in clicks if 0 <= t-onset < 0.08)
+            sample = int(max(-1, min(1, value)) * 19000)
+            frames.extend(struct.pack("<hh", sample, sample))
+        out.writeframes(frames)
+    knock_path = WORK / "door-knock.wav"
+    with wave.open(str(knock_path), "wb") as out:
+        out.setnchannels(2); out.setsampwidth(2); out.setframerate(rate)
+        frames = bytearray()
+        for n in range(round(0.34 * rate)):
+            t = n / rate
+            value = (math.sin(2*math.pi*145*t) + 0.45*math.sin(2*math.pi*290*t)) * math.exp(-22*t) * 0.42
+            sample = int(max(-1, min(1, value)) * 25000)
+            frames.extend(struct.pack("<hh", sample, sample))
+        out.writeframes(frames)
 
 
 async def make_voices() -> None:
@@ -133,15 +169,33 @@ def build_timeline():
     events = [{"phase": "title", "start": 0.0, "end": 3.8, "asset": SHOTS[0][1], "asset_b": SHOTS[0][2]}]
     voices = []
     clap_path, tap_path = WORK / "real-hand-clap.wav", WORK / "wooden-tap.wav"
+    wind_path, seed_path, knock_path = WORK / "autumn-wind.wav", WORK / "seed-pour.wav", WORK / "door-knock.wav"
     cursor = 3.8
     for si, (sid, asset, asset_b, lines) in enumerate(SHOTS):
         line_rows, effects, local = [], [], (0.95 if sid == "10_spring_finale" else 0.25)
+        if sid == "05_autumn_gust":
+            start = cursor + 0.20
+            voices.append((wind_path, start)); effects.append({"effect": "autumn_wind", "count": 1, "starts": [start]})
         for li, (profile, line) in enumerate(lines):
             path = voice_path(si, li, profile)
             length = duration(path)
             line_rows.append({"profile": profile, "line": line, "start": cursor + local, "end": cursor + local + length})
             voices.append((path, cursor + local))
             local += length
+            if sid == "03_grasshopper_play_verse" and li == 1:
+                starts = [cursor + local + 0.10 + step * 0.43 for step in range(3)]
+                voices.extend((clap_path, start) for start in starts)
+                effects.append({"effect": "real_hand_clap", "count": 3, "starts": starts})
+                local += 1.35
+            elif sid == "06_music_harvest_rescue" and li == 0:
+                start = cursor + local + 0.08
+                voices.append((seed_path, start)); effects.append({"effect": "seed_pour", "count": 1, "starts": [start]})
+                local += 1.55
+            elif sid == "07_first_snow" and li == 0:
+                starts = [cursor + local + 0.08 + step * 0.48 for step in range(3)]
+                voices.extend((knock_path, start) for start in starts)
+                effects.append({"effect": "door_knock", "count": 3, "starts": starts})
+                local += 1.55
             if line == "Play a little!":
                 starts = [cursor + local + 0.12 + step * 0.43 for step in range(3)]
                 voices.extend((clap_path, start) for start in starts)
@@ -311,10 +365,12 @@ def quality(events, total, assets) -> None:
     tap_rows = [fx for row in sync for fx in row["effects"] if fx["effect"] == "wooden_tap"]
     spoken_lines = [line["line"].lower() for row in sync for line in row["lines"]]
     profiles_used = {line["profile"] for row in sync for line in row["lines"]}
-    checks = {"duration": 70 <= float(probe["format"]["duration"]) <= 130, "h264_1080p": video.get("codec_name")=="h264" and video.get("width")==1920 and video.get("height")==1080, "aac_48k_stereo": audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2, "full_decode": decode.returncode==0, "zero_gaps": all(abs(x["gap_seconds"])<1e-6 for x in gaps), "narration_and_effects_contained": all(x["contained"] for x in sync), "max_14_seconds": all(e["end"]-e["start"]<=14 for e in events[1:-1]), "end_card_final_only": events[-1]["phase"]=="end", "ten_story_scenes": len(events[1:-1])==10, "three_character_voices_plus_song_delivery": {"natasha-au","ana-us","ryan-uk","ana-song","ryan-song","natasha-song"}.issubset(VOICES), "expressive_scene_delivery": {"natasha-bright","natasha-excited","natasha-cozy"}.issubset(profiles_used), "audience_questions": sum("?" in line["line"] for row in sync for line in row["lines"]) >= 2, "action_sound_words": all(any(token in line for line in spoken_lines) for token in ("roll, ant, roll", "boing", "whoosh", "scoop! pass! pour")), "three_real_clap_cues": len(clap_rows)==3 and all(row["count"]==3 for row in clap_rows), "two_musical_tap_cues": len(tap_rows)==2 and all(row["count"]==3 for row in tap_rows), "no_spoken_clap_clap": all("clap-clap" not in line and "clap clap" not in line for line in spoken_lines), "no_spoken_tap_tap": all("tap-tap" not in line and "tap tap" not in line for line in spoken_lines), "no_stay_for_final_song_narration": all("stay for the final song" not in line for line in spoken_lines), "distinct_final_song": finale["final_song"] and len(finale["lines"])==4 and any(fx["effect"]=="real_hand_clap" for fx in finale["effects"]), "no_paid_provider_footage": True, "rejected_duplicate_snow_pose_excluded": "shared-harvest-first-snow-pose-b-v1.png" not in assets, "thumbnail": THUMBNAIL.is_file() and THUMBNAIL.stat().st_size < 2_000_000}
+    forbidden = ("clap clap", "clap-clap", "tap tap", "tap-tap", "boing", "whoosh", "scoop!", "pass!", "pour!", "brrr")
+    effects_used = {fx["effect"] for row in sync for fx in row["effects"]}
+    checks = {"duration": 70 <= float(probe["format"]["duration"]) <= 130, "h264_1080p": video.get("codec_name")=="h264" and video.get("width")==1920 and video.get("height")==1080, "aac_48k_stereo": audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2, "full_decode": decode.returncode==0, "zero_gaps": all(abs(x["gap_seconds"])<1e-6 for x in gaps), "narration_and_effects_contained": all(x["contained"] for x in sync), "max_14_seconds": all(e["end"]-e["start"]<=14 for e in events[1:-1]), "end_card_final_only": events[-1]["phase"]=="end", "ten_story_scenes": len(events[1:-1])==10, "character_led_story_delivery": {"ana-story","ana-warm","ryan-story"}.issubset(profiles_used), "first_person_visual_story": spoken_lines[0].startswith("one summer morning") and any("autumn wind" in line for line in spoken_lines) and any("first snow" in line for line in spoken_lines), "no_host_intro_or_retention_line": all("meet our orchestra" not in line and "stay for" not in line for line in spoken_lines), "no_spoken_sound_effect_words": all(not any(token in line for token in forbidden) for line in spoken_lines), "real_story_effects": {"autumn_wind","seed_pour","door_knock","real_hand_clap","wooden_tap"}.issubset(effects_used), "two_real_clap_cues": len(clap_rows)==2 and all(row["count"]==3 for row in clap_rows), "one_musical_tap_cue": len(tap_rows)==1 and tap_rows[0]["count"]==3, "distinct_final_song": finale["final_song"] and len(finale["lines"])==4 and any(fx["effect"]=="real_hand_clap" for fx in finale["effects"]), "no_paid_provider_footage": True, "rejected_duplicate_snow_pose_excluded": "shared-harvest-first-snow-pose-b-v1.png" not in assets, "thumbnail": THUMBNAIL.is_file() and THUMBNAIL.stat().st_size < 2_000_000}
     (WORK / "timeline-gap-audit.json").write_text(json.dumps(gaps, indent=2)+"\n", encoding="utf-8")
     (WORK / "narration-visual-sync-audit.json").write_text(json.dumps(sync, indent=2)+"\n", encoding="utf-8")
-    report = {"output": str(OUTPUT), "duration_seconds": float(probe["format"]["duration"]), "visual_method": "generated A/B action keyframes with eased camera travel, seasonal overlays and beat-synchronized pose changes", "audio_method": "spoken tap/clap syllables are replaced by two original three-tap musical cues and three original three-clap cues; the finale is a distinct four-line character chorus with lead melody, harmony and four-beat pulse", "final_song_spectrum": f"automation/production-work/{ITEM_ID}/final-song-spectrum.png", "final_song_waveform": f"automation/production-work/{ITEM_ID}/final-song-waveform.png", "true_rigged_3d_animation": False, "paid_generation_used": False, "checks": checks, "passed": all(checks.values())}
+    report = {"output": str(OUTPUT), "duration_seconds": float(probe["format"]["duration"]), "visual_method": "generated A/B action keyframes with eased camera travel, seasonal overlays and beat-synchronized pose changes", "audio_method": "Ant and Grasshopper tell the scene-matched story in character over continuous original music; visible claps, wind, pouring seeds, knocks and finale taps use original effects instead of spoken sound words; the ending is a distinct four-line chorus", "final_song_spectrum": f"automation/production-work/{ITEM_ID}/final-song-spectrum.png", "final_song_waveform": f"automation/production-work/{ITEM_ID}/final-song-waveform.png", "true_rigged_3d_animation": False, "paid_generation_used": False, "checks": checks, "passed": all(checks.values())}
     (WORK / "quality-report.json").write_text(json.dumps(report, indent=2)+"\n", encoding="utf-8")
     general = Image.new("RGB", (960, math.ceil(len(events)/4)*135), "white")
     for i,e in enumerate(events): general.paste(frame_for(e, e["start"]+(e["end"]-e["start"])*0.65, assets).resize((240,135), Image.Resampling.LANCZOS), ((i%4)*240,(i//4)*135))
@@ -340,13 +396,13 @@ def quality(events, total, assets) -> None:
 
 
 def write_metadata(total: float) -> None:
-    doc = {"id": ITEM_ID, "title": "The Ant and Grasshopper's Shared Harvest | Musical Story for Kids", "description": "Meet Ant, Grasshopper, and their meadow orchestra in an original seasonal story about work, music, planning, kindness, and sharing. Sing the new carry-and-play refrain while the friends roll a berry, rescue the autumn harvest, welcome a friend in winter, and grow a shared spring garden.\n\nAn original Tiny Tales musical fable for children ages 3 to 7.", "tags": ["ant and grasshopper story", "musical story for kids", "kindness story", "teamwork for kids", "animal song", "preschool story", "Tiny Tales"], "category_id": "27", "made_for_kids": True, "privacy": "public", "upload_authorized": False, "output": str(OUTPUT), "duration_seconds": total, "voice_profile": "natasha-au", "character_voice_profiles": {"ant":"ana-us","grasshopper":"ryan-uk"}, "narration_delivery_profiles": {"summer":"natasha-bright","autumn_rescue":"natasha-excited","winter":"natasha-cozy"}, "quality_gate_passed": True, "full_decode_passed": True, "transition_audit_passed": True, "transition_contact_sheet_reviewed": True, "thumbnail_reviewed": True, "action_cut_contact_sheet_reviewed": True, "quality_report": f"automation/production-work/{ITEM_ID}/quality-report.json", "transition_audit": f"automation/production-work/{ITEM_ID}/timeline-gap-audit.json", "narration_visual_sync_audit": f"automation/production-work/{ITEM_ID}/narration-visual-sync-audit.json", "quality_contact_sheet": f"automation/production-work/{ITEM_ID}/quality-contact-sheet.png", "transition_contact_sheet": f"automation/production-work/{ITEM_ID}/transition-contact-sheet.png", "action_cut_contact_sheet": f"automation/production-work/{ITEM_ID}/action-cut-contact-sheet.png", "final_song_spectrum": f"automation/production-work/{ITEM_ID}/final-song-spectrum.png", "final_song_waveform": f"automation/production-work/{ITEM_ID}/final-song-waveform.png", "prepared_thumbnail": f"automation/thumbnails/{ITEM_ID}.jpg", "thumbnail_hook": "WORK + MUSIC = MAGIC!", "true_rigged_3d_animation": False, "visual_method": "zero-cost generated action keyframes and local code animation with expressive scene-matched delivery, musical taps, real claps and a distinct final chorus", "paid_generation_used": False, "audio_correction_reviewed": True, "spoken_clap_words_removed": True, "spoken_tap_words_removed": True, "stay_for_final_song_narration_removed": True, "real_clap_sequences": 3, "musical_tap_sequences": 2, "distinct_final_song": True}
+    doc = {"id": ITEM_ID, "title": "The Ant and Grasshopper's Shared Harvest | Musical Story for Kids", "description": "Ant and Grasshopper tell an original musical story about work, music, planning, kindness, and sharing. Follow the friends as they roll a berry, rescue the autumn harvest, share warmth in winter, and grow a spring garden together.\n\nAn original Tiny Tales musical fable for children ages 3 to 7.", "tags": ["ant and grasshopper story", "musical story for kids", "kindness story", "teamwork for kids", "animal song", "preschool story", "Tiny Tales"], "category_id": "27", "made_for_kids": True, "privacy": "public", "upload_authorized": False, "output": str(OUTPUT), "duration_seconds": total, "voice_profile": "ana-us", "character_voice_profiles": {"ant":"ana-us","grasshopper":"ryan-uk"}, "narration_delivery_profiles": {"ant_story":"ana-story","ant_winter":"ana-warm","grasshopper_story":"ryan-story"}, "quality_gate_passed": True, "full_decode_passed": True, "transition_audit_passed": True, "transition_contact_sheet_reviewed": True, "thumbnail_reviewed": True, "action_cut_contact_sheet_reviewed": True, "quality_report": f"automation/production-work/{ITEM_ID}/quality-report.json", "transition_audit": f"automation/production-work/{ITEM_ID}/timeline-gap-audit.json", "narration_visual_sync_audit": f"automation/production-work/{ITEM_ID}/narration-visual-sync-audit.json", "quality_contact_sheet": f"automation/production-work/{ITEM_ID}/quality-contact-sheet.png", "transition_contact_sheet": f"automation/production-work/{ITEM_ID}/transition-contact-sheet.png", "action_cut_contact_sheet": f"automation/production-work/{ITEM_ID}/action-cut-contact-sheet.png", "final_song_spectrum": f"automation/production-work/{ITEM_ID}/final-song-spectrum.png", "final_song_waveform": f"automation/production-work/{ITEM_ID}/final-song-waveform.png", "prepared_thumbnail": f"automation/thumbnails/{ITEM_ID}.jpg", "thumbnail_hook": "WORK + MUSIC = MAGIC!", "true_rigged_3d_animation": False, "visual_method": "zero-cost generated action keyframes and local code animation with first-person character storytelling, scene-matched sound effects, real claps and a distinct final chorus", "paid_generation_used": False, "audio_correction_reviewed": True, "spoken_sound_effect_words_removed": True, "host_intro_removed": True, "stay_for_final_song_narration_removed": True, "real_clap_sequences": 2, "musical_tap_sequences": 1, "story_effects": ["autumn_wind","seed_pour","door_knock"], "distinct_final_song": True}
     META.write_text(json.dumps(doc, indent=2)+"\n", encoding="utf-8")
 
 
 def main() -> None:
     WORK.mkdir(parents=True, exist_ok=True); OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    make_percussion(); asyncio.run(make_voices()); events, voices, total = build_timeline(); assets = load_assets(); make_thumbnail()
+    make_story_sfx(); asyncio.run(make_voices()); events, voices, total = build_timeline(); assets = load_assets(); make_thumbnail()
     render_engine.WORK=WORK; render_engine.OUTPUT=OUTPUT; render_engine.frame_for=frame_for; render_engine.make_music=make_music
     render_engine.render(events, voices, total, assets); quality(events,total,assets); write_metadata(total)
     print(json.dumps({"output":str(OUTPUT),"duration_seconds":total,"events":len(events)}, indent=2))
