@@ -185,6 +185,12 @@ At the beginning of a continuation, report the verified live state and any diffe
 - `The Cardboard Box Invention Club` completed at 89.2 seconds from the exact plan `metadata/cardboard-box-invention-club-01-plan.json`. Its six voiced beats use six unique full-screen premium 3D-style compositions; each narration starts with its matching artwork and finishes inside it, all story shots are at most 13.98 seconds, all seven boundaries have zero gaps, and the final card appears only in the final event.
 - The producer is `automation/production/produce_cardboard_box_invention_club.py`. It adds continuous camera travel, scene-specific action overlays and original deterministic music without reusing story artwork. The full 1080p H.264/stereo AAC decode, quality gate, narration-sync audit, general contact sheet, every-boundary contact sheet and `ONE BOX, FOUR WORLDS!` custom thumbnail were visually reviewed and passed before release to the manifest.
 
+## Niko soccer completion checkpoint (2026-08-27)
+
+- `Niko's Ninja Soccer Kindness Match` completed locally as `niko-ninja-soccer-kindness-match-01` at 104.8 seconds. Ryan (`ryan-uk`) narrates and Ana (`ana-us`) supplies Niko's short dialogue, preserving the required adjacent lead-voice rotation and distinct character voice.
+- Its locked plan is `metadata/niko-ninja-soccer-kindness-match-01-plan.json`; eight voiced beats use eight unique full-screen premium 3D-style pitch compositions showing the exact narrated actions. All dialogue ends inside its matching shot, no story shot exceeds 14 seconds, all nine boundaries are gap-free, and the end card is final only.
+- The producer, eight accepted `niko-soccer-*-v1.png` assets, asset review, full decode, quality report, narration-sync audit, general contact sheet, every-boundary contact sheet, and truthful `PASS, MOVE, SHARE!` thumbnail were visually reviewed and passed. The normal generation runner released the preserved output to the safeguarded public/made-for-kids queue; a dry run attempted no upload and selected Niko from 21 eligible items.
+
 ## Three-hour upload schedule (2026-08-25)
 
 - The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.

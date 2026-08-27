@@ -555,6 +555,13 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - The 1920x1080 H.264/48 kHz stereo AAC output passed the producer gate and a second independent full FFmpeg decode. The general contact sheet, every-boundary transition sheet, narration-sync audit and truthful 1280x720 `ONE BOX, FOUR WORLDS!` thumbnail were visually reviewed and approved. Queue sidecar evidence contains all mandatory true flags and valid artifact paths.
 - The curated manifest now has 13 completed items, zero remaining and zero failed. Generation runner released the stable output to the public/made-for-kids queue without rendering again. The immediate dry run performed no upload; Cardboard Box was correctly excluded by the five-minute stability guard while 26 existing reviewed items remained eligible.
 
+## Niko soccer local completion (2026-08-27)
+
+- `Niko's Ninja Soccer Kindness Match | Teamwork Story for Kids` completed locally as `niko-ninja-soccer-kindness-match-01` at 104.8 seconds. The exact eight-shot plan is `metadata/niko-ninja-soccer-kindness-match-01-plan.json`; the producer is `automation/production/produce_niko_ninja_soccer.py`.
+- Eight unique built-in-generated premium 3D-style compositions directly show Niko welcoming Lila, balance focus, cone dribbling, a gentle pass, Lila's first touch, triangle passing, kind recovery after a missed shot, and the shared goal. The tracked asset review is `metadata/niko-ninja-soccer-kindness-match-01-asset-review.json`.
+- Ryan (`ryan-uk`) is the narrator and Ana (`ana-us`) gives Niko a genuinely distinct dialogue voice. All spoken segments begin and finish inside their matching artwork; every story shot is at most 13.75 seconds. The continuous timeline, final-card-only rule, H.264/1080p/stereo AAC checks, two full decodes, general contact sheet, every-boundary contact sheet, sync audit, and 1280x720 `PASS, MOVE, SHARE!` custom thumbnail passed review.
+- The normal generation runner preserved the already-rendered output, marked all 14 curated items complete with zero failures, and released Niko to the safeguarded public/made-for-kids queue. The post-release dry run attempted no upload, reported 21 eligible items, and selected `niko-ninja-soccer-kindness-match-01.mp4` next. The next planned production lead remains Ant/Grasshopper with `natasha-au`.
+
 ## Daily 06:00 upload-summary email (2026-08-27)
 
 - The user explicitly stopped per-upload emails and requested one email at 06:00 Australia/Sydney reporting how many videos uploaded during the previous day. `automation/Run-UploadCycle.ps1` no longer invokes any mailer; upload success, retry state and task exit status remain independent from email delivery.

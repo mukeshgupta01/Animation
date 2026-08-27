@@ -1,0 +1,28 @@
+{
+  "id": "niko-ninja-soccer-kindness-match-01",
+  "reviewed_local": "2026-08-27",
+  "contact_sheet": "automation/production-work/niko-ninja-soccer-kindness-match-01/asset-contact-sheet.png",
+  "assets": [
+    "automation/production-assets/niko-soccer-welcome-v1.png",
+    "automation/production-assets/niko-soccer-balance-v1.png",
+    "automation/production-assets/niko-soccer-dribble-v1.png",
+    "automation/production-assets/niko-soccer-kind-pass-v1.png",
+    "automation/production-assets/niko-soccer-first-touch-v1.png",
+    "automation/production-assets/niko-soccer-team-triangle-v1.png",
+    "automation/production-assets/niko-soccer-missed-shot-v1.png",
+    "automation/production-assets/niko-soccer-finale-v1.png"
+  ],
+  "checks": {
+    "eight_unique_full_screen_compositions": true,
+    "niko_identity_and_outfit_consistent": true,
+    "lila_identity_and_outfit_consistent": true,
+    "each_narrated_soccer_action_is_visible": true,
+    "all_children_are_active_or_supportive": true,
+    "colourful_premium_3d_style_meets_baseline": true,
+    "paper_cut_sports_graphics_are_integrated": true,
+    "no_masks_weapons_combat_logos_or_generated_text": true,
+    "finale_is_truthful_thumbnail_source": true
+  },
+  "passed": true,
+  "notes": "Visually reviewed at full contact-sheet scale. The sequence progresses through eight materially different camera compositions while preserving Niko and Lila. The generated art directly shows welcome, balance, cone dribbling, a gentle pass, first-touch support, triangle passing, kind recovery after a missed shot, and Lila's final goal."
+}

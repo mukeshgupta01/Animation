@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "id": "niko-ninja-soccer-kindness-match-01",
+  "working_title": "Niko's Ninja Soccer Kindness Match",
+  "format_family": "sports-teamwork-story",
+  "voice_profile": "ryan-uk",
+  "character_voice_profile": "ana-us",
+  "visual_rule": "Every voiced beat owns one unique full-screen composition in which Niko and the team visibly perform the narrated soccer action; no story artwork is reused.",
+  "maximum_shot_seconds": 14,
+  "text_panel_policy": "No instructional cards during the story; only a short opening title and final end card are allowed.",
+  "character_continuity": {
+    "niko": "A cheerful seven-year-old Japanese-Australian boy with warm tan skin, short tousled black hair, a teal headband, teal-and-navy soccer kit, orange shin guards, and white trainers; sporty ninja inspiration only, with no mask or weapons.",
+    "lila": "A shy seven-year-old girl with deep brown skin, two puff ponytails with yellow ties, a sunny yellow-and-purple soccer kit, purple socks, and white trainers.",
+    "team": "Four diverse children in coral, blue, green, and purple community soccer kits, all friendly and age appropriate."
+  },
+  "shots": [
+    {
+      "id": "01_welcome",
+      "asset": "niko-soccer-welcome-v1.png",
+      "narrator_line": "At the rainbow community pitch, Niko spotted a new player named Lila waiting by the gate. He rolled the ball close and offered a friendly wave.",
+      "visual": "Niko gently rolls the ball toward nervous Lila and waves while the welcoming team waits farther inside the colourful pitch.",
+      "motion": "Low ball-level push-in, rolling-ball trail, fluttering pennants, and Niko's clear welcome wave."
+    },
+    {
+      "id": "02_focus_balance",
+      "asset": "niko-soccer-balance-v1.png",
+      "narrator_line": "Niko showed his quiet-focus move: one slow breath, arms wide, foot softly on the ball. Can you balance too?",
+      "character_line": "Breathe, balance, and believe!",
+      "visual": "Niko demonstrates a calm one-foot-on-ball balance pose while Lila copies him and begins to smile.",
+      "motion": "Gentle camera orbit, breathing glow rings, swaying grass, and a three-count balance sparkle."
+    },
+    {
+      "id": "03_soft_touches",
+      "asset": "niko-soccer-dribble-v1.png",
+      "narrator_line": "Next came tiny ninja touches: tap right, tap left, stop. Niko zigzagged between bright cones without racing away from his friend.",
+      "visual": "Niko actively dribbles right-left-stop through three bright cones while Lila follows the footwork path beside him.",
+      "motion": "Ground-level side tracking, curved footwork trails, cone pulses, and a clean stop-freeze."
+    },
+    {
+      "id": "04_kind_pass",
+      "asset": "niko-soccer-kind-pass-v1.png",
+      "narrator_line": "Then Niko turned his toes, looked at Lila, and sent a slow, gentle pass straight across the grass.",
+      "character_line": "Your turn, Lila. I am right here!",
+      "visual": "Niko makes eye contact and passes gently to Lila; the ball is visibly travelling between them along a bright curved arc.",
+      "motion": "Ball-follow tracking shot, glowing pass arc, turning-foot cue, and Lila preparing her first touch."
+    },
+    {
+      "id": "05_first_touch",
+      "asset": "niko-soccer-first-touch-v1.png",
+      "narrator_line": "Lila cushioned the ball with one careful foot. It wobbled, but she kept it close. Niko clapped, and the whole team cheered.",
+      "visual": "Lila visibly traps the wobbling ball under control while Niko claps and every teammate celebrates her effort.",
+      "motion": "Small ball wobble, celebratory camera lift, clapping sparkles, and bouncing team pennants."
+    },
+    {
+      "id": "06_team_triangle",
+      "asset": "niko-soccer-team-triangle-v1.png",
+      "narrator_line": "Now the players made a passing triangle. Niko to Lila, Lila to Sam, and Sam back to Niko. Three kind passes kept everyone included.",
+      "visual": "Niko, Lila, and Sam form a clear triangle and each actively passes in sequence, with the other teammates moving into helpful space.",
+      "motion": "Overhead-to-low camera sweep, three sequential ball arcs, moving paper-cut field arrows, and quick encouraging waves."
+    },
+    {
+      "id": "07_missed_shot_kindness",
+      "asset": "niko-soccer-missed-shot-v1.png",
+      "narrator_line": "Lila tried a shot and missed the goal. Nobody groaned. Niko returned the ball, and the team made a new plan together.",
+      "character_line": "A miss is just another chance to help!",
+      "visual": "The ball sits safely beside the goal after Lila's miss; Niko returns it while teammates gather supportively and point out a new passing route.",
+      "motion": "Soft ball-return roll, route arrows appearing one by one, reassuring nods, and a warm colour lift."
+    },
+    {
+      "id": "08_kindness_goal_finale",
+      "asset": "niko-soccer-finale-v1.png",
+      "narrator_line": "Pass, move, share! The new plan worked. Lila tapped in the final goal, then every player joined the biggest kindness-team cheer.",
+      "visual": "Lila taps the ball into the net after a visible team passing move; Niko and all players jump, wave, and cheer together around her.",
+      "motion": "Fast ball-to-net track, net ripple, colourful confetti ribbons, camera arc, ensemble jump, and final team pose."
+    }
+  ],
+  "required_reviews": [
+    "full_ffmpeg_decode",
+    "continuous_zero_gap_timeline",
+    "final_card_only_at_end",
+    "every_boundary_contact_sheet",
+    "one_unique_artwork_per_voiced_beat",
+    "narration_line_matches_shot_subject",
+    "all_dialogue_finishes_inside_matching_shot",
+    "no_story_shot_longer_than_14_seconds",
+    "truthful_custom_thumbnail"
+  ]
+}

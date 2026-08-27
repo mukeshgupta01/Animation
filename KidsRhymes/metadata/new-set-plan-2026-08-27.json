@@ -29,11 +29,13 @@
     {
       "id": "niko-ninja-soccer-kindness-match-01",
       "title": "Niko's Ninja Soccer Kindness Match | Teamwork Story for Kids",
-      "status": "planned",
+      "status": "completed-reviewed-and-queued",
       "format_family": "sports-teamwork-story",
       "visual_system": "paper-cut-pitch-tracking-with-ball-arcs-and-footwork-trails",
       "interaction_style": "balance-freezes-passing-cues-and-team-cheer",
-      "voice_profile": "ryan-uk"
+      "voice_profile": "ryan-uk",
+      "character_voice_profile": "ana-us",
+      "shot_plan": "metadata/niko-ninja-soccer-kindness-match-01-plan.json"
     },
     {
       "id": "ant-grasshopper-shared-harvest-01",

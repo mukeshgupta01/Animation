@@ -4,9 +4,11 @@ Updated: 2026-08-27
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 56.
+Known completed or queued video concepts: 57.
 
 ## Topic index
+
+- Niko's Ninja Soccer Kindness Match | Teamwork Story for Kids — `niko-ninja-soccer-kindness-match-01` — completed local, queued public upload
 
 - Animal Action Alphabet A-Z | Move and Learn with 26 Animals — `animal-action-alphabet-a-to-z-01` — archived/uploaded
 - Animal Alphabet Adventure A-F | Learn Letters and Animals — `animal-alphabet-a-to-f-01` — archived/uploaded

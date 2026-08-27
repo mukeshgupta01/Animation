@@ -283,6 +283,28 @@
         "tags": ["imagination story for kids", "cardboard box ideas", "pretend play", "creative play for kids", "friendship story", "preschool story", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "niko-ninja-soccer-kindness-match-01",
+      "name": "Niko's Ninja Soccer Kindness Match",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_niko_ninja_soccer.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/niko-ninja-soccer-kindness-match-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "sports-teamwork-story",
+      "visual_system": "eight-unique-3d-style-pitch-compositions-with-paper-cut-ball-arcs-and-footwork-trails",
+      "interaction_style": "balance-freezes-passing-cues-first-touch-cheer-and-team-finale",
+      "voice_profile": "ryan-uk",
+      "youtube": {
+        "title": "Niko's Ninja Soccer Kindness Match | Teamwork Story for Kids",
+        "description": "Join Niko and new player Lila for a colourful soccer story about calm focus, gentle passes, trying again, and making sure everyone belongs. Children can balance, follow the footwork, cheer a first touch, trace a passing triangle, and celebrate a kindness-team goal.\n\nAn original Tiny Tales sports story supporting coordination, confidence, friendship, resilience, and teamwork for children ages 3 to 7.",
+        "tags": ["soccer story for kids", "teamwork for kids", "kindness story", "football skills for children", "preschool movement", "friendship story", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }
