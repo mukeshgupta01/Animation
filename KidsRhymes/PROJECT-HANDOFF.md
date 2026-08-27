@@ -1,6 +1,6 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-08-24 19:28 Australia/Sydney
+Last updated: 2026-08-27 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
@@ -12,7 +12,7 @@ This document lets a new Codex account continue the local project safely. Do not
 - Dedicated Google Cloud project ID: `tiny-tales-506508` (never share with the Birthday channel or any other channel)
 - Upload privacy: `public` for new uploads by explicit user instruction on 2026-08-24
 - Audience setting: made for kids
-- Report email: `mukeshmelb01@gmail.com`
+- Daily summary email: `mukeshmelb01@gmail.com` at 06:00 Australia/Sydney; never email after each upload
 - Python environment: `C:\Animation\Animation\.venv\Scripts\python.exe`
 
 ## User's current editorial requirements
@@ -68,9 +68,11 @@ This document lets a new Codex account continue the local project safely. Do not
 - `automation/update_covered_topics.py`: rebuilds the topic registry from live media, metadata and the static manifest.
 - `automation/uploader.py`: channel-locked resumable uploader using configured visibility, duplicate prevention, ledger, and post-success archive cleanup.
 - `automation/Run-GenerationCycle.ps1`: time-boxed generation task wrapper with global mutex.
-- `automation/Run-UploadCycle.ps1`: independent upload/email wrapper with separate global mutex.
-- `automation/Install-TinyTalesTasks.ps1`: installer for the two exact tasks; it refuses to overwrite existing tasks.
-- `automation/Send-OutlookReport.ps1`: sends with classic Outlook COM and confirms Sent Items; no password is stored.
+- `automation/Run-UploadCycle.ps1`: independent upload wrapper with separate global mutex; it never sends email.
+- `automation/Install-TinyTalesTasks.ps1`: installer for generation, upload, retry and daily-summary tasks; it refuses to overwrite existing tasks.
+- `automation/Send-DailyUploadSummary.ps1`: counts the previous Sydney calendar day's successful ledger rows, sends one Outlook summary, confirms Sent Items, and blocks duplicate sends for the same date. `-DryRun` tests counts without email.
+- `automation/Set-TinyTalesDailySummaryEmail.ps1`: fail-closed live migration that verifies the upload-task action and installs or updates the 06:00 summary task.
+- `automation/Send-OutlookReport.ps1`: retained historical per-upload mailer; no active task or upload wrapper calls it.
 - `automation/production-assets/`: approved reusable artwork sheets.
 - `automation/production-work/<item>/quality-report.json`: technical quality reports.
 - `automation/production-work/<item>/quality-contact-sheet.png`: visual review sheets.
@@ -552,6 +554,14 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Six voiced beats use six unique premium 3D-style full-screen compositions. Each visual begins exactly with its matching narration and contains that narration to completion. All shots are at most 13.98 seconds, all seven boundaries have zero gaps, and the final card is the final event only. Continuous camera travel and scene-specific action overlays keep the children visibly steering, exploring, performing, reading and celebrating.
 - The 1920x1080 H.264/48 kHz stereo AAC output passed the producer gate and a second independent full FFmpeg decode. The general contact sheet, every-boundary transition sheet, narration-sync audit and truthful 1280x720 `ONE BOX, FOUR WORLDS!` thumbnail were visually reviewed and approved. Queue sidecar evidence contains all mandatory true flags and valid artifact paths.
 - The curated manifest now has 13 completed items, zero remaining and zero failed. Generation runner released the stable output to the public/made-for-kids queue without rendering again. The immediate dry run performed no upload; Cardboard Box was correctly excluded by the five-minute stability guard while 26 existing reviewed items remained eligible.
+
+## Daily 06:00 upload-summary email (2026-08-27)
+
+- The user explicitly stopped per-upload emails and requested one email at 06:00 Australia/Sydney reporting how many videos uploaded during the previous day. `automation/Run-UploadCycle.ps1` no longer invokes any mailer; upload success, retry state and task exit status remain independent from email delivery.
+- New `automation/Send-DailyUploadSummary.ps1` reads only successful rows with a video ID from ignored duplicate-safe ledger `automation/runtime/upload-ledger.jsonl`. It converts previous Sydney-calendar-day boundaries to UTC with Windows time zone `AUS Eastern Standard Time`, so daylight-saving changes remain correct. The email includes the count plus source names and YouTube links, and is sent even when the count is zero.
+- The summary writes ignored report/result/log files and `runtime/daily-summary-state.json`. A confirmed date is recorded only after the exact subject appears in Outlook Sent Items; any later invocation for that same summary date exits successfully without another email. `-DryRun` never sends or changes the last-sent date.
+- The no-send validation for Sydney date 2026-08-26 counted exactly four ledgered uploads over UTC interval `2026-08-25T14:00:00Z` through `2026-08-26T14:00:00Z` and produced subject `Tiny Tales daily upload summary - 2026-08-26 - 4 videos`.
+- Live task `Tiny Tales - Daily Upload Summary Email` was installed Ready with exact action `automation/Send-DailyUploadSummary.ps1`; first run is 2026-08-28 06:00 Australia/Sydney. It uses Interactive Outlook access, `StartWhenAvailable`, `WakeToRun`, network requirement, battery allowance, `IgnoreNew`, and a 15-minute limit. `automation/Set-TinyTalesDailySummaryEmail.ps1` safely installs or updates it after verifying the normal upload action.
 
 ## Safe continuation checklist
 

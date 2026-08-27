@@ -7,7 +7,6 @@ $ErrorActionPreference = 'Stop'
 $project = Split-Path -Parent $PSScriptRoot
 $python = Join-Path (Split-Path -Parent $project) '.venv\Scripts\python.exe'
 $uploader = Join-Path $PSScriptRoot 'uploader.py'
-$mailer = Join-Path $PSScriptRoot 'Send-OutlookReport.ps1'
 $report = Join-Path $PSScriptRoot 'runtime\latest-upload-report.json'
 $retryState = Join-Path $PSScriptRoot 'runtime\upload-retry-state.json'
 $log = Join-Path $PSScriptRoot 'logs\upload-task.log'
@@ -50,12 +49,6 @@ try {
     $uploadReport = $null
     if (Test-Path -LiteralPath $report) {
         $uploadReport = Get-Content -Raw -LiteralPath $report | ConvertFrom-Json
-        try {
-            & powershell.exe -NoProfile -ExecutionPolicy Bypass -File $mailer -ReportPath $report *>> $log
-        }
-        catch {
-            Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) report email failed without changing upload result: $($_.Exception.Message)"
-        }
     }
 
     if ($uploadExit -eq 0) {
@@ -84,7 +77,7 @@ try {
     exit $uploadExit
 }
 catch {
-    Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) upload/email cycle failed: $($_.Exception.Message)"
+    Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) upload cycle failed: $($_.Exception.Message)"
     exit 1
 }
 finally {
