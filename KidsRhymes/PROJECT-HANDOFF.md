@@ -604,6 +604,13 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Full decode, zero gaps, narration/effect containment, maximum 14-second shots, final-card-only, visual contact sheets, action-cut sheet, final-song waveform and final-song spectrum passed review. The quality report explicitly records three clap cues, no spoken clap words and a distinct finale.
 - Only the corrected reviewed output was returned to `pending-uploads`; the post-correction uploader dry run sent nothing, reported no failures and selected Ant/Grasshopper next under the normal public/made-for-kids safeguards.
 
+## Ant/Grasshopper expressive narration revision (2026-08-27)
+
+- The user made a second pre-upload correction request: remove the `Stay for the final song` instruction, replace spoken `tap-tap-tap` with musical sound, and make flat narration respond to the images. The queued audio-v2 pair is preserved in ignored correction hold and was removed from scheduler reach before work began; ledger checks showed no upload.
+- The 123.49-second revision opens with only `Meet our orchestra!`. Both `Carry a little!` lines trigger three wooden musical taps; all `tap-tap` speech is gone. Three `Play a little!` lines still trigger three real claps each with no spoken clap syllables.
+- Summer narration uses `natasha-bright`, autumn/rescue uses `natasha-excited`, and snow/welcome uses `natasha-cozy`. Rewritten lines explicitly match the berry roll, daisy hop, basket pass, autumn gust, seed rescue, snowy knock, soup welcome and seed-plan imagery, with sound words, questions and character reactions.
+- The revised master passed full decode, 1080p/stereo AAC, zero gaps, all speech/effects contained by matching visuals, maximum 14-second shots, no forbidden narration, two three-tap cues, three three-clap cues, three expressive delivery profiles, audience questions, action sound words and the distinct final chorus. Visual and audio evidence sheets were re-reviewed.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

@@ -217,6 +217,13 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The finale is now a distinct 13.55-second musical section with alternating pitched Ant/Grasshopper/narrator delivery, four original lyric lines, a brighter lead melody, harmony and a stronger four-beat pulse. Its waveform and spectrum were visually reviewed and clearly show separated vocals, tap transients, broad-spectrum clap transients and continuous music.
 - The corrected master passed full decode and all prior visual/timing gates plus explicit checks for three real-clap cues, no spoken clap words and a distinct final song. Only the corrected MP4/sidecar were restored to the queue; a no-upload dry run selected it next with no failures.
 
+## Ant/Grasshopper narration and tap correction (2026-08-27)
+
+- Before upload, the user requested removal of `Stay for the final song`, replacement of spoken `tap-tap-tap` with music, and narration that responds more expressively to the images. The queued audio-v2 pair was moved intact to the ignored correction hold; no version has uploaded.
+- The opening now says only `Meet our orchestra!`. Both `Carry a little!` cues are followed by three musical wooden taps, and no voice says `tap-tap` anywhere. All three `Play a little!` cues retain three real handclaps and no spoken clap syllables.
+- Narration was rewritten to name visible actions and props in each composition. Natasha now uses bright, excited and cozy delivery profiles across summer, autumn rescue and winter; the script includes short action phrases, sound words, direct questions and warmer Ant/Grasshopper dialogue.
+- The final reviewed master is 123.49 seconds. All story shots remain below 14 seconds and the full decode, zero-gap, narration/effect containment, three delivery-profile, audience-question, action-sound-word, musical-tap, real-clap and distinct-final-song gates passed.
+
 ## Three-hour upload schedule (2026-08-25)
 
 - The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.
