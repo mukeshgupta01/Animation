@@ -40,11 +40,18 @@
     {
       "id": "ant-grasshopper-shared-harvest-01",
       "title": "The Ant and the Grasshopper's Shared Harvest | Musical Fable for Kids",
-      "status": "planned",
+      "status": "active-reference-informed-shot-plan-locked",
       "format_family": "season-changing-musical-fable",
       "visual_system": "side-scrolling-meadow-with-seed-choreography-and-season-transitions",
       "interaction_style": "work-play-rhythm-patterns-and-kindness-refrain",
-      "voice_profile": "natasha-au"
+      "voice_profile": "natasha-au",
+      "character_voice_profiles": {
+        "ant": "ana-us",
+        "grasshopper": "ryan-uk"
+      },
+      "shot_plan": "metadata/ant-grasshopper-shared-harvest-01-plan.json",
+      "reference_video": "https://www.youtube.com/watch?v=TOTd78ZTDGE",
+      "reference_policy": "Broad seasonal musical-fable structure only; all characters, art, dialogue, lyrics, melody, shots, and kindness-focused resolution must be original."
     }
   ]
 }

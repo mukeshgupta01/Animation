@@ -571,6 +571,15 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - The no-send validation for Sydney date 2026-08-26 counted exactly four ledgered uploads over UTC interval `2026-08-25T14:00:00Z` through `2026-08-26T14:00:00Z` and produced subject `Tiny Tales daily upload summary - 2026-08-26 - 4 videos`.
 - Live task `Tiny Tales - Daily Upload Summary Email` was installed Ready with exact action `automation/Send-DailyUploadSummary.ps1`; first run is 2026-08-28 06:00 Australia/Sydney. It uses Interactive Outlook access, `StartWhenAvailable`, `WakeToRun`, network requirement, battery allowance, `IgnoreNew`, and a 15-minute limit. `automation/Set-TinyTalesDailySummaryEmail.ps1` safely installs or updates it after verifying the normal upload action.
 
+## Ant/Grasshopper Pika motion pilot (2026-08-27)
+
+- A five-second Pika image-to-video pilot is prepared for the summer opening frame. The accepted 1672x941 source is `automation/production-assets/shared-harvest-summer-opening-v1.png` with SHA-256 `7231693579a51d2b0d5e51fe9d4d42819dde2f9568ddaa817ebdf9c33f175035`.
+- `metadata/ant-grasshopper-pika-pilot-01.json` locks the exact generation prompt, negative prompt and acceptance checks. Motion direction makes Ant's weighted two-step seed carry the hero action, Grasshopper's fiddle bowing the support action, and meadow movement subtle ambience. The camera remains a stable wide composition with only a gentle push-in.
+- `metadata/ant-grasshopper-shared-harvest-01-plan.json` now points to the pilot and blocks remaining story-art generation until provider motion and character consistency pass review. `metadata/new-set-plan-2026-08-27.json` records the Ant production as active with original-reference safeguards.
+- Live reconciliation before preparing the pilot found local and `origin/main` at zero divergence; the Ant planning files were the only pre-existing dirty changes. Generation count-only returned 14 complete, zero remaining and zero failed. Read-only OAuth verification returned Tiny Tales channel `UCEn9N-ITQHshjgt6fy7fxnw`. The queue had 10 MP4s, the archive and ledger had 47 confirmed items, and the ten-minute uploader was Ready.
+- Pika has no available Codex/plugin connector. Its site was opened in the user's browser, but account sign-in and the browser upload/generation remain a user interaction. After the result is downloaded, visually review it against every locked acceptance check before any wider generation.
+- The Pika free output is a test asset, not automatically approved for commercial/public use. Confirm current usage rights before putting any Pika-generated pixels into a monetized Tiny Tales video.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

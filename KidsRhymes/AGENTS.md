@@ -191,6 +191,13 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Its locked plan is `metadata/niko-ninja-soccer-kindness-match-01-plan.json`; eight voiced beats use eight unique full-screen premium 3D-style pitch compositions showing the exact narrated actions. All dialogue ends inside its matching shot, no story shot exceeds 14 seconds, all nine boundaries are gap-free, and the end card is final only.
 - The producer, eight accepted `niko-soccer-*-v1.png` assets, asset review, full decode, quality report, narration-sync audit, general contact sheet, every-boundary contact sheet, and truthful `PASS, MOVE, SHARE!` thumbnail were visually reviewed and passed. The normal generation runner released the preserved output to the safeguarded queue, and the 15:30 Sydney scheduled cycle uploaded it publicly/made-for-kids as `nmj4W890T3I` with the reviewed thumbnail. The source was archived only after success.
 
+## Ant/Grasshopper Pika motion pilot (2026-08-27)
+
+- The user approved a free-plan Pika image-to-video pilot before the full Ant/Grasshopper production proceeds. The source frame is `automation/production-assets/shared-harvest-summer-opening-v1.png`; the complete five-second motion prompt, negative prompt, hierarchy and acceptance checks are locked in `metadata/ant-grasshopper-pika-pilot-01.json`.
+- Treat this as a provider-quality test only. Do not generate the remaining story assets, render the full story, queue footage, or upload Pika output until the pilot has been downloaded and visually reviewed for exact character continuity, planted feet, stable props/anatomy, background stability and a clean final pose.
+- Pika has no available Codex/plugin connection in this environment. Its browser was opened, but the user must complete Pika account sign-in and the website upload/generation step. Resume from the locked source and prompt rather than improvising a different motion request.
+- Free-plan footage is not approved for final commercial Tiny Tales use merely because it renders successfully. Confirm the applicable usage rights before incorporating it into a monetized/public upload; preserve the test separately if rights are insufficient.
+
 ## Three-hour upload schedule (2026-08-25)
 
 - The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.

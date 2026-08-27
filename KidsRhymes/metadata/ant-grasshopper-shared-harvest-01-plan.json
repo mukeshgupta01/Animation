@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "id": "ant-grasshopper-shared-harvest-01",
+  "working_title": "The Ant and the Grasshopper's Shared Harvest",
+  "format_family": "season-changing-musical-fable",
+  "voice_profile": "natasha-au",
+  "character_voice_profiles": {
+    "ant": "ana-us",
+    "grasshopper": "ryan-uk"
+  },
+  "reference_influence": "Uses only broad storytelling techniques observed in a linked Ant and Grasshopper musical retelling: seasonal progression, alternating work/play verses, a recurring refrain, a winter turning point, and a warm resolution. Characters, designs, dialogue, lyrics, melody, shot compositions, and moral treatment are original Tiny Tales work.",
+  "original_refrain": "Carry a little, tap-tap-tap. Play a little, clap-clap-clap. Plan together, share the way. Work and music make the day!",
+  "visual_rule": "Every voiced beat owns one unique full-screen composition that visibly performs its season-specific action; the side-scrolling meadow progresses continuously through summer, autumn, winter, and spring without reusing story artwork.",
+  "maximum_shot_seconds": 14,
+  "animation_pilot": "metadata/ant-grasshopper-pika-pilot-01.json",
+  "animation_pilot_policy": "Approve provider motion and character consistency on the five-second summer opening test before generating the remaining unique story artwork or final animated shots.",
+  "text_panel_policy": "No lyric cards during the story; only a short opening title and final end card are allowed.",
+  "character_continuity": {
+    "ant": "A cheerful small chestnut-brown ant with a round face, three clear body sections, six limbs, large hazel eyes, a sunflower-yellow neckerchief, and a tiny woven seed satchel.",
+    "grasshopper": "A friendly leaf-green grasshopper with long folded jumping legs, large amber eyes, a violet waistcoat, and a small original acorn-and-twig fiddle with a grass-stem bow.",
+    "helpers": "Three friendly diverse meadow insects: a blue ladybird, a copper beetle, and a cream moth, all rounded and child-friendly."
+  },
+  "shots": [
+    {
+      "id": "01_summer_meadow",
+      "asset": "shared-harvest-summer-opening-v1.png",
+      "narrator_line": "In a bright summer meadow, Ant gathered seeds for the seasons ahead while Grasshopper filled the sunshine with a dancing fiddle tune.",
+      "visual": "Ant actively carries a seed toward a woven basket while Grasshopper plays and dances on a clover stage; the three helpers move through the lively summer meadow.",
+      "motion": "Side-scrolling meadow track, swaying flowers, marching ant steps, bow movement, and bouncing musical shapes."
+    },
+    {
+      "id": "02_ant_work_verse",
+      "asset": "shared-harvest-ant-work-v1.png",
+      "narrator_line": "Ant rolled one berry, lifted two seeds, and stacked three golden grains beneath the hill. Her steady feet kept a gentle beat.",
+      "ant_line": "Carry a little, tap-tap-tap!",
+      "visual": "Ant visibly rolls a berry, lifts seeds into her satchel, and stacks three grains at the anthill while helpers form a rhythmic carrying line.",
+      "motion": "Low tracking shot, seed-to-basket arcs, three footprint beats, rolling berry, and helpers passing food hand to hand."
+    },
+    {
+      "id": "03_grasshopper_play_verse",
+      "asset": "shared-harvest-grasshopper-play-v1.png",
+      "narrator_line": "Grasshopper skipped between daisies, bowed a bright melody, and invited every meadow friend to clap along.",
+      "grasshopper_line": "Play a little, clap-clap-clap!",
+      "visual": "Grasshopper visibly bows his original twig fiddle while hopping between daisies; Ant and helpers clap a repeating pattern without stopping their work.",
+      "motion": "Curving camera hop, animated bow strokes, petal pulses, hand claps, and original coloured note shapes."
+    },
+    {
+      "id": "04_shared_rhythm",
+      "asset": "shared-harvest-shared-rhythm-v1.png",
+      "narrator_line": "Ant asked for one helping song. Grasshopper matched each fiddle beat to a seed pass, and suddenly the heaviest basket felt lighter.",
+      "visual": "Grasshopper plays a clear four-beat pattern while Ant and all three helpers pass a heavy seed basket together on those beats.",
+      "motion": "Four visible beat rings, basket handoff sequence, side-scroll acceleration, nodding heads, and synchronized footsteps."
+    },
+    {
+      "id": "05_autumn_gust",
+      "asset": "shared-harvest-autumn-gust-v1.png",
+      "narrator_line": "Autumn rushed in with a whoosh! Red leaves spun, the grain cloth lifted, and precious seeds scattered across the path.",
+      "visual": "A colourful autumn gust visibly lifts one corner of the grain cloth while seeds scatter; Ant reaches for the cloth and Grasshopper lowers his fiddle to help.",
+      "motion": "Sweeping leaf spiral, billowing cloth, seed scatter arcs, rapid camera pan, and characters bracing safely against the breeze."
+    },
+    {
+      "id": "06_music_harvest_rescue",
+      "asset": "shared-harvest-rescue-v1.png",
+      "narrator_line": "Grasshopper tapped a rescue rhythm. Scoop, pass, pour! Every friend followed the beat until each scattered seed was safe inside the hill.",
+      "grasshopper_line": "Plan together, share the way!",
+      "visual": "Grasshopper conducts with the grass-stem bow while Ant and helpers visibly scoop, pass, and pour the scattered seeds into the anthill store in a chain.",
+      "motion": "Three-stage scoop-pass-pour choreography, glowing rhythm trail, seed stream, circling camera, and successful final pour."
+    },
+    {
+      "id": "07_first_snow",
+      "asset": "shared-harvest-first-snow-v1.png",
+      "narrator_line": "When the first snow softened the meadow, Grasshopper's little cupboard was empty. He held his fiddle close and knocked gently at Ant's warm door.",
+      "visual": "Grasshopper stands in gentle snow beside an visibly empty acorn cupboard, then knocks at the warmly glowing anthill door while holding his fiddle.",
+      "motion": "Snow drift, slow push toward the warm doorway, one gentle knock pulse, visible breath puff, and lantern glow."
+    },
+    {
+      "id": "08_warm_welcome",
+      "asset": "shared-harvest-warm-welcome-v1.png",
+      "narrator_line": "Ant remembered how Grasshopper saved the harvest. She opened the door wide, shared warm seed soup, and made room beside the fire.",
+      "ant_line": "Kind helpers always have a place here.",
+      "visual": "Ant opens the anthill door wide and serves seed soup; Grasshopper enters gratefully while all three helpers arrange a welcoming place beside the fire.",
+      "motion": "Door-opening light sweep, steaming soup curls, helpers moving a cushion and bowl, grateful bow, and cozy camera glide."
+    },
+    {
+      "id": "09_winter_plan_song",
+      "asset": "shared-harvest-winter-plan-v1.png",
+      "narrator_line": "Inside, work and music joined. Grasshopper drew a spring planting plan while Ant counted seeds, and everyone sang their new chorus.",
+      "visual": "Grasshopper draws a simple picture plan, Ant sorts seeds into groups, and helpers sing and tap safe household instruments around the warm table.",
+      "motion": "Overhead table orbit, seed grouping, pencil movement, cup-and-spoon rhythm, fire flicker, and chorus colour pulses."
+    },
+    {
+      "id": "10_spring_finale",
+      "asset": "shared-harvest-spring-finale-v1.png",
+      "narrator_line": "Spring returned with shoots and songs. Ant planted, Grasshopper watered, and the whole meadow danced because planning, play, and kindness grew together.",
+      "chorus_line": "Carry a little, play a little, plan together every day!",
+      "visual": "In a transformed spring meadow, Ant plants seeds, Grasshopper waters sprouts, helpers carry tools, and everyone joins an active dance around the growing shared garden.",
+      "motion": "Side-scrolling finale, sprouts rising, watering sparkle, circular ensemble dance, flower opening, and celebratory camera lift."
+    }
+  ],
+  "required_reviews": [
+    "full_ffmpeg_decode",
+    "continuous_zero_gap_timeline",
+    "final_card_only_at_end",
+    "every_boundary_contact_sheet",
+    "one_unique_artwork_per_voiced_beat",
+    "all_narration_dialogue_and_refrains_finish_inside_matching_shot",
+    "no_story_shot_longer_than_14_seconds",
+    "original_lyrics_and_melody_only",
+    "no_reference_character_or_scene_copying",
+    "truthful_custom_thumbnail"
+  ]
+}

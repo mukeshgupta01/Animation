@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "project_id": "ant-grasshopper-shared-harvest-01",
+  "provider": "Pika browser editor",
+  "purpose": "Free-plan image-to-video motion and character-consistency pilot; not approved as final commercial footage until output rights are confirmed.",
+  "source_image": "automation/production-assets/shared-harvest-summer-opening-v1.png",
+  "duration_seconds": 5,
+  "aspect_ratio": "16:9",
+  "motion_direction": {
+    "personality": "playful kinetic-soft",
+    "emotional_intent": "cheerful, musical, purposeful",
+    "visual_narrative": "Ant advances with a heavy seed while Grasshopper keeps a lively fiddle rhythm; both settle cleanly at the end.",
+    "hero": "Ant's weighted two-step walk while carrying the large seed.",
+    "support": "Grasshopper bows the fiddle in time with a small knee bounce; the beetle continues a short basket walk.",
+    "ambient": "Flowers and clover sway gently in a light summer breeze; background insects remain subtle.",
+    "camera": "Locked wide composition with only a very gentle cinematic push-in; no pan, orbit, shake, or reframing.",
+    "restraint": "Preserve character count, anatomy, costumes, props, faces, stage positions, anthill, and overall composition. Do not make every element move equally."
+  },
+  "generation_prompt": "Animate this exact premium 3D-style summer meadow scene for five seconds. Preserve every character's identity, anatomy, colours, clothes and props. The chestnut-brown Ant in the yellow neckerchief is the hero: she takes two small believable weighted steps along the path while securely carrying the large seed, with clear foot contact, gentle body squash, and the seed staying solid in her hands. The green Grasshopper remains on the clover stage and plays the acorn-and-twig fiddle with rhythmic bow strokes and one small knee bounce. The copper beetle takes a short purposeful step with its basket. The blue ladybird and cream moth make only tiny friendly reactions. Flowers and clover sway softly in a warm breeze. Use natural arcs, anticipation and follow-through. Keep the wide 16:9 composition stable with a very subtle slow push-in. End with Ant balanced and smiling and Grasshopper completing a clean final bow stroke.",
+  "negative_prompt": "No morphing, melting, limb duplication, missing limbs, extra characters, character swaps, face changes, costume changes, prop changes, disappearing seed, bending fiddle, floating feet, sliding, frantic motion, random dancing, talking mouths, camera shake, whip pan, orbit, hard zoom, scene cut, text, logo or watermark added to the scene.",
+  "acceptance_checks": [
+    "All five original characters remain recognizable throughout.",
+    "Ant completes visible steps with planted feet and keeps hold of one solid seed.",
+    "Grasshopper's bow visibly moves while the fiddle and hands retain their shapes.",
+    "No duplicated or missing insect limbs are visible at normal playback speed.",
+    "The anthill and overall composition do not warp or drift.",
+    "Motion ends on a stable pose suitable for an edit cut.",
+    "No generated text, branding or unexpected new objects appear."
+  ],
+  "status": "prepared-awaiting-pika-browser-generation"
+}
