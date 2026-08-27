@@ -22,7 +22,10 @@ if ($retryTask.Actions.Count -ne 1 -or $retryTask.Actions[0].Arguments -notlike 
 $anchor = (Get-Date).AddMinutes(1)
 $start = $anchor.Date.AddHours($anchor.Hour).AddMinutes([math]::Ceiling($anchor.Minute / 10.0) * 10)
 $trigger = New-ScheduledTaskTrigger -Once -At $start -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 3650)
-Set-ScheduledTask -TaskName $uploadTaskName -Trigger $trigger | Out-Null
+$settings = $uploadTask.Settings
+$settings.DisallowStartIfOnBatteries = $false
+$settings.StopIfGoingOnBatteries = $false
+Set-ScheduledTask -TaskName $uploadTaskName -Trigger $trigger -Settings $settings | Out-Null
 Enable-ScheduledTask -TaskName $uploadTaskName | Out-Null
 Disable-ScheduledTask -TaskName $uploadRetryTaskName | Out-Null
 
@@ -35,6 +38,7 @@ $retryTask = Get-ScheduledTask -TaskName $uploadRetryTaskName
     UploadNextRunTime = $uploadInfo.NextRunTime
     UploadInterval = $uploadTask.Triggers[0].Repetition.Interval
     UploadDuration = $uploadTask.Triggers[0].Repetition.Duration
+    UploadAllowedOnBattery = -not $uploadTask.Settings.DisallowStartIfOnBatteries
     RetryTask = $retryTask.TaskName
     RetryState = $retryTask.State
 }

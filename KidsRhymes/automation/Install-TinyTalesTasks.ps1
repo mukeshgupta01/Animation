@@ -27,7 +27,7 @@ $uploadTriggers = @(
 )
 $uploadRetryTriggers = @(1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20, 22, 23 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(20)) })
 $generationSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -RunOnlyIfNetworkAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 4 -Minutes 50)
-$uploadSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -RunOnlyIfNetworkAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Minutes 45)
+$uploadSettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeToRun -RunOnlyIfNetworkAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Minutes 45)
 
 Register-ScheduledTask -TaskName $generationTaskName -Action $generationAction -Trigger $generationTriggers -Principal $principal -Settings $generationSettings -Description 'Starts a fresh, non-overlapping Tiny Tales generation process roughly every five hours.' | Out-Null
 try {
