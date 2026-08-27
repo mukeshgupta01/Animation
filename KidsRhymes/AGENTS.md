@@ -66,7 +66,7 @@ At the beginning of a continuation, report the verified live state and any diffe
 
 - The user does not want children to feel that new videos are the same template or the same voice. Variation must be structural, not merely a theme or animal swap.
 - Consecutive new videos must vary the format family, visual system, interaction mechanic, character or presenter, setting structure, and narration profile. Review at least the latest five covered/queued concepts before proposing the next one.
-- Available verified voice profiles are `ana-us`, `maisie-uk`, `natasha-au`, and `ryan-uk`. Do not use the same profile within three consecutive new videos. Keep delivery natural, friendly, and non-squeaky.
+- Available verified voice profiles are `ana-us`, `maisie-uk`, `natasha-au`, and `ryan-uk`. The user explicitly requires a different lead voice in every consecutive video; never use the same lead profile for adjacent productions, and do not reuse a profile within the next three new videos. Keep delivery natural, friendly, and non-squeaky.
 - Long-form character stories should use genuinely different narrator and character voices when dialogue is present, rather than using only pitch changes on one voice.
 - Every new non-legacy manifest item must declare `format_family`, `visual_system`, `interaction_style`, and `voice_profile`. The runner rejects missing fields and recent voice/format repetition before rendering.
 - Record the actual voice profile and creative-family fields in queued metadata and quality reports so future sessions can audit the rotation. Preserve all completed media; this policy applies prospectively.
@@ -176,7 +176,13 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The reviewed installer uses the same ten-minute trigger for fresh installations. `automation/Set-TinyTalesTenMinuteUploads.ps1` is the fail-closed live migration script; it verifies both existing task actions before changing the trigger or disabling the retry task.
 - The upload task is allowed to start and finish while the laptop is on battery; otherwise Windows silently skips every ten-minute slot. Network availability, global mutex, `IgnoreNew`, and the 45-minute execution limit remain enforced.
 - A new varied three-video set is recorded in `metadata/new-set-plan-2026-08-27.json`: Cardboard Box Invention Club (`maisie-uk`), Niko's Ninja Soccer Kindness Match (`ryan-uk`), and Ant and Grasshopper's Shared Harvest (`natasha-au`). Preserve this voice and format rotation.
-- Cardboard Box is the active first production. Six accepted built-in-generated scenes and their review record are present, but no renderer or completed MP4 exists yet. Do not add it to the automatic generation manifest or upload queue until all permanent quality gates pass.
+- Cardboard Box is the completed first production in this set. Its six accepted built-in-generated scenes, producer, reviewed audits, MP4 metadata and custom thumbnail passed all permanent quality gates and were released to the safeguarded queue. Preserve them; do not regenerate or requeue the source.
+
+## Cardboard Box completion and stricter voice rotation (2026-08-27)
+
+- The user reiterated that narration must stay visibly synchronized and that consecutive videos must not keep the same child voice. Treat lead-voice change as mandatory for every adjacent production, with the existing three-video reuse exclusion still in force. The current sequence is Cardboard Box `maisie-uk`, Niko `ryan-uk`, and Ant/Grasshopper `natasha-au`; dialogue-heavy stories should additionally use distinct character voices.
+- `The Cardboard Box Invention Club` completed at 89.2 seconds from the exact plan `metadata/cardboard-box-invention-club-01-plan.json`. Its six voiced beats use six unique full-screen premium 3D-style compositions; each narration starts with its matching artwork and finishes inside it, all story shots are at most 13.98 seconds, all seven boundaries have zero gaps, and the final card appears only in the final event.
+- The producer is `automation/production/produce_cardboard_box_invention_club.py`. It adds continuous camera travel, scene-specific action overlays and original deterministic music without reusing story artwork. The full 1080p H.264/stereo AAC decode, quality gate, narration-sync audit, general contact sheet, every-boundary contact sheet and `ONE BOX, FOUR WORLDS!` custom thumbnail were visually reviewed and passed before release to the manifest.
 
 ## Three-hour upload schedule (2026-08-25)
 

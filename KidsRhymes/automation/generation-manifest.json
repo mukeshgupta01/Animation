@@ -261,6 +261,28 @@
         "tags": ["star story for kids", "movement for kids", "bedtime story", "twinkle stars", "preschool movement", "calm down for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "cardboard-box-invention-club-01",
+      "name": "The Cardboard Box Invention Club",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_cardboard_box_invention_club.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/cardboard-box-invention-club-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "collaborative-imagination-transformation-story",
+      "visual_system": "six-unique-3d-style-craft-clubhouse-box-transformations-with-continuous-motion",
+      "interaction_style": "pretend-driving-exploring-puppetry-clapping-and-calm-page-turning",
+      "voice_profile": "maisie-uk",
+      "youtube": {
+        "title": "The Cardboard Box Invention Club | Imagination Story for Kids",
+        "description": "Join Amara, Ben, and Kai as one cardboard box becomes a pretend bus, a cozy cave, a puppet theatre, and a calm reading nook. Children can steer, point, ring, explore, make hand puppets, clap, turn a pretend page, and celebrate building together.\n\nAn original Tiny Tales imagination story supporting collaborative play, creativity, listening, movement, sequencing, and calm transitions for children ages 3 to 7.",
+        "tags": ["imagination story for kids", "cardboard box ideas", "pretend play", "creative play for kids", "friendship story", "preschool story", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

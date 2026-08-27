@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "id": "cardboard-box-invention-club-01",
+  "working_title": "The Cardboard Box Invention Club",
+  "format_family": "collaborative-imagination-transformation-story",
+  "voice_profile": "maisie-uk",
+  "visual_rule": "Every voiced beat owns one unique full-screen composition whose children visibly perform the narrated actions; no story artwork is reused.",
+  "maximum_shot_seconds": 14,
+  "text_panel_policy": "No instructional cards during the story; only a short opening title and final end card are allowed.",
+  "shots": [
+    {
+      "id": "01_opening_build",
+      "asset": "cardboard-box-opening-v1.png",
+      "line": "In a sunny craft club, Amara, Ben, and Kai found one big cardboard box. They drew, decorated, and opened every flap together.",
+      "visual": "The three children actively draw a wheel, hold a paper decoration, and open a top flap around the original box.",
+      "motion": "Slow push-in, drifting paper shapes, and gentle character-focused camera travel."
+    },
+    {
+      "id": "02_bus_adventure",
+      "asset": "cardboard-box-bus-v1.png",
+      "line": "First, their box became a bus! Turn your pretend wheel, point to the next stop, then ring the paper bell. Ding, ding!",
+      "visual": "The same children steer, point, ring, and wave from the cardboard bus while imaginary scenery travels past.",
+      "motion": "Horizontal tracking, wheel pulse, road dashes, and a gentle bus bounce."
+    },
+    {
+      "id": "03_cave_exploration",
+      "asset": "cardboard-box-cave-v1.png",
+      "line": "Next, wide flaps made a cozy cave. A paper lantern glowed, painted spirals appeared, and a soft waterfall lifted. Wiggle your explorer fingers.",
+      "visual": "The children crawl, point, light, and lift fabric inside a magical but clearly pretend cardboard cave.",
+      "motion": "Lantern glow pulse, waterfall shimmer, floating light specks, and a slow cave pan."
+    },
+    {
+      "id": "04_puppet_show",
+      "asset": "cardboard-box-theatre-v1.png",
+      "line": "Then the cave became a puppet theatre. A smiling sun rose, a friendly frog hopped, and Kai opened the curtain. Can your hands hop, shine, and clap for the show?",
+      "visual": "The children operate original sun and frog puppets, open the curtain, and applaud around the theatre box.",
+      "motion": "Curtain sway, puppet bounce, warm stage-light sweep, and rhythmic clap sparkles."
+    },
+    {
+      "id": "05_reading_nook",
+      "asset": "cardboard-box-reading-nook-v1.png",
+      "line": "At blue-hour, the theatre grew quiet. Cushions, a little roof, and picture books made a reading nook. Turn one pretend page, then make a gentle welcome wave.",
+      "visual": "The children turn pages, follow pictures, add a cushion, and welcome one another into the cozy reading nook.",
+      "motion": "Slow camera push, lantern breathing glow, paper-star twinkle, and drifting twilight dust."
+    },
+    {
+      "id": "06_finale",
+      "asset": "cardboard-box-finale-v1.png",
+      "line": "One box became four wonderful worlds: a bus, a cave, a theatre, and a reading nook. The friends bowed, waved, and cheered, because imagination grows when we build together!",
+      "visual": "All four inventions surround the active children as they steer, raise a puppet, carry a book, bow, wave, and celebrate.",
+      "motion": "Celebration camera arc, floating paper confetti, gentle prop pulses, and an ensemble bow."
+    }
+  ],
+  "required_reviews": [
+    "full_ffmpeg_decode",
+    "continuous_zero_gap_timeline",
+    "final_card_only_at_end",
+    "every_boundary_contact_sheet",
+    "one_unique_artwork_per_voiced_beat",
+    "narration_line_matches_shot_subject",
+    "no_story_shot_longer_than_14_seconds",
+    "truthful_custom_thumbnail"
+  ]
+}

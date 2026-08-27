@@ -19,6 +19,6 @@
     "The palette progresses from sunny daytime through magical cave and theatre lighting to a calm blue-hour reading scene and colourful finale.",
     "No generated title text, logos, watermarks, copied franchise characters, sharp tools, real flames, or unsafe activity were observed."
   ],
-  "queue_status": "not-queued",
-  "next_required_work": "Write the beat-mapped renderer, narration, deterministic music and motion; render and pass every mandatory quality gate before adding the item to the generation manifest or upload queue."
+  "queue_status": "completed-reviewed-and-queued",
+  "next_required_work": "None for production. Preserve the reviewed source, assets, audits and thumbnail; allow only the safeguarded scheduled uploader to publish it."
 }
