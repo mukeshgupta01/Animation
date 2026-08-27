@@ -199,6 +199,8 @@ At the beginning of a continuation, report the verified live state and any diffe
 - Pilot 02 is also a 5.033-second 784x470 watermarked free export. It is rejected for publication despite passing motion. Do not render, queue or upload final Pika footage until commercial rights and unwatermarked suitable-resolution access are confirmed.
 - Pika has no available Codex/plugin connection in this environment. Its browser was opened, but the user must complete Pika account sign-in and the website upload/generation step. Resume from the locked source and prompt rather than improvising a different motion request.
 - Free-plan footage is not approved for final commercial Tiny Tales use merely because it renders successfully. Confirm the applicable usage rights before incorporating it into a monetized/public upload; preserve the test separately if rights are insufficient.
+- The user subsequently rejected all payment/manual-provider paths. Do not buy Pika credits, start a subscription, call a paid API, or continue after any payment prompt. The active method is built-in generated animation keyframes plus deterministic local code motion; it requires no user browser work and adds no third-party watermark.
+- The first matched zero-cost keyframe pair is accepted: `shared-harvest-summer-opening-v1.png` and `shared-harvest-summer-opening-midstep-v1.png`. Review is recorded in `metadata/ant-grasshopper-zero-cost-keyframe-review.json`. Use one prioritized hero action per shot, preserve exact character/prop continuity, and reject pose variants that drift.
 
 ## Three-hour upload schedule (2026-08-25)
 

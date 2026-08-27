@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "project_id": "ant-grasshopper-shared-harvest-01",
+  "method": "built-in image generation plus deterministic local code animation",
+  "payment_policy": "No paid API, subscription, credit purchase or payment prompt is authorized.",
+  "accepted_assets": [
+    {
+      "file": "automation/production-assets/shared-harvest-summer-opening-v1.png",
+      "role": "opening pose",
+      "sha256": "7231693579a51d2b0d5e51fe9d4d42819dde2f9568ddaa817ebdf9c33f175035"
+    },
+    {
+      "file": "automation/production-assets/shared-harvest-summer-opening-midstep-v1.png",
+      "role": "matched Ant mid-step keyframe",
+      "sha256": "9ac7316be57afeece1d9a18b28839dad2cc6f345cc4e5a0d85297938ca6fa9b7"
+    }
+  ],
+  "visual_review": {
+    "all_five_characters_preserved": true,
+    "ant_identity_and_neckerchief_preserved": true,
+    "large_seed_preserved": true,
+    "ant_step_pose_materially_changed": true,
+    "grasshopper_fiddle_and_costume_preserved": true,
+    "anthill_meadow_lighting_and_composition_preserved": true,
+    "generated_text_or_watermark_present": false,
+    "accepted_for_local_keyframe_animation": true
+  },
+  "motion_language": {
+    "personality": "playful kinetic-soft",
+    "hero_action_rule": "One prioritized character action per shot.",
+    "easing": "ease-in-out for pose travel; ease-out-back only for small celebratory landings",
+    "camera_rule": "One camera move per beat; use push, follow or parallax, never stack all three.",
+    "editing_rule": "Cut on action and align major pose landings to the original song beat grid."
+  },
+  "status": "opening-keyframe-pair-approved"
+}

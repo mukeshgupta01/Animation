@@ -582,6 +582,10 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Live reconciliation before preparing the pilot found local and `origin/main` at zero divergence; the Ant planning files were the only pre-existing dirty changes. Generation count-only returned 14 complete, zero remaining and zero failed. Read-only OAuth verification returned Tiny Tales channel `UCEn9N-ITQHshjgt6fy7fxnw`. The queue had 10 MP4s, the archive and ledger had 47 confirmed items, and the ten-minute uploader was Ready.
 - Pika has no available Codex/plugin connector. Its site was opened in the user's browser, but account sign-in and the browser upload/generation remain a user interaction. After the result is downloaded, visually review it against every locked acceptance check before any wider generation.
 - The Pika free output is a test asset, not automatically approved for commercial/public use. Confirm current usage rights before putting any Pika-generated pixels into a monetized Tiny Tales video.
+- The user later explicitly refused payment and manual provider work. Do not create a paid Pika/API key, buy credits, start a subscription, or proceed through a payment prompt. Pika remains test evidence only.
+- The active zero-cost method is built-in generated animation keyframes plus deterministic local rendering with pose progression, eased camera/follow/parallax motion, ambient movement and beat-synchronized cuts. This is not true generative video and must be described accurately.
+- `automation/production-assets/shared-harvest-summer-opening-midstep-v1.png` is an accepted matched edit of the opening frame with Ant visibly advancing while the seed, five identities, Grasshopper/fiddle, anthill, composition and lighting remain consistent. It has no watermark; SHA-256 is `9ac7316be57afeece1d9a18b28839dad2cc6f345cc4e5a0d85297938ca6fa9b7`.
+- `metadata/ant-grasshopper-zero-cost-keyframe-review.json` records the accepted opening pair and the motion language. Continue one prioritized action per shot and reject any identity, anatomy, prop or scene drift before local animation.
 
 ## Safe continuation checklist
 

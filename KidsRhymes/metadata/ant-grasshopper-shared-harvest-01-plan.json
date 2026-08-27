@@ -15,6 +15,8 @@
   "animation_pilot": "metadata/ant-grasshopper-pika-pilot-01.json",
   "animation_pilot_followup": "metadata/ant-grasshopper-pika-pilot-02.json",
   "animation_pilot_policy": "Pilot 02 proved Pika can produce a planted weighted character step when each shot has one prioritized action. Provider motion is approved for a single-hero-per-shot workflow, but both free exports are watermarked 784x470 tests and are rejected for publication. Do not render, queue or upload final Pika footage until commercial usage rights and unwatermarked suitable-resolution export access are confirmed.",
+  "production_method": "Zero-cost animation-ready generated keyframes plus deterministic local code animation, camera travel, parallax, environmental motion and beat-synchronized editing. Paid Pika/API generation is not authorized.",
+  "zero_cost_keyframe_review": "metadata/ant-grasshopper-zero-cost-keyframe-review.json",
   "text_panel_policy": "No lyric cards during the story; only a short opening title and final end card are allowed.",
   "character_continuity": {
     "ant": "A cheerful small chestnut-brown ant with a round face, three clear body sections, six limbs, large hazel eyes, a sunflower-yellow neckerchief, and a tiny woven seed satchel.",
@@ -25,6 +27,10 @@
     {
       "id": "01_summer_meadow",
       "asset": "shared-harvest-summer-opening-v1.png",
+      "animation_keyframes": [
+        "shared-harvest-summer-opening-v1.png",
+        "shared-harvest-summer-opening-midstep-v1.png"
+      ],
       "narrator_line": "In a bright summer meadow, Ant gathered seeds for the seasons ahead while Grasshopper filled the sunshine with a dancing fiddle tune.",
       "visual": "Ant actively carries a seed toward a woven basket while Grasshopper plays and dances on a clover stage; the three helpers move through the lively summer meadow.",
       "motion": "Side-scrolling meadow track, swaying flowers, marching ant steps, bow movement, and bouncing musical shapes."
