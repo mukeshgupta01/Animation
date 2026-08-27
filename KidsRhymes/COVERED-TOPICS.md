@@ -58,6 +58,7 @@ Known completed or queued video concepts: 57.
 - Pip's Five Senses Quest | Interactive Story Adventure for Kids — `pips-five-senses-quest-01` — archived/uploaded
 - Pip's Four Seasons Journey | Interactive Story Adventure for Kids — `pips-four-seasons-journey-01` — archived/uploaded
 - Star Friends' Twinkle Playground | Movement and Bedtime Story for Kids — `star-friends-twinkle-playground-01` — archived/uploaded
+- The Ant and Grasshopper's Shared Harvest | Musical Story for Kids — `ant-grasshopper-shared-harvest-01` — completed local, queued public upload
 - Tavi the Tiny Train's Shape Delivery Day | Shapes and Sequencing for Kids — `tavi-shape-delivery-day-01` — archived/uploaded
 - The Tiny Seed's Big Farm Adventure | Plant Life Cycle for Kids — `tiny-seed-big-farm-adventure-01` — archived/uploaded
 - What Animal Disappeared? | Memory Game for Kids — `what-animal-disappeared-01` — archived/uploaded

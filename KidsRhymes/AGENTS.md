@@ -202,6 +202,14 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The user subsequently rejected all payment/manual-provider paths. Do not buy Pika credits, start a subscription, call a paid API, or continue after any payment prompt. The active method is built-in generated animation keyframes plus deterministic local code motion; it requires no user browser work and adds no third-party watermark.
 - The first matched zero-cost keyframe pair is accepted: `shared-harvest-summer-opening-v1.png` and `shared-harvest-summer-opening-midstep-v1.png`. Review is recorded in `metadata/ant-grasshopper-zero-cost-keyframe-review.json`. Use one prioritized hero action per shot, preserve exact character/prop continuity, and reject pose variants that drift.
 
+## Ant/Grasshopper zero-cost completion (2026-08-27)
+
+- `The Ant and Grasshopper's Shared Harvest` completed as `ant-grasshopper-shared-harvest-01` at 114.44 seconds. The lead narrator is `natasha-au`; Ant uses `ana-us` and Grasshopper uses `ryan-uk`, preserving both the lead-voice rotation and distinct character voices.
+- The producer is `automation/production/produce_ant_grasshopper_shared_harvest.py`. Ten colourful premium 3D-style seasonal scenes directly show the narrated work, music, rescue, winter welcome, planning and spring finale. Nine scenes use generated A/B action poses cut cleanly on the music beat; the rejected snowy B pose duplicated Ant and is deliberately excluded.
+- The opening introduces the meadow orchestra and promises the final song. The opening and finale use the original refrain `Carry a little / Play a little / Plan together / Work and music make the day`; the locally synthesized melody and arrangement are original. No Pika pixels, paid service, subscription, purchased credits or provider watermark appear in the final video.
+- The 1920x1080 H.264/48 kHz stereo AAC master passed a full decode, zero-gap timeline audit, narration containment, final-card-only rule and the 14-second story-shot gate. The general, every-boundary and every-action-cut contact sheets plus the truthful `WORK + MUSIC = MAGIC!` thumbnail were visually reviewed and approved.
+- The curated manifest has 15 completed items, zero remaining and zero failed. The generation runner preserved the reviewed master and released it to the safeguarded public/made-for-kids queue. A dry run attempted no upload, reported two eligible queued videos and selected Ant/Grasshopper next; allow the normal ten-minute scheduler and all existing safeguards to handle it.
+
 ## Three-hour upload schedule (2026-08-25)
 
 - The user explicitly changed the normal Tiny Tales upload cadence to every three hours to support channel growth. The regular upload task must check at 00:20, 03:20, 06:20, 09:20, 12:20, 15:20, 18:20, and 21:20 Australia/Sydney.

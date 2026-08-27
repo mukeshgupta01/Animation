@@ -587,6 +587,15 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - `automation/production-assets/shared-harvest-summer-opening-midstep-v1.png` is an accepted matched edit of the opening frame with Ant visibly advancing while the seed, five identities, Grasshopper/fiddle, anthill, composition and lighting remain consistent. It has no watermark; SHA-256 is `9ac7316be57afeece1d9a18b28839dad2cc6f345cc4e5a0d85297938ca6fa9b7`.
 - `metadata/ant-grasshopper-zero-cost-keyframe-review.json` records the accepted opening pair and the motion language. Continue one prioritized action per shot and reject any identity, anatomy, prop or scene drift before local animation.
 
+## Ant/Grasshopper final production checkpoint (2026-08-27)
+
+- `The Ant and Grasshopper's Shared Harvest | Musical Story for Kids` is finished locally as `ant-grasshopper-shared-harvest-01` at 114.44 seconds. Producer: `automation/production/produce_ant_grasshopper_shared_harvest.py`; exact story plan: `metadata/ant-grasshopper-shared-harvest-01-plan.json`.
+- Natasha (`natasha-au`) narrates, Ana (`ana-us`) voices Ant and Ryan (`ryan-uk`) voices Grasshopper. The opening introduces the orchestra and asks viewers to stay for the fantastic final song; the original carry/play/plan/share refrain returns in the spring finale.
+- Ten premium 3D-style seasonal compositions and nine accepted second action poses create visible work, playing, catching, passing, serving, planning and celebrating. Pose changes use clean music-beat cuts because dissolves between recomposed keyframes created anatomy ghosting. The first-snow second pose was rejected for duplicating Ant and never enters the render.
+- The final contains no Pika footage and uses no paid provider. It is accurately a zero-cost generated-keyframe and deterministic local-code animation, not true rigged or generative video. Original local music, easing, camera travel, seasonal overlays and three voices complete the motion system.
+- The master passed 1080p H.264, 48 kHz stereo AAC, full decode, ten narration-contained story shots, no shot over 14 seconds, zero boundary gaps and final-card-only checks. `quality-contact-sheet.png`, `transition-contact-sheet.png`, `action-cut-contact-sheet.png`, the sync audit and the `WORK + MUSIC = MAGIC!` thumbnail were all visually reviewed.
+- Manifest state is 15 complete, zero remaining and zero failed. The safeguarded queue sidecar contains all mandatory true quality/thumbnail flags. The post-release dry run attempted no upload, reported two queued videos and selected Ant/Grasshopper next; normal ten-minute public/made-for-kids scheduling remains responsible for upload.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

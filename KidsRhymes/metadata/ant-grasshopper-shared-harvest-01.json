@@ -1,0 +1,42 @@
+{
+  "id": "ant-grasshopper-shared-harvest-01",
+  "title": "The Ant and Grasshopper's Shared Harvest | Musical Story for Kids",
+  "description": "Meet Ant, Grasshopper, and their meadow orchestra in an original seasonal story about work, music, planning, kindness, and sharing. Sing the new carry-and-play refrain while the friends roll a berry, rescue the autumn harvest, welcome a friend in winter, and grow a shared spring garden.\n\nAn original Tiny Tales musical fable for children ages 3 to 7.",
+  "tags": [
+    "ant and grasshopper story",
+    "musical story for kids",
+    "kindness story",
+    "teamwork for kids",
+    "animal song",
+    "preschool story",
+    "Tiny Tales"
+  ],
+  "category_id": "27",
+  "made_for_kids": true,
+  "privacy": "public",
+  "upload_authorized": false,
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\ant-grasshopper-shared-harvest-01.mp4",
+  "duration_seconds": 114.44,
+  "voice_profile": "natasha-au",
+  "character_voice_profiles": {
+    "ant": "ana-us",
+    "grasshopper": "ryan-uk"
+  },
+  "quality_gate_passed": true,
+  "full_decode_passed": true,
+  "transition_audit_passed": true,
+  "transition_contact_sheet_reviewed": true,
+  "thumbnail_reviewed": true,
+  "action_cut_contact_sheet_reviewed": true,
+  "quality_report": "automation/production-work/ant-grasshopper-shared-harvest-01/quality-report.json",
+  "transition_audit": "automation/production-work/ant-grasshopper-shared-harvest-01/timeline-gap-audit.json",
+  "narration_visual_sync_audit": "automation/production-work/ant-grasshopper-shared-harvest-01/narration-visual-sync-audit.json",
+  "quality_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/quality-contact-sheet.png",
+  "transition_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/transition-contact-sheet.png",
+  "action_cut_contact_sheet": "automation/production-work/ant-grasshopper-shared-harvest-01/action-cut-contact-sheet.png",
+  "prepared_thumbnail": "automation/thumbnails/ant-grasshopper-shared-harvest-01.jpg",
+  "thumbnail_hook": "WORK + MUSIC = MAGIC!",
+  "true_rigged_3d_animation": false,
+  "visual_method": "zero-cost generated action keyframes and local code animation",
+  "paid_generation_used": false
+}

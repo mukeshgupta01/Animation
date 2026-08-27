@@ -305,6 +305,28 @@
         "tags": ["soccer story for kids", "teamwork for kids", "kindness story", "football skills for children", "preschool movement", "friendship story", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "ant-grasshopper-shared-harvest-01",
+      "name": "The Ant and Grasshopper's Shared Harvest",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_ant_grasshopper_shared_harvest.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/ant-grasshopper-shared-harvest-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "season-changing-musical-fable",
+      "visual_system": "ten-premium-3d-style-seasonal-scenes-with-generated-action-keyframes-and-beat-cuts",
+      "interaction_style": "opening-introduction-carry-play-rescue-kindness-planning-and-final-song",
+      "voice_profile": "natasha-au",
+      "youtube": {
+        "title": "The Ant and Grasshopper's Shared Harvest | Musical Story for Kids",
+        "description": "Meet Ant, Grasshopper, and their meadow orchestra in an original seasonal story about work, music, planning, kindness, and sharing. Sing the new carry-and-play refrain while the friends roll a berry, rescue the autumn harvest, welcome a friend in winter, and grow a shared spring garden.\n\nAn original Tiny Tales musical fable for children ages 3 to 7.",
+        "tags": ["ant and grasshopper story", "musical story for kids", "kindness story", "teamwork for kids", "animal song", "preschool story", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

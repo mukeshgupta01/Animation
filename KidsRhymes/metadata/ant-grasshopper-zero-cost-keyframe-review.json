@@ -32,5 +32,40 @@
     "camera_rule": "One camera move per beat; use push, follow or parallax, never stack all three.",
     "editing_rule": "Cut on action and align major pose landings to the original song beat grid."
   },
-  "status": "opening-keyframe-pair-approved"
+  "completed_production": {
+    "output": "automation/production-output/ant-grasshopper-shared-harvest-01.mp4",
+    "duration_seconds": 114.44,
+    "accepted_scene_assets": [
+      "shared-harvest-summer-opening-v1.png",
+      "shared-harvest-summer-opening-midstep-v1.png",
+      "shared-harvest-ant-work-v1.png",
+      "shared-harvest-ant-work-pose-b-v1.png",
+      "shared-harvest-grasshopper-play-v1.png",
+      "shared-harvest-grasshopper-play-pose-b-v1.png",
+      "shared-harvest-shared-rhythm-v1.png",
+      "shared-harvest-shared-rhythm-pose-b-v1.png",
+      "shared-harvest-autumn-gust-v1.png",
+      "shared-harvest-autumn-gust-pose-b-v1.png",
+      "shared-harvest-harvest-rescue-v1.png",
+      "shared-harvest-harvest-rescue-pose-b-v1.png",
+      "shared-harvest-first-snow-v1.png",
+      "shared-harvest-warm-welcome-v1.png",
+      "shared-harvest-warm-welcome-pose-b-v1.png",
+      "shared-harvest-winter-plan-v1.png",
+      "shared-harvest-winter-plan-pose-b-v1.png",
+      "shared-harvest-spring-finale-v1.png",
+      "shared-harvest-spring-finale-pose-b-v1.png"
+    ],
+    "rejected_scene_asset": {
+      "description": "First-snow second pose duplicated Ant in the window and doorway.",
+      "included_in_render": false
+    },
+    "quality_contact_sheet_reviewed": true,
+    "transition_contact_sheet_reviewed": true,
+    "action_cut_contact_sheet_reviewed": true,
+    "thumbnail_reviewed": true,
+    "paid_generation_used": false,
+    "pika_footage_used": false
+  },
+  "status": "final-master-reviewed-and-queued"
 }
