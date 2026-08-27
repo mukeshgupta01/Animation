@@ -1,5 +1,5 @@
 {
-  "id": "animal-sound-orchestra-01",
+  "id": "animal-sound-orchestra-01-corrected",
   "title": "Animal Sound Orchestra | Moo, Roar, Hoot and More for Kids",
   "description": "Eight lively animal performers dance onto a colourful Tiny Tales concert stage. Meet Cow, Sheep, Pig, Chicken, Lion, Elephant, Owl, and Parrot; echo each call; then sing and move with the original Tiny Tales Animal Sound Song finale.\n\nA playful music, listening, speech, and movement adventure supporting animal vocabulary, rhythm, memory, and confident participation for children ages 3 to 7.",
   "tags": [
@@ -17,7 +17,7 @@
   "made_for_kids": true,
   "privacy": "public",
   "upload_authorized": false,
-  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\animal-sound-orchestra-01.mp4",
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\pending-uploads\\animal-sound-orchestra-01-corrected.mp4",
   "duration_seconds": 240.8,
   "voice_profile": "ana-us",
   "format_family": "animated-animal-orchestra-sing-along",
@@ -33,5 +33,10 @@
   "transition_contact_sheet": "automation/production-work/animal-sound-orchestra-01/transition-contact-sheet.png",
   "narration_visual_sync_audit": "automation/production-work/animal-sound-orchestra-01/narration-visual-sync-audit.json",
   "performer_motion_audit": "automation/production-work/animal-sound-orchestra-01/performer-motion-audit.json",
+  "prepared_thumbnail": "automation/thumbnails/animal-sound-orchestra-01.jpg",
+  "thumbnail_hook": "ANIMAL SOUND SHOW!",
+  "thumbnail_reviewed": true,
+  "thumbnail_artwork": "automation/thumbnail-artwork/backlog/animal-sound-orchestra-01-v1.png",
+  "correction": "Added performer-specific entrances and continuous stage actions, a colourful full-ensemble opening, an original Tiny Tales opening/finale song, and a full-ensemble bow.",
   "new_image_generation_calls": 0
 }
