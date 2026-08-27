@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "created_date": "2026-08-28",
+  "purpose": "Continue the varied Tiny Tales queue after Rory with three non-repeating formats and the next compliant lead-voice rotation.",
+  "global_rules": {
+    "maximum_story_shot_seconds": 14,
+    "narration_visual_sync": "Every line and original effect begins and ends inside the composition that visibly depicts it.",
+    "sound_policy": "Visible machine, home and orchard sounds are locally performed or synthesized, never spoken as onomatopoeia.",
+    "motion_hierarchy": "One hero action, one supporting response layer and restrained ambient life.",
+    "camera_rule": "One eased camera intent per shot with cuts on musical phrases or completed actions.",
+    "visual_quality": "Premium original colourful 3D-style 16:9 scenes with clear focal hierarchy, depth and safe margins.",
+    "paid_services": false
+  },
+  "productions": [
+    {
+      "id": "eddie-excavators-rain-garden-day-01",
+      "title": "Eddie Excavator's Rain-Garden Day | Construction Story for Kids",
+      "status": "active-opening-anchor-approved",
+      "format_family": "construction-sequencing-and-rain-garden-transformation-story",
+      "visual_system": "handcrafted-miniature-construction-cutaways-with-visible-boom-bucket-soil-and-water-actions",
+      "interaction_style": "read-the-plan-scoop-carry-level-place-stones-and-test-the-water-path",
+      "voice_profile": "ana-us",
+      "character_voice_profiles": {"eddie": "ryan-uk"},
+      "opening_anchor": "automation/production-assets/eddie-excavator-rain-garden-opening-v1.png",
+      "story_arc": [
+        "Eddie reads a simple rain-garden plan while children watch safely behind a fence with a grown-up.",
+        "His working arm lowers, scoops and carries soil in clear mechanical steps.",
+        "He levels the curved basin and places stones while the children prepare native seedlings outside the work zone.",
+        "The grown-up confirms the machine is stopped before the planting team enters.",
+        "A gentle water test follows the downpipe into the finished rain garden instead of a muddy puddle."
+      ]
+    },
+    {
+      "id": "dads-coming-home-welcome-rhythm-01",
+      "title": "Dad's Coming-Home Welcome Rhythm | Family Song for Kids",
+      "status": "planned",
+      "format_family": "family-anticipation-and-reconnection-music-story",
+      "visual_system": "changing-window-light-clock-and-doorway-dioramas-with-child-made-greeting-options",
+      "interaction_style": "choose-a-wave-hug-if-wanted-or-quiet-drawing-then-share-a-home-rhythm",
+      "voice_profile": "natasha-au",
+      "character_voice_profiles": {"child": "maisie-uk", "dad": "ryan-uk"}
+    },
+    {
+      "id": "pick-wash-pack-fruit-picnic-01",
+      "title": "Pick, Wash, Pack the Fruit Picnic | Orchard Song for Kids",
+      "status": "planned",
+      "format_family": "orchard-to-picnic-action-song",
+      "visual_system": "sunlit-orchard-rows-basket-weight-washing-water-and-patterned-picnic-tableaux",
+      "interaction_style": "ask-permission-gently-pick-wash-count-pack-and-share-without-waste",
+      "voice_profile": "maisie-uk",
+      "character_voice_profiles": {"grown_up": "ana-us"}
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "id": "rorys-eight-planet-postcard-adventure-01",
+  "working_title": "Rory's Eight-Planet Postcard Adventure",
+  "format_family": "planetary-postcard-travelogue",
+  "voice_profile": "ryan-uk",
+  "character_voice_profiles": {
+    "rory": "ana-us"
+  },
+  "maximum_shot_seconds": 14,
+  "science_scope": "The eight planets appear once each in correct Sun-to-Neptune order. Gas and ice giants are observed from the sealed rocket, never treated as solid landing worlds.",
+  "motion_language": {
+    "personality": "curious kinetic-soft cinematic travelogue",
+    "emotional_intent": "wonder grows from a small first discovery to giant outer-world awe, then resolves warmly at home",
+    "edit_grid": "108 BPM, story cuts on four- or eight-beat phrases with the Neptune stamp as the visual climax and a long home-map resolve",
+    "hierarchy": "Rory's visible postcard action is primary, each planet's defining feature is secondary, and stars, dust, cloud or wind remain ambient",
+    "camera": "One move per scene: push, pull, pan, follow or gentle roll; no stacked camera tricks",
+    "composition": "One focal point on a thirds intersection, clear leading room, foreground cabin or terrain depth, and five-percent title-safe margins",
+    "restraint": "No static flashcards, no spoken sound-effect words, no unsafe giant-planet landings, and no generated planet labels"
+  },
+  "shots": [
+    {
+      "id": "01_backyard_launch",
+      "asset": "rory-planets-opening-v1.png",
+      "planet": null,
+      "lines": [
+        {"profile": "ryan-story", "line": "At the edge of bedtime, Rory's little postcard rocket blinked awake beneath a shining map of the Solar System."},
+        {"profile": "ana-rory", "line": "Eight planets, eight postcards. Rocket, find our way!"}
+      ],
+      "effect": "postcard hatch and gentle rocket launch"
+    },
+    {
+      "id": "02_mercury_craters",
+      "asset": "rory-planets-mercury-v1.png",
+      "planet": "Mercury",
+      "lines": [
+        {"profile": "ryan-curious", "line": "First came tiny Mercury, closest to the Sun, with bright hot rock, cold shadow, and craters everywhere."},
+        {"profile": "ana-rory", "line": "Crater circles for postcard number one!"}
+      ],
+      "effect": "first postcard stamp chime"
+    },
+    {
+      "id": "03_venus_clouds",
+      "asset": "rory-planets-venus-v1.png",
+      "planet": "Venus",
+      "lines": [
+        {"profile": "ryan-warm", "line": "Golden clouds wrapped Venus in a thick blanket, hiding the hottest planet below."},
+        {"profile": "ana-rory", "line": "Too hot to land. We will glide safely above!"}
+      ],
+      "effect": "cloud hush and second postcard chime"
+    },
+    {
+      "id": "04_earth_home",
+      "asset": "rory-planets-earth-v1.png",
+      "planet": "Earth",
+      "lines": [
+        {"profile": "ryan-wonder", "line": "Then blue Earth curved into view, with oceans, land, white weather clouds, and one familiar Moon."},
+        {"profile": "ana-rory", "line": "A postcard home, from home!"}
+      ],
+      "effect": "home motif and third postcard chime"
+    },
+    {
+      "id": "05_mars_volcano",
+      "asset": "rory-planets-mars-v1.png",
+      "planet": "Mars",
+      "lines": [
+        {"profile": "ryan-bright", "line": "Mars rolled out rusty plains, a giant volcano, and two tiny moons in its dusty sky."},
+        {"profile": "ana-rory", "line": "Red dust makes a brilliant fourth card!"}
+      ],
+      "effect": "dust sweep and fourth postcard chime"
+    },
+    {
+      "id": "06_jupiter_storm",
+      "asset": "rory-planets-jupiter-v1.png",
+      "planet": "Jupiter",
+      "lines": [
+        {"profile": "ryan-awe", "line": "Suddenly, enormous Jupiter filled the window. Its striped clouds curled around a storm wider than Earth."},
+        {"profile": "ana-rory", "line": "The biggest postcard for the biggest planet!"}
+      ],
+      "effect": "deep storm pulse and fifth postcard chime"
+    },
+    {
+      "id": "07_saturn_rings",
+      "asset": "rory-planets-saturn-v1.png",
+      "planet": "Saturn",
+      "lines": [
+        {"profile": "ryan-lyrical", "line": "Saturn swept past in honey light, wearing broad rings made from countless pieces of ice and rock."},
+        {"profile": "ana-rory", "line": "A ring pattern for card number six!"}
+      ],
+      "effect": "icy ring shimmer and sixth postcard chime"
+    },
+    {
+      "id": "08_uranus_tilt",
+      "asset": "rory-planets-uranus-v1.png",
+      "planet": "Uranus",
+      "lines": [
+        {"profile": "ryan-curious", "line": "Pale Uranus turned almost on its side, an ice giant circled by faint, narrow rings."},
+        {"profile": "ana-rory", "line": "Sideways planet, sideways postcard!"}
+      ],
+      "effect": "tilting glissando and seventh postcard chime"
+    },
+    {
+      "id": "09_neptune_winds",
+      "asset": "rory-planets-neptune-v1.png",
+      "planet": "Neptune",
+      "lines": [
+        {"profile": "ryan-excited", "line": "Far out at Neptune, deep blue clouds raced on some of the fastest winds in the Solar System."},
+        {"profile": "ana-rory", "line": "Hold tight, last postcard stamped!"}
+      ],
+      "effect": "fast wind sweep and eighth postcard chime"
+    },
+    {
+      "id": "10_home_map",
+      "asset": "rory-planets-home-map-v1.png",
+      "planet": null,
+      "lines": [
+        {"profile": "ryan-warm", "line": "At home, Rory built his map from the Sun."},
+        {"profile": "ana-rory", "line": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Eight planets!"}
+      ],
+      "effect": "eight-note postcard-map finale"
+    }
+  ],
+  "required_reviews": [
+    "correct_planet_order_mercury_to_neptune",
+    "ten_unique_story_compositions",
+    "full_ffmpeg_decode",
+    "continuous_zero_gap_timeline",
+    "final_card_only_at_end",
+    "all_lines_and_effects_contained_inside_matching_visual",
+    "no_story_shot_longer_than_14_seconds",
+    "no_spoken_onomatopoeia",
+    "general_and_every_boundary_contact_sheets",
+    "truthful_custom_thumbnail"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "id": "rorys-eight-planet-postcard-adventure-01",
+  "reviewed_date": "2026-08-28",
+  "assets": [
+    "automation/production-assets/rory-planets-opening-v1.png",
+    "automation/production-assets/rory-planets-mercury-v1.png",
+    "automation/production-assets/rory-planets-venus-v1.png",
+    "automation/production-assets/rory-planets-earth-v1.png",
+    "automation/production-assets/rory-planets-mars-v1.png",
+    "automation/production-assets/rory-planets-jupiter-v1.png",
+    "automation/production-assets/rory-planets-saturn-v1.png",
+    "automation/production-assets/rory-planets-uranus-v1.png",
+    "automation/production-assets/rory-planets-neptune-v1.png",
+    "automation/production-assets/rory-planets-home-map-v1.png"
+  ],
+  "rejected_variants": [
+    {
+      "subject": "Uranus",
+      "reason": "The first ring treatment was too broad and bright, making Uranus look like Saturn. It was replaced by the accepted faint, narrow, strongly tilted ring version."
+    }
+  ],
+  "checks": {
+    "rory_identity_consistent": true,
+    "rocket_identity_consistent": true,
+    "one_visible_postcard_action_per_planet": true,
+    "planet_order_mercury_to_neptune": true,
+    "mercury_craters_and_sun_proximity_readable": true,
+    "venus_dense_clouds_and_safe_orbit_readable": true,
+    "earth_oceans_clouds_and_one_moon_readable": true,
+    "mars_rusty_land_volcano_and_two_tiny_moons_readable": true,
+    "jupiter_scale_bands_and_great_red_spot_readable": true,
+    "saturn_icy_ring_system_readable": true,
+    "uranus_pale_colour_sideways_tilt_and_faint_rings_readable": true,
+    "neptune_deep_blue_wind_and_remote_sun_readable": true,
+    "home_table_clear_for_deterministic_eight_card_overlay": true,
+    "no_generated_text_or_branding": true,
+    "safe_16_9_composition": true
+  },
+  "contact_sheets": {
+    "general": "automation/production-work/rorys-eight-planet-postcard-adventure-01/quality-contact-sheet.png",
+    "boundaries": "automation/production-work/rorys-eight-planet-postcard-adventure-01/transition-contact-sheet.png",
+    "final_map": "automation/production-work/rorys-eight-planet-postcard-adventure-01/final-map-review.png"
+  },
+  "approved": true
+}

@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-08-27
+Updated: 2026-08-28
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 60.
+Known completed or queued video concepts: 61.
 
 ## Topic index
 
@@ -59,6 +59,7 @@ Known completed or queued video concepts: 60.
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - Pip's Five Senses Quest | Interactive Story Adventure for Kids — `pips-five-senses-quest-01` — archived/uploaded
 - Pip's Four Seasons Journey | Interactive Story Adventure for Kids — `pips-four-seasons-journey-01` — archived/uploaded
+- Rory's Eight-Planet Postcard Adventure | Space Story for Kids — `rorys-eight-planet-postcard-adventure-01` — completed local, queued public upload
 - Star Friends' Twinkle Playground | Movement and Bedtime Story for Kids — `star-friends-twinkle-playground-01` — archived/uploaded
 - Tavi the Tiny Train's Shape Delivery Day | Shapes and Sequencing for Kids — `tavi-shape-delivery-day-01` — archived/uploaded
 - The Tiny Seed's Big Farm Adventure | Plant Life Cycle for Kids — `tiny-seed-big-farm-adventure-01` — archived/uploaded

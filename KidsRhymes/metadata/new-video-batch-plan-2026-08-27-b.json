@@ -50,10 +50,11 @@
       "id": "rorys-eight-planet-postcard-adventure-01",
       "title": "Rory's Eight-Planet Postcard Adventure | Space Story for Kids",
       "format_family": "planetary-postcard-travelogue",
-      "visual_system": "nine-cinematic-3d-space-dioramas-with-distinct-planet-scale-and-light",
+      "visual_system": "ten-cinematic-3d-space-dioramas-with-distinct-planet-scale-and-light",
       "interaction_style": "travel-observe-send-a-postcard-and-build-a-solar-system-map",
       "voice_profile": "ryan-uk",
       "character_voice_profiles": {"rory": "ana-us"},
+      "status": "completed-reviewed-ready-for-guarded-queue",
       "accuracy_policy": "Use current basic astronomy facts suitable for ages 3 to 7; keep planet order, colour, rings and broad surface type scientifically recognizable.",
       "story_arc": [
         "Rory launches a small original postcard rocket from a backyard observatory.",

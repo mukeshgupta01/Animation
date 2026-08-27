@@ -371,6 +371,28 @@
         "tags": ["five little ducks", "nursery song for kids", "counting song", "duck song", "counting 1 to 5", "preschool music", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "rorys-eight-planet-postcard-adventure-01",
+      "name": "Rory's Eight-Planet Postcard Adventure",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_rory_planet_postcards.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/rorys-eight-planet-postcard-adventure-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "planetary-postcard-travelogue",
+      "visual_system": "ten-cinematic-3d-space-dioramas-with-distinct-planet-scale-and-light",
+      "interaction_style": "travel-observe-send-a-postcard-and-build-a-solar-system-map",
+      "voice_profile": "ryan-uk",
+      "youtube": {
+        "title": "Rory's Eight-Planet Postcard Adventure | Space Story for Kids",
+        "description": "Fly with Rory from Mercury to Neptune as his little postcard rocket visits all eight planets in their correct order. See Mercury's craters, Venus's clouds, blue Earth, red Mars, giant Jupiter, Saturn's rings, sideways Uranus and windy Neptune before Rory builds a postcard map at home.\n\nAn original Tiny Tales space story for children ages 3 to 7.",
+        "tags": ["planets for kids", "solar system for children", "space story for kids", "eight planets", "Mercury to Neptune", "preschool science", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

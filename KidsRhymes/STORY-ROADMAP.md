@@ -118,7 +118,8 @@ This roadmap records user-requested concepts for future production. Before rende
     - User direction: something around an excavator.
     - Eddie is a friendly excavator character who follows a plan to scoop, carry and level soil for a community rain garden while children stay behind a clear safety fence with a grown-up.
     - Visual system: side-view construction sequencing, moving arm/bucket joints, soil layers and a rain-garden transformation; not a vehicle quiz.
-    - Voice: `ryan-uk`; rhythmic mechanical sound design.
+   - Voice: `ana-us` lead with `ryan-uk` as Eddie; rhythmic mechanical sound design.
+   - Active on 2026-08-28 as `eddie-excavators-rain-garden-day-01`. The accepted premium miniature-diorama opening anchor is `automation/production-assets/eddie-excavator-rain-garden-opening-v1.png`; continue with distinct scoop, carry, level, safe-stop planting and water-test compositions.
 
 18. **The Ice-Cream Melt-and-Mix Song**
     - User direction: ice cream song.

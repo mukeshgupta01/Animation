@@ -631,6 +631,15 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Rory's Eight-Planet Postcard Adventure is active, not complete or queued. `automation/production-assets/rory-planets-opening-v1.png` is the accepted identity/style anchor: a premium 3D pop-up-paper backyard observatory, consistent Rory, and a cream/cobalt/orange postcard rocket. Continue by generating distinct accurate Mercury-through-Neptune postcard dioramas, then lock the exact line-to-image plan before narration. Lead must remain `ryan-uk` to preserve rotation.
 - `COVERED-TOPICS.md` was rebuilt after the completed metadata and now records 60 concepts. The curated manifest has 17 completed, zero remaining and zero failed; Rory must not enter the manifest until its producer, reviewed assets and output are ready.
 
+## Rory completion and next varied set (2026-08-28)
+
+- `Rory's Eight-Planet Postcard Adventure | Space Story for Kids` is complete as `rorys-eight-planet-postcard-adventure-01` at 126.7 seconds. Producer: `automation/production/produce_rory_planet_postcards.py`; locked plan: `metadata/rorys-eight-planet-postcard-adventure-01-plan.json`; asset review: `metadata/rorys-eight-planet-postcard-adventure-01-asset-review.json`.
+- Ryan (`ryan-uk`) leads with distinct curious, warm, wonder, awe and excited delivery profiles; Ana (`ana-us`) voices Rory. Ten premium 3D-style scenes show launch plus all eight planets in correct order and a home map. Original local effects perform launch, cloud, dust, storm, ring, wind and postcard stamps; no sound word is narrated.
+- The first Uranus generation was rejected because its bright broad rings looked like Saturn. The accepted Uranus frame uses faint narrow rings and a strong sideways tilt. The final map is deterministic rather than generated: exactly eight reviewed postcard images appear left-to-right as Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune.
+- The master SHA-256 is `1bbf4ef2584bb15e6faac68363459e29133a439da8feaf9ca880a9f06825a207`. Full 1080p H.264/48 kHz stereo AAC decode, zero gaps, ten unique scenes, correct planet order, narration/effect containment, 14-second ceiling, final-card-only and no-spoken-sound gates passed. General, every-boundary, full-resolution final-map and truthful `8 PLANETS, 1 ADVENTURE!` thumbnail reviews passed.
+- The normal runner preserved the reviewed output, marked the curated manifest 18 complete / zero remaining / zero failed, and released Rory to the safeguarded queue without a manual upload.
+- Continued production is planned in `metadata/new-video-batch-plan-2026-08-28-c.json`. The lead sequence is Eddie Excavator `ana-us`, Dad's Coming-Home Welcome Rhythm `natasha-au`, then Pick/Wash/Pack Fruit Picnic `maisie-uk`. Eddie is active; its accepted opening anchor is `automation/production-assets/eddie-excavator-rain-garden-opening-v1.png`, showing a working excavator, clear rain-garden goal and children safely behind a fence with a grown-up.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.
