@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "five-little-ducks-river-countdown-01",
+  "reviewed_date": "2026-08-27",
+  "assets": [
+    "five-ducks-river-opening-v1.png",
+    "five-ducks-river-four-v1.png",
+    "five-ducks-river-three-v1.png",
+    "five-ducks-river-two-v1.png",
+    "five-ducks-river-one-v1.png",
+    "five-ducks-river-mother-search-v1.png",
+    "five-ducks-river-reunion-v1.png"
+  ],
+  "visible_count_sequence": [5, 4, 3, 2, 1, 0, 5],
+  "checks": {
+    "mother_duck_identity_consistent": true,
+    "duckling_material_and_badges_consistent": true,
+    "every_required_count_visually_readable": true,
+    "one_active_paddling_or_search_action_per_scene": true,
+    "handcrafted_felt_and_wood_world_consistent": true,
+    "no_generated_text_or_branding": true,
+    "premium_dimensional_16_9_compositions": true
+  },
+  "contact_sheets_reviewed": true,
+  "thumbnail_reviewed": true,
+  "status": "approved-for-reviewed-master"
+}

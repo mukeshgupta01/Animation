@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "id": "linas-feelings-weather-studio-01",
+  "reviewed_date": "2026-08-27",
+  "assets": [
+    "lina-weather-opening-v1.png",
+    "lina-weather-joy-v1.png",
+    "lina-weather-anger-v1.png",
+    "lina-weather-sadness-v1.png",
+    "lina-weather-worry-v1.png",
+    "lina-weather-rainbow-v1.png"
+  ],
+  "checks": {
+    "lina_identity_consistent": true,
+    "nimbus_identity_consistent": true,
+    "outfit_and_weather_wheel_consistent": true,
+    "one_readable_hero_action_per_scene": true,
+    "six_materially_different_weather_states": true,
+    "safe_child_friendly_emotional_staging": true,
+    "no_generated_text_or_branding": true,
+    "premium_dimensional_16_9_compositions": true
+  },
+  "contact_sheets_reviewed": true,
+  "thumbnail_reviewed": true,
+  "status": "approved-for-reviewed-master"
+}

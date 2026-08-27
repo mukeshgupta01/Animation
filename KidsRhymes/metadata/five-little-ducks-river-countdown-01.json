@@ -1,0 +1,43 @@
+{
+  "id": "five-little-ducks-river-countdown-01",
+  "title": "Five Little Ducks' River Countdown | Nursery Song for Kids",
+  "description": "Follow five little ducklings through a handcrafted river journey as their visible group counts down from five to one. Mother Duck follows their colourful leaf trail, and the whole family reunites for a warm count-up finale.\n\nA new original Tiny Tales musical arrangement and river story for children ages 3 to 7.",
+  "tags": [
+    "five little ducks",
+    "nursery song for kids",
+    "counting song",
+    "duck song",
+    "counting 1 to 5",
+    "preschool music",
+    "Tiny Tales"
+  ],
+  "category_id": "27",
+  "made_for_kids": true,
+  "privacy": "public",
+  "upload_authorized": false,
+  "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\five-little-ducks-river-countdown-01.mp4",
+  "duration_seconds": 81.896,
+  "voice_profile": "maisie-uk",
+  "character_voice_profiles": {
+    "mother_duck": "natasha-au"
+  },
+  "format_family": "traditional-countdown-river-song",
+  "visual_system": "seven-progressive-handcrafted-felt-and-wood-river-tableaux",
+  "interaction_style": "sing-count-follow-river-actions-and-family-reunion",
+  "quality_gate_passed": true,
+  "full_decode_passed": true,
+  "transition_audit_passed": true,
+  "transition_contact_sheet_reviewed": true,
+  "thumbnail_reviewed": true,
+  "quality_report": "automation/production-work/five-little-ducks-river-countdown-01/quality-report.json",
+  "transition_audit": "automation/production-work/five-little-ducks-river-countdown-01/timeline-gap-audit.json",
+  "narration_visual_sync_audit": "automation/production-work/five-little-ducks-river-countdown-01/narration-visual-sync-audit.json",
+  "quality_contact_sheet": "automation/production-work/five-little-ducks-river-countdown-01/quality-contact-sheet.png",
+  "transition_contact_sheet": "automation/production-work/five-little-ducks-river-countdown-01/transition-contact-sheet.png",
+  "prepared_thumbnail": "automation/thumbnails/five-little-ducks-river-countdown-01.jpg",
+  "thumbnail_hook": "CAN YOU COUNT THEM?",
+  "new_image_generation_calls": 7,
+  "true_rigged_3d_animation": false,
+  "paid_generation_used": false,
+  "spoken_duck_calls_removed": true
+}

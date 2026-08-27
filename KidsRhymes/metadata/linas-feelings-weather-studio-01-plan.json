@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "id": "linas-feelings-weather-studio-01",
+  "working_title": "Lina's Feelings Weather Studio",
+  "format_family": "magical-emotional-weather-story",
+  "voice_profile": "natasha-au",
+  "character_voice_profiles": {"lina": "ana-us", "nimbus": "ryan-uk"},
+  "maximum_shot_seconds": 14,
+  "motion_language": {
+    "personality": "playful kinetic-soft",
+    "emotional_intent": "curious, reassuring, hopeful",
+    "transition_family": "hard cuts on musical phrases with weather ambience leading each change",
+    "hierarchy": "Lina's meaningful action is primary, Nimbus reacts second, weather remains ambient.",
+    "camera": "One eased push, pull or follow per shot; no stacked pan-zoom-rotation.",
+    "restraint": "No random dancing, frantic full-frame motion or spoken sound imitations."
+  },
+  "shots": [
+    {
+      "id": "01_opening_forecast",
+      "asset": "lina-weather-opening-v1.png",
+      "lines": [
+        {"profile": "natasha-curious", "line": "One bright morning, Lina opened her weather studio and found the forecast wheel waiting for her hands."},
+        {"profile": "ana-us", "line": "Let's see what my feelings are doing today."}
+      ],
+      "visible_action": "Lina turns the brass forecast wheel with both hands while Nimbus leans into the movement.",
+      "effect": "short brass-wheel ratchet"
+    },
+    {
+      "id": "02_sunshine_joy",
+      "asset": "lina-weather-joy-v1.png",
+      "lines": [
+        {"profile": "natasha-bright", "line": "Warm sunshine rushed through the studio. Lina's joy felt big and bouncy, so she shared one golden ribbon with Nimbus."},
+        {"profile": "ana-us", "line": "Joy can shine and still make room for a friend."}
+      ],
+      "visible_action": "Lina and Nimbus share one ribbon in a single readable arc.",
+      "effect": "bright ribbon chime"
+    },
+    {
+      "id": "03_anger_storm",
+      "asset": "lina-weather-anger-v1.png",
+      "lines": [
+        {"profile": "natasha-grounded", "line": "Then a red-orange storm gathered. Lina planted her feet, rested her hands over her heart, and slowed her breathing."},
+        {"profile": "ana-calm", "line": "I can pause before I choose what to do."}
+      ],
+      "visible_action": "Lina performs a grounded breath while Nimbus mirrors her and loose objects settle.",
+      "effect": "soft distant thunder followed by three quiet breath swells"
+    },
+    {
+      "id": "04_sadness_rain",
+      "asset": "lina-weather-sadness-v1.png",
+      "lines": [
+        {"profile": "natasha-soft", "line": "Gentle rain arrived. Lina opened her blanket and asked Nimbus to stay close."},
+        {"profile": "ana-calm", "line": "I feel sad, and I would like some company."}
+      ],
+      "visible_action": "Lina opens the blanket for Nimbus beneath the warm canopy.",
+      "effect": "gentle rain on glass"
+    },
+    {
+      "id": "05_worry_fog",
+      "asset": "lina-weather-worry-v1.png",
+      "lines": [
+        {"profile": "natasha-curious", "line": "Worry brought silver fog. Lina aimed her warm light ahead and looked for the first safe step."},
+        {"profile": "ana-calm", "line": "One small step is enough to begin."}
+      ],
+      "visible_action": "Lina plants one foot on the first of three lit stepping circles while aiming her flashlight.",
+      "effect": "three pitched step lights"
+    },
+    {
+      "id": "06_rainbow_resolution",
+      "asset": "lina-weather-rainbow-v1.png",
+      "lines": [
+        {"profile": "natasha-warm", "line": "Lina turned the wheel, and every kind of weather settled into a rainbow."},
+        {"profile": "ryan-uk", "line": "Every feeling has a message. Name it, then choose a kind step."}
+      ],
+      "visible_action": "Lina completes the wheel turn as Nimbus makes a tiny shower and the rainbow appears.",
+      "effect": "ascending rainbow chime"
+    }
+  ],
+  "required_reviews": [
+    "full_ffmpeg_decode",
+    "continuous_zero_gap_timeline",
+    "final_card_only_at_end",
+    "every_boundary_contact_sheet",
+    "all_lines_and_effects_contained_inside_matching_visual",
+    "no_story_shot_longer_than_14_seconds",
+    "no_spoken_onomatopoeia",
+    "truthful_custom_thumbnail"
+  ]
+}

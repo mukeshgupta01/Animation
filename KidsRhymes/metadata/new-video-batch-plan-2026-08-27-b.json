@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "created_date": "2026-08-27",
+  "purpose": "Three deliberately different Tiny Tales productions following the Shared Harvest character-led audio correction.",
+  "global_rules": {
+    "maximum_story_shot_seconds": 14,
+    "narration_visual_sync": "Every spoken line and effect must begin and end inside the composition that visibly depicts it.",
+    "sound_policy": "Use real or locally synthesized effects for visible sounds; never narrate onomatopoeia as a substitute.",
+    "motion_personality": "playful kinetic-soft",
+    "motion_hierarchy": "One hero action, supporting reactions, restrained ambient movement.",
+    "camera_rule": "One eased camera intent per shot; cuts land on musical phrases or visible action.",
+    "visual_quality": "Original premium colourful 3D-style 16:9 scenes with one focal point, clear depth and safe margins.",
+    "paid_services": false
+  },
+  "productions": [
+    {
+      "id": "linas-feelings-weather-studio-01",
+      "title": "Lina's Feelings Weather Studio | Emotional Story for Kids",
+      "format_family": "magical-emotional-weather-story",
+      "visual_system": "six-transforming-premium-3d-weather-studio-worlds",
+      "interaction_style": "name-the-feeling-breathe-choose-a-kind-action-and-rainbow-resolution",
+      "voice_profile": "natasha-au",
+      "character_voice_profiles": {"lina": "ana-us", "cloud_friend": "ryan-uk"},
+      "story_arc": [
+        "Lina opens a magical forecast studio where feelings change the room's weather.",
+        "Sunshine represents energetic joy and sharing it without overwhelming friends.",
+        "A red-orange storm represents anger; Lina pauses and takes three slow breaths.",
+        "Gentle rain represents sadness; Lina accepts comfort and asks for company.",
+        "Silver fog represents worry; Lina uses one small flashlight step at a time.",
+        "All weather becomes a rainbow as Lina learns every feeling can be noticed and guided."
+      ]
+    },
+    {
+      "id": "five-little-ducks-river-countdown-01",
+      "title": "Five Little Ducks' River Countdown | Nursery Song for Kids",
+      "format_family": "traditional-countdown-river-song",
+      "visual_system": "seven-progressive-3d-river-journey-tableaux-with-visible-duck-counts",
+      "interaction_style": "sing-count-follow-river-actions-and-family-reunion",
+      "voice_profile": "maisie-uk",
+      "character_voice_profiles": {"mother_duck": "natasha-au"},
+      "music_policy": "Use the public-domain traditional lyric premise with a new Tiny Tales arrangement, instrumentation, performance and original connecting lines.",
+      "story_arc": [
+        "Five ducklings paddle from a colourful riverside nest.",
+        "One duckling at a time pauses for a visible helpful river action while the returning group counts down.",
+        "Mother Duck follows the trail rather than waiting statically.",
+        "The five ducklings reunite at a lantern-lit riverside picnic and sing the final count upward."
+      ]
+    },
+    {
+      "id": "rorys-eight-planet-postcard-adventure-01",
+      "title": "Rory's Eight-Planet Postcard Adventure | Space Story for Kids",
+      "format_family": "planetary-postcard-travelogue",
+      "visual_system": "nine-cinematic-3d-space-dioramas-with-distinct-planet-scale-and-light",
+      "interaction_style": "travel-observe-send-a-postcard-and-build-a-solar-system-map",
+      "voice_profile": "ryan-uk",
+      "character_voice_profiles": {"rory": "ana-us"},
+      "accuracy_policy": "Use current basic astronomy facts suitable for ages 3 to 7; keep planet order, colour, rings and broad surface type scientifically recognizable.",
+      "story_arc": [
+        "Rory launches a small original postcard rocket from a backyard observatory.",
+        "Each planet receives one unique postcard tied to a visible defining feature.",
+        "Travel accelerates through the middle planets and expands into the giant outer worlds.",
+        "Rory returns home and arranges all eight postcards into a correct Sun-to-Neptune map."
+      ]
+    }
+  ]
+}

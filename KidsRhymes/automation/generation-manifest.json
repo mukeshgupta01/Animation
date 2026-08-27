@@ -327,6 +327,50 @@
         "tags": ["ant and grasshopper story", "musical story for kids", "kindness story", "teamwork for kids", "animal song", "preschool story", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "linas-feelings-weather-studio-01",
+      "name": "Lina's Feelings Weather Studio",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_lina_feelings_weather.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/linas-feelings-weather-studio-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "magical-emotional-weather-story",
+      "visual_system": "six-transforming-premium-3d-weather-studio-worlds",
+      "interaction_style": "name-the-feeling-breathe-choose-a-kind-action-and-rainbow-resolution",
+      "voice_profile": "natasha-au",
+      "youtube": {
+        "title": "Lina's Feelings Weather Studio | Emotional Story for Kids",
+        "description": "Join Lina and Nimbus in a magical weather studio where sunshine, storms, rain and fog help them notice joy, anger, sadness and worry. The friends practise sharing space, slow breathing, asking for company and taking one small step.\n\nAn original Tiny Tales emotional-learning story for children ages 3 to 7.",
+        "tags": ["feelings for kids", "emotional story for children", "anger calming for kids", "sadness and worry", "social emotional learning", "preschool story", "Tiny Tales"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "five-little-ducks-river-countdown-01",
+      "name": "Five Little Ducks' River Countdown",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_five_ducks_river_countdown.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/five-little-ducks-river-countdown-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "traditional-countdown-river-song",
+      "visual_system": "seven-progressive-handcrafted-felt-and-wood-river-tableaux",
+      "interaction_style": "sing-count-follow-river-actions-and-family-reunion",
+      "voice_profile": "maisie-uk",
+      "youtube": {
+        "title": "Five Little Ducks' River Countdown | Nursery Song for Kids",
+        "description": "Follow five little ducklings through a handcrafted river journey as their visible group counts down from five to one. Mother Duck follows their colourful leaf trail, and the whole family reunites for a warm count-up finale.\n\nA new original Tiny Tales musical arrangement and river story for children ages 3 to 7.",
+        "tags": ["five little ducks", "nursery song for kids", "counting song", "duck song", "counting 1 to 5", "preschool music", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

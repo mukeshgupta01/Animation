@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "id": "five-little-ducks-river-countdown-01",
+  "working_title": "Five Little Ducks' River Countdown",
+  "format_family": "traditional-countdown-river-song",
+  "voice_profile": "maisie-uk",
+  "character_voice_profiles": {"mother_duck": "natasha-au"},
+  "maximum_shot_seconds": 14,
+  "music_policy": "A new Tiny Tales melody, rhythm, instrumentation, connecting story and finale are used. Duck calls are performed as original effects, never spoken as quack words.",
+  "motion_language": {
+    "personality": "playful kinetic-soft handcrafted stop-motion",
+    "edit_grid": "104 BPM, cuts on four-beat phrases, one longer hold for Mother Duck's search",
+    "hierarchy": "The visible duck count and one paddling/search action are primary; water and plants remain ambient.",
+    "camera": "One follow, push or pull per scene with clear leading room.",
+    "restraint": "No number cards, static lineups, random dancing or spoken animal-sound words."
+  },
+  "shots": [
+    {
+      "id": "01_five_depart",
+      "asset": "five-ducks-river-opening-v1.png",
+      "lines": [
+        {"profile": "maisie-story", "line": "At sunrise, Mother Duck guided five little ducklings from their cozy nest into the sparkling river."},
+        {"profile": "maisie-song", "line": "Five little ducks went paddling one day, under the bridge and round the bay."}
+      ],
+      "visible_count": 5,
+      "effect": "five soft paddle splashes"
+    },
+    {
+      "id": "02_four_bridge",
+      "asset": "five-ducks-river-four-v1.png",
+      "lines": [
+        {"profile": "maisie-song", "line": "Mother Duck called across the blue, but only four little ducks came through."}
+      ],
+      "visible_count": 4,
+      "effect": "three real duck calls followed by bridge water"
+    },
+    {
+      "id": "03_three_stones",
+      "asset": "five-ducks-river-three-v1.png",
+      "lines": [
+        {"profile": "maisie-song", "line": "Four little ducks curved round the tree. Mother Duck called, then there were three."}
+      ],
+      "visible_count": 3,
+      "effect": "three real duck calls and three stepping-stone splashes"
+    },
+    {
+      "id": "04_two_waterfall",
+      "asset": "five-ducks-river-two-v1.png",
+      "lines": [
+        {"profile": "maisie-song", "line": "Three little ducks found a waterfall view. Mother Duck called, then there were two."}
+      ],
+      "visible_count": 2,
+      "effect": "three real duck calls with soft waterfall"
+    },
+    {
+      "id": "05_one_lantern_cove",
+      "asset": "five-ducks-river-one-v1.png",
+      "lines": [
+        {"profile": "maisie-song", "line": "Two little ducks chased lantern light for fun. Mother Duck called, then there was one."}
+      ],
+      "visible_count": 1,
+      "effect": "three real duck calls and one paddle wake"
+    },
+    {
+      "id": "06_mother_search",
+      "asset": "five-ducks-river-mother-search-v1.png",
+      "lines": [
+        {"profile": "maisie-story", "line": "When no ducklings returned, Mother Duck found five coloured leaves and followed their trail beside the river."},
+        {"profile": "natasha-au", "line": "I see your trail. I am coming to find you."}
+      ],
+      "visible_count": 0,
+      "effect": "gentle lantern bell and walking taps"
+    },
+    {
+      "id": "07_family_reunion",
+      "asset": "five-ducks-river-reunion-v1.png",
+      "lines": [
+        {"profile": "maisie-song", "line": "One, two, three, four, five came home, following the lantern glow."},
+        {"profile": "natasha-song", "line": "Five little ducks, safe together. Home by the river, all together!"}
+      ],
+      "visible_count": 5,
+      "effect": "five arrival splashes and warm final duck calls"
+    }
+  ],
+  "required_reviews": [
+    "exact_visible_counts_5_4_3_2_1_0_5",
+    "full_ffmpeg_decode",
+    "continuous_zero_gap_timeline",
+    "final_card_only_at_end",
+    "all_lines_and_effects_contained_inside_matching_visual",
+    "no_story_shot_longer_than_14_seconds",
+    "no_spoken_quack_or_other_onomatopoeia",
+    "general_and_every_boundary_contact_sheets",
+    "truthful_custom_thumbnail"
+  ]
+}
