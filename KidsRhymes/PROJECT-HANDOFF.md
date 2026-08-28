@@ -686,6 +686,12 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Full decode, 1080p H.264, 48 kHz stereo AAC, zero gaps, exact musical cuts, voice rotation, lyric/effect containment, general/boundary/asset contact sheets, critical frames and thumbnail review passed. The initial title/end overlays were rejected for competing with faces or fruit and were reduced before the final render. Final SHA-256 is `21f1b9a872bb4badf4d304b809f97be28d02b0ffd38264bd09a7daf6c951b40d`; audio is -16.3 LUFS and -1.5 dB true peak. Thumbnail hook: `PICK, WASH, PACK!` Nothing is queued or uploaded.
 - `COVERED-TOPICS.md` was rebuilt and now records 65 concepts. Choose the next story only after comparing its format, interaction, art system, presenter and setting progression against the latest five completed entries.
 
+## Lumi Shadow Theatre active production (2026-08-28)
+
+- The next deliberately different story is `lumi-shadow-theatre-surprise-01`, an original 84-second / 84 BPM backlit paper-theatre musical. Seven four-bar scenes stay at 11.428571 seconds each, followed by a four-second resolve. Ryan leads; Natasha performs Lumi and Ana performs Ms Noor.
+- Its visual world is handcrafted indigo velvet, amber silk, layered cut paper and a protected brass theatre lamp. The exact plan is `metadata/lumi-shadow-theatre-surprise-01-plan.json`; the accepted-asset ledger is `metadata/lumi-shadow-theatre-surprise-01-asset-review.json`.
+- Scene 1 establishes Lumi, Ms Noor, one rabbit puppet, three marked distances, an unlit/safely protected lamp, screen and the one-circle/two-triangle shape rack. Scene 2 preserves the identities and shows the lit supervised experiment with one small crisp rabbit shadow near the screen. Continue with near-lamp large shadow, then owl shapes, safe reveal, three-size rehearsal and finale. Nothing is queued or uploaded.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "created_date": "2026-08-28",
+  "purpose": "Continue Tiny Tales after Fruit Picnic with a visually and structurally distinct musical light-and-shadow story.",
+  "global_rules": {
+    "maximum_story_shot_seconds": 14,
+    "narration_visual_sync": "Every lyric and effect remains inside the composition that visibly supports it.",
+    "sound_policy": "Visible theatre sounds are effects and never spoken onomatopoeia.",
+    "motion_hierarchy": "One hero shadow transformation, one supporting character response and restrained ambient dust/light.",
+    "paid_services": false
+  },
+  "productions": [
+    {
+      "id": "lumi-shadow-theatre-surprise-01",
+      "title": "Lumi's Shadow Theatre Surprise | Light and Shadow Song for Kids",
+      "status": "active-timeline-locked-two-scenes-reviewed-next-large-shadow",
+      "format_family": "backstage-to-performance-shadow-experiment-story-song",
+      "visual_system": "indigo-velvet-and-amber-silk-handcrafted-cut-paper-shadow-theatre",
+      "interaction_style": "predict-small-medium-large-shadow-size-and-reveal-combined-shapes",
+      "voice_profile": "ryan-uk",
+      "character_voice_profiles": {"lumi": "natasha-au", "guide": "ana-us"},
+      "locked_plan": "metadata/lumi-shadow-theatre-surprise-01-plan.json",
+      "asset_review": "metadata/lumi-shadow-theatre-surprise-01-asset-review.json",
+      "opening_anchor": "automation/production-assets/lumi-shadow-theatre-opening-v1.png"
+    }
+  ]
+}

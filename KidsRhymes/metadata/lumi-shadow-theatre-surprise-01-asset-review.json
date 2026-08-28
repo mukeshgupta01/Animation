@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "project_id": "lumi-shadow-theatre-surprise-01",
+  "review_date": "2026-08-28",
+  "visual_system": "handcrafted indigo-velvet and amber-silk cut-paper shadow theatre",
+  "resolution": "1672x941",
+  "accepted_assets": [
+    {
+      "scene": 1,
+      "file": "automation/production-assets/lumi-shadow-theatre-opening-v1.png",
+      "sha256": "9c10357fd92fbc93c3a7b0f48bc823fefb75b606ece3f0e55ec4719429b387ac",
+      "review": "accepted; Lumi, Ms Noor, the protected brass lamp, rabbit puppet, amber screen, three floor markers and one-circle/two-triangle rack establish the complete experiment safely"
+    },
+    {
+      "scene": 2,
+      "file": "automation/production-assets/lumi-shadow-theatre-small-shadow-v1.png",
+      "sha256": "25d8ebc8f82bca987e7d00f992b6e1cbfebd26ee02d60f76dfd9a0d5f3780f8a",
+      "review": "accepted; the same rabbit puppet is close to the screen and produces exactly one crisp small rabbit silhouette while Ms Noor supervises the protected illuminated lamp"
+    }
+  ],
+  "rejected_variants": [
+    {
+      "scene": 2,
+      "reason": "The first detailed scene-two request was rejected by the image tool's output safety system. No image was produced or saved; the simplified family-friendly retry passed."
+    }
+  ],
+  "continuity_checks": {
+    "lumi_identity_and_clothes_consistent": true,
+    "ms_noor_identity_and_clothes_consistent": true,
+    "protected_lamp_and_amber_screen_consistent": true,
+    "single_rabbit_puppet_consistent": true,
+    "small_near_screen_shadow_clear": true,
+    "no_generated_text_or_watermark": true
+  },
+  "remaining_scenes": ["large-shadow", "shape-owl", "safe-reveal", "three-size-rehearsal", "finale"],
+  "status": "two-of-seven-scenes-accepted-next-large-shadow"
+}
