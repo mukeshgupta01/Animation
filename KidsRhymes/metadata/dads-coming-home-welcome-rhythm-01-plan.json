@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "project_id": "dads-coming-home-welcome-rhythm-01",
+  "title": "Dad's Coming-Home Welcome Rhythm | Family Song for Kids",
+  "format": "inclusive family anticipation story-song with child-led greeting choices",
+  "story_duration_seconds": 84.0,
+  "final_card_seconds": 4.0,
+  "duration_seconds": 88.0,
+  "music": {
+    "bpm": 96,
+    "beat_one_offset_seconds": 0.0,
+    "scene_seconds": 12.0,
+    "motion_personality": "playful kinetic-soft with tender holds",
+    "lead_voice": "natasha-au melodic-story",
+    "child_voice": "maisie-uk bright-character",
+    "dad_voice": "ryan-uk warm-character",
+    "sound_policy": "Clock, paper, keys, door, footsteps and household percussion are synchronized effects and never spoken as imitation words."
+  },
+  "creative_intent": "Turn waiting for a parent into a warm, inclusive musical story: the child notices time and changing light, chooses a comfortable greeting, welcomes Dad without forced affection, and shares a joyful home rhythm.",
+  "visual_system": "premium stop-motion-inspired layered paper-and-fabric apartment sets with tactile wool, stitched cushions, cut-paper light shapes and one consistent family",
+  "motion_language": {
+    "easing_family": "soft cubic ease with small playful landings",
+    "base_timing_unit_seconds": 0.625,
+    "transition_family": "match cuts through the round clock, sun disc and doorway arch",
+    "motion_intensity": "one hero action per scene, support below half amplitude, ambient light drift only",
+    "hold_discipline": "at least one full beat of visual rest after each greeting action"
+  },
+  "character_lock": {
+    "child": "Mina, 5-year-old South Asian-Australian girl, dark wavy bob, mustard star hairclip, teal dungarees over a coral shirt, striped socks",
+    "dad": "Arun, South Asian-Australian father, short dark curls, neat beard, navy rain jacket over a rust jumper, canvas work bag",
+    "home": "cosy teal, coral and honey apartment living room with rounded doorway, low round clock, mustard sofa, stitched cloud cushions and a broad window"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "time_start": 0.0,
+      "time_end": 12.0,
+      "emotion": "gentle anticipation and curiosity",
+      "visual_action": "Mina looks from the round picture clock to warm afternoon light crossing the window seat. A small family-photo card shows Dad, while a blank folded welcome card waits beside coloured pencils.",
+      "musical_treatment": "Soft kalimba and brushed heartbeat pulse; the melody rises with each glance from clock to window.",
+      "lyric_intent": ["Golden light is sliding; home-time's drawing near.", "Mina checks the picture clock: Dad will soon be here."],
+      "effects": ["quiet clock movement", "one pencil roll"],
+      "camera": "slow curved push from clock to Mina and the window"
+    },
+    {
+      "scene": 2,
+      "time_start": 12.0,
+      "time_end": 24.0,
+      "emotion": "purposeful preparation",
+      "visual_action": "Mina clears the doorway path, places Dad's indoor slippers neatly and finishes a bright drawing of their home. The sky outside shifts from gold toward peach.",
+      "musical_treatment": "A tidy two-beat bass pattern joins kalimba; paper and slipper actions land on alternating beats.",
+      "lyric_intent": ["Clear a little pathway; make a cosy place.", "Fold a happy picture with a bright familiar face."],
+      "effects": ["paper fold", "two soft slipper placements"],
+      "camera": "gentle side follow ending on the finished drawing"
+    },
+    {
+      "scene": 3,
+      "time_start": 24.0,
+      "time_end": 36.0,
+      "emotion": "playful choice and confidence",
+      "visual_action": "Three large picture cards offer a wave, a high-five and sharing the drawing. Mina considers them, chooses the wave card and places it on the welcome stand; all choices remain visibly acceptable.",
+      "musical_treatment": "Three distinct woodblock-and-bell motifs present the options, followed by a confident resolving chord when Mina chooses.",
+      "lyric_intent": ["Wave, high-five, or share your art—choose what feels just right.", "Every welcome can be warm; Mina picks tonight."],
+      "effects": ["three card slides", "single choice chime"],
+      "camera": "stable overhead choice tableau, then eased tilt to Mina's smile"
+    },
+    {
+      "scene": 4,
+      "time_start": 36.0,
+      "time_end": 48.0,
+      "emotion": "quiet suspense",
+      "visual_action": "The room turns softly peach-blue. A key shadow reaches the frosted door panel, the handle moves once, and Mina waits on her floor star with her drawing held safely at her side.",
+      "musical_treatment": "Percussion thins to a held bass note and small clock pulse; harmony tightens until the handle moves.",
+      "lyric_intent": ["Evening paints the window; footsteps cross the hall.", "Mina finds her waiting star and hears the softest call."],
+      "effects": ["keys once", "two hallway footsteps", "single door-handle turn"],
+      "camera": "locked doorway composition with a very slow suspense push"
+    },
+    {
+      "scene": 5,
+      "time_start": 48.0,
+      "time_end": 60.0,
+      "emotion": "relief and affectionate respect",
+      "visual_action": "Dad opens the door, sets down his bag and pauses at Mina's height. Mina initiates her chosen broad wave; Dad mirrors it with a delighted smile before she offers the drawing.",
+      "musical_treatment": "Harmony opens into warm strings and ukulele; the two waves land as a musical question and answer.",
+      "lyric_intent": ["Door swings wide—Dad is home; he stops and smiles hello.", "Mina leads her chosen wave, and Dad joins in the flow."],
+      "effects": ["door open", "bag set down", "jacket rustle"],
+      "camera": "medium doorway two-shot with a gentle settle after the mirrored wave"
+    },
+    {
+      "scene": 6,
+      "time_start": 60.0,
+      "time_end": 72.0,
+      "emotion": "buoyant reconnection",
+      "visual_action": "Mina taps a small hand drum, Dad pats two stitched sofa cushions, and they copy a simple three-beat home rhythm while the drawing stands between them.",
+      "musical_treatment": "Full child-friendly groove: hand drum answers two low cushion beats, then voices trade one short melodic phrase.",
+      "lyric_intent": ["One beat from Mina, two beats from Dad.", "Copy our home rhythm—gentle, bright and glad."],
+      "effects": ["one hand-drum strike", "two cushion pats", "repeated three-beat response"],
+      "camera": "low triangular composition linking hands, drawing and smiling faces"
+    },
+    {
+      "scene": 7,
+      "time_start": 72.0,
+      "time_end": 84.0,
+      "emotion": "joyful belonging with a calm resolve",
+      "visual_action": "Mina and Dad display the drawing on the family wall, then sit side by side under the now-blue evening window. Their final wave faces the viewer as the room glows honey-gold.",
+      "musical_treatment": "The full welcome motif returns with kalimba, ukulele, hand drum and warm harmony, then resolves into a long soft chord.",
+      "lyric_intent": ["Different ways to welcome, every heart can choose.", "Home is time together in our cosy evening blues."],
+      "effects": ["paper clip", "soft fabric settle", "final three-beat home cadence"],
+      "camera": "slow pullback to the complete room, holding the final viewer wave"
+    }
+  ],
+  "quality_gates": [
+    "Mina, Dad and the apartment remain visually consistent in every scene.",
+    "No physical affection is required; Mina initiates the visible greeting and Dad respects her choice.",
+    "Every lyric and effect remains inside the scene that visibly supports it.",
+    "Changing window light and the round clock make the passage of time understandable.",
+    "No clock, key, door, footstep or percussion sound is spoken as an imitation word.",
+    "The score audibly changes through anticipation, preparation, choice, suspense, relief, play and resolve.",
+    "Every story scene is 12 seconds and below the 14-second ceiling.",
+    "Final output includes visual, transition, lyric-emotion-sync and full-decode evidence."
+  ],
+  "status": "timeline-locked-all-seven-scenes-reviewed-next-producer"
+}

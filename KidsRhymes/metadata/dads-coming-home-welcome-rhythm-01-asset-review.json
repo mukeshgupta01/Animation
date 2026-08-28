@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "project_id": "dads-coming-home-welcome-rhythm-01",
+  "review_date": "2026-08-28",
+  "visual_system": "premium stop-motion-inspired layered paper-and-fabric apartment sets",
+  "resolution": "1672x941",
+  "contact_sheet": "automation/production-work/dads-coming-home-welcome-rhythm-01/asset-contact-sheet.png",
+  "assets": [
+    {
+      "scene": 1,
+      "role": "opening anticipation and identity anchor",
+      "file": "automation/production-assets/dads-coming-home-opening-v1.png",
+      "sha256": "40565f5bb534407e6f96e7d623866b9582b86ba072a8cc9ef684f8a4baf71fc0",
+      "review": "accepted; Mina, Dad photo, picture clock, blank card, window and rounded doorway are clear"
+    },
+    {
+      "scene": 2,
+      "role": "preparing the clear doorway path",
+      "file": "automation/production-assets/dads-coming-home-preparing-v1.png",
+      "sha256": "97a06e06d95953c50116bcd67d4b4855472cc88052ae771be64487a598ffb4d0",
+      "review": "accepted; Mina places one pair of adult slippers and the finished drawing remains supporting context"
+    },
+    {
+      "scene": 3,
+      "role": "inclusive greeting choice",
+      "file": "automation/production-assets/dads-coming-home-greeting-choice-v1.png",
+      "sha256": "064a14ef868f9ad247ac9ca11daf07b709fb1c870e6e05ede1b2ccaf2a20e61b",
+      "review": "accepted; exactly three readable picture choices and Mina visibly selects the wave"
+    },
+    {
+      "scene": 4,
+      "role": "doorway suspense",
+      "file": "automation/production-assets/dads-coming-home-door-suspense-v1.png",
+      "sha256": "f067997247b41268ba7088b5262e345778bbc745358a4c60ecae9a4f1e69fde6",
+      "review": "accepted; twilight, waiting star, closed door, slippers and non-scary key silhouette are legible"
+    },
+    {
+      "scene": 5,
+      "role": "respectful mirrored-wave payoff",
+      "file": "automation/production-assets/dads-coming-home-mirrored-wave-v1.png",
+      "sha256": "906742c50977740108db419707765ff6aada060556325437a0e843785f1a8037",
+      "review": "accepted; Mina initiates, Dad mirrors, comfortable space and no forced contact"
+    },
+    {
+      "scene": 6,
+      "role": "three-beat home rhythm",
+      "file": "automation/production-assets/dads-coming-home-home-rhythm-v1.png",
+      "sha256": "bcf71207f5c1a72bc1bcd2ec947a194da531e0c8c1edf70f8a52fb978dd1c031",
+      "review": "accepted; one drum, exactly two cloud cushions and the drawing create a clear triangular rhythm composition"
+    },
+    {
+      "scene": 7,
+      "role": "evening resolve and viewer wave",
+      "file": "automation/production-assets/dads-coming-home-finale-v1.png",
+      "sha256": "f234fed41406fabbd2cb0ce7455c7540ce12f45d8a76b9e9ca243e01dabbdb63",
+      "review": "accepted; drawing is displayed, rhythm props rest, both characters wave and the room resolves warmly"
+    }
+  ],
+  "continuity_checks": {
+    "mina_identity_and_clothes_consistent": true,
+    "dad_identity_and_clothes_consistent_after_arrival": true,
+    "apartment_landmarks_consistent": true,
+    "gold_to_peach_to_blue_time_progression_clear": true,
+    "exactly_three_greeting_choices": true,
+    "mina_initiates_selected_greeting": true,
+    "no_forced_physical_affection": true,
+    "one_drum_and_two_cushion_rhythm_readable": true,
+    "no_generated_text_or_watermark": true,
+    "one_hero_action_per_scene": true
+  },
+  "status": "all-seven-scenes-accepted-next-producer"
+}

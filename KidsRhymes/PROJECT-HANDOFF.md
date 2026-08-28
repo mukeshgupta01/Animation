@@ -669,6 +669,13 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Full decode, 1920x1080 H.264, 48 kHz stereo AAC, zero gaps, seven unique story scenes, lyric/effect containment, eighth-grid line starts, voice variation, final-card and prepared-thumbnail checks passed. Manual visual review corrected a compositor bug that made translucent accents opaque, then rechecked the planting scene at 48.5, 54 and 59.5 seconds and restored the completed garden behind the final refrain.
 - Final SHA-256 is `6b60a23387e234886b557cee57ff6095a4eedad2f40cfa12c18b0a4c3313287f`; audio measures -16.3 LUFS integrated and -1.0 dB true peak. The reviewed thumbnail asks `WHERE WILL THE RAIN GO?` Nothing is queued or uploaded. The next varied production is `dads-coming-home-welcome-rhythm-01` with Natasha lead; keep it visually and structurally distinct from Eddie.
 
+## Dad welcome rhythm visual development (2026-08-28)
+
+- `dads-coming-home-welcome-rhythm-01` is active with an 88-second / 96 BPM musical timeline and all seven 1672x941 visual scenes accepted. Its distinct system is a premium stop-motion-inspired layered paper-and-fabric apartment, progressing from golden afternoon through peach suspense to blue evening rather than repeating Eddie's outdoor construction miniatures.
+- Mina is a five-year-old South Asian-Australian child with a dark wavy bob, mustard star clip, teal dungarees, coral shirt and striped socks. Dad Arun has short dark curls, a neat beard, navy rain jacket, rust jumper and canvas bag. Preserve their exact identity and the apartment landmarks from `automation/production-assets/dads-coming-home-*-v1.png`.
+- The seven actions are picture-clock anticipation, slipper/drawing preparation, exactly three picture-card greeting choices, closed-door key suspense, a Mina-initiated mirrored wave with no touching, a one-drum/two-cushion three-beat rhythm, and the drawing-display/viewer-wave finale. The full continuity audit and hashes are in `metadata/dads-coming-home-welcome-rhythm-01-asset-review.json`; the exact music/emotion plan is `metadata/dads-coming-home-welcome-rhythm-01-plan.json`.
+- Natasha remains the lead voice, Maisie is Mina and Ryan is Dad. Next build the deterministic producer, phrase-grid vocals, real paper/key/door/footstep/drum/cushion effects, changing score, thumbnail and review evidence. Nothing is queued or uploaded.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.

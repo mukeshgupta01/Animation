@@ -35,12 +35,15 @@
     {
       "id": "dads-coming-home-welcome-rhythm-01",
       "title": "Dad's Coming-Home Welcome Rhythm | Family Song for Kids",
-      "status": "planned",
+      "status": "active-timeline-locked-all-scenes-reviewed-producer-next",
       "format_family": "family-anticipation-and-reconnection-music-story",
       "visual_system": "changing-window-light-clock-and-doorway-dioramas-with-child-made-greeting-options",
       "interaction_style": "choose-a-wave-hug-if-wanted-or-quiet-drawing-then-share-a-home-rhythm",
       "voice_profile": "natasha-au",
-      "character_voice_profiles": {"child": "maisie-uk", "dad": "ryan-uk"}
+      "character_voice_profiles": {"child": "maisie-uk", "dad": "ryan-uk"},
+      "locked_plan": "metadata/dads-coming-home-welcome-rhythm-01-plan.json",
+      "asset_review": "metadata/dads-coming-home-welcome-rhythm-01-asset-review.json",
+      "opening_anchor": "automation/production-assets/dads-coming-home-opening-v1.png"
     },
     {
       "id": "pick-wash-pack-fruit-picnic-01",
