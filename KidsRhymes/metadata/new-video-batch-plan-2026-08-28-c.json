@@ -15,13 +15,15 @@
     {
       "id": "eddie-excavators-rain-garden-day-01",
       "title": "Eddie Excavator's Rain-Garden Day | Construction Story for Kids",
-      "status": "active-opening-anchor-approved",
+      "status": "active-all-scenes-reviewed-producer-next",
       "format_family": "construction-sequencing-and-rain-garden-transformation-story",
       "visual_system": "handcrafted-miniature-construction-cutaways-with-visible-boom-bucket-soil-and-water-actions",
       "interaction_style": "read-the-plan-scoop-carry-level-place-stones-and-test-the-water-path",
       "voice_profile": "ana-us",
       "character_voice_profiles": {"eddie": "ryan-uk"},
       "opening_anchor": "automation/production-assets/eddie-excavator-rain-garden-opening-v1.png",
+      "locked_plan": "metadata/eddie-excavators-rain-garden-day-01-plan.json",
+      "asset_review": "metadata/eddie-excavators-rain-garden-day-01-asset-review.json",
       "story_arc": [
         "Eddie reads a simple rain-garden plan while children watch safely behind a fence with a grown-up.",
         "His working arm lowers, scoops and carries soil in clear mechanical steps.",

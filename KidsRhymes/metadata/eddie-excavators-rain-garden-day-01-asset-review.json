@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "project_id": "eddie-excavators-rain-garden-day-01",
+  "review_date": "2026-08-28",
+  "source_method": "Built-in image generation using the accepted opening image and successive approved scenes as identity/style references; no paid provider or manual browser workflow.",
+  "resolution": "1672x941",
+  "contact_sheet": "automation/production-work/eddie-excavators-rain-garden-day-01/asset-contact-sheet.png",
+  "assets": [
+    {
+      "scene": 1,
+      "file": "automation/production-assets/eddie-excavator-rain-garden-opening-v1.png",
+      "sha256": "4d96cd7e311f39b331460b68d0c32661839ff43aabfd5ca1a36a640772b44cac",
+      "hero_action": "Eddie studies the rain-garden plan beside the muddy basin while observers remain behind the fence.",
+      "status": "approved"
+    },
+    {
+      "scene": 2,
+      "file": "automation/production-assets/eddie-excavator-rain-garden-scoop-v1.png",
+      "sha256": "94e711c6861ea2e366d085fa0e76423f57e45e8b6bdedf10b00872a6131c3eb3",
+      "hero_action": "One connected bucket curls through marked soil with both tracks planted.",
+      "status": "approved"
+    },
+    {
+      "scene": 3,
+      "file": "automation/production-assets/eddie-excavator-rain-garden-carry-v1.png",
+      "sha256": "ce13534b707800d9e66264db926cfdd3fa05206c4e3ca8509f35e665fa0f8831",
+      "hero_action": "One level bucket securely carries one modest soil load inside the fenced zone.",
+      "status": "approved"
+    },
+    {
+      "scene": 4,
+      "file": "automation/production-assets/eddie-excavator-rain-garden-level-stones-v1.png",
+      "sha256": "f74246ad0173d606b62e88042bc9aebe8c29d303f8a341535944e2bd0cb73b66",
+      "hero_action": "The flat bucket edge grades the curved basin beside exactly three countable inlet stones.",
+      "status": "approved-after-stone-count-correction"
+    },
+    {
+      "scene": 5,
+      "file": "automation/production-assets/eddie-excavator-rain-garden-planting-v1.png",
+      "sha256": "3a06bd625219990f112c6185263d8e3a24022caf727a2135846d112d4e6b791c",
+      "hero_action": "With Eddie stopped and bucket grounded, the grown-up and children plant three seedlings through the open gate.",
+      "status": "approved"
+    },
+    {
+      "scene": 6,
+      "file": "automation/production-assets/eddie-excavator-rain-garden-water-test-v1.png",
+      "sha256": "841ed9d163088bec39c40708b0996fec6fe31e090b07adee7f9dedbbf2376192",
+      "hero_action": "One continuous test stream follows three stones into plant roots while everyone is back behind the closed fence.",
+      "status": "approved"
+    },
+    {
+      "scene": 7,
+      "file": "automation/production-assets/eddie-excavator-rain-garden-finale-v1.png",
+      "sha256": "d6f13ff4f50f22225b2fe272b2f5337ae8504749c0e2efd82bf01cec6ebf8111",
+      "hero_action": "The complete planted water path glows in sunlight with one bird and safe celebration behind the fence.",
+      "status": "approved"
+    }
+  ],
+  "rejected_variants": [
+    {
+      "scene": 4,
+      "reason": "The first leveling result contained too many loose stones for lyrics that count exactly one, two, three; it was corrected and is not a production asset."
+    }
+  ],
+  "sequence_checks": {
+    "eddie_identity_consistent": true,
+    "two_children_and_one_grown_up_consistent": true,
+    "machine_joint_chain_readable_in_work_scenes": true,
+    "tracks_planted_during_scoop_carry_and_level": true,
+    "operating_machine_separated_by_fence": true,
+    "planting_only_after_grounded_bucket": true,
+    "water_path_visibly_reaches_roots": true,
+    "exactly_three_featured_inlet_stones_from_scene_4_onward": true,
+    "one_hero_action_per_scene": true,
+    "safe_margins_and_depth": true,
+    "generated_text_or_watermark_absent": true
+  },
+  "status": "all-seven-scenes-visually-reviewed-producer-next"
+}

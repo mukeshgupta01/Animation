@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "project_id": "eddie-excavators-rain-garden-day-01",
+  "title": "Eddie Excavator's Rain-Garden Day | Construction Story-Song for Kids",
+  "format": "original musical construction story with sung character-led narration",
+  "duration_seconds": 84.0,
+  "fps": 30,
+  "music": {
+    "bpm": 100,
+    "beat_one_offset_seconds": 0.0,
+    "frames_per_beat": 18,
+    "beats_per_bar": 4,
+    "frames_per_bar": 72,
+    "scene_phrase_bars": 5,
+    "motion_personality": "playful kinetic-soft",
+    "lead_voice": "ana-us melodic-story",
+    "eddie_voice": "ryan-uk rhythmic-character",
+    "sound_policy": "Machine, soil, rain, stone, planting and water sounds are performed as synchronized effects and never spoken as imitation words."
+  },
+  "creative_intent": "Turn safe rain-garden construction into a warm musical cause-and-effect story in which concern becomes confidence, care, suspense and shared delight.",
+  "scenes": [
+    {
+      "scene": 1,
+      "frame_start": 0,
+      "frame_end": 359,
+      "time_start": 0.0,
+      "time_end": 12.0,
+      "emotion": "concern becoming curious determination",
+      "visual_action": "Rainwater runs from the downpipe into a muddy low spot. Eddie studies the rain-garden plan while two children and a grown-up remain behind the orange safety fence.",
+      "musical_treatment": "Soft marimba droplets, low pizzicato strings and a questioning two-note melody; percussion enters when Eddie looks from the plan to the basin.",
+      "lyrics": [
+        "Rain is drawing rivers where the muddy puddles grow,",
+        "Eddie reads the garden plan and finds where they should flow.",
+        "Behind the fence we watch and wait; the working space is clear,",
+        "Eddie sings, 'We'll shape it safely—step by step from here.'"
+      ],
+      "effects": ["light rain", "downpipe trickle", "quiet plan-page rustle"],
+      "camera": "slow eased push toward Eddie and the marked basin"
+    },
+    {
+      "scene": 2,
+      "frame_start": 360,
+      "frame_end": 719,
+      "time_start": 12.0,
+      "time_end": 24.0,
+      "emotion": "focused and confident",
+      "visual_action": "Eddie plants both tracks, lowers the articulated boom and curls one solid bucket through the marked soil while everyone stays outside the fence.",
+      "musical_treatment": "Steady wooden pulse and bass plucks lock to the boom, dipper and bucket sequence; melody rises with the scoop.",
+      "lyrics": [
+        "Tracks stay still and boom bends low,",
+        "Dipper reaches—steady, slow.",
+        "Bucket curls beneath the ground,",
+        "One careful scoop comes up, safe and sound."
+      ],
+      "effects": ["diesel idle", "three hydraulic movements", "single soil scoop"],
+      "camera": "ground-level side tracking that clearly shows the working joints"
+    },
+    {
+      "scene": 3,
+      "frame_start": 720,
+      "frame_end": 1079,
+      "time_start": 24.0,
+      "time_end": 36.0,
+      "emotion": "purposeful with growing energy",
+      "visual_action": "The loaded bucket lifts, Eddie rotates within the fenced work zone, carries the soil a short distance and tips it onto one tidy spoil pile.",
+      "musical_treatment": "Rhythmic bass and brushed snare build; a rising brass phrase follows the lift and a descending phrase follows the controlled tip.",
+      "lyrics": [
+        "Lift it level, hold it tight,",
+        "Turn inside the fence just right.",
+        "Carry, pause, then tip the load—",
+        "Clear the basin, shape the road."
+      ],
+      "effects": ["hydraulic lift", "track creak", "soil landing once"],
+      "camera": "one restrained follow move matching Eddie's rotation"
+    },
+    {
+      "scene": 4,
+      "frame_start": 1080,
+      "frame_end": 1439,
+      "time_start": 36.0,
+      "time_end": 48.0,
+      "emotion": "satisfying, orderly and playful",
+      "visual_action": "Eddie uses the flat bucket edge to level the curved basin, then places rounded stones along the inlet while children point to the matching shapes from behind the fence.",
+      "musical_treatment": "Bright xylophone pattern repeats in an even sequence; each stone receives a real muted stone click on the beat.",
+      "lyrics": [
+        "Smooth the curve from high to low,",
+        "Make a gentle path for flow.",
+        "Round stones line the watery way—",
+        "One, two, three in a shining row today."
+      ],
+      "effects": ["bucket grading scrape", "three separated stone clicks"],
+      "camera": "overhead-to-oblique reveal of the complete curved basin"
+    },
+    {
+      "scene": 5,
+      "frame_start": 1440,
+      "frame_end": 1799,
+      "time_start": 48.0,
+      "time_end": 60.0,
+      "emotion": "calm, tender and cooperative",
+      "visual_action": "Eddie is fully stopped with bucket grounded. The grown-up confirms it is safe, opens the gate and helps the children plant native grasses in the basin.",
+      "musical_treatment": "Percussion softens; warm ukulele, humming harmony and lower dynamics make room for the careful planting actions.",
+      "lyrics": [
+        "Engine resting, bucket down, grown-up checks the quiet ground,",
+        "Gate can open, hands come through, seedlings wait for me and you.",
+        "Press the soil, give roots their space,",
+        "Little leaves find every place."
+      ],
+      "effects": ["engine stopping", "gate latch", "soft soil presses"],
+      "camera": "stable medium-wide composition with Eddie visibly inactive"
+    },
+    {
+      "scene": 6,
+      "frame_start": 1800,
+      "frame_end": 2159,
+      "time_start": 60.0,
+      "time_end": 72.0,
+      "emotion": "quiet suspense turning into relief",
+      "visual_action": "Everyone returns behind the fence. A gentle test flow leaves the downpipe, follows the stone inlet and slowly fills the planted basin without forming the old muddy puddle.",
+      "musical_treatment": "Sparse heartbeat drum and held strings under the first water movement; harmony opens when the stream reaches the basin at the musical drop.",
+      "lyrics": [
+        "Back behind the fence—we're ready for the test,",
+        "Will the little river find the garden we made best?",
+        "Past the stones and round the bend...",
+        "Into roots—our careful pathway works in the end!"
+      ],
+      "effects": ["single water-test start", "stone-channel trickle", "basin water settling"],
+      "camera": "low follow along the water path; largest visual payoff lands at frame 2088"
+    },
+    {
+      "scene": 7,
+      "frame_start": 2160,
+      "frame_end": 2519,
+      "time_start": 72.0,
+      "time_end": 84.0,
+      "emotion": "bright shared celebration with a warm resolve",
+      "visual_action": "Sunlight breaks through. The finished rain garden glows with plants and clear water; Eddie, the children and grown-up celebrate from their safe positions as a small bird visits.",
+      "musical_treatment": "Full marimba, ukulele, brass and child-friendly harmony reprise the step-by-step motif, then hold a warm final chord.",
+      "lyrics": [
+        "Read the plan and make it clear,",
+        "Scoop and carry, friends stay near.",
+        "Plant with care and test the rain—",
+        "Eddie helped the garden drink again!"
+      ],
+      "effects": ["light water sparkle", "one natural bird call", "final musical construction cadence"],
+      "camera": "slow pullback revealing the complete garden; settle for the final two beats"
+    }
+  ],
+  "quality_gates": [
+    "Every lyric and effect is contained by the scene that visibly supports it.",
+    "All seven scenes remain at or below the permanent fourteen-second story-shot ceiling.",
+    "Eddie's identity, leaf emblem, eye placement, teal stripe, bucket and realistic working joints remain consistent.",
+    "Children remain behind the safety fence whenever Eddie is operating; planting begins only after the stopped-machine check.",
+    "No machine, soil, water or bird sound is spoken as an imitation word.",
+    "The score audibly changes from concern to confidence, tenderness, suspense, relief and celebration.",
+    "Structural cuts occur on the five-bar phrase boundaries at frames 360, 720, 1080, 1440, 1800 and 2160.",
+    "Final output includes a lyric-to-visual-and-emotion audit and passes full technical decode."
+  ],
+  "status": "musical-story-timeline-locked-next-generate-scoop-scene"
+}
