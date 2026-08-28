@@ -22,12 +22,40 @@
       "file": "automation/production-assets/fruit-picnic-count-six-v1.png",
       "sha256": "4433c6aa3c9f49c7799f2a34f99f21bbe24a3a341b5498e0fd957c4e2dbdac55",
       "review": "accepted after correction; exactly two apples, two pears and two plums on the table, three pair tokens and no fruit in the basket"
+    },
+    {
+      "scene": 4,
+      "file": "automation/production-assets/fruit-picnic-wash-v1.png",
+      "sha256": "661607dc91f4bc89c28fd9bd749ddb5fa1ec7dcd7b1562c0bb04e685be0b6044",
+      "review": "accepted after correction; exactly two apples, two pears and two plums remain visible while Kai washes one apple and Rosa controls the tap"
+    },
+    {
+      "scene": 5,
+      "file": "automation/production-assets/fruit-picnic-pack-pattern-v1.png",
+      "sha256": "8cd3b487526bbe42671dd8565bfd04587ea0ab940e0fe0e5629068646b80800a",
+      "review": "accepted; six divided compartments show red-gold-purple repeated exactly twice with no additional fruit"
+    },
+    {
+      "scene": 6,
+      "file": "automation/production-assets/fruit-picnic-shared-carry-v1.png",
+      "sha256": "8245d74a7f23c0614f83559ca2ee328896013e6090a6cdf7980cbd02cfc517f6",
+      "review": "accepted; Kai and Rosa share one closed level basket with planted walking steps and the picnic blanket visible ahead"
+    },
+    {
+      "scene": 7,
+      "file": "automation/production-assets/fruit-picnic-finale-v1.png",
+      "sha256": "720e735ca06866f98dc3460faaa26ddd91cad230f9b9d3cfca83bc8d5a2d50a7",
+      "review": "accepted; the six-fruit repeated pattern remains visible at the picnic and one leaf moves toward a leaf-only compost bowl"
     }
   ],
   "rejected_variants": [
     {
       "scene": 3,
       "reason": "The first count tableau added extra fruit inside the basket, making the visible total greater than six. It was not copied into the workspace."
+    },
+    {
+      "scene": 4,
+      "reason": "The first wash tableau showed three apples plus two pears and two plums. It was not copied into the workspace; a targeted correction removed the seventh fruit."
     }
   ],
   "continuity_checks": {
@@ -37,8 +65,14 @@
     "permission_before_entry_clear": true,
     "single_gentle_pick_clear": true,
     "exact_six_count_clear": true,
+    "exact_six_wash_clear": true,
+    "red_gold_purple_pattern_repeated_twice": true,
+    "shared_level_basket_carry_clear": true,
+    "picnic_and_leaf_compost_payoff_clear": true,
+    "all_seven_scenes_identity_consistent": true,
     "no_generated_text_or_watermark": true
   },
-  "remaining_scenes": ["wash", "pack-pattern", "shared-carry", "picnic-finale"],
-  "status": "three-of-seven-scenes-accepted-next-wash"
+  "asset_review_contact_sheet": "automation/production-work/pick-wash-pack-fruit-picnic-01/asset-review-contact-sheet.png",
+  "remaining_scenes": [],
+  "status": "all-seven-scenes-and-final-master-reviewed"
 }

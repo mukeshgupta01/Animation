@@ -48,7 +48,7 @@
     {
       "id": "pick-wash-pack-fruit-picnic-01",
       "title": "Pick, Wash, Pack the Fruit Picnic | Orchard Song for Kids",
-      "status": "active-timeline-locked-three-scenes-reviewed-next-wash",
+      "status": "complete-reviewed-local-not-queued",
       "format_family": "orchard-to-picnic-action-song",
       "visual_system": "sunlit-orchard-rows-basket-weight-washing-water-and-patterned-picnic-tableaux",
       "interaction_style": "ask-permission-gently-pick-wash-count-pack-and-share-without-waste",

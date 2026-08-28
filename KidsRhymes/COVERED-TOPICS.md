@@ -4,7 +4,7 @@ Updated: 2026-08-28
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 64.
+Known completed or queued video concepts: 65.
 
 ## Topic index
 
@@ -59,6 +59,7 @@ Known completed or queued video concepts: 64.
 - Ocean Lost Colour Rescue | Interactive Animal Adventure — `ocean-lost-colour-rescue-01` — archived/uploaded
 - Ocean Move Like an Animal | Movement Adventure for Kids — `ocean-move-like-an-animal-01` — archived/uploaded
 - Turtle'S Friendship Badge | Hidden-Object Kindness Quest for Kids — `ocean-turtle-friendship-badge-01` — archived/uploaded
+- Pick, Wash, Pack the Fruit Picnic | Orchard Song for Kids — `pick-wash-pack-fruit-picnic-01` — completed local
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - Pip's Five Senses Quest | Interactive Story Adventure for Kids — `pips-five-senses-quest-01` — archived/uploaded
 - Pip's Four Seasons Journey | Interactive Story Adventure for Kids — `pips-four-seasons-journey-01` — archived/uploaded
