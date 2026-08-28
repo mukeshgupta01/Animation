@@ -16,7 +16,7 @@
   "privacy": "public",
   "upload_authorized": false,
   "output": "C:\\Animation\\Animation\\KidsRhymes\\automation\\production-output\\rorys-eight-planet-postcard-adventure-01.mp4",
-  "duration_seconds": 126.66000000000001,
+  "duration_seconds": 123.204,
   "voice_profile": "ryan-uk",
   "character_voice_profiles": {
     "rory": "ana-us"
@@ -43,5 +43,7 @@
   "spoken_sound_effect_words_removed": true,
   "quality_contact_sheet_reviewed": true,
   "final_eight_postcard_map_reviewed": true,
-  "reviewed_sha256": "1bbf4ef2584bb15e6faac68363459e29133a439da8feaf9ca880a9f06825a207"
+  "reviewed_sha256": "a8d268876155760e6c635f94dbbc845d302097cf1a96e27ab28ac0fac7f0c37c",
+  "opening_correction_reviewed": true,
+  "opening_correction_review": "metadata/rorys-eight-planet-postcard-adventure-01-opening-correction-review.json"
 }

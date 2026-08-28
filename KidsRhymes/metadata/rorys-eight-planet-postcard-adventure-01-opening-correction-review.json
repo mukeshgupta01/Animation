@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "project_id": "rorys-eight-planet-postcard-adventure-01",
+  "reason": "The original opening held one composition for 17.4 seconds, delayed narration until after a silent title, and used a launch effect over the first spoken phrase, making the story difficult to follow.",
+  "held_original": "automation/production-work/rorys-eight-planet-postcard-adventure-01/correction-hold/opening-v1/rorys-eight-planet-postcard-adventure-01.mp4",
+  "original_sha256": "1bbf4ef2584bb15e6faac68363459e29133a439da8feaf9ca880a9f06825a207",
+  "corrected_file": "automation/production-output/rorys-eight-planet-postcard-adventure-01.mp4",
+  "corrected_sha256": "a8d268876155760e6c635f94dbbc845d302097cf1a96e27ab28ac0fac7f0c37c",
+  "corrected_duration_seconds": 123.3,
+  "opening_timing": {
+    "visual_start_seconds": 0.0,
+    "narration_start_seconds": 0.32,
+    "title_overlay_end_seconds": 2.35,
+    "rocket_effect_start_seconds": 2.45,
+    "mercury_cut_seconds": 13.958
+  },
+  "changes": [
+    "Removed the separate silent title event and placed a brief title over the active opening story.",
+    "Rewrote the opening to explicitly match Rory inserting the postcard, the rocket light and the Solar System map.",
+    "Delayed the launch effect until more than two seconds after narration begins.",
+    "Added synchronized rocket-window glow and Solar System map sparkles.",
+    "Replaced the broken-feeling character phrase with one continuous invitation to visit the planets in order."
+  ],
+  "checks": {
+    "full_decode": true,
+    "h264_1080p": true,
+    "aac_48000_stereo": true,
+    "zero_gap_timeline": true,
+    "narration_visual_containment": true,
+    "opening_story_starts_immediately": true,
+    "opening_narration_starts_under_one_second": true,
+    "opening_effect_does_not_mask_first_words": true,
+    "all_story_scenes_under_14_seconds": true,
+    "general_contact_sheet_reviewed": true,
+    "every_boundary_contact_sheet_reviewed": true,
+    "opening_contact_sheet_and_waveform_reviewed": true,
+    "thumbnail_reviewed": true
+  },
+  "status": "reviewed-approved-for-safeguarded-upload-queue"
+}

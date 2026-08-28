@@ -24,8 +24,8 @@
       "asset": "rory-planets-opening-v1.png",
       "planet": null,
       "lines": [
-        {"profile": "ryan-story", "line": "At the edge of bedtime, Rory's little postcard rocket blinked awake beneath a shining map of the Solar System."},
-        {"profile": "ana-rory", "line": "Eight planets, eight postcards. Rocket, find our way!"}
+        {"profile": "ryan-story", "line": "Just before bedtime, Rory slid a postcard into his little rocket. A light blinked on beneath the sparkling Solar System map."},
+        {"profile": "ana-rory", "line": "Eight planets, eight postcards—let's visit them in order!"}
       ],
       "effect": "postcard hatch and gentle rocket launch"
     },

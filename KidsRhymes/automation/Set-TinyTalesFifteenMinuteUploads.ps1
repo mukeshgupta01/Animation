@@ -20,8 +20,8 @@ if ($retryTask.Actions.Count -ne 1 -or $retryTask.Actions[0].Arguments -notlike 
 }
 
 $anchor = (Get-Date).AddMinutes(1)
-$start = $anchor.Date.AddHours($anchor.Hour).AddMinutes([math]::Ceiling($anchor.Minute / 10.0) * 10)
-$trigger = New-ScheduledTaskTrigger -Once -At $start -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 3650)
+$start = $anchor.Date.AddHours($anchor.Hour).AddMinutes([math]::Ceiling($anchor.Minute / 15.0) * 15)
+$trigger = New-ScheduledTaskTrigger -Once -At $start -RepetitionInterval (New-TimeSpan -Minutes 15) -RepetitionDuration (New-TimeSpan -Days 3650)
 $settings = $uploadTask.Settings
 $settings.DisallowStartIfOnBatteries = $false
 $settings.StopIfGoingOnBatteries = $false

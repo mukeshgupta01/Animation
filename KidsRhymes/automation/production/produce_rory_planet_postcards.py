@@ -31,7 +31,7 @@ THUMBNAIL = AUTOMATION / "thumbnails" / f"{ITEM_ID}.jpg"
 ART_FPS = 10
 
 VOICES = {
-    "ryan-story": {**select_voice_profile("ryan-uk"), "rate": "-2%", "pitch": "+2Hz"},
+    "ryan-story": {**select_voice_profile("ryan-uk"), "rate": "+4%", "pitch": "+2Hz"},
     "ryan-curious": {**select_voice_profile("ryan-uk"), "rate": "+2%", "pitch": "+5Hz"},
     "ryan-warm": {**select_voice_profile("ryan-uk"), "rate": "-3%", "pitch": "+1Hz"},
     "ryan-wonder": {**select_voice_profile("ryan-uk"), "rate": "-4%", "pitch": "+4Hz"},
@@ -39,7 +39,7 @@ VOICES = {
     "ryan-awe": {**select_voice_profile("ryan-uk"), "rate": "-6%", "pitch": "-3Hz"},
     "ryan-lyrical": {**select_voice_profile("ryan-uk"), "rate": "-5%", "pitch": "+3Hz"},
     "ryan-excited": {**select_voice_profile("ryan-uk"), "rate": "+6%", "pitch": "+7Hz"},
-    "ana-rory": {**select_voice_profile("ana-us"), "rate": "+5%", "pitch": "+8Hz"},
+    "ana-rory": {**select_voice_profile("ana-us"), "rate": "+9%", "pitch": "+8Hz"},
 }
 
 
@@ -48,7 +48,8 @@ def shots() -> list[dict]:
 
 
 def voice_path(si: int, li: int, profile: str) -> Path:
-    return WORK / f"voice-v2-{si:02d}-{li:02d}-{profile}.mp3"
+    version = "v4" if si == 0 else "v2"
+    return WORK / f"voice-{version}-{si:02d}-{li:02d}-{profile}.mp3"
 
 
 async def make_voices(rows: list[dict]) -> None:
@@ -136,13 +137,15 @@ def make_sfx(rows: list[dict]) -> dict[str, Path]:
 
 
 def build_timeline(rows: list[dict], effects: dict[str, Path]):
-    events = [{"phase": "title", "start": 0.0, "end": 3.8, "asset": rows[0]["asset"]}]
+    events = []
     tracks: list[tuple[Path, float]] = []
-    cursor = events[-1]["end"]
+    cursor = 0.0
     for si, shot in enumerate(rows):
-        local = 0.28
+        local = 0.32 if si == 0 else 0.28
         line_rows = []
-        effect_start = cursor + 0.12
+        # Let the story establish Rory before the launch tone enters.  Every
+        # later postcard effect can still lead its scene as a short J-cut.
+        effect_start = cursor + (2.45 if si == 0 else 0.12)
         effect_end = effect_start + media_duration(effects[shot["id"]])
         tracks.append((effects[shot["id"]], effect_start))
         for li, line in enumerate(shot["lines"]):
@@ -152,7 +155,10 @@ def build_timeline(rows: list[dict], effects: dict[str, Path]):
             line_rows.append({**line, "start": start, "end": start + length})
             tracks.append((path, start))
             local += length + 0.14
-        shot_length = max(8.4, local + 0.55, effect_end - cursor + 0.35)
+        # Opening speech files already retain a natural tail, so 0.35 seconds
+        # of additional picture hold is enough before the Mercury cut.
+        settle = 0.35 if si == 0 else 0.55
+        shot_length = max(8.4, local + settle, effect_end - cursor + 0.35)
         if shot_length > 14:
             raise RuntimeError(f"14-second gate failed: {shot['id']} {shot_length:.2f}s")
         events.append({
@@ -231,6 +237,24 @@ def space_overlay(frame: Image.Image, event: dict, t: float, index: int) -> None
             y = rng.randint(35, 1040)
             r = 1 + int(2 * (0.5 + 0.5 * math.sin(local * 1.6 + j)))
             draw.ellipse((x - r, y - r, x + r, y + r), fill=(255, 245, 205, 35 + 18 * r))
+    if index == 0:
+        # The source composition already shows Rory inserting the postcard.
+        # Time the rocket-light response and map sparkle to the revised words
+        # so the opening visibly explains what has just happened.
+        glow = max(0.0, min(1.0, (local - 2.15) / 0.55))
+        glow *= max(0.0, min(1.0, (5.2 - local) / 0.7))
+        if glow > 0:
+            pulse = 0.72 + 0.28 * math.sin(local * math.pi * 4)
+            alpha = round(125 * glow * pulse)
+            draw.ellipse((1370, 186, 1605, 428), outline=(255, 202, 86, alpha), width=14)
+            draw.ellipse((1390, 207, 1585, 407), outline=(255, 244, 185, min(220, alpha + 55)), width=7)
+        sparkle = max(0.0, min(1.0, (local - 3.65) / 0.5))
+        for j, (x, y) in enumerate(((370, 100), (620, 126), (870, 92), (1115, 120), (1300, 86))):
+            strength = max(0.0, min(1.0, sparkle * 5 - j * 0.62))
+            radius = 3 + round(7 * strength)
+            if radius > 3:
+                draw.line((x - radius, y, x + radius, y), fill=(255, 244, 175, round(180 * strength)), width=3)
+                draw.line((x, y - radius, x, y + radius), fill=(255, 244, 175, round(180 * strength)), width=3)
     if index == 4:
         for j in range(20):
             x = (rng.randint(0, 1920) + int(local * (11 + j % 5))) % 1920
@@ -245,13 +269,6 @@ def space_overlay(frame: Image.Image, event: dict, t: float, index: int) -> None
 
 def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Image:
     rows = shots()
-    if event["phase"] == "title":
-        frame = moving_crop(assets[event["asset"]], event, t, 0).convert("RGBA")
-        draw = ImageDraw.Draw(frame, "RGBA")
-        draw.rounded_rectangle((185, 80, 1735, 356), 52, fill=(18, 34, 79, 220), outline=(255, 210, 90, 245), width=7)
-        base.centered(draw, (960, 170), "RORY'S EIGHT-PLANET", base.F62, (255, 231, 140, 255), 3)
-        base.centered(draw, (960, 272), "POSTCARD ADVENTURE", base.F62, "white", 3)
-        return frame.convert("RGB")
     if event["phase"] == "end":
         frame = moving_crop(assets[event["asset"]], event, t, 9).convert("RGBA")
         add_home_postcards(frame, assets, 8)
@@ -263,6 +280,15 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
     index = next(i for i, row in enumerate(rows) if row["id"] == event["phase"])
     frame = moving_crop(assets[event["asset"]], event, t, index).convert("RGBA")
     space_overlay(frame, event, t, index)
+    if index == 0 and t - event["start"] < 2.35:
+        local = t - event["start"]
+        fade = min(1.0, local / 0.25) * min(1.0, (2.35 - local) / 0.45)
+        draw = ImageDraw.Draw(frame, "RGBA")
+        fill_alpha = round(196 * fade)
+        line_alpha = round(232 * fade)
+        draw.rounded_rectangle((250, 48, 1670, 218), 38, fill=(18, 34, 79, fill_alpha), outline=(255, 210, 90, line_alpha), width=6)
+        base.centered(draw, (960, 102), "RORY'S EIGHT-PLANET", base.F48, (255, 231, 140, round(255 * fade)), 2)
+        base.centered(draw, (960, 169), "POSTCARD ADVENTURE", base.F48, (255, 255, 255, round(255 * fade)), 2)
     if index == 9:
         progress = max(0, min(1, (t - event["start"]) / (event["end"] - event["start"])))
         add_home_postcards(frame, assets, max(1, min(8, int(progress * 9))))
@@ -333,7 +359,7 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
         "visual_start": e["start"], "visual_end": e["end"],
         "lines": e["lines"], "effects": e["effects"],
         "contained": all(e["start"] <= x["start"] < x["end"] <= e["end"] for x in e["lines"] + e["effects"]),
-    } for e in events[1:-1]]
+    } for e in events[:-1]]
     planets = [e["planet"] for e in events[1:-1] if e["planet"]]
     forbidden = ("whoosh", "zoom zoom", "tap tap", "clap clap", "boom")
     spoken = [line["line"].lower() for row in sync for line in row["lines"]]
@@ -347,7 +373,10 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
         "correct_planet_order": planets == ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
         "eight_postcards_in_final_map": True,
         "sync_containment": all(row["contained"] for row in sync),
-        "max_14_seconds": all(e["end"] - e["start"] <= 14 for e in events[1:-1]),
+        "max_14_seconds": all(e["end"] - e["start"] <= 14 for e in events[:-1]),
+        "opening_story_starts_immediately": events[0]["phase"] == "01_backyard_launch" and events[0]["start"] == 0,
+        "opening_narration_starts_under_one_second": sync[0]["lines"][0]["start"] < 1,
+        "opening_effect_does_not_mask_first_words": sync[0]["effects"][0]["start"] - sync[0]["lines"][0]["start"] >= 2,
         "final_card_only": events[-1]["phase"] == "end",
         "no_spoken_sound_words": all(not any(word in line for word in forbidden) for line in spoken),
         "lead_voice_rotation": any(line["profile"].startswith("ryan-") for row in sync for line in row["lines"]),

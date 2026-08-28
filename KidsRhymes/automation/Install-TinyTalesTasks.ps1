@@ -24,9 +24,9 @@ $uploadRetryAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-No
 $dailySummaryAction = New-ScheduledTaskAction -Execute $powerShell -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$dailySummaryScript`""
 $generationTriggers = @(0, 5, 10, 15, 20 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(5)) })
 $uploadAnchor = (Get-Date).AddMinutes(1)
-$uploadStart = $uploadAnchor.Date.AddHours($uploadAnchor.Hour).AddMinutes([math]::Ceiling($uploadAnchor.Minute / 10.0) * 10)
+$uploadStart = $uploadAnchor.Date.AddHours($uploadAnchor.Hour).AddMinutes([math]::Ceiling($uploadAnchor.Minute / 15.0) * 15)
 $uploadTriggers = @(
-    New-ScheduledTaskTrigger -Once -At $uploadStart -RepetitionInterval (New-TimeSpan -Minutes 10) -RepetitionDuration (New-TimeSpan -Days 3650)
+    New-ScheduledTaskTrigger -Once -At $uploadStart -RepetitionInterval (New-TimeSpan -Minutes 15) -RepetitionDuration (New-TimeSpan -Days 3650)
 )
 $uploadRetryTriggers = @(1, 2, 4, 5, 7, 8, 10, 11, 13, 14, 16, 17, 19, 20, 22, 23 | ForEach-Object { New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours($_).AddMinutes(20)) })
 $dailySummaryTrigger = New-ScheduledTaskTrigger -Daily -At ([datetime]::Today.AddHours(6))
@@ -36,7 +36,7 @@ $dailySummarySettings = New-ScheduledTaskSettingsSet -StartWhenAvailable -WakeTo
 
 Register-ScheduledTask -TaskName $generationTaskName -Action $generationAction -Trigger $generationTriggers -Principal $principal -Settings $generationSettings -Description 'Starts a fresh, non-overlapping Tiny Tales generation process roughly every five hours.' | Out-Null
 try {
-    Register-ScheduledTask -TaskName $uploadTaskName -Action $uploadAction -Trigger $uploadTriggers -Principal $principal -Settings $uploadSettings -Description 'Every ten minutes, uploads at most one eligible Tiny Tales video with configured visibility and archives it after success. A retry-safe failure is retried before any newer queue item.' | Out-Null
+    Register-ScheduledTask -TaskName $uploadTaskName -Action $uploadAction -Trigger $uploadTriggers -Principal $principal -Settings $uploadSettings -Description 'Every fifteen minutes, uploads at most one eligible Tiny Tales video with configured visibility and archives it after success. A retry-safe failure is retried before any newer queue item.' | Out-Null
     Register-ScheduledTask -TaskName $uploadRetryTaskName -Action $uploadRetryAction -Trigger $uploadRetryTriggers -Principal $principal -Settings $uploadSettings -Description 'At intervening hourly slots, retries only the same Tiny Tales upload after a duplicate-safe failure; otherwise exits without uploading.' | Out-Null
     Register-ScheduledTask -TaskName $dailySummaryTaskName -Action $dailySummaryAction -Trigger $dailySummaryTrigger -Principal $principal -Settings $dailySummarySettings -Description 'At 06:00 Australia/Sydney, sends one Outlook email with the count and list of successful Tiny Tales uploads from the previous Sydney calendar day.' | Out-Null
     Disable-ScheduledTask -TaskName $uploadRetryTaskName | Out-Null
