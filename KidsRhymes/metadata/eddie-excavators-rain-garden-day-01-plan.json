@@ -2,8 +2,10 @@
   "version": 1,
   "project_id": "eddie-excavators-rain-garden-day-01",
   "title": "Eddie Excavator's Rain-Garden Day | Construction Story-Song for Kids",
-  "format": "original musical construction story with sung character-led narration",
-  "duration_seconds": 84.0,
+  "format": "original musical construction story with melodic rhythmic character-led delivery",
+  "story_duration_seconds": 84.0,
+  "final_card_seconds": 4.0,
+  "duration_seconds": 88.0,
   "fps": 30,
   "music": {
     "bpm": 100,
@@ -156,5 +158,5 @@
     "Structural cuts occur on the five-bar phrase boundaries at frames 360, 720, 1080, 1440, 1800 and 2160.",
     "Final output includes a lyric-to-visual-and-emotion audit and passes full technical decode."
   ],
-  "status": "musical-story-timeline-locked-next-generate-scoop-scene"
+  "status": "complete-reviewed-local-not-queued"
 }
