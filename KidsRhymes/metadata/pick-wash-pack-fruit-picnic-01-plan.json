@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "project_id": "pick-wash-pack-fruit-picnic-01",
+  "title": "Pick, Wash, Pack the Fruit Picnic | Orchard Song for Kids",
+  "format": "orchard-to-picnic action story-song with permission, counting and colour patterns",
+  "story_duration_seconds": 93.333333,
+  "final_card_seconds": 4.0,
+  "duration_seconds": 97.333333,
+  "music": {
+    "bpm": 90,
+    "beat_one_offset_seconds": 0.0,
+    "beats_per_scene": 20,
+    "scene_seconds": 13.333333,
+    "lead_voice": "maisie-uk melodic-story",
+    "kai_voice": "ryan-uk bright-character",
+    "orchard_keeper_voice": "ana-us warm-character",
+    "sound_policy": "Leaves, fruit, basket, water and packing sounds are synchronized effects and never spoken as imitation words."
+  },
+  "creative_intent": "Follow one basket from orchard permission to a shared picnic, making gentle picking, washing, counting, colour patterns and avoiding waste feel like one joyful musical cause-and-effect journey.",
+  "visual_system": "premium luminous layered watercolour-and-gouache storybook orchard panels with translucent painted-paper depth, hand-inked edges and sunlit colour",
+  "motion_language": {
+    "personality": "playful kinetic-soft orchard swing",
+    "easing_family": "soft cubic ease with tiny fruit-weight settle",
+    "base_timing_unit_seconds": 0.666667,
+    "transition_family": "match cuts through round fruit, basket handles and flowing water arcs",
+    "motion_intensity": "one hero action per scene; support below half amplitude; leaves and light drift only",
+    "hold_discipline": "one full beat of rest after each pick, count, wash or placement"
+  },
+  "character_lock": {
+    "kai": "Kai, six-year-old East Asian-Australian boy, short black hair, burnt-orange sunhat, sky-blue overalls over a lemon-yellow shirt, red canvas shoes",
+    "orchard_keeper": "Rosa, warm older orchard keeper with silver-streaked dark braid, olive-green shirt, plum apron and woven straw hat",
+    "orchard": "sunlit mixed orchard with red apples, golden pears, purple plums, painted wooden gate, blue enamel wash station and red-gold-purple picnic blanket"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "time_start": 0.0,
+      "time_end": 13.333333,
+      "emotion": "curious respect and invitation",
+      "visual_action": "At the painted orchard gate, Kai holds one empty woven basket and asks Rosa before entering. Rosa opens the gate and points to the ripe-fruit row; unripe green fruit remains clearly untouched.",
+      "lyrics": [
+        "Morning paints the orchard, red and gold and blue,",
+        "Kai brings one empty basket; what should Kai do?",
+        "Ask before we enter, wait to hear what's right,",
+        "Rosa opens up the gate: the ripe row is in sight."
+      ],
+      "effects": ["light leaf breeze", "single wooden gate open"],
+      "camera": "curved push from empty basket through the opening gate"
+    },
+    {
+      "scene": 2,
+      "time_start": 13.333333,
+      "time_end": 26.666667,
+      "emotion": "gentle focus",
+      "visual_action": "Kai supports a low apple branch with one hand, twists one ripe red apple with the other and lowers it carefully into the basket without tugging leaves or unripe fruit.",
+      "lyrics": [
+        "Hold the branch so gently; choose one apple red,",
+        "Lift and make a little turn, just as Rosa said.",
+        "Lower to the basket; keep the fruit from harm,",
+        "One careful apple settles softly on Kai's arm."
+      ],
+      "effects": ["branch leaves", "single apple twist", "one basket settle"],
+      "camera": "close side arc linking supported branch, hands and basket"
+    },
+    {
+      "scene": 3,
+      "time_start": 26.666667,
+      "time_end": 40.0,
+      "emotion": "buoyant counting satisfaction",
+      "visual_action": "On a low orchard table, Kai and Rosa count exactly six fruits into one basket: two red apples, two golden pears and two purple plums. Three matching picture tokens prove the pairs.",
+      "lyrics": [
+        "Two red apples, count them one and two,",
+        "Two gold pears are joining, then two plums in blue.",
+        "Pairs make six together, colours bright and neat,",
+        "Basket bends a little with our orchard treat."
+      ],
+      "effects": ["six separated fruit placements", "basket handle creak"],
+      "camera": "stable overhead count tableau, then tilt to the weighted handle"
+    },
+    {
+      "scene": 4,
+      "time_start": 40.0,
+      "time_end": 53.333333,
+      "emotion": "fresh sparkling energy",
+      "visual_action": "At the blue enamel wash station, clean water flows over all six fruits while Kai turns them in a shallow colander and Rosa closes the tap when the last fruit is clean.",
+      "lyrics": [
+        "Water over apples, pears and purple plums,",
+        "Turn each piece so every side can meet the stream that comes.",
+        "Clean and bright, the six fruits shine,",
+        "Rosa stops the water right on time."
+      ],
+      "effects": ["single tap start", "continuous gentle rinse", "single tap stop"],
+      "camera": "low water-level follow ending on Rosa's hand at the closed tap"
+    },
+    {
+      "scene": 5,
+      "time_start": 53.333333,
+      "time_end": 66.666667,
+      "emotion": "playful pattern-making",
+      "visual_action": "Kai dries and packs the whole fruit into a divided picnic box in a repeating red-gold-purple, red-gold-purple pattern. Rosa checks that bruised fruit is placed safely on top rather than wasted.",
+      "lyrics": [
+        "Red, then gold, then purple in a row,",
+        "Red, then gold, then purple—watch the pattern grow.",
+        "Soft fruit rides on top where nothing gets a squeeze,",
+        "Close the picnic box with gentle hands, please."
+      ],
+      "effects": ["six packing placements", "cloth dry", "single box latch"],
+      "camera": "top-down pattern reveal followed by one eased box-close tilt"
+    },
+    {
+      "scene": 6,
+      "time_start": 66.666667,
+      "time_end": 80.0,
+      "emotion": "cooperative effort",
+      "visual_action": "The packed basket is visibly heavy. Kai and Rosa each take one handle and carry it together along the orchard path toward the red-gold-purple picnic blanket without spilling fruit.",
+      "lyrics": [
+        "Heavy basket, steady feet,",
+        "Kai and Rosa share the weight and match the walking beat.",
+        "Handle level, pathway clear,",
+        "Picnic colours wait for us; we're nearly here."
+      ],
+      "effects": ["four measured footsteps", "woven handle creak", "soft blanket flutter"],
+      "camera": "low travelling follow matching the level basket"
+    },
+    {
+      "scene": 7,
+      "time_start": 80.0,
+      "time_end": 93.333333,
+      "emotion": "sunny sharing and grateful resolve",
+      "visual_action": "Kai and Rosa sit at the orchard-edge picnic. The six clean fruits and repeating colour pattern remain visible; they each choose one fruit, share the remaining basket and place one leaf in a small compost bowl.",
+      "lyrics": [
+        "Ask and pick, then wash and pack,",
+        "Carry it together down the orchard track.",
+        "Share the colours, waste no bite,",
+        "Fruit-picnic friends make the whole day bright."
+      ],
+      "effects": ["picnic cloth settle", "two fruit choices", "single leaf to compost", "final orchard cadence"],
+      "camera": "slow pullback from six-fruit pattern to the complete orchard picnic"
+    }
+  ],
+  "quality_gates": [
+    "Kai, Rosa, their clothes, basket, orchard and colour palette remain consistent.",
+    "Kai asks permission before picking and unripe fruit remains untouched.",
+    "The count scene visibly contains exactly two apples, two pears and two plums.",
+    "The wash scene keeps all six fruits visible and the tap visibly closes.",
+    "The pack scene shows a red-gold-purple pattern repeated exactly twice.",
+    "Every lyric and effect remains inside the matching visual scene.",
+    "No fruit, water, step, latch or basket sound is spoken as imitation.",
+    "Every story scene is five four-beat bars (13.333333 seconds) and below 14 seconds.",
+    "Final output includes full decode, visual, transition, count, pattern and lyric-emotion-sync evidence."
+  ],
+  "status": "timeline-locked-three-of-seven-scenes-reviewed-next-wash"
+}

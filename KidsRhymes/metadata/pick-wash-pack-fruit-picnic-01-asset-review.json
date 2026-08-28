@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "project_id": "pick-wash-pack-fruit-picnic-01",
+  "review_date": "2026-08-28",
+  "visual_system": "premium luminous layered watercolour-and-gouache orchard storybook panels",
+  "resolution": "1672x941",
+  "accepted_assets": [
+    {
+      "scene": 1,
+      "file": "automation/production-assets/fruit-picnic-opening-v1.png",
+      "sha256": "6784878168882fa61a1c57f1073f82d0feb3b989bbc5278c2357b8d5a8e0b797",
+      "review": "accepted; empty basket, Kai outside, Rosa opening the gate, three fruit colours, wash station and distant picnic destination are clear"
+    },
+    {
+      "scene": 2,
+      "file": "automation/production-assets/fruit-picnic-gentle-pick-v1.png",
+      "sha256": "1844a7308edfb938df87196ddb1917f1ab0b3e6344b8cb39f7dcb02a5938de52",
+      "review": "accepted; Kai supports the branch, twists one red apple, leaves the basket empty and does not disturb green fruit"
+    },
+    {
+      "scene": 3,
+      "file": "automation/production-assets/fruit-picnic-count-six-v1.png",
+      "sha256": "4433c6aa3c9f49c7799f2a34f99f21bbe24a3a341b5498e0fd957c4e2dbdac55",
+      "review": "accepted after correction; exactly two apples, two pears and two plums on the table, three pair tokens and no fruit in the basket"
+    }
+  ],
+  "rejected_variants": [
+    {
+      "scene": 3,
+      "reason": "The first count tableau added extra fruit inside the basket, making the visible total greater than six. It was not copied into the workspace."
+    }
+  ],
+  "continuity_checks": {
+    "kai_identity_and_clothes_consistent": true,
+    "rosa_identity_and_clothes_consistent": true,
+    "basket_and_orchard_consistent": true,
+    "permission_before_entry_clear": true,
+    "single_gentle_pick_clear": true,
+    "exact_six_count_clear": true,
+    "no_generated_text_or_watermark": true
+  },
+  "remaining_scenes": ["wash", "pack-pattern", "shared-carry", "picnic-finale"],
+  "status": "three-of-seven-scenes-accepted-next-wash"
+}

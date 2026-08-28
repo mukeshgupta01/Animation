@@ -678,6 +678,12 @@ The latest upload is Nia video `ygc-y4_XBwk`, read back as public and made for k
 - Full decode, H.264 1920x1080, 48 kHz stereo AAC, zero gaps, scene uniqueness, lyric/effect containment, voice variation, exact phrase cuts and uploader-contract aliases passed. Manual review covered the general and transition sheets, opening, choice, suspense, mirrored wave, rhythm, finale, end card, thumbnail, waveform and spectrum. A large translucent door glow was rejected and removed before the final render.
 - Final SHA-256 is `6665396363a8bce2def0ae2b22932ed33d568d2052583cc2bbd64eb17e54f5f5`; audio measures -15.8 LUFS integrated and -1.2 dB true peak. Thumbnail hook is `HOW WILL MINA SAY HI?` Nothing is queued or uploaded. Continue with `pick-wash-pack-fruit-picnic-01` using Maisie lead and a new orchard visual system.
 
+## Fruit Picnic active checkpoint (2026-08-28)
+
+- `pick-wash-pack-fruit-picnic-01` now has a locked 97.333-second / 90 BPM musical plan: seven exact five-bar / 13.333-second scenes plus a four-second resolve. Its deliberately distinct system is luminous layered watercolour-and-gouache orchard storybook art with translucent painted-paper depth, restrained leaf/light drift and fruit/basket match cuts. Maisie leads, Ryan voices Kai and Ana voices Rosa.
+- Three 1672x941 assets are accepted: `fruit-picnic-opening-v1.png` establishes Kai waiting outside with one empty basket while Rosa opens the gate; `fruit-picnic-gentle-pick-v1.png` shows one supported-branch red-apple twist; `fruit-picnic-count-six-v1.png` visibly proves exactly two apples, two pears and two plums plus three pair tokens and an empty basket.
+- The first count generation was rejected because it added extra fruit inside the basket; it was not saved to the workspace. Preserve only the reviewed hashes in `metadata/pick-wash-pack-fruit-picnic-01-asset-review.json`. Next create wash, repeated red-gold-purple pack pattern, shared carry and picnic finale, then build the producer and synchronized musical master. Nothing is queued or uploaded.
+
 ## Safe continuation checklist
 
 1. Read this file and `AGENTS.md`.
