@@ -3,7 +3,7 @@
   "project_id": "milos-melody-garden-blender-pilot-01",
   "working_title": "Milo's Melody Garden",
   "purpose": "A short reusable Blender pilot that can be extended into a full original Tiny Tales music, colour and pattern story.",
-  "duration_seconds": 6,
+  "planned_duration_seconds": 8,
   "resolution": "1280x720",
   "fps": 24,
   "renderer": "Blender 5.2.1 LTS / Eevee",
@@ -34,10 +34,10 @@
     "title_safe_margin_percent": 5
   },
   "timing": {
-    "frames": 144,
-    "beat_frames": [48, 72, 96],
+    "frames": 192,
+    "beat_frames": [72, 104, 136],
     "beat_actions": ["blue drum and blue flower", "gold drum and gold flower", "pink drum and pink flower"],
-    "settled_final_pose_from_frame": 120
+    "settled_final_pose_from_frame": 168
   },
   "reusable_scene_contract": {
     "character_controller": "MILO_CTRL with separately named body, head, arm and tail controls",
@@ -57,7 +57,7 @@
     "The output fully decodes as H.264 video with AAC stereo audio.",
     "All critical character features remain inside the five-percent safe area."
   ],
-  "result": {
+  "rejected_result": {
     "file": "automation/production-output/milos-melody-garden-blender-pilot-01.mp4",
     "sha256": "ecae865fcb3f9f1afacb9115a4465ab02337e1c5da5f1a6b715731e6ee550019",
     "duration_seconds": 6.0,
@@ -77,9 +77,25 @@
       "camera_motion_smooth_and_restrained": true,
       "stable_extension_ready_final_pose": true,
       "full_decode_passed": true,
-      "approved_as_local_blender_pilot": true,
+      "approved_as_local_blender_pilot": false,
+      "user_visual_quality_rejected": true,
       "approved_for_upload": false
     }
   },
-  "status": "reviewed-approved-as-extensible-local-pilot"
+  "replacement_preview": {
+    "frame": "automation/production-work/milos-melody-garden-blender-pilot-01/frames/frame_0144.png",
+    "frame_number": 144,
+    "resolution": "1280x720",
+    "review_intent": "Single-frame art-direction checkpoint only; do not render the full replacement until the user reviews this richer visual direction.",
+    "visual_upgrades": [
+      "physical navy sky cyclorama with layered distant hills and stars",
+      "multi-layer terrain, crescent pond, stone path and foreground foliage",
+      "illuminated carved-wood vine arch and designed performance rug",
+      "Milo costume, facial expression, hair, gloves and brass details",
+      "crafted mushroom drums with wooden staves, brass collars and cap markings",
+      "three visible flower payoffs, rising music-note response and coloured hit lighting"
+    ],
+    "user_direction_approval": "pending"
+  },
+  "status": "v2-single-hero-frame-rendered-awaiting-user-review"
 }

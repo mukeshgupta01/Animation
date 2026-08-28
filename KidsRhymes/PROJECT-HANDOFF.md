@@ -689,11 +689,11 @@ The user wants to create another channel/project in a separate folder, but has n
 
 ## Blender pilot ready for episode development (2026-08-28)
 
-- The first real Blender Tiny Tales pilot is complete: `Milo's Melody Garden`, project ID `milos-melody-garden-blender-pilot-01`. It is a six-second 1280x720, 24 fps Eevee scene rendered with Blender 5.2.1 LTS and original synchronized stereo audio.
+- The first six-second Blender render of `Milo's Melody Garden`, project ID `milos-melody-garden-blender-pilot-01`, was technically valid but the user rejected its visual direction as much too basic. Do not treat that MP4 or its prior hash as an approved Tiny Tales quality reference.
 - Milo performs three musical strikes at frames 48, 72 and 96. Blue, gold and pink mushroom caps squash on contact and their matching flowers bloom after the hits. The source was corrected so the third pink payoff remains visible beside Milo's tail and the nearest hand performs that strike.
-- The final MP4 fully decodes as H.264 High plus 48 kHz AAC stereo. Reviewed SHA-256 is `ecae865fcb3f9f1afacb9115a4465ab02337e1c5da5f1a6b715731e6ee550019`; general and beat contact sheets were visually approved. Exact paths and acceptance results are in `metadata/milos-melody-garden-blender-pilot-01.json`.
+- V2 is now planned as eight seconds / 192 frames with hits at frames 72, 104 and 136. It replaces the flat disc, empty sky, primitive trees, undressed character and simple drums with a physical night cyclorama, distant hills/stars, multi-level terrain, pond/path, foreground foliage, illuminated vine arch, performance rug, costumed and more expressive Milo, crafted brass/wood drums, visible blooms, music-note reactions and colored hit lights.
 - Reproducible source is `automation/blender/milos_melody_garden_pilot.py`. It creates named Milo controls, three modular drums, three modular flowers, a camera target, materials, lights, animation, synchronized WAV, PNG sequence and reusable `.blend` file from scratch.
-- The ignored local deliverables are `automation/production-output/milos-melody-garden-blender-pilot-01.mp4` and `automation/production-work/milos-melody-garden-blender-pilot-01/milos-melody-garden-pilot.blend`. This pilot is intentionally not queued or uploaded.
+- At the user's request, only V2 hero frame 144 was rendered at `automation/production-work/milos-melody-garden-blender-pilot-01/frames/frame_0144.png`; the full V2 animation has not been rendered. Await explicit visual-direction feedback on that frame before spending time on the complete sequence. Nothing is queued or uploaded.
 - Continue it as a full six-zone Tiny Tales music story: introduce Milo and the sleeping garden, teach colour and pitch, let viewers copy a short rhythm, add a turn-taking friend, then resolve with an original garden song using the stable final pose as the transition point.
 
 ## Active temporary musical-narration preference (2026-08-28)

@@ -14,6 +14,7 @@ import math
 from pathlib import Path
 import random
 import struct
+import sys
 import wave
 
 import bpy
@@ -27,8 +28,8 @@ FRAMES = WORK / "frames"
 BLEND = WORK / "milos-melody-garden-pilot.blend"
 AUDIO = WORK / "milos-melody-garden-pilot.wav"
 FPS = 24
-FRAME_END = 144
-HIT_FRAMES = (48, 72, 96)
+FRAME_END = 192
+HIT_FRAMES = (72, 104, 136)
 
 
 def reset_scene() -> bpy.types.Scene:
@@ -55,6 +56,7 @@ def reset_scene() -> bpy.types.Scene:
     scene.render.image_settings.compression = 32
     scene.view_settings.look = "AgX - Medium High Contrast"
     scene.world.color = (0.012, 0.02, 0.065)
+    scene.render.image_settings.color_mode = "RGBA"
     return scene
 
 
@@ -141,6 +143,23 @@ def torus(name: str, location, major_radius, minor_radius, mat, parent=None, rot
     return smooth_object(obj)
 
 
+def cube(name: str, location, scale, mat, parent=None, rotation=(0, 0, 0), bevel=0.08):
+    bpy.ops.mesh.primitive_cube_add(location=(0, 0, 0))
+    obj = bpy.context.object
+    obj.name = name
+    obj.location = location
+    obj.scale = scale
+    obj.rotation_euler = rotation
+    obj.data.materials.append(mat)
+    if bevel:
+        modifier = obj.modifiers.new("Soft bevel", "BEVEL")
+        modifier.width = bevel
+        modifier.segments = 3
+    if parent:
+        obj.parent = parent
+    return smooth_object(obj)
+
+
 def set_interp(obj: bpy.types.Object, mode="BEZIER") -> None:
     if not obj.animation_data or not obj.animation_data.action:
         return
@@ -172,11 +191,25 @@ def build_materials() -> dict[str, bpy.types.Material]:
     return {
         "grass": material("TT_GRASS", (0.13, 0.48, 0.23, 1)),
         "grass_light": material("TT_GRASS_LIGHT", (0.28, 0.72, 0.35, 1)),
+        "grass_dark": material("TT_GRASS_DARK", (0.035, 0.18, 0.13, 1), roughness=0.82),
+        "leaf_mint": material("TT_LEAF_MINT", (0.12, 0.58, 0.40, 1), roughness=0.72),
+        "leaf_plum": material("TT_LEAF_PLUM", (0.30, 0.09, 0.35, 1), roughness=0.72),
         "orange": material("MILO_ORANGE", (0.78, 0.20, 0.075, 1), roughness=0.62),
         "cream": material("MILO_CREAM", (1.0, 0.76, 0.43, 1), roughness=0.7),
         "dark": material("MILO_DARK", (0.055, 0.035, 0.075, 1), roughness=0.6),
         "white": material("EYE_WHITE", (0.98, 0.98, 0.92, 1), roughness=0.45),
         "wood": material("DRUM_WOOD", (0.32, 0.10, 0.055, 1), roughness=0.72),
+        "wood_light": material("CARVED_WOOD_LIGHT", (0.66, 0.27, 0.08, 1), roughness=0.64),
+        "brass": material("INSTRUMENT_BRASS", (0.74, 0.31, 0.045, 1), roughness=0.24, metallic=0.72),
+        "navy": material("MILO_VEST_NAVY", (0.025, 0.09, 0.25, 1), roughness=0.5),
+        "aqua": material("MILO_SCARF_AQUA", (0.02, 0.64, 0.68, 1), roughness=0.48),
+        "coral": material("FLOWER_CORAL", (0.96, 0.18, 0.22, 1), roughness=0.5),
+        "stone": material("GARDEN_STONE", (0.24, 0.29, 0.42, 1), roughness=0.86),
+        "water": material("POND_WATER", (0.015, 0.22, 0.34, 1), roughness=0.16, metallic=0.16,
+                           emission=(0.01, 0.17, 0.28, 1), emission_strength=0.25),
+        "sky_navy": material("SKY_NIGHT_NAVY", (0.006, 0.012, 0.055, 1), roughness=0.92,
+                              emission=(0.008, 0.018, 0.09, 1), emission_strength=0.35),
+        "sky_violet": material("DISTANT_HILL_VIOLET", (0.08, 0.035, 0.18, 1), roughness=0.88),
         "blue": material("GLOW_BLUE", (0.05, 0.32, 0.78, 1), roughness=0.32,
                          emission=(0.03, 0.24, 1.0, 1), emission_strength=1.5),
         "gold": material("GLOW_GOLD", (0.95, 0.48, 0.04, 1), roughness=0.34,
@@ -193,33 +226,116 @@ def build_materials() -> dict[str, bpy.types.Material]:
 
 
 def build_stage(mats):
-    cylinder("GARDEN_STAGE", (0, 0.35, 0.12), 4.6, 0.38, mats["grass"], vertices=64)
-    cylinder("GARDEN_STAGE_TRIM", (0, 0.35, -0.02), 4.75, 0.18, mats["grass_light"], vertices=64)
-    # Curved stepping stones establish a readable path into the music garden.
-    for i, (x, y, scale) in enumerate(((-3.4, -1.2, 0.55), (-2.5, -0.9, 0.48), (-1.7, -0.72, 0.42))):
-        uv_sphere(f"PATH_STONE_{i+1}", (x, y, 0.32), (scale, scale * 0.65, 0.12), mats["cream"])
-    # Rounded background trees stay static; only leaf clusters receive a tiny sway.
+    # A physical night-sky cyclorama removes the empty black void and remains
+    # controllable when this world expands into additional episode zones.
+    sky = cube("NIGHT_SKY_BACKDROP", (0, 5.15, 4.1), (8.8, 0.12, 4.8), mats["sky_navy"], bevel=0.5)
+    for i, (x, z, scale) in enumerate(((-5.3, 2.15, 2.3), (-2.8, 2.42, 2.65),
+                                       (0.2, 2.15, 2.45), (3.0, 2.48, 2.75), (5.5, 2.10, 2.25))):
+        uv_sphere(f"DISTANT_HILL_{i+1}", (x, 4.72, z), (scale, 0.42, scale * 0.72), mats["sky_violet"])
+    for i, (x, z, scale) in enumerate(((-5.8, 5.85, 0.055), (-4.8, 4.55, 0.038),
+                                        (-3.0, 6.15, 0.045), (-1.8, 5.05, 0.038),
+                                        (-0.4, 6.42, 0.052), (1.2, 5.60, 0.035),
+                                        (2.5, 6.35, 0.050), (4.0, 5.12, 0.038),
+                                        (5.6, 6.0, 0.055))):
+        uv_sphere(f"STAR_{i+1}", (x, 4.45, z), (scale, 0.025, scale), mats["moon"], segments=16, rings=10)
+    # Layered, asymmetrical terrain replaces the flat prototype disc and gives
+    # the camera true foreground, midground and background depth.
+    stage = cylinder("GARDEN_STAGE", (0.2, 0.45, 0.06), 5.35, 0.42, mats["grass"], vertices=96)
+    stage.scale.y = 0.72
+    trim = cylinder("GARDEN_STAGE_TRIM", (0.2, 0.48, -0.14), 5.5, 0.24, mats["grass_dark"], vertices=96)
+    trim.scale.y = 0.73
+    rug = cylinder("MUSIC_STAGE_RUG", (0.05, -0.72, 0.285), 2.65, 0.045, mats["navy"], vertices=96)
+    rug.scale.y = 0.60
+    rug_inlay = torus("MUSIC_STAGE_RUG_INLAY", (0.05, -0.72, 0.315), 2.20, 0.035, mats["brass"])
+    rug_inlay.scale.y = 0.60
+    for i, (x, y, sx, sy) in enumerate(((-3.5, 1.2, 2.0, 1.05), (3.55, 1.55, 2.2, 1.1),
+                                         (-0.3, 2.85, 2.65, 0.8))):
+        island = uv_sphere(f"TERRAIN_MOUND_{i+1}", (x, y, 0.12), (sx, sy, 0.42),
+                           mats["grass_dark" if i < 2 else "grass"])
+        island.rotation_euler.z = (-0.16, 0.14, -0.04)[i]
+
+    # A reflective crescent pond, stone rim and curved path establish a world
+    # beyond the performance platform.
+    pond = uv_sphere("MOONLIT_POND", (-3.45, 0.55, 0.24), (1.45, 0.70, 0.055), mats["water"])
+    pond.rotation_euler.z = -0.18
+    for i, angle in enumerate((-2.55, -2.1, -1.62, -1.16, -0.66, -0.20, 0.28)):
+        x = -3.45 + math.cos(angle) * 1.55
+        y = 0.55 + math.sin(angle) * 0.78
+        uv_sphere(f"POND_ROCK_{i+1}", (x, y, 0.27), (0.30, 0.21, 0.14), mats["stone"])
+    for i, (x, y, scale, angle) in enumerate(((-3.95, -1.45, 0.62, -0.18), (-3.00, -1.22, 0.54, 0.1),
+                                                (-2.15, -0.94, 0.47, 0.22), (-1.38, -0.66, 0.40, 0.28))):
+        stone = uv_sphere(f"PATH_STONE_{i+1}", (x, y, 0.30), (scale, scale * 0.60, 0.12), mats["cream"])
+        stone.rotation_euler.z = angle
+
+    # An illuminated carved-wood music arch makes the stage feel designed.
+    for side in (-1, 1):
+        cylinder(f"ARCH_POST_{'L' if side < 0 else 'R'}", (side * 2.55, 1.48, 1.72),
+                 0.17, 3.05, mats["wood_light"], rotation=(0.04 * side, 0, 0))
+        torus(f"ARCH_COLLAR_{'L' if side < 0 else 'R'}", (side * 2.55, 1.48, 0.45),
+              0.23, 0.045, mats["brass"], rotation=(math.radians(90), 0, 0))
+    arch_top = torus("MUSIC_ARCH_TOP", (0, 1.48, 3.10), 2.58, 0.16, mats["wood_light"],
+                     rotation=(math.radians(90), 0, 0))
+    arch_top.scale.z = 0.62
+    # Leaf garland, jewel lights and layered foliage add a crafted storybook finish.
+    for i in range(15):
+        angle = math.pi * (i / 14)
+        x = math.cos(angle) * 2.60
+        z = 2.98 + math.sin(angle) * 1.36
+        leaf = uv_sphere(f"ARCH_LEAF_{i+1}", (x, 1.34, z), (0.22, 0.09, 0.36),
+                         mats["leaf_mint" if i % 2 else "leaf_plum"], segments=20, rings=12)
+        leaf.rotation_euler.y = angle - math.pi / 2
+        if i % 2 == 0:
+            uv_sphere(f"ARCH_LIGHT_{i+1}", (x, 1.16, z - 0.12), (0.075, 0.075, 0.075), mats["yellow"], segments=16, rings=10)
+
+    # Each tree uses several overlapping crowns instead of one primitive ball.
     trees = []
-    for i, (x, y, h, tint) in enumerate(((-4.2, 1.9, 2.2, "lavender"), (-2.9, 2.7, 2.6, "teal"),
-                                          (3.3, 2.5, 2.5, "lavender"), (4.3, 1.6, 2.0, "teal"))):
-        cylinder(f"TREE_TRUNK_{i+1}", (x, y, h * 0.45), 0.18, h * 0.9, mats["wood"])
-        crown = uv_sphere(f"TREE_CROWN_{i+1}", (x, y, h), (0.82, 0.58, 0.9), mats[tint])
-        trees.append(crown)
+    tree_specs = ((-5.0, 2.2, 2.25, "teal"), (-3.75, 3.0, 2.8, "lavender"),
+                  (3.85, 3.05, 2.85, "teal"), (5.05, 1.95, 2.30, "lavender"))
+    for i, (x, y, h, tint) in enumerate(tree_specs):
+        trunk = cylinder(f"TREE_TRUNK_{i+1}", (x, y, h * 0.45), 0.20, h * 0.92, mats["wood"])
+        trunk.rotation_euler.y = 0.06 * (-1 if i % 2 else 1)
+        crown_root = empty(f"TREE_CROWN_CTRL_{i+1}", (x, y, h))
+        for j, (ox, oz, scale) in enumerate(((-0.38, 0.02, 0.72), (0.34, 0.14, 0.78),
+                                             (0.0, 0.55, 0.68), (0.02, -0.38, 0.66))):
+            uv_sphere(f"TREE_CROWN_{i+1}_{j+1}", (ox, 0, oz), (scale, 0.52, scale * 0.88),
+                      mats[tint if j % 2 == 0 else ("leaf_plum" if tint == "teal" else "leaf_mint")], crown_root)
+        trees.append(crown_root)
     for i, crown in enumerate(trees):
-        crown.rotation_euler = (0, 0, -0.035)
-        crown.keyframe_insert("rotation_euler", frame=1)
-        crown.rotation_euler = (0, 0, 0.04)
-        crown.keyframe_insert("rotation_euler", frame=72)
-        crown.rotation_euler = (0, 0, -0.035)
-        crown.keyframe_insert("rotation_euler", frame=144)
+        key(crown, 1, "rotation_euler", Vector((0, 0, math.radians(-1.5))))
+        key(crown, 96, "rotation_euler", Vector((0, 0, math.radians(1.8))))
+        key(crown, 192, "rotation_euler", Vector((0, 0, math.radians(-1.5))))
         set_interp(crown)
-    uv_sphere("MOON", (-3.6, 4.4, 4.7), (0.72, 0.24, 0.72), mats["moon"])
+
+    # Foreground foliage deliberately crosses the frame edge for parallax and
+    # gives the polished image a photographed, dimensional composition.
+    for side in (-1, 1):
+        for i in range(5):
+            x = side * (4.25 + i * 0.22)
+            y = -2.28 + i * 0.10
+            leaf = uv_sphere(f"FOREGROUND_LEAF_{side}_{i}", (x, y, 0.52 + i * 0.19),
+                             (0.30, 0.14, 0.62), mats["leaf_plum" if i % 2 else "leaf_mint"])
+            leaf.rotation_euler.y = side * math.radians(18 + i * 7)
+        uv_sphere(f"FOREGROUND_FLOWER_{side}", (side * 4.38, -2.18, 1.22),
+                  (0.42, 0.18, 0.42), mats["coral"])
+    uv_sphere("MOON", (-4.0, 4.6, 5.1), (0.82, 0.30, 0.82), mats["moon"])
 
 
 def build_milo(mats):
     root = empty("MILO_CTRL", (0.75, 0.45, 0.34))
     body = uv_sphere("MILO_BODY", (0, 0, 1.28), (0.72, 0.52, 0.94), mats["orange"], root)
     uv_sphere("MILO_BELLY", (0, -0.48, 1.22), (0.43, 0.13, 0.56), mats["cream"], root)
+    # Tailored stage costume gives Milo a specific identity rather than the
+    # undressed primitive look of the blocking pass.
+    for side in (-1, 1):
+        vest = uv_sphere(f"MILO_VEST_PANEL_{'L' if side < 0 else 'R'}",
+                         (side * 0.31, -0.47, 1.32), (0.29, 0.10, 0.66), mats["navy"], root)
+        vest.rotation_euler.z = side * math.radians(7)
+    torus("MILO_SCARF_COLLAR", (0, -0.02, 1.93), 0.42, 0.105, mats["aqua"], root)
+    scarf_tail = cube("MILO_SCARF_TAIL", (0.38, -0.53, 1.63), (0.13, 0.055, 0.40), mats["aqua"], root,
+                      rotation=(math.radians(-6), math.radians(8), math.radians(-18)), bevel=0.12)
+    for side in (-1, 1):
+        uv_sphere(f"MILO_VEST_BUTTON_{'L' if side < 0 else 'R'}", (side * 0.17, -0.615, 1.20),
+                  (0.07, 0.035, 0.07), mats["brass"], root, segments=20, rings=12)
     head_ctrl = empty("MILO_HEAD_CTRL", (0, 0, 2.25), root)
     uv_sphere("MILO_HEAD", (0, 0, 0), (0.67, 0.58, 0.61), mats["orange"], head_ctrl)
     for side in (-1, 1):
@@ -235,6 +351,19 @@ def build_milo(mats):
                   (0.025, 0.018, 0.028), mats["white"], head_ctrl, segments=20, rings=12)
     uv_sphere("MILO_MUZZLE", (0, -0.53, -0.15), (0.29, 0.12, 0.20), mats["cream"], head_ctrl)
     uv_sphere("MILO_NOSE", (0, -0.66, -0.09), (0.09, 0.06, 0.065), mats["dark"], head_ctrl)
+    # Eyebrows, cheek highlights, a small smile and hair tuft make the face
+    # readable in close frames and support emotional performance later.
+    for side in (-1, 1):
+        brow = cylinder(f"MILO_BROW_{'L' if side < 0 else 'R'}", (side * 0.25, -0.61, 0.31),
+                        0.025, 0.23, mats["dark"], head_ctrl,
+                        rotation=(0, math.radians(90), side * math.radians(8)), vertices=16)
+        uv_sphere(f"MILO_CHEEK_{'L' if side < 0 else 'R'}", (side * 0.37, -0.59, -0.13),
+                  (0.10, 0.025, 0.065), mats["pink"], head_ctrl, segments=20, rings=12)
+    uv_sphere("MILO_SMILE", (0, -0.675, -0.24), (0.13, 0.035, 0.085), mats["dark"], head_ctrl, segments=24, rings=14)
+    uv_sphere("MILO_TONGUE", (0, -0.708, -0.275), (0.065, 0.018, 0.035), mats["pink"], head_ctrl, segments=20, rings=12)
+    for i, (x, rot) in enumerate(((-0.13, -18), (0.0, 0), (0.13, 18))):
+        tuft = uv_sphere(f"MILO_HAIR_TUFT_{i+1}", (x, 0.02, 0.59), (0.12, 0.09, 0.25), mats["orange"], head_ctrl)
+        tuft.rotation_euler.y = math.radians(rot)
     # Legs provide planted contact and can become full IK limbs in the episode extension.
     for side in (-1, 1):
         leg = empty(f"MILO_LEG_CTRL_{'L' if side < 0 else 'R'}", (side * 0.31, 0, 0.67), root)
@@ -247,6 +376,7 @@ def build_milo(mats):
         stick = cylinder(f"MILO_STICK_{label}", (side * 0.12, -0.20, -0.78), 0.055, 0.9,
                          mats["cream"], ctrl, rotation=(math.radians(12), 0, math.radians(-side * 8)), vertices=20)
         uv_sphere(f"MILO_STICK_TIP_{label}", (side * 0.12, -0.28, -1.19), (0.11, 0.11, 0.13), mats["pink"], ctrl)
+        uv_sphere(f"MILO_GLOVE_{label}", (side * 0.08, -0.11, -0.64), (0.20, 0.18, 0.20), mats["cream"], ctrl)
         arms[label] = ctrl
     # A segmented striped tail gives readable secondary follow-through.
     tail_ctrl = empty("MILO_TAIL_CTRL", (0.62, 0.20, 1.02), root)
@@ -262,6 +392,7 @@ def build_milo(mats):
 def build_drums_and_flowers(mats):
     drums = []
     flowers = []
+    notes = []
     spec = (
         ("BLUE", -1.45, "blue"),
         ("GOLD", 0.0, "gold"),
@@ -270,9 +401,23 @@ def build_drums_and_flowers(mats):
     for index, (label, x, colour) in enumerate(spec):
         root = empty(f"DRUM_{label}", (x, -1.05, 0.33))
         cone(f"DRUM_{label}_BASE", (0, 0, 0.48), 0.56, 0.42, 0.88, mats["wood"], root)
+        # Alternating carved staves and metallic collars make these read as
+        # crafted instruments rather than three cones with spheres on top.
+        for stave in range(8):
+            angle = stave * math.tau / 8
+            slat = cylinder(f"DRUM_{label}_STAVE_{stave+1}",
+                            (math.cos(angle) * 0.47, math.sin(angle) * 0.36, 0.49),
+                            0.035, 0.72, mats["wood_light"], root, vertices=12)
+            slat.rotation_euler.z = angle
         cap = uv_sphere(f"DRUM_{label}_CAP", (0, 0, 0.94), (0.68, 0.54, 0.30), mats[colour], root)
-        torus(f"DRUM_{label}_RIM", (0, 0, 0.88), 0.55, 0.055, mats["cream"], root,
+        torus(f"DRUM_{label}_RIM", (0, 0, 0.88), 0.56, 0.060, mats["brass"], root,
               rotation=(0, 0, 0))
+        torus(f"DRUM_{label}_LOWER_COLLAR", (0, 0, 0.24), 0.45, 0.045, mats["brass"], root)
+        for spot in range(5):
+            angle = spot * math.tau / 5 + index * 0.35
+            uv_sphere(f"DRUM_{label}_CAP_SPOT_{spot+1}",
+                      (math.cos(angle) * 0.38, math.sin(angle) * 0.27 - 0.34, 1.08),
+                      (0.085, 0.035, 0.045), mats["cream"], root, segments=16, rings=10)
         drums.append((root, cap, mats[colour]))
         # Fan the blooms slightly wider than the drums so every payoff remains
         # readable around Milo's silhouette, especially the pink flower beside
@@ -287,9 +432,18 @@ def build_drums_and_flowers(mats):
                       (math.cos(angle) * 0.25, 0, math.sin(angle) * 0.25),
                       (0.22, 0.11, 0.32), mats[colour], bloom).rotation_euler[1] = angle
         uv_sphere(f"FLOWER_{label}_CENTRE", (0, -0.08, 0), (0.18, 0.10, 0.18), mats["yellow"], bloom)
+        for side in (-1, 1):
+            leaf = uv_sphere(f"FLOWER_{label}_LEAF_{'L' if side < 0 else 'R'}",
+                             (side * 0.19, 0, -0.42), (0.18, 0.07, 0.34), mats["leaf_mint"], bloom)
+            leaf.rotation_euler.y = side * math.radians(34)
         bloom.scale = (0.06, 0.06, 0.06)
         flowers.append(bloom)
-    return drums, flowers
+        note = empty(f"MUSIC_NOTE_{label}_CTRL", (x + (-0.25, 0.0, 0.25)[index], -0.76, 1.52))
+        uv_sphere(f"MUSIC_NOTE_{label}_HEAD", (0, 0, 0), (0.13, 0.07, 0.11), mats[colour], note, segments=20, rings=12)
+        cylinder(f"MUSIC_NOTE_{label}_STEM", (0.10, 0, 0.28), 0.035, 0.58, mats[colour], note, vertices=16)
+        note.scale = (0.001, 0.001, 0.001)
+        notes.append(note)
+    return drums, flowers, notes
 
 
 def build_fireflies(mats):
@@ -300,37 +454,29 @@ def build_fireflies(mats):
         fly.keyframe_insert("location", frame=1)
         fly.location.x += 0.18 * (-1 if i % 2 else 1)
         fly.location.z += 0.16 + 0.04 * i
-        fly.keyframe_insert("location", frame=72)
+        fly.keyframe_insert("location", frame=96)
         fly.location.x -= 0.08 * (-1 if i % 2 else 1)
         fly.location.z -= 0.10
-        fly.keyframe_insert("location", frame=144)
+        fly.keyframe_insert("location", frame=192)
         set_interp(fly)
         fireflies.append(fly)
     return fireflies
 
 
-def animate(scene, milo, head, arms, tail, drums, flowers):
-    # Establish -> anticipation -> three clear impacts -> final welcoming pose.
-    key(milo, 1, "location", Vector((0.75, 0.45, 0.34)))
-    key(milo, 18, "location", Vector((0.75, 0.45, 0.27)))
-    key(milo, 30, "location", Vector((0.75, 0.45, 0.46)))
-    key(milo, 42, "location", Vector((0.75, 0.45, 0.34)))
-    key(milo, 144, "location", Vector((0.75, 0.45, 0.34)))
-    key(head, 1, "rotation_euler", Vector((0, 0, math.radians(-4))))
-    key(head, 30, "rotation_euler", Vector((math.radians(-4), 0, math.radians(5))))
-    key(head, 112, "rotation_euler", Vector((math.radians(-2), 0, math.radians(-4))))
-    key(head, 144, "rotation_euler", Vector((0, 0, 0)))
-    # Body squash and stretch are restrained to preserve character volume.
-    key(milo, 1, "scale", Vector((1, 1, 1)))
-    key(milo, 18, "scale", Vector((1.04, 1.04, 0.94)))
-    key(milo, 30, "scale", Vector((0.97, 0.97, 1.06)))
-    key(milo, 42, "scale", Vector((1, 1, 1)))
-    key(milo, 144, "scale", Vector((1, 1, 1)))
+def animate(scene, milo, head, arms, tail, drums, flowers, notes):
+    # Establish -> curious breath -> three clear impacts -> delighted resolve.
+    for frame, z, sx, sz in ((1, 0.34, 1.0, 1.0), (34, 0.30, 1.025, 0.97),
+                              (52, 0.42, 0.985, 1.035), (64, 0.34, 1.0, 1.0),
+                              (192, 0.34, 1.0, 1.0)):
+        key(milo, frame, "location", Vector((0.75, 0.45, z)))
+        key(milo, frame, "scale", Vector((sx, sx, sz)))
+    for frame, pitch, roll in ((1, -2, -7), (36, -5, 6), (65, 1, -5),
+                               (92, -2, 2), (124, -2, -2), (164, -5, 0), (192, 0, 0)):
+        key(head, frame, "rotation_euler", Vector((math.radians(pitch), 0, math.radians(roll))))
 
-    # Drum contacts use the nearest readable hand and a short anticipation.
-    # The right hand carries through from the centre drum to the pink drum,
-    # creating a clear left-to-right musical phrase.
-    hit_specs = ((48, "L", 0), (72, "R", 1), (96, "R", 2))
+    # Drum contacts use the nearest readable hand. Each performance phrase has
+    # anticipation, impact, squash, follow-through, bloom and a rising note.
+    hit_specs = ((72, "L", 0), (104, "R", 1), (136, "R", 2))
     for hit, hand, drum_index in hit_specs:
         arm = arms[hand]
         direction = -1 if hand == "L" else 1
@@ -349,49 +495,67 @@ def animate(scene, milo, head, arms, tail, drums, flowers):
         key(bloom, hit + 1, "scale", Vector((0.06, 0.06, 0.06)))
         key(bloom, hit + 9, "scale", Vector((1.16, 1.16, 1.16)))
         key(bloom, hit + 18, "scale", Vector((1, 1, 1)))
+        note = notes[drum_index]
+        start = Vector(note.location)
+        key(note, hit - 1, "scale", Vector((0.001, 0.001, 0.001)))
+        key(note, hit + 3, "scale", Vector((1.0, 1.0, 1.0)))
+        key(note, hit + 3, "location", start)
+        key(note, hit + 14, "location", start + Vector((0.10 * (-1 if drum_index == 0 else 1), 0, 0.72)))
+        key(note, hit + 20, "scale", Vector((0.001, 0.001, 0.001)))
+        # A tiny body compression/rebound connects Milo physically to the hit.
+        key(milo, hit - 3, "scale", Vector((1.0, 1.0, 1.0)))
+        key(milo, hit + 2, "scale", Vector((1.025, 1.025, 0.965)))
+        key(milo, hit + 8, "scale", Vector((0.99, 0.99, 1.025)))
+        key(milo, hit + 14, "scale", Vector((1.0, 1.0, 1.0)))
     # Ensure each bloom remains open after its own settle.
     for bloom in flowers:
-        key(bloom, 144, "scale", Vector((1, 1, 1)))
+        key(bloom, 192, "scale", Vector((1, 1, 1)))
     # Tail follows the body with slower overlapping action.
     key(tail, 1, "rotation_euler", Vector((0, math.radians(-4), math.radians(-8))))
-    key(tail, 38, "rotation_euler", Vector((0, math.radians(6), math.radians(10))))
-    key(tail, 82, "rotation_euler", Vector((0, math.radians(-5), math.radians(-11))))
-    key(tail, 116, "rotation_euler", Vector((0, math.radians(6), math.radians(12))))
-    key(tail, 144, "rotation_euler", Vector((0, 0, math.radians(4))))
+    key(tail, 54, "rotation_euler", Vector((0, math.radians(6), math.radians(10))))
+    key(tail, 102, "rotation_euler", Vector((0, math.radians(-5), math.radians(-11))))
+    key(tail, 148, "rotation_euler", Vector((0, math.radians(6), math.radians(12))))
+    key(tail, 192, "rotation_euler", Vector((0, 0, math.radians(4))))
     # Final pose: both sticks raised after the third flower has settled.
     for label, arm in arms.items():
         direction = -1 if label == "L" else 1
-        key(arm, 112, "rotation_euler", Vector((math.radians(-18), 0, 0)))
-        key(arm, 124, "rotation_euler", Vector((math.radians(-72), math.radians(direction * 14), math.radians(direction * 18))))
-        key(arm, 144, "rotation_euler", Vector((math.radians(-66), math.radians(direction * 10), math.radians(direction * 14))))
-    for obj in (milo, head, arms["L"], arms["R"], tail, *(d[1] for d in drums), *flowers):
+        key(arm, 154, "rotation_euler", Vector((math.radians(-18), 0, 0)))
+        key(arm, 170, "rotation_euler", Vector((math.radians(-72), math.radians(direction * 14), math.radians(direction * 18))))
+        key(arm, 192, "rotation_euler", Vector((math.radians(-66), math.radians(direction * 10), math.radians(direction * 14))))
+    for obj in (milo, head, arms["L"], arms["R"], tail, *(d[1] for d in drums), *flowers, *notes):
         set_interp(obj)
 
 
 def build_camera_and_lights(scene):
-    target = empty("CAMERA_TARGET", (0.15, 0.15, 1.52))
-    bpy.ops.object.camera_add(location=(0.0, -12.1, 5.25))
+    target = empty("CAMERA_TARGET", (0.10, 0.25, 1.62))
+    bpy.ops.object.camera_add(location=(-0.45, -13.35, 5.70))
     camera = bpy.context.object
     camera.name = "TT_CAMERA"
-    camera.data.lens = 52
+    camera.data.lens = 49
     camera.data.sensor_width = 36
     camera.data.dof.use_dof = True
     camera.data.dof.focus_object = target
-    camera.data.dof.aperture_fstop = 5.6
+    camera.data.dof.aperture_fstop = 3.6
     look_at(camera, target.location)
     camera.keyframe_insert("location", frame=1)
-    camera.location = (0.0, -10.75, 4.9)
-    look_at(camera, target.location)
-    camera.keyframe_insert("location", frame=144)
     camera.keyframe_insert("rotation_euler", frame=1)
-    camera.keyframe_insert("rotation_euler", frame=144)
+    camera.location = (0.0, -10.85, 4.82)
+    look_at(camera, target.location)
+    camera.keyframe_insert("location", frame=192)
+    camera.keyframe_insert("rotation_euler", frame=192)
     set_interp(camera)
     scene.camera = camera
-    # Warm key, cool fill and soft rim separate Milo from the twilight world.
+    scene.world.use_nodes = True
+    world_bg = scene.world.node_tree.nodes.get("Background")
+    world_bg.inputs["Color"].default_value = (0.008, 0.012, 0.045, 1)
+    world_bg.inputs["Strength"].default_value = 0.18
+    # Warm key, cool fill and magenta rim separate Milo from the garden while
+    # leaving enough darkness for the practical arch lights to sparkle.
     for name, kind, location, energy, color, size in (
-        ("KEY_WARM", "AREA", (-4.0, -5.0, 7.0), 1050, (1.0, 0.54, 0.28), 5.0),
-        ("FILL_COOL", "AREA", (4.5, -2.0, 5.0), 800, (0.22, 0.48, 1.0), 4.0),
-        ("RIM_MOON", "AREA", (-1.5, 4.0, 6.0), 900, (0.55, 0.64, 1.0), 3.0),
+        ("KEY_WARM", "AREA", (-4.0, -5.0, 7.2), 1180, (1.0, 0.46, 0.20), 5.0),
+        ("FILL_COOL", "AREA", (4.8, -2.0, 5.3), 920, (0.16, 0.46, 1.0), 4.0),
+        ("RIM_MOON", "AREA", (-1.5, 4.2, 6.3), 1080, (0.48, 0.58, 1.0), 3.0),
+        ("RIM_MAGENTA", "AREA", (4.0, 2.8, 4.2), 640, (1.0, 0.12, 0.38), 2.5),
     ):
         data = bpy.data.lights.new(name, kind)
         data.energy = energy
@@ -402,6 +566,25 @@ def build_camera_and_lights(scene):
         bpy.context.collection.objects.link(light)
         light.location = location
         look_at(light, Vector((0, 0, 1.2)))
+    # The active instrument casts a short, colored light pulse on each hit.
+    for index, (x, hit, color) in enumerate(((-1.45, 72, (0.05, 0.28, 1.0)),
+                                              (0.0, 104, (1.0, 0.36, 0.04)),
+                                              (1.45, 136, (1.0, 0.04, 0.36)))):
+        data = bpy.data.lights.new(f"DRUM_PULSE_{index+1}", "POINT")
+        data.color = color
+        data.shadow_soft_size = 1.15
+        data.energy = 0
+        data.keyframe_insert("energy", frame=1)
+        data.keyframe_insert("energy", frame=hit - 2)
+        data.energy = 520
+        data.keyframe_insert("energy", frame=hit + 1)
+        data.energy = 80
+        data.keyframe_insert("energy", frame=hit + 12)
+        data.energy = 30
+        data.keyframe_insert("energy", frame=192)
+        light = bpy.data.objects.new(f"DRUM_PULSE_{index+1}", data)
+        bpy.context.collection.objects.link(light)
+        light.location = (x, -0.82, 1.55)
     return camera, target
 
 
@@ -450,7 +633,7 @@ def write_audio():
                 value += math.sin(math.tau * fundamental * 2.35 * age) * math.exp(-18 * age) * 0.10
                 value += rng.uniform(-1, 1) * math.exp(-32 * age) * 0.07
         # Bright resolving chime after the final bloom.
-        for onset, freq in ((4.38, 659.25), (4.62, 783.99), (4.88, 987.77)):
+        for onset, freq in ((6.15, 659.25), (6.43, 783.99), (6.74, 987.77), (7.08, 1046.50)):
             age = t - onset
             if 0 <= age < 0.7:
                 value += math.sin(math.tau * freq * age) * math.exp(-5.5 * age) * 0.065
@@ -471,14 +654,15 @@ def main():
     mats = build_materials()
     build_stage(mats)
     milo, head, arms, tail = build_milo(mats)
-    drums, flowers = build_drums_and_flowers(mats)
+    drums, flowers, notes = build_drums_and_flowers(mats)
     build_fireflies(mats)
-    animate(scene, milo, head, arms, tail, drums, flowers)
+    animate(scene, milo, head, arms, tail, drums, flowers, notes)
     build_camera_and_lights(scene)
     setup_compositor(scene)
     write_audio()
     bpy.ops.wm.save_as_mainfile(filepath=str(BLEND))
-    bpy.ops.render.render(animation=True)
+    if "--build-only" not in sys.argv:
+        bpy.ops.render.render(animation=True)
 
 
 if __name__ == "__main__":
