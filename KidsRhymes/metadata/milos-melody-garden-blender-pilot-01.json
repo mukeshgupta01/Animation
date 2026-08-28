@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "project_id": "milos-melody-garden-blender-pilot-01",
+  "working_title": "Milo's Melody Garden",
+  "purpose": "A short reusable Blender pilot that can be extended into a full original Tiny Tales music, colour and pattern story.",
+  "duration_seconds": 6,
+  "resolution": "1280x720",
+  "fps": 24,
+  "renderer": "Blender 5.2.1 LTS / Eevee",
+  "concept": {
+    "hero": "Milo, an original warm orange-red panda child musician with a cream muzzle, dark ears and a striped tail.",
+    "world": "A colourful twilight garden stage with three glowing mushroom drums, modular flowers, rounded trees, firefly lights and a circular grass platform.",
+    "pilot_action": "Milo anticipates and taps the blue, golden and pink mushroom drums in sequence; each musical hit makes the matching flower bloom before Milo finishes in a welcoming performance pose.",
+    "full_episode_extension": "Expand to six garden zones that teach colour, high/low sound, copy-the-pattern rhythm, turn-taking and an original final garden song."
+  },
+  "motion_direction": {
+    "personality": "playful kinetic-soft",
+    "emotional_intent": "curiosity grows into musical delight and a warm invitation to join in",
+    "visual_narrative": "establish Milo and the sleeping garden, build through three cause-and-effect beats, then resolve on the fully blooming stage",
+    "hero_motion": "Milo's arm anticipation, clear drum strike, body bounce and settled final pose",
+    "support_motion": "drum-cap squash and three staggered flower blooms",
+    "ambient_motion": "slow firefly drift and restrained leaf sway",
+    "camera": "one eased push-in only; no pan, orbit, shake or reframing",
+    "restraint": "only one drum and one flower receive the primary action on each beat"
+  },
+  "composition": {
+    "aspect_ratio": "16:9",
+    "focal_point": "Milo's face and active drum sit around the centre/right-thirds power area",
+    "layers": {
+      "background": "twilight world, moon, rounded trees and distant flowers",
+      "midground": "Milo and mushroom drums",
+      "foreground": "soft grass tufts and near flowers for depth"
+    },
+    "title_safe_margin_percent": 5
+  },
+  "timing": {
+    "frames": 144,
+    "beat_frames": [48, 72, 96],
+    "beat_actions": ["blue drum and blue flower", "gold drum and gold flower", "pink drum and pink flower"],
+    "settled_final_pose_from_frame": 120
+  },
+  "reusable_scene_contract": {
+    "character_controller": "MILO_CTRL with separately named body, head, arm and tail controls",
+    "modular_props": ["DRUM_BLUE", "DRUM_GOLD", "DRUM_PINK", "FLOWER_BLUE", "FLOWER_GOLD", "FLOWER_PINK"],
+    "camera_controller": "CAMERA_TARGET",
+    "material_family": "named Tiny Tales matte, cream, dark, glow and foliage materials",
+    "saved_blend": "automation/production-work/milos-melody-garden-blender-pilot-01/milos-melody-garden-pilot.blend",
+    "source_script": "automation/blender/milos_melody_garden_pilot.py"
+  },
+  "acceptance_checks": [
+    "Milo remains recognizable and anatomically stable throughout.",
+    "Each drum strike has visible anticipation, contact, squash and recovery.",
+    "The corresponding flower begins blooming only after its matching strike.",
+    "The three major hit frames align with audible percussion transients.",
+    "The camera performs one smooth push without orbit, shake or abrupt reframing.",
+    "The scene ends on a stable pose with all three flowers open.",
+    "The output fully decodes as H.264 video with AAC stereo audio.",
+    "All critical character features remain inside the five-percent safe area."
+  ],
+  "result": {
+    "file": "automation/production-output/milos-melody-garden-blender-pilot-01.mp4",
+    "sha256": "ecae865fcb3f9f1afacb9115a4465ab02337e1c5da5f1a6b715731e6ee550019",
+    "duration_seconds": 6.0,
+    "resolution": "1280x720",
+    "fps": 24,
+    "video_codec": "H.264 High",
+    "audio_codec": "AAC LC, 48 kHz stereo",
+    "blend_file": "automation/production-work/milos-melody-garden-blender-pilot-01/milos-melody-garden-pilot.blend",
+    "original_audio": "automation/production-work/milos-melody-garden-blender-pilot-01/milos-melody-garden-pilot.wav",
+    "review_contact_sheet": "automation/production-work/milos-melody-garden-blender-pilot-01/quality-contact-sheet.png",
+    "beat_contact_sheet": "automation/production-work/milos-melody-garden-blender-pilot-01/beat-contact-sheet.png",
+    "review": {
+      "character_identity_stable": true,
+      "three_strikes_readable": true,
+      "three_blooms_visible_at_finish": true,
+      "audio_hits_aligned_to_frames_48_72_96": true,
+      "camera_motion_smooth_and_restrained": true,
+      "stable_extension_ready_final_pose": true,
+      "full_decode_passed": true,
+      "approved_as_local_blender_pilot": true,
+      "approved_for_upload": false
+    }
+  },
+  "status": "reviewed-approved-as-extensible-local-pilot"
+}

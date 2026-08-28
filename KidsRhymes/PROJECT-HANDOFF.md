@@ -686,3 +686,12 @@ Get-ScheduledTask -TaskName 'Tiny Tales - Continuous Generation','Tiny Tales - D
 ## Separate new-channel request
 
 The user wants to create another channel/project in a separate folder, but has not yet supplied the new folder/channel name, channel ID, or concept. Do not reuse any Tiny Tales OAuth token, channel lock, ledger, archive, runtime state, or Scheduled Tasks. Create a clean isolated project only after obtaining the new identity details.
+
+## Blender pilot ready for episode development (2026-08-28)
+
+- The first real Blender Tiny Tales pilot is complete: `Milo's Melody Garden`, project ID `milos-melody-garden-blender-pilot-01`. It is a six-second 1280x720, 24 fps Eevee scene rendered with Blender 5.2.1 LTS and original synchronized stereo audio.
+- Milo performs three musical strikes at frames 48, 72 and 96. Blue, gold and pink mushroom caps squash on contact and their matching flowers bloom after the hits. The source was corrected so the third pink payoff remains visible beside Milo's tail and the nearest hand performs that strike.
+- The final MP4 fully decodes as H.264 High plus 48 kHz AAC stereo. Reviewed SHA-256 is `ecae865fcb3f9f1afacb9115a4465ab02337e1c5da5f1a6b715731e6ee550019`; general and beat contact sheets were visually approved. Exact paths and acceptance results are in `metadata/milos-melody-garden-blender-pilot-01.json`.
+- Reproducible source is `automation/blender/milos_melody_garden_pilot.py`. It creates named Milo controls, three modular drums, three modular flowers, a camera target, materials, lights, animation, synchronized WAV, PNG sequence and reusable `.blend` file from scratch.
+- The ignored local deliverables are `automation/production-output/milos-melody-garden-blender-pilot-01.mp4` and `automation/production-work/milos-melody-garden-blender-pilot-01/milos-melody-garden-pilot.blend`. This pilot is intentionally not queued or uploaded.
+- Continue it as a full six-zone Tiny Tales music story: introduce Milo and the sleeping garden, teach colour and pitch, let viewers copy a short rhythm, add a turn-taking friend, then resolve with an original garden song using the stable final pose as the transition point.
