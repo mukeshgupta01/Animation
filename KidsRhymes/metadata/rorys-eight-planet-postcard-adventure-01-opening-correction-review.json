@@ -34,6 +34,7 @@
     "general_contact_sheet_reviewed": true,
     "every_boundary_contact_sheet_reviewed": true,
     "opening_contact_sheet_and_waveform_reviewed": true,
+    "uploader_quality_contract_validated": true,
     "thumbnail_reviewed": true
   },
   "status": "reviewed-approved-for-safeguarded-upload-queue"
