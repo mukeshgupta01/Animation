@@ -8,6 +8,7 @@ import json
 import math
 from pathlib import Path
 import random
+import re
 import struct
 import subprocess
 import wave
@@ -34,7 +35,8 @@ THUMBNAIL = AUTOMATION / "thumbnails" / f"{ITEM_ID}.jpg"
 SCENE_SECONDS = 12.5
 END_SECONDS = 4.0
 EIGHTH = 0.3125
-LINE_OFFSETS = (0.3125, 3.125, 6.25, 9.375)
+LINE_OFFSETS = (0.3125, 4.375, 8.4375)
+PACING_VERSION = "slow-v2"
 
 ASSETS = (
     "dads-coming-home-opening-v1.png",
@@ -47,18 +49,18 @@ ASSETS = (
 )
 
 VOICE_PROFILES = {
-    "natasha-golden": {**core.select_voice_profile("natasha-au"), "rate": "+5%", "pitch": "+6Hz"},
-    "natasha-purposeful": {**core.select_voice_profile("natasha-au"), "rate": "+9%", "pitch": "+8Hz"},
-    "natasha-playful": {**core.select_voice_profile("natasha-au"), "rate": "+11%", "pitch": "+13Hz"},
-    "natasha-suspense": {**core.select_voice_profile("natasha-au"), "rate": "-2%", "pitch": "-5Hz"},
-    "natasha-relief": {**core.select_voice_profile("natasha-au"), "rate": "+6%", "pitch": "+10Hz"},
-    "natasha-celebrate": {**core.select_voice_profile("natasha-au"), "rate": "+12%", "pitch": "+16Hz"},
-    "maisie-curious": {**core.select_voice_profile("maisie-uk"), "rate": "+8%", "pitch": "+10Hz"},
-    "maisie-choice": {**core.select_voice_profile("maisie-uk"), "rate": "+10%", "pitch": "+14Hz"},
-    "maisie-soft": {**core.select_voice_profile("maisie-uk"), "rate": "+1%", "pitch": "+5Hz"},
-    "maisie-rhythm": {**core.select_voice_profile("maisie-uk"), "rate": "+12%", "pitch": "+12Hz"},
-    "ryan-warm": {**core.select_voice_profile("ryan-uk"), "rate": "+4%", "pitch": "+3Hz"},
-    "ryan-rhythm": {**core.select_voice_profile("ryan-uk"), "rate": "+10%", "pitch": "+8Hz"},
+    "natasha-golden": {**core.select_voice_profile("natasha-au"), "rate": "-8%", "pitch": "+6Hz"},
+    "natasha-purposeful": {**core.select_voice_profile("natasha-au"), "rate": "-7%", "pitch": "+8Hz"},
+    "natasha-playful": {**core.select_voice_profile("natasha-au"), "rate": "-5%", "pitch": "+13Hz"},
+    "natasha-suspense": {**core.select_voice_profile("natasha-au"), "rate": "-13%", "pitch": "-5Hz"},
+    "natasha-relief": {**core.select_voice_profile("natasha-au"), "rate": "-8%", "pitch": "+10Hz"},
+    "natasha-celebrate": {**core.select_voice_profile("natasha-au"), "rate": "-4%", "pitch": "+16Hz"},
+    "maisie-curious": {**core.select_voice_profile("maisie-uk"), "rate": "-8%", "pitch": "+10Hz"},
+    "maisie-choice": {**core.select_voice_profile("maisie-uk"), "rate": "-6%", "pitch": "+14Hz"},
+    "maisie-soft": {**core.select_voice_profile("maisie-uk"), "rate": "-12%", "pitch": "+5Hz"},
+    "maisie-rhythm": {**core.select_voice_profile("maisie-uk"), "rate": "-6%", "pitch": "+12Hz"},
+    "ryan-warm": {**core.select_voice_profile("ryan-uk"), "rate": "-9%", "pitch": "+3Hz"},
+    "ryan-rhythm": {**core.select_voice_profile("ryan-uk"), "rate": "-6%", "pitch": "+8Hz"},
 }
 
 SCENE_PROFILES = (
@@ -83,15 +85,15 @@ def load_plan() -> dict:
 
 
 def raw_voice_path(scene_index: int, line_index: int, profile: str) -> Path:
-    return WORK / f"voice-raw-{scene_index+1:02d}-{line_index+1:02d}-{profile}.mp3"
+    return WORK / f"voice-raw-{PACING_VERSION}-{scene_index+1:02d}-{line_index+1:02d}-{profile}.mp3"
 
 
 def voice_path(scene_index: int, line_index: int, profile: str) -> Path:
-    return WORK / f"voice-grid-{scene_index+1:02d}-{line_index+1:02d}-{profile}.wav"
+    return WORK / f"voice-grid-{PACING_VERSION}-{scene_index+1:02d}-{line_index+1:02d}-{profile}.wav"
 
 
 async def make_voices(plan: dict) -> None:
-    maximums = (2.45, 2.48, 2.62, 2.72)
+    maximums = (3.45, 3.45, 3.45)
     for si, scene in enumerate(plan["scenes"]):
         for li, line in enumerate(scene["lyrics"]):
             profile_name = SCENE_PROFILES[si][li]
@@ -103,7 +105,8 @@ async def make_voices(plan: dict) -> None:
                     line, profile["voice"], rate=profile["rate"], pitch=profile["pitch"], volume="-1%"
                 ).save(str(raw))
             if not target.exists() or target.stat().st_size < 2000:
-                core.fit_voice_to_grid(raw, target, maximums[li])
+                words = len(re.findall(r"[A-Za-z0-9']+", line))
+                core.fit_voice_to_grid(raw, target, maximums[li], words * 60.0 / core.TARGET_WPM)
 
 
 def effect_windows(scene_index: int) -> list[dict]:
@@ -405,6 +408,7 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
     profiles = {line["profile"] for item in sync for line in item["lines"]}
     spoken = [line["line"].lower() for item in sync for line in item["lines"]]
     forbidden = ("clap clap", "tap tap", "knock knock", "tick tock", "ding dong", "boom boom", "beep beep")
+    pace = core.pacing_audit(sync)
     checks = {
         "duration": abs(float(probe["format"]["duration"])-total) < 0.25,
         "h264_1080p": video.get("codec_name") == "h264" and video.get("width") == 1920 and video.get("height") == 1080,
@@ -421,6 +425,7 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
         "emotional_voice_variation": len(profiles) >= 10,
         "natasha_maisie_ryan_rotation": all(any(name.startswith(prefix) for name in profiles) for prefix in ("natasha-", "maisie-", "ryan-")),
         "no_spoken_sound_imitation": all(not any(word in line for word in forbidden) for line in spoken),
+        "child_friendly_narration_pacing": pace["passed"],
         "real_scene_effects": len({effect["effect"] for item in sync for effect in item["effects"]}) >= 20,
         "thumbnail": THUMBNAIL.is_file() and THUMBNAIL.stat().st_size < 2_000_000,
     }
@@ -430,11 +435,13 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
         "voice_profiles": sorted(profiles),
         "visual_method": "seven reviewed tactile paper-and-fabric apartment compositions with restrained eased travel and scene-contained accents",
         "audio_method": "original 96 BPM emotion-mapped score, Natasha lead, Mina and Dad character voices, and locally synthesized visible household effects",
+        "narration_pacing": {"weighted_wpm": pace["weighted_wpm"], "maximum_line_wpm": pace["maximum_line_wpm"], "minimum_interline_gap_seconds": pace["minimum_interline_gap_seconds"]},
         "true_rigged_3d_animation": False, "paid_generation_used": False,
         "checks": checks, "passed": all(checks.values()),
     }
     (WORK / "timeline-gap-audit.json").write_text(json.dumps(transitions, indent=2)+"\n", encoding="utf-8")
     (WORK / "lyric-visual-emotion-audit.json").write_text(json.dumps(sync, indent=2)+"\n", encoding="utf-8")
+    (WORK / "narration-pacing-audit.json").write_text(json.dumps(pace, indent=2)+"\n", encoding="utf-8")
     (WORK / "quality-report.json").write_text(json.dumps(report, indent=2)+"\n", encoding="utf-8")
     general = Image.new("RGB", (960, math.ceil(len(events)/4)*135), "white")
     for index, event in enumerate(events):
@@ -469,6 +476,8 @@ def write_metadata(total: float) -> None:
         "quality_report": f"automation/production-work/{ITEM_ID}/quality-report.json",
         "transition_audit": f"automation/production-work/{ITEM_ID}/timeline-gap-audit.json",
         "lyric_visual_emotion_audit": f"automation/production-work/{ITEM_ID}/lyric-visual-emotion-audit.json",
+        "narration_pacing_audit": f"automation/production-work/{ITEM_ID}/narration-pacing-audit.json",
+        "narration_pacing_policy": "three short phrases per scene; target at most 140 WPM, hard line ceiling 145 WPM and at least 0.4 seconds between phrases",
         "quality_contact_sheet": f"automation/production-work/{ITEM_ID}/quality-contact-sheet.png",
         "transition_contact_sheet": f"automation/production-work/{ITEM_ID}/transition-contact-sheet.png",
         "musical_story_waveform": f"automation/production-work/{ITEM_ID}/musical-story-waveform.png",

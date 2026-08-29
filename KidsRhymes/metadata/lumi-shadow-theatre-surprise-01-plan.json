@@ -14,6 +14,8 @@
     "lead_voice": "ryan-uk warm-melodic-story",
     "lumi_voice": "natasha-au curious-character",
     "guide_voice": "ana-us calm-character",
+    "lines_per_scene": 3,
+    "narration_pacing": "Target 105-135 WPM, hard maximum 145 WPM per line, no positive TTS rate boost and at least 0.4 seconds between phrases.",
     "sound_policy": "Switches, paper, curtains, footsteps and audience responses are synchronized effects and never spoken imitation words."
   },
   "creative_intent": "Turn one simple lamp-and-puppet experiment into a gentle theatre mystery, helping children see that a shadow grows near the light, shrinks near the screen and can look surprising without being frightening.",
@@ -39,10 +41,9 @@
       "emotion": "curious invitation",
       "visual_action": "Backstage, Lumi waits beside Ms Noor while the guarded brass lamp is off. Ms Noor points out the lamp, amber screen and one small rabbit puppet before switching the lamp on.",
       "lyrics": [
-        "Velvet curtains hide a stage of gold,",
-        "Lumi finds a paper friend to hold,",
-        "Lamp, puppet, screen all stand in line,",
-        "Ms Noor brings the little light to shine."
+        "Velvet curtains hide a golden stage.",
+        "Lumi holds one paper rabbit.",
+        "Ms Noor wakes the guarded light."
       ],
       "effects": ["single curtain rustle", "single guarded lamp switch"],
       "camera": "slow backstage reveal ending on the aligned lamp, puppet and screen"
@@ -54,10 +55,9 @@
       "emotion": "small precise discovery",
       "visual_action": "Lumi places the rabbit puppet close to the silk screen on the marked near-screen star. A small crisp rabbit shadow appears while Ms Noor holds the lamp guard steady.",
       "lyrics": [
-        "Near the screen, the rabbit shadow's small,",
-        "Crisp little ears are standing on the wall,",
-        "Hold the rod and let the puppet rest,",
-        "Small and clear, our first shadow test."
+        "Near the screen, the shadow stays small.",
+        "Rabbit ears stand crisp and clear.",
+        "Hold the rod, then let it rest."
       ],
       "effects": ["paper puppet lift", "rod settle"],
       "camera": "side cutaway showing lamp-puppet-screen spacing and small shadow together"
@@ -69,10 +69,9 @@
       "emotion": "widening wonder",
       "visual_action": "Lumi slides the same rabbit puppet along a marked floor track toward the guarded lamp. The rabbit shadow grows visibly larger on the screen without changing puppet identity.",
       "lyrics": [
-        "Slide toward the lamp along the track,",
-        "Watch the rabbit shadow stretch its back,",
-        "Closer to the light means growing wide,",
-        "One small puppet, giant shape outside."
+        "Slide toward the lamp along the track.",
+        "Watch the rabbit shadow growing wide.",
+        "One small puppet makes a giant shape."
       ],
       "effects": ["wooden track slide", "paper shadow swell accent"],
       "camera": "locked side view with the expanding shadow as the only bold movement"
@@ -84,10 +83,9 @@
       "emotion": "playful pattern-making",
       "visual_action": "Lumi overlaps one paper circle and two paper triangles on rods. Their combined shadow becomes an owl face; the three source shapes remain visible beside the screen.",
       "lyrics": [
-        "One round circle, triangles two,",
-        "Layer their shadows; what comes into view?",
-        "Wide owl eyes and ears appear,",
-        "Shapes can join when light is near."
+        "One round circle, triangles two.",
+        "Layer their shadows in the light.",
+        "An owl face appears in view."
       ],
       "effects": ["circle card place", "two triangle card placements", "owl reveal chime"],
       "camera": "shape-to-shadow match cut resolving on the complete owl"
@@ -99,10 +97,9 @@
       "emotion": "brief suspense to gentle relief",
       "visual_action": "A large unfamiliar shadow crosses the curtain and Lumi pauses. Ms Noor slowly parts the curtain to reveal the harmless rabbit puppet tilted beside a leafy paper branch; Lumi relaxes and smiles.",
       "lyrics": [
-        "Something tall is crossing through the glow,",
-        "Lumi stops and breathes before we know,",
-        "Curtain opens: rabbit, branch and light,",
-        "Odd-shaped shadows can be safe and bright."
+        "Something tall crosses the golden glow.",
+        "Lumi stops and takes one breath.",
+        "Rabbit, branch, and light are safe."
       ],
       "effects": ["low paper sweep", "quiet breath", "slow curtain part", "relief chord"],
       "camera": "still suspense frame followed by one gentle curtain reveal"
@@ -114,10 +111,9 @@
       "emotion": "confident rehearsal",
       "visual_action": "Lumi performs three marked rabbit positions in order: near screen small, middle medium and near lamp large. Ms Noor points to three matching size cards below the stage.",
       "lyrics": [
-        "Small by the screen, then middle-sized,",
-        "Big by the lamp makes Lumi surprised,",
-        "Three clear places, three sizes show,",
-        "Move it with care and the shadow will grow."
+        "Small by screen, then middle-sized.",
+        "Big by lamp; three sizes show.",
+        "Move with care and watch it grow."
       ],
       "effects": ["three measured puppet-rod steps", "three size-card taps"],
       "camera": "three phrase-aligned match cuts on the same rabbit silhouette"
@@ -129,10 +125,9 @@
       "emotion": "full theatrical celebration",
       "visual_action": "The curtains open for a tiny audience. Lumi and Ms Noor perform a rabbit, owl and flying bird shadow parade, then return the rabbit to the small-middle-large sequence for the final musical answer.",
       "lyrics": [
-        "Rabbit, owl and bird take flight,",
-        "Paper friends are dancing in the light,",
-        "Near makes big and far makes small,",
-        "Lumi's shadow song now shines for all."
+        "Rabbit, owl, and bird take flight.",
+        "Paper friends dance within the light.",
+        "Lumi's shadow song shines for all."
       ],
       "effects": ["single curtain open", "three puppet entrances", "soft audience applause", "final lamp cadence"],
       "camera": "audience-wide reveal ending in a slow push toward the three-size rabbit finale"
@@ -145,6 +140,7 @@
     "The owl visibly derives from exactly one circle and two triangles.",
     "The suspense shadow resolves visibly into familiar paper objects without a frightening payoff.",
     "Every lyric and effect remains inside the matching visible scene.",
+    "Every line is at or below 145 WPM with at least 0.4 seconds of breathing space before the next line.",
     "No switch, paper, curtain, step or applause sound is spoken as imitation.",
     "Every story scene is four four-beat bars (11.428571 seconds) and below 14 seconds.",
     "Final output includes full decode, visual, transition, size-progression and lyric-emotion-sync evidence."

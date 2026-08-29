@@ -39,10 +39,9 @@
       "emotion": "curious respect and invitation",
       "visual_action": "At the painted orchard gate, Kai holds one empty woven basket and asks Rosa before entering. Rosa opens the gate and points to the ripe-fruit row; unripe green fruit remains clearly untouched.",
       "lyrics": [
-        "Morning paints the orchard, red and gold and blue,",
-        "Kai brings one empty basket; what should Kai do?",
-        "Ask before we enter, wait to hear what's right,",
-        "Rosa opens up the gate: the ripe row is in sight."
+        "Morning colours fill the orchard.",
+        "Kai asks before he walks inside.",
+        "Rosa opens the gate to ripe fruit."
       ],
       "effects": ["light leaf breeze", "single wooden gate open"],
       "camera": "curved push from empty basket through the opening gate"
@@ -54,10 +53,9 @@
       "emotion": "gentle focus",
       "visual_action": "Kai supports a low apple branch with one hand, twists one ripe red apple with the other and lowers it carefully into the basket without tugging leaves or unripe fruit.",
       "lyrics": [
-        "Hold the branch so gently; choose one apple red,",
-        "Lift and make a little turn, just as Rosa said.",
-        "Lower to the basket; keep the fruit from harm,",
-        "One careful apple settles softly on Kai's arm."
+        "Hold the branch with gentle hands.",
+        "Choose one red apple; twist it slowly.",
+        "Lower it softly to the basket."
       ],
       "effects": ["branch leaves", "single apple twist", "one basket settle"],
       "camera": "close side arc linking supported branch, hands and basket"
@@ -69,10 +67,9 @@
       "emotion": "buoyant counting satisfaction",
       "visual_action": "On a low orchard table, Kai and Rosa count exactly six fruits into one basket: two red apples, two golden pears and two purple plums. Three matching picture tokens prove the pairs.",
       "lyrics": [
-        "Two red apples, count them one and two,",
-        "Two gold pears are joining, then two plums in blue.",
-        "Pairs make six together, colours bright and neat,",
-        "Basket bends a little with our orchard treat."
+        "Two red apples, side by side.",
+        "Two gold pears and two purple plums.",
+        "Three bright pairs make exactly six."
       ],
       "effects": ["six separated fruit placements", "basket handle creak"],
       "camera": "stable overhead count tableau, then tilt to the weighted handle"
@@ -84,10 +81,9 @@
       "emotion": "fresh sparkling energy",
       "visual_action": "At the blue enamel wash station, clean water flows over all six fruits while Kai turns them in a shallow colander and Rosa closes the tap when the last fruit is clean.",
       "lyrics": [
-        "Water over apples, pears and purple plums,",
-        "Turn each piece so every side can meet the stream that comes.",
-        "Clean and bright, the six fruits shine,",
-        "Rosa stops the water right on time."
+        "Water washes every piece of fruit.",
+        "Kai turns each one beneath the stream.",
+        "Six fruits shine; Rosa closes the tap."
       ],
       "effects": ["single tap start", "continuous gentle rinse", "single tap stop"],
       "camera": "low water-level follow ending on Rosa's hand at the closed tap"
@@ -99,10 +95,9 @@
       "emotion": "playful pattern-making",
       "visual_action": "Kai dries and packs the whole fruit into a divided picnic box in a repeating red-gold-purple, red-gold-purple pattern. Rosa checks that bruised fruit is placed safely on top rather than wasted.",
       "lyrics": [
-        "Red, then gold, then purple in a row,",
-        "Red, then gold, then purple—watch the pattern grow.",
-        "Soft fruit rides on top where nothing gets a squeeze,",
-        "Close the picnic box with gentle hands, please."
+        "Red, gold, purple; start the row.",
+        "Red, gold, purple; repeat it slowly.",
+        "Close the picnic box with gentle hands."
       ],
       "effects": ["six packing placements", "cloth dry", "single box latch"],
       "camera": "top-down pattern reveal followed by one eased box-close tilt"
@@ -114,10 +109,9 @@
       "emotion": "cooperative effort",
       "visual_action": "The packed basket is visibly heavy. Kai and Rosa each take one handle and carry it together along the orchard path toward the red-gold-purple picnic blanket without spilling fruit.",
       "lyrics": [
-        "Heavy basket, steady feet,",
-        "Kai and Rosa share the weight and match the walking beat.",
-        "Handle level, pathway clear,",
-        "Picnic colours wait for us; we're nearly here."
+        "Heavy basket, steady walking feet.",
+        "Kai and Rosa share the handles.",
+        "Picnic colours wait along the path."
       ],
       "effects": ["four measured footsteps", "woven handle creak", "soft blanket flutter"],
       "camera": "low travelling follow matching the level basket"
@@ -129,10 +123,9 @@
       "emotion": "sunny sharing and grateful resolve",
       "visual_action": "Kai and Rosa sit at the orchard-edge picnic. The six clean fruits and repeating colour pattern remain visible; they each choose one fruit, share the remaining basket and place one leaf in a small compost bowl.",
       "lyrics": [
-        "Ask and pick, then wash and pack,",
-        "Carry it together down the orchard track.",
-        "Share the colours, waste no bite,",
-        "Fruit-picnic friends make the whole day bright."
+        "Ask and pick, then wash and pack.",
+        "Carry together, share every colour.",
+        "Fruit-picnic friends make the day bright."
       ],
       "effects": ["picnic cloth settle", "two fruit choices", "single leaf to compost", "final orchard cadence"],
       "camera": "slow pullback from six-fruit pattern to the complete orchard picnic"

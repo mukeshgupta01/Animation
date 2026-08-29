@@ -8,6 +8,7 @@ import json
 import math
 from pathlib import Path
 import random
+import re
 import struct
 import subprocess
 import wave
@@ -32,7 +33,10 @@ THUMBNAIL = AUTOMATION / "thumbnails" / f"{ITEM_ID}.jpg"
 ART_FPS = 10
 SCENE_SECONDS = 12.0
 END_SECONDS = 4.0
-LINE_OFFSETS = (0.3, 3.0, 5.7, 8.7)
+LINE_OFFSETS = (0.3, 4.2, 8.1)
+PACING_VERSION = "slow-v2"
+TARGET_WPM = 140.0
+MAX_LINE_WPM = 145.0
 
 ASSETS = (
     "eddie-excavator-rain-garden-opening-v1.png",
@@ -45,16 +49,16 @@ ASSETS = (
 )
 
 VOICE_PROFILES = {
-    "ana-curious": {**select_voice_profile("ana-us"), "rate": "+7%", "pitch": "+8Hz"},
-    "ana-focused": {**select_voice_profile("ana-us"), "rate": "+10%", "pitch": "+5Hz"},
-    "ana-bright": {**select_voice_profile("ana-us"), "rate": "+11%", "pitch": "+13Hz"},
-    "ana-soft": {**select_voice_profile("ana-us"), "rate": "-1%", "pitch": "+2Hz"},
-    "ana-suspense": {**select_voice_profile("ana-us"), "rate": "+1%", "pitch": "-4Hz"},
-    "ana-celebrate": {**select_voice_profile("ana-us"), "rate": "+12%", "pitch": "+16Hz"},
-    "ryan-steady": {**select_voice_profile("ryan-uk"), "rate": "+5%", "pitch": "+3Hz"},
-    "ryan-rhythm": {**select_voice_profile("ryan-uk"), "rate": "+10%", "pitch": "+8Hz"},
-    "ryan-relief": {**select_voice_profile("ryan-uk"), "rate": "+7%", "pitch": "+12Hz"},
-    "ryan-celebrate": {**select_voice_profile("ryan-uk"), "rate": "+12%", "pitch": "+15Hz"},
+    "ana-curious": {**select_voice_profile("ana-us"), "rate": "-8%", "pitch": "+8Hz"},
+    "ana-focused": {**select_voice_profile("ana-us"), "rate": "-7%", "pitch": "+5Hz"},
+    "ana-bright": {**select_voice_profile("ana-us"), "rate": "-5%", "pitch": "+13Hz"},
+    "ana-soft": {**select_voice_profile("ana-us"), "rate": "-12%", "pitch": "+2Hz"},
+    "ana-suspense": {**select_voice_profile("ana-us"), "rate": "-13%", "pitch": "-4Hz"},
+    "ana-celebrate": {**select_voice_profile("ana-us"), "rate": "-4%", "pitch": "+16Hz"},
+    "ryan-steady": {**select_voice_profile("ryan-uk"), "rate": "-9%", "pitch": "+3Hz"},
+    "ryan-rhythm": {**select_voice_profile("ryan-uk"), "rate": "-6%", "pitch": "+8Hz"},
+    "ryan-relief": {**select_voice_profile("ryan-uk"), "rate": "-8%", "pitch": "+12Hz"},
+    "ryan-celebrate": {**select_voice_profile("ryan-uk"), "rate": "-4%", "pitch": "+15Hz"},
 }
 
 SCENE_PROFILES = (
@@ -73,11 +77,11 @@ def load_plan() -> dict:
 
 
 def raw_voice_path(scene_index: int, line_index: int, profile: str) -> Path:
-    return WORK / f"voice-raw-{scene_index+1:02d}-{line_index+1:02d}-{profile}.mp3"
+    return WORK / f"voice-raw-{PACING_VERSION}-{scene_index+1:02d}-{line_index+1:02d}-{profile}.mp3"
 
 
 def voice_path(scene_index: int, line_index: int, profile: str) -> Path:
-    return WORK / f"voice-grid-{scene_index+1:02d}-{line_index+1:02d}-{profile}.wav"
+    return WORK / f"voice-grid-{PACING_VERSION}-{scene_index+1:02d}-{line_index+1:02d}-{profile}.wav"
 
 
 def media_duration(path: Path) -> float:
@@ -87,14 +91,17 @@ def media_duration(path: Path) -> float:
     ], text=True).strip())
 
 
-def fit_voice_to_grid(source: Path, target: Path, maximum: float) -> None:
+def fit_voice_to_grid(source: Path, target: Path, maximum: float, minimum: float = 0.0) -> None:
     length = media_duration(source)
-    factor = max(1.0, length / maximum)
-    if factor <= 2.0:
-        timing = f"atempo={factor:.6f}"
-    else:
-        first = math.sqrt(factor)
-        timing = f"atempo={first:.6f},atempo={first:.6f}"
+    target_length = min(maximum, max(length, minimum))
+    factor = length / target_length
+    factors = []
+    while factor < 0.5:
+        factors.append(0.5); factor /= 0.5
+    while factor > 2.0:
+        factors.append(2.0); factor /= 2.0
+    factors.append(factor)
+    timing = ",".join(f"atempo={value:.6f}" for value in factors)
     subprocess.run([
         "ffmpeg", "-y", "-loglevel", "error", "-i", str(source),
         "-af", f"{timing},highpass=f=95,lowpass=f=11500",
@@ -103,7 +110,7 @@ def fit_voice_to_grid(source: Path, target: Path, maximum: float) -> None:
 
 
 async def make_voices(plan: dict) -> None:
-    maximums = (2.38, 2.38, 2.62, 2.72)
+    maximums = (3.35, 3.35, 3.35)
     for si, scene in enumerate(plan["scenes"]):
         for li, line in enumerate(scene["lyrics"]):
             profile = SCENE_PROFILES[si][li]
@@ -115,7 +122,29 @@ async def make_voices(plan: dict) -> None:
                     line, voice["voice"], rate=voice["rate"], pitch=voice["pitch"], volume="-1%"
                 ).save(str(raw))
             if not target.exists() or target.stat().st_size < 2000:
-                fit_voice_to_grid(raw, target, maximums[li])
+                words = len(re.findall(r"[A-Za-z0-9']+", line))
+                fit_voice_to_grid(raw, target, maximums[li], words * 60.0 / TARGET_WPM)
+
+
+def pacing_audit(sync: list[dict]) -> dict:
+    lines = []
+    gaps = []
+    for scene in sync:
+        ordered = sorted(scene["lines"], key=lambda row: row["start"])
+        for index, row in enumerate(ordered):
+            words = len(re.findall(r"[A-Za-z0-9']+", row["line"]))
+            duration = row["end"] - row["start"]
+            wpm = 60.0 * words / duration
+            lines.append({"scene": scene["scene"], "line": row["line"], "words": words, "duration_seconds": duration, "wpm": wpm})
+            if index:
+                gaps.append(ordered[index]["start"] - ordered[index - 1]["end"])
+    total_words = sum(row["words"] for row in lines)
+    total_duration = sum(row["duration_seconds"] for row in lines)
+    weighted_wpm = 60.0 * total_words / total_duration
+    maximum_wpm = max(row["wpm"] for row in lines)
+    minimum_gap = min(gaps)
+    checks = {"maximum_line_wpm_at_most_145": maximum_wpm <= MAX_LINE_WPM + 0.05, "weighted_wpm_at_most_140": weighted_wpm <= TARGET_WPM + 0.05, "interline_breathing_gap_at_least_0_4_seconds": minimum_gap >= 0.4}
+    return {"target_wpm": TARGET_WPM, "maximum_allowed_line_wpm": MAX_LINE_WPM, "weighted_wpm": weighted_wpm, "maximum_line_wpm": maximum_wpm, "minimum_interline_gap_seconds": minimum_gap, "lines": lines, "checks": checks, "passed": all(checks.values())}
 
 
 def synth_scene_effect(scene_index: int) -> tuple[Path, list[dict]]:
@@ -456,6 +485,7 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
     spoken = [row["line"].lower() for item in sync for row in item["lines"]]
     forbidden = ("clap clap", "tap tap", "knock knock", "splash splash", "vroom", "beep beep")
     profile_groups = {row["profile"] for item in sync for row in item["lines"]}
+    pace = pacing_audit(sync)
     checks = {
         "duration": abs(float(probe["format"]["duration"]) - total) < 0.25,
         "h264_1080p": video.get("codec_name") == "h264" and video.get("width") == 1920 and video.get("height") == 1080,
@@ -471,6 +501,7 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
         "emotional_voice_variation": len(profile_groups) >= 8,
         "ana_ryan_character_rotation": any(name.startswith("ana-") for name in profile_groups) and any(name.startswith("ryan-") for name in profile_groups),
         "no_spoken_sound_imitation": all(not any(word in line for word in forbidden) for line in spoken),
+        "child_friendly_narration_pacing": pace["passed"],
         "real_scene_effects": len({row["effect"] for item in sync for row in item["effects"]}) >= 15,
         "thumbnail": THUMBNAIL.is_file() and THUMBNAIL.stat().st_size < 2_000_000,
     }
@@ -480,11 +511,13 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
         "voice_profiles": sorted(profile_groups),
         "visual_method": "seven reviewed premium miniature-diorama story compositions with restrained eased camera travel and scene-contained environmental accents",
         "audio_method": "original 100 BPM emotion-mapped score with eighth-grid melodic rhythmic storytelling by Ana and Eddie plus locally synthesized scene-matched effects",
+        "narration_pacing": {"weighted_wpm": pace["weighted_wpm"], "maximum_line_wpm": pace["maximum_line_wpm"], "minimum_interline_gap_seconds": pace["minimum_interline_gap_seconds"]},
         "true_rigged_3d_animation": False, "paid_generation_used": False,
         "checks": checks, "passed": all(checks.values()),
     }
     (WORK / "timeline-gap-audit.json").write_text(json.dumps(transitions, indent=2) + "\n", encoding="utf-8")
     (WORK / "lyric-visual-emotion-audit.json").write_text(json.dumps(sync, indent=2) + "\n", encoding="utf-8")
+    (WORK / "narration-pacing-audit.json").write_text(json.dumps(pace, indent=2) + "\n", encoding="utf-8")
     (WORK / "quality-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     general = Image.new("RGB", (960, math.ceil(len(events) / 4) * 135), "white")
     for index, event in enumerate(events):
@@ -519,6 +552,8 @@ def write_metadata(total: float) -> None:
         "quality_report": f"automation/production-work/{ITEM_ID}/quality-report.json",
         "transition_audit": f"automation/production-work/{ITEM_ID}/timeline-gap-audit.json",
         "lyric_visual_emotion_audit": f"automation/production-work/{ITEM_ID}/lyric-visual-emotion-audit.json",
+        "narration_pacing_audit": f"automation/production-work/{ITEM_ID}/narration-pacing-audit.json",
+        "narration_pacing_policy": "three short phrases per scene; target at most 140 WPM, hard line ceiling 145 WPM and at least 0.4 seconds between phrases",
         "quality_contact_sheet": f"automation/production-work/{ITEM_ID}/quality-contact-sheet.png",
         "transition_contact_sheet": f"automation/production-work/{ITEM_ID}/transition-contact-sheet.png",
         "musical_story_waveform": f"automation/production-work/{ITEM_ID}/musical-story-waveform.png",

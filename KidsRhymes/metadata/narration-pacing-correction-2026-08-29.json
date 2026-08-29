@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "review_date": "2026-08-29",
+  "reason": "User reported that narration in the newest Tiny Tales videos sounded rushed.",
+  "new_policy": {
+    "phrases_per_scene": 3,
+    "target_weighted_wpm_maximum": 140,
+    "hard_line_wpm_maximum": 145,
+    "minimum_interline_gap_seconds": 0.4,
+    "positive_tts_rate_boost_allowed": false,
+    "required_evidence": "automation/production-work/<project-id>/narration-pacing-audit.json"
+  },
+  "corrected_local_masters": [
+    {
+      "id": "eddie-excavators-rain-garden-day-01",
+      "before": {
+        "weighted_wpm": 183.3,
+        "maximum_line_wpm": 304.6,
+        "sha256": "6b60a23387e234886b557cee57ff6095a4eedad2f40cfa12c18b0a4c3313287f"
+      },
+      "after": {
+        "weighted_wpm": 108.5,
+        "maximum_line_wpm": 126.1,
+        "minimum_interline_gap_seconds": 0.561,
+        "sha256": "4f5567f6d7029ef41df4403e1c4e264b7cd917f25b042c9b0c7c900b9705bcc3",
+        "integrated_loudness_lufs": -15.9,
+        "true_peak_dbfs": -0.8
+      }
+    },
+    {
+      "id": "dads-coming-home-welcome-rhythm-01",
+      "before": {
+        "weighted_wpm": 149.6,
+        "maximum_line_wpm": 194.8,
+        "sha256": "6665396363a8bce2def0ae2b22932ed33d568d2052583cc2bbd64eb17e54f5f5"
+      },
+      "after": {
+        "weighted_wpm": 111.1,
+        "maximum_line_wpm": 140.1,
+        "minimum_interline_gap_seconds": 0.631,
+        "sha256": "eb65a90c369e11df00a4976f409f668087338fa5a7c39769fd5e8d6b304d6e14",
+        "integrated_loudness_lufs": -15.4,
+        "true_peak_dbfs": -0.5
+      }
+    },
+    {
+      "id": "pick-wash-pack-fruit-picnic-01",
+      "before": {
+        "weighted_wpm": 175.5,
+        "maximum_line_wpm": 260.1,
+        "sha256": "21f1b9a872bb4badf4d304b809f97be28d02b0ffd38264bd09a7daf6c951b40d"
+      },
+      "after": {
+        "weighted_wpm": 110.2,
+        "maximum_line_wpm": 131.5,
+        "minimum_interline_gap_seconds": 0.751,
+        "sha256": "7c6914fdfff973f60bbd1c4e170604478315dd26ee9baa21eaa180575420042d",
+        "integrated_loudness_lufs": -16.1,
+        "true_peak_dbfs": -0.7
+      }
+    }
+  ],
+  "recent_uploaded_measurements": [
+    {"id": "rorys-eight-planet-postcard-adventure-01", "weighted_wpm": 127.2, "changed": false},
+    {"id": "five-little-ducks-river-countdown-01", "weighted_wpm": 138.8, "changed": false},
+    {"id": "linas-feelings-weather-studio-01", "weighted_wpm": 136.1, "changed": false},
+    {"id": "ant-grasshopper-shared-harvest-01", "weighted_wpm": 132.3, "changed": false}
+  ],
+  "prospective_fix": {
+    "id": "lumi-shadow-theatre-surprise-01",
+    "change": "Reduced the unrendered plan from four lyric lines to three short lines per scene and added the same pacing limits."
+  },
+  "youtube_mutations_performed": false,
+  "uploads_performed": false,
+  "status": "three-local-masters-corrected-and-future-policy-active"
+}

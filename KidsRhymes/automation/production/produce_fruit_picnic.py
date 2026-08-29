@@ -36,7 +36,8 @@ SCENE_SECONDS = 40 / 3
 END_SECONDS = 4.0
 BEAT = 2 / 3
 EIGHTH = 1 / 3
-LINE_OFFSETS = (1 / 3, 10 / 3, 20 / 3, 10.0)
+LINE_OFFSETS = (1 / 3, 14 / 3, 9.0)
+PACING_VERSION = "slow-v2"
 
 ASSETS = (
     "fruit-picnic-opening-v1.png",
@@ -49,18 +50,18 @@ ASSETS = (
 )
 
 VOICE_PROFILES = {
-    "maisie-sunrise": {**core.select_voice_profile("maisie-uk"), "rate": "+8%", "pitch": "+11Hz"},
-    "maisie-gentle": {**core.select_voice_profile("maisie-uk"), "rate": "+3%", "pitch": "+7Hz"},
-    "maisie-count": {**core.select_voice_profile("maisie-uk"), "rate": "+12%", "pitch": "+14Hz"},
-    "maisie-sparkle": {**core.select_voice_profile("maisie-uk"), "rate": "+10%", "pitch": "+16Hz"},
-    "maisie-pattern": {**core.select_voice_profile("maisie-uk"), "rate": "+13%", "pitch": "+13Hz"},
-    "maisie-step": {**core.select_voice_profile("maisie-uk"), "rate": "+9%", "pitch": "+9Hz"},
-    "maisie-finale": {**core.select_voice_profile("maisie-uk"), "rate": "+11%", "pitch": "+17Hz"},
-    "ryan-curious": {**core.select_voice_profile("ryan-uk"), "rate": "+7%", "pitch": "+8Hz"},
-    "ryan-bright": {**core.select_voice_profile("ryan-uk"), "rate": "+12%", "pitch": "+12Hz"},
-    "ryan-rhythm": {**core.select_voice_profile("ryan-uk"), "rate": "+10%", "pitch": "+9Hz"},
-    "ana-warm": {**core.select_voice_profile("ana-us"), "rate": "+3%", "pitch": "+3Hz"},
-    "ana-smile": {**core.select_voice_profile("ana-us"), "rate": "+7%", "pitch": "+7Hz"},
+    "maisie-sunrise": {**core.select_voice_profile("maisie-uk"), "rate": "-8%", "pitch": "+11Hz"},
+    "maisie-gentle": {**core.select_voice_profile("maisie-uk"), "rate": "-11%", "pitch": "+7Hz"},
+    "maisie-count": {**core.select_voice_profile("maisie-uk"), "rate": "-6%", "pitch": "+14Hz"},
+    "maisie-sparkle": {**core.select_voice_profile("maisie-uk"), "rate": "-7%", "pitch": "+16Hz"},
+    "maisie-pattern": {**core.select_voice_profile("maisie-uk"), "rate": "-6%", "pitch": "+13Hz"},
+    "maisie-step": {**core.select_voice_profile("maisie-uk"), "rate": "-8%", "pitch": "+9Hz"},
+    "maisie-finale": {**core.select_voice_profile("maisie-uk"), "rate": "-5%", "pitch": "+17Hz"},
+    "ryan-curious": {**core.select_voice_profile("ryan-uk"), "rate": "-9%", "pitch": "+8Hz"},
+    "ryan-bright": {**core.select_voice_profile("ryan-uk"), "rate": "-6%", "pitch": "+12Hz"},
+    "ryan-rhythm": {**core.select_voice_profile("ryan-uk"), "rate": "-6%", "pitch": "+9Hz"},
+    "ana-warm": {**core.select_voice_profile("ana-us"), "rate": "-10%", "pitch": "+3Hz"},
+    "ana-smile": {**core.select_voice_profile("ana-us"), "rate": "-7%", "pitch": "+7Hz"},
 }
 
 SCENE_PROFILES = (
@@ -85,15 +86,15 @@ def load_plan() -> dict:
 
 
 def raw_voice_path(si: int, li: int, profile: str) -> Path:
-    return WORK / f"voice-raw-{si+1:02d}-{li+1:02d}-{profile}.mp3"
+    return WORK / f"voice-raw-{PACING_VERSION}-{si+1:02d}-{li+1:02d}-{profile}.mp3"
 
 
 def voice_path(si: int, li: int, profile: str) -> Path:
-    return WORK / f"voice-grid-{si+1:02d}-{li+1:02d}-{profile}.wav"
+    return WORK / f"voice-grid-{PACING_VERSION}-{si+1:02d}-{li+1:02d}-{profile}.wav"
 
 
 async def make_voices(plan: dict) -> None:
-    maximums = (2.72, 2.78, 2.82, 3.05)
+    maximums = (3.6, 3.6, 3.6)
     for si, scene in enumerate(plan["scenes"]):
         for li, line in enumerate(scene["lyrics"]):
             profile_name = SCENE_PROFILES[si][li]
@@ -105,7 +106,8 @@ async def make_voices(plan: dict) -> None:
                     line, profile["voice"], rate=profile["rate"], pitch=profile["pitch"], volume="-1%"
                 ).save(str(raw))
             if not target.exists() or target.stat().st_size < 2000:
-                core.fit_voice_to_grid(raw, target, maximums[li])
+                words = len(re.findall(r"[A-Za-z0-9']+", line))
+                core.fit_voice_to_grid(raw, target, maximums[li], words * 60.0 / core.TARGET_WPM)
 
 
 def effect_windows(si: int) -> list[dict]:
@@ -259,9 +261,10 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
         sync.append({"scene":event["scene"],"emotion":event["emotion"],"asset":event["asset"],"visual_action":event["visual_action"],"visual_start":event["start"],"visual_end":event["end"],"lines":event["lines"],"effects":event["effects"],"contained":contained})
     profiles={line["profile"] for item in sync for line in item["lines"]}; spoken=[line["line"].lower() for item in sync for line in item["lines"]]
     forbidden=("clap clap","tap tap","knock knock","tick tock","ding dong","boom boom","beep beep")
-    checks={"duration":abs(float(probe["format"]["duration"])-total)<0.25,"h264_1080p":video.get("codec_name")=="h264" and video.get("width")==1920 and video.get("height")==1080,"aac_48k_stereo":audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2,"full_decode":decode.returncode==0,"zero_gaps":all(abs(r["gap_seconds"])<1e-6 for r in transitions),"continuous_visual_timeline":all(abs(r["gap_seconds"])<1e-6 for r in transitions),"end_card_is_final_event_only":events[-1]["phase"]=="end","seven_unique_story_scenes":len({r["asset"] for r in sync})==7,"all_story_scenes_five_bars":all(abs(r["visual_end"]-r["visual_start"]-SCENE_SECONDS)<1e-6 for r in sync),"narration_and_effects_contained":all(r["contained"] for r in sync),"vocal_starts_on_eighth_grid":all(abs(((line["start"]-item["visual_start"])/EIGHTH)-round((line["start"]-item["visual_start"])/EIGHTH))<1e-6 for item in sync for line in item["lines"]),"five_bar_scene_cuts":all(abs((r["visual_end"]/BEAT)-round(r["visual_end"]/BEAT))<1e-6 for r in sync),"emotional_voice_variation":len(profiles)>=10,"maisie_ryan_ana_rotation":all(any(name.startswith(prefix) for name in profiles) for prefix in ("maisie-","ryan-","ana-")),"no_spoken_sound_imitation":all(not any(word in line for word in forbidden) for line in spoken),"real_scene_effects":len({e["effect"] for item in sync for e in item["effects"]})>=28,"thumbnail":THUMBNAIL.is_file() and THUMBNAIL.stat().st_size<2_000_000}
-    loudness,peak=audio_levels(); report={"output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"format":"orchard-to-picnic-action-story-song","bpm":90,"voice_profiles":sorted(profiles),"visual_method":"seven reviewed luminous watercolour-and-gouache orchard tableaux with restrained eased crop movement","audio_method":"original 90 BPM emotion-mapped orchard swing, Maisie lead, Kai and Rosa character pickups, and synchronized real-world effects","integrated_loudness_lufs":loudness,"true_peak_dbfs":peak,"true_rigged_3d_animation":False,"paid_generation_used":False,"checks":checks,"passed":all(checks.values())}
-    (WORK/"timeline-gap-audit.json").write_text(json.dumps(transitions,indent=2)+"\n",encoding="utf-8"); (WORK/"lyric-visual-emotion-audit.json").write_text(json.dumps(sync,indent=2)+"\n",encoding="utf-8"); (WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
+    pace=core.pacing_audit(sync)
+    checks={"duration":abs(float(probe["format"]["duration"])-total)<0.25,"h264_1080p":video.get("codec_name")=="h264" and video.get("width")==1920 and video.get("height")==1080,"aac_48k_stereo":audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2,"full_decode":decode.returncode==0,"zero_gaps":all(abs(r["gap_seconds"])<1e-6 for r in transitions),"continuous_visual_timeline":all(abs(r["gap_seconds"])<1e-6 for r in transitions),"end_card_is_final_event_only":events[-1]["phase"]=="end","seven_unique_story_scenes":len({r["asset"] for r in sync})==7,"all_story_scenes_five_bars":all(abs(r["visual_end"]-r["visual_start"]-SCENE_SECONDS)<1e-6 for r in sync),"narration_and_effects_contained":all(r["contained"] for r in sync),"vocal_starts_on_eighth_grid":all(abs(((line["start"]-item["visual_start"])/EIGHTH)-round((line["start"]-item["visual_start"])/EIGHTH))<1e-6 for item in sync for line in item["lines"]),"five_bar_scene_cuts":all(abs((r["visual_end"]/BEAT)-round(r["visual_end"]/BEAT))<1e-6 for r in sync),"emotional_voice_variation":len(profiles)>=10,"maisie_ryan_ana_rotation":all(any(name.startswith(prefix) for name in profiles) for prefix in ("maisie-","ryan-","ana-")),"no_spoken_sound_imitation":all(not any(word in line for word in forbidden) for line in spoken),"child_friendly_narration_pacing":pace["passed"],"real_scene_effects":len({e["effect"] for item in sync for e in item["effects"]})>=28,"thumbnail":THUMBNAIL.is_file() and THUMBNAIL.stat().st_size<2_000_000}
+    loudness,peak=audio_levels(); report={"output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"format":"orchard-to-picnic-action-story-song","bpm":90,"voice_profiles":sorted(profiles),"visual_method":"seven reviewed luminous watercolour-and-gouache orchard tableaux with restrained eased crop movement","audio_method":"original 90 BPM emotion-mapped orchard swing, Maisie lead, Kai and Rosa character pickups, and synchronized real-world effects","narration_pacing":{"weighted_wpm":pace["weighted_wpm"],"maximum_line_wpm":pace["maximum_line_wpm"],"minimum_interline_gap_seconds":pace["minimum_interline_gap_seconds"]},"integrated_loudness_lufs":loudness,"true_peak_dbfs":peak,"true_rigged_3d_animation":False,"paid_generation_used":False,"checks":checks,"passed":all(checks.values())}
+    (WORK/"timeline-gap-audit.json").write_text(json.dumps(transitions,indent=2)+"\n",encoding="utf-8"); (WORK/"lyric-visual-emotion-audit.json").write_text(json.dumps(sync,indent=2)+"\n",encoding="utf-8"); (WORK/"narration-pacing-audit.json").write_text(json.dumps(pace,indent=2)+"\n",encoding="utf-8"); (WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     general=Image.new("RGB",(960,math.ceil(len(events)/4)*135),"white")
     for i,event in enumerate(events): general.paste(frame_for(event,event["start"]+(event["end"]-event["start"])*0.55,assets).resize((240,135),Image.Resampling.LANCZOS),((i%4)*240,(i//4)*135))
     general.save(WORK/"quality-contact-sheet.png"); boundary=[]
@@ -275,6 +278,8 @@ def quality(events: list[dict], total: float, assets: dict[str, Image.Image]) ->
 
 def write_metadata(total: float, report: dict) -> None:
     document={"id":ITEM_ID,"title":"Pick, Wash, Pack the Fruit Picnic | Orchard Song for Kids","description":"Kai asks before entering Rosa's orchard, gently picks ripe fruit, counts six pieces, washes them, packs a repeating colour pattern and shares the basket on a sunny picnic.\n\nAn original Tiny Tales musical story about permission, gentle food handling, counting, patterns, teamwork and avoiding waste for children ages 3 to 7.","tags":["fruit song for kids","orchard story","counting to six","patterns for kids","food washing for kids","teamwork story","Tiny Tales"],"category_id":"27","made_for_kids":True,"privacy":"public","upload_authorized":False,"output":str(OUTPUT),"duration_seconds":total,"voice_profile":"maisie-uk","character_voice_profiles":{"kai":"ryan-uk","rosa":"ana-us"},"delivery":"emotion-mapped melodic rhythmic story-song","bpm":90,"format_family":"orchard-to-picnic-action-story-song","quality_gate_passed":True,"full_decode_passed":True,"transition_audit_passed":True,"quality_report":f"automation/production-work/{ITEM_ID}/quality-report.json","transition_audit":f"automation/production-work/{ITEM_ID}/timeline-gap-audit.json","lyric_visual_emotion_audit":f"automation/production-work/{ITEM_ID}/lyric-visual-emotion-audit.json","quality_contact_sheet":f"automation/production-work/{ITEM_ID}/quality-contact-sheet.png","transition_contact_sheet":f"automation/production-work/{ITEM_ID}/transition-contact-sheet.png","asset_review_contact_sheet":f"automation/production-work/{ITEM_ID}/asset-review-contact-sheet.png","musical_story_waveform":f"automation/production-work/{ITEM_ID}/musical-story-waveform.png","musical_story_spectrum":f"automation/production-work/{ITEM_ID}/musical-story-spectrum.png","prepared_thumbnail":f"automation/thumbnails/{ITEM_ID}.jpg","thumbnail_hook":"PICK, WASH, PACK!","thumbnail_reviewed":False,"manual_visual_review_passed":False,"reviewed_sha256":hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),"integrated_loudness_lufs":report["integrated_loudness_lufs"],"true_peak_dbfs":report["true_peak_dbfs"],"true_rigged_3d_animation":False,"paid_generation_used":False,"spoken_sound_effect_words_removed":True,"upload_queue_released":False}
+    document["narration_pacing_audit"] = f"automation/production-work/{ITEM_ID}/narration-pacing-audit.json"
+    document["narration_pacing_policy"] = "three short phrases per scene; target at most 140 WPM, hard line ceiling 145 WPM and at least 0.4 seconds between phrases"
     META.write_text(json.dumps(document,indent=2)+"\n",encoding="utf-8")
 
 
