@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import subprocess
 from pathlib import Path
@@ -154,10 +155,20 @@ def make_creative_thumbnail(item: dict[str, object]) -> Path:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--video-id", action="append", dest="video_ids")
+    args = parser.parse_args()
     doc = json.loads(MANIFEST.read_text(encoding="utf-8"))
     if doc.get("version") != 2 or doc.get("channel_id") != "UCEn9N-ITQHshjgt6fy7fxnw":
         raise RuntimeError("Invalid Tiny Tales thumbnail manifest")
-    paths = [make_thumbnail(item) for item in doc["items"]]
+    items = doc["items"]
+    if args.video_ids:
+        requested = set(args.video_ids)
+        items = [item for item in items if item["video_id"] in requested]
+        found = {item["video_id"] for item in items}
+        if found != requested:
+            raise RuntimeError(f"Unknown thumbnail IDs: {sorted(requested - found)}")
+    paths = [make_thumbnail(item) for item in items]
     review = Image.new("RGB", (1920, 1440), (20, 25, 34))
     for index, path in enumerate(paths):
         thumb = Image.open(path).convert("RGB").resize((640, 360), Image.Resampling.LANCZOS)

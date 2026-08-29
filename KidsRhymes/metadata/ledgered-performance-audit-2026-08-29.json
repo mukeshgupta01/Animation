@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "observed_at": "2026-08-29",
+  "channel_id": "UCEn9N-ITQHshjgt6fy7fxnw",
+  "scope": "Public videos reconciled to the Tiny Tales upload ledger only; unrelated channel history excluded.",
+  "metric": "public_view_count",
+  "watch_time_note": "Exact YouTube Analytics watch-time minutes are not available through the current read-only/upload OAuth scopes. Public view count is used as the verified ranking proxy until Analytics authorization is deliberately added.",
+  "live_ledgered_video_count": 59,
+  "top_videos": [
+    {"rank": 1, "video_id": "UleavxVG2T4", "title": "Animal Opposites Playground", "views": 574},
+    {"rank": 2, "video_id": "-ayS0UTmcfA", "title": "Animal Alphabet A-Z", "views": 472},
+    {"rank": 3, "video_id": "1bUWqBg9V9g", "title": "Farm Animal Counting Parade", "views": 461},
+    {"rank": 4, "video_id": "uXSMNcg-u10", "title": "Tiny Seed Big Farm Adventure", "views": 435},
+    {"rank": 5, "video_id": "WLzesx1OxNU", "title": "Maya and Joey", "views": 378},
+    {"rank": 6, "video_id": "f1SPRanqUEg", "title": "Animal Sound Orchestra", "views": 337},
+    {"rank": 7, "title": "Guess the Farm Animal Shadow", "views": 268, "policy": "Historical result only; shadow format is retired and must not be regenerated."},
+    {"rank": 8, "title": "Turtle Friendship Badge", "views": 257},
+    {"rank": 9, "title": "Farm Move Like an Animal", "views": 226},
+    {"rank": 10, "title": "Star Friends", "views": 198}
+  ],
+  "creative_finding": "Animal-led learning adventures are the strongest repeatable family, but only the broad learning mechanic may be extended. New episodes require distinct characters, narrative causality, settings, interactions, music, compositions and payoff.",
+  "next_concept": "quinn-quokka-opposite-parcel-quest-01",
+  "next_concept_status": "First visual preview rejected for flat props and repeated poses; not rendered, queued or uploaded."
+}

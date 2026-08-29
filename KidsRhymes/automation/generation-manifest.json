@@ -393,6 +393,72 @@
         "tags": ["planets for kids", "solar system for children", "space story for kids", "eight planets", "Mercury to Neptune", "preschool science", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "eddie-excavators-rain-garden-day-01",
+      "name": "Eddie Excavator's Rain-Garden Day",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_eddie_rain_garden_musical.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/eddie-excavators-rain-garden-day-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "construction-sequencing-musical-story",
+      "visual_system": "seven-premium-miniature-rain-garden-construction-compositions",
+      "interaction_style": "follow-plan-safe-machine-work-plant-and-water-test-story-song",
+      "voice_profile": "ana-us",
+      "youtube": {
+        "title": "Eddie Excavator's Rain-Garden Day | Musical Construction Story for Kids",
+        "description": "Sing through a careful construction day with Eddie Excavator. Follow the plan, watch one safe scoop and carry, help plant after the machine stops, and test how a rain garden guides water to thirsty roots.\n\nAn original Tiny Tales musical story about construction sequencing, water, plants, teamwork and work-zone safety for children ages 3 to 7.",
+        "tags": ["excavator song for kids", "construction story", "rain garden for kids", "digger video", "water and plants", "preschool music story", "Tiny Tales"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "dads-coming-home-welcome-rhythm-01",
+      "name": "Dad's Coming-Home Welcome Rhythm",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_dads_welcome_rhythm.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/dads-coming-home-welcome-rhythm-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "inclusive-family-welcome-musical-story",
+      "visual_system": "seven-layered-paper-and-fabric-apartment-scenes",
+      "interaction_style": "anticipate-choose-a-greeting-and-share-a-home-rhythm",
+      "voice_profile": "natasha-au",
+      "youtube": {
+        "title": "Dad's Coming-Home Welcome Rhythm | Family Song for Kids",
+        "description": "Mina watches afternoon turn to evening, prepares a picture and chooses her own comfortable greeting. When Dad arrives, he follows her wave and they make a gentle three-beat home rhythm together.\n\nAn original Tiny Tales musical story about anticipation, family connection, consent, choices and turn-taking for children ages 3 to 7.",
+        "tags": ["dad song for kids", "family welcome song", "coming home story", "feelings and choices", "consent for kids", "preschool rhythm", "Tiny Tales"],
+        "category_id": "27"
+      }
+    },
+    {
+      "id": "pick-wash-pack-fruit-picnic-01",
+      "name": "Pick, Wash, Pack the Fruit Picnic",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_fruit_picnic.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/pick-wash-pack-fruit-picnic-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "orchard-to-picnic-action-story-song",
+      "visual_system": "seven-luminous-watercolour-and-gouache-orchard-compositions",
+      "interaction_style": "ask-pick-count-wash-pattern-pack-and-share",
+      "voice_profile": "maisie-uk",
+      "youtube": {
+        "title": "Pick, Wash, Pack the Fruit Picnic | Orchard Song for Kids",
+        "description": "Kai asks before entering Rosa's orchard, gently picks ripe fruit, counts six pieces, washes them, packs a repeating colour pattern and shares the basket on a sunny picnic.\n\nAn original Tiny Tales musical story about permission, gentle food handling, counting, patterns, teamwork and avoiding waste for children ages 3 to 7.",
+        "tags": ["fruit song for kids", "orchard story", "counting to six", "patterns for kids", "food washing for kids", "teamwork story", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "channel_id": "UCEn9N-ITQHshjgt6fy7fxnw",
+  "threshold": 20,
+  "comparison": "strictly less than threshold",
+  "scope": "Newest ledgered Tiny Tales automation uploads created after the 2026-08-28 refresh; unrelated historical uploads and previously refreshed videos are excluded.",
+  "items": [
+    {
+      "video_id": "25sHX9AceLo",
+      "expected_old_title": "Rory's Eight-Planet Postcard Adventure | Space Story for Kids",
+      "new_title": "Can Rory Visit All 8 Planets? | Space Adventure for Kids",
+      "views_at_selection": 4,
+      "thumbnail": "automation/thumbnails/25sHX9AceLo.jpg",
+      "hook": "VISIT ALL 8 PLANETS!",
+      "visual_reviewed": true
+    },
+    {
+      "video_id": "RjHEcm4aWUs",
+      "expected_old_title": "Five Little Ducks' River Countdown | Nursery Song for Kids",
+      "new_title": "Where Did the Five Little Ducks Go? | Counting Song for Kids",
+      "views_at_selection": 0,
+      "thumbnail": "automation/thumbnails/RjHEcm4aWUs.jpg",
+      "hook": "WHERE DID THEY GO?",
+      "visual_reviewed": true
+    },
+    {
+      "video_id": "IljnXnB_5X0",
+      "expected_old_title": "Lina's Feelings Weather Studio | Emotional Story for Kids",
+      "new_title": "What Is Lina Feeling? | Feelings and Calm-Down Story for Kids",
+      "views_at_selection": 1,
+      "thumbnail": "automation/thumbnails/IljnXnB_5X0.jpg",
+      "hook": "WHAT IS LINA FEELING?",
+      "visual_reviewed": true
+    },
+    {
+      "video_id": "9vvghOKhipo",
+      "expected_old_title": "The Ant and Grasshopper's Shared Harvest | Musical Story for Kids",
+      "new_title": "Can Ant and Grasshopper Save the Harvest? | Musical Story for Kids",
+      "views_at_selection": 0,
+      "thumbnail": "automation/thumbnails/9vvghOKhipo.jpg",
+      "hook": "SAVE THE HARVEST!",
+      "visual_reviewed": true
+    }
+  ],
+  "live_update_attempt": {
+    "completed": false,
+    "mutations_applied": 0,
+    "blocker": "The current Tiny Tales OAuth token lacks the YouTube channel-management scope required by videos.update. The first request failed with HTTP 403 before any title or thumbnail was changed.",
+    "required_next_step": "Complete one deliberate interactive OAuth reauthorization for the dedicated Tiny Tales channel, verify the exact channel ID, then rerun the fail-closed refresh script."
+  },
+  "status": "blocked-awaiting-youtube-management-oauth-no-live-mutations"
+}

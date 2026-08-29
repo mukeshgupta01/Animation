@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "project_id": "quinn-quokka-opposite-parcel-quest-01",
+  "title": "Quinn Quokka's Opposite Parcel Quest | Opposites Song for Kids",
+  "creative_reason": "Uses the strongest channel learning signal—clear opposites—but replaces the prior playground/parade structure with one connected parcel-delivery story, a quokka hero, an owl guide, portal travel and consequence-driven contrast choices.",
+  "not_a_clone": [
+    "No repeated playground challenge format.",
+    "No sequence of unrelated animals demonstrating one word each.",
+    "No reused narration, lyrics, title, thumbnail hook or interaction pattern.",
+    "Every opposite pair helps Quinn deliver the same parcel through a connected story."
+  ],
+  "duration_seconds": 88.0,
+  "story_seconds": 84.0,
+  "final_card_seconds": 4.0,
+  "music": {
+    "bpm": 100,
+    "beats_per_scene": 20,
+    "scene_seconds": 12.0,
+    "lead_voice": "ryan-uk",
+    "quinn_voice": "natasha-au",
+    "olive_voice": "ana-us",
+    "delivery": "slow emotion-mapped melodic story-song",
+    "pacing": "Three short phrases per scene, target 105-135 weighted WPM, hard maximum 145 WPM per line, no positive TTS boost and at least 0.4 seconds between phrases."
+  },
+  "character_lock": {
+    "quinn": "Quinn, one cheerful golden-brown quokka with round ears, bright brown eyes, soft plush 3D fur, a teal parcel satchel and coral neckerchief",
+    "olive": "Olive, one warm cream-and-caramel owl guide with amber eyes, a plum post cap and tiny brass route badge"
+  },
+  "visual_direction": {
+    "quality": "Premium cinematic 3D-look portal worlds with rich environmental depth, clean character silhouettes, expressive faces, volumetric light and tactile parcel props.",
+    "frame": "1920x1080, 12-column grid, 96px title-safe margin, one focal point on a thirds power point per shot.",
+    "layers": "Background ambient portal drift 0.2x; midground route and props 0.6x; foreground Quinn or the active parcel 1.2x.",
+    "camera": "One move per story beat: either a slow push, a short follow or a match cut. Never push, pan and rotate simultaneously.",
+    "motion_personality": "playful kinetic-soft with 0.6-second base phrase unit, gentle squash on parcel landings and a full-beat hold after each contrast resolves.",
+    "thumbnail_hook": "WHICH WAY, QUINN?"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "contrast": "empty / full",
+      "setting": "sunrise flower-post meadow",
+      "story_action": "Quinn receives one empty teal satchel. Olive places three glowing parcels inside until it is visibly full, then points to the first portal route.",
+      "lyrics": ["Quinn's satchel starts out empty.", "One, two, three parcels fill it.", "A full bag means the quest can start."],
+      "focal": "Quinn's surprised face and the empty-to-full satchel at the right-thirds point",
+      "camera": "slow push toward the satchel; hold one beat on full"
+    },
+    {
+      "scene": 2,
+      "contrast": "up / down",
+      "setting": "jungle drum-lift station",
+      "story_action": "A parcel lift rises up to the high orange portal, then returns down so Quinn can collect the route stamp.",
+      "lyrics": ["The parcel lift travels up.", "Now it glides safely down.", "Quinn catches the stamp below."],
+      "focal": "one lift and parcel moving vertically beside Quinn",
+      "camera": "vertical follow broken at the midpoint; no full-frame slide"
+    },
+    {
+      "scene": 3,
+      "contrast": "near / far",
+      "setting": "bright coral bubble-post office",
+      "story_action": "Olive shows one near shell mailbox and one far shell mailbox. Quinn chooses the near mailbox for the first parcel, then points toward the far destination for later.",
+      "lyrics": ["This shell mailbox waits nearby.", "That blue mailbox glows far away.", "Near comes first on Quinn's route."],
+      "focal": "near shell mailbox large foreground; far mailbox small in depth",
+      "camera": "rack-like scale change from far to near without a zoom-spin"
+    },
+    {
+      "scene": 4,
+      "contrast": "fast / slow",
+      "setting": "golden orchard windmill road",
+      "story_action": "A tiny cart begins too fast near the bridge. Quinn slows it to a careful pace so the parcel remains level and arrives safely.",
+      "lyrics": ["The little cart rolls too fast.", "Quinn makes the wheels turn slow.", "Slow and steady keeps parcels safe."],
+      "focal": "Quinn's paw on the brake and one stable parcel",
+      "camera": "brief follow, then long settled hold after the slowdown"
+    },
+    {
+      "scene": 5,
+      "contrast": "open / closed",
+      "setting": "rainbow parcel-gate plaza",
+      "story_action": "The blue delivery gate is closed. Quinn matches the brass route badge; the gate opens and reveals the waiting recipient platform.",
+      "lyrics": ["The blue delivery gate is closed.", "Quinn matches Olive's route badge.", "The correct gate opens wide."],
+      "focal": "closed-to-open gate with Quinn anchored at left thirds",
+      "camera": "symmetrical locked frame; gate opening is the only bold motion"
+    },
+    {
+      "scene": 6,
+      "contrast": "light / heavy",
+      "setting": "parcel balance garden",
+      "story_action": "Quinn compares one light feather parcel and one heavy seed parcel, then places each on the correct side of a friendly balance cart.",
+      "lyrics": ["A feather parcel feels so light.", "The seed parcel feels heavy.", "Quinn balances both with care."],
+      "focal": "one readable balance with exactly two different parcels",
+      "camera": "side-on balance tilt followed by centered settle"
+    },
+    {
+      "scene": 7,
+      "contrast": "opposites finale",
+      "setting": "five-world parcel festival",
+      "story_action": "The delivered parcels unfold into flags showing each learned pair. Quinn and Olive lead an original opposite-route song while children point left and right with the contrasts.",
+      "lyrics": ["Empty, full; up and down.", "Near and far; fast then slow.", "Opposites helped Quinn find the way."],
+      "focal": "Quinn and Olive foreground with five large readable contrast emblems",
+      "camera": "slow celebratory push ending in a stable thumbnail-ready pose"
+    }
+  ],
+  "quality_gates": [
+    "Quinn and Olive remain recognizable and consistently dressed in all seven scenes.",
+    "Every scene has one dominant contrast and one connected parcel-story consequence.",
+    "Each narrated object and action is visible for the complete phrase.",
+    "No story scene exceeds 12 seconds and all transitions are gap-free.",
+    "The finale/end card appears only in its intended final event.",
+    "Narration passes the 145 WPM per-line and 0.4-second breathing-gap limits.",
+    "Full decode, general contact sheet, every-boundary contact sheet and truthful custom thumbnail must be reviewed before release."
+  ],
+  "preview_review": {
+    "contact_sheet": "automation/production-work/quinn-quokka-opposite-parcel-quest-01/scene-preview-contact-sheet.jpg",
+    "accepted": false,
+    "reason": "The connected parcel story is sufficiently different from Animal Opposites Playground, but the first local composite pass uses flat-looking parcel controls and repeats Quinn's pose too often beside premium environments. It is not approved for rendering, queueing or upload.",
+    "required_revision": "Use scene-specific Quinn and Olive poses, tactile dimensional parcel props, integrated world lighting and physical cause-and-effect rather than UI-like panels. Preserve one focal action and the connected quest."
+  },
+  "status": "visual-preview-rejected-awaiting-premium-scene-revision"
+}

@@ -27,6 +27,7 @@
   "quality_gate_passed": true,
   "full_decode_passed": true,
   "transition_audit_passed": true,
+  "transition_contact_sheet_reviewed": true,
   "quality_report": "automation/production-work/eddie-excavators-rain-garden-day-01/quality-report.json",
   "transition_audit": "automation/production-work/eddie-excavators-rain-garden-day-01/timeline-gap-audit.json",
   "lyric_visual_emotion_audit": "automation/production-work/eddie-excavators-rain-garden-day-01/lyric-visual-emotion-audit.json",
@@ -51,5 +52,12 @@
   "true_rigged_3d_animation": false,
   "paid_generation_used": false,
   "spoken_sound_effect_words_removed": true,
-  "upload_queue_released": false
+  "upload_queue_released": true,
+  "youtube": {
+    "video_id": "ggJqahpLAtg",
+    "url": "https://youtu.be/ggJqahpLAtg",
+    "uploaded_utc": "2026-08-29T01:00:32Z",
+    "public": true,
+    "made_for_kids": true
+  }
 }
