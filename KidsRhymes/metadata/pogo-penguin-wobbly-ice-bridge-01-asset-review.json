@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "pogo-penguin-wobbly-ice-bridge-01",
+  "reviewed_at": "2026-09-01",
+  "review_method": "Each full-resolution frame was inspected on creation, then all nine accepted scenes were reviewed chronologically on automation/production-work/pogo-penguin-wobbly-ice-bridge-01/asset-contact-sheet.png.",
+  "generation_summary": {"image_generation_calls": 12, "accepted_assets": 9, "rejected_or_superseded_generations": 3},
+  "accepted_assets": [
+    {"scene": 1, "file": "automation/production-assets/pogo-penguin-opening-v1.png", "sha256": "94555a44f5a8a0aa4e75328b4d2a693dd5fef32c106bb890646580b730d08bd2", "review": "Safe shallow site, exact builders, bridge pieces, secured instruments and theatre goal are all visible."},
+    {"scene": 2, "file": "automation/production-assets/pogo-penguin-narrow-wobble-v1.png", "sha256": "6549d9c005122dee69cce177ba8de796a302b5e960a1fdf60cf08594854e9ab0", "review": "Pogo uses planted feet and a spotter on one mildly flexing intact narrow plank."},
+    {"scene": 3, "file": "automation/production-assets/pogo-penguin-wide-stable-test-v1.png", "sha256": "381ae05fc6b3c65786ad3e80ce1291fd5c043852245fbea9fd7d0537b28790a4", "review": "Narrow wavy-rope lane and much wider level three-support deck compare clearly without diagram UI."},
+    {"scene": 4, "file": "automation/production-assets/pogo-penguin-three-supports-v1.png", "sha256": "811b4481e3047d5aea94f4a67f7ae5c5cd48b79cc0ff595df49dcc70bb43a9ed", "review": "Exactly three blue supports form one readable evenly spaced row; Mina places the third and Pogo sights the rope."},
+    {"scene": 5, "file": "automation/production-assets/pogo-penguin-two-rails-v1.png", "sha256": "6bb2fe5c5f41e19f2fe4f8186abe6f4afd97e1d0c9f01474080133a3f781c607", "review": "Corrected centred view proves exactly one bank-to-bank rail on each opposite side with an open centre."},
+    {"scene": 6, "file": "automation/production-assets/pogo-penguin-weight-test-v1.png", "sha256": "a64f7e5d1403bde489d8465e3f9b30d83e3efff71225d01f448d5d33b982bfbe", "review": "Exactly two snow sacks load the centre and the brass plumb bead hangs straight; instruments remain on the sled."},
+    {"scene": 7, "file": "automation/production-assets/pogo-penguin-cross-brace-v1.png", "sha256": "f132aae10b555cd47211102e364d2df708ec04a222faf5a0bc2450e63e8ea9e9", "review": "Two teal straps cross into one clear X while the deck, rails and plumb bead remain intact."},
+    {"scene": 8, "file": "automation/production-assets/pogo-penguin-first-crossing-v1.png", "sha256": "2831cb65e867df4a6ef312f942957eaa5f5f774cd48ce1b5ec2d1f6d468c6f8f", "review": "Corrected geography shows only Pogo and drum on deck; Mina, sled and xylophone are wholly on the starting bank."},
+    {"scene": 9, "file": "automation/production-assets/pogo-penguin-theatre-finale-v1.png", "sha256": "be13160ceebe8d56d429a9ae415ec8f8e9cec69a67293d90f6ac4f6188ae8baa", "review": "Localized correction restores Pogo's golden cheek patch; full band appears only now and the empty finished bridge remains visible."}
+  ],
+  "continuity_checks": {
+    "pogo_mina_and_instruments_preserved": true,
+    "shallow_powder_trench_preserved": true,
+    "narrow_before_wide_sequence_preserved": true,
+    "three_supports_two_opposite_rails_and_x_brace_preserved": true,
+    "pogo_only_on_first_crossing": true,
+    "full_performance_only_in_scene_9": true,
+    "broken_ice_fall_or_peril_present": false,
+    "generated_text_or_watermark_present": false
+  },
+  "status": "accepted-hash-locked-ready-for-production"
+}

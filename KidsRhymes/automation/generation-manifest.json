@@ -569,6 +569,24 @@
         "tags": ["opposites for kids", "turtle story", "warm and cool", "soft and crunchy", "whole and half", "musical story for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "pogo-penguin-wobbly-ice-bridge-01",
+      "name": "Pogo Penguin's Wobbly Ice Bridge",
+      "command": ["C:\\Animation\\Animation\\.venv\\Scripts\\python.exe", "-B", "automation\\production\\produce_pogo_penguin_bridge.py"],
+      "working_directory": ".",
+      "output": "automation/production-output/pogo-penguin-wobbly-ice-bridge-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "balance-and-bridge engineering adventure",
+      "visual_system": "nine-premium-tactile-Antarctic-engineering-compositions-with-shallow-site-width-support-rail-brace-and-crossing-continuity",
+      "interaction_style": "test-narrow-wide-count-three-add-opposite-rails-load-test-cross-brace-and-cross-one-at-a-time",
+      "voice_profile": "ryan-uk",
+      "youtube": {
+        "title": "Pogo Penguin's Wobbly Ice Bridge | Building Story for Kids",
+        "description": "Pogo and Mina test narrow and wide ice pieces, count three supports, add two rails and a cross brace, then carry their instruments one at a time to the snow theatre.\n\nAn original Tiny Tales musical engineering story about balance, stability, counting, testing and teamwork for children ages 3 to 7.",
+        "tags": ["engineering for kids", "penguin story", "building a bridge", "balance for kids", "counting to three", "musical story for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

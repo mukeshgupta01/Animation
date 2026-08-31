@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "pogo-penguin-wobbly-ice-bridge-01",
+  "title": "Pogo Penguin's Wobbly Ice Bridge | Building Story for Kids",
+  "audience": "children ages 3-7",
+  "target_duration_seconds": 92.3,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 104,
+    "beats_per_scene": 17,
+    "scene_seconds": 9.807692,
+    "scene_count": 9,
+    "resolve_seconds": 4.0,
+    "personality": "bright Antarctic building march with controlled wobble rhythms",
+    "emotional_arrangement": "pizzicato bass and brushed snow percussion for measuring; off-centre marimba accents for the narrow wobble; increasingly even mallet patterns as supports, rails and braces settle; full drum, xylophone, chime and cymbal theatre refrain only after the crossing"
+  },
+  "voices": {
+    "lead": "ryan-uk",
+    "pogo": "ana-us",
+    "mina": "natasha-au",
+    "delivery": "rhythmic acted engineering story-song with planted pauses and a sung theatre payoff; no flat reading"
+  },
+  "pacing": {
+    "maximum_phrases_per_scene": 3,
+    "target_weighted_wpm": 125,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "continuity": {
+    "pogo": "one young emperor penguin with navy head and back, white belly, golden cheek patches, coral knitted scarf and tan builder belt",
+    "mina": "one taller chinstrap penguin with charcoal chin line, violet knitted beanie and teal tool satchel",
+    "site": "one visibly knee-deep powder-bottom snow trench between a supply bank and a colourful open-front snow theatre; no open water or deep crevasse",
+    "bridge": "one wide translucent ice deck on three evenly spaced rounded blue supports, one rope rail on each opposite side and one teal X brace beneath",
+    "delivery": "one small blue-and-coral drum and one brass xylophone remain secured until the verified one-at-a-time crossing"
+  },
+  "scenes": [
+    {"scene": 1, "action": "Pogo measures the shallow trench while Mina sorts wide and narrow ice pieces, three supports and two rails beside the secured instruments.", "lyrics": ["Music waits across the snowy dip.", "Pogo measures; Mina sorts the pieces.", "Build it wide, level, steady!"], "hero": "safe site, destination and building pieces", "emotion": "cheerful purpose"},
+    {"scene": 2, "action": "Pogo tests one narrow plank with planted feet while Mina spots from the bank; it flexes mildly without cracking.", "lyrics": ["First, the narrow plank gets tested.", "Pogo bends; the ice wiggles.", "Mina spots him from the bank."], "hero": "controlled narrow-plank wobble", "emotion": "comic concentration"},
+    {"scene": 3, "action": "The narrow lane and a wider level deck sit side by side while the builders visibly compare their widths and stability.", "lyrics": ["Narrow wobbles; wider rests level.", "Press wide; watch the deck stay.", "Wide and stable wins the test!"], "hero": "wide versus narrow physical comparison", "emotion": "thoughtful discovery"},
+    {"scene": 4, "action": "Exactly three rounded supports form one evenly spaced row; Mina slides the third while Pogo sights along a knotted rope.", "lyrics": ["One, two, three supports in line.", "Mina slides the third one gently.", "Pogo checks the even gaps."], "hero": "three supports and equal spacing", "emotion": "careful teamwork"},
+    {"scene": 5, "action": "Pogo and Mina attach exactly one continuous rope rail to each opposite side, leaving the wide centre path clear.", "lyrics": ["A rope rail guards each side.", "Left and right stay matched.", "Middle path is clear and wide."], "hero": "two opposite-side rails", "emotion": "confident progress"},
+    {"scene": 6, "action": "Two identical snow sacks load the deck centre while a brass plumb bead hangs straight and the builders inspect the result from the banks.", "lyrics": ["Two snow sacks test the middle.", "The plumb bead hangs straight down.", "Level bridge, you passed the load!"], "hero": "even load and straight plumb bead", "emotion": "focused verification"},
+    {"scene": 7, "action": "A gentle breeze sways flags and rails, so Pogo and Mina add two teal straps crossed into one visible X beneath the deck.", "lyrics": ["A breeze makes handrails sway.", "Crossed straps steady every side.", "Plumb bead settles near the centre."], "hero": "X brace and settling plumb bead", "emotion": "brief uncertainty to relief"},
+    {"scene": 8, "action": "Only Pogo crosses with the drum; Mina, the xylophone and sled remain completely on the starting bank for a later trip.", "lyrics": ["Pogo carries the drum alone.", "One slow step, then one more.", "Mina waits for her own turn."], "hero": "first verified one-at-a-time crossing", "emotion": "earned calm courage"},
+    {"scene": 9, "action": "Inside the theatre Pogo, Mina and two supporting players perform while the completed empty bridge remains visible through the arch.", "lyrics": ["Wide, level, steady; we built it!", "Drum and xylophone sing together.", "Strong teamwork bridges every beat!"], "hero": "first full performance and intact bridge payoff", "emotion": "joyful musical release"}
+  ],
+  "quality_requirements": [
+    "The trench remains visibly shallow with a powder bottom; no open water, deep crevasse, breakage, falling or fear imagery appears.",
+    "Pogo, Mina, costumes, sled, drum, xylophone, theatre and site geography retain identity.",
+    "The narrow plank is tested before the wide deck is selected; the final deck stays wide and level.",
+    "Exactly three supports, one rail per opposite side and one crossed teal brace are established before crossing.",
+    "The two sacks are test weights only and are removed before Pogo crosses.",
+    "Only Pogo and the drum occupy the bridge in scene 8; Mina, sled and xylophone remain on the starting bank.",
+    "The first full performance occurs only in scene 9 and the deterministic end card follows it as the final event.",
+    "Real ice flex, rope, snow, plumb, footstep, drum, xylophone, chime and cymbal effects replace spoken imitation words.",
+    "All shared gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "published-and-live-readback-verified"
+}
