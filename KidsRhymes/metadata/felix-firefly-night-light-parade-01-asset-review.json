@@ -71,7 +71,72 @@
         "generated_text_or_watermark_absent": true,
         "notes": "The complication is visibly caused by ordinary windblown leaves. Felix sings, Rabbit points and Hedgehog uncovers a blue edge in three distinct new poses."
       }
+    },
+    {
+      "scene": 5,
+      "file": "automation/production-assets/felix-firefly-rest-and-support-v1.png",
+      "sha256": "5244e2cce3ae35d12442296a9554fc26b54f848de2d49356cb0ccbe74d5b7f69",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "character_identity_preserved": true,
+        "materially_new_intimate_composition": true,
+        "felix_reads_as_safe_rest_not_injury": true,
+        "rabbit_and_hedgehog_support_actions_visible": true,
+        "exact_total_lantern_count_three": true,
+        "generated_text_or_watermark_absent": true,
+        "notes": "The emotional dip is tender and visually clear. Rabbit shelters, Hedgehog brings a petal blanket, and Felix remains alert with a gentle glow."
+      }
+    },
+    {
+      "scene": 6,
+      "file": "automation/production-assets/felix-firefly-final-lantern-v1.png",
+      "sha256": "f3406ff0bb35f0cb1d1d07bcc4a508318ff38e2b46c13a64ca2e3c0639e6646b",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "character_identity_preserved": true,
+        "materially_new_arch_symmetry": true,
+        "physical_gold_blue_gold_blue_order_correct": true,
+        "exact_total_lantern_count_three": true,
+        "all_three_lanterns_lit": true,
+        "parade_or_finale_crowd_absent": true,
+        "generated_text_or_watermark_absent": true
+      }
+    },
+    {
+      "scene": 7,
+      "file": "automation/production-assets/felix-firefly-path-procession-v1.png",
+      "sha256": "aaa761b176aa65dab44263b1894ad0d0085261f4f886735c96cc419a3eeb99c7",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "materially_new_side_follow_composition": true,
+        "trio_identity_and_motion_direction_preserved": true,
+        "squirrel_and_mole_remain_secondary": true,
+        "exact_total_lantern_count_three": true,
+        "full_finale_staging_absent": true,
+        "generated_text_or_watermark_absent": true
+      }
+    },
+    {
+      "scene": 8,
+      "file": "automation/production-assets/felix-firefly-parade-finale-v1.png",
+      "sha256": "0156dc8cfbf370659734eca3de6fcb1e98cf2543f5726fe01b7475ee61191ac7",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "character_identity_preserved": true,
+        "materially_new_clearing_finale": true,
+        "exact_six_pattern_tiles": true,
+        "near_gold_blue_gold_order_correct": true,
+        "far_blue_gold_blue_order_correct": true,
+        "exact_total_lantern_count_three": true,
+        "real_seedpod_drum_and_acorn_rattles_visible": true,
+        "generated_text_or_watermark_absent": true,
+        "notes": "The first finale generation was rejected for eight tiles and four lanterns. The accepted precision edit has exactly two three-leaf patterns and three hanging lanterns, with the distant arch unlit."
+      }
     }
   ],
-  "status": "scenes-1-through-4-accepted-scenes-5-through-8-pending"
+  "status": "all-eight-scenes-accepted-producer-and-final-quality-evidence-pending"
 }
