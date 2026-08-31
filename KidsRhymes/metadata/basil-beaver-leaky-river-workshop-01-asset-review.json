@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "basil-beaver-leaky-river-workshop-01",
+  "reviewed_at": "2026-08-31",
+  "review_method": "Each full-resolution generation was inspected when created, then all nine accepted scenes were reviewed together in chronological order on automation/production-work/basil-beaver-leaky-river-workshop-01/asset-contact-sheet.png.",
+  "accepted_assets": [
+    {"scene": 1, "file": "automation/production-assets/basil-beaver-opening-v1.png", "sha256": "e1700d86887ed1bc82920ddebf42ffb501d06b058faa6e12f0951c8e41325ff9", "review": "One readable leak, stopped blue wheel, stable cast and open stream with two fish."},
+    {"scene": 2, "file": "automation/production-assets/basil-beaver-materials-v1.png", "sha256": "f574cfb478874fe2a30472afa1fecd0b338fac73f94fafcbf286f4b17cde23a9", "review": "Exactly one leaf, three stones, five sticks and one clay bowl are separated and readable."},
+    {"scene": 3, "file": "automation/production-assets/basil-beaver-leaf-test-v1.png", "sha256": "7215e1edd3e7c5eae284f6bdf5f8cd2e01caf490e3511e309701d8792afac394", "review": "The same single leaf visibly floats toward Pippa's catch basket; wheel stays stopped."},
+    {"scene": 4, "file": "automation/production-assets/basil-beaver-stone-test-v1.png", "sha256": "2f2c5554080a7abfa243695fd351b4455d351f43d4e736a541ef9a1d620efe39", "review": "Exactly three planted stones remain stable while visible water threads the gaps."},
+    {"scene": 5, "file": "automation/production-assets/basil-beaver-stick-frame-v1.png", "sha256": "ab03023879fb067c3407e0796f2e86c3be55394c8cf51774502ecd1c9acdf754", "review": "Corrected frame has exactly three vertical plus two horizontal sticks; water remains visible through openings."},
+    {"scene": 6, "file": "automation/production-assets/basil-beaver-reed-weave-v1.png", "sha256": "659f4100def30f069dba944cca684c4159da480076121d681b37a2322f27822a", "review": "Over-under reed weave is visible inside the same five-stick frame and flow is reduced to droplets."},
+    {"scene": 7, "file": "automation/production-assets/basil-beaver-clay-seal-v1.png", "sha256": "1f90d86c134d931bff7636f7791f8b477bb22b597826b2c91eecefce0a97948d", "review": "Clay seals only constructed-panel edges while Moss and two fish preserve the open-stream safety message."},
+    {"scene": 8, "file": "automation/production-assets/basil-beaver-flow-success-v1.png", "sha256": "2bafcbe000a2682228e0bbd8d82eec0b302908a936a6f8ca4a8dbc46b81cb3ea", "review": "First wheel-motion payoff follows the lifted mill gate; repaired panel is intact and fish passage stays open."},
+    {"scene": 9, "file": "automation/production-assets/basil-beaver-workshop-finale-v1.png", "sha256": "30c1bd0907866acfa2f5bbdb5d9b54f90822fd7c3525f5818b03dc86a8fb6b92", "review": "Final-only log notes, reed shaker and gourd drum create one restrained musical climax beside the working wheel."}
+  ],
+  "rejected_generations": [
+    {"scene": 5, "reason": "The first stick-frame generation contained more than five sticks and contradicted the count lyric; it was rejected and not copied into production assets."}
+  ],
+  "continuity_checks": {
+    "character_identity_preserved": true,
+    "material_cause_and_effect_readable": true,
+    "blue_wheel_stopped_until_scene_8": true,
+    "natural_stream_and_fish_passage_open": true,
+    "finale_only_in_scene_9": true,
+    "generated_text_or_watermark_present": false
+  },
+  "status": "accepted-hash-locked-ready-for-production"
+}

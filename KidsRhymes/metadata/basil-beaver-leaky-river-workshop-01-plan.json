@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "id": "basil-beaver-leaky-river-workshop-01",
+  "title": "Basil Beaver's Leaky River Workshop | Engineering Story for Kids",
+  "audience": "children ages 3-7",
+  "target_duration_seconds": 102.2,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 88,
+    "beats_per_bar": 4,
+    "scene_bars": 4,
+    "scene_seconds": 10.909091,
+    "scene_count": 9,
+    "resolve_seconds": 4.0,
+    "personality": "playful tactile workshop groove",
+    "emotional_arrangement": "marimba and plucked strings for discovery; hollow wood percussion for tests; gentle low strings for failed attempts; bright whistle, hand percussion and flowing-water rhythm for the successful finale"
+  },
+  "voices": {
+    "lead": "ryan-uk",
+    "basil": "ana-us",
+    "pippa_duck": "maisie-uk",
+    "delivery": "melodic engineering story-song with acted reactions; no flat narration"
+  },
+  "pacing": {
+    "maximum_phrases_per_scene": 3,
+    "target_weighted_wpm": 125,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "continuity": {
+    "basil": "chestnut beaver child with broad flat tail, cream muzzle and belly, teal canvas apron, rolled mustard sleeves and small brown tool belt",
+    "pippa": "small golden-yellow duck child in a coral neckerchief",
+    "moss": "tiny moss-green frog with an indigo cap",
+    "workshop": "miniature timber riverside workshop with a blue wooden waterwheel and a narrow stone-lined mill channel beside the untouched main stream",
+    "environment_rule": "The repair affects only the constructed mill channel. The natural main stream and fish passage remain visibly open throughout."
+  },
+  "scenes": [
+    {"scene": 1, "action": "Basil discovers water escaping from a cracked mill-channel wall while the blue waterwheel stands still; Pippa points and Moss watches from a dry stone.", "lyrics": ["River light wakes the workshop door.", "Silver water leaps through the wall.", "Basil gasps, our wheel is still!"], "hero": "one clear sparkling leak and the stopped wheel", "emotion": "comic surprise"},
+    {"scene": 2, "action": "At an outdoor workbench Basil lays out exactly four test materials: one broad leaf, three rounded stones, five forked sticks and one bowl of clay.", "lyrics": ["Leaf, stone, stick, clay wait near.", "Which will float? What will stay?", "Let's test gently, one by one."], "hero": "four readable tactile material groups", "emotion": "curious planning"},
+    {"scene": 3, "action": "The broad leaf is placed over the crack, floats for a moment, then washes safely into Basil's catch basket.", "lyrics": ["Green leaf lands on sparkling water.", "Up it lifts, then sails away.", "Pippa catches our floating clue."], "hero": "leaf visibly floating away", "emotion": "light comic failure"},
+    {"scene": 4, "action": "Three stones sink and stay planted, but narrow blue streams remain visible through the gaps.", "lyrics": ["Three round stones sink and stay.", "They stay strong, but look between.", "Little streams still slip on through."], "hero": "sink versus flow-through", "emotion": "thoughtful discovery"},
+    {"scene": 5, "action": "Five forked sticks become a sturdy frame across the constructed crack while water still trickles between them.", "lyrics": ["Five forked sticks form one frame.", "Tie them tight; test the flow.", "Water threads the open spaces."], "hero": "stable wooden frame with remaining leak", "emotion": "growing confidence"},
+    {"scene": 6, "action": "Basil and Pippa weave reeds through the stick frame; the leak slows to a few droplets but does not stop.", "lyrics": ["Reeds go over, reeds go under.", "Pull snug and watch the drops.", "Slower now, but not quite sealed."], "hero": "clear before-and-after reduction in flow", "emotion": "careful teamwork"},
+    {"scene": 7, "action": "Basil presses clay around the outside edges while Pippa supports the reed panel and Moss checks the open main stream.", "lyrics": ["Soft brown clay hugs every edge.", "Press gently and hold it still.", "One last drop, then quiet stone."], "hero": "clay sealing the frame edges", "emotion": "focused final effort"},
+    {"scene": 8, "action": "Basil lifts the small wooden mill gate; water follows the repaired clear channel, the wheel turns, and the main stream remains open beside it.", "lyrics": ["Lift the gate; the channel gleams.", "Round goes Basil's blue waterwheel.", "Fish swim freely in the stream."], "hero": "controlled water flow turning the blue wheel", "emotion": "relief and delight"},
+    {"scene": 9, "action": "At golden hour the three friends make a gentle workshop rhythm while the turning wheel splashes in time; the repaired panel remains visible and stable.", "lyrics": ["Wood dances with reed and drum.", "Test, improve, and try once more.", "Working together makes it flow."], "hero": "one joyful water-powered musical climax", "emotion": "proud flowing-river finale"}
+  ],
+  "quality_requirements": [
+    "Basil, Pippa, Moss, the blue wheel and the constructed mill channel retain exact identity and layout continuity.",
+    "Every material behaves truthfully: leaf floats, stones sink with gaps, sticks frame, reeds slow, clay seals.",
+    "The untouched main stream and fish passage remain visibly open; the story never recommends blocking a natural river.",
+    "Exactly one focal test action occurs per scene and the visible result matches the sung phrase.",
+    "Real water, leaf, stone, wood, reed, clay, gate and wheel effects replace spoken imitation words.",
+    "The turning wheel and musical celebration appear only after the successful repair.",
+    "All shared gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "published-and-live-readback-verified"
+}

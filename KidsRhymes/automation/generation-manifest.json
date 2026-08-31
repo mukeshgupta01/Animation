@@ -481,6 +481,28 @@
         "tags": ["pattern song for kids", "firefly story", "colours for kids", "friendship story", "woodland animals", "musical story for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "basil-beaver-leaky-river-workshop-01",
+      "name": "Basil Beaver's Leaky River Workshop",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_basil_beaver_workshop.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/basil-beaver-leaky-river-workshop-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "physical-cause-and-effect-engineering-musical",
+      "visual_system": "nine-premium-tactile-3d-river-workshop-compositions-with-material-and-flow-continuity",
+      "interaction_style": "predict-float-sink-frame-weave-seal-and-verify-open-fish-passage",
+      "voice_profile": "ryan-uk",
+      "youtube": {
+        "title": "Basil Beaver's Leaky River Workshop | Engineering Story for Kids",
+        "description": "Basil, Pippa and Moss test leaves, stones, sticks, reeds and clay to repair a leaky workshop channel while keeping the natural river open for fish.\n\nAn original Tiny Tales musical engineering story about floating, sinking, flow, careful testing and teamwork for children ages 3 to 7.",
+        "tags": ["engineering for kids", "beaver story", "float and sink", "water flow for kids", "teamwork story", "musical story for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }
