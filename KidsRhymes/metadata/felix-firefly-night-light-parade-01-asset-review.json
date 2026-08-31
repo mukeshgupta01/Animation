@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "id": "felix-firefly-night-light-parade-01",
+  "assets": [
+    {
+      "scene": 1,
+      "file": "automation/production-assets/felix-firefly-opening-v1.png",
+      "sha256": "fd7fed8c51c16ef89b2f7defdec3d43f10afda870bde5e22a7b5c185f74fe36f",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "character_appeal": true,
+        "tactile_dimensional_materials": true,
+        "integrated_lighting": true,
+        "foreground_midground_background_depth": true,
+        "single_focal_action": true,
+        "exact_character_count": true,
+        "exact_total_lantern_count_three": true,
+        "generated_text_or_watermark_absent": true,
+        "notes": "The first generation was rejected for four total lanterns. The accepted precision edit preserves the premium composition and has exactly three total unlit leaf lanterns: held, foreground and distant."
+      }
+    },
+    {
+      "scene": 2,
+      "file": "automation/production-assets/felix-firefly-gold-blue-gold-v1.png",
+      "sha256": "30e9f94af27a01d74589a55102a1cc5ce1b24d8d73f385a5457516d1d2f490bc",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "character_identity_preserved": true,
+        "materially_new_pose_and_composition": true,
+        "physical_gold_blue_gold_order_correct": true,
+        "exact_total_lantern_count_three": true,
+        "exactly_one_path_lantern_lit": true,
+        "single_focal_action": true,
+        "generated_text_or_watermark_absent": true,
+        "notes": "Low three-quarter view makes Rabbit and the three tactile stepping leaves the hero. Felix points in a different hover pose; Hedgehog and two unlit lanterns remain secondary."
+      }
+    },
+    {
+      "scene": 3,
+      "file": "automation/production-assets/felix-firefly-blue-gold-blue-v1.png",
+      "sha256": "11ebf74104ac3da1f90f1ef50acb16ff65f9ec48873dd6b97fd5c9fd396e6b7e",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "character_identity_preserved": true,
+        "materially_new_pose_and_side_tracking_composition": true,
+        "physical_blue_gold_blue_order_correct": true,
+        "hedgehog_has_planted_step_and_secure_lantern_hold": true,
+        "exact_total_lantern_count_three": true,
+        "exactly_two_path_lanterns_lit": true,
+        "generated_text_or_watermark_absent": true,
+        "notes": "Hedgehog owns the foreground action, Felix uses a new rhythm-marking hover and Rabbit follows with a distinct running pose."
+      }
+    },
+    {
+      "scene": 4,
+      "file": "automation/production-assets/felix-firefly-hidden-pattern-v1.png",
+      "sha256": "192b096aadfd16814b9bba40a38f0730430390ba927630b5fe4e1171177eae03",
+      "resolution": "1672x941",
+      "review": {
+        "accepted": true,
+        "character_identity_preserved": true,
+        "materially_new_high_three_quarter_composition": true,
+        "ordinary_leaves_physically_cover_pattern": true,
+        "underlying_blue_gold_blue_route_remains_readable": true,
+        "exact_total_lantern_count_three": true,
+        "exactly_two_path_lanterns_lit": true,
+        "safe_child_friendly_complication": true,
+        "generated_text_or_watermark_absent": true,
+        "notes": "The complication is visibly caused by ordinary windblown leaves. Felix sings, Rabbit points and Hedgehog uncovers a blue edge in three distinct new poses."
+      }
+    }
+  ],
+  "status": "scenes-1-through-4-accepted-scenes-5-through-8-pending"
+}

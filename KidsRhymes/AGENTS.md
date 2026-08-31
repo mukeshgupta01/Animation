@@ -21,6 +21,7 @@ Safety requirements:
 - Preserve the editorial rules and user preferences recorded in `PROJECT-HANDOFF.md`.
 - The animal-shadow guessing format was retired by the user on 2026-08-23. Preserve historical outputs, but do not render, queue, upload or schedule any new shadow-format video.
 - When a successful Tiny Tales concept is extended, preserve only its broad learning mechanic. Do not make the same episode with a different animal. Change the principal characters, connected narrative, setting progression, actions, original song, interaction pattern, shot compositions and payoff. The user explicitly prioritizes better-looking visuals over rapid template reuse; reject flat UI-like props, repeated character poses and obvious background swaps before rendering or upload.
+- The user explicitly authorized creation and direct public/made-for-kids upload of all fifteen episodes in `metadata/premium-musical-video-set-2026-08-31.json`. This is production authorization, not permission to bypass review: each item must independently pass every shared and project upload gate before release.
 
 At the beginning of a continuation, report the verified live state and any difference from the handoff before making material changes.
 

@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "id": "felix-firefly-night-light-parade-01",
+  "title": "Felix Firefly's Night-Light Parade | Pattern Story for Kids",
+  "audience": "children ages 3-7",
+  "duration_seconds": 88.0,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 92,
+    "beat_one_offset_seconds": 0.0,
+    "beats_per_bar": 4,
+    "scene_bars": 4,
+    "scene_seconds": 10.434783,
+    "scene_count": 8,
+    "resolve_seconds": 4.521736,
+    "personality": "playful kinetic-soft",
+    "transition_family": "hard cut on matched glow direction with occasional sound-leading J-cut",
+    "emotional_arrangement": "soft celesta and brushed frame drum opening; pizzicato curiosity; muted low strings during Felix's dim moment; bells, hand percussion and warm chorus at the parade climax"
+  },
+  "voices": {
+    "lead": "ana-us",
+    "felix": "ryan-uk",
+    "rabbit": "maisie-uk",
+    "delivery": "melodic story-song with acted character phrases; no flat narrator"
+  },
+  "pacing": {
+    "maximum_phrases_per_scene": 3,
+    "target_weighted_wpm": 120,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "composition": {
+    "frame": "16:9 with 5 percent title-safe margin, 12-column grid and 8-pixel baseline",
+    "hierarchy": "one luminous focal action per shot; Felix is primary, friend reaction is secondary, foliage is ambient",
+    "depth": "foreground foliage 1.2x, character/path midground 0.6x, moonlit forest background 0.2x parallax",
+    "camera": "one slow push or follow per phrase, never push-pan-rotate together"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "contrast": "dark path / one warm guide",
+      "action": "Felix finds Rabbit and Hedgehog waiting beside exactly three unlit leaf lanterns.",
+      "lyrics": ["Moonlight rests on the woodland trail.", "Three little lanterns have lost their glow.", "Felix says, we can light the way."],
+      "hero": "Felix's warm hover glow",
+      "asset": "automation/production-assets/felix-firefly-opening-v1.png"
+    },
+    {
+      "scene": 2,
+      "contrast": "gold / blue / gold pattern",
+      "action": "Felix demonstrates gold-blue-gold over three physical stepping leaves; Rabbit repeats it and the first lantern lights.",
+      "lyrics": ["Glow gold, then blue, then gold again.", "Rabbit taps the pattern slowly.", "The first leaf lantern shines awake."],
+      "hero": "three readable colour steps leading to one lit lantern"
+    },
+    {
+      "scene": 3,
+      "contrast": "blue / gold / blue pattern",
+      "action": "Hedgehog carries the small lantern through blue-gold-blue pools; the second path lantern lights.",
+      "lyrics": ["Blue, gold, blue along the moss.", "Hedgehog walks each colour with care.", "A second lantern warms the trail."],
+      "hero": "Hedgehog's planted steps and carried lantern"
+    },
+    {
+      "scene": 4,
+      "contrast": "remember / repeat",
+      "action": "The wind hides the stepping-leaf colours. Children repeat both patterns while Felix points to the same physical route.",
+      "lyrics": ["The breeze has covered every clue.", "Can you sing the colours with us?", "Gold-blue-gold, then blue-gold-blue."],
+      "hero": "leaves revealed one at a time by the sung pattern"
+    },
+    {
+      "scene": 5,
+      "contrast": "dim / supported",
+      "action": "Felix's light becomes small after guiding everyone. Rabbit shelters him with a leaf while Hedgehog raises the first two lanterns nearby.",
+      "lyrics": ["Felix's tiny light grows tired.", "Friends bring shelter, warmth and time.", "A quiet glow can still be brave."],
+      "hero": "Felix resting safely under one leaf shelter"
+    },
+    {
+      "scene": 6,
+      "contrast": "individual beats / combined pattern",
+      "action": "Felix and friends combine gold-blue-gold-blue into one four-beat pattern that lights the third lantern and arch.",
+      "lyrics": ["One friend starts, and one joins in.", "Gold-blue-gold-blue, steady and bright.", "The final lantern opens the way."],
+      "hero": "third lantern illuminating exactly on the fourth beat"
+    },
+    {
+      "scene": 7,
+      "contrast": "waiting / moving together",
+      "action": "Rabbit, Hedgehog and Felix follow the three lit lanterns; woodland neighbours join behind without overtaking the trio.",
+      "lyrics": ["Three warm lanterns guide the woodland.", "Little feet and wings move together.", "Every pattern leads us home."],
+      "hero": "trio moving left-to-right through the lantern arch"
+    },
+    {
+      "scene": 8,
+      "contrast": "quiet beginning / radiant parade",
+      "action": "The lantern path becomes a restrained woodland parade; both learned patterns return in the original final song.",
+      "lyrics": ["Gold-blue-gold, our lights remember.", "Blue-gold-blue, our friends stay near.", "Shine together through the night."],
+      "hero": "Felix leads one radiant musical climax and lands in a stable final pose"
+    }
+  ],
+  "quality_requirements": [
+    "Exactly three story lanterns remain traceable across all scenes.",
+    "Felix, Rabbit and Hedgehog retain their opening identities and tactile material treatment.",
+    "Every visible colour pattern matches the sung order for the full phrase.",
+    "No lantern lights before its narrated pattern succeeds.",
+    "Felix's dim moment is tender and safe, never frightening or medicalized.",
+    "Real wing, leaf, step, lantern and wind effects replace spoken imitation words.",
+    "The parade and final-song staging appear only in scene 8.",
+    "All shared set gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "production-started-opening-asset-accepted"
+}
