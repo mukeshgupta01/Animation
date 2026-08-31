@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "id": "gus-gecko-upside-down-museum-01",
+  "reviewed_at": "2026-08-31",
+  "review_method": "Each full-resolution frame was inspected on creation, then all nine accepted scenes were reviewed chronologically on automation/production-work/gus-gecko-upside-down-museum-01/asset-contact-sheet.png.",
+  "accepted_assets": [
+    {"scene": 1, "file": "automation/production-assets/gus-gecko-opening-v1.png", "sha256": "6fb685260d298cb42d99c31af764cc5f3dae5f38977e4e424f01a86e7dd6728e", "review": "Exactly four displaced treasures, one stopped trolley, one Gus and one Mara on a level museum floor."},
+    {"scene": 2, "file": "automation/production-assets/gus-gecko-placement-clues-v1.png", "sha256": "87cb35a333e30307d5c0a304724ee92e41d04b3cb2b48354b4af07c0f0092991", "review": "Four physical bays use real brackets, shelves and plinths rather than labels, cards or silhouettes."},
+    {"scene": 3, "file": "automation/production-assets/gus-gecko-above-v1.png", "sha256": "55eabb18cb8a3cbda17eea91794f4ed2a0705dc1ad371915e3890466f14f6e53", "review": "Golden moth is unmistakably above moonstone; ladder and toe contact are believable."},
+    {"scene": 4, "file": "automation/production-assets/gus-gecko-below-v1.png", "sha256": "5ec075143d5cdd804c0e60c69136dddfd7782517785f0f67999adbd859b4df94", "review": "Fern fossil is unmistakably below blue crystal while the room horizon remains level."},
+    {"scene": 5, "file": "automation/production-assets/gus-gecko-beside-v1.png", "sha256": "0b120bd001a55bf167315260c254577f6082ce71dbbe0d4da2d9083fce11a61e", "review": "Amber beetle case and blue shell share one height and read clearly as beside."},
+    {"scene": 6, "file": "automation/production-assets/gus-gecko-between-v1.png", "sha256": "0bd0719e1f088a65b417cbddfc840bf4557bd5a8a5a29620f836df25580a4ded", "review": "One moon-seed is centered between exactly two stone birds with readable rope tension."},
+    {"scene": 7, "file": "automation/production-assets/gus-gecko-front-behind-v1.png", "sha256": "9a9e6453995b6e2d32b643ce73587c333d4d67eac759b89c51b9a4864d25b7a2", "review": "Gus and compass are in front of the transparent globe; Mara is visibly behind it."},
+    {"scene": 8, "file": "automation/production-assets/gus-gecko-gallery-audit-v1.png", "sha256": "66bfb7fd1574bdc31f04e103918e6df0f4b5b5aeacc16ac2e1b5bd8a4f452954", "review": "Corrected four-bay audit preserves above, below, beside and between simultaneously with an empty floor and stable horizon."},
+    {"scene": 9, "file": "automation/production-assets/gus-gecko-gallery-finale-v1.png", "sha256": "b810e2cfc4835a102faa976244f89c51009cc63bc12abdb7283f5fdbca4f5dd3", "review": "Gus lands on the floor, visitors appear only now, and the elegant musical reopening leaves learned positions visible."}
+  ],
+  "rejected_generations": [
+    {"scene": 8, "reason": "The first wide audit placed the amber beetle above rather than beside the shell and left treasures on the trolley; it was rejected and not copied into production assets."}
+  ],
+  "continuity_checks": {
+    "gus_and_mara_identity_preserved": true,
+    "stable_architectural_horizon_preserved": true,
+    "position_relationships_match_story": true,
+    "connected_restoration_not_guessing_format": true,
+    "visitors_only_in_scene_9": true,
+    "generated_text_or_watermark_present": false
+  },
+  "status": "accepted-hash-locked-ready-for-production"
+}

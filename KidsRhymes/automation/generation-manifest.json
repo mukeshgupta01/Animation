@@ -503,6 +503,28 @@
         "tags": ["engineering for kids", "beaver story", "float and sink", "water flow for kids", "teamwork story", "musical story for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "gus-gecko-upside-down-museum-01",
+      "name": "Gus Gecko's Upside-Down Museum",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_gus_gecko_museum.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/gus-gecko-upside-down-museum-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "spatial-language-museum-caper",
+      "visual_system": "nine-jewel-toned-museum-compositions-with-stable-architecture-and-physical-position-relationships",
+      "interaction_style": "restore-above-below-beside-between-front-and-behind-with-stable-clues",
+      "voice_profile": "natasha-au",
+      "youtube": {
+        "title": "Gus Gecko's Upside-Down Museum | Position Words for Kids",
+        "description": "Gus Gecko climbs through a moonlit museum to return treasures above, below, beside, between, in front and behind while Mara Owl keeps every clue steady.\n\nAn original Tiny Tales musical story about position words, careful observation and helping for children ages 3 to 7.",
+        "tags": ["position words for kids", "gecko story", "above and below", "beside and between", "museum for kids", "musical story for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "id": "gus-gecko-upside-down-museum-01",
+  "title": "Gus Gecko's Upside-Down Museum | Position Words for Kids",
+  "audience": "children ages 3-7",
+  "target_duration_seconds": 94.0,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 96,
+    "beats_per_bar": 4,
+    "scene_bars": 4,
+    "scene_seconds": 10.0,
+    "scene_count": 9,
+    "resolve_seconds": 4.0,
+    "personality": "playful precise museum caper",
+    "emotional_arrangement": "pizzicato strings and glass harmonica for discovery; bass clarinet curiosity during restoration; brushed snare and celesta lift at each correct placement; elegant chamber-dance finale"
+  },
+  "voices": {
+    "lead": "natasha-au",
+    "gus": "ana-us",
+    "mara_owl": "ryan-uk",
+    "delivery": "melodic spatial-language caper with acted character phrases; no flat narration"
+  },
+  "pacing": {
+    "maximum_phrases_per_scene": 3,
+    "target_weighted_wpm": 125,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "continuity": {
+    "gus": "small emerald-turquoise gecko child with orange toe pads, large amber eyes and plum velvet museum waistcoat with brass trim",
+    "mara": "one dusky-lavender owl curator with round spectacles, burgundy scarf and a tiny brass key ring",
+    "museum": "grand jewel-toned natural-history gallery with indigo walls, carved walnut cases, warm brass rails, patterned marble floor and four stable glowing archways",
+    "camera_rule": "Architecture and floor horizon remain stable. Gus changes surface orientation; the camera performs at most one restrained orientation adjustment per scene."
+  },
+  "scenes": [
+    {"scene": 1, "action": "Gus and Mara discover four displaced exhibits after a rolling display trolley stops: golden moth model, fern fossil tile, amber beetle case and moon-seed sculpture.", "lyrics": ["Moonlight gleams through the museum hall.", "Four treasures slipped from their places.", "Gus says, I'll climb and help!"], "hero": "four distinct displaced treasures beside one stopped trolley", "emotion": "mischievous discovery"},
+    {"scene": 2, "action": "Mara opens four empty display bays while Gus studies their physical brackets and plinths without labels or guessing silhouettes.", "lyrics": ["Every treasure has a place.", "Look at brackets, rails, and spaces.", "Position words will guide our climb."], "hero": "physical mounting clues and Gus planning a safe route", "emotion": "focused orientation"},
+    {"scene": 3, "action": "Gus climbs a stable wall ladder and places the golden moth model above the round moonstone plinth.", "lyrics": ["Golden wings travel up the wall.", "Above means higher than the stone.", "Moth shines above the moonstone."], "hero": "clear vertical above relationship", "emotion": "first confident success"},
+    {"scene": 4, "action": "Gus hangs beneath a broad shelf and slides the fern fossil tile below a tall crystal specimen.", "lyrics": ["Gus pads softly under the shelf.", "Below means lower than the crystal.", "Fern rests below, snug and still."], "hero": "clear below relationship with stable horizon", "emotion": "controlled upside-down play"},
+    {"scene": 5, "action": "Gus walks along a brass side rail and sets the amber beetle case beside a blue shell display.", "lyrics": ["Amber beetle rides the side rail.", "Beside means next to a friend.", "Beetle rests beside blue shell."], "hero": "two exhibits side by side with visible space", "emotion": "lively precision"},
+    {"scene": 6, "action": "Gus lowers the moon-seed sculpture between two carved stone birds on one long plinth.", "lyrics": ["Moon-seed swings on safe ribbon.", "Between means in the middle place.", "Seed settles between two birds."], "hero": "one object centered between exactly two anchors", "emotion": "careful suspense and relief"},
+    {"scene": 7, "action": "Mara stands behind a glass globe while Gus places a small compass in front of it, creating a readable depth pair.", "lyrics": ["Mara waits behind the clear globe.", "Compass lands in front, close by.", "Behind and front make depth."], "hero": "one transparent globe proving front and behind", "emotion": "warm shared discovery"},
+    {"scene": 8, "action": "Gus walks the ceiling path to inspect all restored positions while Mara checks them from the floor and opens the gallery doors.", "lyrics": ["Above, below, beside, between.", "Front and behind are now placed.", "Gus climbs down; doors swing wide."], "hero": "all relationships readable in one coherent gallery", "emotion": "elegant completion"},
+    {"scene": 9, "action": "Visitors enter as Gus and Mara perform a restrained chamber rhythm beneath the restored displays; Gus lands on the floor for the final pose.", "lyrics": ["Find its place; sing the word.", "Turn your view; keep clues steady.", "Every treasure now feels home."], "hero": "one graceful gallery-reopening musical climax", "emotion": "joyful museum reopening"}
+  ],
+  "quality_requirements": [
+    "Gus, Mara, all six named exhibits and the gallery architecture retain exact identity and scale.",
+    "Every spatial word is shown by physical placement before or during its exact sung phrase.",
+    "The floor horizon and at least two architectural anchors stay stable in every scene; no disorienting continuous camera roll.",
+    "This is a connected restoration caper, not a silhouette, shadow, matching-card or guessing format.",
+    "Gus has believable toe contact on wall, rail, shelf or ceiling and lands on the floor for the final pose.",
+    "Real trolley, toe, bracket, rail, ribbon, case, door and gallery effects replace spoken imitation words.",
+    "Visitors and musical-reopening staging appear only in scene 9.",
+    "All shared gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "published-and-live-readback-verified"
+}
