@@ -4,7 +4,7 @@ Updated: 2026-09-01
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 70.
+Known completed or queued video concepts: 71.
 
 ## Topic index
 
@@ -78,3 +78,4 @@ Known completed or queued video concepts: 70.
 - Who Ate the Snack? | 6 Fun Animal Food Clues for Kids — `who-ate-the-snack-episode-01` — archived/uploaded
 - Wild Animal Find My Home | Habitat Rescue Adventure for Kids — `wild-animal-find-my-home-01` — archived/uploaded
 - Wild Baby Animal Family Album | Learn Baby Names for Kids — `wild-baby-animal-family-album-01` — archived/uploaded
+- Zara Zebra's Musical Crossing | Rhythm Story for Kids — `zara-zebra-musical-crossing-01` — archived/uploaded

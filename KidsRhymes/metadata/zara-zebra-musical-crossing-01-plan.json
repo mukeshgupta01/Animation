@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "id": "zara-zebra-musical-crossing-01",
+  "title": "Zara Zebra's Musical Crossing | Rhythm Story for Kids",
+  "audience": "children ages 3-7",
+  "target_duration_seconds": 95.8,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 100,
+    "beats_per_scene": 17,
+    "scene_seconds": 10.2,
+    "scene_count": 9,
+    "resolve_seconds": 4.0,
+    "personality": "colourful savannah street-band story-song with marimba, brass bells and hand percussion",
+    "emotional_arrangement": "curious marimba and gentle shaker at the empty road; measured bass pulses for stop-look-listen and construction; tuned brass notes as six stripes settle; friendly call-and-response from the curbs; a warm walking groove for the first crossing; full marimba, drum, bell, flute and chorus only in the finale"
+  },
+  "voices": {
+    "lead": "natasha-au",
+    "zara": "ana-us",
+    "nuru": "maisie-uk",
+    "delivery": "melodic acted road-safety story-song with expressive emotional variation, planted pauses and a fully sung final refrain; no flat reading"
+  },
+  "pacing": {
+    "maximum_phrases_per_scene": 3,
+    "target_weighted_wpm": 130,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "continuity": {
+    "zara": "one friendly young zebra with crisp black-and-cream stripes, warm brown eyes, coral-tipped upright mane, teal community-helper vest, coral wrist bands and tan satchel",
+    "nuru": "one small sandy meerkat with round teal glasses, mustard cap, plum clipboard and picture rhythm tokens",
+    "town": "one handcrafted terracotta savannah square with jacaranda trees, market awnings and raised curbs",
+    "crossing": "one straight row of exactly six broad ivory dimensional stripes; from scene 4 onward each stripe has one recessed brass resonator",
+    "traffic": "one coral and one turquoise hand-pulled market cart remain stopped behind physical wooden blocks whenever the crossing is occupied"
+  },
+  "scenes": [
+    {"scene": 1, "action": "Zara and Nuru study an empty road from the curb while both market carts wait behind wooden blocks and families remain on raised curbs.", "lyrics": ["Morning music fills the square.", "Carts wait; families need a path.", "Zara sings, let's build together!"], "hero": "the empty road and safe need", "emotion": "bright invitation"},
+    {"scene": 2, "action": "Zara demonstrates stop, look and listen entirely from the curb while Nuru holds three picture tokens and the carts remain blocked.", "lyrics": ["Stop on the curb, friends.", "Look left, right, then listen.", "Nuru marks the safest line."], "hero": "stop-look-listen sequence", "emotion": "playful attention"},
+    {"scene": 3, "action": "Inside a roped closed work zone, Zara, Nuru and helpers align exactly six broad ivory stripes in one straight crossing row.", "lyrics": ["One, two, three stripes settle.", "Four, five, six make music.", "Straight and wide across the road."], "hero": "six-stripe construction", "emotion": "purposeful counting"},
+    {"scene": 4, "action": "Each of the six stripes now holds one brass resonator; Zara taps the first and Nuru tunes the sixth while the road stays closed.", "lyrics": ["Zara taps the first warm note.", "Nuru tunes the sixth one.", "Six bright tones now answer."], "hero": "first-to-sixth tuning", "emotion": "musical discovery"},
+    {"scene": 5, "action": "Zara signals stop and Nuru checks the sight line; the crossing stays empty while both carts remain behind blocks and a stop line.", "lyrics": ["Carts stop behind the blocks.", "Empty crossing, sight lines clear.", "Test it twice before we cheer."], "hero": "verified empty safety test", "emotion": "careful confidence"},
+    {"scene": 6, "action": "With the road still roped closed, Zara plays a two-two pattern on the first two resonators and families copy with instruments from the curbs.", "lyrics": ["From the curbs, copy Zara.", "Two soft beats, then two.", "Every neighbor joins the rhythm."], "hero": "curb-only call and response", "emotion": "joyful participation"},
+    {"scene": 7, "action": "Exactly one gazelle parent and two children hold hands and cross together while Zara stops the carts and Nuru welcomes them at the destination curb.", "lyrics": ["Now one family holds hands.", "Slow safe steps make a melody.", "Nuru welcomes them across."], "hero": "first supervised family crossing", "emotion": "gentle courage"},
+    {"scene": 8, "action": "A single-file community procession carries small acoustic instruments across in one direction with spacing while carts remain stopped.", "lyrics": ["One direction, room between.", "Each safe step adds music.", "Kind neighbors march in time."], "hero": "orderly musical procession", "emotion": "earned momentum"},
+    {"scene": 9, "action": "With the street closed for the first full concert, Zara conducts while Nuru and the neighbors perform around all six glowing stripes.", "lyrics": ["Six bright stripes, sing together!", "Zara leads our town-wide band.", "Safe steps and strong beats, sing!"], "hero": "first full street-concert payoff", "emotion": "fantastic musical release"}
+  ],
+  "quality_requirements": [
+    "Zara, Nuru, costumes, carts, town geography and raised curbs retain identity across all nine scenes.",
+    "The crossing establishes exactly six stripes before any public crossing; one brass resonator per stripe appears from tuning onward.",
+    "Both carts remain behind visible physical blocks whenever the road or crossing is occupied.",
+    "Families stay on raised curbs through scene 6; exactly one supervised family group crosses first in scene 7.",
+    "The community procession remains single-direction and spaced; the first full concert occurs only in scene 9.",
+    "Real mallet, brass, cart, shaker, footstep, drum, flute and crowd effects replace all spoken imitation words.",
+    "The deterministic end card follows the concert as the final event.",
+    "All shared gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "published-and-live-readback-verified"
+}

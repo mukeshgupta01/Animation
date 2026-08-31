@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "id": "zara-zebra-musical-crossing-01",
+  "reviewed_at": "2026-09-01",
+  "review_method": "Each full-resolution frame was inspected on creation, then all nine accepted scenes were reviewed chronologically on automation/production-work/zara-zebra-musical-crossing-01/asset-contact-sheet.png.",
+  "generation_summary": {"image_generation_calls": 14, "accepted_assets": 9, "rejected_or_failed_generations": 5},
+  "accepted_assets": [
+    {"scene": 1, "file": "automation/production-assets/zara-zebra-opening-v1.png", "sha256": "d7196c3ea19e0a81090f082cdea5aa69b90c2a7658ba140f3a04e79dcffe5a06", "review": "Zara and Nuru remain on the curb, the lane is empty, both carts are blocked and families wait safely."},
+    {"scene": 2, "file": "automation/production-assets/zara-zebra-stop-look-listen-v1.png", "sha256": "544f57343e686fe414c3592995dd64ed0a0550ebd8b262e750c498b8f6fb176d", "review": "Zara's curb-side gesture and Nuru's three picture tokens create a readable stop-look-listen lesson."},
+    {"scene": 3, "file": "automation/production-assets/zara-zebra-six-stripes-v1.png", "sha256": "6d6102686b63a04f6d596a8aca5412f9a0cb71cd03347cf195e853b4f83c4c00", "review": "Exactly six broad ivory stripes form one straight row inside the roped work zone; no public crossing occurs."},
+    {"scene": 4, "file": "automation/production-assets/zara-zebra-tuned-stripes-v1.png", "sha256": "5f3b5f205a38488bb56cceb534ac8113b6a37b4447931a485a4a1d299b78ca72", "review": "Exactly six recessed brass resonators appear; Zara taps the first and Nuru tunes the sixth."},
+    {"scene": 5, "file": "automation/production-assets/zara-zebra-safety-test-v1.png", "sha256": "ba709f679b53cb3d05e613c30721ca0db842215db9bfd024643be769a28c5daf", "review": "Zara signals stop, Nuru checks the empty crossing, and both carts remain behind blocks."},
+    {"scene": 6, "file": "automation/production-assets/zara-zebra-curb-rhythm-v1.png", "sha256": "e4f945a33d94dfe8036995ffbfdcdb014195e5428fd563b5b500f678482c0526", "review": "Corrected frame retains exactly six panels; the first two glow while every audience member stays on a curb."},
+    {"scene": 7, "file": "automation/production-assets/zara-zebra-first-crossing-v1.png", "sha256": "aeaff63d4270088b1d1ef827fdbfba9e3b3cdb5b5d04806199d65171e93baf8c", "review": "One gazelle parent and two children hold hands across the six panels; waiting crowds and carts remain safely separated."},
+    {"scene": 8, "file": "automation/production-assets/zara-zebra-procession-v1.png", "sha256": "b1df7d86ac0c05b164f8f08fea97f9f7669f981c9b406a32ca2b44a930c9957b", "review": "Corrected frame restores exactly six panels and shows a spaced, one-direction instrumental procession with carts blocked."},
+    {"scene": 9, "file": "automation/production-assets/zara-zebra-finale-concert-v1.png", "sha256": "111a4a942c671b6b8e1805543686b9752b7e750d9d5b84721f3fd8368d5ba0fb", "review": "The first full concert appears only now; all six resonators glow and the street remains physically closed."}
+  ],
+  "continuity_checks": {
+    "zara_nuru_and_town_preserved": true,
+    "six_stripe_crossing_preserved": true,
+    "carts_blocked_when_crossing_occupied": true,
+    "curb_only_participation_before_first_crossing": true,
+    "single_family_crosses_first": true,
+    "full_concert_only_in_scene_9": true,
+    "generated_text_or_watermark_present": false
+  },
+  "status": "accepted-hash-locked-ready-for-production"
+}

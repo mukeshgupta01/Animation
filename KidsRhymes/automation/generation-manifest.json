@@ -587,6 +587,24 @@
         "tags": ["engineering for kids", "penguin story", "building a bridge", "balance for kids", "counting to three", "musical story for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "zara-zebra-musical-crossing-01",
+      "name": "Zara Zebra's Musical Crossing",
+      "command": ["C:\\Animation\\Animation\\.venv\\Scripts\\python.exe", "-B", "automation\\production\\produce_zara_zebra_crossing.py"],
+      "working_directory": ".",
+      "output": "automation/production-output/zara-zebra-musical-crossing-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "community road-safety rhythm construction story",
+      "visual_system": "nine-premium-cinematic-savannah-town-compositions-with-curb-cart-block-six-stripe-tuning-crossing-procession-and-concert-continuity",
+      "interaction_style": "stop-look-listen-count-six-copy-curb-rhythms-cross-as-one-family-and-process-in-one-direction",
+      "voice_profile": "natasha-au",
+      "youtube": {
+        "title": "Zara Zebra's Musical Crossing | Rhythm Story for Kids",
+        "description": "Zara Zebra and Nuru build six musical crossing stripes, test the road safely, guide one family across, then lead the whole savannah square in a joyful street-band finale.\n\nAn original Tiny Tales musical story about stop-look-listen, safe crossing, counting to six, rhythm and community teamwork for children ages 3 to 7.",
+        "tags": ["road safety for kids", "zebra story", "crossing the road", "counting to six", "rhythm for kids", "musical story for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }
