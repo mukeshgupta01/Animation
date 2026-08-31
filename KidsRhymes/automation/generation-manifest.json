@@ -459,6 +459,28 @@
         "tags": ["fruit song for kids", "orchard story", "counting to six", "patterns for kids", "food washing for kids", "teamwork story", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "felix-firefly-night-light-parade-01",
+      "name": "Felix Firefly's Night-Light Parade",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_felix_firefly_parade.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/felix-firefly-night-light-parade-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "connected-nocturnal-pattern-and-courage-story-song",
+      "visual_system": "eight-premium-tactile-3d-storybook-woodland-compositions-with-lantern-continuity",
+      "interaction_style": "sing-two-colour-patterns-support-a-friend-light-the-path-and-join-the-parade",
+      "voice_profile": "ana-us",
+      "youtube": {
+        "title": "Felix Firefly's Night-Light Parade | Pattern Story for Kids",
+        "description": "Felix helps Rabbit and Hedgehog remember two glowing colour patterns, care for one another and light a safe woodland path before their joyful night parade.\n\nAn original Tiny Tales musical story about patterns, courage, friendship and moving together for children ages 3 to 7.",
+        "tags": ["pattern song for kids", "firefly story", "colours for kids", "friendship story", "woodland animals", "musical story for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

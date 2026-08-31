@@ -41,7 +41,7 @@
       "scene": 1,
       "contrast": "dark path / one warm guide",
       "action": "Felix finds Rabbit and Hedgehog waiting beside exactly three unlit leaf lanterns.",
-      "lyrics": ["Moonlight rests on the woodland trail.", "Three little lanterns have lost their glow.", "Felix says, we can light the way."],
+      "lyrics": ["Moonlight rests on the woodland trail.", "Three lanterns have lost their glow.", "Felix says, let's light the way."],
       "hero": "Felix's warm hover glow",
       "asset": "automation/production-assets/felix-firefly-opening-v1.png"
     },
@@ -49,7 +49,7 @@
       "scene": 2,
       "contrast": "gold / blue / gold pattern",
       "action": "Felix demonstrates gold-blue-gold over three physical stepping leaves; Rabbit repeats it and the first lantern lights.",
-      "lyrics": ["Glow gold, then blue, then gold again.", "Rabbit taps the pattern slowly.", "The first leaf lantern shines awake."],
+      "lyrics": ["Gold, blue, then gold again.", "Rabbit taps the pattern slowly.", "The first leaf lantern shines awake."],
       "hero": "three readable colour steps leading to one lit lantern"
     },
     {
@@ -63,21 +63,21 @@
       "scene": 4,
       "contrast": "remember / repeat",
       "action": "The wind hides the stepping-leaf colours. Children repeat both patterns while Felix points to the same physical route.",
-      "lyrics": ["The breeze has covered every clue.", "Can you sing the colours with us?", "Gold-blue-gold, then blue-gold-blue."],
+      "lyrics": ["The breeze has covered every clue.", "Sing the colours with us.", "Gold-blue-gold; blue-gold-blue."],
       "hero": "leaves revealed one at a time by the sung pattern"
     },
     {
       "scene": 5,
       "contrast": "dim / supported",
       "action": "Felix's light becomes small after guiding everyone. Rabbit shelters him with a leaf while Hedgehog raises the first two lanterns nearby.",
-      "lyrics": ["Felix's tiny light grows tired.", "Friends bring shelter, warmth and time.", "A quiet glow can still be brave."],
+      "lyrics": ["Felix's tiny light grows tired.", "Friends bring shelter, warmth and time.", "A quiet glow is still brave."],
       "hero": "Felix resting safely under one leaf shelter"
     },
     {
       "scene": 6,
       "contrast": "individual beats / combined pattern",
       "action": "Felix and friends combine gold-blue-gold-blue into one four-beat pattern that lights the third lantern and arch.",
-      "lyrics": ["One friend starts, and one joins in.", "Gold-blue-gold-blue, steady and bright.", "The final lantern opens the way."],
+      "lyrics": ["One friend starts; another joins in.", "Gold-blue-gold-blue, shining bright.", "The final lantern opens the way."],
       "hero": "third lantern illuminating exactly on the fourth beat"
     },
     {
@@ -91,7 +91,7 @@
       "scene": 8,
       "contrast": "quiet beginning / radiant parade",
       "action": "The lantern path becomes a restrained woodland parade; both learned patterns return in the original final song.",
-      "lyrics": ["Gold-blue-gold, our lights remember.", "Blue-gold-blue, our friends stay near.", "Shine together through the night."],
+      "lyrics": ["Gold-blue-gold, our lights remember.", "Blue-gold-blue, friends stay near.", "Shine together through the night."],
       "hero": "Felix leads one radiant musical climax and lands in a stable final pose"
     }
   ],
@@ -105,5 +105,5 @@
     "The parade and final-song staging appear only in scene 8.",
     "All shared set gates in premium-musical-video-set-2026-08-31.json pass before release."
   ],
-  "status": "all-scene-assets-accepted-producer-pending"
+  "status": "published-and-live-readback-verified"
 }
