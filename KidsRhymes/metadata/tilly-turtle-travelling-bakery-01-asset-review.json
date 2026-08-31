@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "id": "tilly-turtle-travelling-bakery-01",
+  "reviewed_at": "2026-09-01",
+  "review_method": "Each full-resolution frame was inspected on creation, then all nine accepted scenes were reviewed chronologically on automation/production-work/tilly-turtle-travelling-bakery-01/asset-contact-sheet.png.",
+  "generation_summary": {"image_generation_calls": 13, "accepted_assets": 9, "rejected_or_unused_generations": 4},
+  "accepted_assets": [
+    {"scene": 1, "file": "automation/production-assets/tilly-turtle-opening-v1.png", "sha256": "6d5af46fb1e894e1f0cfe3056898ade3a46135cab4f2ab7c357a8002e28bf5f9", "review": "Tilly, Pip and the distinctive cart actively prepare warm steaming buns and cool berries at dawn."},
+    {"scene": 2, "file": "automation/production-assets/tilly-turtle-warm-cool-route-v1.png", "sha256": "e8e85f1987c1d27e77e2689f823a7dbdfd7307db685ac14339e79dc2c480c5fa", "review": "A rolling wheel connects the warm village and cool misty pier in one legible route composition."},
+    {"scene": 3, "file": "automation/production-assets/tilly-turtle-pier-choice-v1.png", "sha256": "05cb467d882223d6527306c54301bb6613a9ba3de04d213c55b460a973b99da8", "review": "The seal's warm soft bun choice is clear beside the cool condensed berry bowl."},
+    {"scene": 4, "file": "automation/production-assets/tilly-turtle-soft-crunchy-v1.png", "sha256": "75e9ff41b2689ff0c61a2e97bfbb0a83ac9f96f7141e2b230152d52e40320797", "review": "Only Tilly, Pip and the goat appear; Tilly visibly presses softness while the rigid breadsticks remain distinct."},
+    {"scene": 5, "file": "automation/production-assets/tilly-turtle-whole-half-mixup-v1.png", "sha256": "873c4521b117789f8cee0b37d9a6a119cd4c39e2da88a69cbf8d131b2177a0db", "review": "One intact round loaf conflicts clearly with two half-shaped plates and two half tokens without risky cutting imagery."},
+    {"scene": 6, "file": "automation/production-assets/tilly-turtle-two-halves-v1.png", "sha256": "78d65e08499a992d99c0cd57d833389c072a2a1a6d8d46b4c5ece59ffc45745b", "review": "Exactly two equal semicircular bread halves are safely delivered, one to each puffin."},
+    {"scene": 7, "file": "automation/production-assets/tilly-turtle-picnic-procession-v1.png", "sha256": "aa87e5dcc133c7a5cbc2826bfbbb8ec82b17761ac69346ee559da30eb010b2d5", "review": "Corrected procession preserves complementary puffin scarves and exact half-loaf geometry while every customer carries the established choice."},
+    {"scene": 8, "file": "automation/production-assets/tilly-turtle-opposites-picnic-v1.png", "sha256": "2bff4b8a696b896f69ce694af3699485ac2f2418c230fbded89f11a96e38d0de", "review": "Warm/cool, soft/crunchy and two separate halves are simultaneously visible before the performance begins."},
+    {"scene": 9, "file": "automation/production-assets/tilly-turtle-sunset-finale-v1.png", "sha256": "329d264a61df5275006dfd5fd53e93f68e1f8e2c92e6886952cf64d646e5c5f3", "review": "The first full ensemble payoff gives every character a truthful musical action while two bread halves remain correct."}
+  ],
+  "continuity_checks": {
+    "tilly_pip_and_cart_identity_preserved": true,
+    "opposite_foods_truthful": true,
+    "whole_to_two_equal_halves_preserved": true,
+    "customer_choices_preserved_in_procession": true,
+    "full_ensemble_performance_only_in_scene_9": true,
+    "unsafe_cutting_or_food_handling_present": false,
+    "generated_text_or_watermark_present": false
+  },
+  "status": "accepted-hash-locked-ready-for-production"
+}

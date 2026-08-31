@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "id": "tilly-turtle-travelling-bakery-01",
+  "title": "Tilly Turtle's Travelling Bakery | Opposites Story for Kids",
+  "audience": "children ages 3-7",
+  "target_duration_seconds": 92.2,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 98,
+    "beats_per_bar": 4,
+    "standard_scene_bars": 4,
+    "standard_scene_seconds": 9.795918,
+    "finale_scene_bars": 4,
+    "finale_scene_seconds": 9.795918,
+    "scene_count": 9,
+    "resolve_seconds": 4.0,
+    "personality": "rolling seaside bakery song with tactile food percussion",
+    "emotional_arrangement": "pizzicato strings and brushed wheel rhythm at dawn; marimba and hand percussion through the deliveries; a brief gentle harmonic pause at the mix-up; brass bell, breadstick taps, wheel brush and full sing-along at the sunset picnic"
+  },
+  "voices": {
+    "lead": "ana-us",
+    "tilly": "maisie-uk",
+    "pip_and_support": "ryan-uk",
+    "customers": "natasha-au",
+    "delivery": "bright melodic delivery with acted character choices and a fully sung final refrain; no flat reading"
+  },
+  "pacing": {
+    "maximum_phrases_per_standard_scene": 3,
+    "finale_phrases": 3,
+    "target_weighted_wpm": 125,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "continuity": {
+    "tilly": "one friendly jade-green turtle with warm hazel eyes, honey-amber domed shell patterned with cream spiral scutes, coral baker kerchief and ivory linen apron",
+    "pip": "one tiny sandy-brown sandpiper with navy cap and sky-blue delivery satchel",
+    "cart": "one coral-and-turquoise painted wooden bakery cart with striped fabric canopy, brass bell and large cream-rimmed wheels",
+    "customers": "one silver-grey seal pup in teal scarf, one cream young goat in mustard vest, and two puffin siblings in plum and sea-green scarves",
+    "food_truth": "warm soft bun, cool berry bowl, soft crescent roll, crunchy breadsticks, one whole seeded round loaf and exactly two matching semicircular halves",
+    "route": "bakery at dawn, warm-to-cool cliff lane, misty pier, lighthouse garden, cove cottage, downhill procession and sheltered sunset beach"
+  },
+  "scenes": [
+    {"scene": 1, "beats": 16, "action": "Tilly and Pip load the travelling cart at golden dawn, visibly separating warm steaming buns from a cool condensed berry bowl.", "lyrics": ["Morning warms the harbour gold.", "Buns are warm; berries cool.", "Roll with Tilly, round we go!"], "hero": "active cart preparation and first warm/cool contrast", "emotion": "busy cheerful invitation"},
+    {"scene": 2, "beats": 16, "action": "The cart rolls from the warm village light toward the cool blue mist of the pier while all food stays secured.", "lyrics": ["Warm sun fades to misty blue.", "Warm and cool ride safely through.", "Wheel turns; follow to the pier!"], "hero": "rolling wheel across warm and cool zones", "emotion": "buoyant travel"},
+    {"scene": 3, "beats": 16, "action": "At the pier the seal pup compares a warm soft bun with cool berries and politely chooses the bun.", "lyrics": ["Kiko sees two tasty choices.", "Warm soft bun, or berries cool?", "Warm and soft for me, please!"], "hero": "seal's visible warm/soft choice", "emotion": "friendly curiosity"},
+    {"scene": 4, "beats": 16, "action": "At the lighthouse garden Tilly presses a soft roll while Pip taps crunchy breadsticks; the goat chooses crunchy.", "lyrics": ["Marnie meets a texture pair.", "Soft roll here; crunchy sticks there.", "Crunchy sticks, please, Tilly!"], "hero": "soft dent versus rigid breadstick texture", "emotion": "playful discovery"},
+    {"scene": 5, "beats": 16, "action": "At the cove cottage Tilly discovers one whole loaf beside two puffins holding half-shaped plates; Pip checks two half tokens.", "lyrics": ["Two puffins wait by turquoise door.", "One whole loaf; two half plates.", "Pause and check the shapes."], "hero": "one whole circle versus two half plates", "emotion": "gentle mix-up"},
+    {"scene": 6, "beats": 16, "action": "The loaf is safely divided off-screen; Tilly places one equal semicircular half on each puffin's plate.", "lyrics": ["One whole becomes two halves.", "Equal pieces, one for each.", "Two happy halves fit perfectly!"], "hero": "two equal bread halves with matching crumb faces", "emotion": "warm problem-solving relief"},
+    {"scene": 7, "beats": 16, "action": "The customers carry their exact choices behind Tilly's rolling cart toward a shared sunset picnic.", "lyrics": ["Every neighbour joins the trail.", "Bring your choice; share at sunset.", "Bell leads everyone downhill!"], "hero": "connected moving procession with truthful foods", "emotion": "rising community joy"},
+    {"scene": 8, "beats": 16, "action": "Everyone arranges warm/cool, soft/crunchy and the two separate loaf halves side by side on the beach blanket.", "lyrics": ["Warm, cool; soft, crunchy.", "Two halves nearly make one whole.", "Opposite partners, side by side!"], "hero": "all three opposite pairs physically visible", "emotion": "anticipation before the song"},
+    {"scene": 9, "beats": 16, "action": "The first full bakery-band finale uses real bell, breadstick-tap, wheel-brush and clap effects while the puffins demonstrate two halves making one whole.", "lyrics": ["Warm or cool; soft or crunchy!", "Half plus half makes one whole!", "Roll with Tilly, share the treat!"], "hero": "active ensemble and sung opposites refrain", "emotion": "radiant shared sunset release"}
+  ],
+  "quality_requirements": [
+    "Tilly, Pip, the cart, customers, costumes and food shapes retain exact identity across the route.",
+    "Every sung opposite is visible for the whole matching phrase and remains physically truthful.",
+    "The whole/half mix-up appears only at the cove cottage and is corrected with exactly two equal semicircular halves; no cutting action is shown.",
+    "The picnic is set up in scene 8, but the first full ensemble performance is reserved for scene 9.",
+    "Real bell, breadstick-tap, wheel-brush and clap effects replace spoken imitation words.",
+    "No customer eats during comparison shots; choices are handled cleanly and safely.",
+    "The generated artwork contains no text; the deterministic end card appears only after the final scene.",
+    "All shared gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "published-and-live-readback-verified"
+}

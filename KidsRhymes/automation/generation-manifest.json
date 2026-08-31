@@ -547,6 +547,28 @@
         "tags": ["narwhal story for kids", "northern lights for kids", "colour song", "seal family story", "Arctic animals", "musical story for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "tilly-turtle-travelling-bakery-01",
+      "name": "Tilly Turtle's Travelling Bakery",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_tilly_turtle_bakery.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/tilly-turtle-travelling-bakery-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "seaside delivery and food-texture musical",
+      "visual_system": "nine-premium-stop-motion-inspired-coastal-bakery-compositions-with-cart-customer-food-and-route-continuity",
+      "interaction_style": "compare-warm-cool-soft-crunchy-whole-half-fix-the-order-and-sing-at-a-shared-picnic",
+      "voice_profile": "ana-us",
+      "youtube": {
+        "title": "Tilly Turtle's Travelling Bakery | Opposites Story for Kids",
+        "description": "Tilly Turtle rolls her travelling bakery from the warm harbour to the cool pier, comparing soft and crunchy treats and fixing one whole-loaf mix-up before a shared sunset picnic.\n\nAn original Tiny Tales musical story about opposites, polite choices, halves, problem-solving and sharing for children ages 3 to 7.",
+        "tags": ["opposites for kids", "turtle story", "warm and cool", "soft and crunchy", "whole and half", "musical story for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }
