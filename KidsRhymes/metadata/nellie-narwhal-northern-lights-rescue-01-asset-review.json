@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "nellie-narwhal-northern-lights-rescue-01",
+  "reviewed_at": "2026-09-01",
+  "review_method": "Each full-resolution frame was inspected on creation, then all nine accepted scenes were reviewed chronologically on automation/production-work/nellie-narwhal-northern-lights-rescue-01/asset-contact-sheet.png.",
+  "accepted_assets": [
+    {"scene": 1, "file": "automation/production-assets/nellie-narwhal-opening-v1.png", "sha256": "2c7277c7eb5ebd7096c0ab78a10e79f89dc81db00bd2422fb753884b405d5372", "review": "Both stable floes, calm lane, Kiko, mother, Nellie and Oona are traceable with a restrained distant aurora."},
+    {"scene": 2, "file": "automation/production-assets/nellie-narwhal-three-colour-route-v1.png", "sha256": "8798d4e96ec2ff9f28fabe87f9bfa90fbdfa2fd384f9c9833f0fc1989e1dd7aa", "review": "Exactly three natural ice chambers read left-to-right as green, blue and violet without map UI."},
+    {"scene": 3, "file": "automation/production-assets/nellie-narwhal-green-signal-v1.png", "sha256": "bfc891dcc7e63a9339306c736860bbe52256a8990049bb01bdcb9a20f585d942", "review": "One large round bubble signals through the green arch while Kiko remains on stable ice."},
+    {"scene": 4, "file": "automation/production-assets/nellie-narwhal-blue-jelly-v1.png", "sha256": "a4ba88e7319b915e734d4c1100e989087cb5a0266f7321199634e4163393dd65", "review": "Exactly one blue jelly is the restrained chamber light and the open lane stays visible."},
+    {"scene": 5, "file": "automation/production-assets/nellie-narwhal-violet-window-v1.png", "sha256": "76655ba2cd3ddffc4f41fa1d1b033dd0993e60da482adea7979840d2e5f25977", "review": "Violet window sits beside one calm gap; Nellie's tusk points without touching the ice."},
+    {"scene": 6, "file": "automation/production-assets/nellie-narwhal-mist-pause-v1.png", "sha256": "e68d3fc08a8cf3654a8d0847811fc34f910baae793bc15bb4b5908743900a8ca", "review": "Kiko rests safely through mist while separate green, blue and violet clues remain in order."},
+    {"scene": 7, "file": "automation/production-assets/nellie-narwhal-joined-route-v1.png", "sha256": "1d647070c123ba8116b5a9a1e598f38835cb99a3639592b4194938332d3d6eb9", "review": "One continuous green-blue-violet route connects the two traceable floes; Kiko still waits on ice."},
+    {"scene": 8, "file": "automation/production-assets/nellie-narwhal-safe-swim-v1.png", "sha256": "d4f7861add2c4d089f526477fd5e0a4e1ba608ea292a8b0d5c73b1c64bd90fc1", "review": "First permitted swim shows Kiko beside Nellie with Oona leading toward the visible mother."},
+    {"scene": 9, "file": "automation/production-assets/nellie-narwhal-reunion-finale-v1.png", "sha256": "225b3f9295c96fa974e07972c027753fb26872fb3a6d040704f6abd10b387b97", "review": "Nose-to-nose reunion and full green-blue-violet aurora appear only in the final scene."}
+  ],
+  "continuity_checks": {
+    "character_identity_preserved": true,
+    "left_and_right_floes_traceable": true,
+    "green_blue_violet_order_preserved": true,
+    "kiko_waits_on_ice_until_scene_8": true,
+    "reunion_and_full_aurora_only_in_scene_9": true,
+    "broken_ice_or_peril_present": false,
+    "generated_text_or_watermark_present": false
+  },
+  "status": "accepted-hash-locked-ready-for-production"
+}

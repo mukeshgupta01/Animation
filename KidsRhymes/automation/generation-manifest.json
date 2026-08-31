@@ -525,6 +525,28 @@
         "tags": ["position words for kids", "gecko story", "above and below", "beside and between", "museum for kids", "musical story for kids", "Tiny Tales"],
         "category_id": "27"
       }
+    },
+    {
+      "id": "nellie-narwhal-northern-lights-rescue-01",
+      "name": "Nellie Narwhal and the Northern Lights",
+      "command": [
+        "C:\\Animation\\Animation\\.venv\\Scripts\\python.exe",
+        "-B",
+        "automation\\production\\produce_nellie_narwhal_lights.py"
+      ],
+      "working_directory": ".",
+      "output": "automation/production-output/nellie-narwhal-northern-lights-rescue-01.mp4",
+      "publish_to_upload_queue": true,
+      "format_family": "underwater light-and-colour rescue ballad",
+      "visual_system": "nine-premium-cinematic-Arctic-compositions-with-stable-floe-geography-and-green-blue-violet-light-route-continuity",
+      "interaction_style": "trace-green-blue-violet-clues-pause-safely-swim-together-and-reunite-under-the-aurora",
+      "voice_profile": "maisie-uk",
+      "youtube": {
+        "title": "Nellie Narwhal and the Northern Lights | Colour Adventure for Kids",
+        "description": "Nellie and Oona follow green, blue and violet light beneath the Arctic ice to help Kiko cross a calm lane and reunite with his mother.\n\nAn original Tiny Tales musical story about colours, courage, safe pauses, friendship and family for children ages 3 to 7.",
+        "tags": ["narwhal story for kids", "northern lights for kids", "colour song", "seal family story", "Arctic animals", "musical story for kids", "Tiny Tales"],
+        "category_id": "27"
+      }
     }
   ]
 }

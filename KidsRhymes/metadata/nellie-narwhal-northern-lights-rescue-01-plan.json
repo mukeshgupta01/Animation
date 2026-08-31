@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "id": "nellie-narwhal-northern-lights-rescue-01",
+  "title": "Nellie Narwhal and the Northern Lights | Colour Adventure for Kids",
+  "audience": "children ages 3-7",
+  "target_duration_seconds": 104.5,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 86,
+    "beats_per_bar": 4,
+    "scene_bars": 4,
+    "scene_seconds": 11.162791,
+    "scene_count": 9,
+    "resolve_seconds": 4.0,
+    "personality": "calm luminous Arctic rescue ballad",
+    "emotional_arrangement": "glass harp and soft strings for dusk; low cello and distant frame drum as fog gathers; celesta and warm humming at each colour clue; full but gentle aurora chorus for the reunion"
+  },
+  "voices": {
+    "lead": "maisie-uk",
+    "nellie": "natasha-au",
+    "kiko_seal": "ana-us",
+    "delivery": "melodic colour-and-kindness story-song with acted character phrases; no flat narration"
+  },
+  "pacing": {
+    "maximum_phrases_per_scene": 3,
+    "target_weighted_wpm": 125,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "continuity": {
+    "nellie": "one periwinkle-blue young narwhal with warm ivory belly, short pearly spiral tusk, deep teal eyes and a small magenta star-freckle cluster beside the left eye",
+    "kiko": "one small silver-white harp seal pup with charcoal crescent spots, teal eyes and a rounded charcoal nose",
+    "mara_mother_seal": "one larger silver harp seal with the same crescent markings and warm brown eyes",
+    "oona": "one tiny orange Arctic char with a blue dorsal fin who stays near Nellie's right flipper",
+    "geography": "a low safe starting floe at frame-left, three traceable under-ice colour chambers, an open calm swimming lane and the family floe at frame-right",
+    "safety_rule": "Kiko waits on stable ice until the calm open-water lane is visible, then swims beside Nellie; no cracking ice, storms, predators or peril imagery."
+  },
+  "scenes": [
+    {"scene": 1, "action": "At Arctic dusk Nellie and Oona notice Kiko waiting on the low left floe while his mother calls from the distant right family floe through gentle mist.", "lyrics": ["Evening hums beneath the Arctic ice.", "Kiko waits across the silver water.", "Nellie sings, we'll find your way."], "hero": "Kiko and mother separated by one calm misty lane", "emotion": "tender concern"},
+    {"scene": 2, "action": "Nellie maps a safe route under the ice: green arch, blue bubble chamber and violet crystal window, all visible in one connected cross-section.", "lyrics": ["Three soft colours mark the journey.", "Green, then blue, then violet light.", "Follow slowly; keep them near."], "hero": "three colour chambers in exact order", "emotion": "quiet planning"},
+    {"scene": 3, "action": "Nellie swims beneath a translucent green aurora arch and sends one gentle bubble signal up to Kiko's floe.", "lyrics": ["Green light curls beneath the floe.", "Nellie follows every emerald ribbon.", "One round bubble says, I'm here."], "hero": "green reflection and one bubble signal", "emotion": "first hopeful clue"},
+    {"scene": 4, "action": "In the blue chamber Oona circles one bioluminescent blue jelly while Nellie keeps the clear open lane in sight.", "lyrics": ["Blue light glows through quiet water.", "Oona circles one soft lantern.", "The open lane stays clear."], "hero": "one blue jelly and visible clear lane", "emotion": "calm wonder"},
+    {"scene": 5, "action": "A violet ice window reflects the final colour; Nellie aligns her tusk with the safe gap without touching the ice.", "lyrics": ["Violet shimmers through the window.", "Nellie's pearl tusk points beside it.", "Three bright clues now make one path."], "hero": "violet window beside a visible water gap", "emotion": "focused discovery"},
+    {"scene": 6, "action": "Mist briefly dims the surface, so Kiko rests safely while Nellie and Oona pause beneath the ice and repeat the colours together.", "lyrics": ["Soft mist hides the faraway floe.", "Kiko rests; brave can be quiet.", "Green, blue, violet—we remember."], "hero": "safe pause and remembered colour sequence", "emotion": "gentle uncertainty and reassurance"},
+    {"scene": 7, "action": "The three reflected colours join into a continuous route across the calm lane; mother becomes clearly visible on the family floe.", "lyrics": ["Green meets blue; violet follows.", "Colour ribbons cross the calm lane.", "Mother waits where warm lights meet."], "hero": "one continuous three-colour route", "emotion": "rising relief"},
+    {"scene": 8, "action": "Kiko enters the calm water and swims beside Nellie while Oona leads; they follow the exact green-blue-violet route to the right floe.", "lyrics": ["Kiko splashes into gentle water.", "Side by side, they swim together.", "Green, blue, violet guide them home."], "hero": "Kiko swimming safely beside Nellie", "emotion": "buoyant courage"},
+    {"scene": 9, "action": "Kiko reunites nose-to-nose with his mother on the family floe as Nellie and Oona surface beneath a full green-blue-violet aurora.", "lyrics": ["Nose meets nose beneath the stars.", "Northern colours sing above them.", "Kind lights guide us home together."], "hero": "one warm family reunion and full-colour aurora", "emotion": "radiant tender finale"}
+  ],
+  "quality_requirements": [
+    "Nellie, Kiko, Mara, Oona, both floes and all three colour chambers retain exact identity and geography.",
+    "Green, blue and violet appear and are sung in the same order; no unrelated colour becomes a route clue.",
+    "Kiko remains safely on stable ice until scene 8 and swims beside Nellie only in the established calm lane.",
+    "Ice remains intact; no cracking, breaking, predator, storm, drowning or frightening rescue imagery.",
+    "One colour clue is the visual hero per clue scene; ambient sea life remains restrained.",
+    "Real water, bubble, fin, jelly, mist, ice-hum and aurora effects replace spoken imitation words.",
+    "The reunion and full three-colour aurora appear only in scene 9.",
+    "All shared gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "published-and-live-readback-verified"
+}
