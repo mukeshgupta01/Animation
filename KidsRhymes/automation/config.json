@@ -13,6 +13,7 @@
   "upload_queue_order": "newest_first",
   "generation_cycle_seconds": 17100,
   "quality_evidence_required_after_unix": 1787563445,
+  "semantic_motion_required_after_unix": 1788240492,
   "custom_thumbnail_required": true,
   "existing_outputs_are_excluded": true
 }

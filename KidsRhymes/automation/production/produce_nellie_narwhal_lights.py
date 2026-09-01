@@ -11,6 +11,7 @@ import struct
 import wave
 
 import produce_basil_beaver_workshop as base
+import semantic_motion as semantic
 
 
 BASIL_QUALITY = base.quality
@@ -139,7 +140,7 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
         core.base.centered(draw, (960, 108), "GREEN, BLUE, VIOLET", core.base.F48, (213, 245, 245, 255), 3)
         core.base.centered(draw, (960, 176), "KIND LIGHTS GUIDE US HOME", core.base.F48, "white", 3)
     frame.alpha_composite(overlay)
-    return frame.convert("RGB")
+    return semantic.apply(frame, event, t, "nellie", ASSET_DIR)
 
 
 def make_music(total: float):
@@ -199,9 +200,10 @@ def make_thumbnail() -> None:
 
 def quality(events, total, assets):
     report = BASIL_QUALITY(events, total, assets)
+    semantic.write_evidence(WORK, events[:-1], frame_for, assets, "nellie")
     report["format"] = "underwater light-and-colour rescue ballad"
     report["bpm"] = BPM
-    report["visual_method"] = "nine reviewed cinematic Arctic tableaux with stable floe geography, exact green-blue-violet continuity and restrained eased camera travel"
+    report["visual_method"] = "independently animated identity-locked foreground cast with visible swimming and green-blue-violet route actions over defocused Arctic environments"
     report["audio_method"] = "original 86 BPM emotion-mapped glass harp, strings and soft percussion with three character voices and 27 synchronized real effects"
     (WORK / "quality-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report

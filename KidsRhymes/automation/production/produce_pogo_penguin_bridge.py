@@ -11,6 +11,7 @@ import struct
 import wave
 
 import produce_basil_beaver_workshop as base
+import semantic_motion as semantic
 
 
 BASIL_QUALITY = base.quality
@@ -126,7 +127,7 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
         core.base.centered(draw, (960, 108), "WIDE • LEVEL • STEADY", core.base.F48, (222, 249, 255, 255), 3)
         core.base.centered(draw, (960, 176), "TEAMWORK BRIDGES EVERY BEAT", core.base.F48, "white", 3)
     frame.alpha_composite(overlay)
-    return frame.convert("RGB")
+    return semantic.apply(frame, event, t, "pogo", ASSET_DIR)
 
 
 def make_music(total: float):
@@ -163,8 +164,8 @@ def make_thumbnail() -> None:
 
 
 def quality(events,total,assets):
-    report=BASIL_QUALITY(events,total,assets); report["format"]="balance-and-bridge engineering adventure"; report["bpm"]=BPM
-    report["visual_method"]="nine reviewed tactile Antarctic engineering tableaux with exact shallow-site, width, support, rail, brace, crossing and theatre continuity"
+    report=BASIL_QUALITY(events,total,assets); semantic.write_evidence(WORK,events[:-1],frame_for,assets,"pogo"); report["format"]="balance-and-bridge engineering adventure"; report["bpm"]=BPM
+    report["visual_method"]="independently animated identity-locked foreground cast with visible bridge flex, support, rail and brace actions over defocused Antarctic environments"
     report["audio_method"]="original 104 BPM pizzicato, marimba, snow-percussion and theatre-band march with three rotated voices and 27 synchronized real effects"
     (WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8"); return report
 

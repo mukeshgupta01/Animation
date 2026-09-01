@@ -11,6 +11,7 @@ import struct
 import wave
 
 import produce_basil_beaver_workshop as base
+import semantic_motion as semantic
 
 
 BASIL_QUALITY = base.quality
@@ -141,7 +142,7 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
         core.base.centered(draw, (960, 108), "WARM OR COOL • SOFT OR CRUNCHY", core.base.F48, (255, 239, 205, 255), 3)
         core.base.centered(draw, (960, 176), "OPPOSITES SHARE THE TREAT", core.base.F48, "white", 3)
     frame.alpha_composite(overlay)
-    return frame.convert("RGB")
+    return semantic.apply(frame, event, t, "tilly", ASSET_DIR)
 
 
 def make_music(total: float):
@@ -202,9 +203,10 @@ def make_thumbnail() -> None:
 
 def quality(events, total, assets):
     report = BASIL_QUALITY(events, total, assets)
+    semantic.write_evidence(WORK, events[:-1], frame_for, assets, "tilly")
     report["format"] = "seaside delivery and food-texture musical"
     report["bpm"] = BPM
-    report["visual_method"] = "nine reviewed stop-motion-inspired coastal bakery tableaux with exact cart, customer, food-shape and route continuity plus restrained eased camera travel"
+    report["visual_method"] = "independently animated identity-locked foreground cast with visible cart, food-shape and opposite-state actions over defocused coastal bakery environments"
     report["audio_method"] = "original 98 BPM pizzicato, marimba and tactile bakery-percussion song with four rotated voices and 27 synchronized real effects"
     (WORK / "quality-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report

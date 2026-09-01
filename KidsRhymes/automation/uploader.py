@@ -32,6 +32,7 @@ LOG_FILE = HERE / "logs" / "youtube-upload.log"
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube.readonly",
+    "https://www.googleapis.com/auth/youtube.force-ssl",
 ]
 
 
@@ -188,6 +189,44 @@ def validate_future_quality_evidence(video: Path, cfg: dict[str, Any]) -> None:
         raise SafetyError(f"Transition audit is invalid: {audit_path}")
     if any(abs(float(item.get("gap_seconds", 1))) > 0.000001 for item in audit):
         raise SafetyError(f"Transition audit contains an uncovered or overlapping interval: {audit_path}")
+
+    semantic_cutoff = int(cfg.get("semantic_motion_required_after_unix", 0))
+    if video.stat().st_mtime <= semantic_cutoff:
+        return
+    semantic_flags = (
+        "semantic_motion_reviewed",
+        "character_continuity_reviewed",
+        "primary_action_motion_reviewed",
+        "actual_motion_not_camera_only",
+    )
+    missing_semantic_flags = [field for field in semantic_flags if metadata.get(field) is not True]
+    if missing_semantic_flags:
+        raise SafetyError(
+            "Video is blocked until meaningful motion and continuity are explicitly reviewed: "
+            + ", ".join(missing_semantic_flags)
+        )
+    semantic_path = evidence_path(metadata.get("semantic_motion_audit"), "semantic_motion_audit")
+    evidence_path(metadata.get("semantic_motion_contact_sheet"), "semantic_motion_contact_sheet")
+    semantic = load_json(semantic_path, None)
+    if not isinstance(semantic, list) or not semantic:
+        raise SafetyError(f"Semantic-motion audit is invalid: {semantic_path}")
+    required_scene_fields = (
+        "scene",
+        "primary_action",
+        "visible_start_state",
+        "visible_action_state",
+        "visible_end_state",
+        "foreground_moving_elements",
+    )
+    for scene in semantic:
+        if not isinstance(scene, dict) or any(not scene.get(field) for field in required_scene_fields):
+            raise SafetyError(f"Semantic-motion audit has an incomplete scene: {semantic_path}")
+        if scene.get("camera_only") is not False:
+            raise SafetyError(f"Camera-only scene is unacceptable: {semantic_path}")
+        if scene.get("character_and_object_continuity") is not True:
+            raise SafetyError(f"Character/object continuity failed: {semantic_path}")
+        if scene.get("reviewed") is not True:
+            raise SafetyError(f"Semantic-motion scene lacks explicit review: {semantic_path}")
 
 
 def prepared_thumbnail_for(video: Path, cfg: dict[str, Any]) -> Path | None:

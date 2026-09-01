@@ -11,6 +11,7 @@ import struct
 import wave
 
 import produce_basil_beaver_workshop as base
+import semantic_motion as semantic
 
 
 BASIL_QUALITY = base.quality
@@ -125,7 +126,7 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
         core.base.centered(draw, (960, 108), "STOP - LOOK - LISTEN", core.base.F48, (255, 235, 183, 255), 3)
         core.base.centered(draw, (960, 176), "SAFE STEPS MAKE MUSIC", core.base.F48, "white", 3)
     frame.alpha_composite(overlay)
-    return frame.convert("RGB")
+    return semantic.apply(frame, event, t, "zara", ASSET_DIR)
 
 
 def make_music(total: float):
@@ -163,8 +164,8 @@ def make_thumbnail() -> None:
 
 
 def quality(events,total,assets):
-    report=BASIL_QUALITY(events,total,assets); report["format"]="community road-safety rhythm construction story"; report["bpm"]=BPM
-    report["visual_method"]="nine reviewed premium savannah-town tableaux with exact curb, cart-block, six-stripe, tuning, test, crossing, procession and finale continuity"
+    report=BASIL_QUALITY(events,total,assets); semantic.write_evidence(WORK,events[:-1],frame_for,assets,"zara"); report["format"]="community road-safety rhythm construction story"; report["bpm"]=BPM
+    report["visual_method"]="independently animated identity-locked foreground cast with visible stripe, rhythm and stop-look-listen actions over defocused savannah-town environments"
     report["audio_method"]="original 100 BPM marimba, brass-bell, hand-percussion and flute street song with three rotated expressive voices and 27 synchronized real effects"
     (WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8"); return report
 

@@ -11,6 +11,7 @@ import struct
 import wave
 
 import produce_basil_beaver_workshop as base
+import semantic_motion as semantic
 
 
 BASIL_QUALITY = base.quality
@@ -139,7 +140,7 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
         core.base.centered(draw, (960, 108), "EVERY TREASURE", core.base.F48, (255, 221, 135, 255), 3)
         core.base.centered(draw, (960, 176), "IN ITS PLACE", core.base.F48, "white", 3)
     frame.alpha_composite(overlay)
-    return frame.convert("RGB")
+    return semantic.apply(frame, event, t, "gus", ASSET_DIR)
 
 
 def make_music(total: float):
@@ -199,9 +200,10 @@ def make_thumbnail() -> None:
 
 def quality(events, total, assets):
     report = BASIL_QUALITY(events, total, assets)
+    semantic.write_evidence(WORK, events[:-1], frame_for, assets, "gus")
     report["format"] = "spatial-language museum caper"
     report["bpm"] = BPM
-    report["visual_method"] = "nine reviewed jewel-toned museum tableaux with stable architectural anchors, physical position relationships and restrained eased camera travel"
+    report["visual_method"] = "independently animated identity-locked foreground cast with visible physical position changes over defocused museum environments"
     report["audio_method"] = "original 96 BPM emotion-mapped pizzicato, glass and chamber percussion with three character voices and 27 synchronized real effects"
     (WORK / "quality-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report

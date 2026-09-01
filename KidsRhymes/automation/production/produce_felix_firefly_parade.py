@@ -13,6 +13,7 @@ import subprocess
 import wave
 
 import produce_fruit_picnic as engine
+import semantic_motion as semantic
 
 
 core = engine.core
@@ -164,7 +165,7 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
         core.base.centered(draw, (960, 108), "SHINE TOGETHER", core.base.F48, (255, 224, 120, 255), 3)
         core.base.centered(draw, (960, 176), "THROUGH THE NIGHT", core.base.F48, "white", 3)
     frame.alpha_composite(overlay)
-    return frame.convert("RGB")
+    return semantic.apply(frame, event, t, "felix", ASSET_DIR)
 
 
 def make_music(total: float) -> Path:
@@ -215,11 +216,13 @@ def quality(events, total, assets):
     zero_gaps = all(abs(r["gap_seconds"]) < 1e-6 for r in transitions)
     final_only = events[-1]["phase"] == "end" and all(event["phase"] != "end" for event in events[:-1])
     checks={"duration":abs(float(probe["format"]["duration"])-total)<0.25,"h264_1080p":video.get("codec_name")=="h264" and video.get("width")==1920 and video.get("height")==1080,"aac_48k_stereo":audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2,"full_decode":decode.returncode==0,"zero_gaps":zero_gaps,"continuous_visual_timeline":zero_gaps,"end_card_final_only":final_only,"end_card_is_final_event_only":final_only,"eight_unique_scenes":len({r["asset"] for r in sync})==8,"four_bar_scene_cuts":all(abs((r["visual_end"]/BEAT)-round(r["visual_end"]/BEAT))<1e-5 for r in sync),"narration_effects_contained":all(r["contained"] for r in sync),"voice_starts_on_eighth_grid":all(abs(((line["start"]-item["visual_start"])/EIGHTH)-round((line["start"]-item["visual_start"])/EIGHTH))<1e-5 for item in sync for line in item["lines"]),"child_friendly_pacing":pace["passed"],"no_spoken_imitation":all(not any(w in line for w in ("clap clap","tap tap","ding dong","boom boom")) for line in spoken),"real_effects":len({e["effect"] for item in sync for e in item["effects"]})==24,"thumbnail":THUMBNAIL.is_file() and THUMBNAIL.stat().st_size<2_000_000}
-    loudness,peak=engine.audio_levels(); report={"output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"format":"nocturnal pattern-and-courage story-song","bpm":BPM,"visual_method":"eight reviewed premium tactile 3D-storybook tableaux with restrained eased camera travel and scene-specific luminous ambience","audio_method":"original 92 BPM emotion-mapped celesta, strings and percussion with three character voices and synchronized real effects","narration_pacing":{"weighted_wpm":pace["weighted_wpm"],"maximum_line_wpm":pace["maximum_line_wpm"],"minimum_interline_gap_seconds":pace["minimum_interline_gap_seconds"]},"integrated_loudness_lufs":loudness,"true_peak_dbfs":peak,"true_rigged_3d_animation":False,"paid_generation_used":False,"checks":checks,"passed":all(checks.values())}
+    loudness,peak=engine.audio_levels(); report={"output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"format":"nocturnal pattern-and-courage story-song","bpm":BPM,"visual_method":"independently animated identity-locked foreground cast with visible pattern-building actions over defocused contextual storybook environments","audio_method":"original 92 BPM emotion-mapped celesta, strings and percussion with three character voices and synchronized real effects","narration_pacing":{"weighted_wpm":pace["weighted_wpm"],"maximum_line_wpm":pace["maximum_line_wpm"],"minimum_interline_gap_seconds":pace["minimum_interline_gap_seconds"]},"integrated_loudness_lufs":loudness,"true_peak_dbfs":peak,"true_rigged_3d_animation":False,"paid_generation_used":False,"checks":checks,"passed":all(checks.values())}
     (WORK/"timeline-gap-audit.json").write_text(json.dumps(transitions,indent=2)+"\n",encoding="utf-8"); (WORK/"lyric-visual-emotion-audit.json").write_text(json.dumps(sync,indent=2)+"\n",encoding="utf-8"); (WORK/"narration-pacing-audit.json").write_text(json.dumps(pace,indent=2)+"\n",encoding="utf-8"); (WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     general=Image.new("RGB",(960,405),"white")
     for i,event in enumerate(events): general.paste(frame_for(event,event["start"]+(event["end"]-event["start"])*0.55,assets).resize((240,135),Image.Resampling.LANCZOS),((i%4)*240,(i//4)*135))
-    general.save(WORK/"quality-contact-sheet.png"); boundary=[]
+    general.save(WORK/"quality-contact-sheet.png")
+    semantic.write_evidence(WORK, events[:-1], frame_for, assets, "felix")
+    boundary=[]
     for current,following in zip(events,events[1:]): boundary.extend([(current,current["end"]-0.12),(following,following["start"]+0.12)])
     sheet=Image.new("RGB",(1200,math.ceil(len(boundary)/5)*135),"white")
     for i,(event,t) in enumerate(boundary): sheet.paste(frame_for(event,t,assets).resize((240,135),Image.Resampling.LANCZOS),((i%5)*240,(i//5)*135))

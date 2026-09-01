@@ -13,6 +13,7 @@ import subprocess
 import wave
 
 import produce_felix_firefly_parade as base
+import semantic_motion as semantic
 
 
 engine = base.engine
@@ -179,7 +180,7 @@ def frame_for(event: dict, t: float, assets: dict[str, Image.Image]) -> Image.Im
         core.base.centered(draw, (960, 112), "TEST, BUILD, TRY AGAIN", core.base.F48, (255, 220, 120, 255), 3)
         core.base.centered(draw, (960, 180), "TOGETHER WE MAKE IT FLOW", core.base.F48, "white", 3)
     frame.alpha_composite(overlay)
-    return frame.convert("RGB")
+    return semantic.apply(frame, event, t, "basil", ASSET_DIR)
 
 
 def make_music(total: float) -> Path:
@@ -275,7 +276,7 @@ def quality(events, total, assets):
     report = {
         "output": str(OUTPUT), "duration_seconds": float(probe["format"]["duration"]),
         "format": "physical cause-and-effect engineering musical", "bpm": BPM,
-        "visual_method": "nine reviewed premium tactile river-workshop tableaux with restrained eased camera travel and continuous material continuity",
+        "visual_method": "independently animated identity-locked foreground cast with visible water, material, structure and wheel actions over defocused river-workshop environments",
         "audio_method": "original 88 BPM emotion-mapped marimba, plucked strings and wood percussion with three character voices and synchronized real effects",
         "narration_pacing": {"weighted_wpm": pace["weighted_wpm"], "maximum_line_wpm": pace["maximum_line_wpm"], "minimum_interline_gap_seconds": pace["minimum_interline_gap_seconds"]},
         "integrated_loudness_lufs": loudness, "true_peak_dbfs": peak,
@@ -290,6 +291,7 @@ def quality(events, total, assets):
     for index, event in enumerate(events):
         general.paste(frame_for(event, event["start"] + (event["end"] - event["start"]) * 0.55, assets).resize((240, 135), Image.Resampling.LANCZOS), ((index % 4) * 240, (index // 4) * 135))
     general.save(WORK / "quality-contact-sheet.png")
+    semantic.write_evidence(WORK, events[:-1], frame_for, assets, "basil")
     boundary = []
     for current, following in zip(events, events[1:]):
         boundary.extend([(current, current["end"] - 0.12), (following, following["start"] + 0.12)])
