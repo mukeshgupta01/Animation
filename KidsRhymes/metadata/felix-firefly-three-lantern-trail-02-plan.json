@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "id": "felix-firefly-three-lantern-trail-02",
+  "title": "Felix Firefly and the Three Dark Lanterns | Story for Kids",
+  "format_family": "story-led woodland pattern adventure",
+  "quality_reference": [
+    "ant-grasshopper-shared-harvest-01",
+    "five-little-ducks-river-countdown-01"
+  ],
+  "opening_policy": "Four-second illustrated title establish before narration. The first spoken sentence names Felix, the setting and the problem.",
+  "audio_policy": "Tonal music and band-limited physical effects only. No white-noise wind, wing, brush, shaker or broadband ambience. The music-only opening must measure at or below -65 dB RMS above 12 kHz.",
+  "visual_policy": "One integrated premium full-frame story composition per scene. No blurred backdrop, pasted character cutout, duplicate character, UI panel or generic sprite stage.",
+  "scenes": [
+    {"scene": 1, "asset": "felix-story-rebuild-opening-v3.png", "emotion": "clear moonlit discovery", "action": "Felix discovers Rabbit and Hedgehog beside exactly three dark lanterns and understands that the path home is lost.", "lines": ["One moonlit evening, Felix found three dark lanterns.", "Without their light, the woodland path was lost."]},
+    {"scene": 2, "asset": "felix-firefly-gold-blue-gold-v1.png", "emotion": "hopeful first attempt", "action": "Felix shows gold-blue-gold; Rabbit completes it and the first lantern lights.", "lines": ["The first lantern needed gold, blue, gold.", "Rabbit followed the pattern carefully."]},
+    {"scene": 3, "asset": "felix-firefly-blue-gold-blue-v1.png", "emotion": "careful growing confidence", "action": "Hedgehog completes blue-gold-blue and the second lantern lights.", "lines": ["The second lantern needed blue, gold, blue.", "Hedgehog placed each step with care."]},
+    {"scene": 4, "asset": "felix-firefly-hidden-pattern-v1.png", "emotion": "gentle setback", "action": "A gust covers the colour leaves, but the friends remember both patterns together.", "lines": ["Then a gust covered every coloured leaf.", "Felix said, we can remember together."]},
+    {"scene": 5, "asset": "felix-firefly-rest-and-support-v1.png", "emotion": "tender support", "action": "Felix's glow dims; Rabbit shelters him and Hedgehog keeps the two lit lanterns close.", "lines": ["Felix shared so much light, his glow grew small.", "Rest here, Felix. We will stay."]},
+    {"scene": 6, "asset": "felix-firefly-final-lantern-v1.png", "emotion": "earned solution", "action": "The friends join gold-blue-gold-blue and the third lantern lights.", "lines": ["Soon, all three friends joined their patterns.", "Gold, blue, gold, blue; the final lantern shone."]},
+    {"scene": 7, "asset": "felix-firefly-path-procession-v1.png", "emotion": "safe forward movement", "action": "The three lit lanterns guide the friends along the winding path toward home.", "lines": ["Three lanterns now marked the winding trail.", "Follow us. We know the way home."]},
+    {"scene": 8, "asset": "felix-firefly-parade-finale-v1.png", "emotion": "warm communal resolution", "action": "The woodland neighbours reach the picnic and celebrate the friends who restored the path.", "lines": ["The woodland neighbours followed the lights to the picnic.", "Felix's brave light shone brighter with friends."]}
+  ]
+}
