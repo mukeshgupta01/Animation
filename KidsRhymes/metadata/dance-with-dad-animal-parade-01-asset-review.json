@@ -1,46 +1,43 @@
 {
   "id": "dance-with-dad-animal-parade-01",
-  "reviewed_utc": "2026-09-02T02:06:00Z",
-  "status": "opening anticipation and action states accepted as production anchors",
+  "reviewed_utc": "2026-09-02T10:15:00Z",
+  "status": "fourteen integrated anticipation/action, parade and finale assets accepted",
   "assets": [
-    {
-      "path": "automation/production-assets/dance-with-dad-opening-v1.png",
-      "sha256": "b119e823146d36b447651cced357ff569320e50636c0e25c83966c474d5193ce",
-      "role": "opening anticipation and identity anchor"
-    },
-    {
-      "path": "automation/production-assets/dance-with-dad-opening-action-v1.png",
-      "sha256": "7a3e1311bf41718a0d665ada7de982d43a65689ff88c0d75a4d8d405089e8c5b",
-      "role": "opening first-beat action state"
-    }
+    {"path":"automation/production-assets/dance-with-dad-opening-v1.png","sha256":"b119e823146d36b447651cced357ff569320e50636c0e25c83966c474d5193ce","role":"opening anticipation"},
+    {"path":"automation/production-assets/dance-with-dad-opening-action-v1.png","sha256":"7a3e1311bf41718a0d665ada7de982d43a65689ff88c0d75a4d8d405089e8c5b","role":"opening action"},
+    {"path":"automation/production-assets/dance-with-dad-elephant-anticipation-v1.png","sha256":"5af87ae4c71ebf146c6912850083c9c2cd0aedac13122b0f122618eed89d41fb","role":"elephant anticipation"},
+    {"path":"automation/production-assets/dance-with-dad-elephant-action-v1.png","sha256":"a6b0a906655e813561a6a8711831c37a5933c4f4d15873c35d6311b34e7d5095","role":"elephant stomp"},
+    {"path":"automation/production-assets/dance-with-dad-penguin-anticipation-v1.png","sha256":"600c346ce91ba879685ac2511f34b63b73aad506b24eb65ec7adb9e81a8d8f63","role":"penguin anticipation"},
+    {"path":"automation/production-assets/dance-with-dad-penguin-action-v1.png","sha256":"b977c4eed050219123a6dedb587a1ea0d5fee5652903541fbdfe731094cfd796","role":"penguin slide"},
+    {"path":"automation/production-assets/dance-with-dad-fox-anticipation-v1.png","sha256":"13accb6c17d531f48ae5d8fffe9a22cef07be7a78ed176da08feee8a91bd2002","role":"fox anticipation"},
+    {"path":"automation/production-assets/dance-with-dad-fox-action-v1.png","sha256":"b4323ab4026d0a8bca216b4cef981fb2252b3c5f2fae81ed3bf26d13b6e712b2","role":"fox spin"},
+    {"path":"automation/production-assets/dance-with-dad-kangaroo-anticipation-v1.png","sha256":"4862cfc986ecf1e1bf01e4d216b682d0de3e4d8c0458de8a6b36c254ceb6ba93","role":"kangaroo anticipation"},
+    {"path":"automation/production-assets/dance-with-dad-kangaroo-action-v1.png","sha256":"607d2c5d68d4f9095da66c8d38adfb351bc8bcb59494c37a8d4155dc441bf8c1","role":"kangaroo bounce"},
+    {"path":"automation/production-assets/dance-with-dad-lion-anticipation-v1.png","sha256":"db35f636bda9530776d9665f7d14c0551b28785cb95dd6d741795c3830cf1c51","role":"lion anticipation"},
+    {"path":"automation/production-assets/dance-with-dad-lion-action-v1.png","sha256":"6dde0619947bc0f85acb38019dfa30e0dd8bc6ff54904abe538fa1ac951af353","role":"lion drum"},
+    {"path":"automation/production-assets/dance-with-dad-full-parade-v1.png","sha256":"80b050ca9b85864e71eb93c69c4fe55e96c237f9b99c1e35982c0dfcba9cc064","role":"earned full parade"},
+    {"path":"automation/production-assets/dance-with-dad-finale-v1.png","sha256":"d8485cef01926b74897923a2ceb6a10ecbb3d322e4b90a9c29ce5fee1bfc071c","role":"five-badge finale"}
   ],
   "verified": {
-    "exact_character_count": 10,
-    "exact_pair_count": 5,
-    "species_pairs": ["elephant", "penguin", "fox", "kangaroo", "lion"],
+    "five_species_pairs": true,
     "one_child_and_one_larger_dad_per_species": true,
-    "same_park_geography": true,
-    "same_wardrobe_palette": true,
-    "same_camera_and_lighting": true,
+    "consistent_festival_park_geography": true,
+    "consistent_wardrobe_palette": true,
     "integrated_full_frame_art": true,
-    "open_title_space": true,
     "no_generated_text": true,
     "no_duplicate_or_merged_animals": true,
-    "no_blurred_cutout_composite": true
-  },
-  "motion_read": {
-    "anticipation": "children open the circular floor and invite their arriving dads",
-    "action": "children bend into a coordinated welcome pose while the fox kit raises a paw for the first drum hit and the dads step forward",
-    "follow_through_required_in_render": "drum hand lands on beat; ears, tails, mane, trunk and flippers settle on staggered half-beats",
-    "camera": "brief eased push only; the pose change and drum strike remain the primary action"
+    "no_blurred_cutout_composite": true,
+    "exactly_five_dad_badges_in_finale": true
   },
   "image_generation": {
     "mode": "built-in imagegen",
-    "calls": 2,
-    "use_case": "illustration-story then identity-preserve edit"
+    "calls": 16,
+    "accepted_assets": 14,
+    "blocked_identity_edit_attempts": 2,
+    "prompt_set": "premium cinematic 3D-style Tiny Tales festival-park compositions; matched anticipation/action poses for elephant stomp, penguin slide, fox spin, kangaroo bounce and lion drum; exact five-pair parade and five-badge finale"
   },
   "release": {
     "upload_authorized": false,
-    "next_step": "compose and review the original chorus melody and opening twelve-second animated music proof before generating the remaining verse-state assets"
+    "status": "local private review master only"
   }
 }
