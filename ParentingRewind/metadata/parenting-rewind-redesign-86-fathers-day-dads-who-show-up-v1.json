@@ -26,7 +26,15 @@
     ]
   },
   "artwork": {
-    "primary_asset": "production-assets/fathers-day-dads-who-show-up-storyboard-01.png",
+    "primary_asset": "production-assets/fathers-day-quiet-love-portrait-01.png",
+    "panel_files": [
+      "production-assets/fathers-day-quiet-love-portrait-01.png",
+      "production-assets/fathers-day-daily-work-portrait-01.png",
+      "production-assets/fathers-day-repair-portrait-01.png",
+      "production-assets/fathers-day-listening-child-portrait-01.png",
+      "production-assets/fathers-day-listening-teen-portrait-01.png",
+      "production-assets/fathers-day-family-hug-portrait-01.png"
+    ],
     "panel_order": [
       0,
       1,
@@ -35,36 +43,37 @@
       4,
       5
     ],
-    "recycled_visuals_approved": true,
-    "new_image_generation_calls": 0,
-    "generation_prompt_record": "production-assets/fathers-day-dads-who-show-up-sources.md",
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 6,
+    "generation_prompt_record": "production-assets/fathers-day-dads-who-show-up-portrait-prompts.md",
     "source_assets": [
       {
-        "file": "production-assets/bedtime-father-daughter-storyboard-01.png",
-        "panel": 4
+        "file": "production-assets/fathers-day-quiet-love-portrait-01.png",
+        "native_aspect_ratio": "9:16"
       },
       {
-        "file": "production-assets/laundry-father-two-children-storyboard-01.png",
-        "panel": 4
+        "file": "production-assets/fathers-day-daily-work-portrait-01.png",
+        "native_aspect_ratio": "9:16"
       },
       {
-        "file": "production-assets/soccer-father-son-storyboard-01.png",
-        "panel": 5
+        "file": "production-assets/fathers-day-repair-portrait-01.png",
+        "native_aspect_ratio": "9:16"
       },
       {
-        "file": "production-assets/art-studio-father-daughter-storyboard-01.png",
-        "panel": 3
+        "file": "production-assets/fathers-day-listening-child-portrait-01.png",
+        "native_aspect_ratio": "9:16"
       },
       {
-        "file": "production-assets/teen-curfew-father-daughter-storyboard-01.png",
-        "panel": 3
+        "file": "production-assets/fathers-day-listening-teen-portrait-01.png",
+        "native_aspect_ratio": "9:16"
       },
       {
-        "file": "production-assets/honesty-father-son-storyboard-01.png",
-        "panel": 5
+        "file": "production-assets/fathers-day-family-hug-portrait-01.png",
+        "native_aspect_ratio": "9:16"
       }
     ],
-    "composite_is_new_generation": false
+    "composite_is_new_generation": false,
+    "portrait_native_visual_rebuild": true
   },
   "music": {
     "type": "original locally synthesized emotional score",
@@ -81,10 +90,16 @@
   "output": {
     "file": "output\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.mp4",
     "duration_seconds": 73.1,
-    "sha256": "C47A1492E26B78E2322B333F54E41568344BD132C8EA2AAE61987E149E884C53"
+    "sha256": "21955C694EFC751E1E31D04733C3E949657C26B02AE8B3AEABC9F2F3309675F7"
   },
   "transfer": {
     "business_onedrive_copy": null
+  },
+  "validation": {
+    "automated_quality_gate_passed": true,
+    "full_ffmpeg_decode_passed": true,
+    "encoded_visual_review_passed": true,
+    "encoded_review_sheet": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up\\review-contact-sheet-portrait-v4.jpg"
   },
   "youtube": {
     "title": "To the Dads Who Keep Showing Up | A Father's Day Tribute",

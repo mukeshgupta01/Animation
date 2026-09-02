@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import asyncio
 import json
-import math
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -13,64 +12,31 @@ from produce_redesigned_bundle_02_to_06 import PROJECT, WORK_ROOT, produce
 
 
 ASSET_DIR = PROJECT / "production-assets"
-COMPOSITE = ASSET_DIR / "fathers-day-dads-who-show-up-storyboard-01.png"
-PROMPT_RECORD = "production-assets/fathers-day-dads-who-show-up-sources.md"
+PROMPT_RECORD = "production-assets/fathers-day-dads-who-show-up-portrait-prompts.md"
 CTA = "If this helped, like and subscribe for more practical Parenting Rewind ideas."
 EPISODE_ID = "parenting-rewind-redesign-86-fathers-day-dads-who-show-up"
 THUMBNAIL = WORK_ROOT / EPISODE_ID / "thumbnail.jpg"
 
-# Six previously approved project-owned panels. The sequence intentionally
-# changes family, setting, child age and type of care from scene to scene.
-SOURCES = [
-    ("bedtime-father-daughter-storyboard-01.png", 4),
-    ("laundry-father-two-children-storyboard-01.png", 4),
-    ("soccer-father-son-storyboard-01.png", 5),
-    ("art-studio-father-daughter-storyboard-01.png", 3),
-    ("teen-curfew-father-daughter-storyboard-01.png", 3),
-    ("honesty-father-son-storyboard-01.png", 5),
+PORTRAIT_ASSETS = [
+    "fathers-day-quiet-love-portrait-01.png",
+    "fathers-day-daily-work-portrait-01.png",
+    "fathers-day-repair-portrait-01.png",
+    "fathers-day-listening-child-portrait-01.png",
+    "fathers-day-listening-teen-portrait-01.png",
+    "fathers-day-family-hug-portrait-01.png",
 ]
 
 
-def extract_panel(path: Path, index: int) -> Image.Image:
-    source = Image.open(path).convert("RGB")
-    row, column = divmod(index, 3)
-    margin = 7
-    left = round(column * source.width / 3) + margin
-    right = round((column + 1) * source.width / 3) - margin
-    top = round(row * source.height / 2) + margin
-    bottom = round((row + 1) * source.height / 2) - margin
-    return source.crop((left, top, right, bottom))
-
-
-def build_composite() -> None:
-    panels = [extract_panel(ASSET_DIR / name, index) for name, index in SOURCES]
-    cell_width, cell_height = 800, 700
-    canvas = Image.new("RGB", (cell_width * 3, cell_height * 2), (24, 24, 24))
-    for index, panel in enumerate(panels):
-        scale = max(cell_width / panel.width, cell_height / panel.height)
-        resized = panel.resize((round(panel.width * scale), round(panel.height * scale)), Image.Resampling.LANCZOS)
-        left = max(0, (resized.width - cell_width) // 2)
-        top = max(0, round((resized.height - cell_height) * 0.42))
-        framed = resized.crop((left, top, left + cell_width, top + cell_height))
-        row, column = divmod(index, 3)
-        canvas.paste(framed, (column * cell_width, row * cell_height))
-    canvas.save(COMPOSITE, optimize=True)
-
-
 def build_thumbnail() -> None:
-    selected = [
-        extract_panel(ASSET_DIR / "bedtime-father-daughter-storyboard-01.png", 4),
-        extract_panel(ASSET_DIR / "art-studio-father-daughter-storyboard-01.png", 3),
-        extract_panel(ASSET_DIR / "teen-curfew-father-daughter-storyboard-01.png", 3),
-    ]
+    selected = [Image.open(ASSET_DIR / PORTRAIT_ASSETS[index]).convert("RGB") for index in (0, 3, 5)]
     width, height = 1280, 720
     canvas = Image.new("RGB", (width, height), (24, 18, 16))
-    cell_width = math.ceil(width / 3)
+    cell_width = (width + 2) // 3
     for index, panel in enumerate(selected):
         scale = max(cell_width / panel.width, height / panel.height)
         resized = panel.resize((round(panel.width * scale), round(panel.height * scale)), Image.Resampling.LANCZOS)
         left = max(0, (resized.width - cell_width) // 2)
-        top = max(0, round((resized.height - height) * 0.42))
+        top = max(0, round((resized.height - height) * 0.36))
         canvas.paste(resized.crop((left, top, left + cell_width, top + height)), (index * cell_width, 0))
     overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(overlay)
@@ -97,8 +63,8 @@ SPEC = {
     "number": 86,
     "slug": "fathers-day-dads-who-show-up",
     "title": "To the Dads Who Keep Showing Up - A Father's Day Tribute",
-    "asset": COMPOSITE.name,
-    "grid": [3, 2],
+    "asset": None,
+    "panel_files": PORTRAIT_ASSETS,
     "order": [0, 1, 2, 3, 4, 5],
     "beat_labels": [
         "QUIET LOVE",
@@ -116,8 +82,8 @@ SPEC = {
         "title": "Fathers' Roles in the Care and Development of Their Children: The Role of Pediatricians",
         "url": "https://publications.aap.org/pediatrics/article/138/1/e20161128/52467/Fathers-Roles-in-the-Care-and-Development-of-Their",
     },
-    "new_image_generation_calls": 0,
-    "recycled_visuals_approved": True,
+    "new_image_generation_calls": 6,
+    "recycled_visuals_approved": False,
     "generation_prompt_record": PROMPT_RECORD,
     "upload_authorized": False,
     "mirror_to_onedrive": False,
@@ -134,16 +100,16 @@ SPEC = {
 
 
 async def main() -> None:
-    build_composite()
     build_thumbnail()
     result = await produce(SPEC)
     metadata_path = PROJECT / "metadata" / "parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.json"
     metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
     metadata["artwork"]["source_assets"] = [
-        {"file": f"production-assets/{name}", "panel": panel}
-        for name, panel in SOURCES
+        {"file": f"production-assets/{name}", "native_aspect_ratio": "9:16"}
+        for name in PORTRAIT_ASSETS
     ]
     metadata["artwork"]["composite_is_new_generation"] = False
+    metadata["artwork"]["portrait_native_visual_rebuild"] = True
     metadata["research"]["claim_limits"] = [
         "The tribute describes common forms of involved fathering; individual families and roles vary.",
         "Association between father involvement and child outcomes does not make any one activity a guaranteed result.",

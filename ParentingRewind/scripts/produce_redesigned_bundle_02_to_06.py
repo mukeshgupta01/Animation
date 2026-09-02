@@ -208,8 +208,15 @@ async def produce(spec: dict) -> dict:
         beat_labels=spec.get("beat_labels"),
         title_duration=spec.get("title_duration"),
     )
-    asset_path = PROJECT / "production-assets" / spec["asset"]
-    panels = split_panels(asset_path, spec["grid"], work / "panels")
+    panel_files = spec.get("panel_files")
+    if panel_files:
+        panels = [PROJECT / "production-assets" / filename for filename in panel_files]
+        missing = [str(path) for path in panels if not path.exists()]
+        if missing:
+            raise FileNotFoundError(f"Missing direct panel files: {missing}")
+    else:
+        asset_path = PROJECT / "production-assets" / spec["asset"]
+        panels = split_panels(asset_path, spec["grid"], work / "panels")
     metadata = {
         "status": "local-review-only", "episode_id": episode_id, "version": "v1",
         "title": f"{spec['title']} | Parenting Rewind",
@@ -218,7 +225,12 @@ async def produce(spec: dict) -> dict:
         "narration": {"type": "synthetic", "voice": VOICE, "rate": "-5%", "pitch": "-1Hz", "transcript": narration},
         "research": {"reviewed_on": spec.get("reviewed_on", "2026-08-23"), "source": spec["source"], "claim_limits": ["Suggested wording is an example, not a guaranteed result.", "Adapt expectations to the individual child and safety context."]},
         "artwork": {
-            "primary_asset": f"production-assets/{spec['asset']}",
+            "primary_asset": (
+                f"production-assets/{spec['asset']}"
+                if spec.get("asset")
+                else f"production-assets/{panel_files[0]}"
+            ),
+            "panel_files": [f"production-assets/{filename}" for filename in panel_files] if panel_files else None,
             "panel_order": spec["order"],
             "recycled_visuals_approved": spec.get("recycled_visuals_approved", spec["number"] in (4, 5, 6)),
             "new_image_generation_calls": spec.get("new_image_generation_calls", 0),

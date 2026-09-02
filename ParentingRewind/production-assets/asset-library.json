@@ -824,6 +824,66 @@
         {"index": 4, "description": "Teen places his phone beside mother's phone on a hallway charging shelf.", "useful_for": ["outside-bedroom charging", "parent modeling", "shared rule"], "published_uses": 0},
         {"index": 5, "description": "Teen reads a paper book while mother gives a quiet goodnight.", "useful_for": ["screen-free wind-down", "connection", "resolution"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "fathers-day-quiet-love-portrait-01",
+      "file": "fathers-day-quiet-love-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "young daughter"],
+      "setting": "warm bedroom at bedtime",
+      "topic_tags": ["fatherhood", "bedtime", "quiet love", "care through actions", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father reads one more bedtime story to his young daughter.", "useful_for": ["bedtime connection", "father presence", "quiet care"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-daily-work-portrait-01",
+      "file": "fathers-day-daily-work-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "school-age daughter", "school-age son"],
+      "setting": "family kitchen and laundry nook in morning light",
+      "topic_tags": ["fatherhood", "daily care", "school morning", "invisible work", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father packs lunch and folds a uniform while two children get ready.", "useful_for": ["care work", "school preparation", "love through actions"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-repair-portrait-01",
+      "file": "fathers-day-repair-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "school-age son"],
+      "setting": "living room after a difficult moment",
+      "topic_tags": ["fatherhood", "repair", "apology", "responsive parenting", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father kneels at his son's eye level to repair connection.", "useful_for": ["parent repair", "calm accountability", "reconnection"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-listening-child-portrait-01",
+      "file": "fathers-day-listening-child-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "school-age daughter"],
+      "setting": "home entryway after school",
+      "topic_tags": ["fatherhood", "active listening", "school-age", "responsive care", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father listens at eye level while daughter describes a hard school day.", "useful_for": ["listening first", "emotional safety", "after-school connection"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-listening-teen-portrait-01",
+      "file": "fathers-day-listening-teen-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["older father", "teenage son"],
+      "setting": "kitchen table in evening light",
+      "topic_tags": ["fatherhood", "teenager", "active listening", "steady support", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father listens patiently as his teenage son begins to open up.", "useful_for": ["teen communication", "patient presence", "support"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-family-hug-portrait-01",
+      "file": "fathers-day-family-hug-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["older father figure", "adult daughter", "middle-aged father", "young grandchild"],
+      "setting": "backyard family gathering at golden hour",
+      "topic_tags": ["fatherhood", "father figure", "grandfather", "multigenerational family", "Father's Day"],
+      "panels": [{"index": 0, "description": "A multigenerational family embraces an older father figure.", "useful_for": ["Father's Day ending", "appreciation", "family belonging"], "published_uses": 0}]
     }
   ]
 }

@@ -65,8 +65,8 @@ The producer preserves an existing completed MP4 rather than overwriting it. Its
 
 ## Image-credit conservation
 
-Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 33 reusable storyboard families. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
+Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 40 assets: 34 storyboard/composite families plus six native 9:16 Father's Day portrait scenes. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
 
-The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library. The current library contains 33 storyboard families after the episode 83-85 additions.
+The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library. Episode 86's corrected Short uses six separate native 9:16 built-in images because its reused landscape panels cropped poorly in vertical output.
 
 Recurring characters and settings create useful channel continuity, but the complete visual sequence must not be repeated with only superficial text changes. New artwork should be generated only when the existing panels cannot clearly illustrate the new parenting situation.
