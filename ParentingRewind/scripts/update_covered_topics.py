@@ -35,9 +35,9 @@ def is_durable_active_metadata(path: Path) -> bool:
 
 
 def main() -> None:
-    active = {path.stem for path in OUTPUT.glob("*.mp4")}
+    active = {path.stem for path in OUTPUT.rglob("*.mp4")}
     topics: dict[str, dict] = defaultdict(lambda: {"files": [], "active": False})
-    for path in sorted(METADATA.glob("*.json")):
+    for path in sorted(METADATA.rglob("*.json")):
         try:
             doc = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -45,7 +45,7 @@ def main() -> None:
         title = normalize_title(str(doc.get("title") or path.stem.replace("-", " ").title()))
         entry = topics[title.casefold()]
         entry["title"] = title
-        entry["files"].append(path.name)
+        entry["files"].append(str(path.relative_to(METADATA)).replace("\\", "/"))
         entry["active"] = entry["active"] or is_durable_active_metadata(path) or bool(candidate_outputs(path, doc) & active)
 
     active_count = sum(1 for item in topics.values() if item["active"])

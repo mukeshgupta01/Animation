@@ -1,0 +1,51 @@
+{
+  "artwork": {
+    "new_image_generation_calls": 1,
+    "panel_count": 3,
+    "source": "production-assets/01-missed-call-triptych.png"
+  },
+  "audience_intent": "Adults and parents; not directed to children",
+  "episode_id": "fathers-day-20s-the-missed-call",
+  "title": "The Missed Call That Meant Everything | Father's Day Short",
+  "music": {
+    "ambient_noise": false,
+    "copyright_safe": true,
+    "narration_sidechain_ducking": true,
+    "sound_effects": false,
+    "type": "original locally synthesized soulful instrumental"
+  },
+  "narration": {
+    "transcript": "Dad never asked for expensive gifts. He was only hoping to hear your voice. This Father's Day, call Dad. Like and subscribe for more heartfelt Parenting Rewind stories.",
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural"
+  },
+  "output": {
+    "duration_seconds": 20.0,
+    "file": "output\\fathers-day-20-second-shorts\\01-the-missed-call-fathers-day-short.mp4",
+    "sha256": "AE0F8B799149D40F41596B0D96AC401BEFBDDE615785AB68EBD1300085FC9538"
+  },
+  "published": true,
+  "status": "upload-authorized",
+  "upload_authorized": true,
+  "youtube": {
+    "contains_synthetic_media": true,
+    "description": "Dad may not ask for presents. Sometimes he is simply hoping to hear your voice. A short Father's Day reminder to make the call while you can.\n\n#FathersDay #Dad #Fatherhood #CallDad #ParentingRewind #Shorts",
+    "made_for_kids": false,
+    "privacy": "public",
+    "tags": [
+      "Father's Day",
+      "dad",
+      "fatherhood",
+      "call dad",
+      "family",
+      "parent appreciation",
+      "emotional short",
+      "Parenting Rewind"
+    ],
+    "thumbnail": "output\\fathers-day-20-second-shorts\\01-the-missed-call-thumbnail.jpg",
+    "thumbnail_status": "forbidden-by-channel-permission",
+    "title": "The Missed Call That Meant Everything | Father's Day Short",
+    "url": "https://youtu.be/d3rX3gdNueU",
+    "video_id": "d3rX3gdNueU"
+  }
+}

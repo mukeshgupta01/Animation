@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-09-02 (Australia/Sydney)
+Last updated: 2026-09-03 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -9,6 +9,20 @@ This document lets a fresh Codex session continue safely. It contains the non-se
 Create and operate a high-quality, adult-facing parenting education channel named **Parenting Rewind**. The channel is created and OAuth-verified. Open-ended local production remains approved. On 2026-08-30 the user superseded the earlier cadence and authorized one oldest-first public upload every hour.
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
+
+## Father's Day 20-second collection checkpoint
+
+- Five emotional, adult-facing Father's Day Shorts were created from five new built-in-image-generation triptychs. Each final master is exactly 20.0 seconds, 1080x1920 H.264 at 30 fps with stereo 48 kHz AAC, warm synthetic adult narration, burned-in safe-zone copy and its own original locally synthesized soulful instrumental score with narration ducking.
+- Automated format checks and independent full FFmpeg decodes passed for every master. The combined visual review sheet is `production-work/fathers-day-20-second-shorts/review/collection-contact-sheet.jpg`. Rebuild with `scripts/produce_fathers_day_20s_collection.py`; effective image specifications are recorded in `production-assets/fathers-day-20-second-shorts-prompts.md`.
+- The user explicitly authorized upload to Parenting Rewind on 2026-09-03. The channel-locked idempotent publisher `automation/upload_fathers_day_20s_collection.py` uploaded and remotely verified all five as public on immutable channel `UCGb-IUQX2KQa_KA24MwE_aQ`, all with `made_for_kids=false` and an API-confirmed `containsSyntheticMedia=true`:
+  - His Old Wallet: `6zRFGniV4z0` (`https://youtu.be/6zRFGniV4z0`)
+  - One More Story: `SHOydVIEWK8` (`https://youtu.be/SHOydVIEWK8`)
+  - The Empty Chair: `B-dauMumHLs` (`https://youtu.be/B-dauMumHLs`)
+  - The Missed Call: `d3rX3gdNueU` (`https://youtu.be/d3rX3gdNueU`)
+  - The Shoes by the Door: `TALHXV--VQY` (`https://youtu.be/TALHXV--VQY`)
+- Five custom thumbnails were generated locally, but YouTube returned the existing channel-permission HTTP 403 for every thumbnail attempt. The videos remain successful public uploads using YouTube-generated thumbnails. The ignored upload journal records all IDs before retry-sensitive operations; do not upload duplicates.
+- A final live API check found all five videos with `uploadStatus=processed` and `processingStatus=succeeded`. All five MP4s were also copied to the configured Business OneDrive folder with matching SHA-256 hashes; local masters remain in place.
+- The five storyboard families are registered in `production-assets/asset-library.json` with one published use per panel. `COVERED-TOPICS.md` was rebuilt recursively and now records 117 unique topics. The live Scheduled Task inspection returned no task whose name contains `Parenting`; this was observed only and no task was created or changed during this collection.
 
 ## Father's Day review checkpoint
 

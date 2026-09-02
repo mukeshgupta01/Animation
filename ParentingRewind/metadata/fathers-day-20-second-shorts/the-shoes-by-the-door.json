@@ -1,0 +1,51 @@
+{
+  "artwork": {
+    "new_image_generation_calls": 1,
+    "panel_count": 3,
+    "source": "production-assets/02-shoes-by-door-triptych.png"
+  },
+  "audience_intent": "Adults and parents; not directed to children",
+  "episode_id": "fathers-day-20s-the-shoes-by-the-door",
+  "title": "He Tied My Shoes. Now I Walk Beside Him | Father's Day Short",
+  "music": {
+    "ambient_noise": false,
+    "copyright_safe": true,
+    "narration_sidechain_ducking": true,
+    "sound_effects": false,
+    "type": "original locally synthesized soulful instrumental"
+  },
+  "narration": {
+    "transcript": "He helped me take my first steps. Now I will walk beside him. Happy Father's Day, Dad. Like and subscribe for more heartfelt Parenting Rewind stories.",
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural"
+  },
+  "output": {
+    "duration_seconds": 20.0,
+    "file": "output\\fathers-day-20-second-shorts\\02-the-shoes-by-the-door-fathers-day-short.mp4",
+    "sha256": "685F9564CD839E4D51F66F60C17FF7FC85075F75A1E8EF2C5171925305B36EF4"
+  },
+  "published": true,
+  "status": "upload-authorized",
+  "upload_authorized": true,
+  "youtube": {
+    "contains_synthetic_media": true,
+    "description": "He helped with the little steps first. Years later, love can look like slowing down and walking beside him. Happy Father's Day to the dads who were there.\n\n#FathersDay #Dad #Fatherhood #FamilyLove #ParentingRewind #Shorts",
+    "made_for_kids": false,
+    "privacy": "public",
+    "tags": [
+      "Father's Day",
+      "dad",
+      "father daughter",
+      "growing older",
+      "family love",
+      "fatherhood",
+      "emotional short",
+      "Parenting Rewind"
+    ],
+    "thumbnail": "output\\fathers-day-20-second-shorts\\02-the-shoes-by-the-door-thumbnail.jpg",
+    "thumbnail_status": "forbidden-by-channel-permission",
+    "title": "He Tied My Shoes. Now I Walk Beside Him | Father's Day Short",
+    "url": "https://youtu.be/TALHXV--VQY",
+    "video_id": "TALHXV--VQY"
+  }
+}

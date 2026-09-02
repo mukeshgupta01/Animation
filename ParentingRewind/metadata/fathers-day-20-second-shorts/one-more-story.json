@@ -1,0 +1,51 @@
+{
+  "artwork": {
+    "new_image_generation_calls": 1,
+    "panel_count": 3,
+    "source": "production-assets/04-one-more-story-triptych.png"
+  },
+  "audience_intent": "Adults and parents; not directed to children",
+  "episode_id": "fathers-day-20s-one-more-story",
+  "title": "Dad Always Read One More Story | Father's Day Short",
+  "music": {
+    "ambient_noise": false,
+    "copyright_safe": true,
+    "narration_sidechain_ducking": true,
+    "sound_effects": false,
+    "type": "original locally synthesized soulful instrumental"
+  },
+  "narration": {
+    "transcript": "When I was little, Dad always gave me one more story. Now it is my turn to stay a little longer. Like and subscribe for more heartfelt Parenting Rewind stories.",
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural"
+  },
+  "output": {
+    "duration_seconds": 20.0,
+    "file": "output\\fathers-day-20-second-shorts\\04-one-more-story-fathers-day-short.mp4",
+    "sha256": "E2AD41A19B2AC450E3E1263038FC66D70CFB1DBD044015188AEFF0F20C850ECC"
+  },
+  "published": true,
+  "status": "upload-authorized",
+  "upload_authorized": true,
+  "youtube": {
+    "contains_synthetic_media": true,
+    "description": "When we were little, Dad gave us one more story and a little more time. Now the most meaningful gift may be giving some of that time back.\n\n#FathersDay #Dad #BedtimeStories #FamilyTime #ParentingRewind #Shorts",
+    "made_for_kids": false,
+    "privacy": "public",
+    "tags": [
+      "Father's Day",
+      "dad",
+      "bedtime story",
+      "family time",
+      "aging parents",
+      "father daughter",
+      "emotional short",
+      "Parenting Rewind"
+    ],
+    "thumbnail": "output\\fathers-day-20-second-shorts\\04-one-more-story-thumbnail.jpg",
+    "thumbnail_status": "forbidden-by-channel-permission",
+    "title": "Dad Always Read One More Story | Father's Day Short",
+    "url": "https://youtu.be/SHOydVIEWK8",
+    "video_id": "SHOydVIEWK8"
+  }
+}

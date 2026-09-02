@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-09-02
+Updated: 2026-09-03
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 112 (88 active; 24 historical-only).
+Unique topics: 117 (93 active; 24 historical-only).
 
 ## Topic index
 
@@ -17,6 +17,7 @@ Unique topics: 112 (88 active; 24 historical-only).
 - [active] Check What Your Child Heard — metadata: parenting-rewind-redesign-61-check-what-child-heard-v1.json
 - [active] Choose a Homework Time Together — metadata: parenting-rewind-redesign-12-homework-time-together-v1.json
 - [active] Coach the Words, Then Let Preschool Friends Try — metadata: parenting-rewind-redesign-83-coach-preschool-friendship-words-v1.json
+- [active] Dad Always Read One More Story | Father's Day Short — metadata: fathers-day-20-second-shorts/one-more-story.json
 - [active] Describe Cooperation Like a Commentator — metadata: parenting-rewind-redesign-16-describe-cooperation-v1.json
 - [active] Give a Shopping Job Before You Enter — metadata: parenting-rewind-redesign-42-shopping-job-before-entry-v1.json
 - [active] Give a Warning That Means Something — metadata: parenting-rewind-redesign-06-playground-warning-v1.json
@@ -25,6 +26,7 @@ Unique topics: 112 (88 active; 24 historical-only).
 - [active] Give the Direction, Then Wait — metadata: parenting-rewind-redesign-35-direction-then-wait-v1.json
 - [active] Give Thirty Seconds of Full Attention — metadata: parenting-rewind-redesign-29-full-attention-listening-v1.json
 - [active] Give Your Child Input on Homework Timing — metadata: parenting-rewind-redesign-30-child-input-homework-plan-v1.json
+- [active] He Tied My Shoes. Now I Walk Beside Him | Father's Day Short — metadata: fathers-day-20-second-shorts/the-shoes-by-the-door.json
 - [active] Hear Each Sibling Separately First — metadata: parenting-rewind-redesign-53-sibling-listen-separately-v1.json
 - [active] Hold the Car-Seat Boundary Calmly — metadata: parenting-rewind-redesign-68-calm-car-seat-boundary-v1.json
 - [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
@@ -79,6 +81,8 @@ Unique topics: 112 (88 active; 24 historical-only).
 - [active] Stop Biting Without Calling Your Toddler Bad — metadata: parenting-rewind-redesign-74-stop-biting-without-shame-v1.json
 - [active] Talk About the Process, Not Their Worth — metadata: parenting-rewind-redesign-70-grade-process-not-worth-v1.json
 - [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
+- [active] The Empty Chair Wasn't Empty for Long | Father's Day Short — metadata: fathers-day-20-second-shorts/the-empty-chair.json
+- [active] The Missed Call That Meant Everything | Father's Day Short — metadata: fathers-day-20-second-shorts/the-missed-call.json
 - [active] The One-More-Story Loop — metadata: parenting-rewind-025-one-more-story-v1.json, parenting-rewind-redesign-04-one-more-story-v1.json
 - [active] To the Dads Who Keep Showing Up - A Father's Day Tribute — metadata: parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.json
 - [active] Treat Toilet Accidents as Practice, Not Misbehavior — metadata: parenting-rewind-redesign-71-toilet-accident-without-shame-v1.json
@@ -87,6 +91,7 @@ Unique topics: 112 (88 active; 24 historical-only).
 - [active] Use One Real Choice at the Library — metadata: parenting-rewind-redesign-17-library-one-book-choice-v1.json
 - [active] Use the Same Short Daycare Goodbye — metadata: parenting-rewind-redesign-66-short-daycare-goodbye-v1.json
 - [active] Warn Before Homework Starts — metadata: parenting-rewind-redesign-19-homework-transition-warning-v1.json
+- [active] What Dad Kept in His Wallet All These Years | Father's Day Short — metadata: fathers-day-20-second-shorts/his-old-wallet.json
 - [active] When Bedtime Keeps Moving — metadata: parenting-rewind-redesign-02-bedtime-stalling-v1.json
 - [active] When Both Kids Want the Same Job — metadata: parenting-rewind-redesign-01-kitchen-siblings-v1.json
 - [active] When One Mistake Makes Your Child Want to Quit — metadata: parenting-rewind-redesign-78-one-mistake-wants-to-quit-v1.json

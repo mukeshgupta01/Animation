@@ -1,0 +1,51 @@
+{
+  "artwork": {
+    "new_image_generation_calls": 1,
+    "panel_count": 3,
+    "source": "production-assets/05-empty-chair-triptych.png"
+  },
+  "audience_intent": "Adults and parents; not directed to children",
+  "episode_id": "fathers-day-20s-the-empty-chair",
+  "title": "The Empty Chair Wasn't Empty for Long | Father's Day Short",
+  "music": {
+    "ambient_noise": false,
+    "copyright_safe": true,
+    "narration_sidechain_ducking": true,
+    "sound_effects": false,
+    "type": "original locally synthesized soulful instrumental"
+  },
+  "narration": {
+    "transcript": "Dad said he did not need anything. But when we came home, this was everything. Happy Father's Day, Dad. Like and subscribe for more heartfelt Parenting Rewind stories.",
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural"
+  },
+  "output": {
+    "duration_seconds": 20.0,
+    "file": "output\\fathers-day-20-second-shorts\\05-the-empty-chair-fathers-day-short.mp4",
+    "sha256": "63D3930B5E32223ECC872AE321B499F7132AE67E513600D975FAC931F24C6307"
+  },
+  "published": true,
+  "status": "upload-authorized",
+  "upload_authorized": true,
+  "youtube": {
+    "contains_synthetic_media": true,
+    "description": "Dad said he did not need anything. Then the door opened, the chair was filled, and the whole room changed. Sometimes presence is the greatest Father's Day gift.\n\n#FathersDay #Dad #FamilyReunion #Fatherhood #ParentingRewind #Shorts",
+    "made_for_kids": false,
+    "privacy": "public",
+    "tags": [
+      "Father's Day",
+      "dad",
+      "family reunion",
+      "coming home",
+      "fatherhood",
+      "family time",
+      "emotional short",
+      "Parenting Rewind"
+    ],
+    "thumbnail": "output\\fathers-day-20-second-shorts\\05-the-empty-chair-thumbnail.jpg",
+    "thumbnail_status": "forbidden-by-channel-permission",
+    "title": "The Empty Chair Wasn't Empty for Long | Father's Day Short",
+    "url": "https://youtu.be/B-dauMumHLs",
+    "video_id": "B-dauMumHLs"
+  }
+}

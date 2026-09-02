@@ -1,0 +1,51 @@
+{
+  "artwork": {
+    "new_image_generation_calls": 1,
+    "panel_count": 3,
+    "source": "production-assets/03-old-wallet-triptych.png"
+  },
+  "audience_intent": "Adults and parents; not directed to children",
+  "episode_id": "fathers-day-20s-his-old-wallet",
+  "title": "What Dad Kept in His Wallet All These Years | Father's Day Short",
+  "music": {
+    "ambient_noise": false,
+    "copyright_safe": true,
+    "narration_sidechain_ducking": true,
+    "sound_effects": false,
+    "type": "original locally synthesized soulful instrumental"
+  },
+  "narration": {
+    "transcript": "I grew up and became busy. But Dad carried my picture every day. I was always his greatest treasure. Like and subscribe for more heartfelt Parenting Rewind stories.",
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural"
+  },
+  "output": {
+    "duration_seconds": 20.0,
+    "file": "output\\fathers-day-20-second-shorts\\03-his-old-wallet-fathers-day-short.mp4",
+    "sha256": "A5F0F7C45E5353D6D56CB42EFB58F1357AF5963F064046238592C1499B135468"
+  },
+  "published": true,
+  "status": "upload-authorized",
+  "upload_authorized": true,
+  "youtube": {
+    "contains_synthetic_media": true,
+    "description": "Tucked inside an old wallet was a small reminder: even when life became busy, his child was never far from his heart. A Father's Day story about quiet love.\n\n#FathersDay #Dad #Fatherhood #FamilyMemories #ParentingRewind #Shorts",
+    "made_for_kids": false,
+    "privacy": "public",
+    "tags": [
+      "Father's Day",
+      "dad",
+      "old wallet",
+      "family memories",
+      "quiet love",
+      "fatherhood",
+      "emotional short",
+      "Parenting Rewind"
+    ],
+    "thumbnail": "output\\fathers-day-20-second-shorts\\03-his-old-wallet-thumbnail.jpg",
+    "thumbnail_status": "forbidden-by-channel-permission",
+    "title": "What Dad Kept in His Wallet All These Years | Father's Day Short",
+    "url": "https://youtu.be/6zRFGniV4z0",
+    "video_id": "6zRFGniV4z0"
+  }
+}

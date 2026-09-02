@@ -884,6 +884,82 @@
       "setting": "backyard family gathering at golden hour",
       "topic_tags": ["fatherhood", "father figure", "grandfather", "multigenerational family", "Father's Day"],
       "panels": [{"index": 0, "description": "A multigenerational family embraces an older father figure.", "useful_for": ["Father's Day ending", "appreciation", "family belonging"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-missed-call-triptych-01",
+      "file": "01-missed-call-triptych.png",
+      "asset_type": "3x1_portrait_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-03", "reference_images": 0},
+      "characters": ["older South Asian father", "adult daughter"],
+      "setting": "warm home and busy public interior",
+      "topic_tags": ["Father's Day", "older parent", "phone call", "adult child", "time together"],
+      "grid": {"columns": 3, "rows": 1, "crop_margin_pixels": 10},
+      "panels": [
+        {"index": 0, "description": "Older father waits quietly beside his phone and family photograph.", "useful_for": ["older parent", "waiting", "family memories"], "published_uses": 1},
+        {"index": 1, "description": "Adult daughter notices missed calls during a busy day.", "useful_for": ["adult child", "missed call", "busy life"], "published_uses": 1},
+        {"index": 2, "description": "Father smiles during a video call.", "useful_for": ["phone connection", "father appreciation", "happy resolution"], "published_uses": 1}
+      ]
+    },
+    {
+      "asset_id": "fathers-day-shoes-by-door-triptych-01",
+      "file": "02-shoes-by-door-triptych.png",
+      "asset_type": "3x1_portrait_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-03", "reference_images": 0},
+      "characters": ["East Asian father across life stages", "daughter across life stages"],
+      "setting": "family doorway and golden-hour walking path",
+      "topic_tags": ["Father's Day", "care reversal", "aging parent", "father daughter", "walking together"],
+      "grid": {"columns": 3, "rows": 1, "crop_margin_pixels": 10},
+      "panels": [
+        {"index": 0, "description": "Young father ties his daughter's school shoe.", "useful_for": ["childhood care", "school morning", "father presence"], "published_uses": 1},
+        {"index": 1, "description": "Adult daughter helps her elderly father with his walking shoe.", "useful_for": ["care reversal", "aging parent", "dignity"], "published_uses": 1},
+        {"index": 2, "description": "Father and adult daughter walk hand-in-hand.", "useful_for": ["time together", "adult child", "father appreciation"], "published_uses": 1}
+      ]
+    },
+    {
+      "asset_id": "fathers-day-old-wallet-triptych-01",
+      "file": "03-old-wallet-triptych.png",
+      "asset_type": "3x1_portrait_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-03", "reference_images": 0},
+      "characters": ["older Black father", "adult son"],
+      "setting": "warm lived-in kitchen",
+      "topic_tags": ["Father's Day", "old wallet", "childhood photograph", "father son", "quiet love"],
+      "grid": {"columns": 3, "rows": 1, "crop_margin_pixels": 10},
+      "panels": [
+        {"index": 0, "description": "Father opens a worn wallet containing his son's childhood photograph.", "useful_for": ["family keepsake", "quiet love", "memory"], "published_uses": 1},
+        {"index": 1, "description": "Adult son discovers the photograph his father kept.", "useful_for": ["realization", "adult child", "father son"], "published_uses": 1},
+        {"index": 2, "description": "Father and adult son share a quiet hug.", "useful_for": ["gratitude", "father appreciation", "reconnection"], "published_uses": 1}
+      ]
+    },
+    {
+      "asset_id": "fathers-day-one-more-story-triptych-01",
+      "file": "04-one-more-story-triptych.png",
+      "asset_type": "3x1_portrait_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-03", "reference_images": 0},
+      "characters": ["Latino father across life stages", "daughter across life stages"],
+      "setting": "bedroom and family living room at night",
+      "topic_tags": ["Father's Day", "bedtime story", "aging parent", "father daughter", "giving time"],
+      "grid": {"columns": 3, "rows": 1, "crop_margin_pixels": 10},
+      "panels": [
+        {"index": 0, "description": "Young father reads one more bedtime story.", "useful_for": ["bedtime connection", "childhood memory", "father presence"], "published_uses": 1},
+        {"index": 1, "description": "Adult daughter returns to her elderly father's home.", "useful_for": ["homecoming", "aging parent", "adult child"], "published_uses": 1},
+        {"index": 2, "description": "Adult daughter reads beside her smiling father.", "useful_for": ["giving time", "care reversal", "family connection"], "published_uses": 1}
+      ]
+    },
+    {
+      "asset_id": "fathers-day-empty-chair-triptych-01",
+      "file": "05-empty-chair-triptych.png",
+      "asset_type": "3x1_portrait_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-03", "reference_images": 0},
+      "characters": ["older father", "adult son", "adult daughter"],
+      "setting": "warm family dining room",
+      "topic_tags": ["Father's Day", "empty chair", "family visit", "adult children", "presence"],
+      "grid": {"columns": 3, "rows": 1, "crop_margin_pixels": 10},
+      "panels": [
+        {"index": 0, "description": "Older father sits beside an empty dining chair.", "useful_for": ["waiting", "older parent", "quiet hope"], "published_uses": 1},
+        {"index": 1, "description": "Adult children arrive with a cake and flowers.", "useful_for": ["surprise visit", "homecoming", "family celebration"], "published_uses": 1},
+        {"index": 2, "description": "Family embraces around the now-filled table.", "useful_for": ["presence", "family reunion", "Father's Day ending"], "published_uses": 1}
+      ]
     }
   ]
 }
