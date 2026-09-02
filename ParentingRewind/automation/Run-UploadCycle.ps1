@@ -28,7 +28,7 @@ try {
     if (Test-Path -LiteralPath $report) {
         $result = Get-Content -LiteralPath $report -Raw | ConvertFrom-Json
         if ([int]$result.successful -gt 0) {
-            & powershell.exe -NoProfile -ExecutionPolicy Bypass -File $mailer -ReportPath $report *>> $log
+            & $mailer -ReportPath $report *>> $log
         }
     }
     Add-Content -LiteralPath $log -Value "$(Get-Date -Format o) upload check finished with exit code $uploadExit"

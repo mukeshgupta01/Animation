@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-08-26
+Updated: 2026-08-27
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 108 (84 active; 24 historical-only).
+Unique topics: 111 (87 active; 24 historical-only).
 
 ## Topic index
 
@@ -16,6 +16,7 @@ Unique topics: 108 (84 active; 24 historical-only).
 - [active] Build the Phone Boundary Together — metadata: parenting-rewind-redesign-67-build-phone-boundary-together-v1.json
 - [active] Check What Your Child Heard — metadata: parenting-rewind-redesign-61-check-what-child-heard-v1.json
 - [active] Choose a Homework Time Together — metadata: parenting-rewind-redesign-12-homework-time-together-v1.json
+- [active] Coach the Words, Then Let Preschool Friends Try — metadata: parenting-rewind-redesign-83-coach-preschool-friendship-words-v1.json
 - [active] Describe Cooperation Like a Commentator — metadata: parenting-rewind-redesign-16-describe-cooperation-v1.json
 - [active] Give a Shopping Job Before You Enter — metadata: parenting-rewind-redesign-42-shopping-job-before-entry-v1.json
 - [active] Give a Warning That Means Something — metadata: parenting-rewind-redesign-06-playground-warning-v1.json
@@ -40,6 +41,7 @@ Unique topics: 108 (84 active; 24 historical-only).
 - [active] Make the Direction a Statement — metadata: parenting-rewind-redesign-21-direction-not-question-v1.json
 - [active] Make the Final Soccer Turn Concrete — metadata: parenting-rewind-redesign-37-soccer-final-shot-v1.json
 - [active] Make the Homework Space Ready — metadata: parenting-rewind-redesign-24-homework-ready-space-v1.json
+- [active] Make the Overnight Phone Plan With Your Teen — metadata: parenting-rewind-redesign-85-teen-overnight-phone-sleep-plan-v1.json
 - [active] Make the Screen-Time Ending Plan First — metadata: parenting-rewind-redesign-48-screen-time-plan-before-play-v1.json
 - [active] Move Close Before Giving the Direction — metadata: parenting-rewind-redesign-13-move-close-first-v1.json
 - [active] Name the Feeling and Keep the Playground Limit — metadata: parenting-rewind-redesign-50-playground-feeling-and-limit-v1.json
@@ -88,6 +90,7 @@ Unique topics: 108 (84 active; 24 historical-only).
 - [active] When Both Kids Want the Same Job — metadata: parenting-rewind-redesign-01-kitchen-siblings-v1.json
 - [active] When One Mistake Makes Your Child Want to Quit — metadata: parenting-rewind-redesign-78-one-mistake-wants-to-quit-v1.json
 - [active] When the Checkout Request Becomes a Battle — metadata: parenting-rewind-redesign-07-checkout-choices-v1.json
+- [active] When Your Child Feels Left Out, Listen Before You Investigate — metadata: parenting-rewind-redesign-84-left-out-listen-before-investigating-v1.json
 - [active] When Your Child Refuses Their Shoes — metadata: pilot-01-shoes-v2-conversational.json, pilot-01-shoes-v3-dynamic-music.json, pilot-01-shoes-v4-audible-dynamic-music.json, pilot-01-shoes.json
 - [active] When Your Child Reports Bullying, Listen Before You Fix — metadata: parenting-rewind-redesign-75-listen-before-fixing-bullying-v1.json
 - [active] When Your Preschooler Wakes at Night, Return to the Same Routine — metadata: parenting-rewind-redesign-77-preschool-night-waking-same-routine-v1.json

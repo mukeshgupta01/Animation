@@ -21,6 +21,7 @@ This workspace contains two separate video projects. Keep their files, credentia
 - Keep the applicable `AGENTS.md` current when user preferences, safety rules, automation behavior, or continuation requirements materially change. Update only the project in scope unless the instruction applies workspace-wide.
 - If an instruction or handoff appears stale or conflicts with live state, stop the affected external action, reconcile the discrepancy safely and update the documentation.
 - If an upload process exits after sending data but before recording a video ID, perform a read-only channel query for the exact title before any retry. Reconcile a confirmed upload into the local ledger; never risk a duplicate upload.
+- BACKGROUND TASK POLICY (2026-08-31): every project Scheduled Task that launches Windows PowerShell must use `-NoProfile -NonInteractive -WindowStyle Hidden`, and nested script launches must remain in-process or explicitly hidden. Scheduled generation, upload, recovery and Git-sync work must retain file logging without opening or flashing Command Prompt/PowerShell windows.
 
 ## Repository synchronization
 
@@ -28,3 +29,4 @@ This workspace contains two separate video projects. Keep their files, credentia
 - The scheduled sync may fetch, fast-forward a clean `main`, and push reviewed commits. It must never auto-commit, force-push, reset, discard files, auto-resolve a divergence, or pull into a dirty worktree.
 - When the worktree is dirty, fetch only and leave the user's files untouched. When local and remote have diverged, log the state and leave reconciliation to an interactive reviewed session.
 - The task is `Animation Git Sync Every Three Hours`; its reviewed scripts are `automation/Run-GitSync.ps1` and `automation/Install-GitSyncTask.ps1`. Runtime logs belong under ignored `runtime/`.
+- THIS-COMPUTER TINY TALES STOP (2026-08-31): do not install, enable, run or recreate Tiny Tales Scheduled Tasks on this computer. Preserve `KidsRhymes` files, but schedule only the separately authorized Parenting Rewind and repository-sync automation here.

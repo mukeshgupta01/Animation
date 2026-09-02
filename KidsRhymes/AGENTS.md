@@ -255,7 +255,6 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The hourly retry task uses the 16 intervening `:20` slots and remains retry-only. It must never select a new unrelated queue video unless a duplicate-safe failure for that exact source is armed.
 - Frequency does not bypass the immutable channel lock, public/made-for-kids configuration, duplicate prevention, upload limits, custom-thumbnail requirement, stability window, or any post-cutoff quality evidence gate. An empty or fully held queue must safely no-op.
 - The continuous-generation task remains enabled, but the curated manifest currently has 12 completed items and zero remaining. Add only deliberately varied, fully planned concepts that meet the permanent visual-quality baseline; never restore repetitive fallback generation merely to fill three-hour upload slots.
-
 ## Rory completion and continued new batch (2026-08-28)
 
 - `Rory's Eight-Planet Postcard Adventure` completed as `rorys-eight-planet-postcard-adventure-01` at 126.7 seconds. Ryan (`ryan-uk`) is the expressive lead narrator and Ana (`ana-us`) voices Rory, following the required Natasha -> Maisie -> Ryan lead rotation.
@@ -358,3 +357,7 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The locked creative direction is a 120 BPM Playful/kinetic-soft park parade. Five distinct pairs accumulate through elephant stomp, penguin slide, fox spin, kangaroo bounce and lion drum verses, then perform one full chorus and an earned badge/dance finale. Keep the same sunny festival-park geography so the song builds as one event rather than disconnected animal scenes.
 - The opening anticipation and first-beat action frames are accepted production anchors: `automation/production-assets/dance-with-dad-opening-v1.png` and `automation/production-assets/dance-with-dad-opening-action-v1.png`. Both contain exactly one child and one larger dad for elephant, penguin, fox, kangaroo and lion, with consistent wardrobe, camera, lighting and integrated full-frame finish. Exact hashes and review notes are in `metadata/dance-with-dad-animal-parade-01-asset-review.json`.
 - Do not mass-generate the remaining scenes yet. Next build a twelve-second animated/music opening proof using these two matched states, an original lively chorus and synchronized drum/action beats. It must demonstrate real anticipation/action/follow-through, no camera-only motion and no broadband hiss before the remaining verse assets are generated. Nothing is authorized for upload.
+
+## This-computer scheduling stop (2026-08-31)
+
+- THIS-COMPUTER SCHEDULING STOP (2026-08-31): the user does not want Tiny Tales on this computer. Do not install, enable, run or recreate any Tiny Tales generation, upload or retry Scheduled Task here. Keep the project files intact for use elsewhere unless the user separately authorizes deletion.

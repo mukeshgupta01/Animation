@@ -16,7 +16,7 @@
   ],
   "minimum_file_age_seconds": 300,
   "queue_order": "oldest_episode_first",
-  "temporary_interval_hours": 2,
+  "temporary_interval_hours": 1,
   "temporary_interval_until_utc": "2026-08-28T10:55:10Z",
-  "steady_interval_hours": 4
+  "steady_interval_hours": 1
 }
