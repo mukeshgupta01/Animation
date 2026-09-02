@@ -85,7 +85,7 @@ SPEC = {
     "new_image_generation_calls": 6,
     "recycled_visuals_approved": False,
     "generation_prompt_record": PROMPT_RECORD,
-    "upload_authorized": False,
+    "upload_authorized": True,
     "mirror_to_onedrive": False,
     "narration": [
         "This Father's Day is for the dads whose love does not always arrive as a speech. It arrives as a packed lunch, a school pickup, a repaired toy, and one more story when they are exhausted.",
@@ -132,11 +132,11 @@ async def main() -> None:
         "privacy": "public",
         "made_for_kids": False,
         "contains_synthetic_media": True,
-        "upload_authorized": False,
+        "upload_authorized": True,
     }
     metadata_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (WORK_ROOT / "fathers-day-dads-who-show-up-ledger.json").write_text(
-        json.dumps({"approved": False, "upload_authorized": False, "result": result}, indent=2) + "\n",
+        json.dumps({"approved": True, "upload_authorized": True, "scheduled_publication": "2026-09-04T10:00:00Z", "result": result}, indent=2) + "\n",
         encoding="utf-8",
     )
     print(json.dumps(result), flush=True)

@@ -86,7 +86,7 @@
     "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up\\captions.srt"
   },
   "published": false,
-  "upload_authorized": false,
+  "upload_authorized": true,
   "output": {
     "file": "output\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.mp4",
     "duration_seconds": 73.1,
@@ -118,6 +118,20 @@
     "privacy": "public",
     "made_for_kids": false,
     "contains_synthetic_media": true,
-    "upload_authorized": false
+    "upload_authorized": true
+  },
+  "scheduled_publication": {
+    "authorized_on": "2026-09-02",
+    "timezone": "Australia/Sydney",
+    "publish_at_local": "2026-09-04T20:00:00+10:00",
+    "publish_at_utc": "2026-09-04T10:00:00Z",
+    "requested_timing": "Friday night",
+    "execution_method": "YouTube native scheduled publication",
+    "video_id": "ezoeeeZd4bs",
+    "youtube_url": "https://youtu.be/ezoeeeZd4bs",
+    "remote_state_verified": true,
+    "contains_synthetic_media_api_confirmed": true,
+    "thumbnail_set": false,
+    "thumbnail_status": "forbidden-by-channel-permission"
   }
 }

@@ -4,7 +4,7 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- The configured Business OneDrive transfer/upload folder contains 87 validated videos through episode 85. Episode 86 is a separate validated local-review-only Father's Day tribute and is not in the upload folder.
+- The configured Business OneDrive transfer/upload folder contains 87 validated videos through episode 85. Episode 86 is separate from that hourly queue and is privately uploaded on Parenting Rewind for automatic public release Friday 4 September 2026 at 8:00 PM Australia/Sydney.
 - **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
 - **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video
