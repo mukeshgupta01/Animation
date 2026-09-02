@@ -1,0 +1,46 @@
+{
+  "id": "dance-with-dad-animal-parade-01",
+  "reviewed_utc": "2026-09-02T02:06:00Z",
+  "status": "opening anticipation and action states accepted as production anchors",
+  "assets": [
+    {
+      "path": "automation/production-assets/dance-with-dad-opening-v1.png",
+      "sha256": "b119e823146d36b447651cced357ff569320e50636c0e25c83966c474d5193ce",
+      "role": "opening anticipation and identity anchor"
+    },
+    {
+      "path": "automation/production-assets/dance-with-dad-opening-action-v1.png",
+      "sha256": "7a3e1311bf41718a0d665ada7de982d43a65689ff88c0d75a4d8d405089e8c5b",
+      "role": "opening first-beat action state"
+    }
+  ],
+  "verified": {
+    "exact_character_count": 10,
+    "exact_pair_count": 5,
+    "species_pairs": ["elephant", "penguin", "fox", "kangaroo", "lion"],
+    "one_child_and_one_larger_dad_per_species": true,
+    "same_park_geography": true,
+    "same_wardrobe_palette": true,
+    "same_camera_and_lighting": true,
+    "integrated_full_frame_art": true,
+    "open_title_space": true,
+    "no_generated_text": true,
+    "no_duplicate_or_merged_animals": true,
+    "no_blurred_cutout_composite": true
+  },
+  "motion_read": {
+    "anticipation": "children open the circular floor and invite their arriving dads",
+    "action": "children bend into a coordinated welcome pose while the fox kit raises a paw for the first drum hit and the dads step forward",
+    "follow_through_required_in_render": "drum hand lands on beat; ears, tails, mane, trunk and flippers settle on staggered half-beats",
+    "camera": "brief eased push only; the pose change and drum strike remain the primary action"
+  },
+  "image_generation": {
+    "mode": "built-in imagegen",
+    "calls": 2,
+    "use_case": "illustration-story then identity-preserve edit"
+  },
+  "release": {
+    "upload_authorized": false,
+    "next_step": "compose and review the original chorus melody and opening twelve-second animated music proof before generating the remaining verse-state assets"
+  }
+}

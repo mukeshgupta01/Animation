@@ -1,0 +1,121 @@
+{
+  "id": "dance-with-dad-animal-parade-01",
+  "working_title": "Dance With Dad! | Father's Day Animal Song for Kids",
+  "audience": "children ages 3 to 7 and their families",
+  "format": "original lively call-and-response Father's Day animal song",
+  "duration_target_seconds": 100,
+  "music": {
+    "bpm": 120,
+    "meter": "4/4",
+    "scene_grid": "six bars / twelve seconds per scene",
+    "style": "bright marimba, brass pops, acoustic bass, hand drums, claps and a warm children's chorus",
+    "arc": "invitation, five accumulating animal-dad dance verses, full parade chorus, affectionate dance-party finale",
+    "rule": "real claps, stomps, slides, drums and jumps are synchronized effects; no voice imitates an effect word"
+  },
+  "motion_direction": {
+    "personality": "Playful / kinetic-soft",
+    "signature_easing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+    "base_timing_seconds": 0.25,
+    "transition_family": "hard cuts and action-matched moves on four-beat phrases",
+    "motion_hierarchy": "one dad-child dance action is the hero; partner reactions support; bunting and leaves remain ambient",
+    "camera_rule": "one move per shot, normally a short eased follow or push; camera movement never substitutes for the dance action",
+    "hold_rule": "each action lands and holds for at least one half-beat before the next accent"
+  },
+  "visual_system": {
+    "style": "premium integrated full-frame tactile 3D storybook animation with warm daylight, dimensional fur and fabric, and consistent sunny festival-park geography",
+    "frame": "1920x1080 landscape, 12-column grid, 100-pixel outer margin, faces and title-safe content inside five percent",
+    "palette": "sky blue, marigold, coral, leaf green and warm cream",
+    "production_method": "each verse receives identity-locked integrated anticipation and action-state frames with matched camera and lighting; animate the physical action between those states",
+    "prohibited": [
+      "blurred duplicate backgrounds",
+      "pasted character cutouts",
+      "camera-only primary motion",
+      "duplicate animals or extra limbs",
+      "unreadable or generated text",
+      "random disconnected locations",
+      "broadband white-noise ambience"
+    ]
+  },
+  "chorus": [
+    "Dance with Dad, come dance with me!",
+    "Stomp, slide, spin so happily!",
+    "Side by side, we laugh and play.",
+    "Hooray for Dads on Father's Day!"
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "section": "opening invitation",
+      "cast": "all five animal children preparing the sunny park while their dads arrive through the bunting arch",
+      "primary_action": "the children strike the first beat and invite their dads onto the circular dance floor",
+      "lyrics": ["Dance with Dad, come dance with me!", "Stomp, slide, spin so happily!"],
+      "composition": "wide establishing frame; fox kit with hand drum at left-thirds focal point, arriving dads framed by the right-side arch, open upper-left title space"
+    },
+    {
+      "scene": 2,
+      "section": "elephant verse",
+      "cast": "one elephant calf and one elephant dad",
+      "primary_action": "calf crouches, then both land one joyful synchronized stomp that lifts a safe arc of sparkling water",
+      "lyrics": ["Elephant Dad, stomp with me.", "One, two, three—big family!"],
+      "composition": "low three-quarter view emphasizing feet and water arc; calf remains the visual leader"
+    },
+    {
+      "scene": 3,
+      "section": "penguin verse",
+      "cast": "one penguin chick and one penguin dad",
+      "primary_action": "chick points the route, then both belly-slide through a curved ribbon lane and stand with flipper follow-through",
+      "lyrics": ["Penguin Dad, slide this way.", "Flap and waddle—what a day!"],
+      "composition": "side-follow shot with strong left-to-right motion and clear space ahead of the pair"
+    },
+    {
+      "scene": 4,
+      "section": "fox verse",
+      "cast": "one fox kit and one fox dad",
+      "primary_action": "kit winds up, the pair spin in opposite arcs, and their tails settle a half-beat late",
+      "lyrics": ["Fox Dad, spin around.", "Tap your paws upon the ground!"],
+      "composition": "medium circular composition with the kit on the left power point and Dad on the right"
+    },
+    {
+      "scene": 5,
+      "section": "kangaroo verse",
+      "cast": "one joey and one kangaroo dad",
+      "primary_action": "joey crouches first, then both bounce over two low flower markers and land together",
+      "lyrics": ["Kangaroo Dad, bounce up high.", "Spring together to the sky!"],
+      "composition": "wide low-angle arc with generous headroom, landing zone held inside title-safe margins"
+    },
+    {
+      "scene": 6,
+      "section": "lion verse",
+      "cast": "one lion cub and one lion dad",
+      "primary_action": "cub plays a two-hit hand-drum invitation and Dad answers with a four-step mane-shaking dance",
+      "lyrics": ["Lion Dad, drum the beat.", "Cub and Dad move four quick feet!"],
+      "composition": "medium-wide stage view; drum is foreground hero, Dad enters from the nearest right edge"
+    },
+    {
+      "scene": 7,
+      "section": "full parade chorus",
+      "cast": "the exact five established animal dad-child pairs",
+      "primary_action": "each pair repeats its signature move in a readable stagger, then all travel around the circular floor in one direction",
+      "lyrics": ["Dance with Dad, come dance with me!", "Stomp, slide, spin so happily!"],
+      "composition": "high wide view preserving one clear clockwise parade path; no pair overlaps another"
+    },
+    {
+      "scene": 8,
+      "section": "Father's Day finale",
+      "cast": "the exact five established animal dad-child pairs",
+      "primary_action": "children give their dads handmade star badges, then everyone performs one final jump and holds the smiling family tableau",
+      "lyrics": ["Side by side, we laugh and play.", "Hooray for Dads on Father's Day!"],
+      "composition": "symmetrical earned finale beneath the bunting arch, badges readable, clean end-card space above"
+    }
+  ],
+  "quality_gates": [
+    "opening establishes the festival, children, dads and invitation before the first verse",
+    "each animal identity and dad-child size relationship remains consistent",
+    "each verse visibly performs anticipation, action, follow-through and settled end state",
+    "all structural cuts land on beat or four-beat phrase boundaries",
+    "maximum sung-line pace 145 WPM, weighted pace at most 140 WPM, at least 0.4 seconds breathing gap",
+    "first-four-second audio above 12 kHz at or below -65 dB RMS and no broadband hiss on full playback",
+    "full decode, continuous timeline, final-card-only, contact sheets, transition sheets, waveform, spectrum and truthful thumbnail review",
+    "upload remains unauthorized until the exact master and thumbnail are explicitly accepted"
+  ]
+}
