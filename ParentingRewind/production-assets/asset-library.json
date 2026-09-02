@@ -9,6 +9,30 @@
   },
   "assets": [
     {
+      "asset_id": "fathers-day-dads-who-show-up-storyboard-01",
+      "file": "fathers-day-dads-who-show-up-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "derived_from_original_project_assets",
+      "generation": {
+        "method": "local composite of six registered project panels",
+        "generation_calls": 0,
+        "created_on": "2026-09-02",
+        "source_record": "fathers-day-dads-who-show-up-sources.md"
+      },
+      "characters": ["six diverse father or father-figure family moments"],
+      "setting": "bedroom, laundry, soccer field, art studio, dining area and balcony garden",
+      "topic_tags": ["Father's Day", "father appreciation", "involved fathering", "responsive caregiving", "repair", "adult-facing tribute"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Father reads while daughter settles at bedtime.", "useful_for": ["reading", "quiet care", "bedtime presence"], "published_uses": 0},
+        {"index": 1, "description": "Father encourages children contributing to laundry.", "useful_for": ["daily care", "household work", "encouragement"], "published_uses": 0},
+        {"index": 2, "description": "Father and son leave sport together with a high-five.", "useful_for": ["play", "sport", "connection"], "published_uses": 0},
+        {"index": 3, "description": "Father listens to daughter at child level in an art studio.", "useful_for": ["listening", "emotional presence", "school-age"], "published_uses": 0},
+        {"index": 4, "description": "Father listens while teenage daughter explains.", "useful_for": ["adolescence", "safety", "communication"], "published_uses": 0},
+        {"index": 5, "description": "Father and son repair a tipped plant together.", "useful_for": ["repair", "responsibility", "relationship"], "published_uses": 0}
+      ]
+    },
+    {
       "asset_id": "family-entryway-storyboard-01",
       "file": "pilot-01-shoe-storyboard.png",
       "asset_type": "3x2_storyboard",

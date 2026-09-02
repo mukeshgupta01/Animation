@@ -184,8 +184,8 @@ async def produce(spec: dict) -> dict:
     work = WORK_ROOT / episode_id
     meta_path = META_DIR / f"{episode_id}-v1.json"
     quality = work / "quality-report.json"
-    if output.exists() and quality.exists() and json.loads(quality.read_text(encoding="utf-8")).get("passed"):
-        mirrored = mirror_to_business_onedrive(output)
+    if not spec.get("force_rebuild", False) and output.exists() and quality.exists() and json.loads(quality.read_text(encoding="utf-8")).get("passed"):
+        mirrored = mirror_to_business_onedrive(output) if spec.get("mirror_to_onedrive", True) else None
         if meta_path.exists():
             metadata = json.loads(meta_path.read_text(encoding="utf-8"))
             metadata["transfer"] = {"business_onedrive_copy": str(mirrored) if mirrored else None}
@@ -203,7 +203,11 @@ async def produce(spec: dict) -> dict:
     cues = word_boundaries(boundaries, 0.45, 0.45 + voice_duration)
     srt, ass = work / "captions.srt", work / "overlay.ass"
     write_srt(cues, srt)
-    write_ass(spec["title"], total, cues, ass)
+    write_ass(
+        spec["title"], total, cues, ass,
+        beat_labels=spec.get("beat_labels"),
+        title_duration=spec.get("title_duration"),
+    )
     asset_path = PROJECT / "production-assets" / spec["asset"]
     panels = split_panels(asset_path, spec["grid"], work / "panels")
     metadata = {
@@ -229,7 +233,7 @@ async def produce(spec: dict) -> dict:
     metadata["output"] = {"file": str(output.relative_to(PROJECT)), "duration_seconds": total, "sha256": file_sha256(output)}
     meta_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     report = validate(output, total, srt, meta_path, work)
-    mirrored = mirror_to_business_onedrive(output)
+    mirrored = mirror_to_business_onedrive(output) if spec.get("mirror_to_onedrive", True) else None
     metadata["transfer"] = {"business_onedrive_copy": str(mirrored) if mirrored else None}
     meta_path.write_text(json.dumps(metadata, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return {"episode": episode_id, "status": "completed", "duration_seconds": report["duration_seconds"], "business_onedrive_copy": str(mirrored) if mirrored else None}

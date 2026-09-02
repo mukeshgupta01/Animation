@@ -50,6 +50,7 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 - Validate each finished video proportionately: playable file, expected duration, vertical resolution, audio stream, narration intelligibility, captions and metadata.
 - Do not count a draft, failed render or technically invalid MP4 as completed.
 - For every newly produced episode after 2026-08-23 17:33, end the spoken narration with a brief adult-facing request to like and subscribe for more practical Parenting Rewind videos. Include it in burned-in captions and place it after the educational takeaway; do not interrupt or weaken the lesson.
+- FATHER'S DAY REVIEW PILOT (2026-09-02): episode 86, `To the Dads Who Keep Showing Up - A Father's Day Tribute`, is a validated 73-second adult-facing tribute built from six diverse, previously approved father-family panels. It is intentionally local-review-only: `upload_authorized=false`, not mirrored to the OneDrive upload folder, not queued and not published. Do not authorize or upload it until the user reviews the exact master. Preserve its tribute-specific chapter labels; never restore the generic `THE TRAP` / `SAY THIS INSTEAD` labels to this episode. Any approved upload must remain `made_for_kids=false` and `containsSyntheticMedia=true` on the immutable Parenting Rewind channel.
 
 ## Inclusive visual casting
 

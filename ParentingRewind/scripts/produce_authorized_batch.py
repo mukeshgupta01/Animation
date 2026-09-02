@@ -245,7 +245,14 @@ def ass_escape(text: str) -> str:
     return text.replace("\\", "\\\\").replace("{", "\\{").replace("}", "\\}").replace("\n", "\\N")
 
 
-def write_ass(title: str, total: float, cues: list[dict], target: Path) -> None:
+def write_ass(
+    title: str,
+    total: float,
+    cues: list[dict],
+    target: Path,
+    beat_labels: list[str] | None = None,
+    title_duration: float | None = None,
+) -> None:
     header = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1080
@@ -265,9 +272,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     lines = [header.rstrip()]
     lines.append(f"Dialogue: 0,{stamp(0, True)},{stamp(total, True)},Brand,,0,0,0,,PARENTING REWIND")
-    lines.append(f"Dialogue: 0,{stamp(0, True)},{stamp(total, True)},Title,,0,0,0,,{ass_escape(title.upper())}")
-    beat_length = total / len(BEAT_LABELS)
-    for index, beat in enumerate(BEAT_LABELS):
+    title_end = total if title_duration is None else min(total, max(0.1, title_duration))
+    lines.append(f"Dialogue: 0,{stamp(0, True)},{stamp(title_end, True)},Title,,0,0,0,,{ass_escape(title.upper())}")
+    labels = beat_labels or BEAT_LABELS
+    beat_length = total / len(labels)
+    for index, beat in enumerate(labels):
         lines.append(f"Dialogue: 0,{stamp(index * beat_length, True)},{stamp((index + 1) * beat_length, True)},Beat,,0,0,0,,{beat}")
     for cue in cues:
         lines.append(f"Dialogue: 0,{stamp(cue['start'], True)},{stamp(cue['end'], True)},Caption,,0,0,0,,{ass_escape(cue['text'])}")

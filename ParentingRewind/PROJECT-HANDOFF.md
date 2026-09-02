@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-08-31 (Australia/Sydney)
+Last updated: 2026-09-02 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -9,6 +9,13 @@ This document lets a fresh Codex session continue safely. It contains the non-se
 Create and operate a high-quality, adult-facing parenting education channel named **Parenting Rewind**. The channel is created and OAuth-verified. Open-ended local production remains approved. On 2026-08-30 the user superseded the earlier cadence and authorized one oldest-first public upload every hour.
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
+
+## Father's Day review checkpoint
+
+- Episode 86, `parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.mp4`, is complete locally as `To the Dads Who Keep Showing Up - A Father's Day Tribute`. It is 73.0 seconds, 1080x1920 H.264 with stereo 48 kHz AAC, synthetic adult narration, narration-ducked original local music and burned-in captions. Automated validation and an independent full FFmpeg decode passed; the six-scene contact sheet was visually reviewed after replacing the inappropriate generic lesson labels with `QUIET LOVE`, `THE DAILY WORK`, `NOT PERFECTION`, `WHY IT MATTERS`, `WE SEE YOU` and `HAPPY FATHER'S DAY`.
+- The tribute uses a local composite of six previously registered father-family panels and made zero new image-generation calls. It rotates bedtime reading, household work, sport, school-age listening, teenage listening and relationship repair across diverse families. The AAP clinical report on fathers' roles is recorded as its research basis, with explicit claim limits in metadata.
+- The custom 1280x720 thumbnail and complete proposed YouTube metadata are under the episode production-work/metadata paths. The episode is deliberately `upload_authorized=false`, has no Business OneDrive copy, is outside the hourly upload queue and has not been published. Obtain the user's exact-master approval before mirroring or enabling upload. Any eventual upload must be public, `made_for_kids=false`, `containsSyntheticMedia=true`, and locked to Parenting Rewind channel `UCGb-IUQX2KQa_KA24MwE_aQ`.
+- Resume/rebuild script: `scripts/produce_fathers_day_dads_who_show_up.py`. Final local SHA-256 is recorded in `metadata/parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.json`. `COVERED-TOPICS.md` now records 112 unique topics (88 active, 24 historical-only).
 
 ## Current external state
 
