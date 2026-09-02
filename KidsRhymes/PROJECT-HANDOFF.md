@@ -1,8 +1,12 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-09-01 Australia/Sydney
+Last updated: 2026-09-02 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
+
+## This-computer stop override
+
+- On 2026-08-31 the user explicitly said they do not want Tiny Tales on this computer. All Tiny Tales Scheduled Tasks are absent (`Continuous Generation`, `Daily Private Upload`, and `Hourly Upload Retry`) and must not be installed, enabled, or run here. Preserve project files for another computer; this instruction does not authorize deleting local files or changing the YouTube channel.
 
 ## Project identity
 

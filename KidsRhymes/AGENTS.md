@@ -255,7 +255,6 @@ At the beginning of a continuation, report the verified live state and any diffe
 - The hourly retry task uses the 16 intervening `:20` slots and remains retry-only. It must never select a new unrelated queue video unless a duplicate-safe failure for that exact source is armed.
 - Frequency does not bypass the immutable channel lock, public/made-for-kids configuration, duplicate prevention, upload limits, custom-thumbnail requirement, stability window, or any post-cutoff quality evidence gate. An empty or fully held queue must safely no-op.
 - The continuous-generation task remains enabled, but the curated manifest currently has 12 completed items and zero remaining. Add only deliberately varied, fully planned concepts that meet the permanent visual-quality baseline; never restore repetitive fallback generation merely to fill three-hour upload slots.
-
 ## Rory completion and continued new batch (2026-08-28)
 
 - `Rory's Eight-Planet Postcard Adventure` completed as `rorys-eight-planet-postcard-adventure-01` at 126.7 seconds. Ryan (`ryan-uk`) is the expressive lead narrator and Ana (`ana-us`) voices Rory, following the required Natasha -> Maisie -> Ryan lead rotation.
@@ -361,3 +360,7 @@ At the beginning of a continuation, report the verified live state and any diffe
 - A first full render was rejected during manual review because pose dissolves ghosted/doubled the animals. V2 uses clean four-beat action cuts with a brief golden wipe; the final general, boundary and action-transition sheets show single readable characters without ghost limbs. Preserve this no-pose-dissolve rule for multi-character generated artwork.
 - The final master passes full decode, H.264 1080p, 48 kHz stereo AAC, exact 100-second duration, scene containment, 143.44 maximum WPM, thumbnail, and the proper FFT-bin hiss gate at `-95.37 dB` above 12 kHz. Metadata and all audit paths are in `metadata/dance-with-dad-animal-parade-01.json`.
 - Keep it local and unreleased for the user's playback decision. `upload_authorized` and `upload_queue_released` remain false; do not queue or upload without a new explicit instruction.
+
+## This-computer scheduling stop (2026-08-31)
+
+- THIS-COMPUTER SCHEDULING STOP (2026-08-31): the user does not want Tiny Tales on this computer. Do not install, enable, run or recreate any Tiny Tales generation, upload or retry Scheduled Task here. Keep the project files intact for use elsewhere unless the user separately authorizes deletion.

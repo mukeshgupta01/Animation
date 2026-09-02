@@ -18,11 +18,12 @@ Then inspect live state rather than trusting the handoff blindly:
 - Confirm the immutable Parenting Rewind channel lock before any upload action.
 - Confirm the OAuth client/token still belong to dedicated Google Cloud project `parenting-506406`; never reuse Birthday Songs credentials.
 
-Latest safe production checkpoint (2026-08-26 21:10 Australia/Sydney):
+Latest safe production checkpoint (2026-09-02 Australia/Sydney):
 
-- 84 validated active videos exist through redesigned episode 82, all mirrored to the configured Business OneDrive folder.
-- `COVERED-TOPICS.md` records 108 unique topics (84 active and 24 historical-only); the asset library records 30 storyboard families.
-- Resume after `scripts/produce_redesigned_bundle_80_to_82.py`; do not recreate episodes 80-82 when their existing outputs still pass validation.
+- 87 validated upload-ready videos exist through redesigned episode 85, all mirrored to the configured Business OneDrive folder; episode 86 is validated locally but deliberately not mirrored.
+- `COVERED-TOPICS.md` records 112 unique topics (88 active and 24 historical-only); the asset library records 34 storyboard entries including episode 86's zero-generation derived composite.
+- Resume after `scripts/produce_redesigned_bundle_83_to_85.py`; do not recreate episodes 83-85 when their existing outputs still pass validation.
+- Episode 86 is a completed 73-second local-review-only Father's Day tribute. Read its checkpoint in `PROJECT-HANDOFF.md` and do not mirror, queue or upload it until the user approves the exact master. Rebuild only with `scripts/produce_fathers_day_dads_who_show_up.py`.
 
 Current durable direction:
 

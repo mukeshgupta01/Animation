@@ -1,0 +1,61 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-85-teen-overnight-phone-sleep-plan",
+  "version": "v1",
+  "title": "Make the Overnight Phone Plan With Your Teen | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "It is late, your teen is still scrolling, and a tired reminder can quickly turn into a fight about taking the phone away. The phone matters, but so does the timing of the conversation. A midnight power struggle rarely creates a plan either of you can keep. Pause and revisit it during the day. Agree on a wind-down time, with screens put away about an hour before bed and notifications kept from waking them. Choose a charging place outside the bedroom and put your own phone there too. If the phone must stay for an alarm, agree on do-not-disturb and where it rests. Treat the plan as a sleep support, not a punishment. Review what works together, and talk with your teen's doctor if sleep trouble persists or affects daytime life. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-08-27",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "My teen is having trouble falling asleep at night. How can I help?",
+      "url": "https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/My-teen-is-having-more-trouble-falling-asleep.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-phone-sleep-plan-mother-son-storyboard-01.png",
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-83-to-85.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-85-teen-overnight-phone-sleep-plan\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-85-teen-overnight-phone-sleep-plan-v1.mp4",
+    "duration_seconds": 54.06666666666667,
+    "sha256": "1A7B71209FAA6B83904F41AF302E64F897B22C375F46D4B0015FF216F10253B4"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-85-teen-overnight-phone-sleep-plan-v1.mp4"
+  }
+}

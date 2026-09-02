@@ -1,0 +1,137 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-86-fathers-day-dads-who-show-up",
+  "version": "v1",
+  "title": "To the Dads Who Keep Showing Up - A Father's Day Tribute | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "This Father's Day is for the dads whose love does not always arrive as a speech. It arrives as a packed lunch, a school pickup, a repaired toy, and one more story when they are exhausted. It is for the dads who work, worry, wash uniforms, remember the appointment, and still wonder whether they are doing enough. The truth is, children do not need a flawless father. They need a dad who notices, responds, listens, plays, sets safe limits, and comes back to repair after getting it wrong. Research reviewed by the American Academy of Pediatrics links involved fathering across childhood with children's well-being. The ordinary moments of caring, playing, reading, guiding, and listening matter. So to every dad, stepdad, grandfather, foster dad, and father figure who keeps showing up: your presence is not background. It is part of what makes home feel safe. Today, let someone say it clearly. We see the work, the love, and the sacrifices you rarely name. Happy Father's Day, Dad. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-02",
+    "source": {
+      "organization": "American Academy of Pediatrics",
+      "title": "Fathers' Roles in the Care and Development of Their Children: The Role of Pediatricians",
+      "url": "https://publications.aap.org/pediatrics/article/138/1/e20161128/52467/Fathers-Roles-in-the-Care-and-Development-of-Their"
+    },
+    "claim_limits": [
+      "The tribute describes common forms of involved fathering; individual families and roles vary.",
+      "Association between father involvement and child outcomes does not make any one activity a guaranteed result.",
+      "Dad includes dads, stepdads, grandfathers, foster dads and other father figures in the narration."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/fathers-day-quiet-love-portrait-01.png",
+    "panel_files": [
+      "production-assets/fathers-day-quiet-love-portrait-01.png",
+      "production-assets/fathers-day-daily-work-portrait-01.png",
+      "production-assets/fathers-day-repair-portrait-01.png",
+      "production-assets/fathers-day-listening-child-portrait-01.png",
+      "production-assets/fathers-day-listening-teen-portrait-01.png",
+      "production-assets/fathers-day-family-hug-portrait-01.png"
+    ],
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 6,
+    "generation_prompt_record": "production-assets/fathers-day-dads-who-show-up-portrait-prompts.md",
+    "source_assets": [
+      {
+        "file": "production-assets/fathers-day-quiet-love-portrait-01.png",
+        "native_aspect_ratio": "9:16"
+      },
+      {
+        "file": "production-assets/fathers-day-daily-work-portrait-01.png",
+        "native_aspect_ratio": "9:16"
+      },
+      {
+        "file": "production-assets/fathers-day-repair-portrait-01.png",
+        "native_aspect_ratio": "9:16"
+      },
+      {
+        "file": "production-assets/fathers-day-listening-child-portrait-01.png",
+        "native_aspect_ratio": "9:16"
+      },
+      {
+        "file": "production-assets/fathers-day-listening-teen-portrait-01.png",
+        "native_aspect_ratio": "9:16"
+      },
+      {
+        "file": "production-assets/fathers-day-family-hug-portrait-01.png",
+        "native_aspect_ratio": "9:16"
+      }
+    ],
+    "composite_is_new_generation": false,
+    "portrait_native_visual_rebuild": true
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.mp4",
+    "duration_seconds": 73.1,
+    "sha256": "21955C694EFC751E1E31D04733C3E949657C26B02AE8B3AEABC9F2F3309675F7"
+  },
+  "transfer": {
+    "business_onedrive_copy": null
+  },
+  "validation": {
+    "automated_quality_gate_passed": true,
+    "full_ffmpeg_decode_passed": true,
+    "encoded_visual_review_passed": true,
+    "encoded_review_sheet": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up\\review-contact-sheet-portrait-v4.jpg"
+  },
+  "youtube": {
+    "title": "To the Dads Who Keep Showing Up | A Father's Day Tribute",
+    "description": "Some dads say love with words. Others say it through packed lunches, school pickups, play, listening, safe limits, and repairing after a hard moment. This Father's Day tribute is for every dad, stepdad, grandfather, foster dad, and father figure who keeps showing up.\n\nResearch basis: American Academy of Pediatrics, Fathers' Roles in the Care and Development of Their Children.\n\n#FathersDay #Fatherhood #Parenting #Dads #ParentingRewind",
+    "tags": [
+      "Father's Day",
+      "fatherhood",
+      "dads",
+      "parenting",
+      "father appreciation",
+      "involved father",
+      "father figure",
+      "Parenting Rewind"
+    ],
+    "thumbnail": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-86-fathers-day-dads-who-show-up\\thumbnail.jpg",
+    "privacy": "public",
+    "made_for_kids": false,
+    "contains_synthetic_media": true,
+    "upload_authorized": true
+  },
+  "scheduled_publication": {
+    "authorized_on": "2026-09-02",
+    "timezone": "Australia/Sydney",
+    "publish_at_local": "2026-09-04T20:00:00+10:00",
+    "publish_at_utc": "2026-09-04T10:00:00Z",
+    "requested_timing": "Friday night",
+    "execution_method": "YouTube native scheduled publication",
+    "video_id": "ezoeeeZd4bs",
+    "youtube_url": "https://youtu.be/ezoeeeZd4bs",
+    "remote_state_verified": true,
+    "contains_synthetic_media_api_confirmed": true,
+    "thumbnail_set": false,
+    "thumbnail_status": "forbidden-by-channel-permission"
+  }
+}

@@ -92,10 +92,10 @@ def config() -> dict[str, Any]:
         raise SafetyError("Public upload authorization is not recorded in config.")
     if cfg.get("queue_order") != "oldest_episode_first":
         raise SafetyError("Parenting Rewind must upload the oldest remaining episode first.")
-    if int(cfg.get("temporary_interval_hours", 0)) != 2:
-        raise SafetyError("Temporary Parenting Rewind upload interval must be two hours.")
-    if int(cfg.get("steady_interval_hours", 0)) != 4:
-        raise SafetyError("Steady Parenting Rewind upload interval must be four hours.")
+    if int(cfg.get("temporary_interval_hours", 0)) != 1:
+        raise SafetyError("Parenting Rewind upload interval must be one hour.")
+    if int(cfg.get("steady_interval_hours", 0)) != 1:
+        raise SafetyError("Parenting Rewind steady upload interval must be one hour.")
     parse_utc(str(cfg.get("temporary_interval_until_utc", "")))
     return cfg
 

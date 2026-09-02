@@ -9,6 +9,30 @@
   },
   "assets": [
     {
+      "asset_id": "fathers-day-dads-who-show-up-storyboard-01",
+      "file": "fathers-day-dads-who-show-up-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "derived_from_original_project_assets",
+      "generation": {
+        "method": "local composite of six registered project panels",
+        "generation_calls": 0,
+        "created_on": "2026-09-02",
+        "source_record": "fathers-day-dads-who-show-up-sources.md"
+      },
+      "characters": ["six diverse father or father-figure family moments"],
+      "setting": "bedroom, laundry, soccer field, art studio, dining area and balcony garden",
+      "topic_tags": ["Father's Day", "father appreciation", "involved fathering", "responsive caregiving", "repair", "adult-facing tribute"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Father reads while daughter settles at bedtime.", "useful_for": ["reading", "quiet care", "bedtime presence"], "published_uses": 0},
+        {"index": 1, "description": "Father encourages children contributing to laundry.", "useful_for": ["daily care", "household work", "encouragement"], "published_uses": 0},
+        {"index": 2, "description": "Father and son leave sport together with a high-five.", "useful_for": ["play", "sport", "connection"], "published_uses": 0},
+        {"index": 3, "description": "Father listens to daughter at child level in an art studio.", "useful_for": ["listening", "emotional presence", "school-age"], "published_uses": 0},
+        {"index": 4, "description": "Father listens while teenage daughter explains.", "useful_for": ["adolescence", "safety", "communication"], "published_uses": 0},
+        {"index": 5, "description": "Father and son repair a tipped plant together.", "useful_for": ["repair", "responsibility", "relationship"], "published_uses": 0}
+      ]
+    },
+    {
       "asset_id": "family-entryway-storyboard-01",
       "file": "pilot-01-shoe-storyboard.png",
       "asset_type": "3x2_storyboard",
@@ -746,6 +770,120 @@
         {"index": 4, "description": "Mother and teen review the photo and preference together.", "useful_for": ["collaboration", "privacy choice"], "published_uses": 0},
         {"index": 5, "description": "Phone rests face-down while mother and teen reconnect.", "useful_for": ["no post", "trust", "resolution"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "family-preschool-friendship-conflict-aunt-nephew-storyboard-01",
+      "file": "preschool-friendship-conflict-aunt-nephew-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-27", "reference_images": 0},
+      "characters": ["aunt-late-30s-warm-tan-skin-wavy-dark-hair", "nephew-age-5-warm-tan-skin-short-dark-curls", "second-boy-age-5"],
+      "setting": "leafy neighborhood park with sidewalk chalk in soft late-afternoon light",
+      "topic_tags": ["preschooler", "friendship conflict", "aunt caregiver", "feeling words", "problem solving", "adult steps back"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Two children reach for the same chalk while aunt notices.", "useful_for": ["peer conflict", "shared material", "caregiver noticing"], "published_uses": 0},
+        {"index": 1, "description": "Aunt begins stepping in while nephew points angrily.", "useful_for": ["adult taking over", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Aunt kneels calmly with both children.", "useful_for": ["caregiver pause", "co-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Aunt coaches nephew with calm open-hand gestures.", "useful_for": ["feeling words", "rehearsal", "problem-solving language"], "published_uses": 0},
+        {"index": 4, "description": "Nephew speaks to the other child while aunt stays nearby.", "useful_for": ["child tries words", "adult steps back", "peer repair"], "published_uses": 0},
+        {"index": 5, "description": "Children draw connected chalk shapes while aunt watches.", "useful_for": ["repaired play", "connection", "realistic resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-school-peer-exclusion-father-daughter-storyboard-01",
+      "file": "school-peer-exclusion-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-27", "reference_images": 0},
+      "characters": ["father-early-40s-fair-skin-short-red-hair-beard", "daughter-age-10-fair-skin-freckles-long-red-ponytail", "trusted-female-teacher"],
+      "setting": "suburban school pickup area and contemporary home dining nook",
+      "topic_tags": ["school-age", "peer exclusion", "father caregiver", "listen first", "support choices", "trusted teacher"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Daughter walks from school feeling left out with peers distant behind her.", "useful_for": ["peer exclusion hook", "hurt feelings", "school setting"], "published_uses": 0},
+        {"index": 1, "description": "Father reacts with alarm and reaches for his phone.", "useful_for": ["fixing too fast", "parent alarm", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Father puts the phone down and turns toward daughter.", "useful_for": ["parent pause", "listen first", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father listens while daughter explains at the table.", "useful_for": ["active listening", "gather facts", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Father and daughter map several possible next steps.", "useful_for": ["child input", "support choices", "planning"], "published_uses": 0},
+        {"index": 5, "description": "Father and daughter approach a trusted teacher at school.", "useful_for": ["school support", "trusted adult", "realistic next step"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "family-teen-phone-sleep-plan-mother-son-storyboard-01",
+      "file": "teen-phone-sleep-plan-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-08-27", "reference_images": 0},
+      "characters": ["mother-mid-40s-medium-brown-skin-silver-streaked-pixie-glasses", "son-age-16-medium-brown-skin-short-dark-twists"],
+      "setting": "contemporary townhouse kitchen, hallway charging shelf and teen bedroom at night",
+      "topic_tags": ["teenager", "phone at night", "sleep plan", "mother caregiver", "collaboration", "modeling", "charging outside bedroom"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Tired teen uses his phone late in bed.", "useful_for": ["late phone use", "sleep difficulty", "hook"], "published_uses": 0},
+        {"index": 1, "description": "Mother gestures sternly while teen becomes defensive.", "useful_for": ["nighttime power struggle", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Mother pauses and softens in the hallway.", "useful_for": ["parent pause", "self-regulation", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Mother and teen discuss a bedtime plan at the table.", "useful_for": ["collaboration", "sleep plan", "teen input"], "published_uses": 0},
+        {"index": 4, "description": "Teen places his phone beside mother's phone on a hallway charging shelf.", "useful_for": ["outside-bedroom charging", "parent modeling", "shared rule"], "published_uses": 0},
+        {"index": 5, "description": "Teen reads a paper book while mother gives a quiet goodnight.", "useful_for": ["screen-free wind-down", "connection", "resolution"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "fathers-day-quiet-love-portrait-01",
+      "file": "fathers-day-quiet-love-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "young daughter"],
+      "setting": "warm bedroom at bedtime",
+      "topic_tags": ["fatherhood", "bedtime", "quiet love", "care through actions", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father reads one more bedtime story to his young daughter.", "useful_for": ["bedtime connection", "father presence", "quiet care"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-daily-work-portrait-01",
+      "file": "fathers-day-daily-work-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "school-age daughter", "school-age son"],
+      "setting": "family kitchen and laundry nook in morning light",
+      "topic_tags": ["fatherhood", "daily care", "school morning", "invisible work", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father packs lunch and folds a uniform while two children get ready.", "useful_for": ["care work", "school preparation", "love through actions"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-repair-portrait-01",
+      "file": "fathers-day-repair-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "school-age son"],
+      "setting": "living room after a difficult moment",
+      "topic_tags": ["fatherhood", "repair", "apology", "responsive parenting", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father kneels at his son's eye level to repair connection.", "useful_for": ["parent repair", "calm accountability", "reconnection"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-listening-child-portrait-01",
+      "file": "fathers-day-listening-child-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["father", "school-age daughter"],
+      "setting": "home entryway after school",
+      "topic_tags": ["fatherhood", "active listening", "school-age", "responsive care", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father listens at eye level while daughter describes a hard school day.", "useful_for": ["listening first", "emotional safety", "after-school connection"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-listening-teen-portrait-01",
+      "file": "fathers-day-listening-teen-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["older father", "teenage son"],
+      "setting": "kitchen table in evening light",
+      "topic_tags": ["fatherhood", "teenager", "active listening", "steady support", "Father's Day"],
+      "panels": [{"index": 0, "description": "Father listens patiently as his teenage son begins to open up.", "useful_for": ["teen communication", "patient presence", "support"], "published_uses": 0}]
+    },
+    {
+      "asset_id": "fathers-day-family-hug-portrait-01",
+      "file": "fathers-day-family-hug-portrait-01.png",
+      "asset_type": "9x16_portrait_scene", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-02", "reference_images": 0},
+      "characters": ["older father figure", "adult daughter", "middle-aged father", "young grandchild"],
+      "setting": "backyard family gathering at golden hour",
+      "topic_tags": ["fatherhood", "father figure", "grandfather", "multigenerational family", "Father's Day"],
+      "panels": [{"index": 0, "description": "A multigenerational family embraces an older father figure.", "useful_for": ["Father's Day ending", "appreciation", "family belonging"], "published_uses": 0}]
     }
   ]
 }
