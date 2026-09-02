@@ -22,8 +22,8 @@ WORK = AUTOMATION / "production-work" / ITEM_ID
 OUTPUT = AUTOMATION / "production-output" / f"{ITEM_ID}.mp4"
 META = PROJECT / "metadata" / f"{ITEM_ID}.json"
 ASSET_DIR = AUTOMATION / "production-assets"
-SONG = WORK / "dance-with-dad-original-song.wav"
-NORMALIZED_SONG = WORK / "dance-with-dad-song-normalized.wav"
+SONG = WORK / "dance-with-dad-natural-song-v3.wav"
+NORMALIZED_SONG = WORK / "dance-with-dad-song-natural-v3-normalized.wav"
 EFFECTS = WORK / "dance-with-dad-tonal-effects.wav"
 THUMBNAIL = AUTOMATION / "thumbnails" / f"{ITEM_ID}.jpg"
 WAVEFORM = WORK / "final-song-waveform.png"
@@ -230,7 +230,8 @@ def lyric_visual_audit() -> list[dict]:
     rows=[]
     for si,scene in enumerate(plan["scenes"]):
         for li,line in enumerate(scene["lyrics"]):
-            voice=WORK/f"chant-grid-{si+1:02d}-{li+1:02d}.wav"
+            slug=("ana" if si%2==0 else "maisie") if li==0 else "ryan"
+            voice=WORK/f"natural-v3-{si+1:02d}-{li+1:02d}-{slug}.wav"
             length=float(subprocess.check_output(["ffprobe","-v","error","-show_entries","format=duration","-of","default=noprint_wrappers=1:nokey=1",str(voice)],text=True).strip())
             start=si*SCENE_SECONDS+(0.5,6.0)[li]
             words=len(re.findall(r"[A-Za-z0-9']+",line))
@@ -248,7 +249,7 @@ def review(assets: dict[str, Image.Image]) -> dict:
     high=audio_metric("afftfilt=real='if(between(b,1024,3072),re,0)':imag='if(between(b,1024,3072),im,0)':win_size=4096",4)
     lyric_rows=lyric_visual_audit()
     checks={"duration":abs(float(probe["format"]["duration"])-TOTAL)<.25,"h264_1080p":video.get("codec_name")=="h264" and video.get("width")==1920 and video.get("height")==1080,"aac_48k_stereo":audio.get("codec_name")=="aac" and audio.get("sample_rate")=="48000" and audio.get("channels")==2,"full_decode":decode.returncode==0,"continuous_visual_timeline":True,"end_card_is_final_event_only":True,"eight_connected_scenes":len(SCENES)==8,"matched_action_states":all(a!=b for a,b,_ in SCENES),"opening_establishes_children_and_dads":True,"lyric_visual_scene_containment":all(row["contained_in_scene"] for row in lyric_rows),"child_friendly_vocal_pacing":max(row["words_per_minute"] for row in lyric_rows)<=145,"no_broadband_opening_hiss":high<=-65.0,"thumbnail":THUMBNAIL.is_file() and THUMBNAIL.stat().st_size<2_000_000}
-    report={"output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"bpm":BPM,"format":"lively Father's Day animal dance song","visual_method":"matched integrated anticipation/action story frames with beat-locked physical state changes and restrained camera support","audio_method":"original child-and-dad call-and-response chant-song over a 120 BPM Tiny Tales arrangement, plus tonal synchronized impacts and low-pass hiss control","opening_high_band_rms_db_above_12khz":high,"checks":checks,"passed":all(checks.values())}
+    report={"output":str(OUTPUT),"duration_seconds":float(probe["format"]["duration"]),"bpm":BPM,"format":"lively Father's Day animal dance song","visual_method":"matched integrated anticipation/action story frames with beat-locked physical state changes and restrained camera support","audio_method":"natural unwarped child-and-dad call-and-response voices over a varied 120 BPM Tiny Tales arrangement with animal-specific instrumental hooks, ensemble choruses, tonal impacts and low-pass hiss control","opening_high_band_rms_db_above_12khz":high,"checks":checks,"passed":all(checks.values())}
     (WORK/"quality-report.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     sheet=Image.new("RGB",(960,540),"white")
     for i in range(8): sheet.paste(frame_at(i*12+7,assets).resize((240,135),Image.Resampling.LANCZOS),((i%4)*240,(i//4)*135))
