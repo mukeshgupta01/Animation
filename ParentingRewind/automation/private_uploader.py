@@ -30,6 +30,7 @@ LEDGER_FILE = RUNTIME_DIR / "upload-ledger.jsonl"
 ATTEMPTS_FILE = RUNTIME_DIR / "upload-attempts.json"
 LATEST_REPORT = RUNTIME_DIR / "latest-upload-report.json"
 LOG_FILE = LOG_DIR / "parenting-rewind-upload.log"
+ORDINARY_QUEUE_PREFIX = "parenting-rewind-"
 
 
 def setup_logging() -> logging.Logger:
@@ -187,6 +188,11 @@ def available_videos(folder: Path, rows: list[dict[str, Any]]) -> list[Path]:
     for path in folder.glob("*.mp4"):
         try:
             if not path.is_file() or path.stat().st_size <= 0:
+                continue
+            # Separately published special collections share this OneDrive
+            # folder but have their own guarded journals. Keep them out of
+            # the ordinary oldest-episode cadence.
+            if not path.name.casefold().startswith(ORDINARY_QUEUE_PREFIX):
                 continue
             if now - path.stat().st_mtime < 300:
                 continue

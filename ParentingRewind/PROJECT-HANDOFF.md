@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-09-03 (Australia/Sydney)
+Last updated: 2026-09-08 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -33,6 +33,9 @@ This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that projec
 - Resume/rebuild script: `scripts/produce_fathers_day_dads_who_show_up.py`. The direct-panel support is in `scripts/produce_redesigned_bundle_02_to_06.py`. Corrected local SHA-256 is `21955C694EFC751E1E31D04733C3E949657C26B02AE8B3AEABC9F2F3309675F7` and is also recorded in episode metadata. `COVERED-TOPICS.md` records 112 unique topics (88 active, 24 historical-only).
 
 ## Current external state
+
+- QUEUE BLOCKER FIX (2026-09-08): the enabled hourly task made no successful ordinary upload after episode 63 (`i4CzapCvY0E`) because the five already-published numbered Father's Day Shorts were copied into the shared OneDrive source folder and sorted ahead of normal episodes. The fail-closed uploader correctly refused the first special file because it had no ordinary project metadata, but repeated that safe failure hourly. `available_videos()` now admits only filenames beginning `parenting-rewind-`, preserving oldest-first order among normal episodes while leaving special collections under their dedicated upload journals. The post-change dry run identified episode 64 as the expected next normal upload.
+- QUEUE RESUME CONFIRMATION (2026-09-08 14:36 Australia/Sydney): an immediate run of the repaired scheduled task uploaded episode 64, `Stay Close When Words Are Too Much | Parenting Rewind`, publicly as `BZ5vE2GuANE`. The uploader verified immutable channel `UCGb-IUQX2KQa_KA24MwE_aQ`, `made_for_kids=false`, synthetic-media disclosure, exact metadata and source hash, then ledgered the returned ID. The task returned 0, remains enabled and Ready, and has 21 normal episodes remaining. Its hourly trigger was realigned to 15:37:30 local so each check occurs just after the uploader's one-hour gate rather than skipping the next slot.
 
 - On 2026-08-23 the user reported that the Parenting Rewind YouTube channel was created and supplied immutable channel ID `UCGb-IUQX2KQa_KA24MwE_aQ`. OAuth subsequently returned exactly `Parenting Rewind` with that immutable ID.
 - A channel-specific fail-closed OAuth setup now exists under `automation/`. It is configured for Parenting Rewind and the supplied immutable ID, requests the YouTube management scope needed for uploads and metadata updates, and saves a local token/immutable lock only when `channels.list(mine=true)` returns the exact configured ID. The consent helper itself performs no upload.
