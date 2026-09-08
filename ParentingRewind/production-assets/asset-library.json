@@ -960,6 +960,60 @@
         {"index": 1, "description": "Adult children arrive with a cake and flowers.", "useful_for": ["surprise visit", "homecoming", "family celebration"], "published_uses": 1},
         {"index": 2, "description": "Family embraces around the now-filled table.", "useful_for": ["presence", "family reunion", "Father's Day ending"], "published_uses": 1}
       ]
+    },
+    {
+      "asset_id": "new-baby-preschool-family-storyboard-01",
+      "file": "new-baby-preschool-family-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-08", "reference_images": 0},
+      "characters": ["pregnant-mother-early-30s-middle-eastern-appearance", "father-mid-30s-middle-eastern-appearance", "daughter-age-4-middle-eastern-appearance", "newborn"],
+      "setting": "contemporary lived-in apartment, nursery corner and living room",
+      "topic_tags": ["preschooler", "new sibling", "new baby", "honest preparation", "one-on-one time", "mixed feelings"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Parents tell daughter a new baby is coming.", "useful_for": ["new sibling news", "preparation"], "published_uses": 0},
+        {"index": 1, "description": "Daughter watches nursery preparations with uncertainty.", "useful_for": ["routine change", "mixed feelings"], "published_uses": 0},
+        {"index": 2, "description": "Mother explains the coming changes at eye level.", "useful_for": ["honest explanation", "reassurance"], "published_uses": 0},
+        {"index": 3, "description": "Daughter chooses a small baby blanket.", "useful_for": ["inclusion", "small choice"], "published_uses": 0},
+        {"index": 4, "description": "Father protects one-on-one story time after baby arrives.", "useful_for": ["special time", "connection"], "published_uses": 0},
+        {"index": 5, "description": "Daughter gently observes newborn beside mother.", "useful_for": ["new sibling", "realistic connection"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "separation-reassurance-family-storyboard-01",
+      "file": "separation-reassurance-family-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-08", "reference_images": 0},
+      "characters": ["mother-late-30s-black", "father-early-40s-white", "son-age-9-multiracial"],
+      "setting": "two calm contemporary homes and a neutral doorway",
+      "topic_tags": ["school-age", "parental separation", "not child's fault", "two homes", "routine", "co-parenting"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Parents calmly explain a family change together.", "useful_for": ["separation conversation", "clear explanation"], "published_uses": 0},
+        {"index": 1, "description": "Worried son holds his school backpack.", "useful_for": ["uncertainty", "school-age concern"], "published_uses": 0},
+        {"index": 2, "description": "Both parents reassure their son without blame.", "useful_for": ["not child's fault", "reassurance"], "published_uses": 0},
+        {"index": 3, "description": "Family reviews a weekly plan together.", "useful_for": ["concrete plan", "predictability"], "published_uses": 0},
+        {"index": 4, "description": "Ordinary homework continues while father arrives calmly.", "useful_for": ["routine", "continuity"], "published_uses": 0},
+        {"index": 5, "description": "Child walks between both parents at a peaceful handoff.", "useful_for": ["co-parenting", "free to love both"], "published_uses": 0}
+      ]
+    },
+    {
+      "asset_id": "teen-parent-alarm-father-daughter-storyboard-01",
+      "file": "teen-parent-alarm-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard", "ownership": "original_generated_for_project",
+      "generation": {"method": "built-in image-generation tool", "generation_calls": 1, "created_on": "2026-09-08", "reference_images": 0},
+      "characters": ["father-mid-40s-east-asian-appearance", "daughter-age-16-east-asian-appearance"],
+      "setting": "contemporary townhouse kitchen and porch at dusk",
+      "topic_tags": ["teenager", "parent alarm", "listen without judgment", "friendship", "relationship", "father caregiver"],
+      "grid": {"columns": 3, "rows": 2, "crop_margin_pixels": 7},
+      "panels": [
+        {"index": 0, "description": "Teen hesitantly begins opening up while father unpacks groceries.", "useful_for": ["teen disclosure", "conversation opening"], "published_uses": 0},
+        {"index": 1, "description": "Father initially reacts with alarm and teen withdraws.", "useful_for": ["parent alarm", "unhelpful reaction"], "published_uses": 0},
+        {"index": 2, "description": "Father pauses and puts his phone aside.", "useful_for": ["parent pause", "rewind"], "published_uses": 0},
+        {"index": 3, "description": "Father sits beside teen and listens.", "useful_for": ["nonjudgmental listening", "connection"], "published_uses": 0},
+        {"index": 4, "description": "Father asks one calm open question.", "useful_for": ["curiosity", "teen communication"], "published_uses": 0},
+        {"index": 5, "description": "Father and daughter share quiet company on the porch.", "useful_for": ["steady presence", "realistic resolution"], "published_uses": 0}
+      ]
     }
   ]
 }

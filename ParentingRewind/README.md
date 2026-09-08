@@ -4,7 +4,7 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- The configured Business OneDrive transfer/upload folder contains 87 validated videos through episode 85. Episode 86 is separate from that hourly queue and is privately uploaded on Parenting Rewind for automatic public release Friday 4 September 2026 at 8:00 PM Australia/Sydney.
+- The configured Business OneDrive transfer/upload folder contains 90 normal-series videos through episode 89, plus five separately published Father's Day Shorts. Episode 86 was handled separately from the ordinary queue.
 - **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
 - **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video
@@ -12,8 +12,8 @@ This is a separate adult-facing parenting education video project. It is not par
 - The YouTube channel is live and verified through isolated OAuth as **Parenting Rewind** (`UCGb-IUQX2KQa_KA24MwE_aQ`).
 - A fail-closed public uploader is configured under `automation/`; it never reuses another project's credentials and verifies the immutable channel ID before every upload.
 - YouTube's altered/synthetic-content disclosure is set to **Yes** (`status.containsSyntheticMedia=true`) for every future Parenting Rewind upload. All 19 videos already on the channel were updated and API-confirmed on 2026-08-27.
-- PUBLIC UPLOAD OVERRIDE (2026-08-26 20:55): upload the oldest remaining episode first as public every two hours through 2026-08-28 20:55 Australia/Sydney, then every four hours. Videos remain marked not made for kids, and successful uploads continue to trigger an Outlook email to `mukeshmelb01@gmail.com`.
-- Windows task `Parenting Rewind - Public Upload Cadence` checks every two hours; the uploader enforces the temporary two-hour gate and then skips alternating checks to enforce four hours. The old private and superseded five-hour tasks are disabled.
+- PUBLIC UPLOAD OVERRIDE (updated 2026-08-31): upload the oldest remaining normal episode publicly once per hour. Videos remain marked not made for kids with synthetic-media disclosure enabled, and successful uploads continue to trigger an Outlook email to `mukeshmelb01@gmail.com`.
+- Windows task `Parenting Rewind - Public Upload Cadence` checks hourly. The old private and superseded five-hour tasks remain absent.
 - The repetitive three-storyboard batch was rejected and removed from active output. Its MP4s are preserved under `rejected-repetitive-batch-archive/output` only for recovery.
 - The user explicitly approved `output/parenting-rewind-redesign-01-kitchen-siblings-v1.mp4` on 2026-08-23 and authorized continued local production until asked to stop.
 - Continue only the redesigned workflow; keep the rejected repetitive renderer retired. New work must vary developmental stages, casts and settings, and should maintain the required toddler, school-age and teenage mix.

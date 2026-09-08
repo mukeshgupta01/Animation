@@ -10,6 +10,15 @@ Create and operate a high-quality, adult-facing parenting education channel name
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
 
+## Redesigned checkpoint 20: episodes 87-89
+
+- On 2026-09-08 the user requested continued new Parenting Rewind production. Episodes 87-89 are complete: `prepare-preschooler-new-baby-honestly`, `separation-not-childs-fault`, and `turn-off-parent-alarm-teen-opens-up`.
+- Durations are 53.10, 53.10 and 50.40 seconds. All three are 1080x1920 H.264 with 48 kHz stereo AAC, synthetic adult narration, narration-ducked original music, burned captions and the required spoken/captioned CTA. Automated production gates, independent full FFmpeg decodes and six-frame visual contact-sheet review passed.
+- Three original photorealistic 3x2 storyboards were created through three built-in image-generation calls, one per episode. They cover a preschool family transition, a school-age separation conversation and teen communication with distinct casts and settings. Effective prompts are recorded in `production-assets/storyboard-prompts-87-to-89.md`; assets remain at zero published uses until their actual uploads occur.
+- Research is based on current American Academy of Pediatrics / HealthyChildren guidance about helping older children adjust to a new baby, helping children adjust to separation or divorce, and listening to teens without triggering the parent alarm. Claim limits remain general education, not individual medical, legal or therapy advice.
+- Exact hashes are episode 87 `1807ABDDCF7EDAB4592179BD9BA3CE357781DABA2F9E9C31B280A10890007867`, episode 88 `FF5E29802248898EC3BBDEA41599B7147D1BF22845C363AA61503F2D18649504`, and episode 89 `3E45D4D50D224F1CB1BBEF358A3E7B92283DB59301B057B5AC20A7D0D13EF8D4`. Local and Business OneDrive byte counts and SHA-256 hashes match for all three.
+- `COVERED-TOPICS.md` now records 120 unique topics (96 active and 24 historical-only). The configured Business OneDrive folder contains 90 normal-series MP4s plus five separately published Father's Day Shorts. A post-production uploader dry run remained healthy and kept normal oldest-first ordering.
+
 ## Father's Day 20-second collection checkpoint
 
 - Five emotional, adult-facing Father's Day Shorts were created from five new built-in-image-generation triptychs. Each final master is exactly 20.0 seconds, 1080x1920 H.264 at 30 fps with stereo 48 kHz AAC, warm synthetic adult narration, burned-in safe-zone copy and its own original locally synthesized soulful instrumental score with narration ducking.

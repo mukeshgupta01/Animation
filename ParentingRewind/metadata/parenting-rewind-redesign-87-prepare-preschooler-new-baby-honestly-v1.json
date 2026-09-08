@@ -1,0 +1,62 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-87-prepare-preschooler-new-baby-honestly",
+  "version": "v1",
+  "title": "Prepare Your Preschooler for a New Baby Honestly | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A new baby is coming, and it is tempting to promise your preschooler an instant best friend and nothing but excitement. But preschoolers can struggle with changed routines and shared attention. Honest preparation is kinder than asking them to feel happy all the time. Pause and explain what will really change: babies cry, need a lot of care, and may not be ready to play for quite a while. Invite one small choice, like picking a blanket, without making your child responsible for the baby. Reassure them that your love is not being divided. After the baby arrives, protect regular one-on-one time and make room for mixed feelings. Connection grows through ordinary moments, not a perfect first reaction. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-08",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Preparing Your Older Child for a New Baby: How to Help Siblings Adjust",
+      "url": "https://www.healthychildren.org/English/ages-stages/prenatal/Pages/Preparing-Your-Family-for-a-New-Baby.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/new-baby-preschool-family-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-87-to-89.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-87-prepare-preschooler-new-baby-honestly\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-87-prepare-preschooler-new-baby-honestly-v1.mp4",
+    "duration_seconds": 53.1,
+    "sha256": "1807ABDDCF7EDAB4592179BD9BA3CE357781DABA2F9E9C31B280A10890007867"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-87-prepare-preschooler-new-baby-honestly-v1.mp4"
+  }
+}
