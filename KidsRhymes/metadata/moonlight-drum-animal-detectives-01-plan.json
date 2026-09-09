@@ -1,0 +1,248 @@
+{
+  "id": "moonlight-drum-animal-detectives-01",
+  "working_title": "Who Is Playing the Moonlight Drum? | Australian Animal Detective Story",
+  "status": "completed_local_private_single_voice_v2",
+  "audience": "children ages 3 to 7",
+  "duration_seconds": 100.0,
+  "fps": 30,
+  "bpm": 96,
+  "beat_one_offset_seconds": 0.0,
+  "format_family": "connected Australian bush sound-and-track detective story",
+  "visual_system": "integrated full-frame cinematic storybook bush mystery with visible clue actions and changing locations",
+  "interaction_style": "follow one continuous trail, inspect physical evidence, pause to predict, then watch the animal perform the clue action",
+  "voice_profile": "maisie-uk",
+  "character_voice_profiles": {
+    "all_spoken_lines": "maisie-uk"
+  },
+  "motion_personality": {
+    "name": "Playful",
+    "tone": "kinetic-soft",
+    "base_timing_seconds": 0.25,
+    "easing": "ease-out-back for clue reveals; smooth ease-in-out for travel",
+    "transition_family": "match cuts on footprint, leaf and moon shapes with hard action cuts",
+    "motion_hierarchy": [
+      "hero: Kiri or the newly revealed animal visibly performs the story action",
+      "support: one physical clue moves or changes state",
+      "texture: subtle leaves, water or fireflies only"
+    ],
+    "restraint": "no whole-frame-only motion, no static choice cards, no repeated character pose, no decorative transition competing with the clue"
+  },
+  "cast": [
+    {
+      "name": "Kiri",
+      "species": "quokka",
+      "role": "curious child detective",
+      "identity_lock": "small warm-brown quokka, rounded ears, cream muzzle, teal neckerchief, round gold magnifying glass with leaf-detail handle and tiny ochre satchel"
+    },
+    {
+      "name": "Pippa",
+      "species": "platypus",
+      "role": "creek clue helper",
+      "identity_lock": "chocolate-brown platypus, broad grey bill, webbed feet and plum rain scarf"
+    },
+    {
+      "name": "Edie",
+      "species": "echidna",
+      "role": "fallen-log clue helper",
+      "identity_lock": "small golden-brown echidna, cream-tipped spines and moss-green pouch"
+    },
+    {
+      "name": "Billie",
+      "species": "greater bilby",
+      "role": "sand-track clue helper",
+      "identity_lock": "silver-grey bilby, very long pink-lined ears, black-and-white tail and yellow bandana"
+    },
+    {
+      "name": "Suki",
+      "species": "sugar glider",
+      "role": "canopy clue helper",
+      "identity_lock": "pearl-grey sugar glider, dark head stripe, visible gliding membrane and coral wrist ribbon"
+    },
+    {
+      "name": "Wally",
+      "species": "wombat",
+      "role": "moonlight drummer mystery reveal",
+      "identity_lock": "sturdy sandy-brown wombat, square nose, indigo waistcoat and two smooth wooden beaters"
+    }
+  ],
+  "story_rule": "Every clue must be caused by a visible animal action and advance the same mystery. Animals are helpers, never suspects accused of wrongdoing.",
+  "audio_rules": {
+    "music": "original playful 96 BPM marimba, pizzicato strings and gentle hand percussion; energy builds toward the clearing",
+    "effects": "real water, sand, leaf, glide and hollow-log sounds synchronized only to visible actions",
+    "voice": "natural, warm and clearly paced; no squeaky pitch warping and no spoken imitation of sound effects",
+    "hiss_ceiling_db_above_12khz": -65.0
+  },
+  "scenes": [
+    {
+      "number": 1,
+      "start": 0.0,
+      "end": 12.5,
+      "location": "Kiri's eucalyptus-map nook at blue-hour dusk",
+      "story_beat": "A distant hollow-log rhythm interrupts Kiri's map sorting and begins one clear mystery.",
+      "narration": [
+        "A bouncy rhythm rolled through the evening bush.",
+        "Who was playing the moonlight drum?"
+      ],
+      "dialogue": [
+        "Detective Kiri is on the trail!"
+      ],
+      "primary_action": "Kiri stops sorting maps, turns toward the sound, lifts the round gold magnifier and runs out along a newly trembling leaf trail",
+      "start_state": "maps stacked, magnifier resting, Kiri seated",
+      "action_state": "Kiri's ears turn, one map flutters and the magnifier rises",
+      "end_state": "Kiri exits right with satchel and magnifier while the map nook remains behind",
+      "foreground_moving_elements": ["Kiri", "round gold magnifier", "one fluttering map", "three trail leaves"],
+      "interactive_pause_seconds": 0.0
+    },
+    {
+      "number": 2,
+      "start": 12.5,
+      "end": 25.0,
+      "location": "moonlit creek bank",
+      "story_beat": "Webbed prints and a widening ripple reveal Pippa Platypus, who heard the rhythm upstream.",
+      "narration": [
+        "Webbed footprints crossed the creek mud.",
+        "Which animal made them?"
+      ],
+      "dialogue": [
+        "Pippa! The drummer went to the log."
+      ],
+      "primary_action": "Kiri kneels to compare one print, the water ripple widens, then Pippa swims in and plants one matching webbed foot beside it",
+      "start_state": "empty creek, one clear webbed print and small ripple",
+      "action_state": "Kiri traces the print during a quiet prediction pause",
+      "end_state": "Pippa stands beside her matching print and points toward the fallen log",
+      "foreground_moving_elements": ["Kiri", "Pippa", "water ripple", "matching webbed foot"],
+      "interactive_pause_seconds": 5.25
+    },
+    {
+      "number": 3,
+      "start": 25.0,
+      "end": 37.5,
+      "location": "fallen gum log and termite mound",
+      "story_beat": "Fresh scratch marks and displaced bark reveal Edie Echidna searching for ants.",
+      "narration": [
+        "Fresh scratches curled around the log.",
+        "Who used strong claws?"
+      ],
+      "dialogue": [
+        "Edie! A bilby crossed the sand."
+      ],
+      "primary_action": "Kiri follows the scratches, bark crumbs tumble, and Edie pushes out from behind the log before making one matching claw scratch",
+      "start_state": "log with fresh marks, bark crumbs still",
+      "action_state": "Kiri examines the marks during the prediction pause as crumbs begin to fall",
+      "end_state": "Edie is fully visible with one claw beside the matching mark and points toward sandy scrub",
+      "foreground_moving_elements": ["Kiri", "Edie", "falling bark crumbs", "Edie's foreclaw"],
+      "interactive_pause_seconds": 5.25
+    },
+    {
+      "number": 4,
+      "start": 37.5,
+      "end": 50.0,
+      "location": "silver spinifex and sandy burrow ridge",
+      "story_beat": "Long narrow footprints and a freshly swept burrow reveal Billie Bilby.",
+      "narration": [
+        "Long prints ended beside the burrow.",
+        "Who has enormous ears?"
+      ],
+      "dialogue": [
+        "Billie! A gliding shadow went upward."
+      ],
+      "primary_action": "Kiri measures the long prints, sand spills from the burrow, and Billie hops out with ears rising into the moonlight",
+      "start_state": "empty ridge, two long prints and closed-looking burrow shadow",
+      "action_state": "Kiri compares the prints during the prediction pause while loose sand shifts",
+      "end_state": "Billie stands in the exact final print with both long ears raised and looks toward the canopy",
+      "foreground_moving_elements": ["Kiri", "Billie", "spilling sand", "Billie's ears"],
+      "interactive_pause_seconds": 5.25
+    },
+    {
+      "number": 5,
+      "start": 50.0,
+      "end": 62.5,
+      "location": "moonlit flowering gum canopy",
+      "story_beat": "A chewed blossom and a moving gliding shadow reveal Suki Sugar Glider.",
+      "narration": [
+        "A shadow sailed between two trees.",
+        "Who can glide without wings?"
+      ],
+      "dialogue": [
+        "Suki! The rhythm comes from the clearing."
+      ],
+      "primary_action": "Kiri looks up through the magnifier, Suki launches from one branch with membrane open and lands safely on a lower branch beside the blossom",
+      "start_state": "two separated branches, blossom and distant shadow",
+      "action_state": "Suki visibly glides across the gap during the prediction pause",
+      "end_state": "Suki lands, folds her membrane and points toward the brighter clearing",
+      "foreground_moving_elements": ["Kiri", "Suki", "chewed blossom", "two bending branches"],
+      "interactive_pause_seconds": 5.25
+    },
+    {
+      "number": 6,
+      "start": 62.5,
+      "end": 75.0,
+      "location": "four-way moonlit trail junction",
+      "story_beat": "Kiri combines the helpers' directions into one route instead of guessing from another card.",
+      "narration": [
+        "Every clue pointed the same way.",
+        "Can you trace the trail?"
+      ],
+      "dialogue": [
+        "All four clues connect. Follow me!"
+      ],
+      "primary_action": "Kiri places four physical clue tokens in route order, draws one continuous line through them, then leads the four helpers down the correct path",
+      "start_state": "four clue tokens separated at the junction",
+      "action_state": "Kiri moves the tokens into creek-log-burrow-canopy order during the pause",
+      "end_state": "one glowing route line connects all four tokens and the group runs toward the clearing",
+      "foreground_moving_elements": ["Kiri", "four clue tokens", "drawn route line", "four animal helpers"],
+      "interactive_pause_seconds": 5.25
+    },
+    {
+      "number": 7,
+      "start": 75.0,
+      "end": 87.5,
+      "location": "moonlit clearing with one hollow log",
+      "story_beat": "The mystery resolves: Wally Wombat is practicing a welcome rhythm for everyone.",
+      "narration": [
+        "The trail ended at one hollow log.",
+        "A sturdy drummer lifted two wooden beaters."
+      ],
+      "dialogue": [
+        "Wally Wombat! I made a welcome rhythm."
+      ],
+      "primary_action": "Wally raises both beaters and performs a visible four-beat pattern on the hollow log as Kiri and the helpers arrive and react",
+      "start_state": "Wally waits behind the silent log with beaters lowered",
+      "action_state": "four distinct visible beater contacts create the real drum rhythm",
+      "end_state": "Wally bows, Kiri closes the solved casebook and every helper gathers around the log",
+      "foreground_moving_elements": ["Wally", "two beaters", "Kiri", "four arriving helpers"],
+      "interactive_pause_seconds": 0.0
+    },
+    {
+      "number": 8,
+      "start": 87.5,
+      "end": 100.0,
+      "location": "same clearing, now a small moonlight animal parade",
+      "story_beat": "Every clue action becomes part of the final rhythm and the mystery closes with a earned celebration.",
+      "narration": [
+        "Steps, claws, ears and gliding joined in.",
+        "Kiri connected every clue!"
+      ],
+      "dialogue": [
+        "Great detective work!"
+      ],
+      "primary_action": "Pippa steps, Edie taps, Billie bounces, Suki glides and Wally drums in a readable sequence while Kiri stamps the case solved",
+      "start_state": "animals wait in a semicircle around the log",
+      "action_state": "each animal performs its unique clue action once in sequence",
+      "end_state": "final four seconds hold the completed group tableau with CASE SOLVED title only",
+      "foreground_moving_elements": ["Pippa", "Edie", "Billie", "Suki", "Wally", "Kiri", "case-solved stamp"],
+      "interactive_pause_seconds": 0.0
+    }
+  ],
+  "thumbnail": {
+    "hook": "WHO PLAYS THE DRUM?",
+    "composition": "Kiri in foreground with leaf magnifier, one luminous trail leading to Wally's partly revealed hollow log, four helper silhouettes readable but secondary",
+    "text_safe_area": "upper left",
+    "avoid": "no collage grid, no answer text, no more than one drum and two beaters"
+  },
+  "release": {
+    "privacy": "private",
+    "upload_authorized": false,
+    "upload_queue_released": false
+  }
+}

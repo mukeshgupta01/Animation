@@ -1,0 +1,26 @@
+{
+  "id": "moonlight-drum-animal-detectives-01",
+  "reviewed_at": "2026-09-08",
+  "review_status": "accepted_for_local_master",
+  "review_scope": "Fifteen integrated full-frame story states, continuity, clue readability, exact animal counts, scene progression, start/action/end evidence and thumbnail composition.",
+  "assets": [
+    {"file": "moonlight-drum-opening-v1.png", "sha256": "e2adb11ab0bdaa6dae7935334adf5eb702a72db72f145ba8e275c799df3e0a96", "role": "scene 1 setup"},
+    {"file": "moonlight-drum-opening-run-v1.png", "sha256": "990b280cf7166081ce6514e68a98f757f411e33cbf6cc352a6602d875f2fb67b", "role": "scene 1 departure"},
+    {"file": "moonlight-drum-creek-inspect-v1.png", "sha256": "821724685adbe25c0e674e7f3000382221b36f795f794731833eaff317591713", "role": "scene 2 inspection"},
+    {"file": "moonlight-drum-creek-v1.png", "sha256": "84b72ca26d738d240bd413ccf4b017d424f4a96452694b36f16ebec311f71d8d", "role": "scene 2 Pippa reveal"},
+    {"file": "moonlight-drum-log-inspect-v1.png", "sha256": "005f234c9f527601a7fe0135c4d837496972c16bdf31b0610b0abc64bb730ed7", "role": "scene 3 inspection"},
+    {"file": "moonlight-drum-echidna-log-v1.png", "sha256": "7201610f3a29a5b7fe721dd42542b70195331c5bc92b6ea6983272efb0787742", "role": "scene 3 Edie reveal"},
+    {"file": "moonlight-drum-bilby-inspect-v1.png", "sha256": "38492a34a8f8e612ad1d55db7dc5a55a5f7d01106b5a38d5632e2e6d70e104e8", "role": "scene 4 inspection"},
+    {"file": "moonlight-drum-bilby-burrow-v2.png", "sha256": "cdae2f031657649eafcd570833112c0409c9940f0edaef0454dca5e12b9cf29e", "role": "scene 4 Billie reveal"},
+    {"file": "moonlight-drum-sugar-glider-v1.png", "sha256": "6920fb7187dea97ec65cd3cf60c4ab9a7441b96e47666cc62bb9ad445cac6ff8", "role": "scene 5 glide"},
+    {"file": "moonlight-drum-sugar-glider-land-v1.png", "sha256": "3711eba230d57ae89e7238a68687224bc7d2d4bc04f184d15a35beab6ae1717b", "role": "scene 5 landing"},
+    {"file": "moonlight-drum-trail-junction-v1.png", "sha256": "9101dafa289688430aa30e846ffe234b897d5b9973059e5c4e0f272501dcbb43", "role": "scene 6 clue connection"},
+    {"file": "moonlight-drum-junction-run-v1.png", "sha256": "1415955cb7247540d35bc7266f319b727c25566486d5b045d046b84c5e2c8bb6", "role": "scene 6 departure"},
+    {"file": "moonlight-drum-wally-wait-v1.png", "sha256": "42c388f4070488e97d1452fd986ecabc66af6c7bdf0f4b71fcdef12186d99876", "role": "scene 7 quiet setup"},
+    {"file": "moonlight-drum-reveal-v1.png", "sha256": "8b34c7d466d912d55583582677c68e93b8e29924912566210cbb4336f6d95dc4", "role": "scene 7 reveal and thumbnail source"},
+    {"file": "moonlight-drum-finale-v1.png", "sha256": "5c2462444bb6f810cf80c4b6158fa2f1a5a53b4dd95d4f7871293d6daf964b29", "role": "scene 8 parade and title hold"}
+  ],
+  "continuity_result": "Kiri, Pippa, Edie, Billie, Suki and Wally remain distinct; recurring outfits and props remain stable; no unintended duplicate animal appears.",
+  "motion_result": "Scenes 1-7 use purpose-built paired states. Scene 8 uses a multi-character action tableau before the final four-second title hold. Camera movement is support only.",
+  "release": {"privacy": "private", "upload_authorized": false, "upload_queue_released": false}
+}

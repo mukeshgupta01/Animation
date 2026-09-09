@@ -1,0 +1,96 @@
+{
+  "id": "luma-night-reef-lantern-rescue-01",
+  "working_title": "Can Luma Light the Night Reef? | Sea Animal Adventure for Kids",
+  "status": "active-one-at-a-time-build",
+  "audience": "children ages 3 to 7",
+  "duration_target_seconds": 170,
+  "format_family": "connected night-reef animal-skill guessing mission",
+  "story_promise": "Luma follows one continuous reef route to recover three pearl lanterns before the nursery parade, asking children which unusual sea animal can help at each obstacle.",
+  "not_this": [
+    "static matching cards",
+    "silhouette shadows",
+    "disconnected fact rounds",
+    "generic ocean movement compilation",
+    "lost-colour rescue"
+  ],
+  "voice": {
+    "profile": "ryan-uk",
+    "single_voice_throughout": true,
+    "target_wpm": 112,
+    "maximum_line_wpm": 116,
+    "minimum_gap_seconds": 0.8
+  },
+  "music": {
+    "bpm": 100,
+    "direction": "buoyant marimba, pizzicato and soft water percussion; curious at each obstacle, warmer after each recovery, brightest only at the parade",
+    "effects": "real restrained current, sand, shell, colour-flash shimmer and underwater light effects; never spoken sound-effect words"
+  },
+  "cast_lock": {
+    "luma": "one child-friendly leafy seadragon with golden-olive leaflike appendages, warm amber eyes, coral cheek freckles and one small teal woven satchel",
+    "gia": "one slender honey-yellow garden eel with chocolate spots and large kind teal eyes, always anchored in one visible sand burrow",
+    "deco": "one small rust-red decorator crab with cream-tipped claws, moss and one pink sponge piece attached to its shell",
+    "cato": "one rounded turquoise cuttlefish with violet fin edge, amber W-shaped pupils and three clearly readable skin bands",
+    "fia": "one midnight-blue flashlight fish with silver belly, round friendly eyes and two soft mint-white light organs below the eyes",
+    "lanterns": "exactly three oval pearl lanterns on one turquoise cord; none glow until recovered and rehung"
+  },
+  "story_beats": [
+    {
+      "phase": "opening",
+      "visual": "A playful current lifts the turquoise cord from the nursery arch; exactly three unlit pearl lanterns drift away while Luma reaches after them.",
+      "narration_intent": "State Luma, the three lost lanterns, the parade deadline and the route goal immediately."
+    },
+    {
+      "phase": "garden-eel-question",
+      "obstacle": "The first lantern is hidden beyond waving seagrass where the current direction is hard to read.",
+      "clue": "This helper stays safely in a sand burrow and bends with the moving water.",
+      "prediction_hold_seconds": 6,
+      "start_state": "Gia stands upright; seagrass points in mixed directions; lantern is distant.",
+      "action_state": "The current bends Gia and nearby seagrass together toward one safe low route; Luma follows the indicated flow.",
+      "end_state": "Luma has lantern one clipped to the satchel; Gia returns upright in the same burrow."
+    },
+    {
+      "phase": "decorator-crab-question",
+      "obstacle": "The second lantern is concealed under one fallen pink sponge and loose moss beside the reef wall.",
+      "clue": "This helper understands camouflage because it carries living reef pieces on its shell.",
+      "prediction_hold_seconds": 6,
+      "start_state": "Only a faint pearl edge is visible beneath the sponge; Deco approaches.",
+      "action_state": "Deco uses both claws to lift the loose sponge clear while Luma steadies the cord.",
+      "end_state": "Luma has lanterns one and two; the sponge rests safely beside Deco, not on the lantern."
+    },
+    {
+      "phase": "cuttlefish-question",
+      "obstacle": "A dim coral fork hides which tunnel leads to the final lantern.",
+      "clue": "This helper can change skin patterns quickly to send a bright visual signal.",
+      "prediction_hold_seconds": 6,
+      "start_state": "Cato is calm turquoise at a two-way fork; both routes are dim.",
+      "action_state": "Cato displays three clear gold-violet-gold bands and swims toward the correct arch as Luma watches.",
+      "end_state": "The same band pattern remains visible on marker corals along the chosen route; Luma follows with two lanterns."
+    },
+    {
+      "phase": "flashlight-fish-question",
+      "obstacle": "The final pearl lantern lies inside a naturally dark reef arch.",
+      "clue": "This nocturnal helper carries light beneath its eyes and can uncover a path without a torch.",
+      "prediction_hold_seconds": 6,
+      "start_state": "The arch is dark; only the final lantern silhouette can be seen.",
+      "action_state": "Fia opens both mint-white light organs and swims a curved path into the arch; Luma follows.",
+      "end_state": "Luma carries all three lanterns; Fia's lights reveal the clear exit."
+    },
+    {
+      "phase": "rehang-and-finale",
+      "visual": "Back at the same nursery arch, Luma and the four helpers rehang exactly three lanterns on the turquoise cord; the lanterns glow for the first time and the small sea-animal parade travels beneath them.",
+      "narration_intent": "Name the sequence of helpers, celebrate observation and teamwork, and end with one warm invitation to explore again."
+    }
+  ],
+  "quality_gates": [
+    "H.264 1920x1080 at 30 fps with 48 kHz stereo AAC",
+    "full FFmpeg decode and continuous zero-gap visual timeline",
+    "one Ryan voice only, measured pacing at or below 116 WPM per line",
+    "four exact six-second prediction holds",
+    "all four helpers have independently reviewed start/action/end states",
+    "exactly three lanterns and stable cast markings throughout",
+    "no whole-frame camera drift accepted as the primary action",
+    "opening high-band energy above 12 kHz at or below -65 dB",
+    "custom thumbnail and exact encoded-master contact sheet manually reviewed",
+    "public made-for-kids upload only after every gate passes, followed by exact API and served-thumbnail readback"
+  ]
+}

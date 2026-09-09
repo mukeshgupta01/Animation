@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "id": "ollie-otter-floating-picnic-01",
+  "title": "Ollie Otter's Floating Picnic | Balance Story for Kids",
+  "audience": "children ages 3-7",
+  "target_duration_seconds": 100.0,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "music": {
+    "bpm": 90,
+    "beats_per_scene": 16,
+    "scene_seconds": 10.666667,
+    "scene_count": 9,
+    "resolve_seconds": 4.0,
+    "personality": "buoyant river folk-song with wooden tongue drum, kalimba, seed shakers and gentle paddle rhythm",
+    "emotional_arrangement": "curious plucked reeds at the empty raft; an off-centre bass pulse for the left-heavy test; paired marimba notes as the jug balances the opposite side; soft boarding rhythm while tied; a brief suspended chord when Fern shifts left; symmetric paddle rhythm after she returns to centre; full tongue drum, kalimba, shakers and river-neighbor chorus only at the picnic finale"
+  },
+  "voices": {
+    "lead": "maisie-uk",
+    "ollie": "ryan-uk",
+    "willa": "natasha-au",
+    "fern": "ana-us",
+    "delivery": "expressive buoyant river story-song with calm safety cues, curious comparisons and a fully sung picnic payoff; no flat reading"
+  },
+  "pacing": {
+    "maximum_phrases_per_scene": 3,
+    "target_weighted_wpm": 130,
+    "hard_line_wpm_ceiling": 145,
+    "minimum_phrase_gap_seconds": 0.4
+  },
+  "continuity": {
+    "ollie": "one young cinnamon-brown river otter with cream muzzle and belly, hazel eyes and teal flotation vest with coral toggles",
+    "willa": "one chestnut water vole with cream cheek patch, coral flotation vest and teal neck scarf",
+    "fern": "one small olive-green frog with golden eyes, mustard rain hat, plum mini satchel and round balance token",
+    "raft": "one oval reed-and-cedar raft with broad level deck, woven edge, two dock ropes and two clipped short paddles",
+    "loads": "exactly one coral food basket, one squat teal lidded jug and one mustard picnic blanket"
+  },
+  "scenes": [
+    {"scene": 1, "action": "At the dock, Ollie, Willa and Fern inspect one empty double-tied raft and exactly three separate picnic loads on the bank.", "lyrics": ["Morning ripples invite a picnic.", "Three loads wait by one raft.", "Ollie asks, how shall we balance?"], "hero": "empty raft and three loads", "emotion": "sunny invitation"},
+    {"scene": 2, "action": "All three loads sit together on the raft's left edge while the empty double-tied raft makes a mild safe dockside tilt.", "lyrics": ["All three loads crowd left.", "Low on this side, high there.", "Keep the raft tied while testing."], "hero": "left-heavy physical comparison", "emotion": "curious concern"},
+    {"scene": 3, "action": "The heavy teal jug moves alone to the right while basket and blanket remain left; the empty tied raft returns level.", "lyrics": ["Move the heavy jug right.", "Basket and blanket stay left.", "Both rims rest level now."], "hero": "opposite-side cargo balance", "emotion": "pleased discovery"},
+    {"scene": 4, "action": "Willa boards first and sits low to secure the right jug while Ollie secures the left basket and Fern remains dockside.", "lyrics": ["Willa boards first, sitting low.", "She straps the jug safely.", "Ollie secures the basket."], "hero": "first one-at-a-time boarding and cargo straps", "emotion": "careful teamwork"},
+    {"scene": 5, "action": "All three friends sit low along the centre blanket on the still-tied level raft while the opposite cargo remains strapped.", "lyrics": ["One at a time, friends board.", "Sit along the centre blanket.", "Level raft, ready to glide!"], "hero": "final tied boarding check", "emotion": "calm readiness"},
+    {"scene": 6, "action": "Mid-river, Fern remains inside but shifts toward the left inner rim to wave, producing one mild readable tilt while cargo stays strapped.", "lyrics": ["Fern waves from the left.", "One friend shifts; one rim dips.", "Ollie sings, return to centre."], "hero": "one-friend weight shift", "emotion": "gentle suspense"},
+    {"scene": 7, "action": "Fern sits back on the exact centre line; the raft levels and Ollie and Willa use matching shallow paddle strokes on opposite sides.", "lyrics": ["Fern scoots back to centre.", "Matching paddles kiss the river.", "Level again, we glide together!"], "hero": "centre correction and symmetric paddling", "emotion": "relieved flow"},
+    {"scene": 8, "action": "At the destination, the raft is double-tied level; Ollie and seated Willa support the basket together while Fern waits on shore.", "lyrics": ["Tie the raft at landing.", "Pass the basket hand to hand.", "Unload before the picnic song."], "hero": "one-at-a-time safe unloading", "emotion": "patient arrival"},
+    {"scene": 9, "action": "The empty raft remains tied in the background while Ollie, Willa and Fern share the fully arranged picnic and perform the first full song.", "lyrics": ["Blanket down, three cups ready.", "Ollie's drum starts our chorus.", "Balanced friends, sing by the river!"], "hero": "first full picnic and musical payoff", "emotion": "warm golden celebration"}
+  ],
+  "quality_requirements": [
+    "Ollie, Willa, Fern, flotation clothing, raft, basket, jug, blanket and river geography retain identity across all nine scenes.",
+    "The raft remains double-tied for every dockside loading, boarding and unloading action.",
+    "All three loads crowd left before the jug moves right; the raft visibly returns level before boarding.",
+    "Willa boards first while seated low; all friends remain seated low and centred before launch.",
+    "Fern remains fully inside during the mild mid-river tilt and returns to centre before symmetric paddling.",
+    "The picnic appears only after the basket is unloaded; the first full song occurs only in scene 9 with the empty raft tied behind it.",
+    "Real rope, basket, strap, ripple, paddle, foot, drum, shaker, kalimba and nature effects replace spoken imitation words.",
+    "All shared gates in premium-musical-video-set-2026-08-31.json pass before release."
+  ],
+  "status": "accepted-assets-ready-for-production"
+}

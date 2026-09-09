@@ -1,0 +1,99 @@
+{
+  "id": "golden-seed-rainforest-guessing-adventure-01",
+  "reviewed": true,
+  "review_scope": "Integrated story states, species readability, persistent seed/satchel, exact animal entry order, start/action/end changes and thumbnail composition.",
+  "accepted": [
+    {
+      "file": "automation/production-assets/golden-seed-opening-catch-v1.png",
+      "sha256": "05440e6f73d36de8132375338376ea5d7a003bbf7f17133a812b3a73e204299c",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-capybara-start-v1.png",
+      "sha256": "7f57db3c6de6d5b58596431e8af4f1b34050d6920e4bcd3bbefd84285f559209",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-capybara-action-v1.png",
+      "sha256": "98e2f77af6773c449989c92adb15d469c8beb90ef616ec980e846a962ad4808c",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-capybara-end-v2.png",
+      "sha256": "e38ba59584736e964f05dcc0ec3e02df3c488830f592c00ad49f97d72f8ae37d",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-armadillo-start-v1.png",
+      "sha256": "5252a4f54a20ec86d12c9815d46807657b36f7a4397a3d5cbd039f4adbe14278",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-armadillo-action-v1.png",
+      "sha256": "553efed04c6c20d6eaa61ab5f9e6032ece5ff33caf8bb45ee82f3af66ce5c08b",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-armadillo-end-v1.png",
+      "sha256": "b6e447b10bfff065e3505b8dec0f1502184574a131665d22becc8e8d45817ba6",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-sloth-start-v1.png",
+      "sha256": "d23141dd676228bfd5887f74ea2faee760b5f7003d6a97e6d144352964551c4f",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-sloth-action-v1.png",
+      "sha256": "7cd0c4ce07187a7e4853294abdc976f975ce74e0374fdff3647f830b9f8e16c7",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-sloth-end-v1.png",
+      "sha256": "024b2894ede56da8f1f7b4a179f5826f5cf894aa0015da242b675a45670b48e8",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-kinkajou-start-v1.png",
+      "sha256": "00c5a372ae33714c011dd9a20be9e8e436e70642b8bdd1ca33843ed1eb2ced59",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-kinkajou-action-v1.png",
+      "sha256": "ee61eeda047e5b1b01413c5cd051b720819760918632dcb679d434cce3e03982",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-kinkajou-end-v1.png",
+      "sha256": "60da4ada1afa170cf44e25bbb65bf0b96d6b7afa7eff2709ec1d74eb7ee507e6",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-planting-v1.png",
+      "sha256": "3e032db4a825924da835c0842b53f5e9243c88475d547068fab58d5c2d4208f7",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-sprout-finale-v1.png",
+      "sha256": "b529903b7c657a010316cba9b67ffb86bd4f68672e3c00516a7b200a66cfe61b",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-rainforest-cast-reference-v1.png",
+      "sha256": "eec67a77470349bd3cb4546352dd079b684709c681165e45a070230b9d95b88a",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/golden-seed-rainforest-thumbnail-art-v1.png",
+      "sha256": "7a69b5038c445d7fd7d1e97dfc43805f93f303f7423eb2b61e15204173d8a7a8",
+      "reviewed": true
+    }
+  ],
+  "rejected": [
+    {
+      "file": "automation/production-assets/rejected/golden-seed-capybara-end-v1-extra-animals.png",
+      "sha256": "d2cb0c30ab24c9de7707edf2f16bfc580a315cddfa508da0c10605578afb0720",
+      "reason": "Inserted armadillo and sloth before their story scenes, breaking route continuity."
+    }
+  ]
+}

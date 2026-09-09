@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "id": "ollie-otter-floating-picnic-01",
+  "reviewed_at": "2026-09-01",
+  "review_method": "Each full-resolution frame was inspected on creation, then all nine accepted scenes were reviewed chronologically on automation/production-work/ollie-otter-floating-picnic-01/asset-contact-sheet.png.",
+  "generation_summary": {"image_generation_calls": 9, "accepted_assets": 9, "rejected_or_failed_generations": 0},
+  "accepted_assets": [
+    {"scene": 1, "file": "automation/production-assets/ollie-otter-opening-v1.png", "sha256": "c3015a78a7d71c1ff900cb40eaba6cd74b740204d49f857b047cb66f25ded5f7", "review": "One empty double-tied raft, exact three loads and all three friends safely dockside are clearly visible."},
+    {"scene": 2, "file": "automation/production-assets/ollie-otter-loaded-one-side-v1.png", "sha256": "72e6a1fae5c2635d2434dffb7e7b9f8ad4b99c1ba8d7ac3ab6564cbed7d15d98", "review": "All three loads crowd the left edge while the empty tied raft shows a mild safe imbalance."},
+    {"scene": 3, "file": "automation/production-assets/ollie-otter-jug-opposite-v1.png", "sha256": "72bd824a6a658077f7d28808ba22f83ec846e70572014d541eb39765ee1424ea", "review": "Jug alone on the right balances basket and blanket on the left; both rims read level."},
+    {"scene": 4, "file": "automation/production-assets/ollie-otter-first-board-and-secure-v1.png", "sha256": "ff50d2da14eb42bb6a6f44b1a02bf65bb3de74def7707169c561a95a14d7c8b0", "review": "Willa boards first while low and secures the right jug; Ollie secures the left basket and Fern remains dockside."},
+    {"scene": 5, "file": "automation/production-assets/ollie-otter-tied-level-check-v1.png", "sha256": "b3fd23bd40bf02742e5c5552dcf976e0f37f873b59ca36dc5229a7f5dd91c545", "review": "All three friends remain low on the centre line, cargo stays strapped opposite and the dock ropes remain visible."},
+    {"scene": 6, "file": "automation/production-assets/ollie-otter-fern-left-tilt-v1.png", "sha256": "a50461f2179dbfb55a1fc2485a84a2fa7727bfaafcf41a5a215c328d10ea01fb", "review": "Fern stays fully inside at the left inner rim; Ollie gives a calm cue and strapped cargo remains fixed."},
+    {"scene": 7, "file": "automation/production-assets/ollie-otter-center-level-v1.png", "sha256": "b96514b93dcab4d2f465e4cee8e4db087b4f11ab3a5eeccaae867f6e9c805ca3", "review": "Fern is visibly centred, the balance token is level and opposite shallow paddle strokes restore symmetry."},
+    {"scene": 8, "file": "automation/production-assets/ollie-otter-unload-basket-v1.png", "sha256": "88b163d5c614cca21a2cdcbf4803fa6604d6ca764c74d3227236fff15e811ddd", "review": "Ollie and seated Willa support the basket hand-to-hand while Fern waits on shore and the raft remains tied."},
+    {"scene": 9, "file": "automation/production-assets/ollie-otter-picnic-finale-v1.png", "sha256": "ed5c9d3abc3485c0cd09f3dee4de275ef0e948f307c869400e7ff0b8ec8e6ce4", "review": "The first full picnic and band appear only now; the completed raft is empty and tied in the background."}
+  ],
+  "continuity_checks": {
+    "ollie_willa_fern_and_clothing_preserved": true,
+    "one_raft_and_three_loads_preserved": true,
+    "dockside_actions_remain_tied": true,
+    "left_heavy_then_opposite_jug_sequence_preserved": true,
+    "fern_inside_then_centered_midriver": true,
+    "full_picnic_and_music_only_in_scene_9": true,
+    "generated_text_or_watermark_present": false
+  },
+  "status": "accepted-hash-locked-ready-for-production"
+}

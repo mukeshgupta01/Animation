@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "channel_id": "UCEn9N-ITQHshjgt6fy7fxnw",
+  "threshold": 10,
+  "scope": "Seventeen unique public Tiny Tales upload-ledger videos below ten views in the read-only 2026-09-09 audit. Update titles and description leads only; preserve relevant live tags, category, visibility and made-for-kids status.",
+  "items": [
+    {"video_id":"lHL3_9iQ26g","expected_old_title":"Can Luma Light the Night Reef? | Sea Animal Adventure for Kids","new_title":"Find 3 Lost Lanterns! | Sea Animal Guessing Adventure","new_lead":"Can you help Luma recover three lost pearl lanterns before the night-reef parade? Guess how a garden eel, decorator crab, cuttlefish and flashlight fish can guide the mission."},
+    {"video_id":"xxdDW4ax1nI","expected_old_title":"Which Rainforest Animal Can Help? | Guessing Adventure for Kids","new_title":"Guess Which Rainforest Animal Can Help! | Kids Adventure","new_lead":"Can you choose the right rainforest helper at every obstacle? Follow one golden seed as a capybara, armadillo, sloth and kinkajou move it safely toward the nursery."},
+    {"video_id":"h2RfEK01Rr0","expected_old_title":"Felix Firefly and the Three Dark Lanterns | Story for Kids","new_title":"Can Felix Light 3 Lanterns? | Pattern Story for Kids","new_lead":"Can Felix relight three dark lanterns and guide his friends home? Look for colour patterns, solve the windy-path problem and help the woodland glow again."},
+    {"video_id":"ggJqahpLAtg","expected_old_title":"Eddie Excavator's Rain-Garden Day | Musical Construction Story for Kids","new_title":"Excavator Builds a Rain Garden! | Construction Song for Kids","new_lead":"Watch Eddie Excavator dig, carry, plant and test a working rain garden. Sing through each safe construction step and discover how the garden guides water toward thirsty roots."},
+    {"video_id":"2CKnDBpjFlQ","expected_old_title":"Dad's Coming-Home Welcome Rhythm | Family Song for Kids","new_title":"Dad Is Home! | Welcome Song and Rhythm for Kids","new_lead":"Dad is coming home—how will Mina welcome him? Choose a comfortable greeting, follow a gentle three-beat rhythm and celebrate warm family connection."},
+    {"video_id":"aPtUBaZrPcI","expected_old_title":"Pick, Wash, Pack the Fruit Picnic | Orchard Song for Kids","new_title":"Pick, Wash and Count 6 Fruits! | Fruit Song for Kids","new_lead":"Pick, wash and count six colourful fruits for a sunny picnic. Help Kai ask permission, make a repeating pattern, pack the basket and share without waste."},
+    {"video_id":"9vvghOKhipo","expected_old_title":"The Ant and Grasshopper's Shared Harvest | Musical Story for Kids","new_title":"Can Ant and Grasshopper Save the Harvest? | Musical Story","new_lead":"Can Ant and Grasshopper save the harvest before winter? Follow their musical teamwork through a rolling berry, autumn rescue, warm winter meal and new spring garden."},
+    {"video_id":"IljnXnB_5X0","expected_old_title":"Lina's Feelings Weather Studio | Emotional Story for Kids","new_title":"What Is Lina Feeling? | Calm-Down Story for Kids","new_lead":"What is Lina feeling when her inner weather turns sunny, stormy, rainy or foggy? Name each emotion and practise breathing, asking for company and taking one kind step."},
+    {"video_id":"RjHEcm4aWUs","expected_old_title":"Five Little Ducks' River Countdown | Nursery Song for Kids","new_title":"Where Did the Five Little Ducks Go? | Counting Song","new_lead":"Where did the five little ducks go? Count down from five to one along their colourful river trail, then count everyone back for a warm family reunion."},
+    {"video_id":"nmj4W890T3I","expected_old_title":"Niko's Ninja Soccer Kindness Match | Teamwork Story for Kids","new_title":"Can Niko Score the Kindness Goal? | Soccer Story for Kids","new_lead":"Can Niko and new player Lila score a kindness-team goal? Balance, follow gentle footwork, trace a passing triangle and make sure every player belongs."},
+    {"video_id":"FdgXOzSIpy0","expected_old_title":"The Cardboard Box Invention Club | Imagination Story for Kids","new_title":"What Can This Cardboard Box Become? | Imagination Game","new_lead":"What can one cardboard box become? Turn it into a pretend bus, cosy cave, puppet theatre and calm reading nook through movement, teamwork and imaginative play."},
+    {"video_id":"Ow7tr3SWiM4","expected_old_title":"Animal Shape Builders | Circle, Triangle, Square and More for Kids","new_title":"Can Animals Build With Shapes? | Shapes for Kids","new_lead":"Can six animal builders create a whole world from shapes? Trace circles, triangles, squares, rectangles, ovals and stars as every scene transforms."},
+    {"video_id":"eCGiwPW_SF4","expected_old_title":"Pip's Five Senses Quest | Interactive Story Adventure for Kids","new_title":"Can You Find All 5 Senses? | Learning Adventure for Kids","new_lead":"Can you help Pip recover all five Sense Sparks? Use sight, hearing, smell, taste and touch through five safe activities and richly illustrated destinations."},
+    {"video_id":"KT6ezPwGYZI","expected_old_title":"Pip's Four Seasons Journey | Interactive Story Adventure for Kids","new_title":"Can You Guess the Season? | Four Seasons for Kids","new_lead":"Can you identify spring, summer, autumn and winter? Travel with Pip through four changing worlds, notice the weather and complete a safe movement activity in every season."},
+    {"video_id":"3c5rj6In7pQ","expected_old_title":"Bea's Healthy Habits Treasure Trail | Interactive Story for Kids","new_title":"Can You Find 5 Healthy Habits? | Routine Adventure","new_lead":"Can you find five healthy habits with Bea? Practise handwashing, toothbrushing, colourful-food spotting, safe movement and one calm bedtime breath."},
+    {"video_id":"yUCTNP3pJxg","expected_old_title":"Brio's Paintbrush Colour Workshop | Paint, Mix and Move for Kids","new_title":"Mix Red, Yellow and Blue! | Colour Mixing for Kids","new_lead":"What happens when red, yellow and blue paint begin to mix? Air-paint shapes with Brio, create orange and green, and help a blank canvas grow into a colourful meadow."},
+    {"video_id":"ygc-y4_XBwk","expected_old_title":"Nia's Rainbow Breakfast Dance | Colours and Movement for Kids","new_title":"Dance and Find the Colours! | Breakfast Song for Kids","new_lead":"Dance through breakfast and find red, yellow and blue with Nia and three lively fruit friends. Clap, tap, stretch and turn while learning colours through movement."}
+  ],
+  "result": {
+    "completed_utc": "2026-09-09T01:10:19Z",
+    "updated": 17,
+    "readback_passed": true,
+    "tags_preserved": true,
+    "thumbnails_unchanged": true,
+    "full_canonical_descriptions_verified": true,
+    "report": "automation/runtime/under-10-metadata-refresh-result.json"
+  }
+}

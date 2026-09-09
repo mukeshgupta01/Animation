@@ -1,0 +1,99 @@
+{
+  "id": "luma-night-reef-lantern-rescue-01",
+  "reviewed": true,
+  "review_scope": "Integrated story states, species readability, zero-one-two-three lantern progression, exact helper order, start/action/end changes and thumbnail composition.",
+  "accepted": [
+    {
+      "file": "automation/production-assets/luma-night-reef-opening-problem-v1.png",
+      "sha256": "a991d9262cf2ad0cdaafec034ea7867f227aa316285a321f3756873c5971ca48",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-garden-eel-start-v1.png",
+      "sha256": "363ff857a0a1270f8515ff1ce4b97aa7bd4ae4ae14ac7b4e4a7d5e8fca188fb5",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-garden-eel-action-v1.png",
+      "sha256": "e892a09c30a0e53159bcad7c44e8c21f1af5e371f77c3029478bc8bfb8ede2b1",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-garden-eel-end-v1.png",
+      "sha256": "ab2fdbdf96eda14470769f1ac8a8e1452d6a380db986142bbdde166e414526c9",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-decorator-crab-start-v1.png",
+      "sha256": "b0443cc935b47365d7868c37c6d6d65e6797b4b1303e5c4bb56e50315689b499",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-decorator-crab-action-v1.png",
+      "sha256": "6f9f95c0c75d67d707869ba570a2dbde69ba355356cf5fa1771933fb7bd84d33",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-decorator-crab-end-v1.png",
+      "sha256": "40a641bae59ac2346921ae295abf0bce19edc7e84ea0eb687e6ec7955b87924f",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-cuttlefish-start-v1.png",
+      "sha256": "75c6177a2e6010acb25d847526cfd8b9ae63f70dbc450f398d1e6f6b2c10d0f1",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-cuttlefish-action-v1.png",
+      "sha256": "644154717948e26ce94fa599d18b9f6c26fdbde9ebfda8358480ba0027f1f196",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-cuttlefish-end-v1.png",
+      "sha256": "78d1ae3fae3bccc888459150506a765a4c577e936a7b627fea226ecb94507c65",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-flashlight-fish-start-v1.png",
+      "sha256": "b8b95dedc61c7ed62d828fbedbaae9b34a2f62aac614f5bd9d82b65249db5ffc",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-flashlight-fish-action-v1.png",
+      "sha256": "f614d6d934bcdecb74a1d95f440cd14731b87d9d2d8f08e0bd47f614ae3843e3",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-flashlight-fish-end-v1.png",
+      "sha256": "8905a1818e7d2f21b4ebb0c784bc98ba7406b3a2a82c1f6878e61705f6b2d28c",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-rehang-action-v2.png",
+      "sha256": "5f16083af7b98697a724843fcf1aae21a40af6ab34710d880e5c48f523cd7839",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-night-reef-finale-v1.png",
+      "sha256": "ff062c83fb7124b10cf97aeaea05aefcb4dbb9de967b3bbeb5280ad9ee0d76cc",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-night-reef-cast-reference-v1.png",
+      "sha256": "41d86f064f4e064733a3c8809ffd3f72f2c8de04d980bcc7232f6a1f8c697e34",
+      "reviewed": true
+    },
+    {
+      "file": "automation/production-assets/luma-night-reef-thumbnail-art-v1.png",
+      "sha256": "b7a9ac3bc3187d51b050c508e0d51aa555ce446a5ee15aad72dee1cfb19189b1",
+      "reviewed": true
+    }
+  ],
+  "rejected": [
+    {
+      "file": "automation/production-assets/rejected/luma-rehang-v1-four-lanterns.png",
+      "sha256": "de74bf62a7b1bf362ece378d6e1fd765f964b4f25de95b6980c35726ef767ae5",
+      "reason": "Introduced a fourth lantern beside Deco; corrected V2 restores the exact count of three."
+    }
+  ]
+}

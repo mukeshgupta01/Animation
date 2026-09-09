@@ -1,0 +1,118 @@
+{
+  "id": "golden-seed-rainforest-guessing-adventure-01",
+  "working_title": "Which Rainforest Animal Can Help? | Golden Seed Guessing Adventure",
+  "audience": "children ages 3 to 7",
+  "one_message": "Animal body features help each friend solve a different part of one shared rainforest mission.",
+  "platform": "YouTube 16:9, sound-on",
+  "target_duration_seconds": 145,
+  "mood": ["playful", "curious", "warm"],
+  "creative_intent": "Turn four animal-trait guesses into one continuous golden-seed relay with an earned planting payoff, never a card quiz or slideshow.",
+  "format_family": "connected rainforest animal-skill guessing relay",
+  "visual_system": "integrated full-frame cinematic 3D storybook rainforest with persistent seed, leaf satchel and route continuity",
+  "interaction_style": "observe the physical obstacle, hear one trait clue, predict during a quiet hold, then watch the animal perform the answer",
+  "voice": {
+    "profile": "natasha-au",
+    "engine_voice": "en-AU-NatashaNeural",
+    "single_voice_throughout": true,
+    "target_weighted_wpm_max": 118,
+    "minimum_gap_seconds": 0.5
+  },
+  "motion_language": {
+    "tone_cell": "kinetic-soft",
+    "personality": "Playful",
+    "easing": "cubic-bezier(0.34, 1.56, 0.64, 1) for animal landings; smooth ease-in-out for travel",
+    "base_timing_unit_seconds": 0.4,
+    "transition_family": "clean motivated cuts and short foreground leaf wipes only; never dissolve character poses",
+    "stagger_rhythm_ms": 80,
+    "motion_intensity": "one generous hero action with restrained secondary follow-through",
+    "hold_discipline_seconds": 0.4,
+    "hierarchy": [
+      "hero: the helper animal's physical action or the moving golden seed",
+      "support: Miki marmoset reacts and passes the persistent leaf satchel",
+      "texture: water, leaves, insects and light move slowly at low contrast"
+    ],
+    "restraint": "No static choice cards, silhouettes, labels during thinking holds, camera-only scenes, whole-frame wobble, looping text or competing decorative transitions.",
+    "one_wow_moment": "The whole route reconnects in one overhead move before a truthful multi-day sprouting time-lapse."
+  },
+  "cast": [
+    {"name": "Miki", "animal": "golden lion tamarin", "role": "small orange-gold marmoset guide carrying a green leaf satchel"},
+    {"name": "Cora", "animal": "capybara", "role": "calm river swimmer"},
+    {"name": "Arlo", "animal": "armadillo", "role": "strong-clawed leaf-litter digger"},
+    {"name": "Sela", "animal": "three-toed sloth", "role": "slow branch-crossing helper"},
+    {"name": "Kiko", "animal": "kinkajou", "role": "nocturnal canopy balancer with a grasping tail"}
+  ],
+  "continuity_rules": [
+    "The same oval golden seed remains inside or beside the same green leaf satchel in every scene.",
+    "Miki retains the same orange-gold fur, cream face, teal neckerchief and small green satchel.",
+    "Each obstacle has explicit start, action and end images with object continuity and one changed physical state.",
+    "An answer animal is revealed through an action in the environment, never by highlighting a picture choice.",
+    "The seed reaches the nursery only after all four helpers contribute in route order."
+  ],
+  "scenes": [
+    {
+      "scene": 1,
+      "name": "rolling-seed-hook",
+      "purpose": "Begin immediately with one clear problem.",
+      "story_beat": "A golden seed rolls from Miki's satchel toward a rain-swollen stream; Miki catches it on a broad leaf and sees the nursery marker across the rainforest.",
+      "primary_action": "seed rolls, Miki lunges, broad leaf catches it",
+      "thinking_hold_seconds": 0
+    },
+    {
+      "scene": 2,
+      "name": "capybara-river-crossing",
+      "question": "Which friend lives beside water and can swim the leaf boat safely across?",
+      "fact": "Capybaras are strong swimmers and can keep much of their body low in the water.",
+      "primary_action": "Cora enters the water, nudges the leaf boat through the current and lands it on the opposite bank",
+      "thinking_hold_seconds": 6
+    },
+    {
+      "scene": 3,
+      "name": "armadillo-leaf-channel",
+      "question": "Which friend has strong front claws that can clear a shallow path through loose leaves?",
+      "fact": "Armadillos use powerful claws for digging.",
+      "primary_action": "Arlo rakes loose leaves aside, exposing a safe narrow path around a fallen branch",
+      "thinking_hold_seconds": 6
+    },
+    {
+      "scene": 4,
+      "name": "sloth-branch-pass",
+      "question": "Which friend can hang from a branch and carry the satchel slowly across the gap?",
+      "fact": "Three-toed sloths use long curved claws to hang securely from branches.",
+      "primary_action": "Sela hooks onto the branch, carries the satchel across and lowers it gently to Miki",
+      "thinking_hold_seconds": 6
+    },
+    {
+      "scene": 5,
+      "name": "kinkajou-dusk-balance",
+      "question": "Which night-time friend can balance in the canopy with a grasping tail?",
+      "fact": "Kinkajous are nocturnal climbers with prehensile tails that can grip branches.",
+      "primary_action": "Kiko grips a branch with the tail, crosses the last canopy bend and passes the satchel to Miki at the nursery",
+      "thinking_hold_seconds": 6
+    },
+    {
+      "scene": 6,
+      "name": "plant-and-time-lapse-finale",
+      "purpose": "Resolve the mission truthfully and celebrate every contribution.",
+      "story_beat": "Miki plants the seed with all four helpers; several sun-and-moon cycles pass, rain waters the soil and a small healthy sprout emerges.",
+      "primary_action": "route reconnects overhead, seed is planted, weather/time passes, sprout opens two leaves",
+      "thinking_hold_seconds": 0
+    }
+  ],
+  "quality_gates": [
+    "single Natasha voice for every spoken line",
+    "all narration finishes inside its matching visual shot",
+    "no line exceeds 118 weighted words per minute",
+    "minimum half-second gaps between spoken lines",
+    "5 to 7 second silent prediction hold in all four guessing scenes",
+    "explicit start/action/end state for every helper scene",
+    "actual foreground action, never camera-only motion",
+    "no pose dissolves or ghosted limbs",
+    "continuous visual timeline with zero gaps or overlaps",
+    "H.264 1920x1080 video and 48 kHz stereo AAC",
+    "full FFmpeg decode",
+    "opening hiss measurement below the project ceiling",
+    "final card is the final event only",
+    "custom thumbnail is manually reviewed before any queue release",
+    "upload_authorized remains false until the user reviews the finished local master"
+  ]
+}
