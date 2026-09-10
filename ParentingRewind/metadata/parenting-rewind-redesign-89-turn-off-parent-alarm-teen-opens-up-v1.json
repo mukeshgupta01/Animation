@@ -1,0 +1,62 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-89-turn-off-parent-alarm-teen-opens-up",
+  "version": "v1",
+  "title": "Turn Off the Parent Alarm When Your Teen Opens Up | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your teen starts telling you about a friendship or relationship problem, and your parent alarm is ready with warnings before the story is finished. Interrupting, catastrophizing, or condemning the other person can make your teen defend the situation or decide not to come back next time. Pause your first reaction. Put down what you are doing, soften your face, and listen for the whole story without turning it into an interrogation. Try one calm question: Do you want me to listen, help you think it through, or share what I am worried about? Your values still matter. Share them briefly and concretely after your teen feels heard, and respond urgently whenever there is an immediate safety concern. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-08",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "How to Communicate With and Listen to Your Teen: 3 Key Tips",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/communication-discipline/Pages/How-to-Communicate-with-a-Teenager.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-parent-alarm-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-87-to-89.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-89-turn-off-parent-alarm-teen-opens-up\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-89-turn-off-parent-alarm-teen-opens-up-v1.mp4",
+    "duration_seconds": 50.36666666666667,
+    "sha256": "3E45D4D50D224F1CB1BBEF358A3E7B92283DB59301B057B5AC20A7D0D13EF8D4"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-89-turn-off-parent-alarm-teen-opens-up-v1.mp4"
+  }
+}

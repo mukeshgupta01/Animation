@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-09-03 (Australia/Sydney)
+Last updated: 2026-09-08 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -9,6 +9,15 @@ This document lets a fresh Codex session continue safely. It contains the non-se
 Create and operate a high-quality, adult-facing parenting education channel named **Parenting Rewind**. The channel is created and OAuth-verified. Open-ended local production remains approved. On 2026-08-30 the user superseded the earlier cadence and authorized one oldest-first public upload every hour.
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
+
+## Redesigned checkpoint 20: episodes 87-89
+
+- On 2026-09-08 the user requested continued new Parenting Rewind production. Episodes 87-89 are complete: `prepare-preschooler-new-baby-honestly`, `separation-not-childs-fault`, and `turn-off-parent-alarm-teen-opens-up`.
+- Durations are 53.10, 53.10 and 50.40 seconds. All three are 1080x1920 H.264 with 48 kHz stereo AAC, synthetic adult narration, narration-ducked original music, burned captions and the required spoken/captioned CTA. Automated production gates, independent full FFmpeg decodes and six-frame visual contact-sheet review passed.
+- Three original photorealistic 3x2 storyboards were created through three built-in image-generation calls, one per episode. They cover a preschool family transition, a school-age separation conversation and teen communication with distinct casts and settings. Effective prompts are recorded in `production-assets/storyboard-prompts-87-to-89.md`; assets remain at zero published uses until their actual uploads occur.
+- Research is based on current American Academy of Pediatrics / HealthyChildren guidance about helping older children adjust to a new baby, helping children adjust to separation or divorce, and listening to teens without triggering the parent alarm. Claim limits remain general education, not individual medical, legal or therapy advice.
+- Exact hashes are episode 87 `1807ABDDCF7EDAB4592179BD9BA3CE357781DABA2F9E9C31B280A10890007867`, episode 88 `FF5E29802248898EC3BBDEA41599B7147D1BF22845C363AA61503F2D18649504`, and episode 89 `3E45D4D50D224F1CB1BBEF358A3E7B92283DB59301B057B5AC20A7D0D13EF8D4`. Local and Business OneDrive byte counts and SHA-256 hashes match for all three.
+- `COVERED-TOPICS.md` now records 120 unique topics (96 active and 24 historical-only). The configured Business OneDrive folder contains 90 normal-series MP4s plus five separately published Father's Day Shorts. A post-production uploader dry run remained healthy and kept normal oldest-first ordering.
 
 ## Father's Day 20-second collection checkpoint
 
@@ -33,6 +42,9 @@ This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that projec
 - Resume/rebuild script: `scripts/produce_fathers_day_dads_who_show_up.py`. The direct-panel support is in `scripts/produce_redesigned_bundle_02_to_06.py`. Corrected local SHA-256 is `21955C694EFC751E1E31D04733C3E949657C26B02AE8B3AEABC9F2F3309675F7` and is also recorded in episode metadata. `COVERED-TOPICS.md` records 112 unique topics (88 active, 24 historical-only).
 
 ## Current external state
+
+- QUEUE BLOCKER FIX (2026-09-08): the enabled hourly task made no successful ordinary upload after episode 63 (`i4CzapCvY0E`) because the five already-published numbered Father's Day Shorts were copied into the shared OneDrive source folder and sorted ahead of normal episodes. The fail-closed uploader correctly refused the first special file because it had no ordinary project metadata, but repeated that safe failure hourly. `available_videos()` now admits only filenames beginning `parenting-rewind-`, preserving oldest-first order among normal episodes while leaving special collections under their dedicated upload journals. The post-change dry run identified episode 64 as the expected next normal upload.
+- QUEUE RESUME CONFIRMATION (2026-09-08 14:36 Australia/Sydney): an immediate run of the repaired scheduled task uploaded episode 64, `Stay Close When Words Are Too Much | Parenting Rewind`, publicly as `BZ5vE2GuANE`. The uploader verified immutable channel `UCGb-IUQX2KQa_KA24MwE_aQ`, `made_for_kids=false`, synthetic-media disclosure, exact metadata and source hash, then ledgered the returned ID. The task returned 0, remains enabled and Ready, and has 21 normal episodes remaining. Its hourly trigger was realigned to 15:37:30 local so each check occurs just after the uploader's one-hour gate rather than skipping the next slot.
 
 - On 2026-08-23 the user reported that the Parenting Rewind YouTube channel was created and supplied immutable channel ID `UCGb-IUQX2KQa_KA24MwE_aQ`. OAuth subsequently returned exactly `Parenting Rewind` with that immutable ID.
 - A channel-specific fail-closed OAuth setup now exists under `automation/`. It is configured for Parenting Rewind and the supplied immutable ID, requests the YouTube management scope needed for uploads and metadata updates, and saves a local token/immutable lock only when `channels.list(mine=true)` returns the exact configured ID. The consent helper itself performs no upload.

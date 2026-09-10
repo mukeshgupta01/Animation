@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-09-03
+Updated: 2026-09-08
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 117 (93 active; 24 historical-only).
+Unique topics: 120 (96 active; 24 historical-only).
 
 ## Topic index
 
@@ -65,6 +65,7 @@ Unique topics: 117 (93 active; 24 historical-only).
 - [active] Praise the Soccer Effort You Saw — metadata: parenting-rewind-redesign-45-soccer-effort-praise-v1.json
 - [active] Praise the Teamwork You Want Repeated — metadata: parenting-rewind-redesign-05-notice-teamwork-v1.json
 - [active] Prepare Bedtime Needs Before Lights Out — metadata: parenting-rewind-redesign-11-prepare-bedtime-needs-v1.json
+- [active] Prepare Your Preschooler for a New Baby Honestly — metadata: parenting-rewind-redesign-87-prepare-preschooler-new-baby-honestly-v1.json
 - [active] Preview the Library Leaving Steps — metadata: parenting-rewind-redesign-56-library-leaving-preview-v1.json
 - [active] Reconnect After the Screen-Time Limit — metadata: parenting-rewind-redesign-57-screen-time-reconnect-v1.json
 - [active] Reflect the Feeling Before Solving — metadata: parenting-rewind-redesign-18-reflect-before-solving-v1.json
@@ -81,11 +82,13 @@ Unique topics: 117 (93 active; 24 historical-only).
 - [active] Stop Biting Without Calling Your Toddler Bad — metadata: parenting-rewind-redesign-74-stop-biting-without-shame-v1.json
 - [active] Talk About the Process, Not Their Worth — metadata: parenting-rewind-redesign-70-grade-process-not-worth-v1.json
 - [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
+- [active] Tell Your Child the Separation Is Not Their Fault — metadata: parenting-rewind-redesign-88-separation-not-childs-fault-v1.json
 - [active] The Empty Chair Wasn't Empty for Long | Father's Day Short — metadata: fathers-day-20-second-shorts/the-empty-chair.json
 - [active] The Missed Call That Meant Everything | Father's Day Short — metadata: fathers-day-20-second-shorts/the-missed-call.json
 - [active] The One-More-Story Loop — metadata: parenting-rewind-025-one-more-story-v1.json, parenting-rewind-redesign-04-one-more-story-v1.json
 - [active] To the Dads Who Keep Showing Up - A Father's Day Tribute — metadata: parenting-rewind-redesign-86-fathers-day-dads-who-show-up-v1.json
 - [active] Treat Toilet Accidents as Practice, Not Misbehavior — metadata: parenting-rewind-redesign-71-toilet-accident-without-shame-v1.json
+- [active] Turn Off the Parent Alarm When Your Teen Opens Up — metadata: parenting-rewind-redesign-89-turn-off-parent-alarm-teen-opens-up-v1.json
 - [active] Use an I-Statement Instead of Blame — metadata: parenting-rewind-redesign-62-i-statement-not-blame-v1.json
 - [active] Use One Playground Warning — metadata: parenting-rewind-redesign-25-one-playground-warning-v1.json
 - [active] Use One Real Choice at the Library — metadata: parenting-rewind-redesign-17-library-one-book-choice-v1.json

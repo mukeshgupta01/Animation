@@ -1,0 +1,62 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-88-separation-not-childs-fault",
+  "version": "v1",
+  "title": "Tell Your Child the Separation Is Not Their Fault | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "When parents separate, a school-age child may quietly wonder whether something they did caused the family to change. Adult details, blame, or asking a child to carry messages can make that uncertainty heavier, even when you never intended to put them in the middle. Pause and give the clearest reassurance: This is an adult decision. It is not your fault, and it is not your job to fix it. Explain what will happen next in simple, concrete terms. Keep routines as steady as possible and invite questions more than once. When both parents are safe and able to care for the child, support their relationship with each parent. If conflict or distress is hard to manage, seek qualified family support. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-08",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Divorce and Separation: How to Help Your Child Adjust",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/types-of-families/Pages/adjusting-to-divorce.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/separation-reassurance-family-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-87-to-89.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-88-separation-not-childs-fault\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-88-separation-not-childs-fault-v1.mp4",
+    "duration_seconds": 53.1,
+    "sha256": "FF5E29802248898EC3BBDEA41599B7147D1BF22845C363AA61503F2D18649504"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-88-separation-not-childs-fault-v1.mp4"
+  }
+}
