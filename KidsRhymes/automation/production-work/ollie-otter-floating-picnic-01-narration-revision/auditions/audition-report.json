@@ -1,0 +1,44 @@
+{
+  "representative_text": [
+    "Left and right, then find the middle,",
+    "Slow and steady, just a little.",
+    "Sit down low and help it glide,",
+    "Balance, balance, side to side!",
+    "Fern sees ducks and waves hello.",
+    "One side dips—so soft and slow."
+  ],
+  "voices": {
+    "ana-us": {
+      "voice": "en-US-AnaNeural",
+      "rate": "-7%",
+      "pitch": "+4Hz",
+      "duration_seconds": 25.032,
+      "file": "automation/production-work/ollie-otter-floating-picnic-01-narration-revision/auditions/ollie-audition-ana-us.wav",
+      "segmentation": "six individual rhyme lines"
+    },
+    "maisie-uk": {
+      "voice": "en-GB-MaisieNeural",
+      "rate": "-7%",
+      "pitch": "+2Hz",
+      "duration_seconds": 23.256,
+      "file": "automation/production-work/ollie-otter-floating-picnic-01-narration-revision/auditions/ollie-audition-maisie-uk.wav",
+      "segmentation": "six individual rhyme lines"
+    },
+    "natasha-au": {
+      "voice": "en-AU-NatashaNeural",
+      "rate": "-7%",
+      "pitch": "+2Hz",
+      "duration_seconds": 22.656,
+      "file": "automation/production-work/ollie-otter-floating-picnic-01-narration-revision/auditions/ollie-audition-natasha-au.wav",
+      "segmentation": "six individual rhyme lines"
+    },
+    "ryan-uk": {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-7%",
+      "pitch": "+1Hz",
+      "duration_seconds": 22.176,
+      "file": "automation/production-work/ollie-otter-floating-picnic-01-narration-revision/auditions/ollie-audition-ryan-uk.wav",
+      "segmentation": "six individual rhyme lines"
+    }
+  }
+}

@@ -20,6 +20,17 @@ This document lets a new Codex account continue the local project safely. Do not
 - API read-back passed the video ID, channel ID, title, description, eight tags, category, public visibility, made-for-kids and self-declared-made-for-kids flags, HD processing, and successful processing state. The uploader archived the canonical master and sidecar under `automation/archive/` and removed only the identical production copy after recording the returned ID. The pending queue is empty.
 - This manual production/upload does not authorize installing, enabling, running or recreating any Tiny Tales Scheduled Task on this computer.
 
+## Ollie narration review iteration (2026-09-10)
+
+- The user requested an audio-only revision of the existing Ollie video and explicitly prohibited rebuilding the visuals or uploading/scheduling the review. The archived public master remains unchanged at SHA-256 `15f09b426980c598005af99fd36d46b0535ba024494622dba980fb9793020565`.
+- Equal-text 22-25 second auditions were generated line by line for Ana US, Maisie UK, Natasha AU and Ryan UK. Natasha was selected for the warmest adult preschool-storytelling delivery. Base settings are `-7%` rate and `+2Hz` pitch, with conservative expressive variation from `-5%` to `-9%` and `+1Hz` to `+4Hz` for questions, gentle lines, reveals and choruses.
+- The 36-line original and revised scripts are retained under `automation/production-work/ollie-otter-floating-picnic-01-narration-revision/`. Fourteen line entries differ: five minimal wording cleanups and nine performance-punctuation changes. Story order, meaning and all visual timing remain intact.
+- Thirty-six independently replaceable narration MP3/WAV pairs were produced. The two chorus appearances use consistent settings and repeated lines reuse identical rendered delivery. The timing report records every scene, line start/end, gap, action word and corresponding visible action.
+- Music and effects are preserved as separate stems and smoothly sidechain-ducked beneath narration. The retained deliverables include combined narration, original music, original effects, ducked music, ducked effects and final mixed audio. Playback review passed clarity, rhythm, pronunciation of Ollie/Willa/Fern/centre/Picnic Bay, smooth ducking and absence of abrupt cuts.
+- Local review output: `automation/production-output/ollie-narration-review.mp4`, SHA-256 `e2d329ac935d77d4da211efa659c550100852fe95d99bf04d9edaae888989cd9`. Its encoded video stream hash exactly matches the archived master, proving the visuals were remuxed without re-encoding or modification.
+- QA passed full decode, exact 150-second duration, all 36 segments contained by their existing scenes, 0.32-second minimum and 1.876-second maximum gaps, no silence over two seconds, -19.7 LUFS narration, -16.1 LUFS final mix, -1.5 dBFS true peak and -67.48 dB opening energy above 12 kHz. Review metadata is `metadata/ollie-otter-floating-picnic-01-narration-review.json`.
+- This is a local review iteration only. `upload_authorized`, `upload_queue_released` and `uploaded_or_scheduled` are all false. Stop for user playback; do not replace the live video or send any revised media to YouTube without a new explicit instruction.
+
 ## Project identity
 
 - Project folder: `C:\Animation\Animation\KidsRhymes`
