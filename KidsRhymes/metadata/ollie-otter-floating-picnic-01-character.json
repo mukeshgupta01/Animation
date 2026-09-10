@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "project_id": "ollie-otter-floating-picnic-01",
+  "characters": [
+    {
+      "name": "Ollie",
+      "type": "young river otter",
+      "age_appearance": "friendly older preschool child",
+      "body_proportions": "rounded pear-shaped body, large head, short sturdy limbs, broad tapering tail",
+      "face": "soft round muzzle, small dark nose, hazel eyes, warm open eyebrows",
+      "fur": "cinnamon brown with cream muzzle, cheeks, throat and belly",
+      "clothing": "teal flotation vest with exactly two coral toggles",
+      "accessories": "no hat or shoes",
+      "palette": ["cinnamon brown", "cream", "teal", "coral"],
+      "personality": "curious, patient and reassuring",
+      "expressions": ["welcoming smile", "thinking", "gentle concern", "delighted discovery", "singing joy"],
+      "relative_scale": "largest of the three friends",
+      "identity_lock": "cream belly, hazel eyes, teal vest and two coral toggles must appear in every scene"
+    },
+    {
+      "name": "Willa",
+      "type": "young otter friend",
+      "age_appearance": "friendly preschool child",
+      "body_proportions": "small rounded otter body, short limbs, compact ears and tapering tail",
+      "face": "rounded cheeks, small brown nose, dark hazel eyes",
+      "fur": "chestnut brown with one cream cheek patch",
+      "clothing": "coral flotation vest and teal neck scarf",
+      "accessories": "no hat or shoes",
+      "palette": ["chestnut", "cream", "coral", "teal"],
+      "personality": "careful, practical and encouraging",
+      "expressions": ["bright smile", "focused", "supportive", "happy singing"],
+      "relative_scale": "about seventy percent of Ollie's height",
+      "identity_lock": "coral vest, teal scarf and cream cheek patch never change"
+    },
+    {
+      "name": "Fern",
+      "type": "small green frog",
+      "age_appearance": "young preschool child",
+      "body_proportions": "short round body, long folding legs, small hands",
+      "face": "wide friendly mouth and large golden eyes",
+      "skin": "olive green with a pale mint throat",
+      "clothing": "mustard rain hat",
+      "accessories": "plum mini satchel and one round wooden balance token",
+      "palette": ["olive green", "mint", "mustard", "plum", "gold"],
+      "personality": "enthusiastic, playful and willing to correct mistakes",
+      "expressions": ["eager grin", "surprised", "listening", "proud", "singing joy"],
+      "relative_scale": "about half of Willa's height",
+      "identity_lock": "golden eyes, mustard hat, plum satchel and one round token remain consistent"
+    }
+  ],
+  "shared_objects": {
+    "raft": "one oval reed-and-cedar raft with a broad level deck, woven edge, two dock ropes and two clipped short paddles",
+    "loads": "exactly one coral food basket, one squat teal lidded jug and one rolled mustard picnic blanket"
+  }
+}

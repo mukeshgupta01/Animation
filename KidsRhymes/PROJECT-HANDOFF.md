@@ -1,12 +1,24 @@
 # Tiny Tales automation handoff
 
-Last updated: 2026-09-02 Australia/Sydney
+Last updated: 2026-09-10 Australia/Sydney
 
 This document lets a new Codex account continue the local project safely. Do not assume it is current without comparing it to runtime files, logs, filesystem contents, YouTube verification, and Windows Scheduled Task status.
 
 ## This-computer stop override
 
 - On 2026-08-31 the user explicitly said they do not want Tiny Tales on this computer. All Tiny Tales Scheduled Tasks are absent (`Continuous Generation`, `Daily Private Upload`, and `Hourly Upload Retry`) and must not be installed, enabled, or run here. Preserve project files for another computer; this instruction does not authorize deleting local files or changing the YouTube channel.
+
+## Ollie Otter floating-picnic production checkpoint (2026-09-10)
+
+- The user supplied an end-to-end director/writer/animation/audio/QA/upload brief without filling its placeholders. The safe continuation assumption was one new Tiny Tales animal adventure: `ollie-otter-floating-picnic-01`.
+- The completed master is 150.0 seconds, 1920x1080 H.264 at 30 fps with 48 kHz stereo AAC audio. It uses one Ana US voice at about 112 WPM, an original 90 BPM score, locally synthesized story effects, and 27 reviewed start/action/end story states plus a final six-second card.
+- Final reviewed master SHA-256: `15f09b426980c598005af99fd36d46b0535ba024494622dba980fb9793020565`. Reviewed thumbnail SHA-256: `4aca255b3d3384bdad2d7b718b77229a5a5a959de20f4ae78589bbac90481ff5`.
+- Automated QA passed full decode, exact duration, H.264/AAC format, continuous zero-gap timeline, final-card placement, nine semantic state sets, single-voice consistency, unhurried narration, -16.1 LUFS integrated loudness, -1.5 dBFS true peak, and -70.73 dB opening energy above 12 kHz after a steeper speech-safe low-pass correction.
+- Human review passed the thumbnail, semantic-state sheet, transition sheet, encoded-master samples, character/object continuity, primary-action changes, waveform and spectrum. Five generated variants were rejected before production; 19 new generated images were accepted from 24 calls.
+- Producer: `automation/production/produce_ollie_otter_floating_picnic.py`. Story documents: `metadata/ollie-otter-floating-picnic-01-{plan,character,story,scenes,asset-review}.json`. QA evidence: `automation/production-work/ollie-otter-floating-picnic-01/`.
+- After the mandatory five-minute stability delay, the exact one-item dry run selected `ollie-otter-floating-picnic-01.mp4`. Live OAuth matched Tiny Tales channel `UCEn9N-ITQHshjgt6fy7fxnw`; the public, made-for-kids upload succeeded as `rkDAoUpYTQI` (`https://youtu.be/rkDAoUpYTQI`), and the reviewed custom thumbnail was accepted.
+- API read-back passed the video ID, channel ID, title, description, eight tags, category, public visibility, made-for-kids and self-declared-made-for-kids flags, HD processing, and successful processing state. The uploader archived the canonical master and sidecar under `automation/archive/` and removed only the identical production copy after recording the returned ID. The pending queue is empty.
+- This manual production/upload does not authorize installing, enabling, running or recreating any Tiny Tales Scheduled Task on this computer.
 
 ## Project identity
 

@@ -1,28 +1,182 @@
 {
-  "version": 1,
+  "version": 2,
   "id": "ollie-otter-floating-picnic-01",
-  "reviewed_at": "2026-09-01",
-  "review_method": "Each full-resolution frame was inspected on creation, then all nine accepted scenes were reviewed chronologically on automation/production-work/ollie-otter-floating-picnic-01/asset-contact-sheet.png.",
-  "generation_summary": {"image_generation_calls": 9, "accepted_assets": 9, "rejected_or_failed_generations": 0},
+  "reviewed": true,
+  "review_scope": "Character identity, exact loads, safe tied-raft logic, left-heavy to level progression, seated mid-river correction, unloading and final chorus buildup.",
   "accepted_assets": [
-    {"scene": 1, "file": "automation/production-assets/ollie-otter-opening-v1.png", "sha256": "c3015a78a7d71c1ff900cb40eaba6cd74b740204d49f857b047cb66f25ded5f7", "review": "One empty double-tied raft, exact three loads and all three friends safely dockside are clearly visible."},
-    {"scene": 2, "file": "automation/production-assets/ollie-otter-loaded-one-side-v1.png", "sha256": "72e6a1fae5c2635d2434dffb7e7b9f8ad4b99c1ba8d7ac3ab6564cbed7d15d98", "review": "All three loads crowd the left edge while the empty tied raft shows a mild safe imbalance."},
-    {"scene": 3, "file": "automation/production-assets/ollie-otter-jug-opposite-v1.png", "sha256": "72bd824a6a658077f7d28808ba22f83ec846e70572014d541eb39765ee1424ea", "review": "Jug alone on the right balances basket and blanket on the left; both rims read level."},
-    {"scene": 4, "file": "automation/production-assets/ollie-otter-first-board-and-secure-v1.png", "sha256": "ff50d2da14eb42bb6a6f44b1a02bf65bb3de74def7707169c561a95a14d7c8b0", "review": "Willa boards first while low and secures the right jug; Ollie secures the left basket and Fern remains dockside."},
-    {"scene": 5, "file": "automation/production-assets/ollie-otter-tied-level-check-v1.png", "sha256": "b3fd23bd40bf02742e5c5552dcf976e0f37f873b59ca36dc5229a7f5dd91c545", "review": "All three friends remain low on the centre line, cargo stays strapped opposite and the dock ropes remain visible."},
-    {"scene": 6, "file": "automation/production-assets/ollie-otter-fern-left-tilt-v1.png", "sha256": "a50461f2179dbfb55a1fc2485a84a2fa7727bfaafcf41a5a215c328d10ea01fb", "review": "Fern stays fully inside at the left inner rim; Ollie gives a calm cue and strapped cargo remains fixed."},
-    {"scene": 7, "file": "automation/production-assets/ollie-otter-center-level-v1.png", "sha256": "b96514b93dcab4d2f465e4cee8e4db087b4f11ab3a5eeccaae867f6e9c805ca3", "review": "Fern is visibly centred, the balance token is level and opposite shallow paddle strokes restore symmetry."},
-    {"scene": 8, "file": "automation/production-assets/ollie-otter-unload-basket-v1.png", "sha256": "88b163d5c614cca21a2cdcbf4803fa6604d6ca764c74d3227236fff15e811ddd", "review": "Ollie and seated Willa support the basket hand-to-hand while Fern waits on shore and the raft remains tied."},
-    {"scene": 9, "file": "automation/production-assets/ollie-otter-picnic-finale-v1.png", "sha256": "ed5c9d3abc3485c0cd09f3dee4de275ef0e948f307c869400e7ff0b8ec8e6ce4", "review": "The first full picnic and band appear only now; the completed raft is empty and tied in the background."}
+    {
+      "key": "s01-start",
+      "file": "automation/production-assets/ollie-otter-opening-start-v2.png",
+      "sha256": "59f76af8e17f35c55f4f2928b487b04919af754c02a67e694a981c3eaa6b4671",
+      "reviewed": true
+    },
+    {
+      "key": "s01-action",
+      "file": "automation/production-assets/ollie-otter-opening-v1.png",
+      "sha256": "c3015a78a7d71c1ff900cb40eaba6cd74b740204d49f857b047cb66f25ded5f7",
+      "reviewed": true
+    },
+    {
+      "key": "s01-end",
+      "file": "automation/production-assets/ollie-otter-opening-end-v2.png",
+      "sha256": "391c5d0af49b9d9876ace92449913ca5cca2fccaf13bb0335e7b07c18e1ed469",
+      "reviewed": true
+    },
+    {
+      "key": "s02-start",
+      "file": "automation/production-assets/ollie-otter-load-left-start-v2.png",
+      "sha256": "9e2ae4d955b65c176f7ceb2674cd6160a6909f581e1342cfda57b641fef46509",
+      "reviewed": true
+    },
+    {
+      "key": "s02-action",
+      "file": "automation/production-assets/ollie-otter-loaded-one-side-v1.png",
+      "sha256": "72e6a1fae5c2635d2434dffb7e7b9f8ad4b99c1ba8d7ac3ab6564cbed7d15d98",
+      "reviewed": true
+    },
+    {
+      "key": "s02-end",
+      "file": "automation/production-assets/ollie-otter-loaded-left-end-v2.png",
+      "sha256": "99e985cb056f95f2903a9bee61bee73b3664522c3c49865b213ef3127fa54920",
+      "reviewed": true
+    },
+    {
+      "key": "s03-start",
+      "file": "automation/production-assets/ollie-otter-loaded-left-end-v2.png",
+      "sha256": "99e985cb056f95f2903a9bee61bee73b3664522c3c49865b213ef3127fa54920",
+      "reviewed": true
+    },
+    {
+      "key": "s03-action",
+      "file": "automation/production-assets/ollie-otter-jug-roll-action-v2.png",
+      "sha256": "05e7257331fb7b33666b788fa9cf8f48629af6063d3f31b0128e7db56c3feecb",
+      "reviewed": true
+    },
+    {
+      "key": "s03-end",
+      "file": "automation/production-assets/ollie-otter-jug-opposite-end-v2.png",
+      "sha256": "f69d0702badc55f29b21b6c4bc1e67dd5f19d9b791920ea9f077f445324761a0",
+      "reviewed": true
+    },
+    {
+      "key": "s04-start",
+      "file": "automation/production-assets/ollie-otter-board-start-v2.png",
+      "sha256": "e30da2a0cf2b420a9083873cecc1a73825092b9b4f4eb251d7ae167d2d9b1eea",
+      "reviewed": true
+    },
+    {
+      "key": "s04-action",
+      "file": "automation/production-assets/ollie-otter-first-board-and-secure-v1.png",
+      "sha256": "ff50d2da14eb42bb6a6f44b1a02bf65bb3de74def7707169c561a95a14d7c8b0",
+      "reviewed": true
+    },
+    {
+      "key": "s04-end",
+      "file": "automation/production-assets/ollie-otter-secure-end-v2.png",
+      "sha256": "53f802c2cb447860fe1a007befae79e4f7e8ec43a41111a4c5c85ebb23534caa",
+      "reviewed": true
+    },
+    {
+      "key": "s05-start",
+      "file": "automation/production-assets/ollie-otter-secure-end-v2.png",
+      "sha256": "53f802c2cb447860fe1a007befae79e4f7e8ec43a41111a4c5c85ebb23534caa",
+      "reviewed": true
+    },
+    {
+      "key": "s05-action",
+      "file": "automation/production-assets/ollie-otter-tied-level-check-v1.png",
+      "sha256": "b3fd23bd40bf02742e5c5552dcf976e0f37f873b59ca36dc5229a7f5dd91c545",
+      "reviewed": true
+    },
+    {
+      "key": "s05-end",
+      "file": "automation/production-assets/ollie-otter-chorus-ready-end-v2.png",
+      "sha256": "615c94064a11595ac939f0f2acb6634cbdaa9fab26f10fe74ed6383ae63137c6",
+      "reviewed": true
+    },
+    {
+      "key": "s06-start",
+      "file": "automation/production-assets/ollie-otter-midriver-start-v2.png",
+      "sha256": "ae98262c04b821f5b0aba98cb6c2d6fc620c541e9e243c776d8c6076551430f9",
+      "reviewed": true
+    },
+    {
+      "key": "s06-action",
+      "file": "automation/production-assets/ollie-otter-fern-left-tilt-v1.png",
+      "sha256": "a50461f2179dbfb55a1fc2485a84a2fa7727bfaafcf41a5a215c328d10ea01fb",
+      "reviewed": true
+    },
+    {
+      "key": "s06-end",
+      "file": "automation/production-assets/ollie-otter-midriver-center-cue-v2.png",
+      "sha256": "ada5be848554ba0ef1e8bd8ce12a612f8b669c6f58da3fa60180b0ca5c2eb44f",
+      "reviewed": true
+    },
+    {
+      "key": "s07-start",
+      "file": "automation/production-assets/ollie-otter-scoot-center-start-v2.png",
+      "sha256": "cae5df1d65dac30e835beecf1bda495832c75593641bd571872102d11c115350",
+      "reviewed": true
+    },
+    {
+      "key": "s07-action",
+      "file": "automation/production-assets/ollie-otter-paddle-action-v2.png",
+      "sha256": "bb839aabed5da4fcbb1f763e1c767236034c819b471ed97b0c063f9d59804038",
+      "reviewed": true
+    },
+    {
+      "key": "s07-end",
+      "file": "automation/production-assets/ollie-otter-center-level-v1.png",
+      "sha256": "b96514b93dcab4d2f465e4cee8e4db087b4f11ab3a5eeccaae867f6e9c805ca3",
+      "reviewed": true
+    },
+    {
+      "key": "s08-start",
+      "file": "automation/production-assets/ollie-otter-landing-start-v2.png",
+      "sha256": "cc465a547b43ccae5417a74d32c560711085141190bf29d4ee654b5099fca74e",
+      "reviewed": true
+    },
+    {
+      "key": "s08-action",
+      "file": "automation/production-assets/ollie-otter-unload-basket-v1.png",
+      "sha256": "88b163d5c614cca21a2cdcbf4803fa6604d6ca764c74d3227236fff15e811ddd",
+      "reviewed": true
+    },
+    {
+      "key": "s08-end",
+      "file": "automation/production-assets/ollie-otter-unload-end-v2.png",
+      "sha256": "9e575b5ca37e204a44e7730e10b65a7b305a2d235af13982520925fbb7466d9b",
+      "reviewed": true
+    },
+    {
+      "key": "s09-start",
+      "file": "automation/production-assets/ollie-otter-picnic-start-v2.png",
+      "sha256": "f412bd660e7a76c0b92eaff47ddd0b6eac46358efd0ff1c61e25732bb8539fc9",
+      "reviewed": true
+    },
+    {
+      "key": "s09-action",
+      "file": "automation/production-assets/ollie-otter-picnic-action-v2.png",
+      "sha256": "20126bac6c16e5ce8d3c2b8e999f65d42cba2396bbca7d7fbde4408a9267cef1",
+      "reviewed": true
+    },
+    {
+      "key": "s09-end",
+      "file": "automation/production-assets/ollie-otter-picnic-end-v2.png",
+      "sha256": "b16b1399df04d4df6677bc79e8acc435039fd4f3e34b0261433bf3d7b9702ea1",
+      "reviewed": true
+    },
+    {
+      "key": "thumbnail-art",
+      "file": "automation/thumbnail-artwork/ollie-otter-floating-picnic-01-v2.png",
+      "sha256": "a5eac7e710316aa3cd8d8f252e83b72e7839c489dce91ab50dea0e57e756751c",
+      "reviewed": true
+    }
   ],
-  "continuity_checks": {
-    "ollie_willa_fern_and_clothing_preserved": true,
-    "one_raft_and_three_loads_preserved": true,
-    "dockside_actions_remain_tied": true,
-    "left_heavy_then_opposite_jug_sequence_preserved": true,
-    "fern_inside_then_centered_midriver": true,
-    "full_picnic_and_music_only_in_scene_9": true,
-    "generated_text_or_watermark_present": false
-  },
-  "status": "accepted-hash-locked-ready-for-production"
+  "rejected_or_failed_generations": 5,
+  "rejection_summary": [
+    "two imbalance frames read level",
+    "two jug-transfer frames placed the wrong character or Ollie aboard",
+    "one thumbnail replaced the oval raft with a rectangular platform"
+  ]
 }

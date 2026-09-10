@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-09-09
+Updated: 2026-09-10
 
 Check this index, `metadata/`, the generation manifest, and the upload ledger before creating a Tiny Tales concept. Retired shadow and matching formats remain covered history and must not be regenerated.
 
-Known completed or queued video concepts: 84.
+Known completed or queued video concepts: 85.
 
 ## Topic index
 
@@ -72,6 +72,7 @@ Known completed or queued video concepts: 84.
 - Ocean Lost Colour Rescue | Interactive Animal Adventure — `ocean-lost-colour-rescue-01` — archived/uploaded
 - Ocean Move Like an Animal | Movement Adventure for Kids — `ocean-move-like-an-animal-01` — archived/uploaded
 - Turtle'S Friendship Badge | Hidden-Object Kindness Quest for Kids — `ocean-turtle-friendship-badge-01` — archived/uploaded
+- Balance the Picnic Raft! | Otter Rhyme for Kids — `ollie-otter-floating-picnic-01` — archived/uploaded
 - Pick, Wash and Count 6 Fruits! | Fruit Song for Kids — `pick-wash-pack-fruit-picnic-01` — archived/uploaded
 - Pip Alternate Tool Test — `pip-alternate-tool-test` — archived/uploaded
 - Can You Find All 5 Senses? | Learning Adventure for Kids — `pips-five-senses-quest-01` — archived/uploaded
