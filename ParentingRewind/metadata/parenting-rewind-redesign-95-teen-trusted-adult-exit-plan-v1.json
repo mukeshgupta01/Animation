@@ -1,0 +1,107 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-95-teen-trusted-adult-exit-plan",
+  "version": "v1",
+  "title": "Agree on a Way Home Before Your Teen Needs One | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Before your teenager goes out with friends, talk about what they can do if a situation starts to feel uncomfortable. Practise how they can contact you. A short agreed message can mean: Please help me leave. Make the plan realistic. Agree who can collect them, where to meet safely, and which trusted adult is the backup if you cannot answer. Try: If you need help getting home, contact me. We will deal with getting you safe first and talk things through afterwards. Follow through calmly when they ask. Later, listen and discuss what happened, including any safety limits. Reaching out for help should remain possible, even after a mistake. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-13",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Underage Drinking: How To Talk With Your Child About Alcohol Use",
+      "url": "https://www.healthychildren.org/English/ages-stages/teen/substance-abuse/Pages/Why-to-Have-the-Alcohol-Talk-Early.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-exit-plan-mother-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-93-to-95.md",
+    "measured_crop_boxes": [
+      [
+        0,
+        0,
+        414,
+        553
+      ],
+      [
+        423,
+        0,
+        832,
+        553
+      ],
+      [
+        843,
+        0,
+        1254,
+        553
+      ],
+      [
+        0,
+        568,
+        414,
+        1254
+      ],
+      [
+        423,
+        568,
+        832,
+        1254
+      ],
+      [
+        843,
+        568,
+        1254,
+        1254
+      ]
+    ]
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-95-teen-trusted-adult-exit-plan\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-95-teen-trusted-adult-exit-plan-v1.mp4",
+    "duration_seconds": 47.53333333333333,
+    "sha256": "C2F69B278E1BE7709823A24A148690AC15B0779982149B824996668B3CB3BA10"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-95-teen-trusted-adult-exit-plan-v1.mp4"
+  },
+  "description": "Agree on a way home before your teenager needs it. Plan a simple message, a safe meeting place and a backup trusted adult. Get them safe first, then return to a calm conversation about what happened and any safety limits.\n\nFor parents and caregivers. General parenting education; adapt to your family and circumstances.\n\nSource: Underage Drinking: How To Talk With Your Child About Alcohol Use\nhttps://www.healthychildren.org/English/ages-stages/teen/substance-abuse/Pages/Why-to-Have-the-Alcohol-Talk-Early.aspx\n\nLike and subscribe for more practical Parenting Rewind ideas.\n#ParentingRewind #ParentingTips",
+  "review": {
+    "encoded_contact_sheet": "passed",
+    "full_decode": "passed",
+    "reviewed_on": "2026-09-13",
+    "report": "production-work/review-93-to-95/full-decode-report.json"
+  }
+}

@@ -4,9 +4,9 @@ Read C:/DocSphere/CURRENT_RULES.md, Animation/AGENTS.md, ParentingRewind/AGENTS.
 
 Checkpoint 13 September 2026:
 - Parenting Rewind is the current priority. Birthday date videos are paused: 151 complete through 9 February 2027, and 55 early-date replacements complete. Their shared handoff is C:/DocSphere/job-control/data/date-video-handoff.md. Do not resume without a new user request.
-- New episodes 90-92 are validated and hash-mirrored to the configured Business OneDrive upload folder. Resume new content after 92, preserving these completed files.
+- New episodes 90-95 are validated and hash-mirrored to the configured Business OneDrive upload folder. Resume new content after 95, preserving these completed files. Latest batch scripts/produce_redesigned_bundle_93_to_95.py includes measured crop corrections; review evidence is in production-work/review-93-to-95.
 - User-selected 13 ordinary videos below 10 views were deleted with verified local sources and queued for hourly public replacement with revised descriptions. This includes the two previously private videos. All Fathers Day videos are preserved. The finite journal is automation/runtime/low-view-refresh-journal.json. Do not repeat deletions or infer permission for recurring deletions.
-- At the checkpoint, 16 ordinary source files awaited upload: 13 replacements and 3 new episodes. Windows task Parenting Rewind - Public Upload Cadence remains hourly and healthy. Check live state rather than relying on old counts.
+- At 13:29 Sydney, 16 settled files awaited upload and the three newest files were within the ordinary five-minute settling window. The source folder now has 96 normal-series files. Windows task Parenting Rewind - Public Upload Cadence remains hourly and healthy. Check live state rather than relying on old counts.
 
 Inspect Git status/divergence, latest upload report, local/OneDrive files, runtime journals and live task state. Keep credentials isolated to channel UCGb-IUQX2KQa_KA24MwE_aQ, dedicated OAuth project parenting-506406. Never print secrets or copy another channel token.
 

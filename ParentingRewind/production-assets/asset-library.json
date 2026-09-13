@@ -1014,6 +1014,277 @@
         {"index": 4, "description": "Father asks one calm open question.", "useful_for": ["curiosity", "teen communication"], "published_uses": 0},
         {"index": 5, "description": "Father and daughter share quiet company on the porch.", "useful_for": ["steady presence", "realistic resolution"], "published_uses": 0}
       ]
+    },
+    {
+      "asset_id": "preschool-zipper-mother-daughter-storyboard-01",
+      "file": "preschool-zipper-mother-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image generation",
+        "generation_calls": 1,
+        "created_on": "2026-09-13",
+        "source_record": "storyboard-prompts-93-to-95.md"
+      },
+      "characters": [
+        "East Asian mother and preschool daughter"
+      ],
+      "setting": "sunlit apartment entryway",
+      "topic_tags": [
+        "preschool",
+        "dressing practice",
+        "scaffolding"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Child tries zipper",
+          "useful_for": [
+            "preschool",
+            "dressing practice",
+            "scaffolding"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Parent starts taking over",
+          "useful_for": [
+            "preschool",
+            "dressing practice",
+            "scaffolding"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Parent pauses",
+          "useful_for": [
+            "preschool",
+            "dressing practice",
+            "scaffolding"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Parent helps zipper base",
+          "useful_for": [
+            "preschool",
+            "dressing practice",
+            "scaffolding"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Child pulls zipper",
+          "useful_for": [
+            "preschool",
+            "dressing practice",
+            "scaffolding"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Child ready with parent",
+          "useful_for": [
+            "preschool",
+            "dressing practice",
+            "scaffolding"
+          ],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "school-ask-help-father-son-storyboard-01",
+      "file": "school-ask-help-father-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image generation",
+        "generation_calls": 1,
+        "created_on": "2026-09-13",
+        "source_record": "storyboard-prompts-93-to-95.md"
+      },
+      "characters": [
+        "Black father and school-age son; female classroom teacher"
+      ],
+      "setting": "home breakfast nook and primary classroom",
+      "topic_tags": [
+        "school-age",
+        "asking for help",
+        "role play"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Child stuck on worksheet",
+          "useful_for": [
+            "school-age",
+            "asking for help",
+            "role play"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Father takes pencil",
+          "useful_for": [
+            "school-age",
+            "asking for help",
+            "role play"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Father pauses to listen",
+          "useful_for": [
+            "school-age",
+            "asking for help",
+            "role play"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Question rehearsal",
+          "useful_for": [
+            "school-age",
+            "asking for help",
+            "role play"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Child signals teacher",
+          "useful_for": [
+            "school-age",
+            "asking for help",
+            "role play"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Teacher listens to question",
+          "useful_for": [
+            "school-age",
+            "asking for help",
+            "role play"
+          ],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "teen-exit-plan-mother-daughter-storyboard-01",
+      "file": "teen-exit-plan-mother-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image generation",
+        "generation_calls": 1,
+        "created_on": "2026-09-13",
+        "source_record": "storyboard-prompts-93-to-95.md"
+      },
+      "characters": [
+        "South Asian mother and teenage daughter"
+      ],
+      "setting": "home kitchen and community center",
+      "topic_tags": [
+        "teen",
+        "peer pressure",
+        "trusted adult",
+        "exit plan"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Advance planning",
+          "useful_for": [
+            "teen",
+            "peer pressure",
+            "trusted adult",
+            "exit plan"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Mother listens",
+          "useful_for": [
+            "teen",
+            "peer pressure",
+            "trusted adult",
+            "exit plan"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Practise phone message",
+          "useful_for": [
+            "teen",
+            "peer pressure",
+            "trusted adult",
+            "exit plan"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Teen contacts parent",
+          "useful_for": [
+            "teen",
+            "peer pressure",
+            "trusted adult",
+            "exit plan"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Parent collects teen",
+          "useful_for": [
+            "teen",
+            "peer pressure",
+            "trusted adult",
+            "exit plan"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Calm follow-up",
+          "useful_for": [
+            "teen",
+            "peer pressure",
+            "trusted adult",
+            "exit plan"
+          ],
+          "published_uses": 0
+        }
+      ]
     }
   ]
 }

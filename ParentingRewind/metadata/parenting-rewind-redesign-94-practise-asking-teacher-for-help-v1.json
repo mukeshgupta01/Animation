@@ -1,0 +1,107 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-94-practise-asking-teacher-for-help",
+  "version": "v1",
+  "title": "Practise Asking the Teacher for Help | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your child brings home confusing schoolwork, and you reach for the pencil. Solving it yourself feels like the quickest way to help. But your child may also need practice telling the teacher exactly where they are stuck. Pause and ask: Which part do you understand, and where do you need help? Listen before offering an answer. Rehearse a short question together: I tried this first step, but I am confused here. Could you explain what to do next? Practise getting the teacher's attention in the usual classroom way. If the difficulty continues, contact the teacher together. Asking for support is a skill worth learning. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-13",
+    "source": {
+      "organization": "Pearson / SSIS SEL",
+      "title": "Teaching children to ask for help",
+      "url": "https://www.pearsonclinical.ca/content/dam/school/global/clinical/us/assets/ssis-sel/SSIS-Intervention-Brief-4.pdf"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/school-ask-help-father-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      1,
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-93-to-95.md",
+    "measured_crop_boxes": [
+      [
+        0,
+        0,
+        371,
+        517
+      ],
+      [
+        379,
+        0,
+        747,
+        517
+      ],
+      [
+        756,
+        0,
+        1199,
+        517
+      ],
+      [
+        0,
+        526,
+        371,
+        1312
+      ],
+      [
+        380,
+        526,
+        793,
+        1312
+      ],
+      [
+        805,
+        526,
+        1199,
+        1312
+      ]
+    ]
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-94-practise-asking-teacher-for-help\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-94-practise-asking-teacher-for-help-v1.mp4",
+    "duration_seconds": 44.96666666666667,
+    "sha256": "731F014BFDEB48C2F7100892D9CDDBC316EC6E624134040D930CB9C0033E1104"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-94-practise-asking-teacher-for-help-v1.mp4"
+  },
+  "description": "When schoolwork feels confusing, practise asking for help. Find the unclear step together, rehearse a short question, and discuss how to get the teacher's attention. Ongoing difficulties deserve a conversation with the school.\n\nFor parents and caregivers. General parenting education; adapt to your family and circumstances.\n\nSource: Teaching children to ask for help\nhttps://www.pearsonclinical.ca/content/dam/school/global/clinical/us/assets/ssis-sel/SSIS-Intervention-Brief-4.pdf\n\nLike and subscribe for more practical Parenting Rewind ideas.\n#ParentingRewind #ParentingTips",
+  "review": {
+    "encoded_contact_sheet": "passed",
+    "full_decode": "passed",
+    "reviewed_on": "2026-09-13",
+    "report": "production-work/review-93-to-95/full-decode-report.json"
+  }
+}

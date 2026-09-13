@@ -1,0 +1,69 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-93-help-one-dressing-step",
+  "version": "v1",
+  "title": "Help With One Step, Then Let Your Preschooler Try | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your preschooler wants to zip their own jacket. You are ready to leave, but that tiny fastening is taking forever. Finishing every step for them gets the coat on quickly, but leaves less time to practise. Pause. Dressing is a skill that grows with guidance and repetition. Choose a moment when you have a little extra time. Try: Would you like help getting the bottom started? I can hold this part while you pull. Offer only the help they need. Let them finish a manageable step, and notice their effort. If they need more help today, that is okay. Independence does not mean doing everything alone. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-13",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Growing Independence: Tips for Parents of Young Children",
+      "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/preschool-zipper-mother-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/storyboard-prompts-93-to-95.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-93-help-one-dressing-step\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-93-help-one-dressing-step-v1.mp4",
+    "duration_seconds": 45.733333333333334,
+    "sha256": "596BB154FFF0B8C7C2EBD66B83BCC35BF2CB7E8D41A3F0D524268490B9992F62"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-93-help-one-dressing-step-v1.mp4"
+  },
+  "description": "A stuck jacket zipper can be a chance to practise. Offer help with the difficult part, then leave a manageable step for your preschooler to try. Adapt the support to your child and the time you have.\n\nFor parents and caregivers. General parenting education; adapt to your family and circumstances.\n\nSource: Growing Independence: Tips for Parents of Young Children\nhttps://www.healthychildren.org/English/ages-stages/preschool/Pages/Growing-Independence-Tips-for-Parents-of-Young-Children.aspx\n\nLike and subscribe for more practical Parenting Rewind ideas.\n#ParentingRewind #ParentingTips",
+  "review": {
+    "encoded_contact_sheet": "passed",
+    "full_decode": "passed",
+    "reviewed_on": "2026-09-13",
+    "report": "production-work/review-93-to-95/full-decode-report.json"
+  }
+}

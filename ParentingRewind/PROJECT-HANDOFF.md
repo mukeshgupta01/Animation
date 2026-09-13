@@ -10,7 +10,15 @@ Create and operate a high-quality, adult-facing parenting education channel name
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
 
-## Current checkpoint: queue refilled, episodes 90–92 complete
+## Current checkpoint: episodes 93–95 complete
+
+- On 13 September the user requested more parenting videos. Completed three new original episodes: 93 `help-one-dressing-step` (45.73 seconds), 94 `practise-asking-teacher-for-help` (45.00 seconds), and 95 `teen-trusted-adult-exit-plan` (47.53 seconds). Continue new production after episode 95.
+- Three new built-in storyboards show different preschool, school-age and teenage families. The asset/topic audit, exact prompts and source limitations are saved in `production-assets/storyboard-prompts-93-to-95.md`; sheets are registered in `asset-library.json`. Research and original descriptions are saved with each episode's metadata. Topic index: 126 unique topics.
+- All three are validated 1080x1920 H.264/AAC videos with approved narration/music, burned captions and spoken/captioned CTA. Independent full decodes and encoded contact-sheet review passed. Evidence: `production-work/review-93-to-95`. Uneven generated panel boundaries in 94 and 95 were corrected using measured crop boxes before final review; earlier local renders are preserved only in production-work and were never transferred.
+- All three final masters are retained in `output` and mirrored to the configured Business OneDrive folder with size/SHA-256 verification. The folder now contains 96 ordinary sources plus five separately published Father's Day Shorts. At 13:29 Sydney the dry run was ready for episode 02 with 16 settled pending files; the three newest files were still within the normal five-minute settling window. No manual upload was performed. The existing hourly task last returned 0, with its next observed run at 13:37:30.
+- Resume script: `scripts/produce_redesigned_bundle_93_to_95.py`, using `.venv-production/Scripts/python.exe`. It preserves validated outputs and measured crops. Automatic transfer remains disabled in this batch script so new rebuilds receive review first; use the shared verified mirror helper after review, as done for these final files. Preserve completed metadata descriptions/review evidence when rebuilding. Birthday date production remains paused.
+
+## Previous checkpoint: queue refilled, episodes 90–92 complete
 
 - The user prioritized Parenting Rewind and postponed birthday date videos. The date batch is paused via `C:/DocSphere/job-control/data/future-dates-paused.json`; 151 dates through 9 February 2027 are complete, along with all 55 requested September–November replacements. Resume at 10 February only after a new request. Exact state and instructions are in the shared parent-workspace handoff; do not restart it while working here.
 - Diagnosed the upload gap: the hourly task was healthy, but all 90 ordinary source videos had been uploaded. The final prior upload was episode 89 at 06:37 Sydney on 11 September. No ordinary finished episodes were missing from the source queue.

@@ -4,12 +4,13 @@ Updated: 2026-09-13
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 123 (99 active; 24 historical-only).
+Unique topics: 126 (102 active; 24 historical-only).
 
 ## Topic index
 
 - [active] After the Game, Listen Before You Start Coaching — metadata: parenting-rewind-redesign-81-after-game-listen-before-coaching-v1.json
 - [active] Agree on a Homework Help Signal — metadata: parenting-rewind-redesign-58-homework-help-signal-v1.json
+- [active] Agree on a Way Home Before Your Teen Needs One — metadata: parenting-rewind-redesign-95-teen-trusted-adult-exit-plan-v1.json
 - [active] Ask: Listening or Ideas? — metadata: parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.json
 - [active] Before You Post Your Teen's Photo, Ask Them First — metadata: parenting-rewind-redesign-82-ask-teen-before-posting-photo-v1.json
 - [active] Before Your Teen Drives Alone, Put the Safety Plan in Writing — metadata: parenting-rewind-redesign-79-teen-driving-written-safety-plan-v1.json
@@ -29,6 +30,7 @@ Unique topics: 123 (99 active; 24 historical-only).
 - [active] Give Your Child Input on Homework Timing — metadata: parenting-rewind-redesign-30-child-input-homework-plan-v1.json
 - [active] He Tied My Shoes. Now I Walk Beside Him | Father's Day Short — metadata: fathers-day-20-second-shorts/the-shoes-by-the-door.json
 - [active] Hear Each Sibling Separately First — metadata: parenting-rewind-redesign-53-sibling-listen-separately-v1.json
+- [active] Help With One Step, Then Let Your Preschooler Try — metadata: parenting-rewind-redesign-93-help-one-dressing-step-v1.json
 - [active] Hold the Car-Seat Boundary Calmly — metadata: parenting-rewind-redesign-68-calm-car-seat-boundary-v1.json
 - [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
 - [active] Keep the Bedtime Sequence Familiar — metadata: parenting-rewind-redesign-15-same-bedtime-sequence-v1.json
@@ -58,6 +60,7 @@ Unique topics: 123 (99 active; 24 historical-only).
 - [active] One Morning Direction at a Time — metadata: parenting-rewind-redesign-08-one-step-morning-v1.json
 - [active] Pause the Teen Argument and Agree When to Return — metadata: parenting-rewind-redesign-92-teen-argument-break-with-return-time-v1.json
 - [active] Plan the Homework Break Before Frustration — metadata: parenting-rewind-redesign-49-homework-break-plan-v1.json
+- [active] Practise Asking the Teacher for Help — metadata: parenting-rewind-redesign-94-practise-asking-teacher-for-help-v1.json
 - [active] Praise Chore Effort, Not Perfect Folding — metadata: parenting-rewind-redesign-32-praise-chore-effort-v1.json
 - [active] Praise Each Child's Laundry Contribution — metadata: parenting-rewind-redesign-55-laundry-teamwork-praise-v1.json
 - [active] Praise Each Child's Separate Contribution — metadata: parenting-rewind-redesign-36-praise-separate-contributions-v1.json
