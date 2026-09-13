@@ -4,7 +4,7 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- The configured Business OneDrive transfer/upload folder contains 90 normal-series videos through episode 89, plus five separately published Father's Day Shorts. Episode 86 was handled separately from the ordinary queue.
+- The configured Business OneDrive transfer/upload folder contains 93 normal-series videos through episode 92, plus five separately published Father's Day Shorts. Episode 86 was handled separately from the ordinary queue.
 - **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
 - **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video

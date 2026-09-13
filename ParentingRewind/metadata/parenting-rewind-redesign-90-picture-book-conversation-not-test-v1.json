@@ -1,0 +1,67 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-90-picture-book-conversation-not-test",
+  "version": "v1",
+  "title": "Make Picture-Book Time a Conversation, Not a Test | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your preschooler interrupts a picture book to talk about a tiny animal in the corner. You were hoping to finish the story. Rushing past every comment or testing every word can turn a shared moment into a performance. Pause. Their curiosity can become part of the reading, even before they can recognize the words. Try: You noticed that little animal. What do you think it is doing? Leave space for their answer instead of supplying it immediately. Look at the pictures together, follow an interesting detail, and wonder what could happen next. The conversation belongs in book time too. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-13",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Playful Reading Tips: 4 Ways to Engage Your Child in the Magic of Books",
+      "url": "https://www.healthychildren.org/English/family-life/power-of-play/Pages/playful-reading-tips-ways-to-engage-your-child-in-the-magic-of-books.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/evening-reading-father-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      5,
+      1,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/reuse-audit-90-to-92.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-90-picture-book-conversation-not-test\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-90-picture-book-conversation-not-test-v1.mp4",
+    "duration_seconds": 43.46666666666667,
+    "sha256": "A0D8783D7272867ED52A1CCD36E8C71EF56B902D36A7F668FDE1A7B8B9D768FF"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-90-picture-book-conversation-not-test-v1.mp4"
+  },
+  "review": {
+    "encoded_contact_sheet": "passed",
+    "full_decode": "passed",
+    "reviewed_on": "2026-09-13"
+  }
+}

@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-09-08
+Updated: 2026-09-13
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 120 (96 active; 24 historical-only).
+Unique topics: 123 (99 active; 24 historical-only).
 
 ## Topic index
 
@@ -17,6 +17,7 @@ Unique topics: 120 (96 active; 24 historical-only).
 - [active] Check What Your Child Heard — metadata: parenting-rewind-redesign-61-check-what-child-heard-v1.json
 - [active] Choose a Homework Time Together — metadata: parenting-rewind-redesign-12-homework-time-together-v1.json
 - [active] Coach the Words, Then Let Preschool Friends Try — metadata: parenting-rewind-redesign-83-coach-preschool-friendship-words-v1.json
+- [active] Correct the Chore Without Comparing Siblings — metadata: parenting-rewind-redesign-91-describe-chore-without-sibling-comparison-v1.json
 - [active] Dad Always Read One More Story | Father's Day Short — metadata: fathers-day-20-second-shorts/one-more-story.json
 - [active] Describe Cooperation Like a Commentator — metadata: parenting-rewind-redesign-16-describe-cooperation-v1.json
 - [active] Give a Shopping Job Before You Enter — metadata: parenting-rewind-redesign-42-shopping-job-before-entry-v1.json
@@ -38,6 +39,7 @@ Unique topics: 120 (96 active; 24 historical-only).
 - [active] Listen Before Repeating the Screen Limit — metadata: parenting-rewind-redesign-10-listen-before-screen-limit-v1.json
 - [active] Listen to One Sibling at a Time — metadata: parenting-rewind-redesign-23-listen-to-each-sibling-v1.json
 - [active] Make It Safer to Tell the Truth — metadata: parenting-rewind-redesign-72-safer-to-tell-truth-v1.json
+- [active] Make Picture-Book Time a Conversation, Not a Test — metadata: parenting-rewind-redesign-90-picture-book-conversation-not-test-v1.json
 - [active] Make Sibling Turns Visible — metadata: parenting-rewind-redesign-44-sibling-turns-visible-v1.json
 - [active] Make the Chore Plan Visible — metadata: parenting-rewind-redesign-38-visual-chore-plan-v1.json
 - [active] Make the Direction a Statement — metadata: parenting-rewind-redesign-21-direction-not-question-v1.json
@@ -54,6 +56,7 @@ Unique topics: 120 (96 active; 24 historical-only).
 - [active] Offer a Choice About How Soccer Ends — metadata: parenting-rewind-redesign-54-soccer-ending-choice-v1.json
 - [active] Offer One Safe Bedtime Comfort Choice — metadata: parenting-rewind-redesign-26-bedtime-comfort-choice-v1.json
 - [active] One Morning Direction at a Time — metadata: parenting-rewind-redesign-08-one-step-morning-v1.json
+- [active] Pause the Teen Argument and Agree When to Return — metadata: parenting-rewind-redesign-92-teen-argument-break-with-return-time-v1.json
 - [active] Plan the Homework Break Before Frustration — metadata: parenting-rewind-redesign-49-homework-break-plan-v1.json
 - [active] Praise Chore Effort, Not Perfect Folding — metadata: parenting-rewind-redesign-32-praise-chore-effort-v1.json
 - [active] Praise Each Child's Laundry Contribution — metadata: parenting-rewind-redesign-55-laundry-teamwork-praise-v1.json

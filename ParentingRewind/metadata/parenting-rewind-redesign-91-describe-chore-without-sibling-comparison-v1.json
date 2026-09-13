@@ -1,0 +1,67 @@
+{
+  "status": "local-review-only",
+  "episode_id": "parenting-rewind-redesign-91-describe-chore-without-sibling-comparison",
+  "version": "v1",
+  "title": "Correct the Chore Without Comparing Siblings | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "One child is folding towels, while the other has left a pile of socks. Why cannot you be more like your sister is ready to slip out. That comparison can turn a household job into a contest between the children. Pause and take the sibling out of the correction. Name the unfinished task without ranking either child. Try: These socks still need matching. Please start with this pair. Give help if the task is beyond their current skills. You can notice each child's contribution without praising one at the other's expense. Keep the direction about the job, not who is the better child. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-13",
+    "source": {
+      "organization": "Iowa State University Extension, hosted by Kansas State University Extension",
+      "title": "Understanding Children: Sibling Rivalry",
+      "url": "https://www.harvey.k-state.edu/family_and_child_development/documents/SiblingRivalry.pdf"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/laundry-father-two-children-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      1,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/reuse-audit-90-to-92.md"
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-91-describe-chore-without-sibling-comparison\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-91-describe-chore-without-sibling-comparison-v1.mp4",
+    "duration_seconds": 44.46666666666667,
+    "sha256": "C2ECA0E2595C2C03C1C6058945209053AE667B7C5218D45C357DDE4B564D4C10"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-91-describe-chore-without-sibling-comparison-v1.mp4"
+  },
+  "review": {
+    "encoded_contact_sheet": "passed",
+    "full_decode": "passed",
+    "reviewed_on": "2026-09-13"
+  }
+}

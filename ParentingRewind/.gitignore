@@ -18,6 +18,7 @@
 
 # Python
 /.venv/
+/.venv-production/
 /.cache/
 __pycache__/
 *.pyc

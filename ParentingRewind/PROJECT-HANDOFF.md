@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-09-08 (Australia/Sydney)
+Last updated: 2026-09-13 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -9,6 +9,19 @@ This document lets a fresh Codex session continue safely. It contains the non-se
 Create and operate a high-quality, adult-facing parenting education channel named **Parenting Rewind**. The channel is created and OAuth-verified. Open-ended local production remains approved. On 2026-08-30 the user superseded the earlier cadence and authorized one oldest-first public upload every hour.
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
+
+## Current checkpoint: queue refilled, episodes 90–92 complete
+
+- The user prioritized Parenting Rewind and postponed birthday date videos. The date batch is paused via `C:/DocSphere/job-control/data/future-dates-paused.json`; 151 dates through 9 February 2027 are complete, along with all 55 requested September–November replacements. Resume at 10 February only after a new request. Exact state and instructions are in the shared parent-workspace handoff; do not restart it while working here.
+- Diagnosed the upload gap: the hourly task was healthy, but all 90 ordinary source videos had been uploaded. The final prior upload was episode 89 at 06:37 Sydney on 11 September. No ordinary finished episodes were missing from the source queue.
+- Live audit found 16 videos below 10 views: 14 public and two private. Three were Father's Day Shorts. The user explicitly selected all 13 remaining ordinary videos, including both private episodes, for deletion and re-upload with new descriptions. Every selected local source passed hash/FFprobe validation; current channel, title, visibility and view count were checked immediately before deletion. All 13 deletions were verified; all six Father's Day uploads remain intact.
+- Selected ordinary episode numbers: 02, 03, 04, 05, 09, 11, 26, 54, 56, 68, 69, 74 and 89. New copies will be public, not made for kids, with synthetic-media disclosure. Revised descriptions are saved in their normal metadata. Old metadata and API snapshots are backed up under ignored `automation/runtime/low-view-refresh-backups`.
+- `automation/refresh_low_view_videos.py` is a guarded one-time journaled helper, not a recurring task. `low-view-refresh-plan.json`, `low-view-refresh-journal.json`, and `replacement-verification-20260913.json` in runtime record the exact IDs/actions. The upload ledger retains original rows and verified `remote-video-missing` events, allowing the same sources to enter the ordinary queue without losing history. Do not upload duplicates or rerun preparation against a different selection.
+- New episodes 90–92 completed: `picture-book-conversation-not-test` (43.4 s), `describe-chore-without-sibling-comparison` (44.4 s), and `teen-argument-break-with-return-time` (44.4 s). All are 1080x1920 H.264 with 48 kHz stereo AAC, synthetic narration, burned captions and the spoken/captioned CTA. Format gates, independent full decodes and encoded contact-sheet review passed. Contact sheets and decode report: `production-work/review-90-to-92`.
+- These use three distinct existing storyboard families after a topic/asset audit, with different panel orders and new lessons. No new image-generation calls. Rationale: `production-assets/reuse-audit-90-to-92.md`. Research is recorded in episode metadata. `COVERED-TOPICS.md` now records 123 topics.
+- All three new MP4s were copied to the configured Business OneDrive folder with size/SHA-256 verification. Local copies remain in `output`. At 13:09 Sydney the source queue contained 16 pending ordinary files: 13 replacements plus three new episodes. The hourly task remains unchanged and its next observed check was 13:37:30 on 13 September. Inspect live state because these counts/times become stale. No manual upload was performed during this checkpoint.
+- Resume new production after episode 92. `scripts/produce_redesigned_bundle_90_to_92.py` preserves passed existing outputs and mirrors them if needed. Production Python: `.venv-production/Scripts/python.exe`; dependencies: `scripts/production-requirements.txt`. Do not run the rejected `produce_authorized_batch.py` entry point; the redesigned helper imports only its shared media functions.
+- The first OneDrive transfer attempt was blocked by automatic approval review; a retry citing the explicit existing Finished-video transfer authorization succeeded. Nothing remains blocked.
 
 ## Redesigned checkpoint 20: episodes 87-89
 

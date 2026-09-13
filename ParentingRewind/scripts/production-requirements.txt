@@ -1,0 +1,4 @@
+edge-tts==7.2.3
+aiohttp==3.12.15
+Pillow==11.3.0
+numpy==2.2.6
