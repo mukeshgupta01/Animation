@@ -1,10 +1,10 @@
 # Covered topics
 
-Updated: 2026-09-13
+Updated: 2026-09-22
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 126 (102 active; 24 historical-only).
+Unique topics: 128 (104 active; 24 historical-only).
 
 ## Topic index
 
@@ -38,6 +38,7 @@ Unique topics: 126 (102 active; 24 historical-only).
 - [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
 - [active] Let Your Child Correct Your Feeling Guess — metadata: parenting-rewind-redesign-60-let-child-correct-feeling-guess-v1.json
 - [active] Let Your Preschooler Choose a Greeting Without Forcing a Hug — metadata: parenting-rewind-redesign-80-preschool-greeting-without-forced-hug-v1.json
+- [active] Let Your Preschooler Lead the Play — metadata: parenting-rewind-redesign-96-follow-preschoolers-play-v1.json
 - [active] Listen Before Repeating the Screen Limit — metadata: parenting-rewind-redesign-10-listen-before-screen-limit-v1.json
 - [active] Listen to One Sibling at a Time — metadata: parenting-rewind-redesign-23-listen-to-each-sibling-v1.json
 - [active] Make It Safer to Tell the Truth — metadata: parenting-rewind-redesign-72-safer-to-tell-truth-v1.json
@@ -73,6 +74,7 @@ Unique topics: 126 (102 active; 24 historical-only).
 - [active] Prepare Bedtime Needs Before Lights Out — metadata: parenting-rewind-redesign-11-prepare-bedtime-needs-v1.json
 - [active] Prepare Your Preschooler for a New Baby Honestly — metadata: parenting-rewind-redesign-87-prepare-preschooler-new-baby-honestly-v1.json
 - [active] Preview the Library Leaving Steps — metadata: parenting-rewind-redesign-56-library-leaving-preview-v1.json
+- [active] Put Your Own Phone Down First — metadata: parenting-rewind-redesign-97-model-your-own-phone-boundary-v1.json
 - [active] Reconnect After the Screen-Time Limit — metadata: parenting-rewind-redesign-57-screen-time-reconnect-v1.json
 - [active] Reflect the Feeling Before Solving — metadata: parenting-rewind-redesign-18-reflect-before-solving-v1.json
 - [active] Reflect the Library Disappointment — metadata: parenting-rewind-redesign-34-library-feeling-reflection-v1.json

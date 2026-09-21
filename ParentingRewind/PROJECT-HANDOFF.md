@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-09-13 (Australia/Sydney)
+Last updated: 2026-09-22 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -10,7 +10,16 @@ Create and operate a high-quality, adult-facing parenting education channel name
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
 
-## Current checkpoint: episodes 93–95 complete
+## Current checkpoint: requested two videos complete, episodes 96?97
+
+- User requested two new Parenting Rewind videos on 22 September. Both are complete: 96 `follow-preschoolers-play` (43.0 seconds) and 97 `model-your-own-phone-boundary` (44.4 seconds). This finite request is fulfilled; resume any later new request after 97.
+- 96 uses one original built-in storyboard; 97 reuses the mother/teen dining-room family with a distinct order. Asset/topic audit and effective prompt: `production-assets/asset-audit-96-to-97.md`. Both retain full panels over soft portrait backgrounds so faces and hands remain visible. The teen scene order was corrected before transfer to show the phone down at the corresponding instruction.
+- Both 1080x1920 H.264/AAC masters passed the production format gates, independent full decodes, encoded contact-sheet review, caption/CTA checks and hash checks. Audio is approximately -16.0 and -16.4 LUFS, with true peaks -2.1 and -2.8 dBFS. Evidence: `production-work/review-96-to-97`. Research sources and original descriptions are recorded in metadata. Topic index now has 128 unique topics.
+- Local masters remain in `output` and both are size/SHA-256 verified in the configured Business OneDrive folder. The ordinary source count is now 98 plus five separate Father's Day Shorts. The existing hourly task was Ready and the prior queue was empty (96 uploaded). The 10:28 Sydney dry run still excluded the two new files during its five-minute settling window; no manual upload was performed and no schedule changed.
+- Build: `.venv-production/Scripts/python.exe scripts/produce_redesigned_bundle_96_to_97.py`; independent review: `scripts/review_bundle_96_to_97.py`. Automatic transfer remains disabled in this interval's producer for review first. After any rebuild, re-review and use the shared verified mirror helper; it rejects different existing destination files. Metadata records the reviewed final hashes.
+- Older Birthday preparation pause/priority notes below are historical. Use `C:/DocSphere/CURRENT_RULES.md` for other projects; this task did not change their settings.
+
+## Previous checkpoint: episodes 93–95 complete
 
 - On 13 September the user requested more parenting videos. Completed three new original episodes: 93 `help-one-dressing-step` (45.73 seconds), 94 `practise-asking-teacher-for-help` (45.00 seconds), and 95 `teen-trusted-adult-exit-plan` (47.53 seconds). Continue new production after episode 95.
 - Three new built-in storyboards show different preschool, school-age and teenage families. The asset/topic audit, exact prompts and source limitations are saved in `production-assets/storyboard-prompts-93-to-95.md`; sheets are registered in `asset-library.json`. Research and original descriptions are saved with each episode's metadata. Topic index: 126 unique topics.

@@ -1,0 +1,78 @@
+{
+  "status": "validated-ready-for-authorized-hourly-queue",
+  "episode_id": "parenting-rewind-redesign-96-follow-preschoolers-play",
+  "version": "v1",
+  "title": "Let Your Preschooler Lead the Play | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your preschooler lines up blocks, and you start showing them how to build a better tower. But they had a different game in mind. It is easy to take over when you want to help. For a few minutes, try joining their safe play instead. Watch what interests them. Let their idea guide what happens next, while you stay nearby. If they roll a truck beside the blocks, roll your own truck too. You can follow along without changing their design. Describe what you notice: You made a long road for your truck. Your attention can show that their ideas matter. Keep safety limits, and enjoy discovering their game. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-22",
+    "source": {
+      "organization": "Centers for Disease Control and Prevention",
+      "title": "Tips for Connecting and Communicating",
+      "url": "https://www.cdc.gov/parenting-toddlers/communication/index.html"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/child-led-play-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/asset-audit-96-to-97.md",
+    "framing": "Full panel preserved over soft portrait background; no face-removing centre crop."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-96-follow-preschoolers-play\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-96-follow-preschoolers-play-v1.mp4",
+    "duration_seconds": 43.0,
+    "sha256": "4CC38116D83A2DF0E04DC8E51A033EFAE01D247A24B8149BB45B0F0A85DA5BD4"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-96-follow-preschoolers-play-v1.mp4",
+    "verified_sha256": "4CC38116D83A2DF0E04DC8E51A033EFAE01D247A24B8149BB45B0F0A85DA5BD4",
+    "verified_on": "2026-09-22"
+  },
+  "description": "A row of blocks does not have to become the tower you imagined. This preschool parenting example shows how to watch, imitate and describe a child's safe play without taking over. Try joining their idea for a few minutes and noticing what they choose.\n\nGeneral parenting education for adults; adapt to your child and keep appropriate safety limits.\n\nSource: Tips for Connecting and Communicating\nhttps://www.cdc.gov/parenting-toddlers/communication/index.html\n\nOriginal illustrative visuals, synthetic narration and original music.\nLike and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "preschool play"
+  ],
+  "review": {
+    "reviewed_on": "2026-09-22",
+    "full_decode": "passed",
+    "encoded_contact_sheet": "passed",
+    "caption_and_cta_check": "passed",
+    "evidence": "production-work/review-96-to-97/96-contact-sheet.jpg"
+  }
+}

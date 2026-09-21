@@ -1285,6 +1285,95 @@
           "published_uses": 0
         }
       ]
+    },
+    {
+      "asset_id": "child-led-play-father-daughter-storyboard-01",
+      "file": "child-led-play-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image generation",
+        "generation_calls": 1,
+        "created_on": "2026-09-22",
+        "source_record": "asset-audit-96-to-97.md"
+      },
+      "characters": [
+        "Father in sage shirt and preschool daughter in mustard shirt and overalls"
+      ],
+      "setting": "contemporary living room with cream sofa and rust rug",
+      "topic_tags": [
+        "preschool",
+        "child-led play",
+        "imitation",
+        "description"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Child lines up blocks while father suggests a tower",
+          "useful_for": [
+            "child-led play",
+            "imitation",
+            "parent attention"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Father starts taking over the blocks",
+          "useful_for": [
+            "child-led play",
+            "imitation",
+            "parent attention"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Father draws back and observes",
+          "useful_for": [
+            "child-led play",
+            "imitation",
+            "parent attention"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Father imitates child with his own truck",
+          "useful_for": [
+            "child-led play",
+            "imitation",
+            "parent attention"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Father describes child adding a block",
+          "useful_for": [
+            "child-led play",
+            "imitation",
+            "parent attention"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Relaxed shared imaginative play",
+          "useful_for": [
+            "child-led play",
+            "imitation",
+            "parent attention"
+          ],
+          "published_uses": 0
+        }
+      ]
     }
   ]
 }

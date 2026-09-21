@@ -1,0 +1,78 @@
+{
+  "status": "validated-ready-for-authorized-hourly-queue",
+  "episode_id": "parenting-rewind-redesign-97-model-your-own-phone-boundary",
+  "version": "v1",
+  "title": "Put Your Own Phone Down First | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your teenager starts telling you something, but you keep checking your phone. Then you ask why they never talk to you. Before another reminder about their screen habits, notice what your own phone is doing to this moment. Pause the scrolling and put it down. Turn toward your teenager so your attention matches your words. Try: I was distracted. I want to hear you. Please tell me that part again. If something urgent needs an answer, explain briefly and return. Make room for time together without screens, and practise the habits you ask of them. Being a role model starts with your next small choice. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-22",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Be a Digital Role Model for Your Child",
+      "url": "https://www.healthychildren.org/English/family-life/Media/Pages/be-a-digital-role-model.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-sharenting-permission-mother-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      1,
+      2,
+      5,
+      3,
+      5,
+      3
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-96-to-97.md",
+    "framing": "Full panel preserved over soft portrait background; no face-removing centre crop."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-97-model-your-own-phone-boundary\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-97-model-your-own-phone-boundary-v1.mp4",
+    "duration_seconds": 44.43333333333333,
+    "sha256": "F8A4D1C1427FE7896277E2A151EDA2861C5FA0ADC2EA64DEE0E3425A2AFA314B"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-97-model-your-own-phone-boundary-v1.mp4",
+    "verified_sha256": "F8A4D1C1427FE7896277E2A151EDA2861C5FA0ADC2EA64DEE0E3425A2AFA314B",
+    "verified_on": "2026-09-22"
+  },
+  "description": "When your teenager starts talking, is your phone still getting your attention? This practical example focuses on the parent's own digital habits: noticing distraction, putting the phone down and returning to the conversation. The sample wording is an example, not a promise that a teen will open up.\n\nGeneral parenting education for adults. This lesson is about modelling attention, separate from overnight phone rules or permission to post photos.\n\nSource: Be a Digital Role Model for Your Child\nhttps://www.healthychildren.org/English/family-life/Media/Pages/be-a-digital-role-model.aspx\n\nOriginal illustrative visuals, synthetic narration and original music.\nLike and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "parenting teenagers"
+  ],
+  "review": {
+    "reviewed_on": "2026-09-22",
+    "full_decode": "passed",
+    "encoded_contact_sheet": "passed",
+    "caption_and_cta_check": "passed",
+    "evidence": "production-work/review-96-to-97/97-contact-sheet.jpg"
+  }
+}

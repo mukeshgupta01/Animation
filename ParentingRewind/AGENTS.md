@@ -29,7 +29,7 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 
 ## Batch authorization
 
-- CURRENT PRIORITY (2026-09-13): the user requested new Parenting Rewind production first because the upload queue was exhausted. Birthday date-video preparation is paused in the parent workspace; do not restart it from historical approval. Its completed work and resume state are saved in `C:/DocSphere/job-control/data/date-video-handoff.md` and `date-video-paused-checkpoint.json`.
+- CURRENT REQUEST (2026-09-22): produce two new Parenting Rewind videos as one finite interval. Preserve existing Parenting upload settings and all other projects. Read C:/DocSphere/CURRENT_RULES.md for current Birthday preparation decisions; the older 13 September pause note is superseded.
 - USER RECONFIRMATION (2026-09-13): continue making more Parenting Rewind videos under the same varied, evidence-based production and verified-transfer workflow. Latest completed episode numbers and continuation details belong in `PROJECT-HANDOFF.md`.
 - ONE-TIME LOW-VIEW REPLACEMENTS (2026-09-13): the user requested deletion and hourly public re-upload with revised descriptions for all 13 audited ordinary videos below 10 views, explicitly including two private videos and excluding every Father's Day video. The exact selection and completed deletion/queue journal are under `automation/runtime/low-view-refresh-*.json`. This is not permission for recurring low-view deletion. Preserve the original ledger audit trail and local masters; do not repeat the old deletions or bypass upload deduplication. Resume normal hourly cadence for the queued replacements and new episodes.
 
