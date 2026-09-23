@@ -1,8 +1,12 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-09-22 (Australia/Sydney)
+Last updated: 2026-09-23 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
+
+## Local cleanup - 23 September 2026 (C:/DocSphere)
+
+The user authorized deletion of recorded rejects and replaced previews. Removed 15 rejected images from `production-work/local-comfy-trial-70` and the two `before-crop-correction.mp4` previews for episodes 94/95; finished output masters remain. Shared production tools, approved artwork, credentials, ledgers and the Parenting Rewind schedule were preserved. The separate Tiny Tales local working folder was removed at the user's explicit request and excluded through local sparse checkout; its remote history and channel remain. Full local audit: `C:/DocSphere/reports/cleanup-results-20260923.json` and `cleanup-deletions-20260923.jsonl`.
 
 ## Current objective
 
@@ -19,7 +23,7 @@ This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that projec
 - Build: `.venv-production/Scripts/python.exe scripts/produce_redesigned_bundle_96_to_97.py`; independent review: `scripts/review_bundle_96_to_97.py`. Automatic transfer remains disabled in this interval's producer for review first. After any rebuild, re-review and use the shared verified mirror helper; it rejects different existing destination files. Metadata records the reviewed final hashes.
 - Older Birthday preparation pause/priority notes below are historical. Use `C:/DocSphere/CURRENT_RULES.md` for other projects; this task did not change their settings.
 
-## Previous checkpoint: episodes 93–95 complete
+## Previous checkpoint: episodes 93â€“95 complete
 
 - On 13 September the user requested more parenting videos. Completed three new original episodes: 93 `help-one-dressing-step` (45.73 seconds), 94 `practise-asking-teacher-for-help` (45.00 seconds), and 95 `teen-trusted-adult-exit-plan` (47.53 seconds). Continue new production after episode 95.
 - Three new built-in storyboards show different preschool, school-age and teenage families. The asset/topic audit, exact prompts and source limitations are saved in `production-assets/storyboard-prompts-93-to-95.md`; sheets are registered in `asset-library.json`. Research and original descriptions are saved with each episode's metadata. Topic index: 126 unique topics.
@@ -27,14 +31,14 @@ This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that projec
 - All three final masters are retained in `output` and mirrored to the configured Business OneDrive folder with size/SHA-256 verification. The folder now contains 96 ordinary sources plus five separately published Father's Day Shorts. At 13:29 Sydney the dry run was ready for episode 02 with 16 settled pending files; the three newest files were still within the normal five-minute settling window. No manual upload was performed. The existing hourly task last returned 0, with its next observed run at 13:37:30.
 - Resume script: `scripts/produce_redesigned_bundle_93_to_95.py`, using `.venv-production/Scripts/python.exe`. It preserves validated outputs and measured crops. Automatic transfer remains disabled in this batch script so new rebuilds receive review first; use the shared verified mirror helper after review, as done for these final files. Preserve completed metadata descriptions/review evidence when rebuilding. Birthday date production remains paused.
 
-## Previous checkpoint: queue refilled, episodes 90–92 complete
+## Previous checkpoint: queue refilled, episodes 90â€“92 complete
 
-- The user prioritized Parenting Rewind and postponed birthday date videos. The date batch is paused via `C:/DocSphere/job-control/data/future-dates-paused.json`; 151 dates through 9 February 2027 are complete, along with all 55 requested September–November replacements. Resume at 10 February only after a new request. Exact state and instructions are in the shared parent-workspace handoff; do not restart it while working here.
+- The user prioritized Parenting Rewind and postponed birthday date videos. The date batch is paused via `C:/DocSphere/job-control/data/future-dates-paused.json`; 151 dates through 9 February 2027 are complete, along with all 55 requested Septemberâ€“November replacements. Resume at 10 February only after a new request. Exact state and instructions are in the shared parent-workspace handoff; do not restart it while working here.
 - Diagnosed the upload gap: the hourly task was healthy, but all 90 ordinary source videos had been uploaded. The final prior upload was episode 89 at 06:37 Sydney on 11 September. No ordinary finished episodes were missing from the source queue.
 - Live audit found 16 videos below 10 views: 14 public and two private. Three were Father's Day Shorts. The user explicitly selected all 13 remaining ordinary videos, including both private episodes, for deletion and re-upload with new descriptions. Every selected local source passed hash/FFprobe validation; current channel, title, visibility and view count were checked immediately before deletion. All 13 deletions were verified; all six Father's Day uploads remain intact.
 - Selected ordinary episode numbers: 02, 03, 04, 05, 09, 11, 26, 54, 56, 68, 69, 74 and 89. New copies will be public, not made for kids, with synthetic-media disclosure. Revised descriptions are saved in their normal metadata. Old metadata and API snapshots are backed up under ignored `automation/runtime/low-view-refresh-backups`.
 - `automation/refresh_low_view_videos.py` is a guarded one-time journaled helper, not a recurring task. `low-view-refresh-plan.json`, `low-view-refresh-journal.json`, and `replacement-verification-20260913.json` in runtime record the exact IDs/actions. The upload ledger retains original rows and verified `remote-video-missing` events, allowing the same sources to enter the ordinary queue without losing history. Do not upload duplicates or rerun preparation against a different selection.
-- New episodes 90–92 completed: `picture-book-conversation-not-test` (43.4 s), `describe-chore-without-sibling-comparison` (44.4 s), and `teen-argument-break-with-return-time` (44.4 s). All are 1080x1920 H.264 with 48 kHz stereo AAC, synthetic narration, burned captions and the spoken/captioned CTA. Format gates, independent full decodes and encoded contact-sheet review passed. Contact sheets and decode report: `production-work/review-90-to-92`.
+- New episodes 90â€“92 completed: `picture-book-conversation-not-test` (43.4 s), `describe-chore-without-sibling-comparison` (44.4 s), and `teen-argument-break-with-return-time` (44.4 s). All are 1080x1920 H.264 with 48 kHz stereo AAC, synthetic narration, burned captions and the spoken/captioned CTA. Format gates, independent full decodes and encoded contact-sheet review passed. Contact sheets and decode report: `production-work/review-90-to-92`.
 - These use three distinct existing storyboard families after a topic/asset audit, with different panel orders and new lessons. No new image-generation calls. Rationale: `production-assets/reuse-audit-90-to-92.md`. Research is recorded in episode metadata. `COVERED-TOPICS.md` now records 123 topics.
 - All three new MP4s were copied to the configured Business OneDrive folder with size/SHA-256 verification. Local copies remain in `output`. At 13:09 Sydney the source queue contained 16 pending ordinary files: 13 replacements plus three new episodes. The hourly task remains unchanged and its next observed check was 13:37:30 on 13 September. Inspect live state because these counts/times become stale. No manual upload was performed during this checkpoint.
 - Resume new production after episode 92. `scripts/produce_redesigned_bundle_90_to_92.py` preserves passed existing outputs and mirrors them if needed. Production Python: `.venv-production/Scripts/python.exe`; dependencies: `scripts/production-requirements.txt`. Do not run the rejected `produce_authorized_batch.py` entry point; the redesigned helper imports only its shared media functions.
@@ -100,7 +104,7 @@ This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that projec
 - Core structure: show a familiar parenting problem, an unhelpful reaction, a pause/rewind moment, a calmer response and one specific takeaway.
 - Useful recurring device: **Pause. Rewind. Repair.** or **Say this instead.**
 - Deliberately cover toddlers/preschoolers (approximately 2-4), school-age children (approximately 5-12), and teenagers (approximately 13-18). The user specifically wants challenging, developmentally appropriate topics for toddlers and teenagers as well as younger school-age children.
-- Tone: practical, specific, empathetic and conversational—like one parent advising another, not a robotic or all-knowing AI persona.
+- Tone: practical, specific, empathetic and conversationalâ€”like one parent advising another, not a robotic or all-knowing AI persona.
 - Give general parenting education only. Do not provide personalized therapy, diagnosis or medical advice.
 - Research factual/behavioral claims with authoritative sources such as CDC, AAP or HealthyChildren and record the sources in each video's metadata.
 - Recurring characters and settings are fine, but every episode needs distinct substance. Do not publish a template with only the words changed.
@@ -130,7 +134,7 @@ The first lesson is a shoe-putting-on scenario.
 - `output/parenting-rewind-pilot-01-shoes-v3-dynamic-music.mp4`: V3; music too quiet; keep as a rejected reference, not a production choice.
 - `output/parenting-rewind-pilot-01-shoes-v4-audible-dynamic-music.mp4`: V4; corrected louder dynamic music; technical checks passed; approved as the current music direction.
 
-V4 technical checks: 1080×1920 vertical H.264 video, 48 kHz stereo AAC audio, duration approximately 78.67 seconds.
+V4 technical checks: 1080Ã—1920 vertical H.264 video, 48 kHz stereo AAC audio, duration approximately 78.67 seconds.
 
 On 2026-08-22, the user said they were happy with V4 and asked to start the next video. Treat V2 voice plus V4 music as approved unless the user records a later preference.
 
@@ -140,7 +144,7 @@ Pilot 02 addresses **ending screen time without shouting**.
 
 - `output/parenting-rewind-pilot-02-screen-time-v1.mp4`: complete local V1 awaiting user review; do not upload.
 - Duration: approximately 88.83 seconds.
-- Technical format: 1080×1920 vertical H.264/yuv420p at 30 fps; 48 kHz stereo AAC at approximately 192 kbps.
+- Technical format: 1080Ã—1920 vertical H.264/yuv420p at 30 fps; 48 kHz stereo AAC at approximately 192 kbps.
 - Full video/audio decode passed. Final audio measured approximately -15.9 LUFS integrated, 3.0 LU LRA and -2.2 dBFS true peak.
 - SHA-256: `A0E5283EE964D67755AA75880958A14A6E13E77D22015679FDD3F2BEDCDADA8A`.
 - Narration uses the approved V2 settings: `en-US-AvaMultilingualNeural`, rate `-5%`, pitch `-1Hz`.
@@ -240,7 +244,7 @@ Possible next lessons:
 3. Responding to sibling fighting.
 4. Helping a child admit a mistake.
 
-The user discussed having 30–40 videos ready overnight. That discussion is **not approval** to mass-produce finished videos. A safer proposal was six finished videos total (including the shoe pilot), 30–40 researched concepts/scripts, and three reusable storyboard packs. The user had not approved or rejected that proposal before switching accounts.
+The user discussed having 30â€“40 videos ready overnight. That discussion is **not approval** to mass-produce finished videos. A safer proposal was six finished videos total (including the shoe pilot), 30â€“40 researched concepts/scripts, and three reusable storyboard packs. The user had not approved or rejected that proposal before switching accounts.
 
 ## Required next steps
 
