@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-115-agree-teen-chore-ownership",
+  "version": "v1",
+  "title": "Give Your Teen Ownership of a Household Task | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "You keep reminding your teenager about the laundry, but neither of you has agreed what the job includes or when it needs doing. Pause the running commentary. Choose a suitable responsibility together and explain how it contributes to the household. Try: Could you own the clean towels this week? Let us agree where they go and a time that works. Check they know the steps, then give them space to practise. Agree on a reminder system instead of hovering over every move. Thank them for the contribution and review the plan if it is not working. The aim is a useful life skill, with expectations matched to ability. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Household chores for kids and teenagers",
+      "url": "https://raisingchildren.net.au/toddlers/family-life/routines-rituals/chores-for-children"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-chores-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-115-agree-teen-chore-ownership\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-115-agree-teen-chore-ownership-v1.mp4",
+    "duration_seconds": 44.46666666666667,
+    "sha256": "A497F4B706F4D889CC26C5BD78DE9713E88F56B5DA4764FBEFB898122FD0BBC5"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-115-agree-teen-chore-ownership-v1.mp4",
+    "sha256": "A497F4B706F4D889CC26C5BD78DE9713E88F56B5DA4764FBEFB898122FD0BBC5",
+    "size_bytes": 3510070,
+    "verified_at": "2026-09-25T02:52:32.568505+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Move from repeated reminders to a clearly agreed household responsibility. Teach any missing steps and give your teenager room to practise.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Household chores for kids and teenagers\nhttps://raisingchildren.net.au/toddlers/family-life/routines-rituals/chores-for-children\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "teen",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "teen parenting"
+  ],
+  "review": {
+    "episode": 115,
+    "episode_id": "parenting-rewind-redesign-115-agree-teen-chore-ownership",
+    "full_decode": "passed",
+    "sha256": "A497F4B706F4D889CC26C5BD78DE9713E88F56B5DA4764FBEFB898122FD0BBC5",
+    "duration_seconds": 44.46666666666667,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.1,
+    "true_peak_dbfs": -2.4,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/toddlers/family-life/routines-rituals/chores-for-children",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-108-ask-about-art-not-perfection",
+  "version": "v1",
+  "title": "Ask About the Making, Not the Perfect Picture | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your child brings home artwork, and your first instinct is to rate it or point out what would make it neater. Pause. Creative work can be about trying an idea, exploring materials and enjoying the making, not producing an adult-looking result. Try: Tell me about this part. How did you choose those colours? Follow what your child wants to share. If they want to change something, offer materials and time rather than taking over. Their picture does not need your finishing touches. You can value their curiosity without calling every result perfect. Make room for experimenting, starting again and deciding what the work means to them. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Creative play and activities for school-age children",
+      "url": "https://raisingchildren.net.au/school-age/development/creative-development/school-age-creative-activities"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/art-studio-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      4,
+      0,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-108-ask-about-art-not-perfection\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-108-ask-about-art-not-perfection-v1.mp4",
+    "duration_seconds": 47.03333333333333,
+    "sha256": "E5B03A50829C5D6CBF97FCD5F2C813CDF371A69C8033506B9E901DA5EAF2CAB9"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-108-ask-about-art-not-perfection-v1.mp4",
+    "sha256": "E5B03A50829C5D6CBF97FCD5F2C813CDF371A69C8033506B9E901DA5EAF2CAB9",
+    "size_bytes": 3507401,
+    "verified_at": "2026-09-25T02:52:32.313523+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Talk about creative choices and the experience of making art. Keep ownership with your child instead of turning every picture into an assessment.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Creative play and activities for school-age children\nhttps://raisingchildren.net.au/school-age/development/creative-development/school-age-creative-activities\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "school-age",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "school-age parenting"
+  ],
+  "review": {
+    "episode": 108,
+    "episode_id": "parenting-rewind-redesign-108-ask-about-art-not-perfection",
+    "full_decode": "passed",
+    "sha256": "E5B03A50829C5D6CBF97FCD5F2C813CDF371A69C8033506B9E901DA5EAF2CAB9",
+    "duration_seconds": 47.03333333333333,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.2,
+    "true_peak_dbfs": -1.9,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/school-age/development/creative-development/school-age-creative-activities",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

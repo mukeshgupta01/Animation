@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-110-prepare-special-toys-before-playdate",
+  "version": "v1",
+  "title": "Put Precious Toys Away Before a Playdate | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Two preschoolers reach for the same favourite thing, and sharing suddenly becomes the whole playdate. Preparation can help before friends arrive. Let your child choose a few precious items to put away. Having something private does not make a child selfish. Then choose toys or materials they are happy to use together. Explain that these are the things available for shared play. Stay close enough to help with turns and disagreements. Offer another activity when waiting becomes too difficult for either child. Keep expectations appropriate to their age and abilities. Sharing grows with supported practice, and a little planning can reduce avoidable conflicts. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Teaching children to share: an age-by-age guide",
+      "url": "https://raisingchildren.net.au/toddlers/behaviour/friends-siblings/sharing"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/preschool-playdate-mother-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-110-prepare-special-toys-before-playdate\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-110-prepare-special-toys-before-playdate-v1.mp4",
+    "duration_seconds": 48.7,
+    "sha256": "90E64A115E7ABB4A55C240EBB5E742D1152695D950E69D959C2A4F3A120D0541"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-110-prepare-special-toys-before-playdate-v1.mp4",
+    "sha256": "90E64A115E7ABB4A55C240EBB5E742D1152695D950E69D959C2A4F3A120D0541",
+    "size_bytes": 3525445,
+    "verified_at": "2026-09-25T02:52:32.410313+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Prepare shared play materials while allowing a few personal favourites to stay private. This lesson is about prevention before a playdate, not forcing an immediate handover.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Teaching children to share: an age-by-age guide\nhttps://raisingchildren.net.au/toddlers/behaviour/friends-siblings/sharing\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "preschool",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "preschool parenting"
+  ],
+  "review": {
+    "episode": 110,
+    "episode_id": "parenting-rewind-redesign-110-prepare-special-toys-before-playdate",
+    "full_decode": "passed",
+    "sha256": "90E64A115E7ABB4A55C240EBB5E742D1152695D950E69D959C2A4F3A120D0541",
+    "duration_seconds": 48.7,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.0,
+    "true_peak_dbfs": -2.0,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/toddlers/behaviour/friends-siblings/sharing",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-117-help-child-be-safe-bystander",
+  "version": "v1",
+  "title": "When Your Child Sees Someone Being Bullied | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your child says someone at school was being bullied, but they did not know what to do. Start by hearing their worry. Do not demand a dramatic confrontation. They can help without putting themselves in danger or trying to handle the whole situation alone. Discuss a safe next step: get a trusted adult, stay near the child being targeted, or check on them afterwards. They can avoid joining the laughter or sharing hurtful material. Practise how to tell a teacher clearly what they saw. Adults remain responsible for responding to bullying. Thank your child for speaking up, follow through with support and ask how things are going later. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "StopBullying.gov / US Department of Health and Human Services",
+      "title": "Bystanders to Bullying",
+      "url": "https://www.stopbullying.gov/prevention/bystanders-to-bullying"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/school-peer-exclusion-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      3
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-117-help-child-be-safe-bystander\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-117-help-child-be-safe-bystander-v1.mp4",
+    "duration_seconds": 44.46666666666667,
+    "sha256": "D141359F7FF26CA8FC2BFBA0934CFE2DF4AA66063F4EA558AF0B94ABA3A1A17F"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-117-help-child-be-safe-bystander-v1.mp4",
+    "sha256": "D141359F7FF26CA8FC2BFBA0934CFE2DF4AA66063F4EA558AF0B94ABA3A1A17F",
+    "size_bytes": 3271273,
+    "verified_at": "2026-09-25T02:52:32.643235+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Plan safe ways to support a peer and involve a trusted adult. Children should not be expected to confront danger or solve bullying on their own.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Bystanders to Bullying\nhttps://www.stopbullying.gov/prevention/bystanders-to-bullying\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "school-age",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "school-age parenting"
+  ],
+  "review": {
+    "episode": 117,
+    "episode_id": "parenting-rewind-redesign-117-help-child-be-safe-bystander",
+    "full_decode": "passed",
+    "sha256": "D141359F7FF26CA8FC2BFBA0934CFE2DF4AA66063F4EA558AF0B94ABA3A1A17F",
+    "duration_seconds": 44.46666666666667,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.4,
+    "true_peak_dbfs": -2.4,
+    "visual_review": "passed",
+    "source": "https://www.stopbullying.gov/prevention/bystanders-to-bullying",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

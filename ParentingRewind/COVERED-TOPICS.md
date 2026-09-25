@@ -4,7 +4,7 @@ Updated: 2026-09-25
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 141 (117 active; 24 historical-only).
+Unique topics: 148 (124 active; 24 historical-only).
 
 ## Topic index
 
@@ -15,6 +15,7 @@ Unique topics: 141 (117 active; 24 historical-only).
 - [active] An Imaginary Friend Can Be Part of Play — metadata: parenting-rewind-redesign-107-welcome-imaginary-friend-v1.json
 - [active] Ask About the Making, Not the Perfect Picture — metadata: parenting-rewind-redesign-108-ask-about-art-not-perfection-v1.json
 - [active] Ask: Listening or Ideas? — metadata: parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.json
+- [active] Be Curious About What Your Teen Enjoys — metadata: parenting-rewind-redesign-112-be-curious-about-teen-interests-v1.json
 - [active] Before You Post Your Teen's Photo, Ask Them First — metadata: parenting-rewind-redesign-82-ask-teen-before-posting-photo-v1.json
 - [active] Before Your Teen Drives Alone, Put the Safety Plan in Writing — metadata: parenting-rewind-redesign-79-teen-driving-written-safety-plan-v1.json
 - [active] Build the Phone Boundary Together — metadata: parenting-rewind-redesign-67-build-phone-boundary-together-v1.json
@@ -33,6 +34,7 @@ Unique topics: 141 (117 active; 24 historical-only).
 - [active] Give Them Time to Warm Up — metadata: parenting-rewind-redesign-98-give-time-to-warm-up-v1.json
 - [active] Give Thirty Seconds of Full Attention — metadata: parenting-rewind-redesign-29-full-attention-listening-v1.json
 - [active] Give Your Child Input on Homework Timing — metadata: parenting-rewind-redesign-30-child-input-homework-plan-v1.json
+- [active] Give Your Teen Ownership of a Household Task — metadata: parenting-rewind-redesign-115-agree-teen-chore-ownership-v1.json
 - [active] Grow Independence One Step at a Time — metadata: parenting-rewind-redesign-109-grow-teen-independence-in-steps-v1.json
 - [active] He Tied My Shoes. Now I Walk Beside Him | Father's Day Short — metadata: fathers-day-20-second-shorts/the-shoes-by-the-door.json
 - [active] Hear Each Sibling Separately First — metadata: parenting-rewind-redesign-53-sibling-listen-separately-v1.json
@@ -41,7 +43,9 @@ Unique topics: 141 (117 active; 24 historical-only).
 - [active] Hold the Car-Seat Boundary Calmly — metadata: parenting-rewind-redesign-68-calm-car-seat-boundary-v1.json
 - [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
 - [active] Join the Screen-Time Conversation — metadata: parenting-rewind-redesign-104-join-childs-screen-viewing-v1.json
+- [active] Keep Body Comments Off the Menu — metadata: parenting-rewind-redesign-114-keep-body-comments-off-menu-v1.json
 - [active] Keep the Bedtime Sequence Familiar — metadata: parenting-rewind-redesign-15-same-bedtime-sequence-v1.json
+- [active] Keep Your Home Language in Story Time — metadata: parenting-rewind-redesign-116-keep-home-language-in-stories-v1.json
 - [active] Knock Before Entering Your Teen's Room — metadata: parenting-rewind-redesign-100-knock-before-entering-teen-room-v1.json
 - [active] Leave the Door Open When Your Teen Won't Talk — metadata: parenting-rewind-redesign-73-leave-door-open-to-talk-v1.json
 - [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
@@ -99,6 +103,7 @@ Unique topics: 141 (117 active; 24 historical-only).
 - [active] Shift to Quiet Before Bed — metadata: parenting-rewind-redesign-33-quiet-bedtime-routine-v1.json
 - [active] Stay Close When Words Are Too Much — metadata: parenting-rewind-redesign-64-stay-close-fewer-words-v1.json
 - [active] Stop Biting Without Calling Your Toddler Bad — metadata: parenting-rewind-redesign-74-stop-biting-without-shame-v1.json
+- [active] Talk About Needs and Wants While Shopping — metadata: parenting-rewind-redesign-111-talk-needs-and-wants-shopping-v1.json
 - [active] Talk About the Process, Not Their Worth — metadata: parenting-rewind-redesign-70-grade-process-not-worth-v1.json
 - [active] Teach the Chore, Then Step Back — metadata: parenting-rewind-redesign-46-laundry-teach-then-step-back-v1.json
 - [active] Tell Your Child the Separation Is Not Their Fault — metadata: parenting-rewind-redesign-88-separation-not-childs-fault-v1.json
@@ -121,6 +126,8 @@ Unique topics: 141 (117 active; 24 historical-only).
 - [active] When Your Child Feels Left Out, Listen Before You Investigate — metadata: parenting-rewind-redesign-84-left-out-listen-before-investigating-v1.json
 - [active] When Your Child Refuses Their Shoes — metadata: pilot-01-shoes-v2-conversational.json, pilot-01-shoes-v3-dynamic-music.json, pilot-01-shoes-v4-audible-dynamic-music.json, pilot-01-shoes.json
 - [active] When Your Child Reports Bullying, Listen Before You Fix — metadata: parenting-rewind-redesign-75-listen-before-fixing-bullying-v1.json
+- [active] When Your Child Sees Someone Being Bullied — metadata: parenting-rewind-redesign-117-help-child-be-safe-bystander-v1.json
+- [active] When Your Preschooler Tries a Swear Word — metadata: parenting-rewind-redesign-113-respond-calmly-to-preschool-swearing-v1.json
 - [active] When Your Preschooler Wakes at Night, Return to the Same Routine — metadata: parenting-rewind-redesign-77-preschool-night-waking-same-routine-v1.json
 - [active] When Your Teen Is Overloaded, Look at the Week Together — metadata: parenting-rewind-redesign-76-look-at-week-teen-overloaded-v1.json
 - [active] When Your Teen Shows You a Hurtful Message — metadata: parenting-rewind-redesign-106-support-teen-after-hurtful-message-v1.json

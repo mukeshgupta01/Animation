@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-111-talk-needs-and-wants-shopping",
+  "version": "v1",
+  "title": "Talk About Needs and Wants While Shopping | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your child asks why you buy one thing and leave another behind. A shopping trip can introduce choices without a money lecture. Explain the difference between what your family needs and an extra you would enjoy. Use a simple example from today's list. Try: We planned money for these groceries. That extra is something we want, so we need to decide whether it fits. Let your child help compare a small choice. Keep adult financial worries with adults; they do not need to solve your budget. Wanting something is not shameful, and different families have different resources. You are showing how to think about priorities one ordinary decision at a time. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Money management for children",
+      "url": "https://raisingchildren.net.au/school-age/family-life/pocket-money/money-management-for-children"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/supermarket-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      3
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-111-talk-needs-and-wants-shopping\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-111-talk-needs-and-wants-shopping-v1.mp4",
+    "duration_seconds": 48.833333333333336,
+    "sha256": "DB1291E2A7B0FAC14F16F1507194AD5CC4705378567C6778FB06B21B6B279A08"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-111-talk-needs-and-wants-shopping-v1.mp4",
+    "sha256": "DB1291E2A7B0FAC14F16F1507194AD5CC4705378567C6778FB06B21B6B279A08",
+    "size_bytes": 3204013,
+    "verified_at": "2026-09-25T02:52:32.448060+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Introduce needs, wants and priorities using an ordinary shopping choice. Keep the example age-appropriate and avoid placing adult financial anxiety on children.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Money management for children\nhttps://raisingchildren.net.au/school-age/family-life/pocket-money/money-management-for-children\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "school-age",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "school-age parenting"
+  ],
+  "review": {
+    "episode": 111,
+    "episode_id": "parenting-rewind-redesign-111-talk-needs-and-wants-shopping",
+    "full_decode": "passed",
+    "sha256": "DB1291E2A7B0FAC14F16F1507194AD5CC4705378567C6778FB06B21B6B279A08",
+    "duration_seconds": 48.833333333333336,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.2,
+    "true_peak_dbfs": -1.6,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/school-age/family-life/pocket-money/money-management-for-children",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

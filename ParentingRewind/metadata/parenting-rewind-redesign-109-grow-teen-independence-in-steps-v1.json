@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-109-grow-teen-independence-in-steps",
+  "version": "v1",
+  "title": "Grow Independence One Step at a Time | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your teenager asks to go somewhere more independently. You feel caught between saying no to everything and agreeing without a plan. Pause and consider a manageable next step, based on their readiness and the situation, rather than their friends' permissions. Ask them to explain where they will be, who they will be with and how they will get home safely. Agree on a check-in and a way to ask for help. Keep expectations clear, realistic and suited to your family. Afterwards, talk about what worked and what needs adjusting. Responsibility can grow through supported experience; one agreement does not decide every future outing. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Responsibility: pre-teens and teenagers",
+      "url": "https://raisingchildren.net.au/teens/communicating-relationships/family-relationships/shifting-responsibility-teen-years"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-curfew-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      3
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-109-grow-teen-independence-in-steps\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-109-grow-teen-independence-in-steps-v1.mp4",
+    "duration_seconds": 46.9,
+    "sha256": "22157F17E4748ADF8C7893DE14883F25001FBDB69B8A95E1F6242E7E0E985855"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-109-grow-teen-independence-in-steps-v1.mp4",
+    "sha256": "22157F17E4748ADF8C7893DE14883F25001FBDB69B8A95E1F6242E7E0E985855",
+    "size_bytes": 3417133,
+    "verified_at": "2026-09-25T02:52:32.372317+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Consider a manageable independence step with a clear plan and later review. This is distinct from responding to an already missed curfew.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Responsibility: pre-teens and teenagers\nhttps://raisingchildren.net.au/teens/communicating-relationships/family-relationships/shifting-responsibility-teen-years\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "teen",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "teen parenting"
+  ],
+  "review": {
+    "episode": 109,
+    "episode_id": "parenting-rewind-redesign-109-grow-teen-independence-in-steps",
+    "full_decode": "passed",
+    "sha256": "22157F17E4748ADF8C7893DE14883F25001FBDB69B8A95E1F6242E7E0E985855",
+    "duration_seconds": 46.9,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.1,
+    "true_peak_dbfs": -2.1,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/teens/communicating-relationships/family-relationships/shifting-responsibility-teen-years",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

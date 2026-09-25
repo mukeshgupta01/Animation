@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-112-be-curious-about-teen-interests",
+  "version": "v1",
+  "title": "Be Curious About What Your Teen Enjoys | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your teenager mentions a favourite song, game or hobby, and you immediately explain why you preferred things when you were young. Pause. You do not have to share every interest to show that their enjoyment matters to you. Try: What do you like about it? Or, show me the part you enjoy most. Ask because you want to understand. Let them explain without turning the moment into a test, a lecture or a request for information about everything else. A short shared moment can be enough. Keep appropriate limits, but leave space for ordinary enjoyment together, not only serious talks when something goes wrong. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Staying connected with pre-teens and teenagers",
+      "url": "https://raisingchildren.net.au/teens/communicating-relationships/family-relationships/staying-connected-you-your-teen"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-parent-alarm-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      2,
+      4,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-112-be-curious-about-teen-interests\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-112-be-curious-about-teen-interests-v1.mp4",
+    "duration_seconds": 45.36666666666667,
+    "sha256": "FEF882E37D00C92B09872BF8E6C276107C9E396083D79DC2AF46F36FC93AF705"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-112-be-curious-about-teen-interests-v1.mp4",
+    "sha256": "FEF882E37D00C92B09872BF8E6C276107C9E396083D79DC2AF46F36FC93AF705",
+    "size_bytes": 3514735,
+    "verified_at": "2026-09-25T02:52:32.479023+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Use an everyday interest as a small opportunity to connect. Curiosity does not require liking the same things or abandoning family limits.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Staying connected with pre-teens and teenagers\nhttps://raisingchildren.net.au/teens/communicating-relationships/family-relationships/staying-connected-you-your-teen\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "teen",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "teen parenting"
+  ],
+  "review": {
+    "episode": 112,
+    "episode_id": "parenting-rewind-redesign-112-be-curious-about-teen-interests",
+    "full_decode": "passed",
+    "sha256": "FEF882E37D00C92B09872BF8E6C276107C9E396083D79DC2AF46F36FC93AF705",
+    "duration_seconds": 45.36666666666667,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.2,
+    "true_peak_dbfs": -1.5,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/teens/communicating-relationships/family-relationships/staying-connected-you-your-teen",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

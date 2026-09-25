@@ -4,7 +4,7 @@ This is a separate adult-facing parenting education video project. It is not par
 
 ## Current scope
 
-- The configured Business OneDrive transfer/upload folder contains 98 normal-series videos through episode 97, plus five separately published Father's Day Shorts. Episode 86 was handled separately from the ordinary queue.
+- The configured Business OneDrive transfer/upload folder contains 118 normal-series videos through episode 117, plus five separately published Father's Day Shorts. Episode 86 was handled separately from the ordinary queue.
 - **When Your Child Refuses Their Shoes** established the approved V2 narration and V4 music baseline.
 - **Screen Time Is Over: What to Say Without Shouting** established the second adult-facing scenario.
 - 1080 × 1920 vertical video
@@ -65,7 +65,7 @@ The producer preserves an existing completed MP4 rather than overwriting it. Its
 
 ## Image-credit conservation
 
-Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library currently records 40 assets: 34 storyboard/composite families plus six native 9:16 Father's Day portrait scenes. Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
+Future episodes must check `production-assets\asset-library.json` before requesting new artwork. The library includes five new storyboard families for episodes 98-117 (teen privacy, teen money decisions, co-viewing, playdate preparation and teen household responsibilities). Suitable scenes can be reused by changing crops, motion, overlays, captions, narration and sequencing locally.
 
 The user rejected the episode-70 free local ComfyUI/SDXL trial for poor image quality and asked to return to Codex image generation. Episode 70 therefore uses a new one-call built-in storyboard; the rejected local draft is not part of the active asset library. Episode 86's corrected Short uses six separate native 9:16 built-in images because its reused landscape panels cropped poorly in vertical output.
 

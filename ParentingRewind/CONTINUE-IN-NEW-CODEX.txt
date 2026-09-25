@@ -2,11 +2,12 @@ Continue Parenting Rewind in C:/DocSphere/Animation/ParentingRewind.
 
 Read C:/DocSphere/CURRENT_RULES.md, Animation/AGENTS.md, ParentingRewind/AGENTS.md and PROJECT-HANDOFF.md before acting. For production also read README.md, COVERED-TOPICS.md and production-assets/asset-library.json.
 
-Checkpoint 22 September 2026:
-- The user's finite request for two new videos is complete: episodes 96 and 97, with reviewed local masters and SHA-256 verified Business OneDrive copies. Resume later new requests after episode 97.
-- Current producer: scripts/produce_redesigned_bundle_96_to_97.py. Review evidence: production-work/review-96-to-97. The script preserves completed files and holds automatic transfer for review first.
-- Source folder has 98 ordinary files plus five separate Father's Day Shorts. Existing hourly uploader remains unchanged. At 10:28 Sydney the two newest files were within the five-minute settling window; check live queue/task state before relying on old reports.
-- Preserve historical low-view replacement journals; no new deletions are authorized. Use C:/DocSphere/CURRENT_RULES.md for current Birthday preparation state instead of old pause notes.
+Checkpoint 25 September 2026:
+- The requested 20 new videos are complete: episodes 98-117, reviewed and size/SHA-256 mirrored to Business OneDrive. Resume any later new production request after 117; do not produce or upload duplicate copies.
+- At 12:56 Sydney, uploader dry run was ready with all 20 pending and episode 98 first. The existing hidden hourly task is enabled; next observed check 25 September 13:37:30 Sydney. Live authenticated channel matched UCGb-IUQX2KQa_KA24MwE_aQ. Check live ledger/task state because publication may have progressed.
+- Video list: batch-reports/2026-09-25-episodes-98-117.md. Review evidence: production-work/review-98-to-117. Sources and five new storyboards are registered. The topic index has 148 unique topics.
+- Producer, reviewer and verified-mirror helpers end in 98_to_117.py under scripts/. Production uses .venv-production/Scripts/python.exe. Automatic transfer remains disabled until encoded visual review is recorded.
+- Business OneDrive source has 118 ordinary videos plus five separate Father's Day Shorts. Preserve prior low-view replacement journals; no deletion or new replacement run is authorized. Keep all other projects unchanged.
 
 Inspect Git status/divergence, latest upload report, local/OneDrive files, runtime journals and live task state. Keep credentials isolated to channel UCGb-IUQX2KQa_KA24MwE_aQ, dedicated OAuth project parenting-506406. Never print secrets or copy another channel token.
 
