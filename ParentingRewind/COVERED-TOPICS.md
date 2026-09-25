@@ -1,16 +1,19 @@
 # Covered topics
 
-Updated: 2026-09-22
+Updated: 2026-09-25
 
 Check this index and `metadata/` before approving or scripting a new topic. `Active` means a matching MP4 is currently in `output/`; `historical` includes prior, rejected, or superseded work and should still be considered when avoiding repetition.
 
-Unique topics: 128 (104 active; 24 historical-only).
+Unique topics: 141 (117 active; 24 historical-only).
 
 ## Topic index
 
 - [active] After the Game, Listen Before You Start Coaching — metadata: parenting-rewind-redesign-81-after-game-listen-before-coaching-v1.json
+- [active] After the Mistake, Make Repair Possible — metadata: parenting-rewind-redesign-99-repair-after-spilled-plant-v1.json
 - [active] Agree on a Homework Help Signal — metadata: parenting-rewind-redesign-58-homework-help-signal-v1.json
 - [active] Agree on a Way Home Before Your Teen Needs One — metadata: parenting-rewind-redesign-95-teen-trusted-adult-exit-plan-v1.json
+- [active] An Imaginary Friend Can Be Part of Play — metadata: parenting-rewind-redesign-107-welcome-imaginary-friend-v1.json
+- [active] Ask About the Making, Not the Perfect Picture — metadata: parenting-rewind-redesign-108-ask-about-art-not-perfection-v1.json
 - [active] Ask: Listening or Ideas? — metadata: parenting-rewind-redesign-69-friendship-listening-or-ideas-v1.json
 - [active] Before You Post Your Teen's Photo, Ask Them First — metadata: parenting-rewind-redesign-82-ask-teen-before-posting-photo-v1.json
 - [active] Before Your Teen Drives Alone, Put the Safety Plan in Writing — metadata: parenting-rewind-redesign-79-teen-driving-written-safety-plan-v1.json
@@ -21,19 +24,25 @@ Unique topics: 128 (104 active; 24 historical-only).
 - [active] Correct the Chore Without Comparing Siblings — metadata: parenting-rewind-redesign-91-describe-chore-without-sibling-comparison-v1.json
 - [active] Dad Always Read One More Story | Father's Day Short — metadata: fathers-day-20-second-shorts/one-more-story.json
 - [active] Describe Cooperation Like a Commentator — metadata: parenting-rewind-redesign-16-describe-cooperation-v1.json
+- [active] Find Feeling Words in a Story — metadata: parenting-rewind-redesign-101-name-storybook-feelings-v1.json
 - [active] Give a Shopping Job Before You Enter — metadata: parenting-rewind-redesign-42-shopping-job-before-entry-v1.json
 - [active] Give a Warning That Means Something — metadata: parenting-rewind-redesign-06-playground-warning-v1.json
 - [active] Give Each Child One Clear Job — metadata: parenting-rewind-redesign-09-separate-kitchen-jobs-v1.json
 - [active] Give One Library Direction at a Time — metadata: parenting-rewind-redesign-39-one-library-direction-v1.json
 - [active] Give the Direction, Then Wait — metadata: parenting-rewind-redesign-35-direction-then-wait-v1.json
+- [active] Give Them Time to Warm Up — metadata: parenting-rewind-redesign-98-give-time-to-warm-up-v1.json
 - [active] Give Thirty Seconds of Full Attention — metadata: parenting-rewind-redesign-29-full-attention-listening-v1.json
 - [active] Give Your Child Input on Homework Timing — metadata: parenting-rewind-redesign-30-child-input-homework-plan-v1.json
+- [active] Grow Independence One Step at a Time — metadata: parenting-rewind-redesign-109-grow-teen-independence-in-steps-v1.json
 - [active] He Tied My Shoes. Now I Walk Beside Him | Father's Day Short — metadata: fathers-day-20-second-shorts/the-shoes-by-the-door.json
 - [active] Hear Each Sibling Separately First — metadata: parenting-rewind-redesign-53-sibling-listen-separately-v1.json
 - [active] Help With One Step, Then Let Your Preschooler Try — metadata: parenting-rewind-redesign-93-help-one-dressing-step-v1.json
+- [active] Help Your Teen Pause Before Buying — metadata: parenting-rewind-redesign-103-pause-before-teen-purchase-v1.json
 - [active] Hold the Car-Seat Boundary Calmly — metadata: parenting-rewind-redesign-68-calm-car-seat-boundary-v1.json
 - [active] Introduce One New Chore at a Time — metadata: parenting-rewind-redesign-27-one-new-chore-v1.json
+- [active] Join the Screen-Time Conversation — metadata: parenting-rewind-redesign-104-join-childs-screen-viewing-v1.json
 - [active] Keep the Bedtime Sequence Familiar — metadata: parenting-rewind-redesign-15-same-bedtime-sequence-v1.json
+- [active] Knock Before Entering Your Teen's Room — metadata: parenting-rewind-redesign-100-knock-before-entering-teen-room-v1.json
 - [active] Leave the Door Open When Your Teen Won't Talk — metadata: parenting-rewind-redesign-73-leave-door-open-to-talk-v1.json
 - [active] Leaving the Playground Without a Chase — metadata: parenting-rewind-005-leaving-playground-v1.json, parenting-rewind-redesign-03-leaving-playground-v1.json
 - [active] Let Your Child Correct Your Feeling Guess — metadata: parenting-rewind-redesign-60-let-child-correct-feeling-guess-v1.json
@@ -41,6 +50,7 @@ Unique topics: 128 (104 active; 24 historical-only).
 - [active] Let Your Preschooler Lead the Play — metadata: parenting-rewind-redesign-96-follow-preschoolers-play-v1.json
 - [active] Listen Before Repeating the Screen Limit — metadata: parenting-rewind-redesign-10-listen-before-screen-limit-v1.json
 - [active] Listen to One Sibling at a Time — metadata: parenting-rewind-redesign-23-listen-to-each-sibling-v1.json
+- [active] Make Gratitude an Everyday Conversation — metadata: parenting-rewind-redesign-102-notice-everyday-gratitude-v1.json
 - [active] Make It Safer to Tell the Truth — metadata: parenting-rewind-redesign-72-safer-to-tell-truth-v1.json
 - [active] Make Picture-Book Time a Conversation, Not a Test — metadata: parenting-rewind-redesign-90-picture-book-conversation-not-test-v1.json
 - [active] Make Sibling Turns Visible — metadata: parenting-rewind-redesign-44-sibling-turns-visible-v1.json
@@ -74,6 +84,7 @@ Unique topics: 128 (104 active; 24 historical-only).
 - [active] Prepare Bedtime Needs Before Lights Out — metadata: parenting-rewind-redesign-11-prepare-bedtime-needs-v1.json
 - [active] Prepare Your Preschooler for a New Baby Honestly — metadata: parenting-rewind-redesign-87-prepare-preschooler-new-baby-honestly-v1.json
 - [active] Preview the Library Leaving Steps — metadata: parenting-rewind-redesign-56-library-leaving-preview-v1.json
+- [active] Put Precious Toys Away Before a Playdate — metadata: parenting-rewind-redesign-110-prepare-special-toys-before-playdate-v1.json
 - [active] Put Your Own Phone Down First — metadata: parenting-rewind-redesign-97-model-your-own-phone-boundary-v1.json
 - [active] Reconnect After the Screen-Time Limit — metadata: parenting-rewind-redesign-57-screen-time-reconnect-v1.json
 - [active] Reflect the Feeling Before Solving — metadata: parenting-rewind-redesign-18-reflect-before-solving-v1.json
@@ -112,6 +123,8 @@ Unique topics: 128 (104 active; 24 historical-only).
 - [active] When Your Child Reports Bullying, Listen Before You Fix — metadata: parenting-rewind-redesign-75-listen-before-fixing-bullying-v1.json
 - [active] When Your Preschooler Wakes at Night, Return to the Same Routine — metadata: parenting-rewind-redesign-77-preschool-night-waking-same-routine-v1.json
 - [active] When Your Teen Is Overloaded, Look at the Week Together — metadata: parenting-rewind-redesign-76-look-at-week-teen-overloaded-v1.json
+- [active] When Your Teen Shows You a Hurtful Message — metadata: parenting-rewind-redesign-106-support-teen-after-hurtful-message-v1.json
+- [active] Your Child Is Not the Messenger — metadata: parenting-rewind-redesign-105-keep-child-out-of-adult-messages-v1.json
 - [historical] A Slow Morning Without Shouting — metadata: parenting-rewind-010-slow-morning-v1.json
 - [historical] Dinner Is Not a Bite Negotiation — metadata: parenting-rewind-027-picky-dinner-v1.json
 - [historical] Getting Out of the Bath — metadata: parenting-rewind-023-bath-exit-v1.json

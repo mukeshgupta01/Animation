@@ -1,0 +1,88 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-102-notice-everyday-gratitude",
+  "version": "v1",
+  "title": "Make Gratitude an Everyday Conversation | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Dinner is ready, and you remind your child to say thank you. Gratitude can go beyond getting the polite words right. Instead of demanding a grateful attitude, describe something you appreciated today. Make it ordinary, specific and honest. Try: I appreciated you bringing the napkins while I finished cooking. That made our busy evening a little easier. Invite your child to name a person or moment they valued. Listen without correcting their answer or comparing it with yours. A difficult day can still have one good moment. Appreciation does not mean pretending disappointment, anger or sadness never happened. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Beyond Thanks: 5 Ways to Nurture Gratitude in Children",
+      "url": "https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/how-to-practice-gratitude.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/kitchen-siblings-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      5,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-102-notice-everyday-gratitude\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-102-notice-everyday-gratitude-v1.mp4",
+    "duration_seconds": 47.1,
+    "sha256": "55E5ADF0D0F52B82D4D9E31A4F1F65A551005DDC0CF0C0250BB74813D09FD6D9"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-102-notice-everyday-gratitude-v1.mp4",
+    "sha256": "55E5ADF0D0F52B82D4D9E31A4F1F65A551005DDC0CF0C0250BB74813D09FD6D9",
+    "size_bytes": 3250095,
+    "verified_at": "2026-09-25T02:49:19.769354+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Try a small family conversation about what or whom you appreciated. Gratitude is an invitation to notice care, not a demand to deny difficult feelings.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Beyond Thanks: 5 Ways to Nurture Gratitude in Children\nhttps://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/how-to-practice-gratitude.aspx\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "school-age",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "school-age parenting"
+  ],
+  "review": {
+    "episode": 102,
+    "episode_id": "parenting-rewind-redesign-102-notice-everyday-gratitude",
+    "full_decode": "passed",
+    "sha256": "55E5ADF0D0F52B82D4D9E31A4F1F65A551005DDC0CF0C0250BB74813D09FD6D9",
+    "duration_seconds": 47.1,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.3,
+    "true_peak_dbfs": -2.4,
+    "visual_review": "passed",
+    "source": "https://www.healthychildren.org/English/healthy-living/emotional-wellness/Building-Resilience/Pages/how-to-practice-gratitude.aspx",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA.",
+    "speech_word_similarity": 1.0
+  }
+}

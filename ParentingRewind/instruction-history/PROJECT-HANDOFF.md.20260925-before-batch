@@ -1,6 +1,6 @@
 # Parenting Rewind project handoff
 
-Last updated: 2026-09-25 (Australia/Sydney)
+Last updated: 2026-09-23 (Australia/Sydney)
 
 This document lets a fresh Codex session continue safely. It contains the non-secret immutable channel ID needed for fail-closed verification, but no OAuth client secret, token or password. Inspect the live workspace before acting because files may have changed after this handoff.
 
@@ -14,17 +14,7 @@ Create and operate a high-quality, adult-facing parenting education channel name
 
 This project is separate from `KidsRhymes` / Tiny Tales. Never reuse that project's OAuth files, token, channel lock, upload ledger, archive or Scheduled Tasks.
 
-## Current checkpoint: requested 20-video batch in production, episodes 98-117
-
-- On 25 September the user requested 20 more parenting videos and scheduled upload. All 20 researched scripts are in `scripts/produce_redesigned_bundle_98_to_117.py`; seven preschool, seven school-age and six teen topics. Five new storyboards are registered (three teen, two preschool); remaining stories use audited approved assets with distinct sequences.
-- Production/review occurs in groups of five. Automatic transfer is disabled in this producer. Only reviewed masters may be mirrored to the configured Business OneDrive folder, preserving local originals and verifying size/SHA-256.
-- At inspection the existing hourly upload task was healthy (last result 0); all previous 98 ordinary files were uploaded and the queue was empty. No schedule change is needed. Latest observed next check: 25 September 12:37:30 Sydney. Inspect live state before relying on this checkpoint.
-- Checkpoint at 12:49 Sydney: episodes 98-107 are complete, full-decode/audio/CTA/hash checked, encoded-frame reviewed, and size/SHA-256 mirrored to Business OneDrive. Offline speech checks for 98-102 match 97.8-100% of script words. Episode 103 was cropped to its measured gutters and rebuilt before transfer; its earlier draft remains only in production-work.
-- Episodes 108-112 are rendered and undergoing review; 113-117 are rendering. Resume only incomplete review/transfer work, never duplicate completed files. Scripts: `produce_redesigned_bundle_98_to_117.py`, `review_bundle_98_to_117.py`, `mirror_reviewed_bundle_98_to_117.py`.
-- Live read-only OAuth verification returned Parenting Rewind / UCGb-IUQX2KQa_KA24MwE_aQ. Uploader dry run selected episode 98 and reported ready; 9 files were settled and the newest mirrored file was still within its five-minute source age window. All 10 mirrors exist. No task or cadence setting changed.
-
-## Previous checkpoint: requested two videos complete, episodes 96-97
-
+## Current checkpoint: requested two videos complete, episodes 96?97
 
 - User requested two new Parenting Rewind videos on 22 September. Both are complete: 96 `follow-preschoolers-play` (43.0 seconds) and 97 `model-your-own-phone-boundary` (44.4 seconds). This finite request is fulfilled; resume any later new request after 97.
 - 96 uses one original built-in storyboard; 97 reuses the mother/teen dining-room family with a distinct order. Asset/topic audit and effective prompt: `production-assets/asset-audit-96-to-97.md`. Both retain full panels over soft portrait backgrounds so faces and hands remain visible. The teen scene order was corrected before transfer to show the phone down at the corresponding instruction.

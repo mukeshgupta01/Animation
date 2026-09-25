@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-104-join-childs-screen-viewing",
+  "version": "v1",
+  "title": "Join the Screen-Time Conversation | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your young child is watching a programme, and you only notice the screen when it is time to switch it off. When your family chooses media time, try sharing some of it. Find out what has captured your child's attention. Ask a simple question about the story, or explain something confusing. Leave room for their thoughts instead of talking over everything. Connect the idea to everyday life. If characters build something, perhaps you can explore building with blocks after the programme. Watching together does not make every programme suitable or remove the need for limits. Choose appropriate content and protect time for other activities. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "American Academy of Pediatrics / HealthyChildren.org",
+      "title": "Watch Together: Co-Viewing Media With Your Child",
+      "url": "https://www.healthychildren.org/English/family-life/Media/Pages/watch-together.aspx"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/preschool-coview-father-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      4
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-104-join-childs-screen-viewing\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-104-join-childs-screen-viewing-v1.mp4",
+    "duration_seconds": 44.93333333333333,
+    "sha256": "CE0377F68E9A246CD3A685FB59A26EE489E165DCC59951AC2650FF91F3265627"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-104-join-childs-screen-viewing-v1.mp4",
+    "sha256": "CE0377F68E9A246CD3A685FB59A26EE489E165DCC59951AC2650FF91F3265627",
+    "size_bytes": 3532288,
+    "verified_at": "2026-09-25T02:49:19.898319+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Co-viewing means engaging with the content together. This episode focuses on conversation and offscreen connections, rather than negotiating the ending.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Watch Together: Co-Viewing Media With Your Child\nhttps://www.healthychildren.org/English/family-life/Media/Pages/watch-together.aspx\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "preschool",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "preschool parenting"
+  ],
+  "review": {
+    "episode": 104,
+    "episode_id": "parenting-rewind-redesign-104-join-childs-screen-viewing",
+    "full_decode": "passed",
+    "sha256": "CE0377F68E9A246CD3A685FB59A26EE489E165DCC59951AC2650FF91F3265627",
+    "duration_seconds": 44.93333333333333,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.4,
+    "true_peak_dbfs": -2.6,
+    "visual_review": "passed",
+    "source": "https://www.healthychildren.org/English/family-life/Media/Pages/watch-together.aspx",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

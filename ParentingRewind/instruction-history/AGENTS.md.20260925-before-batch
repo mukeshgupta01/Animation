@@ -29,7 +29,7 @@ Before doing project work, read `PROJECT-HANDOFF.md` completely, then inspect th
 
 ## Batch authorization
 
-- CURRENT REQUEST (2026-09-25): produce 20 more Parenting Rewind videos, episodes 98-117, and schedule their uploads. Use the approved varied format, review in small intervals, then hash-verify the Business OneDrive mirror for the existing oldest-first hourly public upload task. Preserve the hourly cadence and other projects. This replaces the completed 22 September two-video request. Exact completion, review and queue state belongs in PROJECT-HANDOFF.md.
+- CURRENT REQUEST (2026-09-22): produce two new Parenting Rewind videos as one finite interval. Preserve existing Parenting upload settings and all other projects. Read C:/DocSphere/CURRENT_RULES.md for current Birthday preparation decisions; the older 13 September pause note is superseded.
 - USER RECONFIRMATION (2026-09-13): continue making more Parenting Rewind videos under the same varied, evidence-based production and verified-transfer workflow. Latest completed episode numbers and continuation details belong in `PROJECT-HANDOFF.md`.
 - ONE-TIME LOW-VIEW REPLACEMENTS (2026-09-13): the user requested deletion and hourly public re-upload with revised descriptions for all 13 audited ordinary videos below 10 views, explicitly including two private videos and excluding every Father's Day video. The exact selection and completed deletion/queue journal are under `automation/runtime/low-view-refresh-*.json`. This is not permission for recurring low-view deletion. Preserve the original ledger audit trail and local masters; do not repeat the old deletions or bypass upload deduplication. Resume normal hourly cadence for the queued replacements and new episodes.
 

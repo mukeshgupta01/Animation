@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-107-welcome-imaginary-friend",
+  "version": "v1",
+  "title": "An Imaginary Friend Can Be Part of Play | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your preschooler says an invisible friend is coming along for the game. You wonder whether you should correct the whole story. An imaginary companion can be part of childhood play. You can be curious without insisting the character is real. Try: Tell me about your friend's adventure. Let your child explain as much or as little as they want. Keep ordinary limits. If the imaginary friend is blamed for a mess, you can still invite your child to help tidy. Enjoy the imagination while making room for real relationships and activities. If you are concerned about distress or daily functioning, seek professional advice. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Imaginary friends and children",
+      "url": "https://raisingchildren.net.au/preschoolers/behaviour/friends-siblings/imaginary-friends"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/child-led-play-father-daughter-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      3,
+      0,
+      2,
+      4,
+      5,
+      3
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-107-welcome-imaginary-friend\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-107-welcome-imaginary-friend-v1.mp4",
+    "duration_seconds": 46.0,
+    "sha256": "EE3EF4A46A0AED60E6F67948B91DC8FA366E07BFCB19B921A9FD5B64747EC286"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-107-welcome-imaginary-friend-v1.mp4",
+    "sha256": "EE3EF4A46A0AED60E6F67948B91DC8FA366E07BFCB19B921A9FD5B64747EC286",
+    "size_bytes": 3356724,
+    "verified_at": "2026-09-25T02:49:20.085466+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Respond with curiosity to a preschooler's imaginary companion while keeping ordinary household limits. This is about pretend play, not diagnosing unusual experiences.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Imaginary friends and children\nhttps://raisingchildren.net.au/preschoolers/behaviour/friends-siblings/imaginary-friends\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "preschool",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "preschool parenting"
+  ],
+  "review": {
+    "episode": 107,
+    "episode_id": "parenting-rewind-redesign-107-welcome-imaginary-friend",
+    "full_decode": "passed",
+    "sha256": "EE3EF4A46A0AED60E6F67948B91DC8FA366E07BFCB19B921A9FD5B64747EC286",
+    "duration_seconds": 46.0,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.1,
+    "true_peak_dbfs": -2.6,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/preschoolers/behaviour/friends-siblings/imaginary-friends",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

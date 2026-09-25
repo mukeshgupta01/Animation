@@ -1,0 +1,87 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-106-support-teen-after-hurtful-message",
+  "version": "v1",
+  "title": "When Your Teen Shows You a Hurtful Message | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your teenager shows you a cruel message. Reaching straight for their phone can make asking for help feel like a punishment. Start with support: I am glad you showed me. Let us work out what will help you feel safer now. Avoid sending an angry reply. For ordinary abusive messages, help keep the details needed to report what happened before blocking accounts. Report through the service and seek trusted support. Do not copy or share sexual images of anyone under eighteen; get specialist guidance. Check in again after the first conversation. Serious threats need urgent help. In Australia, eSafety provides guidance for reporting serious online bullying. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Australian eSafety Commissioner",
+      "title": "Bullying online",
+      "url": "https://www.esafety.gov.au/young-people/cyberbullying"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-phone-boundary-mother-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-106-support-teen-after-hurtful-message\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-106-support-teen-after-hurtful-message-v1.mp4",
+    "duration_seconds": 49.96666666666667,
+    "sha256": "340B7829CF3EF7294FD3229E673B26C50D1BDC34338A7F40B34040DB80DAEA8A"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-106-support-teen-after-hurtful-message-v1.mp4",
+    "sha256": "340B7829CF3EF7294FD3229E673B26C50D1BDC34338A7F40B34040DB80DAEA8A",
+    "size_bytes": 2917266,
+    "verified_at": "2026-09-25T02:49:20.020083+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Support disclosure, avoid retaliation and plan reporting together. Evidence handling depends on the content: never copy or redistribute sexual images of minors. Australian reporting guidance is linked below.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Bullying online\nhttps://www.esafety.gov.au/young-people/cyberbullying\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "teen",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "teen parenting"
+  ],
+  "review": {
+    "episode": 106,
+    "episode_id": "parenting-rewind-redesign-106-support-teen-after-hurtful-message",
+    "full_decode": "passed",
+    "sha256": "340B7829CF3EF7294FD3229E673B26C50D1BDC34338A7F40B34040DB80DAEA8A",
+    "duration_seconds": 49.96666666666667,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.2,
+    "true_peak_dbfs": -2.3,
+    "visual_review": "passed",
+    "source": "https://www.esafety.gov.au/young-people/cyberbullying",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA."
+  }
+}

@@ -1374,6 +1374,416 @@
           "published_uses": 0
         }
       ]
+    },
+    {
+      "asset_id": "teen-privacy-father-son-storyboard-01",
+      "file": "teen-privacy-father-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-09-25",
+        "source_record": "asset-audit-98-to-117.md"
+      },
+      "characters": [
+        "Father in navy knit shirt",
+        "Teenage son in green shirt"
+      ],
+      "setting": "Apartment hallway, teenage bedroom and kitchen",
+      "topic_tags": [
+        "knock-before-entering-teen-room",
+        "teen",
+        "adult-facing parenting"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Father reaches for closed door",
+          "useful_for": [
+            "knock-before-entering-teen-room"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Teen uncomfortable at interruption",
+          "useful_for": [
+            "knock-before-entering-teen-room"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Father pauses outside",
+          "useful_for": [
+            "knock-before-entering-teen-room"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Father knocks",
+          "useful_for": [
+            "knock-before-entering-teen-room"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Teen opens door voluntarily",
+          "useful_for": [
+            "knock-before-entering-teen-room"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Privacy discussion at table",
+          "useful_for": [
+            "knock-before-entering-teen-room"
+          ],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "teen-money-mother-daughter-storyboard-01",
+      "file": "teen-money-mother-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-09-25",
+        "source_record": "asset-audit-98-to-117.md"
+      },
+      "characters": [
+        "Mother in plum blouse",
+        "Teenage daughter in denim shirt"
+      ],
+      "setting": "Mint-accented apartment dining area",
+      "topic_tags": [
+        "pause-before-teen-purchase",
+        "teen",
+        "adult-facing parenting"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Teen shows headphones on tablet",
+          "useful_for": [
+            "pause-before-teen-purchase"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Mother lectures",
+          "useful_for": [
+            "pause-before-teen-purchase"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Mother pauses",
+          "useful_for": [
+            "pause-before-teen-purchase"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Compare cost with notebook and calculator",
+          "useful_for": [
+            "pause-before-teen-purchase"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Teen puts tablet down",
+          "useful_for": [
+            "pause-before-teen-purchase"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Discuss savings plan",
+          "useful_for": [
+            "pause-before-teen-purchase"
+          ],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "teen-chores-father-daughter-storyboard-01",
+      "file": "teen-chores-father-daughter-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-09-25",
+        "source_record": "asset-audit-98-to-117.md"
+      },
+      "characters": [
+        "Father in burgundy henley",
+        "Teenage daughter in mustard shirt"
+      ],
+      "setting": "Olive and pale-wood kitchen and laundry",
+      "topic_tags": [
+        "agree-teen-chore-ownership",
+        "teen",
+        "adult-facing parenting"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Reminder loop by basket",
+          "useful_for": [
+            "agree-teen-chore-ownership"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Frustration over towels",
+          "useful_for": [
+            "agree-teen-chore-ownership"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Father pauses",
+          "useful_for": [
+            "agree-teen-chore-ownership"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Shared task planning",
+          "useful_for": [
+            "agree-teen-chore-ownership"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Teen folds independently",
+          "useful_for": [
+            "agree-teen-chore-ownership"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Father thanks contribution",
+          "useful_for": [
+            "agree-teen-chore-ownership"
+          ],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "preschool-coview-father-son-storyboard-01",
+      "file": "preschool-coview-father-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-09-25",
+        "source_record": "asset-audit-98-to-117.md"
+      },
+      "characters": [
+        "East Asian father in teal shirt",
+        "Preschool son in rust sweater"
+      ],
+      "setting": "Living room with cream sofa and green rug",
+      "topic_tags": [
+        "preschool",
+        "co-viewing",
+        "media conversation"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Child watches tablet",
+          "useful_for": [
+            "preschool",
+            "co-viewing",
+            "media conversation"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Father puts phone aside",
+          "useful_for": [
+            "preschool",
+            "co-viewing",
+            "media conversation"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Watch tablet together",
+          "useful_for": [
+            "preschool",
+            "co-viewing",
+            "media conversation"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Discuss simple shapes on screen",
+          "useful_for": [
+            "preschool",
+            "co-viewing",
+            "media conversation"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Build real blocks",
+          "useful_for": [
+            "preschool",
+            "co-viewing",
+            "media conversation"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Shared offscreen play",
+          "useful_for": [
+            "preschool",
+            "co-viewing",
+            "media conversation"
+          ],
+          "published_uses": 0
+        }
+      ]
+    },
+    {
+      "asset_id": "preschool-playdate-mother-son-storyboard-01",
+      "file": "preschool-playdate-mother-son-storyboard-01.png",
+      "asset_type": "3x2_storyboard",
+      "ownership": "original_generated_for_project",
+      "generation": {
+        "method": "built-in image-generation tool",
+        "generation_calls": 1,
+        "created_on": "2026-09-25",
+        "source_record": "asset-audit-98-to-117.md"
+      },
+      "characters": [
+        "Mother in cream cardigan",
+        "Preschool son in blue overalls",
+        "Preschool friend in green sweater"
+      ],
+      "setting": "Living room with honey timber shelves and blue rug",
+      "topic_tags": [
+        "preschool",
+        "playdate preparation",
+        "private toys"
+      ],
+      "grid": {
+        "columns": 3,
+        "rows": 2,
+        "crop_margin_pixels": 7
+      },
+      "panels": [
+        {
+          "index": 0,
+          "description": "Protective of favourite toys",
+          "useful_for": [
+            "preschool",
+            "playdate preparation",
+            "private toys"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 1,
+          "description": "Mother listens",
+          "useful_for": [
+            "preschool",
+            "playdate preparation",
+            "private toys"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 2,
+          "description": "Put favourite toys away",
+          "useful_for": [
+            "preschool",
+            "playdate preparation",
+            "private toys"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 3,
+          "description": "Set out shared toys",
+          "useful_for": [
+            "preschool",
+            "playdate preparation",
+            "private toys"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 4,
+          "description": "Friends play side by side",
+          "useful_for": [
+            "preschool",
+            "playdate preparation",
+            "private toys"
+          ],
+          "published_uses": 0
+        },
+        {
+          "index": 5,
+          "description": "Build a road together",
+          "useful_for": [
+            "preschool",
+            "playdate preparation",
+            "private toys"
+          ],
+          "published_uses": 0
+        }
+      ]
     }
   ]
 }

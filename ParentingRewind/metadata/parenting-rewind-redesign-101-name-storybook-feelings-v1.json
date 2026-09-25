@@ -1,0 +1,88 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-101-name-storybook-feelings",
+  "version": "v1",
+  "title": "Find Feeling Words in a Story | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "A story character loses something precious. Your preschooler watches the picture, and you have a chance to explore a feeling together. You do not need a quiz or a correct answer. Start with what the character's face or actions make you wonder. Try: I wonder if she feels disappointed. She wanted that to happen. What do you notice about this picture? Let your child offer a different idea, or simply listen. Use everyday words they can hear again during real experiences. Books and pretend play make room to explore feelings when nobody is in trouble. Keep the conversation brief, warm and playful. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Preschoolers and emotions: play ideas",
+      "url": "https://raisingchildren.net.au/preschoolers/play-learning/play-preschooler-development/emotions-play-preschoolers"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/evening-reading-father-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      5,
+      0,
+      2,
+      4,
+      3,
+      5
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-101-name-storybook-feelings\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-101-name-storybook-feelings-v1.mp4",
+    "duration_seconds": 46.233333333333334,
+    "sha256": "06EF228FB86D19D50124B89A32AC64408C5061B097840AE269920FA3B0ED7B4B"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-101-name-storybook-feelings-v1.mp4",
+    "sha256": "06EF228FB86D19D50124B89A32AC64408C5061B097840AE269920FA3B0ED7B4B",
+    "size_bytes": 3628523,
+    "verified_at": "2026-09-25T02:49:19.680554+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Use a story to introduce feeling words without testing your preschooler. The aim is emotional vocabulary, not reading performance.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Preschoolers and emotions: play ideas\nhttps://raisingchildren.net.au/preschoolers/play-learning/play-preschooler-development/emotions-play-preschoolers\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "preschool",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "preschool parenting"
+  ],
+  "review": {
+    "episode": 101,
+    "episode_id": "parenting-rewind-redesign-101-name-storybook-feelings",
+    "full_decode": "passed",
+    "sha256": "06EF228FB86D19D50124B89A32AC64408C5061B097840AE269920FA3B0ED7B4B",
+    "duration_seconds": 46.233333333333334,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.3,
+    "true_peak_dbfs": -2.9,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/preschoolers/play-learning/play-preschooler-development/emotions-play-preschoolers",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA.",
+    "speech_word_similarity": 0.9868995633187773
+  }
+}

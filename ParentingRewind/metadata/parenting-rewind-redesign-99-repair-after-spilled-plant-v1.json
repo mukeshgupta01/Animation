@@ -1,0 +1,88 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-99-repair-after-spilled-plant",
+  "version": "v1",
+  "title": "After the Mistake, Make Repair Possible | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your child knocks over a plant, and soil covers the floor. You are tempted to take away something completely unrelated. Pause. Once everyone is safe, connect the response to what actually happened. The plant needs care and the floor needs cleaning. Try: The soil spilled. Let us work out how to put this right. Keep the focus on repair, not character. Give your child a safe, manageable part, such as fetching a brush. Handle sharp pieces or other hazards yourself. Help where needed, then notice their contribution. A related response gives them a way to practise responsibility instead of only feeling bad. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Consequences and positive child behaviour",
+      "url": "https://raisingchildren.net.au/school-age/behaviour/rules-consequences/consequences"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/honesty-father-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      3
+    ],
+    "recycled_visuals_approved": true,
+    "new_image_generation_calls": 0,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-99-repair-after-spilled-plant\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-99-repair-after-spilled-plant-v1.mp4",
+    "duration_seconds": 47.9,
+    "sha256": "EB48763FDDE45043D8839EDF889C0FFD7D88BC898001C7235E0DEC01F8B3D8D8"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-99-repair-after-spilled-plant-v1.mp4",
+    "sha256": "EB48763FDDE45043D8839EDF889C0FFD7D88BC898001C7235E0DEC01F8B3D8D8",
+    "size_bytes": 3539544,
+    "verified_at": "2026-09-25T02:49:19.510799+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "Use an everyday spill to practise safe, proportionate repair. This lesson focuses on responsibility after a mistake, rather than interrogating a child about honesty.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Consequences and positive child behaviour\nhttps://raisingchildren.net.au/school-age/behaviour/rules-consequences/consequences\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "school-age",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "school-age parenting"
+  ],
+  "review": {
+    "episode": 99,
+    "episode_id": "parenting-rewind-redesign-99-repair-after-spilled-plant",
+    "full_decode": "passed",
+    "sha256": "EB48763FDDE45043D8839EDF889C0FFD7D88BC898001C7235E0DEC01F8B3D8D8",
+    "duration_seconds": 47.9,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.2,
+    "true_peak_dbfs": -2.5,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/school-age/behaviour/rules-consequences/consequences",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA.",
+    "speech_word_similarity": 0.986784140969163
+  }
+}

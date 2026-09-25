@@ -1,0 +1,88 @@
+{
+  "status": "validated-awaiting-scheduled-upload",
+  "episode_id": "parenting-rewind-redesign-100-knock-before-entering-teen-room",
+  "version": "v1",
+  "title": "Knock Before Entering Your Teen's Room | Parenting Rewind",
+  "audience_intent": "Adults and parents; not directed to children",
+  "education_scope": "General parenting education only; not personalised therapy, diagnosis, or medical advice.",
+  "narration": {
+    "type": "synthetic",
+    "voice": "en-US-AvaMultilingualNeural",
+    "rate": "-5%",
+    "pitch": "-1Hz",
+    "transcript": "Your teenager closes the bedroom door, and you walk straight in. Their frustration does not automatically mean they are hiding something. Growing up includes wanting personal space. You can respect that while still staying involved in your teenager's life. Rewind the moment. For an ordinary visit, knock and wait for an answer before entering. Ask whether now is a good time. Try: I want to respect your space. Can we agree how we will check in and when I need to know more? Discuss safety exceptions calmly in advance. Privacy is not the same as leaving a teenager without support or ignoring a serious concern. If this helped, like and subscribe for more practical Parenting Rewind ideas."
+  },
+  "research": {
+    "reviewed_on": "2026-09-25",
+    "source": {
+      "organization": "Raising Children Network",
+      "title": "Privacy, trust and monitoring: 9-18 years",
+      "url": "https://raisingchildren.net.au/teens/communicating-relationships/family-relationships/privacy-trust-teen-years"
+    },
+    "claim_limits": [
+      "Suggested wording is an example, not a guaranteed result.",
+      "Adapt expectations to the individual child and safety context."
+    ]
+  },
+  "artwork": {
+    "primary_asset": "production-assets/teen-privacy-father-son-storyboard-01.png",
+    "panel_files": null,
+    "panel_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recycled_visuals_approved": false,
+    "new_image_generation_calls": 1,
+    "generation_prompt_record": "production-assets/asset-audit-98-to-117.md",
+    "framing": "Full panel on soft portrait background; faces and hands preserved."
+  },
+  "music": {
+    "type": "original locally synthesized emotional score",
+    "narration_sidechain_ducking": true,
+    "ambient_background_noise": false,
+    "sound_effects": false
+  },
+  "captions": {
+    "burned_in": true,
+    "sidecar": "production-work\\redesigned-bundle-2026-08-23\\parenting-rewind-redesign-100-knock-before-entering-teen-room\\captions.srt"
+  },
+  "published": false,
+  "upload_authorized": true,
+  "output": {
+    "file": "output\\parenting-rewind-redesign-100-knock-before-entering-teen-room-v1.mp4",
+    "duration_seconds": 46.766666666666666,
+    "sha256": "103B25BC257DB5C98F91F9A222799C77653906A9526050A86329D2EBD47F9D88"
+  },
+  "transfer": {
+    "business_onedrive_copy": "C:\\Users\\SQLBI-2\\OneDrive - SQL BI Consulting Pvt Ltd\\Videos\\ParentingRewind-60-Videos-2026-08-23\\parenting-rewind-redesign-100-knock-before-entering-teen-room-v1.mp4",
+    "sha256": "103B25BC257DB5C98F91F9A222799C77653906A9526050A86329D2EBD47F9D88",
+    "size_bytes": 3132284,
+    "verified_at": "2026-09-25T02:49:19.597459+00:00",
+    "schedule": "Existing Parenting Rewind - Public Upload Cadence; oldest episode first"
+  },
+  "description": "A closed door can be an ordinary request for space. Practise knocking, waiting and discussing privacy alongside reasonable safety responsibilities.\n\nGeneral parenting education for adults; adapt to your child and circumstances.\n\nSource: Privacy, trust and monitoring: 9-18 years\nhttps://raisingchildren.net.au/teens/communicating-relationships/family-relationships/privacy-trust-teen-years\n\nOriginal illustrative visuals, synthetic narration and original music.\nIf this helped, like and subscribe for more practical Parenting Rewind ideas.\n\n#ParentingRewind #ParentingTips",
+  "age_group": "teen",
+  "tags": [
+    "Parenting Rewind",
+    "parenting tips",
+    "teen parenting"
+  ],
+  "review": {
+    "episode": 100,
+    "episode_id": "parenting-rewind-redesign-100-knock-before-entering-teen-room",
+    "full_decode": "passed",
+    "sha256": "103B25BC257DB5C98F91F9A222799C77653906A9526050A86329D2EBD47F9D88",
+    "duration_seconds": 46.766666666666666,
+    "spoken_and_captioned_cta": true,
+    "integrated_lufs": -16.2,
+    "true_peak_dbfs": -2.4,
+    "visual_review": "passed",
+    "source": "https://raisingchildren.net.au/teens/communicating-relationships/family-relationships/privacy-trust-teen-years",
+    "visual_review_notes": "Encoded seven-frame sheet inspected: faces/hands preserved, readable safe-zone captions, distinct scene progression and CTA.",
+    "speech_word_similarity": 0.9873417721518988
+  }
+}
